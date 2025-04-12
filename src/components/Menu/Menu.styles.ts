@@ -31,7 +31,7 @@ export const MenuItem = styled.div`
 `
 
 export const MenuIcon = styled.span`
-    color: #000;
+   
 `
 
 export const MenuBlockOne = styled.div`

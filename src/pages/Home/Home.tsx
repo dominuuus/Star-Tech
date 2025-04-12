@@ -1,25 +1,36 @@
-import { HomeContainer } from './Home.styles';
-import images from '../../assets/images';
+import { HomeContainer, HomeSectionOne, HomeSectionTwo, SectionTwoStats, SectionTwoWelcome } from "./Home.styles";
+import images from "../../assets/images";
+import { SquadStats } from "../../components/SquadStats/SquadStats";
+import { NewsAstronautBar } from "../../components/NewsAstronautBar/NewsAstronaut";
+import { ProjectStats } from "../../components/ProjectStats/ProjectStats";
 
-export function Home() { 
-    return (
+export function Home() {
+  return (
+    <HomeContainer>
+      <HomeSectionOne>
+        <div>
+          <span>Nebula.dev</span>
+        </div>
+        <div>
+          <img src={images.astronaut1} alt="" />
+        </div>
+      </HomeSectionOne>
 
-
-        <HomeContainer>
+      <HomeSectionTwo>
+        <SectionTwoWelcome>
             <div>
-                <div>
-                    <span>Nebula.dev</span>
-                </div>
-                <div>
-                    <img src={images.astronaut1} alt="" />
-                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, hic corrupti. Laboriosam, impedit quos cumque laborum dolor eligendi voluptas repellat ipsum quae illum a quam tempore saepe magnam odit alias?</p>
             </div>
+            <NewsAstronautBar></NewsAstronautBar>
+        </SectionTwoWelcome>
 
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut in excepturi harum enim tempore, porro nisi unde ut quasi eaque rerum minus maiores eligendi libero iusto impedit voluptatibus ratione. Itaque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis itaque animi ad perspiciatis iusto est cumque explicabo, dignissimos officiis? Eaque in dolor ipsum consectetur, assumenda adipisci impedit deserunt sequi inventore?</p>
-            </div>
+        <SectionTwoStats>
+              <SquadStats></SquadStats>
+              <ProjectStats></ProjectStats>
+        </SectionTwoStats>
 
-        </HomeContainer>
-    )
+      </HomeSectionTwo>
 
+    </HomeContainer>
+  );
 }

@@ -1,4 +1,4 @@
-import { MenuBlockOne, MenuBlockTwo, MenuContainer, MenuIcon, MenuItem } from "./Menu.styles";
+import { MenuBlockOne, MenuBlockTwo, MenuContainer, MenuItem } from "./Menu.styles";
 import {
   Alien,
   GraduationCap,
@@ -13,26 +13,26 @@ export function Menu() {
     <MenuContainer>
       <MenuBlockOne>
         <MenuItem>
-          <MenuIcon>
-            <Planet size={28} />
-          </MenuIcon>
+          <span>
+            <Planet size={28} weight="fill"/>
+          </span>
           <span>Base</span>
         </MenuItem>
         <MenuItem>
           <span>
-            <GraduationCap size={28} />
+            <GraduationCap size={28} weight="fill"/>
           </span>
           <span>Piloto</span>
         </MenuItem>
         <MenuItem>
           <span>
-            <RocketLaunch size={28} />
+            <RocketLaunch size={28} weight="fill"/>
           </span>
           <span>Missões</span>
         </MenuItem>
         <MenuItem>
           <span>
-            <Trophy size={28} />
+            <Trophy size={28} weight="fill"/>
           </span>
           <span>Conquistas</span>
         </MenuItem>
@@ -41,14 +41,14 @@ export function Menu() {
       <MenuBlockTwo>
         <MenuItem>
           <span>
-            <Alien size={28} />
+            <Alien size={28} weight="fill"/>
           </span>
           <span>Explorar</span>
         </MenuItem>
 
         <MenuItem>
           <span>
-            <Wrench size={28} />
+            <Wrench size={28} weight="fill"/>
           </span>
           <span>Oficina</span>
         </MenuItem>
