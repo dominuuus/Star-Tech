@@ -1,49 +1,59 @@
-import { AchievementStyle, AstronautContainer, AstronautSectionOne, AstronautSectionTwo, MascotAndAchievementContainer, MascotStyle, MissionStatusBar, MissionUpdatesStyle, SectionTwoStats, SectionTwoWelcome } from "./Astronaut.styles";
-import images from "../../assets/images";
+import { MissionCard } from "../../components/astronaut/MissionCard/MissionCard";
+import { MissionFilterCard } from "../../components/astronaut/MissionFilterCard/MissionFilterCard";
 import { ProjectStatusCard } from "../../components/astronaut/ProjectStatusCard/ProjectStatusCard";
+import { SpaceshipCard } from "../../components/astronaut/SpaceshipCard/SpaceshipCard";
 import { NewsMission } from "../../components/common/NewsMission/NewsMission";
+import { UserProfile } from "../UserProfile/UserProfile";
+import { AchievementContent, AstronautContainer, AstronautSectionOne, AstronautSectionTwo, CommandCenterContent, MascotAchieveNewsContainer, MascotContent, MissionStatusContent, NewsContent, SectionTwoContentOne, SectionTwoContentTwo, SpaceshipContent } from "./Astronaut.styles";
 
 export function Astronaut() {
   return (
     <AstronautContainer>
-      <AstronautSectionOne>
+        <AstronautSectionOne>
+        <UserProfile />
+        </AstronautSectionOne>
+
+        <AstronautSectionTwo>
+        <SectionTwoContentOne>
+          <MascotAchieveNewsContainer>
+            <MascotContent>
+              <span>Mascote</span>
+            </MascotContent>
+            <AchievementContent>
+              <span>Conquistas</span>
+            </AchievementContent>
+            <NewsContent>
+              <NewsMission/>
+            </NewsContent>
+          </MascotAchieveNewsContainer>
+
+          <SpaceshipContent>
+            <SpaceshipCard/>
+          </SpaceshipContent>
+
+        </SectionTwoContentOne>
+
+        <SectionTwoContentTwo>
         <div>
-          <span>Nebula.dev</span>
+            <span>Central de Comando</span>
+            <hr />
+            <CommandCenterContent>
+              <ProjectStatusCard/>
+            </CommandCenterContent>
         </div>
-        <div>
-          <img src={images.astronaut1} alt="" />
-        </div>
-      </AstronautSectionOne>
 
-      <AstronautSectionTwo>
-        <SectionTwoWelcome>
-            <MascotAndAchievementContainer>
-              <MascotStyle>
-                  <span>Mascotes</span>
-              </MascotStyle>
-              <AchievementStyle>
-                  <span>Conquistas</span>
-              </AchievementStyle>
-              <MissionUpdatesStyle>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aliquid accusamus quis necessitatibus.</span>
-                <hr />
-                <span>Cumque rerum doloribus voluptatem sit ducimus! Quam dolorem ad inventore aperiam dolores fugiat optio magnam accusamus eius.</span>
-                <hr />
-                <span>Cumque rerum doloribus voluptatem sit ducimus! Quam dolorem ad inventore aperiam dolores fugiat optio magnam accusamus eius.</span>
-            </MissionUpdatesStyle>
-            </MascotAndAchievementContainer>
+          <div>
+          <span>Status das missões</span>
+          <hr />
+            <MissionStatusContent>
+              <MissionFilterCard/>
+              <MissionCard/>
+            </MissionStatusContent>
+          </div>
 
-        </SectionTwoWelcome>
-
-        <SectionTwoStats>
-              <ProjectStatusCard></ProjectStatusCard>
-              <MissionStatusBar>
-                <NewsMission/>
-              </MissionStatusBar>
-        </SectionTwoStats>
+        </SectionTwoContentTwo>
 
       </AstronautSectionTwo>
-
     </AstronautContainer>
   );
 }

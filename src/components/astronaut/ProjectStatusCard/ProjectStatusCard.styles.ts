@@ -4,6 +4,7 @@ export const SquadStatsContainer = styled.div`
     display: flex;
     flex-direction: column;
     row-gap: 0.75rem;
+    padding: 1rem;
 `
 export const MenuStats = styled.div`
     display: flex;

@@ -1,5 +1,5 @@
-import { HeaderContainer, MainMenu, Notifications } from "./Header.styles";
-import { Bell, ChatCenteredText } from "phosphor-react";
+import { MainTopMenu } from "../MainTopMenu/MainTopMenu";
+import { HeaderContainer } from "./Header.styles";
 
 
 export function Header() {
@@ -9,29 +9,10 @@ export function Header() {
                 <span>Logo</span>
             </div>
 
-            <MainMenu>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>Docs</li>
-                        <li>Tutorial</li>
-                        <li>Playground</li>
-                    </ul>
-                </nav>
-            </MainMenu>
-
             <div>
-                <search>Search</search>
+                <MainTopMenu/>
             </div>
 
-            <Notifications>
-                <span><ChatCenteredText size={32} /></span>
-                <span><Bell size={32} /></span>
-            </Notifications>
-
-            <div>
-                <span>Profile</span>
-            </div>
         </HeaderContainer>
     );
     

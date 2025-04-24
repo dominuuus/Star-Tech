@@ -1,7 +1,17 @@
+import images from "../../assets/images";
+import { AstronautProfileContainer } from "./UserProfile.styles";
+
 export function UserProfile() {
-    return (
-        <>
-        <h1>UserProfile</h1>
-        </>
-    )
+  return (
+    <>
+    <AstronautProfileContainer>
+      <div>
+        <h1>Nebula.dev</h1>
+      </div>
+      <div>
+        <img src={images.astronaut1} alt="" />
+      </div>
+      </AstronautProfileContainer>
+    </>
+  );
 }

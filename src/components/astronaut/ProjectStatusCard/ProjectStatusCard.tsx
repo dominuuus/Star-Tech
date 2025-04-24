@@ -4,8 +4,6 @@ import { MenuStats, ProjectProgressBar, SquadStatsContainer } from "./ProjectSta
 export function ProjectStatusCard() {
   return (
     <SquadStatsContainer>
-      <p>Estatísticas</p>
-      <hr />
         <MenuStats>
           <button>Mais críticos</button>
           <button>Mais recentes</button>

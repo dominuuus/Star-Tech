@@ -2,69 +2,79 @@ import styled from "styled-components";
 
 export const AstronautContainer = styled.main`
     display: flex;
-    flex-direction: row;
-    width: 100%;
-
-
-    img {
-        height: 38rem;
-    }
-`;
-
-const AstronautSections = styled.section`
-    display: flex;
-`;
-
-export const AstronautSectionOne = styled(AstronautSections)`
-    flex-direction: column;
-`;
+`
 
 export const AstronautSectionTwo = styled.section`
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    
-`;
+`
 
-export const SectionTwoWelcome = styled.div`
-    flex-direction: row;
-    justify-content: space-between;
-`;
+export const AstronautSectionOne = styled.section`
+    display: flex;
+    flex-direction: column;
+`
 
-export const SectionTwoStats = styled.div`
+export const SectionTwoContentOne = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+export const MascotAchieveNewsContainer = styled.div`
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    gap: 0.5rem;
+`
+
+export const NewsContent = styled.div`
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-`;
-
-export const MascotStyle = styled.div`
+    gap: 0.5rem;
+    height: 20rem;
     background-color: gray;
-`;
+    border-radius: 0.75rem;
+`
 
-export const AchievementStyle = styled.div`
-    background-color: gray;
-`;
-
-export const MissionUpdatesStyle = styled.div`
-    background-color: gray;
-    padding: 10px;
-    border-radius: 1rem;
-    font-size: 0.7rem;
-`;
-
-export const SpaceShipStyle = styled.div`
-    background-color: gray;
-`;
-
-export const MissionStatusBar = styled.div`
-    background-color: gray;
-    width: 50%;
-    border-radius: 1rem;
-`;
-
-export const MascotAndAchievementContainer = styled.div`
+export const SectionTwoContentTwo = styled.div`
+    margin-top: 1rem;
     display: grid;
-    gap: 2rem;
-    grid-template-columns: 50% 30% 20%;
-`;
+    grid-template-columns: 50% 50%;
+    gap: 0.5rem;
 
+`
 
+export const MissionStatusContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    width: 28rem;
+    height: 20rem;
+    border-radius: 0.75rem;
+    padding: 1rem;
+`
+export const CommandCenterContent = styled.div`
+    background-color: gray;
+    width: 28rem;
+    height: 20rem;
+    border-radius: 0.75rem;
+`
+
+export const SpaceshipContent = styled.div`
+    position: absolute;
+    margin-top: 10.5rem;
+    width: 40rem;
+    height: 9.5rem;
+    background-color: gray;
+    border-radius: 0.75rem;
+`
+
+export const MascotContent = styled.div`
+    height: 10rem;
+    background-color: gray;
+    border-radius: 0.75rem;
+`
+
+export const AchievementContent = styled.div`
+    height: 10rem;
+    background-color: gray;
+    border-radius: 0.75rem;
+`
