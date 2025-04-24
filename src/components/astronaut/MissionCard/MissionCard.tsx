@@ -1,7 +1,9 @@
 export function MissionCard() {
     return (
         <>
-        <h1>MissionCard</h1>
+        <button>Missões atrasadas</button>
+        <button>Missões em andamento</button>
+        <button>Missões concluídas</button>
         </>
     )
 }

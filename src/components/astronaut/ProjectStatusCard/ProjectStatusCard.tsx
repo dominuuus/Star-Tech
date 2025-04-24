@@ -1,6 +1,7 @@
+import { ProjectProgress } from "../ProjectProgress/ProjectProgress";
 import { MenuStats, ProjectProgressBar, SquadStatsContainer } from "./ProjectStatusCard.styles";
 
-export function SquadStats() {
+export function ProjectStatusCard() {
   return (
     <SquadStatsContainer>
       <p>Estatísticas</p>
@@ -12,12 +13,7 @@ export function SquadStats() {
         </MenuStats>
 
         <ProjectProgressBar>
-          <progress value={10} max={100} />
-          <progress value={20} max={100} />
-          <progress value={30} max={100} />
-          <progress value={50} max={100} />
-          <progress value={90} max={100} />
-          <progress value={100} max={100} />
+          <ProjectProgress/>
         </ProjectProgressBar>
     </SquadStatsContainer>
   );

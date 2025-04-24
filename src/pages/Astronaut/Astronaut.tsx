@@ -1,34 +1,49 @@
-import { HomeContainer, HomeSectionOne, HomeSectionTwo, SectionTwoStats, SectionTwoWelcome } from "./Astronaut.styles";
+import { AchievementStyle, AstronautContainer, AstronautSectionOne, AstronautSectionTwo, MascotAndAchievementContainer, MascotStyle, MissionStatusBar, MissionUpdatesStyle, SectionTwoStats, SectionTwoWelcome } from "./Astronaut.styles";
 import images from "../../assets/images";
-import { SquadStats } from "../../components/astronaut/ProjectStatusCard/ProjectStatusCard";
-import { CaretCircleRight } from "phosphor-react";
+import { ProjectStatusCard } from "../../components/astronaut/ProjectStatusCard/ProjectStatusCard";
+import { NewsMission } from "../../components/common/NewsMission/NewsMission";
 
 export function Astronaut() {
   return (
-    <HomeContainer>
-      <HomeSectionOne>
+    <AstronautContainer>
+      <AstronautSectionOne>
         <div>
           <span>Nebula.dev</span>
         </div>
         <div>
           <img src={images.astronaut1} alt="" />
         </div>
-      </HomeSectionOne>
+      </AstronautSectionOne>
 
-      <HomeSectionTwo>
+      <AstronautSectionTwo>
         <SectionTwoWelcome>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, hic corrupti. Laboriosam, impedit quos cumque laborum dolor eligendi voluptas repellat ipsum quae illum a quam tempore saepe magnam odit alias?</p>
-            </div>
+            <MascotAndAchievementContainer>
+              <MascotStyle>
+                  <span>Mascotes</span>
+              </MascotStyle>
+              <AchievementStyle>
+                  <span>Conquistas</span>
+              </AchievementStyle>
+              <MissionUpdatesStyle>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aliquid accusamus quis necessitatibus.</span>
+                <hr />
+                <span>Cumque rerum doloribus voluptatem sit ducimus! Quam dolorem ad inventore aperiam dolores fugiat optio magnam accusamus eius.</span>
+                <hr />
+                <span>Cumque rerum doloribus voluptatem sit ducimus! Quam dolorem ad inventore aperiam dolores fugiat optio magnam accusamus eius.</span>
+            </MissionUpdatesStyle>
+            </MascotAndAchievementContainer>
+
         </SectionTwoWelcome>
 
         <SectionTwoStats>
-              <SquadStats></SquadStats>
-              <CaretCircleRight size={32} weight="fill" />
+              <ProjectStatusCard></ProjectStatusCard>
+              <MissionStatusBar>
+                <NewsMission/>
+              </MissionStatusBar>
         </SectionTwoStats>
 
-      </HomeSectionTwo>
+      </AstronautSectionTwo>
 
-    </HomeContainer>
+    </AstronautContainer>
   );
 }
