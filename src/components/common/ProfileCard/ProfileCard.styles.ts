@@ -46,7 +46,7 @@ export const CoinContainer = styled.div`
     align-items: center;
     
     span {
-        color:${(props) => props.theme.colors.goldCoin};
+        color: #D8A214;
         font-weight: bold;
     }
     
