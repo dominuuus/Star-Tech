@@ -16,7 +16,6 @@ export const DefaultLayoutContent = styled.div`
 
 export const MenuLayout = styled.div`
     position: fixed;
-    top: 15%;
 `
 
 export const OutletLayout = styled.div`

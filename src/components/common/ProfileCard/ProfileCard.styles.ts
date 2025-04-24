@@ -9,7 +9,7 @@ export const ProfileCardContainer = styled.div`
     border-radius: 10px;
 
     img {
-        height: 4rem;
+        height: 3;
         border-radius: 0.5rem;
     }
 `
@@ -38,6 +38,7 @@ export const NotificationContainer = styled.div`
     width: 2.5rem;
     align-items: center;
     text-align: center;
+    justify-content: center;
 `
 
 export const CoinContainer = styled.div`
@@ -45,7 +46,7 @@ export const CoinContainer = styled.div`
     align-items: center;
     
     span {
-        color: #D8A214;
+        color:${(props) => props.theme.colors.goldCoin};
         font-weight: bold;
     }
     

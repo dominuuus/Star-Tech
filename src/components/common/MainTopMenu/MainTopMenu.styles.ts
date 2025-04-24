@@ -29,6 +29,7 @@ export const SearchContainer = styled.div`
     border-radius: 0.75rem;
     width: 15rem;
     height: 2.5rem;
+    padding: 1rem;
     }
 `
 

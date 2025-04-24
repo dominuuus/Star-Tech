@@ -26,12 +26,7 @@ export const MascotAchieveNewsContainer = styled.div`
 `
 
 export const NewsContent = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    height: 20rem;
-    background-color: gray;
-    border-radius: 0.75rem;
+
 `
 
 export const SectionTwoContentTwo = styled.div`
@@ -65,16 +60,19 @@ export const SpaceshipContent = styled.div`
     height: 9.5rem;
     background-color: gray;
     border-radius: 0.75rem;
+    padding: 1rem;
 `
 
 export const MascotContent = styled.div`
     height: 10rem;
     background-color: gray;
     border-radius: 0.75rem;
+    padding: 1rem;
 `
 
 export const AchievementContent = styled.div`
     height: 10rem;
     background-color: gray;
     border-radius: 0.75rem;
+    padding: 1rem;
 `

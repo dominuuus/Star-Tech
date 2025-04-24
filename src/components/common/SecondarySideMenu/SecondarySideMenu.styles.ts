@@ -22,10 +22,16 @@ export const MenuItem = styled.div`
     display: flex;
     flex-direction: column;
     font-size: 0.7rem;
-
+    
     &:hover {
         cursor: pointer;
         background-color: #fff;
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
      
 `

@@ -12,7 +12,9 @@ import { SecondarySideMenu } from "../../components/common/SecondarySideMenu/Sec
 export function DefaultLayout() {
   return (
     <DefaultLayoutContainer>
-      <Header />
+      <div>
+        <Header />
+      </div>
       <DefaultLayoutContent>
         <MenuLayout>
           <SecondarySideMenu />

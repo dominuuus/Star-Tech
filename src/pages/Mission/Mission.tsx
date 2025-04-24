@@ -1,7 +1,15 @@
+import { NewsMission } from "../../components/common/NewsMission/NewsMission";
+import { MissionContainer, MissionUpdatesContent } from "./Mission.styles";
+
 export function Mission() {
     return (
         <>
-        <h1>Mission</h1>
+        <MissionContainer>
+            <h1>Missões</h1>
+            <MissionUpdatesContent>
+                <NewsMission/>
+            </MissionUpdatesContent>
+        </MissionContainer>
         </>
     )
 }

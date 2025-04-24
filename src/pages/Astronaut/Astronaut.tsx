@@ -10,7 +10,7 @@ export function Astronaut() {
   return (
     <AstronautContainer>
         <AstronautSectionOne>
-        <UserProfile />
+          <UserProfile />
         </AstronautSectionOne>
 
         <AstronautSectionTwo>

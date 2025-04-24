@@ -1,4 +1,10 @@
-import { MenuBlockOne, MenuBlockTwo, MenuContainer, MenuItem } from "./SecondarySideMenu.styles";
+import { NavLink } from "react-router-dom";
+import {
+  MenuBlockOne,
+  MenuBlockTwo,
+  MenuContainer,
+  MenuItem,
+} from "./SecondarySideMenu.styles";
 import {
   Lightning,
   Planet,
@@ -13,44 +19,44 @@ export function SecondarySideMenu() {
     <MenuContainer>
       <MenuBlockOne>
         <MenuItem>
-          <span>
-            <RocketLaunch size={28} weight="fill"/>
-          </span>
-          <span>Nave</span>
+          <NavLink to="nave" title="Tutorial">
+            <RocketLaunch size={28} weight="fill" />
+            Nave
+          </NavLink>
         </MenuItem>
         <MenuItem>
-          <span>
+          <NavLink to="piloto" title="Tutorial">
             <User size={28} weight="fill" />
-          </span>
-          <span>Piloto</span>
+            Piloto
+          </NavLink>
         </MenuItem>
         <MenuItem>
-          <span>
-          <Lightning size={32} weight="fill" />
-          </span>
-          <span>Missões</span>
+          <NavLink to="missoes" title="Tutorial">
+            <Lightning size={32} weight="fill" />
+            Missões
+          </NavLink>
         </MenuItem>
         <MenuItem>
-          <span>
-            <Trophy size={28} weight="fill"/>
-          </span>
-          <span>Conquistas</span>
+          <NavLink to="conquistas" title="Tutorial">
+            <Trophy size={28} weight="fill" />
+            Conquistas
+          </NavLink>
         </MenuItem>
       </MenuBlockOne>
 
       <MenuBlockTwo>
         <MenuItem>
-          <span>
-            <Planet size={28} weight="fill"/>
-          </span>
-          <span>Explorar</span>
+          <NavLink to="explorar" title="Tutorial">
+            <Planet size={28} weight="fill" />
+            Explorar
+          </NavLink>
         </MenuItem>
 
         <MenuItem>
-          <span>
-            <Wrench size={28} weight="fill"/>
-          </span>
-          <span>Oficina</span>
+          <NavLink to="oficina" title="Tutorial">
+            <Wrench size={28} weight="fill" />
+            Oficina
+          </NavLink>
         </MenuItem>
       </MenuBlockTwo>
     </MenuContainer>

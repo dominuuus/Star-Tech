@@ -1,3 +1,4 @@
+import images from "../../../assets/images";
 import { MainTopMenu } from "../MainTopMenu/MainTopMenu";
 import { HeaderContainer } from "./Header.styles";
 
@@ -6,7 +7,7 @@ export function Header() {
     return (
         <HeaderContainer>
             <div>
-                <span>Logo</span>
+                <img src={images.logo} alt="" />
             </div>
 
             <div>
