@@ -1,4 +1,4 @@
-import { MenuBlockOne, MenuBlockTwo, MenuContainer, MenuItem } from "./Menu.styles";
+import { MenuBlockOne, MenuBlockTwo, MenuContainer, MenuItem } from "./SecondarySideMenu.styles";
 import {
   Alien,
   GraduationCap,
@@ -8,7 +8,7 @@ import {
   Wrench,
 } from "phosphor-react";
 
-export function Menu() {
+export function SecondarySideMenu() {
   return (
     <MenuContainer>
       <MenuBlockOne>

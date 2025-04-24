@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Header } from "../../components/Header/Header";
+import { Header } from "../../components/common/Header/Header";
 import {
   DefaultLayoutContainer,
   DefaultLayoutContent,
@@ -7,7 +7,7 @@ import {
   OutletLayout,
   
 } from "./defaultLayout.styles";
-import { Menu } from "../../components/Menu/Menu";
+import { SecondarySideMenu } from "../../components/common/SecondarySideMenu/SecondarySideMenu";
 
 export function DefaultLayout() {
   return (
@@ -15,7 +15,7 @@ export function DefaultLayout() {
       <Header />
       <DefaultLayoutContent>
         <MenuLayout>
-          <Menu />
+          <SecondarySideMenu />
         </MenuLayout>
         <OutletLayout>
           <Outlet />

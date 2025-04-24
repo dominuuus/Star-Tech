@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import { DefaultLayout } from "./layouts/defaultLayout/defaultLayout";
-import { Home } from "./pages/Home/Home";
+import { Astronaut } from "./pages/Astronaut/Astronaut";
 
 export function Router() {
     return (
         <Routes>
             <Route path="/" element={<DefaultLayout />}>
-                <Route path="/" element={<Home/>} />
+                <Route path="/" element={<Astronaut/>} />
             </Route>
         </Routes>
     )

@@ -1,4 +1,4 @@
-import { MenuStats, ProjectProgressBar, SquadStatsContainer } from "./SquadStats.styles";
+import { MenuStats, ProjectProgressBar, SquadStatsContainer } from "./ProjectStatusCard.styles";
 
 export function SquadStats() {
   return (

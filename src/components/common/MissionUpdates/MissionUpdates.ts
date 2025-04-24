@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NewsAstronautBarContainer = styled.div`
+export const MissionUpdatesContainer = styled.div`
     display: flex;
     flex-direction: column;
     background-color: #f0f0f0;
