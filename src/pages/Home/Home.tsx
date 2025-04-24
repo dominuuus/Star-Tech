@@ -3,6 +3,7 @@ import images from "../../assets/images";
 import { SquadStats } from "../../components/SquadStats/SquadStats";
 import { NewsAstronautBar } from "../../components/NewsAstronautBar/NewsAstronaut";
 import { ProjectStats } from "../../components/ProjectStats/ProjectStats";
+import { CaretCircleRight } from "phosphor-react";
 
 export function Home() {
   return (
@@ -27,6 +28,7 @@ export function Home() {
         <SectionTwoStats>
               <SquadStats></SquadStats>
               <ProjectStats></ProjectStats>
+              <CaretCircleRight size={32} weight="fill" />
         </SectionTwoStats>
 
       </HomeSectionTwo>
