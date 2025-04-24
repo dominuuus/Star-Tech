@@ -1,10 +1,10 @@
 import { MenuBlockOne, MenuBlockTwo, MenuContainer, MenuItem } from "./SecondarySideMenu.styles";
 import {
-  Alien,
-  GraduationCap,
+  Lightning,
   Planet,
   RocketLaunch,
   Trophy,
+  User,
   Wrench,
 } from "phosphor-react";
 
@@ -14,19 +14,19 @@ export function SecondarySideMenu() {
       <MenuBlockOne>
         <MenuItem>
           <span>
-            <Planet size={28} weight="fill"/>
+            <RocketLaunch size={28} weight="fill"/>
           </span>
-          <span>Base</span>
+          <span>Nave</span>
         </MenuItem>
         <MenuItem>
           <span>
-            <GraduationCap size={28} weight="fill"/>
+            <User size={28} weight="fill" />
           </span>
           <span>Piloto</span>
         </MenuItem>
         <MenuItem>
           <span>
-            <RocketLaunch size={28} weight="fill"/>
+          <Lightning size={32} weight="fill" />
           </span>
           <span>Missões</span>
         </MenuItem>
@@ -41,7 +41,7 @@ export function SecondarySideMenu() {
       <MenuBlockTwo>
         <MenuItem>
           <span>
-            <Alien size={28} weight="fill"/>
+            <Planet size={28} weight="fill"/>
           </span>
           <span>Explorar</span>
         </MenuItem>
