@@ -26,8 +26,10 @@ export const MissionCardInfoContent = styled.div`
   p {font-size: 0.75rem;};
 `;
 
-export const MissionCardTitle = styled.div`
+export const MissionCardTitle = styled.section`
+  display: flex;
   flex-direction: column;
   font-weight: bold;
+
 
 `
