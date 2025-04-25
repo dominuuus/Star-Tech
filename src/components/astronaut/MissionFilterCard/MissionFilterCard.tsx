@@ -1,4 +1,4 @@
-import { MissionFilterCardContainer } from "./MissionFilterCard.styled";
+import { MissionFilterCardContainer } from "./MissionFilterCard.styles";
 
 export function MissionFilterCard() {
     return (
