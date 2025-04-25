@@ -35,14 +35,15 @@ export const SectionTwoContentTwo = styled.div`
 `;
 
 export const MissionStatusContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  background-color: gray;
-  width: 28rem;
-  height: 20rem;
-  border-radius: 0.75rem;
-  padding: 1rem;
-`;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    width: 28rem;
+    height: 20rem;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    gap: 15px;
+`
 export const CommandCenterContent = styled.div`
   background-color: gray;
   width: 28rem;
