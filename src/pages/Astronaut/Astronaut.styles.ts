@@ -45,6 +45,7 @@ export const MissionStatusContent = styled.div`
     height: 20rem;
     border-radius: 0.75rem;
     padding: 1rem;
+    gap: 15px;
 `
 export const CommandCenterContent = styled.div`
     background-color: gray;
