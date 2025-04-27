@@ -12,18 +12,18 @@ export const MenuStats = styled.div`
     gap: 0.2rem;
 
     button {
-        background-color: #000000;
-        color: #ffffff;
-        border: none;
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
+        background-color: #ffffff;
+        color: #082751;
+        border-radius: 30px;
+        padding: 0.8rem 1rem;
         cursor: pointer;
-        font-size: 0.75rem;
-        border: 1px solid #000000;
+        font-size: 0.80rem;
+        font-weight: bold;
+        border: 2.2px solid #082751;
         &:hover {
-            background-color: #ffffff;
-            color: #000000;
-            border: 1px solid #000000;
+            background-color: #082751;
+            color: #ffffff;
+            border: 1px solid #082751;
         }
     }
 `
@@ -31,14 +31,6 @@ export const MenuStats = styled.div`
 export const ProjectProgressBar = styled.div`
     display: flex;
     flex-direction: column;
-    background-color:rgb(234, 230, 230);
     padding: 0.5rem;
-    progress {
-        height: 1rem;
-        width: 100%;
-        border-radius: 10px;
-        background-color: #000000;
-        color: #000000;
-        margin-bottom: 0.5rem;
-    }
+    
 `
