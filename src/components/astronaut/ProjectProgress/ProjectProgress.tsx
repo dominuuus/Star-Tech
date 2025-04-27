@@ -4,7 +4,7 @@ import {
   ProjectProgressCritical,
   ProjectProgressDefault,
   ProjectProgressSuccess,
-} from "./ProjectProgress.styled";
+} from "./ProjectProgress.styles";
 
 export function ProjectProgress() {
   return (
