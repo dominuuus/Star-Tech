@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const MenuContainer = styled.div`
-    background-color: #f0f0f0;
+    background-color: #09152B;
+    opacity: 80%;
     width: 5rem;
     height: 32rem;
     justify-content: space-between;
@@ -25,7 +26,6 @@ export const MenuItem = styled.div`
     
     &:hover {
         cursor: pointer;
-        background-color: #fff;
     }
 
     a {

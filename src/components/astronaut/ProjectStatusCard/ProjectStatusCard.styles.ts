@@ -32,5 +32,5 @@ export const ProjectProgressBar = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    
+    gap: 10px;
 `

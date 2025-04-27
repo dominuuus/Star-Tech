@@ -12,7 +12,7 @@ export function ProjectProgress() {
       <ProjectProgressContainer>
         <ProjectProgressDefault>
           <ProjectProgressCritical>
-            <span>Projeto 1</span>
+            <span>Projeto 2</span>
           </ProjectProgressCritical>
         </ProjectProgressDefault>
         <div>
@@ -22,7 +22,7 @@ export function ProjectProgress() {
       <ProjectProgressContainer>
         <ProjectProgressDefault>
           <ProjectProgressAlert>
-            <span>Projeto 3</span>
+            <span>Projeto 4</span>
           </ProjectProgressAlert>
         </ProjectProgressDefault>
         <div>
@@ -32,11 +32,22 @@ export function ProjectProgress() {
       <ProjectProgressContainer>
         <ProjectProgressDefault>
           <ProjectProgressSuccess>
-            <span>Projeto 6</span>
+            <span>Projeto 1</span>
           </ProjectProgressSuccess>
         </ProjectProgressDefault>
         <div>
           <span>80%</span>
+        </div>
+      </ProjectProgressContainer>
+
+      <ProjectProgressContainer>
+        <ProjectProgressDefault>
+          <ProjectProgressSuccess>
+            <span>Projeto 2</span>
+          </ProjectProgressSuccess>
+        </ProjectProgressDefault>
+        <div>
+          <span>81%</span>
         </div>
       </ProjectProgressContainer>
     </>
