@@ -1,12 +1,44 @@
+import {
+  ProjectProgressAlert,
+  ProjectProgressContainer,
+  ProjectProgressCritical,
+  ProjectProgressDefault,
+  ProjectProgressSuccess,
+} from "./ProjectProgress.styled";
+
 export function ProjectProgress() {
-    return (
-        <>
-            <progress value={10} max={100} />
-          <progress value={20} max={100} />
-          <progress value={30} max={100} />
-          <progress value={50} max={100} />
-          <progress value={90} max={100} />
-          <progress value={100} max={100} />
-        </>
-    )
+  return (
+    <>
+      <ProjectProgressContainer>
+        <ProjectProgressDefault>
+          <ProjectProgressCritical>
+            <span>Projeto 1</span>
+          </ProjectProgressCritical>
+        </ProjectProgressDefault>
+        <div>
+          <span>30%</span>
+        </div>
+      </ProjectProgressContainer>
+      <ProjectProgressContainer>
+        <ProjectProgressDefault>
+          <ProjectProgressAlert>
+            <span>Projeto 3</span>
+          </ProjectProgressAlert>
+        </ProjectProgressDefault>
+        <div>
+          <span>50%</span>
+        </div>
+      </ProjectProgressContainer>
+      <ProjectProgressContainer>
+        <ProjectProgressDefault>
+          <ProjectProgressSuccess>
+            <span>Projeto 6</span>
+          </ProjectProgressSuccess>
+        </ProjectProgressDefault>
+        <div>
+          <span>80%</span>
+        </div>
+      </ProjectProgressContainer>
+    </>
+  );
 }
