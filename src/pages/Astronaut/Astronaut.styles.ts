@@ -40,7 +40,7 @@ export const SectionTwoContentTwo = styled.div`
 export const MissionStatusContent = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: #dfdfdf;
     width: 28rem;
     height: 20rem;
     border-radius: 0.75rem;
@@ -48,7 +48,6 @@ export const MissionStatusContent = styled.div`
     gap: 15px;
 `
 export const CommandCenterContent = styled.div`
-    background-color: gray;
     width: 28rem;
     height: 20rem;
     border-radius: 0.75rem;
@@ -56,24 +55,30 @@ export const CommandCenterContent = styled.div`
 
 export const SpaceshipContent = styled.div`
     position: absolute;
-    margin-top: 10.5rem;
+    margin-top: 10%;
     width: 40rem;
-    height: 9.5rem;
-    background-color: gray;
+    height: 9rem;
     border-radius: 0.75rem;
     padding: 1rem;
+    right: 200px;
 `
 
 export const MascotContent = styled.div`
     height: 10rem;
-    background-color: gray;
     border-radius: 0.75rem;
     padding: 1rem;
+
+    img {
+        height: 3.5rem;
+    }
 `
 
 export const AchievementContent = styled.div`
     height: 10rem;
-    background-color: gray;
     border-radius: 0.75rem;
     padding: 1rem;
+
+    img {
+        height: 4rem;
+    }
 `

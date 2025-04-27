@@ -1,7 +1,12 @@
+import images from "../../../assets/images";
+import { SpaceshipCardContainer } from "./SpaceshipCard.styles";
+
 export function SpaceshipCard() {
     return (
         <>
-        <span>SpaceShip Card</span>
+        <SpaceshipCardContainer>
+            <img src={images.nave} alt="" />
+        </SpaceshipCardContainer>
         </>
     )
 }

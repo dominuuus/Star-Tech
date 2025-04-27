@@ -1,3 +1,5 @@
+import achievements from "../../assets/achievements";
+import mascotes from "../../assets/mascots";
 import { MissionCard } from "../../components/astronaut/MissionCard/MissionCard";
 import { MissionFilterCard } from "../../components/astronaut/MissionFilterCard/MissionFilterCard";
 import { ProjectStatusCard } from "../../components/astronaut/ProjectStatusCard/ProjectStatusCard";
@@ -17,10 +19,22 @@ export function Astronaut() {
         <SectionTwoContentOne>
           <MascotAchieveNewsContainer>
             <MascotContent>
-              <span>Mascote</span>
+              <img src={mascotes.algorix} alt="" />
+              <img src={mascotes.buggo} alt="" />
+              <img src={mascotes.astroli} alt="" />
+              <img src={mascotes.bytee} alt="" />
+              <img src={mascotes.cachee} alt="" />
+              <img src={mascotes.patch} alt="" />
+              <img src={mascotes.cometin} alt="" />
+              <img src={mascotes.galaxito} alt="" />
+              <img src={mascotes.pluxi} alt="" />
+              <img src={mascotes.floris} alt="" />
             </MascotContent>
             <AchievementContent>
-              <span>Conquistas</span>
+              <img src={achievements.exploradorDeSolido} alt="" />
+              <img src={achievements.ferroVermelho} alt="" />
+              <img src={achievements.fundadorDaFrota} alt="" />
+              <img src={achievements.raizSolida} alt="" />
             </AchievementContent>
             <NewsContent>
               <NewsMission/>
