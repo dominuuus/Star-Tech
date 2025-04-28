@@ -10,5 +10,4 @@ export const GlobalStyle = createGlobalStyle`
     a {
         color: white;
     }
-
 `

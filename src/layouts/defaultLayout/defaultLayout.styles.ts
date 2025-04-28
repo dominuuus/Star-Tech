@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const DefaultLayoutContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    height: 100dvh;
+    width: 100dvw;
 `
 
 export const DefaultLayoutContent = styled.div`
@@ -19,7 +19,9 @@ export const MenuLayout = styled.div`
 `
 
 export const OutletLayout = styled.div`
-    position: relative;
     margin-left: 10%;
-    max-width: 85%;
+`
+
+export const HeaderContainer = styled.div`
+
 `

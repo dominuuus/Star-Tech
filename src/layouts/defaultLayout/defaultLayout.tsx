@@ -3,6 +3,7 @@ import { Header } from "../../components/common/Header/Header";
 import {
   DefaultLayoutContainer,
   DefaultLayoutContent,
+  HeaderContainer,
   MenuLayout,
   OutletLayout,
   
@@ -12,9 +13,9 @@ import { SecondarySideMenu } from "../../components/common/SecondarySideMenu/Sec
 export function DefaultLayout() {
   return (
     <DefaultLayoutContainer>
-      <div>
+      <HeaderContainer>
         <Header />
-      </div>
+      </HeaderContainer>
       <DefaultLayoutContent>
         <MenuLayout>
           <SecondarySideMenu />

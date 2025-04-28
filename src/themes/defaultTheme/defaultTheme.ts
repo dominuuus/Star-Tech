@@ -1,5 +1,4 @@
 export const defaultTheme = {
-  primary: '#09152B',
   colors: {
     primary: '#09152B', // Cor primária (fundo principal, elementos de destaque)
     secondary: '#575D6D', // Cor secundária (detalhes, textos secundários)

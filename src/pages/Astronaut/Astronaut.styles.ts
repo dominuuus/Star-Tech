@@ -15,18 +15,15 @@ export const AstronautSectionOne = styled.section`
 `
 
 export const SectionTwoContentOne = styled.div`
-    display: flex;
-    flex-direction: column;
-`
-
-export const MascotAchieveNewsContainer = styled.div`
     display: grid;
-    grid-template-columns: 40% 30% 30%;
+    grid-template-columns: 60% 36%;
+    margin-top: 1rem;
     gap: 0.5rem;
 `
 
-export const NewsContent = styled.div`
-
+export const MascotAchieveNewsContainer = styled.div`
+    display: flex;
+    flex-direction: column;
 `
 
 export const SectionTwoContentTwo = styled.div`
@@ -35,6 +32,10 @@ export const SectionTwoContentTwo = styled.div`
     grid-template-columns: 50% 50%;
     gap: 0.5rem;
 
+`
+
+export const NewsContent = styled.div`
+    width: 100%
 `
 
 export const MissionStatusContent = styled.div`
@@ -53,34 +54,23 @@ export const CommandCenterContent = styled.div`
     border-radius: 0.75rem;
 `
 
-export const SpaceshipContent = styled.div`
-    position: absolute;
-    margin-top: 10%;
-    width: 40rem;
-    height: 9rem;
-    border-radius: 0.75rem;
-    padding: 1rem;
-    right: 200px;
-`
-
 export const MascotContent = styled.div`
-    height: 10rem;
-    border-radius: 0.75rem;
-    padding: 1rem;
-
-    img {
-        height: 3.5rem;
-        cursor: pointer;
-    }
-`
-
-export const AchievementContent = styled.div`
-    height: 10rem;
     border-radius: 0.75rem;
     padding: 1rem;
 
     img {
         height: 4rem;
+        cursor: pointer;
+    }
+`
+
+export const AchievementContent = styled.div`
+    border-radius: 0.75rem;
+    padding: 1rem;
+    max-height: 4rem;
+
+    img {
+        height: 3.5rem;
         cursor: pointer;
     }
 `
@@ -137,6 +127,10 @@ export const MascotDescriptionContainer = styled.div`
 
   span {
     margin-bottom: 10px
+  }
+
+  img {
+    height: 3rem;
   }
 `
 
