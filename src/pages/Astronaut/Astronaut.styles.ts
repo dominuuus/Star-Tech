@@ -70,6 +70,7 @@ export const MascotContent = styled.div`
 
     img {
         height: 3.5rem;
+        cursor: pointer;
     }
 `
 
@@ -80,5 +81,98 @@ export const AchievementContent = styled.div`
 
     img {
         height: 4rem;
+        cursor: pointer;
     }
 `
+
+
+export const CustomizeButton = styled.button`
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background-color: blue;
+  }
+`;
+
+export const ModalTitle = styled.h2`
+  color: black;
+`;
+
+export const ModalContentWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px 20px 20px 10px;
+  align-items: center;
+  font-size: 0.75rem;
+
+  img {
+    height: 10rem;
+  }
+`;
+
+export const MascotDescriptionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  span {
+    margin-bottom: 10px
+  }
+`
+
+export const ModalContentDescription = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`
+
+export const ModalContentInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  span {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+`
+export const ModalButtons = styled.div`
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+  margin-top: 20px;
+`;
+
+export const CloseModalButton = styled.button`
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+`;
+
+export const FavoriteModalButton = styled.button`
+  padding: 10px;
+  border-radius: 4px;
+  background-color: yellow;
+`;
