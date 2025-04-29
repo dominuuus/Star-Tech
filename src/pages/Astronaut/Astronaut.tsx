@@ -28,7 +28,6 @@ import {
 } from "./Astronaut.styles";
 import { MascotModal } from "../../components/common/MascotModal/MascotModal";
 import { AchievementModal } from "../../components/common/AchievementModal/AchievementModal";
-import { Crown, HeartStraight } from "phosphor-react";
 
 export function Astronaut() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -50,7 +49,6 @@ export function Astronaut() {
           <MascotAchieveNewsContainer>
             <MascotContent>
               <div>
-                <HeartStraight size={20} weight="fill" />
                 <span>Mascotes</span>
               </div>
               <img src={mascotes.algorix} alt="" onClick={openMascotModal} />
@@ -107,7 +105,6 @@ export function Astronaut() {
             </MascotContent>
             <AchievementContent>
               <div>
-                <Crown size={20} weight="fill" />
                 <span>Conquistas</span>
               </div>
               <img
@@ -168,7 +165,6 @@ export function Astronaut() {
           </div>
 
           <div>
-            <span>Status das missões</span>
             <MissionStatusContent>
               <MissionFilterCard />
               <MissionCard />

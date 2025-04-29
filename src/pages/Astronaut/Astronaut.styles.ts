@@ -47,6 +47,7 @@ export const MissionStatusContent = styled.div`
     border-radius: 0.75rem;
     padding: 1rem;
     gap: 15px;
+    margin-top: 20px;
 `
 export const CommandCenterContent = styled.div`
     width: 28rem;
