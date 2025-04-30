@@ -1,10 +1,16 @@
 import { NavLink } from "react-router-dom";
-import { ProfileCard } from "../ProfileCard/ProfileCard";
-import { MainTopMenuContainer, NavigationContainer, ProfileContainer, SearchContainer } from "./MainTopMenu.styles";
+import images from "../../../assets/images";
+import { HeaderContainer, MainTopMenuContainer, NavigationContainer, SearchContainer } from "./HeaderNotLogged.styles";
 
-export function MainTopMenu() {
+
+export function HeaderNotLogged() {
     return (
-        <MainTopMenuContainer>
+        <HeaderContainer>
+            <div>
+                <img src={images.logo} alt="" />
+            </div>
+
+            <MainTopMenuContainer>
             <NavigationContainer>
                 <nav>
                     <ul>
@@ -13,7 +19,7 @@ export function MainTopMenu() {
                     </NavLink>  
                     <span>Docs</span> 
                     <span>Tutorial</span>
-                    <span>Playground</span>  
+                    <span>Playground</span> 
                     </ul>
                 </nav>
             </NavigationContainer>
@@ -22,10 +28,9 @@ export function MainTopMenu() {
                 <input type="text" placeholder="Pesquisar" />
             </SearchContainer>
 
-            <ProfileContainer>
-                <ProfileCard/>
-            </ProfileContainer>
-
         </MainTopMenuContainer>
-    )
+
+        </HeaderContainer>
+    );
+    
 }
