@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const CardMissionContainer = styled.div`
   display: flex; 
   margin-top: 10px;
-
   button {
     background-color: #575D6D;
     width: 100%;
@@ -18,9 +17,7 @@ export const CardMissionContainer = styled.div`
     flex-direction: row;
     transition: color 0.15s, background-color 0.15s;
     justify-content: space-between;
-
   }
-
   button:hover {
       background: #09152b;
       color: #ffffff;
@@ -33,7 +30,6 @@ export const CardMissionContainer = styled.div`
     justify-content: center;
     margin-right: 20px;
   }
-
 `
 
 export const CardMissionDetails = styled.div`
@@ -42,7 +38,6 @@ export const CardMissionDetails = styled.div`
   margin-left: 15px;
   gap: 25px;
   font-size: 0.75rem;
-
   .calendar {
     display: flex;
     flex-direction: row;
@@ -59,7 +54,6 @@ export const TitleMission = styled.div`
   display: Flex;
   flex-direction: column;
   font-weight: bold;
-
   span {
     display: flex;
     flex-direction: row;
