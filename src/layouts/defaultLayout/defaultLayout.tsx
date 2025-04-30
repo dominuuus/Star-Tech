@@ -6,24 +6,25 @@ import {
   HeaderContainer,
   MenuLayout,
   OutletLayout,
-  
 } from "./defaultLayout.styles";
 import { SecondarySideMenu } from "../../components/common/SecondarySideMenu/SecondarySideMenu";
 
 export function DefaultLayout() {
   return (
-    <DefaultLayoutContainer>
+    <>
       <HeaderContainer>
         <Header />
       </HeaderContainer>
-      <DefaultLayoutContent>
-        <MenuLayout>
-          <SecondarySideMenu />
-        </MenuLayout>
-        <OutletLayout>
-          <Outlet />
-        </OutletLayout>
-      </DefaultLayoutContent>
-    </DefaultLayoutContainer>
+      <DefaultLayoutContainer>
+        <DefaultLayoutContent>
+          <MenuLayout>
+            <SecondarySideMenu />
+          </MenuLayout>
+          <OutletLayout>
+            <Outlet />
+          </OutletLayout>
+        </DefaultLayoutContent>
+      </DefaultLayoutContainer>
+    </>
   );
 }

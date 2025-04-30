@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MenuContainer = styled.div`
     background-color: #09152B;
     opacity: 80%;
-    width: 5rem;
+    width: 4rem;
     height: 32rem;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@ export const MenuContainer = styled.div`
 export const MenuItem = styled.div`
     display: flex;
     flex-direction: column;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     
     &:hover {
         cursor: pointer;

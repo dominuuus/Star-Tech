@@ -94,14 +94,19 @@ export function Astronaut() {
                 </ModalContentWrapper>
               </MascotModal>
               <img src={mascotes.buggo} alt="" />
-              <img src={mascotes.astroli} alt="" />
+              <img src={mascotes.syntaxx} alt="" />
               <img src={mascotes.bytee} alt="" />
               <img src={mascotes.cachee} alt="" />
               <img src={mascotes.patch} alt="" />
               <img src={mascotes.cometin} alt="" />
               <img src={mascotes.galaxito} alt="" />
-              <img src={mascotes.pluxi} alt="" />
+              <img src={mascotes.nubbi} alt="" />
               <img src={mascotes.floris} alt="" />
+              <img src={mascotes.trillex} alt="" />
+              <img src={mascotes.voidy} alt="" />
+              <img src={mascotes.solin} alt="" />
+              <img src={mascotes.poxel} alt="" />
+              <img src={mascotes.quanti} alt="" />
             </MascotContent>
             <AchievementContent>
               <div>
@@ -146,6 +151,8 @@ export function Astronaut() {
               <img src={achievements.exploradorDeSolido} alt="" />
               <img src={achievements.fundadorDaFrota} alt="" />
               <img src={achievements.raizSolida} alt="" />
+              <img src={achievements.diplomataCosmico} alt="" />
+              <img src={achievements.qualidadeConstante} alt="" />
             </AchievementContent>
           </MascotAchieveNewsContainer>
 

@@ -1,81 +1,87 @@
 import styled from "styled-components";
 
 export const AstronautContainer = styled.main`
-    display: flex;
-`
+  display: flex;
+`;
 
 export const AstronautSectionTwo = styled.section`
-    display: flex;
-    flex-direction: column;
-`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const AstronautSectionOne = styled.section`
-    display: flex;
-    flex-direction: column;
-`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const SectionTwoContentOne = styled.div`
-    display: grid;
-    grid-template-columns: 60% 36%;
-    margin-top: 1rem;
-    gap: 0.5rem;
-`
+  display: grid;
+  grid-template-columns: 60% 34%;
+  margin-top: 1rem;
+  gap: 0.5rem;
+`;
 
 export const MascotAchieveNewsContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-`
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+`;
 
 export const SectionTwoContentTwo = styled.div`
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 0.5rem;
-
-`
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0.5rem;
+`;
 
 export const NewsContent = styled.div`
-    width: 100%
-`
+  width: 100%;
+`;
 
 export const MissionStatusContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    background-color: #dfdfdf;
-    width: 28rem;
-    height: 20rem;
-    border-radius: 0.75rem;
-    padding: 1rem;
-    gap: 15px;
-    margin-top: 20px;
-`
+  display: flex;
+  flex-direction: column;
+  background-color: #dfdfdf;
+  width: 28rem;
+  height: 20rem;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  gap: 15px;
+  margin-top: 20px;
+`;
 export const CommandCenterContent = styled.div`
-    width: 28rem;
-    height: 20rem;
-    border-radius: 0.75rem;
-`
+  width: 28rem;
+  height: 20rem;
+  border-radius: 0.75rem;
+`;
 
 export const MascotContent = styled.div`
-    border-radius: 0.75rem;
-    padding: 1rem;
+  border-radius: 0.75rem;
+  padding: 1rem;
 
-    img {
-        height: 4rem;
-        cursor: pointer;
+  img {
+    height: 4rem;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.35);
     }
-`
+  }
+`;
 
 export const AchievementContent = styled.div`
-    border-radius: 0.75rem;
-    padding: 1rem;
-    max-height: 4rem;
+  border-radius: 0.75rem;
+  padding: 1rem 1rem 1rem 0;
+  max-height: 4rem;
 
-    img {
-        height: 3.5rem;
-        cursor: pointer;
+  img {
+    height: 3.5rem;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.35);
     }
-`
-
+  }
+`;
 
 export const CustomizeButton = styled.button`
   background-color: blue;
@@ -127,30 +133,30 @@ export const MascotDescriptionContainer = styled.div`
   }
 
   span {
-    margin-bottom: 10px
+    margin-bottom: 10px;
   }
 
   img {
     height: 3rem;
   }
-`
+`;
 
 export const ModalContentDescription = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-`
+`;
 
 export const ModalContentInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   span {
     font-weight: bold;
     font-size: 1.3rem;
   }
-`
+`;
 export const ModalButtons = styled.div`
   display: flex;
   gap: 10px;
