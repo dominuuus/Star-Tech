@@ -7,6 +7,7 @@ import { Hangar } from "./pages/Hangar/Hangar";
 import { Spaceship } from "./pages/Spaceship/Spaceship";
 import { Mission } from "./pages/Mission/Mission";
 import { LoginIn } from "./pages/LoginIn/LoginIn";
+import { GreenMission } from "./pages/GreenMission/GreenMission";
 
 export function Router() {
     return (
@@ -19,6 +20,7 @@ export function Router() {
                 <Route path="explorar" element={<Explore/>} />
                 <Route path="oficina" element={<Hangar/>} />
                 <Route path="nave" element={<Spaceship/>} />
+                <Route path="desafios" element={<GreenMission/>} />
             </Route>
 
             <Route path="/" element={<LoginIn />}>
