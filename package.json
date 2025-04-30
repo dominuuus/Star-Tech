@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@phosphor-icons/react": "github:phosphor-icons/react",
     "framer-motion": "^12.6.5",
     "phosphor-react": "^1.4.1",
     "react": "^19.0.0",
