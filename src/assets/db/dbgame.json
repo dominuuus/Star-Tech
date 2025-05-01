@@ -1,0 +1,293 @@
+{
+    "Jogadores": [
+      {
+        "Id": 1,
+        "Nome": "Astro João",
+        "Email": "joao.astro@xai.com",
+        "Foto": "https://xai.com/avatars/joao.webp",
+        "Descrição": "Explorador de bugs estelares",
+        "Estelares": 150,
+        "Nível": 3,
+        "Avatar_Id": 1,
+        "Equipe_Id": 1,
+        "Cargo": "Tech Líder"
+      },
+      {
+        "Id": 2,
+        "Nome": "Luna Maria",
+        "Email": "luna.maria@xai.com",
+        "Foto": "https://xai.com/avatars/luna.webp",
+        "Descrição": "Especialista em código limpo",
+        "Estelares": 100,
+        "Nível": 2,
+        "Avatar_Id": 2,
+        "Equipe_Id": 1,
+        "Cargo": "Desenvolvedor"
+      },
+      {
+        "Id": 3,
+        "Nome": "Cosmo Pedro",
+        "Email": "pedro.cosmo@xai.com",
+        "Foto": "https://xai.com/avatars/pedro.webp",
+        "Descrição": "Mestre em entregas rápidas",
+        "Estelares": 80,
+        "Nível": 1,
+        "Avatar_Id": 3,
+        "Equipe_Id": 1,
+        "Cargo": "Desenvolvedor"
+      }
+    ],
+    "Equipes": [
+      {
+        "Id": 1,
+        "Nome": "Nave Orion",
+        "Descrição": "Tripulação de elite para explorar a galáxia",
+        "Nave_Id": 1
+      }
+    ],
+    "Planetas": [
+      {
+        "Id": 1,
+        "Nome": "Nebula-7",
+        "Descrição": "Planeta de nuvens cósmicas",
+        "Status": "Não Explorado",
+        "Qtd_missões": 8,
+        "Tema_Principal_Id": 1
+      },
+      {
+        "Id": 2,
+        "Nome": "Astra-12",
+        "Descrição": "Planeta rochoso com missões críticas",
+        "Status": "Incompleto",
+        "Qtd_missões": 8,
+        "Tema_Principal_Id": 2
+      },
+      {
+        "Id": 3,
+        "Nome": "Luminar-4",
+        "Descrição": "Planeta brilhante com desafios colaborativos",
+        "Status": "Incompleto",
+        "Qtd_missões": 8,
+        "Tema_Principal_Id": 3
+      },
+      {
+        "Id": 4,
+        "Nome": "Eclipse-9",
+        "Descrição": "Planeta sombrio com missões técnicas",
+        "Status": "Não Explorado",
+        "Qtd_missões": 8,
+        "Tema_Principal_Id": 4
+      },
+      {
+        "Id": 5,
+        "Nome": "Stellaris-3",
+        "Descrição": "Planeta vibrante com foco em inovação",
+        "Status": "Não Explorado",
+        "Qtd_missões": 8,
+        "Tema_Principal_Id": 5
+      }
+    ],
+    "Temas_Principais": [
+      {
+        "Id": 1,
+        "Nome": "Entrega e Ação",
+        "Descrição": "Foco em entregas rápidas e impacto imediato"
+      },
+      {
+        "Id": 2,
+        "Nome": "Código Limpo",
+        "Descrição": "Prioriza qualidade e manutenção do código"
+      },
+      {
+        "Id": 3,
+        "Nome": "Colaboração Estelar",
+        "Descrição": "Incentiva trabalho em equipe e sinergia"
+      },
+      {
+        "Id": 4,
+        "Nome": "Resolução de Bugs",
+        "Descrição": "Foco em corrigir problemas críticos"
+      },
+      {
+        "Id": 5,
+        "Nome": "Inovação Cósmica",
+        "Descrição": "Explora novas ideias e tecnologias"
+      }
+    ],
+    "Missões": [
+      {
+        "Id": 1,
+        "Nome": "Otimizar API Estelar",
+        "Descrição": "Melhorar performance da API",
+        "Tipo_Missão_Id": 1,
+        "Status": "Pendente",
+        "Data_Criação": "2025-04-25T08:00:00Z",
+        "Data_Prazo": "2025-05-05T23:59:59Z",
+        "Data_Conclusão": null,
+        "Qtd_moedas": 5,
+        "Fases_Total": 1,
+        "Fases_Concluídas": 0,
+        "Planeta_Id": 1,
+        "Projeto_Id": 1,
+        "Tech_Líder_Id": 1
+      },
+      {
+        "Id": 2,
+        "Nome": "Corrigir Bug Crítico",
+        "Descrição": "Resolver falha no sistema de login",
+        "Tipo_Missão_Id": 2, 
+        "Status": "Atrasada",
+        "Data_Criação": "2025-04-20T09:00:00Z",
+        "Data_Prazo": "2025-04-28T23:59:59Z",
+        "Data_Conclusão": null,
+        "Qtd_moedas": 10,
+        "Fases_Total": 3,
+        "Fases_Concluídas": 1,
+        "Planeta_Id": 2,
+        "Projeto_Id": 2,
+        "Tech_Líder_Id": 1
+      },
+      {
+        "Id": 3,
+        "Nome": "Implementar Nova Feature",
+        "Descrição": "Adicionar funcionalidade de ranking",
+        "Tipo_Missão_Id": 3,
+        "Status": "Em Progresso",
+        "Data_Criação": "2025-04-22T10:00:00Z",
+        "Data_Prazo": "2025-05-10T23:59:59Z",
+        "Data_Conclusão": null,
+        "Qtd_moedas": 10,
+        "Fases_Total": 3,
+        "Fases_Concluídas": 2,
+        "Planeta_Id": 3,
+        "Projeto_Id": 3,
+        "Tech_Líder_Id": 1
+      }
+    ],
+    "Tipos_Missões": [
+      {
+        "Id": 1,
+        "Nome": "Amarela",
+        "Peso": 2,
+        "Cor": "yellow-500"
+      },
+      {
+        "Id": 2,
+        "Nome": "Vermelha",
+        "Peso": 4,
+        "Cor": "red-500"
+      },
+      {
+        "Id": 3,
+        "Nome": "Azul",
+        "Peso": 3,
+        "Cor": "blue-500"
+      }
+    ],
+    "Projetos": [
+      {
+        "Id": 1,
+        "Nome": "API Estelar",
+        "Descrição": "API para integração galáctica",
+        "Progresso": 20.0,
+        "Equipe_Id": 1
+      },
+      {
+        "Id": 2,
+        "Nome": "Sistema de Login Seguro",
+        "Descrição": "Autenticação robusta para usuários",
+        "Progresso": 60.0,
+        "Equipe_Id": 1
+      },
+      {
+        "Id": 3,
+        "Nome": "Plataforma de Ranking",
+        "Descrição": "Sistema de classificação de jogadores",
+        "Progresso": 90.0,
+        "Equipe_Id": 1
+      }
+    ],
+    "Credenciais": [
+      {
+        "Id": 1,
+        "Nome": "Projeto API Estelar",
+        "Tipo": "Projeto"
+      },
+      {
+        "Id": 2,
+        "Nome": "Projeto Sistema de Login Seguro",
+        "Tipo": "Projeto"
+      },
+      {
+        "Id": 3,
+        "Nome": "Projeto Plataforma de Ranking",
+        "Tipo": "Projeto"
+      },
+      {
+        "Id": 4,
+        "Nome": "Nave Orion",
+        "Tipo": "Nave"
+      },
+      {
+        "Id": 5,
+        "Nome": "Equipe Nave Orion",
+        "Tipo": "Equipe"
+      }
+    ],
+    "Jogador_Credencial": [
+      { "Jogador_Id": 1, "Credencial_Id": 1 },
+      { "Jogador_Id": 1, "Credencial_Id": 2 },
+      { "Jogador_Id": 1, "Credencial_Id": 3 },
+      { "Jogador_Id": 1, "Credencial_Id": 4 },
+      { "Jogador_Id": 1, "Credencial_Id": 5 },
+      { "Jogador_Id": 2, "Credencial_Id": 1 },
+      { "Jogador_Id": 2, "Credencial_Id": 2 },
+      { "Jogador_Id": 2, "Credencial_Id": 4 },
+      { "Jogador_Id": 2, "Credencial_Id": 5 },
+      { "Jogador_Id": 3, "Credencial_Id": 3 },
+      { "Jogador_Id": 3, "Credencial_Id": 4 },
+      { "Jogador_Id": 3, "Credencial_Id": 5 }
+    ],
+    "Missões_Verdes": [
+      {
+        "Id": 1,
+        "Nome": "Faça um Tour Cósmico",
+        "Descrição": "Explore a plataforma pela primeira vez",
+        "Status": "Concluída",
+        "Qtd_moedas": 5,
+        "Nível_Id": 1
+      },
+      {
+        "Id": 2,
+        "Nome": "Primeiro Commit Estelar",
+        "Descrição": "Realize seu primeiro commit no projeto",
+        "Status": "Pendente",
+        "Qtd_moedas": 5,
+        "Nível_Id": 1
+      }
+    ],
+    "Níveis_Missões_Verdes": [
+      {
+        "Id": 1,
+        "Nome": "Iniciação Cósmica",
+        "Ordem": 1,
+        "Status": "Desbloqueado"
+      }
+    ],
+    "Jogador_Missão_Verde": [
+      { "Jogador_Id": 1, "Missão_Verde_Id": 1, "Status": "Concluída", "Data_Conclusão": "2025-04-25T12:00:00Z" },
+      { "Jogador_Id": 2, "Missão_Verde_Id": 1, "Status": "Concluída", "Data_Conclusão": "2025-04-26T14:00:00Z" },
+      { "Jogador_Id": 3, "Missão_Verde_Id": 2, "Status": "Pendente", "Data_Conclusão": null }
+    ],
+    "Naves": [
+      {
+        "Id": 1,
+        "Nome": "Orion Explorer",
+        "Descrição": "Nave ágil para exploração galáctica",
+        "Status": "Em Rota",
+        "Planeta_Origem_Id": 1,
+        "Planeta_Destino_Id": 3,
+        "Progresso_Trajeto": 50.0
+      }
+    ]
+  }

@@ -1,44 +1,41 @@
 import { CalendarCheck, CaretCircleRight } from "phosphor-react";
 import {
   MissionCardContainer,
+  MissionCardContent,
   MissionCardInfoContent,
   MissionCardTitle,
 } from "./MissionCard.styles";
+
+import gameData from "../../../assets/db/dbgame.json";
 
 export function MissionCard() {
   return (
     <>
       <MissionCardContainer>
-        <MissionCardInfoContent>
-          <MissionCardTitle>
-            <span>Missão R2-Deploy2</span>
-            <span>Projeto: BBcrédito</span>
-          </MissionCardTitle>
+        {
+          gameData.Missões.map(missao => (
+            <MissionCardContent key={missao.Id}>
+          <MissionCardInfoContent>
+            <MissionCardTitle>
+              <span>{missao.Nome}</span>
+              <span>Projeto: BBcrédito</span>
+            </MissionCardTitle>
+            <div>
+              <CalendarCheck size={20} weight="fill" />
+              <p>{missao.Status}</p>
+            </div>
+          </MissionCardInfoContent>
           <div>
-            <CalendarCheck size={20} weight="fill" />
-            <p>Vencida ontem</p>
+            <CaretCircleRight size={32} weight="fill" />
           </div>
-        </MissionCardInfoContent>
-        <div>
-          <CaretCircleRight size={32} weight="fill" />
-        </div>
+        </MissionCardContent>
+
+          ))
+
+        }
+        
       </MissionCardContainer>
 
-      <MissionCardContainer>
-        <MissionCardInfoContent>
-          <MissionCardTitle>
-            <span>Missão R2-Deploy2</span>
-            <span>Projeto: BBcrédito</span>
-          </MissionCardTitle>
-          <div>
-            <CalendarCheck size={20} weight="fill" />
-            <p>Vencida ontem</p>
-          </div>
-        </MissionCardInfoContent>
-        <div>
-          <CaretCircleRight size={32} weight="fill" />
-        </div>
-      </MissionCardContainer>
     </>
   );
 }

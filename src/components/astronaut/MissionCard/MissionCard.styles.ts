@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 export const MissionCardContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+export const MissionCardContent = styled.div`
+  display: flex;
   background-color: white;
   border-radius: 37px;
   padding: 10px;

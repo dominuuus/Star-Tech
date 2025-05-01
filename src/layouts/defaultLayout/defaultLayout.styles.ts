@@ -9,7 +9,7 @@ export const DefaultLayoutContainer = styled.div`
 
 export const DefaultLayoutContent = styled.div`
     display: flex;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 5% 95%;
     margin-top: 120px;
 
 
@@ -20,7 +20,7 @@ export const MenuLayout = styled.div`
 `
 
 export const OutletLayout = styled.div`
-    margin-left: 100px;
+    margin-left: 50px;
 `
 
 export const HeaderContainer = styled.div`
