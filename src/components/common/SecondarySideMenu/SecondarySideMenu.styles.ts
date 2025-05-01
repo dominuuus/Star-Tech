@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MenuContainer = styled.div`
-  background-color:#09152b;
+  background-color: ${(props) => props.theme.colors.primary};
   width: 2rem;
   height: 30rem;
   justify-content: space-between;
@@ -22,7 +22,7 @@ export const MenuContainer = styled.div`
   }
 
   &:hover {
-    background-color: #09152b;
+    background-color:${(props) => props.theme.colors.primary};;
     width: 4rem;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -31,10 +31,10 @@ export const MenuContainer = styled.div`
     }
 
     a {
-        color: white;
+        color: ${(props) => props.theme.colors.white};
 
         &:hover {
-            color:rgb(86, 130, 213);
+            color: ${(props) => props.theme.colors.linkHover};
         }
     }
   }

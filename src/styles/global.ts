@@ -8,6 +8,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     a {
-        color: white;
+        color: ${(props) => props.theme.colors.white};
     }
 `

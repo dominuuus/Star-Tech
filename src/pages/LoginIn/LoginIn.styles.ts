@@ -37,12 +37,12 @@ export const LoginSectionTwo = styled.div`
 
     button {
         width: 300px;
-        background-color: #09152B;
+        background-color: ${(props) => props.theme.colors.primary};;
         color: #fff;
 
         &:hover {
-            background-color:rgb(13, 36, 78);
-            border: 1px solid #09152B;
+            background-color: ${(props) => props.theme.colors.primaryHover};
+            border: 1px solid ${(props) => props.theme.colors.primary};
             color: #FFF;
         }
     }

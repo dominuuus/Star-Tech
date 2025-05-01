@@ -12,18 +12,18 @@ export const MenuStats = styled.div`
     gap: 0.2rem;
 
     button {
-        background-color: #ffffff;
-        color: #082751;
+        background-color: ${(props) => props.theme.colors.white};
+        color: ${(props) => props.theme.colors.tertiary};
         border-radius: 30px;
         padding: 0.8rem 1rem;
         cursor: pointer;
         font-size: 0.80rem;
         font-weight: bold;
-        border: 2.2px solid #082751;
+        border: 1px solid ${(props) => props.theme.colors.gray.light};
         &:hover {
-            background-color: #082751;
-            color: #ffffff;
-            border: 1px solid #082751;
+            background-color: ${(props) => props.theme.colors.tertiary};
+            color: ${(props) => props.theme.colors.white};
+            border: 1px solid ${(props) => props.theme.colors.tertiary};
         }
     }
 `

@@ -8,7 +8,7 @@ export const MissionCardContainer = styled.div`
 
 export const MissionCardContent = styled.div`
   display: flex;
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.white};
   border-radius: 37px;
   padding: 10px;
   align-items: center;

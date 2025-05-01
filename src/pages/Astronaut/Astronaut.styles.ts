@@ -40,7 +40,7 @@ export const NewsContent = styled.div`
 export const MissionStatusContent = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #dfdfdf;
+  background: ${(props) => props.theme.colors.gray.lighter};
   width: 28rem;
   height: 20rem;
   border-radius: 0.75rem;
@@ -83,22 +83,8 @@ export const AchievementContent = styled.div`
   }
 `;
 
-export const CustomizeButton = styled.button`
-  background-color: blue;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-
-  &:hover {
-    background-color: blue;
-  }
-`;
-
 export const ModalTitle = styled.h2`
-  color: black;
+  color: ${(props) => props.theme.colors.black};
 `;
 
 export const ModalContentWrapper = styled.div`
@@ -165,8 +151,8 @@ export const ModalButtons = styled.div`
 `;
 
 export const CloseModalButton = styled.button`
-  background-color: red;
-  color: white;
+  background: ${(props) => props.theme.colors.status.red};
+  color: ${(props) => props.theme.colors.white};
   padding: 10px;
   border-radius: 4px;
   cursor: pointer;
@@ -175,5 +161,5 @@ export const CloseModalButton = styled.button`
 export const FavoriteModalButton = styled.button`
   padding: 10px;
   border-radius: 4px;
-  background-color: yellow;
+  background: ${(props) => props.theme.colors.status.yellow};
 `;

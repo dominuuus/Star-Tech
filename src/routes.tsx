@@ -24,6 +24,7 @@ export function Router() {
             </Route>
 
             <Route path="/" element={<LoginIn />}>
+                <Route path="404" element={<Astronaut/>} />
              </Route>
         </Routes>
     )

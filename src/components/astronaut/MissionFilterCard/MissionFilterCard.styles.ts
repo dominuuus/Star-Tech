@@ -7,7 +7,7 @@ export const MissionFilterCardContainer = styled.div`
 `;
 export const StatusMission = styled.div`
   border-radius: 30px;
-  background-color: white;
+  background: ${(props) => props.theme.colors.white};
   gap: 10px;
   display: flex;
   flex-direction: row;
@@ -31,7 +31,7 @@ export const NumberStyle = styled.span`
 
 export const StatusLateMission = styled.div`
   border-radius: 30px;
-  background-color: white;
+  background: ${(props) => props.theme.colors.white};
   gap: 15px;
   display: flex;
   flex-direction: row;
