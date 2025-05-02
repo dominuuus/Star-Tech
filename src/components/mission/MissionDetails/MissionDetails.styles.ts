@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const MissionDetailsContainer = styled.div `
+
+    
+`
+
+export const MissionDetailsContent = styled.div `
     background-color: white;
     padding-top: 70px;
     
@@ -44,25 +49,29 @@ export const ProgressContainer = styled.div `
 
 `
 export const ProgressMissionBar = styled.div `
-    background-color: #efefef;
-    border-radius: 30px;
-    width: 40%;
-    height: 60px; 
-    position: relative;
-    overflow: hidden;
-  
+  background-color: ${(props) => props.theme.colors.gray.lighter};
+  border-radius: 30px;
+  width: 90%;
 `
 interface ProgressProps {
-    width: string;
+    width: number;
+    background: number;
   }
+
 export const ProgressMissionBarContent = styled.div<ProgressProps> `
-    background-color: red;
-    width: ${(props) => props.width}; 
-    height: 100%;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: red;
-    font-size: 10px;
+  padding: 0.75rem;
+  border-radius: 30px;
+  align-items: center;
+  height: 3rem;
+  width: ${props => props.width}%;
 `
+
+export const ProjectProgressSuccess = styled(ProgressMissionBarContent)`
+  background-color: ${(props) => props.theme.colors.status.green};
+`;
+export const ProjectProgressAlert = styled(ProgressMissionBarContent)`
+  background-color: ${(props) => props.theme.colors.status.yellow};
+`;
+export const ProjectProgressCritical = styled(ProgressMissionBarContent)`
+  background-color: ${(props) => props.theme.colors.status.red};
+`;

@@ -9,11 +9,13 @@ import {
 import gameData from "../../../assets/db/dbgame.json";
 
 export function MissionCard() {
+  const selectedMission = gameData.Missões.slice(0, 2);
+
   return (
     <>
       <MissionCardContainer>
         {
-          gameData.Missões.map(missao => (
+          selectedMission.map(missao => (
             <MissionCardContent key={missao.Id}>
           <MissionCardInfoContent>
             <MissionCardTitle>

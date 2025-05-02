@@ -21,6 +21,7 @@ export function MissionFilterCard() {
       return doneDate >= sevenDaysLater;
     }).length
   }
+  
   return (
     <>
       <MissionFilterCardContainer>

@@ -1,124 +1,208 @@
 {
-    "Jogadores": [
-      {
-        "Id": 1,
-        "Nome": "Astro João",
-        "Email": "joao.astro@xai.com",
-        "Foto": "https://xai.com/avatars/joao.webp",
-        "Descrição": "Explorador de bugs estelares",
-        "Estelares": 150,
-        "Nível": 3,
-        "Avatar_Id": 1,
-        "Equipe_Id": 1,
-        "Cargo": "Tech Líder"
-      },
-      {
-        "Id": 2,
-        "Nome": "Luna Maria",
-        "Email": "luna.maria@xai.com",
-        "Foto": "https://xai.com/avatars/luna.webp",
-        "Descrição": "Especialista em código limpo",
-        "Estelares": 100,
-        "Nível": 2,
-        "Avatar_Id": 2,
-        "Equipe_Id": 1,
-        "Cargo": "Desenvolvedor"
-      },
-      {
-        "Id": 3,
-        "Nome": "Cosmo Pedro",
-        "Email": "pedro.cosmo@xai.com",
-        "Foto": "https://xai.com/avatars/pedro.webp",
-        "Descrição": "Mestre em entregas rápidas",
-        "Estelares": 80,
-        "Nível": 1,
-        "Avatar_Id": 3,
-        "Equipe_Id": 1,
-        "Cargo": "Desenvolvedor"
-      }
-    ],
-    "Equipes": [
-      {
-        "Id": 1,
-        "Nome": "Nave Orion",
-        "Descrição": "Tripulação de elite para explorar a galáxia",
-        "Nave_Id": 1
-      }
-    ],
-    "Planetas": [
-      {
-        "Id": 1,
-        "Nome": "Nebula-7",
-        "Descrição": "Planeta de nuvens cósmicas",
-        "Status": "Não Explorado",
-        "Qtd_missões": 8,
-        "Tema_Principal_Id": 1
-      },
-      {
-        "Id": 2,
-        "Nome": "Astra-12",
-        "Descrição": "Planeta rochoso com missões críticas",
-        "Status": "Incompleto",
-        "Qtd_missões": 8,
-        "Tema_Principal_Id": 2
-      },
-      {
-        "Id": 3,
-        "Nome": "Luminar-4",
-        "Descrição": "Planeta brilhante com desafios colaborativos",
-        "Status": "Incompleto",
-        "Qtd_missões": 8,
-        "Tema_Principal_Id": 3
-      },
-      {
-        "Id": 4,
-        "Nome": "Eclipse-9",
-        "Descrição": "Planeta sombrio com missões técnicas",
-        "Status": "Não Explorado",
-        "Qtd_missões": 8,
-        "Tema_Principal_Id": 4
-      },
-      {
-        "Id": 5,
-        "Nome": "Stellaris-3",
-        "Descrição": "Planeta vibrante com foco em inovação",
-        "Status": "Não Explorado",
-        "Qtd_missões": 8,
-        "Tema_Principal_Id": 5
-      }
-    ],
-    "Temas_Principais": [
-      {
-        "Id": 1,
-        "Nome": "Entrega e Ação",
-        "Descrição": "Foco em entregas rápidas e impacto imediato"
-      },
-      {
-        "Id": 2,
-        "Nome": "Código Limpo",
-        "Descrição": "Prioriza qualidade e manutenção do código"
-      },
-      {
-        "Id": 3,
-        "Nome": "Colaboração Estelar",
-        "Descrição": "Incentiva trabalho em equipe e sinergia"
-      },
-      {
-        "Id": 4,
-        "Nome": "Resolução de Bugs",
-        "Descrição": "Foco em corrigir problemas críticos"
-      },
-      {
-        "Id": 5,
-        "Nome": "Inovação Cósmica",
-        "Descrição": "Explora novas ideias e tecnologias"
-      }
-    ],
-    "Missões": [
+  "Jogadores": [
+    {
+      "Id": 1,
+      "Nome": "Astro João",
+      "Email": "joao.astro@xai.com",
+      "Foto": "https://xai.com/avatars/joao.webp",
+      "Descrição": "Explorador de bugs estelares",
+      "Estelares": 150,
+      "Nível": 3,
+      "Avatar_Id": 1,
+      "Equipe_Id": 1,
+      "Cargo": "Tech Líder"
+    },
+    {
+      "Id": 2,
+      "Nome": "Luna Maria",
+      "Email": "luna.maria@xai.com",
+      "Foto": "https://xai.com/avatars/luna.webp",
+      "Descrição": "Especialista em código limpo",
+      "Estelares": 100,
+      "Nível": 2,
+      "Avatar_Id": 2,
+      "Equipe_Id": 1,
+      "Cargo": "Desenvolvedor"
+    },
+    {
+      "Id": 3,
+      "Nome": "Cosmo Pedro",
+      "Email": "pedro.cosmo@xai.com",
+      "Foto": "https://xai.com/avatars/pedro.webp",
+      "Descrição": "Mestre em entregas rápidas",
+      "Estelares": 80,
+      "Nível": 1,
+      "Avatar_Id": 3,
+      "Equipe_Id": 1,
+      "Cargo": "Desenvolvedor"
+    }
+  ],
+  "Equipes": [
+    {
+      "Id": 1,
+      "Nome": "Nave Orion",
+      "Descrição": "Tripulação de elite para explorar a galáxia",
+      "Nave_Id": 1
+    }
+  ],
+  "Planetas": [
+    {
+      "Id": 1,
+      "Nome": "Nebula-7",
+      "Descrição": "Planeta de nuvens cósmicas",
+      "Status": "Não Explorado",
+      "Qtd_missões": 8,
+      "Tema_Principal_Id": 1
+    },
+    {
+      "Id": 2,
+      "Nome": "Astra-12",
+      "Descrição": "Planeta rochoso com missões críticas",
+      "Status": "Incompleto",
+      "Qtd_missões": 8,
+      "Tema_Principal_Id": 2
+    },
+    {
+      "Id": 3,
+      "Nome": "Luminar-4",
+      "Descrição": "Planeta brilhante com desafios colaborativos",
+      "Status": "Incompleto",
+      "Qtd_missões": 8,
+      "Tema_Principal_Id": 3
+    },
+    {
+      "Id": 4,
+      "Nome": "Eclipse-9",
+      "Descrição": "Planeta sombrio com missões técnicas",
+      "Status": "Não Explorado",
+      "Qtd_missões": 8,
+      "Tema_Principal_Id": 4
+    },
+    {
+      "Id": 5,
+      "Nome": "Stellaris-3",
+      "Descrição": "Planeta vibrante com foco em inovação",
+      "Status": "Não Explorado",
+      "Qtd_missões": 8,
+      "Tema_Principal_Id": 5
+    }
+  ],
+  "Temas_Principais": [
+    {
+      "Id": 1,
+      "Nome": "Entrega e Ação",
+      "Descrição": "Foco em entregas rápidas e impacto imediato"
+    },
+    {
+      "Id": 2,
+      "Nome": "Código Limpo",
+      "Descrição": "Prioriza qualidade e manutenção do código"
+    },
+    {
+      "Id": 3,
+      "Nome": "Colaboração Estelar",
+      "Descrição": "Incentiva trabalho em equipe e sinergia"
+    },
+    {
+      "Id": 4,
+      "Nome": "Resolução de Bugs",
+      "Descrição": "Foco em corrigir problemas críticos"
+    },
+    {
+      "Id": 5,
+      "Nome": "Inovação Cósmica",
+      "Descrição": "Explora novas ideias e tecnologias"
+    }
+  ],
+  "Notificações": [
+    {
+      "id": 1,
+      "Descrição": "Missão 'Otimizar API Estelar' concluída com sucesso!",
+      "Data_Criação": "2025-05-03T14:35:00Z",
+      "status": "Lida",
+      "nome_equipe": "Terra Alpha",
+      "nome_projeto": "Propulsor Quântico"
+    },
+    {
+      "id": 2,
+      "Descrição": "Alerta: Bug crítico no sistema de escudo requer atenção imediata!",
+      "Data_Criação": "2025-04-28T09:15:00Z",
+      "status": "Não Lida",
+      "nome_equipe": "Marte Bravo",
+      "nome_projeto": "Defesa Orbital"
+    },
+    {
+      "id": 3,
+      "Descrição": "S.O.S. recebido: Equipe de Júpiter precisa de ajuda no painel de controle.",
+      "Data_Criação": "2025-04-25T11:20:00Z",
+      "status": "Lida",
+      "nome_equipe": "Júpiter Gamma",
+      "nome_projeto": "Bridge X1"
+    },
+    {
+      "id": 4,
+      "Descrição": "Lembrete: Documentação do projeto 'Anéis de Dados' vence em 2 dias.",
+      "Data_Criação": "2025-04-28T08:00:00Z",
+      "status": "Não Lida",
+      "nome_equipe": "Saturno Delta",
+      "nome_projeto": "Anéis de Dados"
+    },
+    {
+      "id": 5,
+      "Descrição": "Nova missão disponível: Traduzir mensagens de erro para multilíngue.",
+      "Data_Criação": "2025-05-01T12:30:00Z",
+      "status": "Lida",
+      "nome_equipe": "Plutão Epsilon",
+      "nome_projeto": "Comunicação Interestelar"
+    },
+    {
+      "id": 6,
+      "Descrição": "Urgente: Vazamento de memória detectado no módulo de telemetria!",
+      "Data_Criação": "2025-04-29T16:45:00Z",
+      "status": "Não Lida",
+      "nome_equipe": "Netuno Zeta",
+      "nome_projeto": "Telemetria N3"
+    },
+    {
+      "id": 7,
+      "Descrição": "Parabéns! A refatoração do módulo de combustível foi aprovada.",
+      "Data_Criação": "2025-04-22T17:10:00Z",
+      "status": "Lida",
+      "nome_equipe": "Vênus Theta",
+      "nome_projeto": "Propulsão Iônica"
+    },
+    {
+      "id": 8,
+      "Descrição": "Ajuda solicitada: Equipe de Marte precisa de suporte em navegação.",
+      "Data_Criação": "2025-04-27T10:25:00Z",
+      "status": "Lida",
+      "nome_equipe": "Marte Bravo",
+      "nome_projeto": "GPS Galáctico"
+    },
+    {
+      "id": 9,
+      "Descrição": "Atualização: Pipeline CI/CD do projeto 'Núcleo Atlas' está operacional.",
+      "Data_Criação": "2025-05-02T15:50:00Z",
+      "status": "Não Lida",
+      "nome_equipe": "Terra Alpha",
+      "nome_projeto": "Núcleo Atlas"
+    },
+    {
+      "id": 10,
+      "Descrição": "Atenção: Falha de segurança crítica detectada no Firewall Orbital!",
+      "Data_Criação": "2025-04-15T13:00:00Z",
+      "status": "Lida",
+      "nome_equipe": "Júpiter Gamma",
+      "nome_projeto": "Firewall Orbital"
+    }
+  ],
+  "Missões": [
     {
       "Id": 1,
       "Nome": "Otimizar API Estelar",
       "Descrição": "Melhorar performance da API de navegação interplanetária",
+      "objetivo_tecnico": "- Reduzir tempo de resposta em 40%\n- Implementar cache de consultas frequentes\n- Adicionar suporte a compressão GZIP\n- Documentar endpoints novos",
+      "progresso_porcentagem": 70,
       "Tipo_Missão_Id": 1,
       "Status": "Concluída",
       "Data_Criação": "2025-04-25T08:00:00Z",
@@ -135,6 +219,8 @@
       "Id": 2,
       "Nome": "Corrigir Bug no Sistema de Escudo",
       "Descrição": "Falha na ativação do escudo de proteção contra meteoros",
+      "objetivo_tecnico": "- Identificar race condition no acionamento\n- Reprojetar sistema de prioridade de ameaças\n- Adicionar testes de carga para 10k requisições/s\n- Atualizar documentação de emergência",
+      "progresso_porcentagem": 33,
       "Tipo_Missão_Id": 1,
       "Status": "Atrasada",
       "Data_Criação": "2025-04-20T09:00:00Z",
@@ -151,6 +237,8 @@
       "Id": 3,
       "Nome": "Implementar Painel de Controle da Nave",
       "Descrição": "Novo dashboard para monitoramento de sistemas",
+      "objetivo_tecnico": "- Criar widgets para:\n  - Nível de combustível\n  - Integridade estrutural\n  - Status de propulsão\n- Integrar com API de telemetria\n- Garantir responsividade em dispositivos móveis",
+      "progresso_porcentagem": 66,
       "Tipo_Missão_Id": 3,
       "Status": "Em Progresso",
       "Data_Criação": "2025-04-22T10:00:00Z",
@@ -167,6 +255,8 @@
       "Id": 4,
       "Nome": "Atualizar Documentação do Código",
       "Descrição": "Revisar comentários e README do repositório",
+      "objetivo_tecnico": "- Padronizar formato JSDoc para todas as funções\n- Adicionar exemplos de uso crítico\n- Documentar fluxos de erro comuns\n- Atualizar diagramas de arquitetura",
+      "progresso_porcentagem": 100,
       "Tipo_Missão_Id": 2,
       "Status": "Concluída",
       "Data_Criação": "2025-04-15T07:00:00Z",
@@ -183,6 +273,8 @@
       "Id": 5,
       "Nome": "Traduzir Mensagens de Erro",
       "Descrição": "Adicionar suporte a multilíngue aos logs",
+      "objetivo_tecnico": "- Suportar 5 idiomas (EN, ES, PT, FR, DE)\n- Criar sistema de fallback para idiomas não disponíveis\n- Integrar com serviço de localização da nave\n- Documentar processo para adição de novos idiomas",
+      "progresso_porcentagem": 0,
       "Tipo_Missão_Id": 4,
       "Status": "Pendente",
       "Data_Criação": "2025-05-01T12:00:00Z",
@@ -199,6 +291,8 @@
       "Id": 6,
       "Nome": "Resolver Vazamento de Memória",
       "Descrição": "O módulo de telemetria está consumindo recursos excessivos",
+      "objetivo_tecnico": "- Identificar gargalos com profiling\n- Otimizar alocação de buffers\n- Implementar garbage collection manual\n- Adicionar métricas de monitoramento contínuo",
+      "progresso_porcentagem": 50,
       "Tipo_Missão_Id": 1,
       "Status": "Em Progresso",
       "Data_Criação": "2025-04-28T14:00:00Z",
@@ -215,7 +309,9 @@
       "Id": 7,
       "Nome": "Refatorar Código Legado",
       "Descrição": "Melhorar estrutura do módulo de combustível",
-      "Tipo_Missão_Id": 2, 
+      "objetivo_tecnico": "- Extrair lógica complexa em microsserviços\n- Remover dependências obsoletas\n- Implementar padrão Observer para eventos críticos\n- Garantir 80% de cobertura de testes",
+      "progresso_porcentagem": 100,
+      "Tipo_Missão_Id": 2,
       "Status": "Concluída",
       "Data_Criação": "2025-04-10T08:30:00Z",
       "Data_Prazo": "2025-04-25T23:59:59Z",
@@ -231,6 +327,8 @@
       "Id": 8,
       "Nome": "Ajudar Equipe de Marte com Bug",
       "Descrição": "S.O.S.: Sistema de navegação não reconhece coordenadas",
+      "objetivo_tecnico": "- Diagnosticar falha na conversão de coordenadas galácticas\n- Implementar tratamento para edge cases\n- Criar testes de regressão\n- Capacitar equipe local via pair programming",
+      "progresso_porcentagem": 100,
       "Tipo_Missão_Id": 3,
       "Status": "Concluída",
       "Data_Criação": "2025-04-18T11:00:00Z",
@@ -247,6 +345,8 @@
       "Id": 9,
       "Nome": "Adicionar Testes Unitários",
       "Descrição": "Cobertura de testes para módulo de comunicação",
+      "objetivo_tecnico": "- Cobrir 100% das funções críticas\n- Mockar serviços externos\n- Integrar com pipeline de CI/CD\n- Gerar relatório de cobertura em HTML",
+      "progresso_porcentagem": 50,
       "Tipo_Missão_Id": 2,
       "Status": "Em Progresso",
       "Data_Criação": "2025-04-30T13:00:00Z",
@@ -263,6 +363,8 @@
       "Id": 10,
       "Nome": "Atualizar Dependências",
       "Descrição": "Atualizar bibliotecas do núcleo da nave",
+      "objetivo_tecnico": "- Atualizar React para v18\n- Migrar Webpack para Vite\n- Substituir Axios por Fetch API\n- Verificar compatibilidade com navegadores espaciais",
+      "progresso_porcentagem": 0,
       "Tipo_Missão_Id": 4,
       "Status": "Pendente",
       "Data_Criação": "2025-05-02T10:00:00Z",
@@ -279,6 +381,8 @@
       "Id": 11,
       "Nome": "Corrigir Falha de Segurança",
       "Descrição": "Vulnerabilidade crítica no sistema de autenticação",
+      "objetivo_tecnico": "- Implementar autenticação multifator\n- Criptografar tokens JWT com algoritmo HS512\n- Adicionar rate limiting para tentativas de login\n- Auditoria de todas as rotas autenticadas",
+      "progresso_porcentagem": 50,
       "Tipo_Missão_Id": 1,
       "Status": "Atrasada",
       "Data_Criação": "2025-04-05T08:00:00Z",
@@ -295,6 +399,8 @@
       "Id": 12,
       "Nome": "Criar Tutorial para Novos Tripulantes",
       "Descrição": "Documentar onboarding do projeto",
+      "objetivo_tecnico": "- Criar guia passo-a-passo em vídeo\n- Documentar:\n  - Configuração de ambiente\n  - Fluxo de trabalho Git\n  - Convenções de código\n- Incluir checklist de verificação",
+      "progresso_porcentagem": 100,
       "Tipo_Missão_Id": 4,
       "Status": "Concluída",
       "Data_Criação": "2025-04-12T09:00:00Z",
@@ -311,6 +417,8 @@
       "Id": 13,
       "Nome": "Migrar Banco de Dados",
       "Descrição": "Atualizar versão do PostgreSQL para 16",
+      "objetivo_tecnico": "- Criar script de migração automatizado\n- Testar performance de queries críticas\n- Atualizar índices para novo otimizador\n- Garantir rollback seguro em caso de falha",
+      "progresso_porcentagem": 33,
       "Tipo_Missão_Id": 2,
       "Status": "Em Progresso",
       "Data_Criação": "2025-04-27T16:00:00Z",
@@ -327,6 +435,8 @@
       "Id": 14,
       "Nome": "S.O.S.: Otimizar Consultas SQL",
       "Descrição": "Ajuda solicitada pela equipe de Vênus",
+      "objetivo_tecnico": "- Identificar queries com execution time > 500ms\n- Reescrever joins complexos\n- Adicionar índices estratégicos\n- Configurar materialized views para relatórios",
+      "progresso_porcentagem": 0,
       "Tipo_Missão_Id": 3,
       "Status": "Pendente",
       "Data_Criação": "2025-05-01T14:00:00Z",
@@ -343,6 +453,8 @@
       "Id": 15,
       "Nome": "Configurar CI/CD",
       "Descrição": "Automatizar deploy em ambiente de teste",
+      "objetivo_tecnico": "- Integrar com repositório Git\n- Criar pipelines para:\n  - Testes unitários\n  - Build de produção\n  - Deploy em staging\n- Configurar notificações via Slack",
+      "progresso_porcentagem": 100,
       "Tipo_Missão_Id": 2,
       "Status": "Concluída",
       "Data_Criação": "2025-04-01T07:00:00Z",
@@ -356,27 +468,27 @@
       "Tech_Líder": "Eng. Hermes"
     }
   ],
-    "Tipos_Missões": [
-      {
-        "Id": 1,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
-      },
-      {
-        "Id": 2,
-        "Nome": "Vermelha",
-        "Peso": 4,
-        "Cor": "red-500"
-      },
-      {
-        "Id": 3,
-        "Nome": "Azul",
-        "Peso": 3,
-        "Cor": "blue-500"
-      }
-    ],
-    "Projetos": [
+  "Tipos_Missões": [
+    {
+      "Id": 1,
+      "Nome": "Amarela",
+      "Peso": 2,
+      "Cor": "yellow-500"
+    },
+    {
+      "Id": 2,
+      "Nome": "Vermelha",
+      "Peso": 4,
+      "Cor": "red-500"
+    },
+    {
+      "Id": 3,
+      "Nome": "Azul",
+      "Peso": 3,
+      "Cor": "blue-500"
+    }
+  ],
+  "Projetos": [
     {
       "Id": 1,
       "Nome": "Propulsor Quântico",
@@ -530,87 +642,102 @@
       "Data_Prevista_Termino": "2026-03-01T23:59:59Z"
     }
   ],
-    "Credenciais": [
-      {
-        "Id": 1,
-        "Nome": "Projeto API Estelar",
-        "Tipo": "Projeto"
-      },
-      {
-        "Id": 2,
-        "Nome": "Projeto Sistema de Login Seguro",
-        "Tipo": "Projeto"
-      },
-      {
-        "Id": 3,
-        "Nome": "Projeto Plataforma de Ranking",
-        "Tipo": "Projeto"
-      },
-      {
-        "Id": 4,
-        "Nome": "Nave Orion",
-        "Tipo": "Nave"
-      },
-      {
-        "Id": 5,
-        "Nome": "Equipe Nave Orion",
-        "Tipo": "Equipe"
-      }
-    ],
-    "Jogador_Credencial": [
-      { "Jogador_Id": 1, "Credencial_Id": 1 },
-      { "Jogador_Id": 1, "Credencial_Id": 2 },
-      { "Jogador_Id": 1, "Credencial_Id": 3 },
-      { "Jogador_Id": 1, "Credencial_Id": 4 },
-      { "Jogador_Id": 1, "Credencial_Id": 5 },
-      { "Jogador_Id": 2, "Credencial_Id": 1 },
-      { "Jogador_Id": 2, "Credencial_Id": 2 },
-      { "Jogador_Id": 2, "Credencial_Id": 4 },
-      { "Jogador_Id": 2, "Credencial_Id": 5 },
-      { "Jogador_Id": 3, "Credencial_Id": 3 },
-      { "Jogador_Id": 3, "Credencial_Id": 4 },
-      { "Jogador_Id": 3, "Credencial_Id": 5 }
-    ],
-    "Missões_Verdes": [
-      {
-        "Id": 1,
-        "Nome": "Faça um Tour Cósmico",
-        "Descrição": "Explore a plataforma pela primeira vez",
-        "Status": "Concluída",
-        "Qtd_moedas": 5,
-        "Nível_Id": 1
-      },
-      {
-        "Id": 2,
-        "Nome": "Primeiro Commit Estelar",
-        "Descrição": "Realize seu primeiro commit no projeto",
-        "Status": "Pendente",
-        "Qtd_moedas": 5,
-        "Nível_Id": 1
-      }
-    ],
-    "Níveis_Missões_Verdes": [
-      {
-        "Id": 1,
-        "Nome": "Iniciação Cósmica",
-        "Ordem": 1,
-        "Status": "Desbloqueado"
-      }
-    ],
-    "Jogador_Missão_Verde": [
-      { "Jogador_Id": 1, "Missão_Verde_Id": 1, "Status": "Concluída", "Data_Conclusão": "2025-04-25T12:00:00Z" },
-      { "Jogador_Id": 2, "Missão_Verde_Id": 1, "Status": "Concluída", "Data_Conclusão": "2025-04-26T14:00:00Z" },
-      { "Jogador_Id": 3, "Missão_Verde_Id": 2, "Status": "Pendente", "Data_Conclusão": null }
-    ],
-    "Naves": [
-      {
-        "Id": 1,
-        "Nome": "Orion Explorer",
-        "Descrição": "Nave ágil para exploração galáctica",
-        "Status": "Em Rota",
-        "Planeta_Origem_Id": 1,
-        "Planeta_Destino_Id": 3,
-        "Progresso_Trajeto": 50.0
-      }
-    ]
-  }
+  "Credenciais": [
+    {
+      "Id": 1,
+      "Nome": "Projeto API Estelar",
+      "Tipo": "Projeto"
+    },
+    {
+      "Id": 2,
+      "Nome": "Projeto Sistema de Login Seguro",
+      "Tipo": "Projeto"
+    },
+    {
+      "Id": 3,
+      "Nome": "Projeto Plataforma de Ranking",
+      "Tipo": "Projeto"
+    },
+    {
+      "Id": 4,
+      "Nome": "Nave Orion",
+      "Tipo": "Nave"
+    },
+    {
+      "Id": 5,
+      "Nome": "Equipe Nave Orion",
+      "Tipo": "Equipe"
+    }
+  ],
+  "Jogador_Credencial": [
+    { "Jogador_Id": 1, "Credencial_Id": 1 },
+    { "Jogador_Id": 1, "Credencial_Id": 2 },
+    { "Jogador_Id": 1, "Credencial_Id": 3 },
+    { "Jogador_Id": 1, "Credencial_Id": 4 },
+    { "Jogador_Id": 1, "Credencial_Id": 5 },
+    { "Jogador_Id": 2, "Credencial_Id": 1 },
+    { "Jogador_Id": 2, "Credencial_Id": 2 },
+    { "Jogador_Id": 2, "Credencial_Id": 4 },
+    { "Jogador_Id": 2, "Credencial_Id": 5 },
+    { "Jogador_Id": 3, "Credencial_Id": 3 },
+    { "Jogador_Id": 3, "Credencial_Id": 4 },
+    { "Jogador_Id": 3, "Credencial_Id": 5 }
+  ],
+  "Missões_Verdes": [
+    {
+      "Id": 1,
+      "Nome": "Faça um Tour Cósmico",
+      "Descrição": "Explore a plataforma pela primeira vez",
+      "Status": "Concluída",
+      "Qtd_moedas": 5,
+      "Nível_Id": 1
+    },
+    {
+      "Id": 2,
+      "Nome": "Primeiro Commit Estelar",
+      "Descrição": "Realize seu primeiro commit no projeto",
+      "Status": "Pendente",
+      "Qtd_moedas": 5,
+      "Nível_Id": 1
+    }
+  ],
+  "Níveis_Missões_Verdes": [
+    {
+      "Id": 1,
+      "Nome": "Iniciação Cósmica",
+      "Ordem": 1,
+      "Status": "Desbloqueado"
+    }
+  ],
+  "Jogador_Missão_Verde": [
+    {
+      "Jogador_Id": 1,
+      "Missão_Verde_Id": 1,
+      "Status": "Concluída",
+      "Data_Conclusão": "2025-04-25T12:00:00Z"
+    },
+    {
+      "Jogador_Id": 2,
+      "Missão_Verde_Id": 1,
+      "Status": "Concluída",
+      "Data_Conclusão": "2025-04-26T14:00:00Z"
+    },
+    {
+      "Jogador_Id": 3,
+      "Missão_Verde_Id": 2,
+      "Status": "Pendente",
+      "Data_Conclusão": null
+    }
+  ],
+  "Naves": [
+    {
+      "Id": 1,
+      "Nome": "Orion Explorer",
+      "Descrição": "Nave ágil para exploração galáctica",
+      "Status": "Em Rota",
+      "Planeta_Origem_Id": 1,
+      "Planeta_Destino_Id": 3,
+      "Progresso_Trajeto": 50.0
+    }
+  ]
+}
