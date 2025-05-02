@@ -18,7 +18,7 @@ export function MissionCard() {
           <MissionCardInfoContent>
             <MissionCardTitle>
               <span>{missao.Nome}</span>
-              <span>Projeto: BBcrédito</span>
+              <span>Projeto: {missao.Nome_projeto}</span>
             </MissionCardTitle>
             <div>
               <CalendarCheck size={20} weight="fill" />

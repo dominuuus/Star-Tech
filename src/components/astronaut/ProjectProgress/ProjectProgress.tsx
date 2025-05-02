@@ -1,54 +1,42 @@
 import {
   ProjectProgressAlert,
   ProjectProgressContainer,
+  ProjectProgressContent,
   ProjectProgressCritical,
   ProjectProgressDefault,
   ProjectProgressSuccess,
 } from "./ProjectProgress.styles";
 
+import gameData from "../../../assets/db/dbgame.json";
+
 export function ProjectProgress() {
+
+  const limitedProjects = gameData.Projetos.slice(0, 4);
+
   return (
     <>
       <ProjectProgressContainer>
-        <ProjectProgressDefault>
-          <ProjectProgressCritical>
-            <span>Projeto 2</span>
-          </ProjectProgressCritical>
-        </ProjectProgressDefault>
-        <div>
-          <span>30%</span>
-        </div>
-      </ProjectProgressContainer>
-      <ProjectProgressContainer>
-        <ProjectProgressDefault>
-          <ProjectProgressAlert>
-            <span>Projeto 4</span>
-          </ProjectProgressAlert>
-        </ProjectProgressDefault>
-        <div>
-          <span>50%</span>
-        </div>
-      </ProjectProgressContainer>
-      <ProjectProgressContainer>
-        <ProjectProgressDefault>
-          <ProjectProgressSuccess>
-            <span>Projeto 1</span>
-          </ProjectProgressSuccess>
-        </ProjectProgressDefault>
-        <div>
-          <span>80%</span>
-        </div>
-      </ProjectProgressContainer>
+        {limitedProjects.map((projeto) => {
+          let ProgressBar = ProjectProgressCritical;
+          if (projeto.Progresso >= 50 && projeto.Progresso <= 79) {
+            ProgressBar = ProjectProgressAlert;
+          } else if (projeto.Progresso >= 80) {
+            ProgressBar = ProjectProgressSuccess;
+          }
 
-      <ProjectProgressContainer>
-        <ProjectProgressDefault>
-          <ProjectProgressSuccess>
-            <span>Projeto 2</span>
-          </ProjectProgressSuccess>
-        </ProjectProgressDefault>
-        <div>
-          <span>81%</span>
-        </div>
+          return (
+            <ProjectProgressContent key={projeto.Id}>
+              <ProjectProgressDefault>
+                <ProgressBar progress={projeto.Progresso}>
+                  <span>{projeto.Nome}</span>
+                </ProgressBar>
+              </ProjectProgressDefault>
+              <div>
+                <span>{projeto.Progresso.toFixed(0)}%</span>
+              </div>
+            </ProjectProgressContent>
+          );
+        })}
       </ProjectProgressContainer>
     </>
   );
