@@ -48,7 +48,7 @@
   "Planetas": [
     {
       "Id": 1,
-      "Nome": "Nebula-7",
+      "Nome": "Aetheria",
       "Descrição": "Planeta de nuvens cósmicas",
       "Status": "Não Explorado",
       "Qtd_missões": 8,
@@ -56,7 +56,7 @@
     },
     {
       "Id": 2,
-      "Nome": "Astra-12",
+      "Nome": "Pyron",
       "Descrição": "Planeta rochoso com missões críticas",
       "Status": "Incompleto",
       "Qtd_missões": 8,
@@ -64,7 +64,7 @@
     },
     {
       "Id": 3,
-      "Nome": "Luminar-4",
+      "Nome": "Colaboros",
       "Descrição": "Planeta brilhante com desafios colaborativos",
       "Status": "Incompleto",
       "Qtd_missões": 8,
@@ -72,7 +72,7 @@
     },
     {
       "Id": 4,
-      "Nome": "Eclipse-9",
+      "Nome": "Bugnaris",
       "Descrição": "Planeta sombrio com missões técnicas",
       "Status": "Não Explorado",
       "Qtd_missões": 8,
@@ -80,7 +80,7 @@
     },
     {
       "Id": 5,
-      "Nome": "Stellaris-3",
+      "Nome": "Creatar",
       "Descrição": "Planeta vibrante com foco em inovação",
       "Status": "Não Explorado",
       "Qtd_missões": 8,
@@ -90,28 +90,28 @@
   "Temas_Principais": [
     {
       "Id": 1,
-      "Nome": "Entrega e Ação",
-      "Descrição": "Foco em entregas rápidas e impacto imediato"
+      "Nome": "Martalis",
+      "Descrição": "Entrega e Ação sob Pressão Estelar"
     },
     {
       "Id": 2,
-      "Nome": "Código Limpo",
-      "Descrição": "Prioriza qualidade e manutenção do código"
+      "Nome": "Refacton",
+      "Descrição": "Ambiente de Código Limpo e Estruturado"
     },
     {
       "Id": 3,
-      "Nome": "Colaboração Estelar",
-      "Descrição": "Incentiva trabalho em equipe e sinergia"
+      "Nome": "Colaboros",
+      "Descrição": "Missões de Apoio e Trabalho em Equipe"
     },
     {
       "Id": 4,
-      "Nome": "Resolução de Bugs",
-      "Descrição": "Foco em corrigir problemas críticos"
+      "Nome": "Bugnaris",
+      "Descrição": "Correção de Falhas Críticas e Estabilidade"
     },
     {
       "Id": 5,
-      "Nome": "Inovação Cósmica",
-      "Descrição": "Explora novas ideias e tecnologias"
+      "Nome": "Creatar",
+      "Descrição": "Design Inovador e Soluções Visionárias"
     }
   ],
   "Notificações": [
@@ -211,13 +211,13 @@
       "Qtd_moedas": 15,
       "Fases_Total": 1,
       "Fases_Concluídas": 1,
-      "Nome_planeta": "Terra",
-      "Nome_projeto": "Propulsor Quântico",
+      "Nome_planeta": "Terrara",
+      "Nome_projeto": "BB Investimento",
       "Tech_Líder": "Dra. Vega"
     },
     {
       "Id": 2,
-      "Nome": "Corrigir Bug no Sistema de Escudo",
+      "Nome": "Corrigir Acessibilidade no APP",
       "Descrição": "Falha na ativação do escudo de proteção contra meteoros",
       "objetivo_tecnico": "- Identificar race condition no acionamento\n- Reprojetar sistema de prioridade de ameaças\n- Adicionar testes de carga para 10k requisições/s\n- Atualizar documentação de emergência",
       "progresso_porcentagem": 33,
@@ -229,13 +229,13 @@
       "Qtd_moedas": 20,
       "Fases_Total": 3,
       "Fases_Concluídas": 1,
-      "Nome_planeta": "Marte",
-      "Nome_projeto": "Defesa Orbital",
+      "Nome_planeta": "Martalis",
+      "Nome_projeto": "Open Finance",
       "Tech_Líder": "Comandante Orion"
     },
     {
       "Id": 3,
-      "Nome": "Implementar Painel de Controle da Nave",
+      "Nome": "Atualizar Dependências",
       "Descrição": "Novo dashboard para monitoramento de sistemas",
       "objetivo_tecnico": "- Criar widgets para:\n  - Nível de combustível\n  - Integridade estrutural\n  - Status de propulsão\n- Integrar com API de telemetria\n- Garantir responsividade em dispositivos móveis",
       "progresso_porcentagem": 66,
@@ -247,8 +247,8 @@
       "Qtd_moedas": 10,
       "Fases_Total": 3,
       "Fases_Concluídas": 2,
-      "Nome_planeta": "Júpiter",
-      "Nome_projeto": "Bridge X1",
+      "Nome_planeta": "Testion",
+      "Nome_projeto": "Acessibilidade App",
       "Tech_Líder": "Eng. Andrômeda"
     },
     {
@@ -265,8 +265,8 @@
       "Qtd_moedas": 5,
       "Fases_Total": 1,
       "Fases_Concluídas": 1,
-      "Nome_planeta": "Saturno",
-      "Nome_projeto": "Anéis de Dados",
+      "Nome_planeta": "Arkhen",
+      "Nome_projeto": "Shopping BB",
       "Tech_Líder": "Dr. Cronos"
     },
     {
@@ -283,7 +283,7 @@
       "Qtd_moedas": 3,
       "Fases_Total": 1,
       "Fases_Concluídas": 0,
-      "Nome_planeta": "Plutão",
+      "Nome_planeta": "Fluxaris",
       "Nome_projeto": "Comunicação Interestelar",
       "Tech_Líder": "Linguista Celeste"
     },
@@ -301,8 +301,8 @@
       "Qtd_moedas": 25,
       "Fases_Total": 2,
       "Fases_Concluídas": 1,
-      "Nome_planeta": "Netuno",
-      "Nome_projeto": "Telemetria N3",
+      "Nome_planeta": "Nubilum",
+      "Nome_projeto": "BB Conta Corrente",
       "Tech_Líder": "Eng. Tritão"
     },
     {
@@ -319,13 +319,13 @@
       "Qtd_moedas": 8,
       "Fases_Total": 1,
       "Fases_Concluídas": 1,
-      "Nome_planeta": "Vênus",
+      "Nome_planeta": "Refacton",
       "Nome_projeto": "Propulsão Iônica",
       "Tech_Líder": "Dra. Solaris"
     },
     {
       "Id": 8,
-      "Nome": "Ajudar Equipe de Marte com Bug",
+      "Nome": "Ajudar Equipe de BB Crédito com Bug",
       "Descrição": "S.O.S.: Sistema de navegação não reconhece coordenadas",
       "objetivo_tecnico": "- Diagnosticar falha na conversão de coordenadas galácticas\n- Implementar tratamento para edge cases\n- Criar testes de regressão\n- Capacitar equipe local via pair programming",
       "progresso_porcentagem": 100,
@@ -337,8 +337,8 @@
       "Qtd_moedas": 12,
       "Fases_Total": 1,
       "Fases_Concluídas": 1,
-      "Nome_planeta": "Marte",
-      "Nome_projeto": "GPS Galáctico",
+      "Nome_planeta": "Martalis",
+      "Nome_projeto": "Seguros & Previdência",
       "Tech_Líder": "Eng. Phoenix"
     },
     {
@@ -355,8 +355,8 @@
       "Qtd_moedas": 7,
       "Fases_Total": 2,
       "Fases_Concluídas": 1,
-      "Nome_planeta": "Urano",
-      "Nome_projeto": "ComLink-7",
+      "Nome_planeta": "Algorya",
+      "Nome_projeto": "Empréstimo Pessoal",
       "Tech_Líder": "Dr. Skywalker"
     },
     {
@@ -364,7 +364,7 @@
       "Nome": "Atualizar Dependências",
       "Descrição": "Atualizar bibliotecas do núcleo da nave",
       "objetivo_tecnico": "- Atualizar React para v18\n- Migrar Webpack para Vite\n- Substituir Axios por Fetch API\n- Verificar compatibilidade com navegadores espaciais",
-      "progresso_porcentagem": 0,
+      "progresso_porcentagem": 33,
       "Tipo_Missão_Id": 4,
       "Status": "Pendente",
       "Data_Criação": "2025-05-02T10:00:00Z",
@@ -373,7 +373,7 @@
       "Qtd_moedas": 4,
       "Fases_Total": 1,
       "Fases_Concluídas": 0,
-      "Nome_planeta": "Terra",
+      "Nome_planeta": "Terrara",
       "Nome_projeto": "Núcleo Atlas",
       "Tech_Líder": "Eng. Gaia"
     },
@@ -391,8 +391,8 @@
       "Qtd_moedas": 30,
       "Fases_Total": 4,
       "Fases_Concluídas": 2,
-      "Nome_planeta": "Júpiter",
-      "Nome_projeto": "Firewall Orbital",
+      "Nome_planeta": "Testion",
+      "Nome_projeto": "CDB DI",
       "Tech_Líder": "Comandante Zeus"
     },
     {
@@ -409,7 +409,7 @@
       "Qtd_moedas": 3,
       "Fases_Total": 1,
       "Fases_Concluídas": 1,
-      "Nome_planeta": "Lua",
+      "Nome_planeta": "Aetheria",
       "Nome_projeto": "Base Alpha",
       "Tech_Líder": "Capitã Selene"
     },
@@ -427,8 +427,8 @@
       "Qtd_moedas": 10,
       "Fases_Total": 3,
       "Fases_Concluídas": 1,
-      "Nome_planeta": "Saturno",
-      "Nome_projeto": "Anéis de Dados",
+      "Nome_planeta": "Arkhen",
+      "Nome_projeto": "Empréstimo Pessoal",
       "Tech_Líder": "Dr. Cronos"
     },
     {
@@ -445,7 +445,7 @@
       "Qtd_moedas": 15,
       "Fases_Total": 1,
       "Fases_Concluídas": 0,
-      "Nome_planeta": "Vênus",
+      "Nome_planeta": "Refacton",
       "Nome_projeto": "Banco de Dados Atmosférico",
       "Tech_Líder": "Dra. Solaris"
     },
@@ -463,7 +463,7 @@
       "Qtd_moedas": 12,
       "Fases_Total": 1,
       "Fases_Concluídas": 1,
-      "Nome_planeta": "Mercúrio",
+      "Nome_planeta": "Kaironos",
       "Nome_projeto": "Pipeline Estelar",
       "Tech_Líder": "Eng. Hermes"
     }
@@ -491,153 +491,153 @@
   "Projetos": [
     {
       "Id": 1,
-      "Nome": "Propulsor Quântico",
+      "Nome": "BB Crédito",
       "Descrição": "Sistema de propulsão para viagens interestelares rápidas",
-      "Progresso": 35.0,
+      "Progresso": 80.0,
       "Equipe_Id": 1,
-      "Planeta_Base": "Terra",
+      "Planeta_Base": "Terrara",
       "Data_Inicio": "2025-01-15T00:00:00Z",
       "Data_Prevista_Termino": "2025-08-30T23:59:59Z"
     },
     {
       "Id": 2,
-      "Nome": "Defesa Orbital",
+      "Nome": "BB Financiamento",
       "Descrição": "Escudos energéticos contra ameaças espaciais",
       "Progresso": 78.5,
       "Equipe_Id": 2,
-      "Planeta_Base": "Marte",
+      "Planeta_Base": "Martalis",
       "Data_Inicio": "2024-11-20T00:00:00Z",
       "Data_Prevista_Termino": "2025-06-15T23:59:59Z"
     },
     {
       "Id": 3,
-      "Nome": "Bridge X1",
+      "Nome": "BB Conta Corrente",
       "Descrição": "Painel de controle unificado para naves estelares",
       "Progresso": 92.0,
       "Equipe_Id": 3,
-      "Planeta_Base": "Júpiter",
+      "Planeta_Base": "Testion",
       "Data_Inicio": "2024-09-10T00:00:00Z",
       "Data_Prevista_Termino": "2025-05-20T23:59:59Z"
     },
     {
       "Id": 4,
-      "Nome": "Anéis de Dados",
+      "Nome": "BB Investimento",
       "Descrição": "Banco de dados distribuído em órbita de Saturno",
       "Progresso": 50.0,
       "Equipe_Id": 4,
-      "Planeta_Base": "Saturno",
+      "Planeta_Base": "Arkhen",
       "Data_Inicio": "2025-02-01T00:00:00Z",
       "Data_Prevista_Termino": "2025-10-10T23:59:59Z"
     },
     {
       "Id": 5,
-      "Nome": "Comunicação Interestelar",
+      "Nome": "CDB DI",
       "Descrição": "Protocolos de transmissão além da velocidade da luz",
       "Progresso": 15.0,
       "Equipe_Id": 5,
-      "Planeta_Base": "Plutão",
+      "Planeta_Base": "Fluxaris",
       "Data_Inicio": "2025-03-05T00:00:00Z",
       "Data_Prevista_Termino": "2026-01-30T23:59:59Z"
     },
     {
       "Id": 6,
-      "Nome": "Telemetria N3",
+      "Nome": "Acessibilidade App",
       "Descrição": "Monitoramento em tempo real de sistemas da nave",
       "Progresso": 63.7,
       "Equipe_Id": 1,
-      "Planeta_Base": "Netuno",
+      "Planeta_Base": "Nubilum",
       "Data_Inicio": "2024-12-12T00:00:00Z",
       "Data_Prevista_Termino": "2025-07-25T23:59:59Z"
     },
     {
       "Id": 7,
-      "Nome": "Propulsão Iônica",
+      "Nome": "BB Digital PJ",
       "Descrição": "Motores de eficiência energética máxima",
       "Progresso": 100.0,
       "Equipe_Id": 2,
-      "Planeta_Base": "Vênus",
+      "Planeta_Base": "Refacton",
       "Data_Inicio": "2024-08-03T00:00:00Z",
       "Data_Prevista_Termino": "2025-04-18T23:59:59Z",
       "Data_Conclusao": "2025-04-15T14:20:00Z"
     },
     {
       "Id": 8,
-      "Nome": "GPS Galáctico",
+      "Nome": "BB Cash",
       "Descrição": "Navegação por coordenadas cósmicas",
       "Progresso": 88.2,
       "Equipe_Id": 3,
-      "Planeta_Base": "Marte",
+      "Planeta_Base": "Martalis",
       "Data_Inicio": "2025-01-30T00:00:00Z",
       "Data_Prevista_Termino": "2025-09-01T23:59:59Z"
     },
     {
       "Id": 9,
-      "Nome": "ComLink-7",
+      "Nome": "Carteira bB",
       "Descrição": "Rede de comunicação entre naves e bases",
       "Progresso": 42.3,
       "Equipe_Id": 4,
-      "Planeta_Base": "Urano",
+      "Planeta_Base": "Algorya",
       "Data_Inicio": "2025-04-05T00:00:00Z",
       "Data_Prevista_Termino": "2025-12-12T23:59:59Z"
     },
     {
       "Id": 10,
-      "Nome": "Núcleo Atlas",
+      "Nome": "Conta Universitária",
       "Descrição": "Sistema operacional central das naves",
       "Progresso": 25.8,
       "Equipe_Id": 5,
-      "Planeta_Base": "Terra",
+      "Planeta_Base": "Terrara",
       "Data_Inicio": "2025-05-01T00:00:00Z",
       "Data_Prevista_Termino": "2026-02-28T23:59:59Z"
     },
     {
       "Id": 11,
-      "Nome": "Firewall Orbital",
+      "Nome": "Empréstimo Pessoal",
       "Descrição": "Proteção contra invasões cibernéticas",
       "Progresso": 55.5,
       "Equipe_Id": 1,
-      "Planeta_Base": "Júpiter",
+      "Planeta_Base": "Testion",
       "Data_Inicio": "2025-02-10T00:00:00Z",
       "Data_Prevista_Termino": "2025-11-11T23:59:59Z"
     },
     {
       "Id": 12,
-      "Nome": "Base Alpha",
+      "Nome": "Ouvidoria BB",
       "Descrição": "Estação lunar para recarga e reparos",
       "Progresso": 95.0,
       "Equipe_Id": 2,
-      "Planeta_Base": "Lua",
+      "Planeta_Base": "Aetheria",
       "Data_Inicio": "2024-10-15T00:00:00Z",
       "Data_Prevista_Termino": "2025-05-30T23:59:59Z"
     },
     {
       "Id": 13,
-      "Nome": "Pipeline Estelar",
+      "Nome": "Shopping BB",
       "Descrição": "Automatização de deploys para produção",
       "Progresso": 100.0,
       "Equipe_Id": 3,
-      "Planeta_Base": "Mercúrio",
+      "Planeta_Base": "Kaironos",
       "Data_Inicio": "2024-07-01T00:00:00Z",
       "Data_Prevista_Termino": "2025-03-01T23:59:59Z",
       "Data_Conclusao": "2025-02-25T09:45:00Z"
     },
     {
       "Id": 14,
-      "Nome": "Banco de Dados Atmosférico",
+      "Nome": "Open Finance",
       "Descrição": "Armazenamento resistente a condições extremas",
       "Progresso": 30.0,
       "Equipe_Id": 4,
-      "Planeta_Base": "Vênus",
+      "Planeta_Base": "Refacton",
       "Data_Inicio": "2025-03-20T00:00:00Z",
       "Data_Prevista_Termino": "2025-12-15T23:59:59Z"
     },
     {
       "Id": 15,
-      "Nome": "Sistema de Reciclagem CO₂",
+      "Nome": "Seguros & Previdência",
       "Descrição": "Conversão de gases para atmosferas habitáveis",
-      "Progresso": 10.5,
+      "Progresso": 90.5,
       "Equipe_Id": 5,
-      "Planeta_Base": "Marte",
+      "Planeta_Base": "Martalis",
       "Data_Inicio": "2025-05-01T00:00:00Z",
       "Data_Prevista_Termino": "2026-03-01T23:59:59Z"
     }
@@ -670,18 +670,54 @@
     }
   ],
   "Jogador_Credencial": [
-    { "Jogador_Id": 1, "Credencial_Id": 1 },
-    { "Jogador_Id": 1, "Credencial_Id": 2 },
-    { "Jogador_Id": 1, "Credencial_Id": 3 },
-    { "Jogador_Id": 1, "Credencial_Id": 4 },
-    { "Jogador_Id": 1, "Credencial_Id": 5 },
-    { "Jogador_Id": 2, "Credencial_Id": 1 },
-    { "Jogador_Id": 2, "Credencial_Id": 2 },
-    { "Jogador_Id": 2, "Credencial_Id": 4 },
-    { "Jogador_Id": 2, "Credencial_Id": 5 },
-    { "Jogador_Id": 3, "Credencial_Id": 3 },
-    { "Jogador_Id": 3, "Credencial_Id": 4 },
-    { "Jogador_Id": 3, "Credencial_Id": 5 }
+    {
+      "Jogador_Id": 1,
+      "Credencial_Id": 1
+    },
+    {
+      "Jogador_Id": 1,
+      "Credencial_Id": 2
+    },
+    {
+      "Jogador_Id": 1,
+      "Credencial_Id": 3
+    },
+    {
+      "Jogador_Id": 1,
+      "Credencial_Id": 4
+    },
+    {
+      "Jogador_Id": 1,
+      "Credencial_Id": 5
+    },
+    {
+      "Jogador_Id": 2,
+      "Credencial_Id": 1
+    },
+    {
+      "Jogador_Id": 2,
+      "Credencial_Id": 2
+    },
+    {
+      "Jogador_Id": 2,
+      "Credencial_Id": 4
+    },
+    {
+      "Jogador_Id": 2,
+      "Credencial_Id": 5
+    },
+    {
+      "Jogador_Id": 3,
+      "Credencial_Id": 3
+    },
+    {
+      "Jogador_Id": 3,
+      "Credencial_Id": 4
+    },
+    {
+      "Jogador_Id": 3,
+      "Credencial_Id": 5
+    }
   ],
   "Missões_Verdes": [
     {
@@ -732,7 +768,7 @@
   "Naves": [
     {
       "Id": 1,
-      "Nome": "Orion Explorer",
+      "Nome": "Codestar-1",
       "Descrição": "Nave ágil para exploração galáctica",
       "Status": "Em Rota",
       "Planeta_Origem_Id": 1,

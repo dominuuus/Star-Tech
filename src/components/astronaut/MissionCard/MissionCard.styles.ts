@@ -4,6 +4,10 @@ export const MissionCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  span {
+    font-size: 0.75rem;
+  }
 `;
 
 export const MissionCardContent = styled.div`
@@ -29,7 +33,7 @@ export const MissionCardInfoContent = styled.div`
     gap: 5px;
     align-items: center;
   }
-  p {font-size: 0.75rem;};
+  p {font-size: 0.5rem;};
 `;
 
 export const MissionCardTitle = styled.section`

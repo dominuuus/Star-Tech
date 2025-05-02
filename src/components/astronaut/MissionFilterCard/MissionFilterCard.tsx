@@ -1,13 +1,19 @@
 import {
   MissionFilterCardContainer,
   NumberStyle,
+  StatusDoneMission,
+  StatusInProgressMission,
   StatusLateMission,
-  StatusMission,
 } from "./MissionFilterCard.styles";
 
 import gameData from "../../../assets/db/dbgame.json"
 
-export function MissionFilterCard() {
+interface MissionFilterCardProps {
+  selectedFilter: string;
+  onFilterChange: (filter: string) => void;
+}
+
+export function MissionFilterCard({ selectedFilter, onFilterChange }: MissionFilterCardProps) {
 
   const missionCount = {
     late: gameData.Missões.filter(m => m.Status === 'Atrasada').length,
@@ -25,19 +31,22 @@ export function MissionFilterCard() {
   return (
     <>
       <MissionFilterCardContainer>
-        <StatusLateMission>
+        <StatusLateMission isSelected={selectedFilter === "late"}
+        onClick={() => onFilterChange("late")}>
           <div>
             <NumberStyle>{missionCount.late}</NumberStyle>
           </div>
           <span>Missões atrasadas</span>
         </StatusLateMission>
-        <StatusMission>
+        <StatusInProgressMission isSelected={selectedFilter === "inProgress"}
+        onClick={() => onFilterChange("inProgress")}>
           <div>
             <NumberStyle>{missionCount.inProgress}</NumberStyle>
           </div>
           <span>Missões em andamento</span>
-        </StatusMission>
-        <StatusMission>
+        </StatusInProgressMission>
+        <StatusDoneMission isSelected={selectedFilter === "done7days"}
+        onClick={() => onFilterChange("done7days")}>
           <div>
             <NumberStyle>{missionCount.done7days}</NumberStyle>
           </div>
@@ -45,7 +54,7 @@ export function MissionFilterCard() {
             <span>Missões concluídas</span>
             <p>(7dias)</p>
           </div>
-        </StatusMission>
+        </StatusDoneMission>
       </MissionFilterCardContainer>
     </>
   );

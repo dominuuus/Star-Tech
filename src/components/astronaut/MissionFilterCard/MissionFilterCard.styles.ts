@@ -1,13 +1,17 @@
 
 import styled from "styled-components";
 
+interface StatusProps {
+  isSelected?: boolean;
+}
+
 export const MissionFilterCardContainer = styled.div`
   display: flex;
   gap: 0.5rem;
 `;
-export const StatusMission = styled.div`
+
+const StatusMission = styled.div<StatusProps>`
   border-radius: 30px;
-  background: ${(props) => props.theme.colors.white};
   gap: 10px;
   display: flex;
   flex-direction: row;
@@ -15,7 +19,6 @@ export const StatusMission = styled.div`
   align-items: center;
   font-weight: bold;
   font-size: 0.65rem;
-
   p {
     font-weight: lighter;
   }
@@ -23,15 +26,21 @@ export const StatusMission = styled.div`
     display: flex;
     flex-direction: column;
   }
+
+  &:hover {
+    cursor: pointer;
+    background-color: ${(props) => props.theme.colors.linkHover}
+  }
 `;
+
 export const NumberStyle = styled.span`
   font-size: 2rem;
   font-weight: bold;
 `;
 
-export const StatusLateMission = styled.div`
+export const StatusLateMission = styled.div<StatusProps>`
   border-radius: 30px;
-  background: ${(props) => props.theme.colors.white};
+  background: ${(props) => (props.isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
   gap: 15px;
   display: flex;
   flex-direction: row;
@@ -39,9 +48,23 @@ export const StatusLateMission = styled.div`
   font-weight: bold;
   align-items: center;
   font-size: 0.65rem;
+
   div {
     font-size: 2rem;
     font-weight: bold;
-    color: red;
+    color: ${(props) => props.theme.colors.status.red};
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: ${(props) => props.theme.colors.linkHover}
   }
 `;
+
+export const StatusInProgressMission = styled(StatusMission)<StatusProps>`
+  background: ${(props) => (props.isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
+`
+
+export const StatusDoneMission = styled(StatusMission)<StatusProps>`
+  background: ${(props) => (props.isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
+`

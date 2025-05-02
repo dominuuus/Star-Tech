@@ -8,10 +8,49 @@ import {
 } from "./ProjectProgress.styles";
 
 import gameData from "../../../assets/db/dbgame.json";
+import { useEffect, useState } from "react";
 
-export function ProjectProgress() {
+interface ProjectProgressProps {
+  selectedFilter: string;
+}
 
-  const limitedProjects = gameData.Projetos.slice(0, 4);
+interface Project {
+  Id: number;
+  Nome: string;
+  Progresso: number;
+  Data_Inicio: string;
+}
+
+export function ProjectProgress({ selectedFilter }: ProjectProgressProps) {
+  const sortedProjects = [...gameData.Projetos].sort(
+    (a: Project, b: Project) => {
+      switch (selectedFilter) {
+        case "critical":
+          return a.Progresso - b.Progresso;
+        case "recent":
+          return (
+            new Date(b.Data_Inicio).getTime() -
+            new Date(a.Data_Inicio).getTime()
+          );
+        case "oldest":
+          return (
+            new Date(a.Data_Inicio).getTime() -
+            new Date(b.Data_Inicio).getTime()
+          );
+        default:
+          return a.Progresso - b.Progresso;
+      }
+    }
+  );
+
+  const limitedProjects = sortedProjects;
+
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setAnimate(true), 200);
+    return () => setAnimate(false);
+  }, []);
 
   return (
     <>
@@ -27,7 +66,7 @@ export function ProjectProgress() {
           return (
             <ProjectProgressContent key={projeto.Id}>
               <ProjectProgressDefault>
-                <ProgressBar progress={projeto.Progresso}>
+                <ProgressBar progress={projeto.Progresso} animate={animate}>
                   <span>{projeto.Nome}</span>
                 </ProgressBar>
               </ProjectProgressDefault>

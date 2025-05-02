@@ -8,14 +8,47 @@ import {
 
 import gameData from "../../../assets/db/dbgame.json";
 
-export function MissionCard() {
-  const selectedMission = gameData.Missões.slice(0, 2);
+interface MissionCardProps {
+  selectedFilter: string;
+}
+
+interface Mission {
+  Id: number;
+  Nome: string;
+  Nome_projeto: string;
+  Status: string;
+  Data_Conclusão: string | null;
+}
+
+export function MissionCard({ selectedFilter }: MissionCardProps) {
+
+  const filterMissions = (missions: Mission[]) => {
+    switch (selectedFilter) {
+      case "late":
+        return missions.filter(m => m.Status === "Atrasada");
+      case "inProgress":
+        return missions.filter(m => m.Status === "Em Progresso");
+      case "done7days":
+        return missions.filter(m => {
+          if (!m.Data_Conclusão) return false;
+          const doneDate = new Date(m.Data_Conclusão);
+          const sevenDaysLater = new Date();
+          sevenDaysLater.setDate(sevenDaysLater.getDate() - 7);
+          return doneDate >= sevenDaysLater;
+        });
+      case "all":
+      default:
+        return missions;
+    }
+  };
+
+  const selectedMissions = filterMissions(gameData.Missões);
 
   return (
     <>
       <MissionCardContainer>
         {
-          selectedMission.map(missao => (
+          selectedMissions.map(missao => (
             <MissionCardContent key={missao.Id}>
           <MissionCardInfoContent>
             <MissionCardTitle>
@@ -23,7 +56,7 @@ export function MissionCard() {
               <span>Projeto: {missao.Nome_projeto}</span>
             </MissionCardTitle>
             <div>
-              <CalendarCheck size={20} weight="fill" />
+              <CalendarCheck size={15} weight="fill" />
               <p>{missao.Status}</p>
             </div>
           </MissionCardInfoContent>

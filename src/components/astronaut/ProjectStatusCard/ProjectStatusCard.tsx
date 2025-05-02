@@ -1,17 +1,24 @@
+import { useState } from "react";
 import { ProjectProgress } from "../ProjectProgress/ProjectProgress";
-import { MenuStats, ProjectProgressBar, SquadStatsContainer } from "./ProjectStatusCard.styles";
+import { ButtonStatus, MenuStats, ProjectProgressBar, SquadStatsContainer } from "./ProjectStatusCard.styles";
 
 export function ProjectStatusCard() {
+
+  const [selectedFilter, setSelectedFilter] = useState<string>('critical');
+
   return (
     <SquadStatsContainer>
         <MenuStats>
-          <button>Mais críticos</button>
-          <button>Mais recentes</button>
-          <button>Mais antigos</button>
+          <ButtonStatus isSelected={selectedFilter === 'critical'}
+          onClick={() => setSelectedFilter('critical')}>Mais críticos</ButtonStatus>
+          <ButtonStatus isSelected={selectedFilter === 'recent'}
+          onClick={() => setSelectedFilter('recent')}>Mais recentes</ButtonStatus>
+          <ButtonStatus isSelected={selectedFilter === 'oldest'}
+          onClick={() => setSelectedFilter('oldest')}>Mais antigos</ButtonStatus>
         </MenuStats>
 
         <ProjectProgressBar>
-          <ProjectProgress/>
+          <ProjectProgress selectedFilter={selectedFilter}/>
         </ProjectProgressBar>
     </SquadStatsContainer>
   );

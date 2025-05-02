@@ -17,6 +17,8 @@ import {
   MascotAchieveNewsContainer,
   MascotContent,
   MascotDescriptionContainer,
+  MissionCardContainer,
+  MissionFilterContainer,
   MissionStatusContent,
   ModalButtons,
   ModalContentDescription,
@@ -30,6 +32,8 @@ import { MascotModal } from "../../components/common/MascotModal/MascotModal";
 import { AchievementModal } from "../../components/common/AchievementModal/AchievementModal";
 
 export function Astronaut() {
+  const [selectedFilter, setSelectedFilter] = useState<string>("all");
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openMascotModal = () => setIsModalOpen(true);
   const closeMascotModal = () => setIsModalOpen(false);
@@ -132,12 +136,14 @@ export function Astronaut() {
                   <ModalContentDescription>
                     <MascotDescriptionContainer>
                       <h1>Ferro Vermelho</h1>
-                      <h2>Ao entregar 5 tarefas críticas (vermelhas) antes do prazo, você demonstra a força necessária para enfrentar os ambientes mais intensos da galáxia.</h2>
+                      <h2>
+                        Ao entregar 5 tarefas críticas (vermelhas) antes do
+                        prazo, você demonstra a força necessária para enfrentar
+                        os ambientes mais intensos da galáxia.
+                      </h2>
                       <p>🔥 Velocidade sob pressão</p>
                       <p>🔥 Compromisso com qualidade</p>
                       <p>🔥 Espírito inabalável diante de falhas críticas</p>
-                      
-                      
 
                       <ModalButtons>
                         <CloseModalButton onClick={closeAchievementMascotModal}>
@@ -156,16 +162,15 @@ export function Astronaut() {
             </AchievementContent>
           </MascotAchieveNewsContainer>
 
-          
-        <NewsContent>
-          <NewsMission />
-        </NewsContent>
+          <NewsContent>
+            <NewsMission />
+          </NewsContent>
         </SectionTwoContentOne>
-
 
         <SectionTwoContentTwo>
           <div>
             <span>Central de Comando</span>
+            <p>Projetos</p>
             <CommandCenterContent>
               <ProjectStatusCard />
             </CommandCenterContent>
@@ -173,8 +178,15 @@ export function Astronaut() {
 
           <div>
             <MissionStatusContent>
-              <MissionFilterCard />
-              <MissionCard />
+              <MissionFilterContainer>
+                <MissionFilterCard
+                  selectedFilter={selectedFilter}
+                  onFilterChange={setSelectedFilter}
+                />
+              </MissionFilterContainer>
+              <MissionCardContainer>
+                <MissionCard selectedFilter={selectedFilter} />
+              </MissionCardContainer>
             </MissionStatusContent>
           </div>
         </SectionTwoContentTwo>

@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+interface ProgressBarProps {
+  progress: number;
+  animate?: boolean;
+}
+
 export const ProjectProgressContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,6 +15,7 @@ export const ProjectProgressContent = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;
+  font-size: 0.75rem;
   span {
     font-weight: bold;
     white-space: nowrap;
@@ -17,16 +23,28 @@ export const ProjectProgressContent = styled.div`
 `;
 
 export const ProjectProgressDefault = styled.div`
-  background-color: ${(props) => props.theme.colors.gray.lighter};
+  background-color: ${(props) => props.theme.colors.gray.light};
   border-radius: 30px;
   width: 90%;
+  font-size: 0.75rem;
 `;
 
-const ProjectProgressStatus = styled.div<{progress: number}>`
+const ProjectProgressStatus = styled.div<ProgressBarProps>`
   padding: 0.75rem;
-  border-radius: 30px;
   align-items: center;
-  width: ${props => props.progress}%;
+  border-radius: 30px;
+  width: ${(props) => (props.animate ? props.progress : 0)}%;
+  animation: ${(props) => (props.animate ? "grow 2.5s linear" : "none")};
+  @keyframes grow {
+    0% {
+      width: 0%;
+      transform: scale(1);
+    }
+    ${(props) => props.progress} {
+      width: ${(props) => props.progress}%;
+      transform: scale(1);
+    }
+  }
 `;
 
 export const ProjectProgressSuccess = styled(ProjectProgressStatus)`
