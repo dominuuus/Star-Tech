@@ -19,6 +19,10 @@ const StatusMission = styled.div<StatusProps>`
   align-items: center;
   font-weight: bold;
   font-size: 0.65rem;
+
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1),
+              -1px -1px 2px rgba(255,255,255,0.8);
+
   p {
     font-weight: lighter;
   }
@@ -29,7 +33,7 @@ const StatusMission = styled.div<StatusProps>`
 
   &:hover {
     cursor: pointer;
-    background-color: ${(props) => props.theme.colors.linkHover}
+    background-color: ${(props) => props.theme.colors.linkHover};
   }
 `;
 
@@ -48,7 +52,9 @@ export const StatusLateMission = styled.div<StatusProps>`
   font-weight: bold;
   align-items: center;
   font-size: 0.65rem;
-
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1),
+              1px 1px 2px rgba(255,255,255,0.8);
+  
   div {
     font-size: 2rem;
     font-weight: bold;
@@ -57,7 +63,7 @@ export const StatusLateMission = styled.div<StatusProps>`
 
   &:hover {
     cursor: pointer;
-    background-color: ${(props) => props.theme.colors.linkHover}
+    background-color: ${(props) => props.theme.colors.linkHover};
   }
 `;
 

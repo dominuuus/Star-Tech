@@ -24,12 +24,12 @@ export const ButtonStatus = styled.div<ButtonProps>`
   cursor: pointer;
   font-size: 0.8rem;
   font-weight: bold;
-  border: 1px solid ${(props) => props.theme.colors.gray.light};
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1),
+              1px 1px 2px rgba(255,255,255,0.8);
   
   &:hover {
     background-color: ${(props) => props.theme.colors.linkHover};
     color: ${(props) => props.theme.colors.primary};
-    border: 1px solid ${(props) => props.theme.colors.linkHover};
   }
 `;
 
@@ -39,6 +39,8 @@ export const ProjectProgressBar = styled.div`
   padding: 0.5rem;
   gap: 10px;
   height: 20rem;
+
+  
 
   overflow-y: auto;
   padding-right: 0.5rem;
