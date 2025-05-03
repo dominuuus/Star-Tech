@@ -22,12 +22,13 @@ export const defaultTheme = {
       missionRedAlert: "linear-gradient(180deg, #FF0000 0%, #977171 100%)", //Card de alerta das missões vermelhas na nave
       missionGreenAlert:
         "linear-gradient(180deg, #1b7c0c 0%, #051e0d 100%)", //Card de alerta das missões verdes na nave
-      tripulation: "linear-gradient(180deg, #3F61DC 59%, #38E5FA 100%)",
+      tripulation: "linear-gradient(90deg, #193083 29%, #24b9ca 100%)",
       profileMenu: "linear-gradient(90deg, #193083 29%, #24b9ca 100%)",
       planet: "linear-gradient(90deg, #8674A6 0%, #063977 100%)",
       mascotCard: "linear-gradient(90deg, #193083 29%, #24b9ca 100%)",
       bgExplorePage:
         "linear-gradient(90deg, #000000 10%, #000000 22%, #010C1A 36%, #02162F 47%, #031B39 52%, #04244B 62%, #04244C 63%, #052C5C 71%, #053268 77%,  #063977 86%,  #063977 96%,  #063977 100%)",
+      bgLoginIn: "linear-gradient(180deg, #09152B 39%, #1b8c99 100%)",
     },
     planet: {
       scale1: "#8674A6", // Cor para exibição do planeta - escala 1

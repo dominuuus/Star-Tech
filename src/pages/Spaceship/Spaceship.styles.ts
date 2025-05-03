@@ -1,9 +1,16 @@
 import styled from "styled-components";
 
 export const SpaceshipContainer = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
 
+  h1 {
+    font-size: 2rem;
+  }
+`;
+
+export const SpaceshipContent = styled.div`
+  display: flex;
   h1 {
     font-size: 2rem;
   }
@@ -12,28 +19,113 @@ export const SpaceshipContainer = styled.div`
 export const MissionUpdatesContent = styled.div`
   width: 20rem;
   height: 50rem;
-  margin-left: 35rem;
+  margin-left: 68rem;
 `;
 
 export const ExploredPlanetContainer = styled.div`
   display: flex;
   flex-direction: row;
+  position: absolute;
 
   img {
     height: 5rem;
     cursor: pointer;
 
     &:hover {
-        transform: scale(1.2);
-        }
+      transform: scale(1.2);
+    }
   }
 `;
 
 export const SpaceshipCardContainer = styled.div`
-  img {
-    height: 30rem;
-    position: absolute;
+  display: flex;
+  justify-content: space-between;
 
+  button {
+    display: flex;
+    background: ${(props) => props.theme.colors.gradients.tripulation};
+    color: ${(props) => props.theme.colors.white};
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    span {
+      opacity: 0;
+      width: 0;
+      overflow: hidden;
+      font-size: 1rem;
+      font-weight: bold;
+      transition:
+        opacity 0.3s ease,
+        width 0.3s ease;
+    }
+
+    &:hover {
+      background: ${(props) => props.theme.colors.gradients.tripulation};
+
+      span {
+        opacity: 1;
+        width: auto;
+      }
+    }
+  }
+
+  h3 {
+    display: flex;
+    background: ${(props) => props.theme.colors.gradients.missionRedAlert};
+    color: ${(props) => props.theme.colors.white};
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.75rem;
+
+    span {
+      opacity: 0;
+      width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      transition:
+        opacity 0.3s ease,
+        width 0.3s ease;
+    }
+
+    &:hover {
+      background: ${(props) => props.theme.colors.gradients.missionRedAlert};
+
+      span {
+        opacity: 1;
+        width: auto;
+      }
+    }
+  }
+
+  h4 {
+    display: flex;
+    background: ${(props) => props.theme.colors.gradients.missionYellowAlert};
+    color: ${(props) => props.theme.colors.white};
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.75rem;
+
+    span {
+      opacity: 0;
+      width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      transition:
+        opacity 0.3s ease,
+        width 0.3s ease;
+    }
+
+    &:hover {
+      background: ${(props) => props.theme.colors.gradients.missionYellowAlert};
+
+      span {
+        opacity: 1;
+        width: auto;
+      }
+    }
   }
 `;
 

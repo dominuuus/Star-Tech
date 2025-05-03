@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 export const MenuContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   background-color: ${(props) => props.theme.colors.primary};
   width: 2rem;
   height: 30rem;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  display: flex;
-  flex-direction: column;
   z-index: 100;
   position: fixed;
   left: 0;
@@ -20,6 +19,7 @@ export const MenuContainer = styled.div`
   div {
     margin-top: 20px;
   }
+  
 
   &:hover {
     background-color:${(props) => props.theme.colors.primary};;
