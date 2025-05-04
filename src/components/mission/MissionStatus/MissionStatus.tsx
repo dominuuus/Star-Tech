@@ -1,10 +1,16 @@
-import { MissionCardStatus } from "../MissionCardStatus/MissionCardStatus";
+import {
+
+  MissionStatusContainer,
+
+} from "./MissionStatus.styles";
 
 export function MissionStatus() {
-    return (
-        <>
-            <span>Status das missões com filtros</span>
-            <MissionCardStatus/>
-        </>
-    )
+  return (
+    <>
+      <MissionStatusContainer>
+
+        
+      </MissionStatusContainer>
+    </>
+  );
 }

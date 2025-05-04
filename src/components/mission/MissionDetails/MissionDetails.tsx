@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   MissionDeadLine,
   MissionDetailsBody,
@@ -11,24 +12,30 @@ import {
   ProjectProgressAlert,
   ProjectProgressSuccess,
 } from "./MissionDetails.styles";
+import { fetchMission, Mission } from "../../../services/missionService";
 
-import dataGame from "../../../assets/db/dbgame.json";
 
 export function MissionDetails() {
-  const selectedMission = dataGame.Missões.slice(0, 1);
+  const [missions, setMissions] = useState<Mission[]>([]);
+    
+      useEffect(() => {
+        fetchMission().then(setMissions).catch(console.error);
+      }, []);
+
+      const filteredMissions = missions.slice(0, 1);
 
   return (
     <>
       <MissionDetailsContainer>
-        {selectedMission.map((mission) => {
+        {filteredMissions.map((mission) => {
           {
             let ProgressBar = ProjectProgressCritical;
             if (
-              mission.progresso_porcentagem >= 50 &&
-              mission.progresso_porcentagem <= 79
+              mission.Progresso_missão >= 50 &&
+              mission.Progresso_missão <= 79
             ) {
               ProgressBar = ProjectProgressAlert;
-            } else if (mission.progresso_porcentagem >= 80) {
+            } else if (mission.Progresso_missão >= 80) {
               ProgressBar = ProjectProgressSuccess;
             }
 
@@ -37,7 +44,7 @@ export function MissionDetails() {
                 <MissionDetailsHead>
                   <MissionTitle>
                     <span>{mission.Nome}</span>
-                    <span>Projeto: {mission.Nome_projeto}</span>
+                    <span>Projeto: {mission.Projeto_Id}</span>
                   </MissionTitle>
                   <MissionDeadLine>
                     <span>Lançamento da missão: {mission.Data_Criação}</span>
@@ -48,18 +55,18 @@ export function MissionDetails() {
                 <MissionDetailsBody>
                   <span>{mission.Descrição} </span>
                   <h4>Objetivo Técnico:</h4>
-                  <span>{mission.objetivo_tecnico}</span>
+                  <span>{mission.Objetivo_técnico}</span>
                   <ProgressContainer>
                     <h4 className="Progresso">Progresso</h4>
                     <p>O prazo da missão vence em dois dias</p>
                     <ProgressMissionBar>
                       <ProgressBar
-                        width={mission.progresso_porcentagem}
-                        background={mission.progresso_porcentagem}
+                        width={mission.Progresso_missão}
+                        background={mission.Progresso_missão}
                       ></ProgressBar>
                     </ProgressMissionBar>
                     <div>
-                      <h4>{mission.progresso_porcentagem}%</h4>
+                      <h4>{mission.Progresso_missão}%</h4>
                     </div>
                   </ProgressContainer>
                 </MissionDetailsBody>
