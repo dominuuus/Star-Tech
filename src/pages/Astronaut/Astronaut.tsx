@@ -163,7 +163,7 @@ export function Astronaut() {
           </MascotAchieveNewsContainer>
 
           <NewsContent>
-            <NewsMission />
+            <NewsMission tipo="Usuário" maxItems={4}/>
           </NewsContent>
         </SectionTwoContentOne>
 

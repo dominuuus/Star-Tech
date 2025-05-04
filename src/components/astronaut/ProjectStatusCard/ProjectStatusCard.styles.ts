@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-interface ButtonProps {
+export interface ButtonProps {
   isSelected?: boolean;
 }
 

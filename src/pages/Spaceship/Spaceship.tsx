@@ -141,7 +141,7 @@ export function Spaceship() {
             </ExploredPlanetContainer>
 
             <MissionUpdatesContent>
-              <NewsMission />
+              <NewsMission tipo="Equipe" maxItems={4}/>
             </MissionUpdatesContent>
           </SpaceshipCardContainer>
         </SpaceshipContent>

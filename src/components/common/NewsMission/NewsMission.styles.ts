@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NewsContainer = styled.div`
-  display: flex;
+display: flex;
   flex-direction: column;
   gap: 0.8rem;
   height: 20rem;
@@ -12,4 +12,8 @@ export const NewsContainer = styled.div`
     color: ${(props) => props.theme.colors.white};;
     font-size: 0.85rem;
   }
+`;
+
+export const NewsContent = styled.div`
+  
 `;

@@ -16,7 +16,7 @@ export function Mission() {
             </MissionDetailsContainer>
             
             <MissionUpdatesContent>
-                <NewsMission/>
+                <NewsMission maxItems={4}/>
             </MissionUpdatesContent>
         </MissionContainer>
         </>

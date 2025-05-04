@@ -7,41 +7,36 @@ import {
   ProjectProgressSuccess,
 } from "./ProjectProgress.styles";
 
-import gameData from "../../../assets/db/dbgame.json";
 import { useEffect, useState } from "react";
+import { fetchProject, Project } from "../../../services/projectService";
 
 interface ProjectProgressProps {
   selectedFilter: string;
 }
 
-interface Project {
-  Id: number;
-  Nome: string;
-  Progresso: number;
-  Data_Inicio: string;
-}
-
 export function ProjectProgress({ selectedFilter }: ProjectProgressProps) {
-  const sortedProjects = [...gameData.Projetos].sort(
-    (a: Project, b: Project) => {
-      switch (selectedFilter) {
-        case "critical":
-          return a.Progresso - b.Progresso;
-        case "recent":
-          return (
-            new Date(b.Data_Inicio).getTime() -
-            new Date(a.Data_Inicio).getTime()
-          );
-        case "oldest":
-          return (
-            new Date(a.Data_Inicio).getTime() -
-            new Date(b.Data_Inicio).getTime()
-          );
-        default:
-          return a.Progresso - b.Progresso;
-      }
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    fetchProject().then(setProjects).catch(console.error);
+  }, []);
+
+  const sortedProjects = [...projects].sort((a: Project, b: Project) => {
+    switch (selectedFilter) {
+      case "critical":
+        return a.Progresso - b.Progresso;
+      case "recent":
+        return (
+          new Date(b.Data_Início).getTime() - new Date(a.Data_Início).getTime()
+        );
+      case "oldest":
+        return (
+          new Date(a.Data_Início).getTime() - new Date(b.Data_Início).getTime()
+        );
+      default:
+        return a.Progresso - b.Progresso;
     }
-  );
+  });
 
   const limitedProjects = sortedProjects;
 

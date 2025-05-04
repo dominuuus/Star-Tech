@@ -6,21 +6,20 @@ import {
   MissionCardTitle,
 } from "./MissionCard.styles";
 
-import gameData from "../../../assets/db/dbgame.json";
+import { fetchMission, Mission } from "../../../services/missionService";
+import { useEffect, useState } from "react";
 
 interface MissionCardProps {
   selectedFilter: string;
 }
 
-interface Mission {
-  Id: number;
-  Nome: string;
-  Nome_projeto: string;
-  Status: string;
-  Data_Conclusão: string | null;
-}
-
 export function MissionCard({ selectedFilter }: MissionCardProps) {
+
+  const [missions, setMissions] = useState<Mission[]>([]);
+  
+    useEffect(() => {
+      fetchMission().then(setMissions).catch(console.error);
+    }, []);
 
   const filterMissions = (missions: Mission[]) => {
     switch (selectedFilter) {
@@ -42,7 +41,7 @@ export function MissionCard({ selectedFilter }: MissionCardProps) {
     }
   };
 
-  const selectedMissions = filterMissions(gameData.Missões);
+  const selectedMissions = filterMissions(missions);
 
   return (
     <>
@@ -53,7 +52,7 @@ export function MissionCard({ selectedFilter }: MissionCardProps) {
           <MissionCardInfoContent>
             <MissionCardTitle>
               <span>{missao.Nome}</span>
-              <span>Projeto: {missao.Nome_projeto}</span>
+              <span>Projeto: {missao.Projeto_Id}</span>
             </MissionCardTitle>
             <div>
               <CalendarCheck size={15} weight="fill" />
