@@ -1,3 +1,4 @@
+import images from "../../../assets/images";
 import { useEffect, useState } from "react";
 import {
   MissionDeadLine,
@@ -11,18 +12,24 @@ import {
   ProjectProgressCritical,
   ProjectProgressAlert,
   ProjectProgressSuccess,
+  ProgressMissionBarInfo,
+  MissionDescription,
+  TechLiderProfile,
+  ProgressContainerHead,
+  TechLiderProfileText,
+  RewardsContainer,
+  RewardsCards,
 } from "./MissionDetails.styles";
 import { fetchMission, Mission } from "../../../services/missionService";
 
-
 export function MissionDetails() {
   const [missions, setMissions] = useState<Mission[]>([]);
-    
-      useEffect(() => {
-        fetchMission().then(setMissions).catch(console.error);
-      }, []);
 
-      const filteredMissions = missions.slice(0, 1);
+  useEffect(() => {
+    fetchMission().then(setMissions).catch(console.error);
+  }, []);
+
+  const filteredMissions = missions.slice(0, 1);
 
   return (
     <>
@@ -53,22 +60,46 @@ export function MissionDetails() {
                 </MissionDetailsHead>
                 <hr />
                 <MissionDetailsBody>
-                  <span>{mission.Descrição} </span>
-                  <h4>Objetivo Técnico:</h4>
-                  <span>{mission.Objetivo_Técnico}</span>
+                  <MissionDescription>
+                    <span>{mission.Descrição} </span>
+                  </MissionDescription>
+                  <div>
+                    <h4>Objetivo Técnico:</h4>
+                    <span>{mission.Objetivo_Técnico}</span>
+                  </div>
+
                   <ProgressContainer>
-                    <h4 className="Progresso">Progresso</h4>
-                    <p>{mission.relativeDueDate}</p>
-                    <ProgressMissionBar>
-                      <ProgressBar
-                        width={mission.Progresso_missão}
-                        background={mission.Progresso_missão}
-                      ></ProgressBar>
-                    </ProgressMissionBar>
-                    <div>
-                      <h4>{mission.Progresso_missão}%</h4>
-                    </div>
+                    <ProgressContainerHead>
+                      <h4 className="Progresso">Progresso</h4>
+                      <p>{mission.relativeDueDate}</p>
+                    </ProgressContainerHead>
+
+                    <ProgressMissionBarInfo>
+                      <ProgressMissionBar>
+                        <ProgressBar
+                          width={mission.Progresso_missão}
+                          background={mission.Progresso_missão}
+                        ></ProgressBar>
+                      </ProgressMissionBar>
+                      <h4 className="Percentual">
+                        {mission.Progresso_missão}%
+                      </h4>
+                      <TechLiderProfile>
+                        <img src={images.profile1} alt="" />
+                        <TechLiderProfileText>
+                          <p>Tech Lider</p>
+                          <h4>Maiara Pires</h4>
+                          <span>@Sra.Commit</span>
+                        </TechLiderProfileText>
+                      </TechLiderProfile>
+                    </ProgressMissionBarInfo>
                   </ProgressContainer>
+                  <RewardsContainer>
+                    <h4>Recompensas</h4>
+                    <RewardsCards>
+                      <h4>{mission.Qtd_moedas} Estelares</h4>
+                    </RewardsCards>
+                  </RewardsContainer>
                 </MissionDetailsBody>
               </MissionDetailsContent>
             );
