@@ -4,7 +4,7 @@ import {
   TitleMission,
 } from "./MissionCardStatus.styles";
 
-import { CaretCircleRight, Calendar } from "phosphor-react";
+import { CaretCircleRight, CalendarCheck } from "phosphor-react";
 
 export function MissionCardStatus() {
   return (
@@ -13,12 +13,12 @@ export function MissionCardStatus() {
         <button>
           <CardMissionDetails>
             <TitleMission>
-              <span>Missão: Função Fora de Órbita</span>
-              <span>Projeto: BB Conta Corrente</span>
+              <span>Corrigir Acessibilidade no APP</span>
+              <span>Projeto: Acessibilidade App</span>
             </TitleMission>
             <div className="calendar">
-              <Calendar size={22} weight="fill" />
-              <p>Não Iniciada</p>
+              <CalendarCheck size={22} weight="fill" />
+              <p>Atrasada</p>
             </div>
           </CardMissionDetails>
           <div className="seta">
@@ -26,19 +26,17 @@ export function MissionCardStatus() {
           </div>
         </button>
       </CardMissionContainer>
-
-      
 
       <CardMissionContainer>
         <button>
           <CardMissionDetails>
             <TitleMission>
-              <span>Missão: Função Fora de Órbita</span>
-              <span>Projeto: BB Conta Corrente</span>
+              <span>Atualizar Dependências Obsoletas</span>
+              <span>Projeto: Financiamento Imobiliário</span>
             </TitleMission>
             <div className="calendar">
-              <Calendar size={22} weight="fill" />
-              <p>Não Iniciada</p>
+              <CalendarCheck size={22} weight="fill" />
+              <p>Atrasada</p>
             </div>
           </CardMissionDetails>
           <div className="seta">
@@ -46,6 +44,8 @@ export function MissionCardStatus() {
           </div>
         </button>
       </CardMissionContainer>
+
+  
     </>
   );
 }

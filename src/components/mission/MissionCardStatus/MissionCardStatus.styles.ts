@@ -36,7 +36,7 @@ export const CardMissionDetails = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 15px;
-  gap: 25px;
+  gap: 10px;
   font-size: 0.75rem;
   .calendar {
     display: flex;
@@ -46,7 +46,6 @@ export const CardMissionDetails = styled.div`
   }
   p {
     font-size: 0.75rem;
-    font-weight: bold;
   }
 `
 
