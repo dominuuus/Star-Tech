@@ -61,7 +61,7 @@ export function ProjectProgress({ selectedFilter }: ProjectProgressProps) {
           return (
             <ProjectProgressContent key={projeto.Id}>
               <ProjectProgressDefault>
-                <ProgressBar progress={projeto.Progresso} animate={animate}>
+                <ProgressBar $progress={projeto.Progresso} $animate={animate}>
                   <span>{projeto.Nome}</span>
                 </ProgressBar>
               </ProjectProgressDefault>

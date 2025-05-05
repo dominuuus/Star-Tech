@@ -44,7 +44,7 @@ export function MissionDetails() {
                 <MissionDetailsHead>
                   <MissionTitle>
                     <span>{mission.Nome}</span>
-                    <span>Projeto: {mission.Projeto_Id}</span>
+                    <span>Projeto: {mission.Projeto_Nome}</span>
                   </MissionTitle>
                   <MissionDeadLine>
                     <span>Lançamento da missão: {mission.Data_Criação}</span>
@@ -55,10 +55,10 @@ export function MissionDetails() {
                 <MissionDetailsBody>
                   <span>{mission.Descrição} </span>
                   <h4>Objetivo Técnico:</h4>
-                  <span>{mission.Objetivo_técnico}</span>
+                  <span>{mission.Objetivo_Técnico}</span>
                   <ProgressContainer>
                     <h4 className="Progresso">Progresso</h4>
-                    <p>O prazo da missão vence em dois dias</p>
+                    <p>{mission.relativeDueDate}</p>
                     <ProgressMissionBar>
                       <ProgressBar
                         width={mission.Progresso_missão}

@@ -1,0 +1,552 @@
+{
+  "usuarios": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Astro João",
+        "Email_Mascado": "joao.astro@***.com",
+        "Foto": "https://xai.com/avatars/joao.webp",
+        "Descrição": "Explorador de bugs estelares",
+        "Estelares": 150,
+        "Nível": 3,
+        "Avatar": { "Id": 1, "Nome": "Traje Lunar", "Imagem": "link.png", "Tipo": { "Id": 1, "Nome": "Traje" } },
+        "Equipe": { "Id": 1, "Nome": "Nave Orion", "Status": { "Id": 5, "Nome": "Ativa" } },
+        "Cargo": "Tech Líder"
+      },
+      {
+        "Id": 2,
+        "Nome": "Luna Maria",
+        "Email_Mascado": "luna.maria@***.com",
+        "Foto": null,
+        "Descrição": "Especialista em código limpo",
+        "Estelares": 50,
+        "Nível": 1,
+        "Avatar": null,
+        "Equipe": { "Id": 2, "Nome": "Estrela Polar", "Status": { "Id": 4, "Nome": "Inativa" } },
+        "Cargo": "Desenvolvedor"
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "equipes": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Nave Orion",
+        "Descrição": "Tripulação de elite",
+        "Nave": { "Id": 1, "Nome": "Orion Explorer", "Imagem": "link.png" },
+        "Status": { "Id": 5, "Nome": "Ativa" }
+      },
+      {
+        "Id": 2,
+        "Nome": "Estrela Polar",
+        "Descrição": "Equipe em formação",
+        "Nave": null,
+        "Status": { "Id": 4, "Nome": "Inativa" }
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "planetas": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Nebula-7",
+        "Descrição": "Planeta de nuvens cósmicas",
+        "Status": { "Id": 1, "Nome": "Não Explorado" },
+        "Qtd_missões": 8,
+        "Tema_Principal": { "Id": 1, "Nome": "Entrega e Ação" },
+        "Imagem": "https://xai.com/planets/nebula7.webp"
+      },
+      {
+        "Id": 2,
+        "Nome": "Astra-12",
+        "Descrição": "Planeta rochoso",
+        "Status": { "Id": 6, "Nome": "Incompleto" },
+        "Qtd_missões": 8,
+        "Tema_Principal": { "Id": 2, "Nome": "Código Limpo" },
+        "Imagem": "https://xai.com/planets/astra12.webp"
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "temas_principais": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Entrega e Ação",
+        "Descrição": "Foco em entregas rápidas"
+      },
+      {
+        "Id": 2,
+        "Nome": "Código Limpo",
+        "Descrição": "Prioriza qualidade do código"
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "missoes": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Otimizar API Estelar",
+        "Descrição": "Melhorar performance da API",
+        "Objetivo_Técnico": "Reduzir latência em 30% com caching",
+        "Tipo_Missão": { "Id": 1, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
+        "Progresso_missão": 0,
+        "Status": { "Id": 2, "Nome": "Em Progresso" },
+        "Data_Criação": "2025-04-25T08:00:00Z",
+        "Data_Prazo": "2025-05-05T23:59:59Z",
+        "Data_Conclusão": null,
+        "Qtd_moedas": 5,
+        "Fases_Total": 1,
+        "Fases_Concluídas": 0,
+        "Planeta": { "Id": 1, "Nome": "Nebula-7" },
+        "Projeto": { "Id": 1, "Nome": "API Estelar" },
+        "Tech_Líder": { "Id": 1, "Nome": "Astro João" }
+      },
+      {
+        "Id": 2,
+        "Nome": "Corrigir Bug Crítico",
+        "Descrição": "Resolver falha no login",
+        "Objetivo_Técnico": "Corrigir erro 500 no endpoint",
+        "Tipo_Missão": { "Id": 2, "Nome": "Vermelha", "Peso": 4, "Cor": "red-500" },
+        "Progresso_missão": 100,
+        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Data_Criação": "2025-04-20T09:00:00Z",
+        "Data_Prazo": "2025-04-28T23:59:59Z",
+        "Data_Conclusão": "2025-04-25T15:00:00Z",
+        "Qtd_moedas": 10,
+        "Fases_Total": 1,
+        "Fases_Concluídas": 1,
+        "Planeta": { "Id": 2, "Nome": "Astra-12" },
+        "Projeto": { "Id": 2, "Nome": "Sistema de Login" },
+        "Tech_Líder": { "Id": 1, "Nome": "Astro João" }
+      },
+      {
+        "Id": 3,
+        "Nome": "Corrigir Bug Crítico",
+        "Descrição": "Resolver falha no login",
+        "Objetivo_Técnico": "Corrigir erro 500 no endpoint",
+        "Tipo_Missão": { "Id": 2, "Nome": "Vermelha", "Peso": 4, "Cor": "red-500" },
+        "Progresso_missão": 100,
+        "Status": { "Id": 9, "Nome": "Atrasada" },
+        "Data_Criação": "2025-04-20T09:00:00Z",
+        "Data_Prazo": "2025-04-28T23:59:59Z",
+        "Data_Conclusão": "2025-04-25T15:00:00Z",
+        "Qtd_moedas": 10,
+        "Fases_Total": 1,
+        "Fases_Concluídas": 1,
+        "Planeta": { "Id": 2, "Nome": "Astra-12" },
+        "Projeto": { "Id": 2, "Nome": "Sistema de Login" },
+        "Tech_Líder": { "Id": 1, "Nome": "Astro João" }
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "tipos_missoes": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Amarela",
+        "Peso": 2,
+        "Cor": "yellow-500"
+      },
+      {
+        "Id": 2,
+        "Nome": "Vermelha",
+        "Peso": 4,
+        "Cor": "red-500"
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "projetos": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "API Estelar",
+        "Descrição": "API para integração",
+        "Progresso": 20.0,
+        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
+        "Planeta_Base": { "Id": 1, "Nome": "Nebula-7" },
+        "Planeta_Destino": null,
+        "Data_Início": "2025-04-01T00:00:00Z",
+        "Data_Prevista_Término": null,
+        "Data_Conclusão": null,
+        "Status": { "Id": 8, "Nome": "Em Progresso" }
+      },
+      {
+        "Id": 2,
+        "Nome": "Sistema de Login",
+        "Descrição": "Autenticação segura",
+        "Progresso": 100.0,
+        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
+        "Planeta_Base": { "Id": 2, "Nome": "Astra-12" },
+        "Planeta_Destino": null,
+        "Data_Início": "2025-03-15T00:00:00Z",
+        "Data_Prevista_Término": "2025-04-28T23:59:59Z",
+        "Data_Conclusão": "2025-04-25T15:00:00Z",
+        "Status": { "Id": 9, "Nome": "Concluída" }
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "mascotes": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "CosmoCat",
+        "Descrição": "Gato cósmico ágil",
+        "Imagem": "https://xai.com/mascots/cosmocat.webp",
+        "Planeta": { "Id": 1, "Nome": "Nebula-7" },
+        "Titulo": "Guardião Estelar",
+        "Personalidade": "Curioso",
+        "Habilidade_Especial": "Detectar bugs",
+        "Aparência": "Pelo brilhante"
+      },
+      {
+        "Id": 2,
+        "Nome": "StarBot",
+        "Descrição": "Robô explorador",
+        "Imagem": "https://xai.com/mascots/starbot.webp",
+        "Planeta": { "Id": 2, "Nome": "Astra-12" },
+        "Titulo": "Navegador",
+        "Personalidade": "Lógico",
+        "Habilidade_Especial": "Análise de dados",
+        "Aparência": "Metálico"
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "medalhas_cosmicas": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Medalha de Coragem",
+        "Descrição": "Por concluir missão crítica",
+        "Tipo": { "Id": 4, "Nome": "Individual" },
+        "Imagem": "https://xai.com/medals/courage.webp"
+      },
+      {
+        "Id": 2,
+        "Nome": "Medalha de Equipe",
+        "Descrição": "Por colaboração estelar",
+        "Tipo": { "Id": 5, "Nome": "Equipe" },
+        "Imagem": "https://xai.com/medals/team.webp"
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "naves": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Orion Explorer",
+        "Descrição": "Nave ágil",
+        "Status": { "Id": 11, "Nome": "Em Rota" },
+        "Planeta_Origem": { "Id": 1, "Nome": "Nebula-7" },
+        "Planeta_Destino": { "Id": 2, "Nome": "Astra-12" },
+        "Progresso_Trajeto": 50.0,
+        "Imagem": "https://xai.com/ships/orion.webp"
+      },
+      {
+        "Id": 2,
+        "Nome": "Polaris",
+        "Descrição": "Nave em manutenção",
+        "Status": { "Id": 3, "Nome": "Estacionada" },
+        "Planeta_Origem": { "Id": 2, "Nome": "Astra-12" },
+        "Planeta_Destino": null,
+        "Progresso_Trajeto": 0.0,
+        "Imagem": "https://xai.com/ships/polaris.webp"
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "notificacoes": {
+    "data": [
+      {
+        "Id": 1,
+        "Descrição": "Missão 'Otimizar API' atribuída",
+        "Data_Criação": "2025-04-25T08:00:00Z",
+        "Status": { "Id": 2, "Nome": "Pendente" },
+        "Usuário": { "Id": 1, "Nome": "Astro João" },
+        "Equipe": null,
+        "Projeto": { "Id": 1, "Nome": "API Estelar" },
+        "Tipo": "Equipe"
+      },
+      {
+        "Id": 2,
+        "Descrição": "Projeto 'Sistema de Login' concluído",
+        "Data_Criação": "2025-04-25T15:00:00Z",
+        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Usuário": null,
+        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
+        "Projeto": { "Id": 2, "Nome": "Sistema de Login" },
+        "Tipo": "Usuário"
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "credenciais": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Projeto API Estelar",
+        "Tipo": { "Id": 1, "Nome": "Projeto" },
+        "Descrição": "Participação na API",
+        "Status": { "Id": 5, "Nome": "Ativa" }
+      },
+      {
+        "Id": 2,
+        "Nome": "Nave Orion",
+        "Tipo": { "Id": 2, "Nome": "Nave" },
+        "Descrição": "Membro da tripulação",
+        "Status": { "Id": 5, "Nome": "Ativa" }
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "itens": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Traje Lunar",
+        "Tipo": { "Id": 1, "Nome": "Traje" },
+        "Descrição": "Traje para exploração",
+        "Imagem": "https://xai.com/items/lunar.webp",
+        "Status": { "Id": 5, "Nome": "Ativa" }
+      },
+      {
+        "Id": 2,
+        "Nome": "Capacete Estelar",
+        "Tipo": { "Id": 2, "Nome": "Acessório" },
+        "Descrição": "Capacete brilhante",
+        "Imagem": "https://xai.com/items/helmet.webp",
+        "Status": { "Id": 5, "Nome": "Ativa" }
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "conquistas": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Primeira Missão",
+        "Descrição": "Concluir uma missão",
+        "Qtd_moedas": 10,
+        "Imagem": "https://xai.com/achievements/first_mission.webp",
+        "Planeta": { "Id": 1, "Nome": "Nebula-7" },
+        "Status": { "Id": 5, "Nome": "Ativa" }
+      },
+      {
+        "Id": 2,
+        "Nome": "Explorador",
+        "Descrição": "Visitar dois planetas",
+        "Qtd_moedas": 15,
+        "Imagem": "https://xai.com/achievements/explorer.webp",
+        "Planeta": { "Id": 2, "Nome": "Astra-12" },
+        "Status": { "Id": 5, "Nome": "Ativa" }
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "transacoes": {
+    "data": [
+      {
+        "Id": 1,
+        "Usuário": { "Id": 1, "Nome": "Astro João" },
+        "Descrição": "Recompensa por missão",
+        "Qtd_moedas": 10,
+        "Data": "2025-04-25T15:00:00Z",
+        "Tipo": "Missão",
+        "Referência_Id": 2
+      },
+      {
+        "Id": 2,
+        "Usuário": { "Id": 1, "Nome": "Astro João" },
+        "Descrição": "Compra de item",
+        "Qtd_moedas": -50,
+        "Data": "2025-04-26T10:00:00Z",
+        "Tipo": "Compra",
+        "Referência_Id": 1
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "niveis_missoes_verdes": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Iniciação Cósmica",
+        "Ordem": 1,
+        "Status": { "Id": 10, "Nome": "Desbloqueado" }
+      },
+      {
+        "Id": 2,
+        "Nome": "Explorador Novato",
+        "Ordem": 2,
+        "Status": { "Id": 4, "Nome": "Bloqueado" }
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "missoes_verdes": {
+    "data": [
+      {
+        "Id": 1,
+        "Nome": "Tour Cósmico",
+        "Descrição": "Explore a plataforma",
+        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Qtd_moedas": 5,
+        "Nível": { "Id": 1, "Nome": "Iniciação Cósmica" }
+      },
+      {
+        "Id": 2,
+        "Nome": "Primeiro Commit",
+        "Descrição": "Faça seu primeiro commit",
+        "Status": { "Id": 2, "Nome": "Pendente" },
+        "Qtd_moedas": 5,
+        "Nível": { "Id": 1, "Nome": "Iniciação Cósmica" }
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "estatisticas": {
+    "data": [
+      {
+        "Id": 1,
+        "Usuário": { "Id": 1, "Nome": "Astro João" },
+        "Logins": 10,
+        "Tempo_Plataforma": 3600,
+        "Missões_Concluídas": 1,
+        "Bugs_Corrigidos": 5,
+        "Cobertura_Testes": 80.0,
+        "Dívidas_Técnicas": 2
+      },
+      {
+        "Id": 2,
+        "Usuário": { "Id": 2, "Nome": "Luna Maria" },
+        "Logins": 5,
+        "Tempo_Plataforma": 1800,
+        "Missões_Concluídas": 0,
+        "Bugs_Corrigidos": 0,
+        "Cobertura_Testes": 0.0,
+        "Dívidas_Técnicas": 0
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "status": {
+    "data": [
+      { "Id": 1, "Nome": "Não Explorado", "Descrição": "Ainda não iniciado" },
+      { "Id": 2, "Nome": "Pendente", "Descrição": "Aguardando início" },
+      { "Id": 3, "Nome": "Estacionada", "Descrição": "Nave parada" },
+      { "Id": 4, "Nome": "Inativa", "Descrição": "Não ativa" },
+      { "Id": 5, "Nome": "Ativa", "Descrição": "Entidade ativa" },
+      { "Id": 6, "Nome": "Incompleto", "Descrição": "Parcialmente concluído" },
+      { "Id": 8, "Nome": "Em Progresso", "Descrição": "Em execução" },
+      { "Id": 9, "Nome": "Concluída", "Descrição": "Finalizada" },
+      { "Id": 10, "Nome": "Desbloqueado", "Descrição": "Acessível" },
+      { "Id": 11, "Nome": "Em Rota", "Descrição": "Nave em movimento" }
+    ],
+    "meta": { "total": 10, "page": 1, "per_page": 10 }
+  },
+  "tipo_credencial": {
+    "data": [
+      { "Id": 1, "Nome": "Projeto", "Descrição": "Credencial de projeto" },
+      { "Id": 2, "Nome": "Nave", "Descrição": "Credencial de nave" },
+      { "Id": 4, "Nome": "Individual", "Descrição": "Medalha individual" },
+      { "Id": 5, "Nome": "Equipe", "Descrição": "Medalha de equipe" }
+    ],
+    "meta": { "total": 4, "page": 1, "per_page": 10 }
+  },
+  "tipo_item": {
+    "data": [
+      { "Id": 1, "Nome": "Traje", "Descrição": "Roupas personalizadas" },
+      { "Id": 2, "Nome": "Acessório", "Descrição": "Itens decorativos" }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "entregas": {
+    "data": [
+      {
+        "Id": 1,
+        "Missão": { "Id": 1, "Nome": "Otimizar API Estelar" },
+        "Nome": "Configurar Cache",
+        "Descrição": "Implementar Redis",
+        "Status": { "Id": 2, "Nome": "Pendente" },
+        "Data_Criação": "2025-04-25T08:00:00Z",
+        "Data_Conclusão": null,
+        "Usuário": { "Id": 1, "Nome": "Astro João" }
+      },
+      {
+        "Id": 2,
+        "Missão": { "Id": 2, "Nome": "Corrigir Bug Crítico" },
+        "Nome": "Debug Endpoint",
+        "Descrição": "Corrigir erro 500",
+        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Data_Criação": "2025-04-20T09:00:00Z",
+        "Data_Conclusão": "2025-04-25T15:00:00Z",
+        "Usuário": { "Id": 2, "Nome": "Luna Maria" }
+      }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "usuario_missao": {
+    "data": [
+      { "Usuário_Id": 1, "Missão_Id": 1, "Data_Atribuição": "2025-04-25T08:00:00Z" },
+      { "Usuário_Id": 2, "Missão_Id": 2, "Data_Atribuição": "2025-04-20T09:00:00Z" }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "usuario_mascote": {
+    "data": [
+      { "Usuário_Id": 1, "Mascote_Id": 1, "Data_Conquista": "2025-04-25T10:00:00Z" },
+      { "Usuário_Id": 2, "Mascote_Id": 2, "Data_Conquista": "2025-04-26T10:00:00Z" }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "usuario_medalha": {
+    "data": [
+      { "Usuário_Id": 1, "Medalha_Id": 1, "Data_Conquista": "2025-04-25T15:00:00Z" },
+      { "Usuário_Id": 1, "Medalha_Id": 2, "Data_Conquista": "2025-04-26T10:00:00Z" }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "usuario_credencial": {
+    "data": [
+      { "Usuário_Id": 1, "Credencial_Id": 1 },
+      { "Usuário_Id": 1, "Credencial_Id": 2 }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "usuario_item": {
+    "data": [
+      { "Usuário_Id": 1, "Item_Id": 1, "Data_Aquisição": "2025-04-26T10:00:00Z" },
+      { "Usuário_Id": 2, "Item_Id": 2, "Data_Aquisição": "2025-04-26T11:00:00Z" }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "usuario_conquista": {
+    "data": [
+      { "Usuário_Id": 1, "Conquista_Id": 1, "Data_Resgate": "2025-04-25T15:00:00Z" },
+      { "Usuário_Id": 2, "Conquista_Id": 2, "Data_Resgate": "2025-04-26T10:00:00Z" }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "usuario_nivel": {
+    "data": [
+      { "Usuário_Id": 1, "Nível_Id": 1, "Status": { "Id": 9, "Nome": "Concluída" }, "Data_Conclusão": "2025-04-25T12:00:00Z" },
+      { "Usuário_Id": 2, "Nível_Id": 1, "Status": { "Id": 2, "Nome": "Pendente" }, "Data_Conclusão": null }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  },
+  "usuario_missao_verde": {
+    "data": [
+      { "Usuário_Id": 1, "Missão_Verde_Id": 1, "Status": { "Id": 9, "Nome": "Concluída" }, "Data_Conclusão": "2025-04-25T12:00:00Z" },
+      { "Usuário_Id": 2, "Missão_Verde_Id": 2, "Status": { "Id": 2, "Nome": "Pendente" }, "Data_Conclusão": null }
+    ],
+    "meta": { "total": 2, "page": 1, "per_page": 10 }
+  }
+}

@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 interface StatusProps {
-  isSelected?: boolean;
+  $isSelected?: boolean;
 }
 
 export const MissionFilterCardContainer = styled.div`
@@ -44,7 +44,7 @@ export const NumberStyle = styled.span`
 
 export const StatusLateMission = styled.div<StatusProps>`
   border-radius: 30px;
-  background: ${(props) => (props.isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
+  background: ${(props) => (props.$isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
   gap: 15px;
   display: flex;
   flex-direction: row;
@@ -68,9 +68,9 @@ export const StatusLateMission = styled.div<StatusProps>`
 `;
 
 export const StatusInProgressMission = styled(StatusMission)<StatusProps>`
-  background: ${(props) => (props.isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
+  background: ${(props) => (props.$isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
 `
 
 export const StatusDoneMission = styled(StatusMission)<StatusProps>`
-  background: ${(props) => (props.isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
+  background: ${(props) => (props.$isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
 `

@@ -9,11 +9,11 @@ export function ProjectStatusCard() {
   return (
     <SquadStatsContainer>
         <MenuStats>
-          <ButtonStatus isSelected={selectedFilter === 'critical'}
+          <ButtonStatus $isSelected={selectedFilter === 'critical'}
           onClick={() => setSelectedFilter('critical')}>Mais críticos</ButtonStatus>
-          <ButtonStatus isSelected={selectedFilter === 'recent'}
+          <ButtonStatus $isSelected={selectedFilter === 'recent'}
           onClick={() => setSelectedFilter('recent')}>Mais recentes</ButtonStatus>
-          <ButtonStatus isSelected={selectedFilter === 'oldest'}
+          <ButtonStatus $isSelected={selectedFilter === 'oldest'}
           onClick={() => setSelectedFilter('oldest')}>Mais antigos</ButtonStatus>
         </MenuStats>
 

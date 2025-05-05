@@ -14,21 +14,20 @@ interface MissionCardProps {
 }
 
 export function MissionCard({ selectedFilter }: MissionCardProps) {
-
   const [missions, setMissions] = useState<Mission[]>([]);
-  
-    useEffect(() => {
-      fetchMission().then(setMissions).catch(console.error);
-    }, []);
+
+  useEffect(() => {
+    fetchMission().then(setMissions).catch(console.error);
+  }, []);
 
   const filterMissions = (missions: Mission[]) => {
     switch (selectedFilter) {
       case "late":
-        return missions.filter(m => m.Status === "Atrasada");
+        return missions.filter((m) => m.Status === "Atrasada");
       case "inProgress":
-        return missions.filter(m => m.Status === "Em Progresso");
+        return missions.filter((m) => m.Status === "Em Progresso");
       case "done7days":
-        return missions.filter(m => {
+        return missions.filter((m) => {
           if (!m.Data_Conclusão) return false;
           const doneDate = new Date(m.Data_Conclusão);
           const sevenDaysLater = new Date();
@@ -46,30 +45,29 @@ export function MissionCard({ selectedFilter }: MissionCardProps) {
   return (
     <>
       <MissionCardContainer>
-        {
-          selectedMissions.map(missao => (
-            <MissionCardContent key={missao.Id}>
-          <MissionCardInfoContent>
-            <MissionCardTitle>
-              <span>{missao.Nome}</span>
-              <span>Projeto: {missao.Projeto_Id}</span>
-            </MissionCardTitle>
+        {selectedMissions.map((missao) => (
+          <MissionCardContent key={missao.Id}>
+            <MissionCardInfoContent>
+              <MissionCardTitle>
+                <span>{missao.Nome}</span>
+                <span>Projeto: {missao.Projeto_Nome}</span>
+              </MissionCardTitle>
+              <div>
+                <CalendarCheck size={15} weight="fill" />
+                <p>
+                  {(selectedFilter !== "done7days" &&
+                    ` ${missao.Data_Prazo} - ${missao.relativeDueDate}`) ||
+                    (selectedFilter === "done7days" &&
+                      ` ${missao.Concluído_em}`)}
+                </p>
+              </div>
+            </MissionCardInfoContent>
             <div>
-              <CalendarCheck size={15} weight="fill" />
-              <p>{missao.Status}</p>
+              <CaretCircleRight size={32} weight="fill" />
             </div>
-          </MissionCardInfoContent>
-          <div>
-            <CaretCircleRight size={32} weight="fill" />
-          </div>
-        </MissionCardContent>
-
-          ))
-
-        }
-        
+          </MissionCardContent>
+        ))}
       </MissionCardContainer>
-
     </>
   );
 }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export interface ButtonProps {
-  isSelected?: boolean;
+  $isSelected?: boolean;
 }
 
 export const SquadStatsContainer = styled.div`
@@ -17,7 +17,7 @@ export const MenuStats = styled.div`
 `;
 
 export const ButtonStatus = styled.div<ButtonProps>`
-  background: ${(props) => (props.isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
+  background: ${(props) => (props.$isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
   color: ${(props) => props.theme.colors.primary};
   border-radius: 30px;
   padding: 0.8rem 1rem;

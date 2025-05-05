@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NewsContainer, NewsContent } from "./NewsMission.styles";
 import {
-  fetchNotification, Notifications
+  fetchNotification, Notification
 } from "../../../services/notificationService";
 
 interface NewsMissionProps {
@@ -10,7 +10,7 @@ interface NewsMissionProps {
 }
 
 export function NewsMission({tipo, maxItems}: NewsMissionProps) {
-  const [notifications, setNotifications] = useState<Notifications[]>([]);
+  const [notifications, setNotifications] = useState<Notification[]>([]);
 
   useEffect(() => {
     fetchNotification().then(setNotifications).catch(console.error);

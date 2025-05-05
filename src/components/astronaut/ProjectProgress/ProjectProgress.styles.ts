@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 interface ProgressBarProps {
-  progress: number;
-  animate?: boolean;
+  $progress: number;
+  $animate?: boolean;
 }
 
 export const ProjectProgressContainer = styled.div`
@@ -35,15 +35,15 @@ const ProjectProgressStatus = styled.div<ProgressBarProps>`
   padding: 0.75rem;
   align-items: center;
   border-radius: 30px;
-    width: ${(props) => (props.animate ? props.progress : 0)}%;
-  animation: ${(props) => (props.animate ? "grow 2.5s linear" : "none")};
+    width: ${(props) => (props.$animate ? props.$progress : 0)}%;
+  animation: ${(props) => (props.$animate ? "grow 2.5s linear" : "none")};
   @keyframes grow {
     0% {
       width: 0%;
       transform: scale(1);
     }
-    ${(props) => props.progress} {
-      width: ${(props) => props.progress}%;
+    ${(props) => props.$progress} {
+      width: ${(props) => props.$progress}%;
       transform: scale(1);
     }
   }

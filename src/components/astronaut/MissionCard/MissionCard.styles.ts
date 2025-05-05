@@ -17,13 +17,12 @@ export const MissionCardContent = styled.div`
   padding: 10px;
   align-items: center;
 
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.1),
-              1px 1px 2px rgba(255,255,255,0.8);
+  box-shadow:
+    3px 3px 5px rgba(0, 0, 0, 0.1),
+    1px 1px 2px rgba(255, 255, 255, 0.8);
   div {
     margin-right: 20px;
   }
-
-  
 `;
 
 export const MissionCardInfoContent = styled.div`
@@ -38,13 +37,15 @@ export const MissionCardInfoContent = styled.div`
     gap: 5px;
     align-items: center;
   }
-  p {font-size: 0.5rem;};
+  p {
+    font-size: 0.7rem;
+  }
+
+
 `;
 
 export const MissionCardTitle = styled.section`
   display: flex;
   flex-direction: column;
   font-weight: bold;
-
-
-`
+`;
