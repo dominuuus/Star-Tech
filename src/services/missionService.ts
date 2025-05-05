@@ -10,7 +10,7 @@ export interface Mission {
   Tipo_Missão_Nome: string;
   Progresso_missão: number;
   Status: string;
-  Data_Criação: string;
+  Data_Criação?: string;
   Data_Prazo?: string;
   Data_Conclusão?: string;
   Concluído_em?: string; // Para exibição do campo sem transformação do FormatDate
@@ -50,7 +50,7 @@ const mapRawMissionToMission = (raw: RawMission): Mission => ({
   Tipo_Missão_Nome: raw.Tipo_Missão.Nome,
   Progresso_missão: raw.Progresso_missão,
   Status: raw.Status.Nome,
-  Data_Criação: raw.Data_Criação,
+  Data_Criação: formatDate(raw.Data_Criação),
   Data_Prazo: formatDate(raw.Data_Prazo),
   Data_Conclusão: raw.Data_Conclusão ? raw.Data_Conclusão : undefined,
   Concluído_em: formatDate(raw.Data_Conclusão),
