@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProfileCardContainer = styled.div`
-    background: linear-gradient(90deg,rgba(63, 97, 220, 1) 0%, rgba(56, 229, 250, 1) 100%);
+    background: ${(props) => props.theme.colors.gradients.profileMenu};
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -32,7 +32,7 @@ export const ProfileContent = styled.div`
 `
 
 export const NotificationContainer = styled.div`
-    background-color: #09152B;
+    background-color: ${(props) => props.theme.colors.primary};
     border-radius: 50%;
     height: 2.5rem;
     width: 2.5rem;
@@ -46,7 +46,7 @@ export const CoinContainer = styled.div`
     align-items: center;
     
     span {
-        color: #D8A214;
+        color: ${(props) => props.theme.colors.goldCoin};;
         font-weight: bold;
     }
     

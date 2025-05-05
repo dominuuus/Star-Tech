@@ -1,17 +1,44 @@
-import { NewsContainer } from "./NewsMission.styles"
+import { useEffect, useState } from "react";
+import { NewsContainer, NewsContent } from "./NewsMission.styles";
+import {
+  fetchNotification, Notification
+} from "../../../services/notificationService";
 
-export function NewsMission() {
-    return (
-        <>
-        <NewsContainer>
-        <span>A missão R2-Deploy2 foi adicionada ao seu diário de bordo</span>
-        <hr />
-        <span>A missão Delta5 está em 80%. Acesse á para concluir</span>
-        <hr />
-        <span>Situação crítica detectada! Faz 5 dias que a missão Alpha9 está fora de órbita</span>
-        <hr />
-        <span>Você tem 3 projetos em situação crítica.</span>
-        </NewsContainer>
-        </>
-    )
+interface NewsMissionProps {
+    tipo?: string;
+    maxItems?: number;
+}
+
+export function NewsMission({tipo, maxItems}: NewsMissionProps) {
+  const [notifications, setNotifications] = useState<Notification[]>([]);
+
+  useEffect(() => {
+    fetchNotification().then(setNotifications).catch(console.error);
+  }, []);
+
+  const filteredNotification = tipo
+  ? notifications.filter(notification => notification.Tipo === tipo)
+  : notifications;
+
+  const displayedNotification = maxItems
+  ? filteredNotification.slice(0, maxItems)
+  : filteredNotification;
+
+  return (
+    <>
+      <NewsContainer>
+        {
+            displayedNotification.length > 0 ? (
+                displayedNotification.map(notification => (
+                    <NewsContent key={notification.Id}>
+          <span>{notification.Descrição}</span>
+          {notification.Id !== displayedNotification[displayedNotification.length - 1].Id && <hr />}
+        </NewsContent>
+                ))
+            ) : ( <span> Nenhuma notificação encontrada </span>)
+        }
+        
+      </NewsContainer>
+    </>
+  );
 }

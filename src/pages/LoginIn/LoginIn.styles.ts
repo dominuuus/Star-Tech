@@ -1,34 +1,27 @@
 import styled from "styled-components";
 
-export const LoginContainer = styled.div`
+export const LoginInContainer = styled.section`
+    background: ${(props) => props.theme.colors.gradients.bgLoginIn};
     height: 100vh;
 `
 
-export const HeaderContainer = styled.div`
-    top: 0;
+export const LoginInContent = styled.section`
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    height: 86vh;
 `
 
-export const LoginContent = styled.div`
-    display: grid;
-    grid-template-columns: 900px 200px;
-    padding: 20px;
-    margin: 40px;
-`
-
-export const LoginSectionOne = styled.div`
-    text-align: center;
-    img {
-        height: 30rem;
-        border-radius: 30px;
-    }
-`
-
-export const LoginSectionTwo = styled.div`
+export const AuthSection = styled.section`
+    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     justify-content: center;
+    color: ${(props) => props.theme.colors.white};
+    margin-left: 900px;
+    margin-top: 300px;
 
     span {
         font-size: 1.3rem;
@@ -36,14 +29,15 @@ export const LoginSectionTwo = styled.div`
     }
 
     button {
-        width: 300px;
-        background-color: #09152B;
-        color: #fff;
+        width: 12rem;
+        background: ${(props) => props.theme.colors.primary};;
+        color: ${(props) => props.theme.colors.white};
+        border: 0px;
 
         &:hover {
-            background-color:rgb(13, 36, 78);
-            border: 1px solid #09152B;
-            color: #FFF;
+            background: ${(props) => props.theme.colors.gradients.tripulation};
+            color: ${(props) => props.theme.colors.white};
+            border: 0px;
         }
     }
 `

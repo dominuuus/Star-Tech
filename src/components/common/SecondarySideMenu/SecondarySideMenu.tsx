@@ -20,26 +20,26 @@ export function SecondarySideMenu() {
       <MenuBlockOne>
         <MenuItem>
           <NavLink to="nave" title="Tutorial">
-            <RocketLaunch size={28} weight="fill" />
-            Nave
+            <RocketLaunch size={23} weight="bold" />
+            <span>Nave</span>
           </NavLink>
         </MenuItem>
         <MenuItem>
           <NavLink to="piloto" title="Tutorial">
-            <User size={28} weight="fill" />
-            Piloto
+            <User size={23} weight="bold" />
+            <span>Piloto</span>
           </NavLink>
         </MenuItem>
         <MenuItem>
           <NavLink to="missoes" title="Tutorial">
-            <Lightning size={32} weight="fill" />
-            Missões
+            <Lightning size={23} weight="bold"/>
+            <span>Missões</span>
           </NavLink>
         </MenuItem>
         <MenuItem>
           <NavLink to="conquistas" title="Tutorial">
-            <Trophy size={28} weight="fill" />
-            Conquistas
+            <Trophy size={23} weight="bold" />
+            <span>Conquistas</span>
           </NavLink>
         </MenuItem>
       </MenuBlockOne>
@@ -47,15 +47,15 @@ export function SecondarySideMenu() {
       <MenuBlockTwo>
         <MenuItem>
           <NavLink to="explorar" title="Tutorial">
-            <Planet size={28} weight="fill" />
-            Explorar
+            <Planet size={23} weight="fill" />
+            <span>Explorar</span>
           </NavLink>
         </MenuItem>
 
         <MenuItem>
           <NavLink to="oficina" title="Tutorial">
-            <Wrench size={28} weight="fill" />
-            Oficina
+            <Wrench size={23} weight="fill" />
+            <span>Oficina</span>
           </NavLink>
         </MenuItem>
       </MenuBlockTwo>

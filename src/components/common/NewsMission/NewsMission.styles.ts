@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
 export const NewsContainer = styled.div`
-  display: flex;
+display: flex;
   flex-direction: column;
   gap: 0.8rem;
   height: 20rem;
-  background-color: #575D6D;
+  background-color: ${(props) => props.theme.colors.secondary};
   border-radius: 0.75rem;
   padding: 1.5rem;
   span {
-    color: white;
+    color: ${(props) => props.theme.colors.white};;
     font-size: 0.85rem;
   }
+`;
+
+export const NewsContent = styled.div`
+  
 `;

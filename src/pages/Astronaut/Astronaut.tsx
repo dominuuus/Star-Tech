@@ -1,42 +1,29 @@
 import { useState } from "react";
-import achievements from "../../assets/achievements";
-import mascotes from "../../assets/mascots";
 import { MissionCard } from "../../components/astronaut/MissionCard/MissionCard";
 import { MissionFilterCard } from "../../components/astronaut/MissionFilterCard/MissionFilterCard";
 import { ProjectStatusCard } from "../../components/astronaut/ProjectStatusCard/ProjectStatusCard";
 import { NewsMission } from "../../components/common/NewsMission/NewsMission";
 import { UserProfile } from "../UserProfile/UserProfile";
 import {
-  AchievementContent,
+  AchievementContainer,
   AstronautContainer,
   AstronautSectionOne,
   AstronautSectionTwo,
-  CloseModalButton,
   CommandCenterContent,
-  FavoriteModalButton,
   MascotAchieveNewsContainer,
-  MascotContent,
-  MascotDescriptionContainer,
+  MascotContainer,
+  MissionCardContainer,
+  MissionFilterContainer,
   MissionStatusContent,
-  ModalButtons,
-  ModalContentDescription,
-  ModalContentInfo,
-  ModalContentWrapper,
   NewsContent,
   SectionTwoContentOne,
   SectionTwoContentTwo,
 } from "./Astronaut.styles";
-import { MascotModal } from "../../components/common/MascotModal/MascotModal";
-import { AchievementModal } from "../../components/common/AchievementModal/AchievementModal";
+import { MascotPage } from "../../components/common/MascotModal/MascotModal";
+import { AchievementPage } from "../../components/common/AchievementModal/AchievementModal";
 
 export function Astronaut() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const openMascotModal = () => setIsModalOpen(true);
-  const closeMascotModal = () => setIsModalOpen(false);
-
-  const [isAchievementOpen, setIsAchievementOpen] = useState(false);
-  const openAchievementModal = () => setIsAchievementOpen(true);
-  const closeAchievementMascotModal = () => setIsAchievementOpen(false);
+  const [selectedFilter, setSelectedFilter] = useState<string>("all");
 
   return (
     <AstronautContainer>
@@ -47,118 +34,29 @@ export function Astronaut() {
       <AstronautSectionTwo>
         <SectionTwoContentOne>
           <MascotAchieveNewsContainer>
-            <MascotContent>
+            <MascotContainer>
               <div>
                 <span>Mascotes</span>
               </div>
-              <img src={mascotes.algorix} alt="" onClick={openMascotModal} />
-              <MascotModal isOpen={isModalOpen} onClose={closeMascotModal}>
-                <ModalContentWrapper>
-                  <ModalContentInfo>
-                    <img
-                      src={mascotes.algorix}
-                      alt=""
-                      onClick={openMascotModal}
-                    />
-                    <span>Algorix</span>
-                  </ModalContentInfo>
-                  <ModalContentDescription>
-                    <MascotDescriptionContainer>
-                      <h1>O estrategista de código</h1>
-                      <h2>
-                        Um ser geométrico que flutua suavemente, sempre
-                        calculando o caminho mais eficiente. Sua mente funciona
-                        como um algoritmo vivo, otimizando tudo ao seu redor.
-                      </h2>
-                      <h3>Personalidade</h3>
-                      <span>
-                        Racional, paciente e estratégico. Fala em padrões
-                        lógicos e adora resolver problemas complexos.
-                      </span>
-                      <h3>Habilidade especial</h3>
-                      <span>
-                        Identifica redundâncias em códigos e sugere estruturas
-                        mais eficientes.
-                      </span>
-
-                      <ModalButtons>
-                        <FavoriteModalButton>
-                          Remover dos favoritos
-                        </FavoriteModalButton>
-                        <CloseModalButton onClick={closeMascotModal}>
-                          Fechar
-                        </CloseModalButton>
-                      </ModalButtons>
-                    </MascotDescriptionContainer>
-                  </ModalContentDescription>
-                </ModalContentWrapper>
-              </MascotModal>
-              <img src={mascotes.buggo} alt="" />
-              <img src={mascotes.astroli} alt="" />
-              <img src={mascotes.bytee} alt="" />
-              <img src={mascotes.cachee} alt="" />
-              <img src={mascotes.patch} alt="" />
-              <img src={mascotes.cometin} alt="" />
-              <img src={mascotes.galaxito} alt="" />
-              <img src={mascotes.pluxi} alt="" />
-              <img src={mascotes.floris} alt="" />
-            </MascotContent>
-            <AchievementContent>
+              <MascotPage />
+            </MascotContainer>
+            <AchievementContainer>
               <div>
                 <span>Conquistas</span>
               </div>
-              <img
-                src={achievements.ferroVermelho}
-                alt=""
-                onClick={openAchievementModal}
-              />
-              <AchievementModal
-                isAchievementOpen={isAchievementOpen}
-                onAchievementClose={closeAchievementMascotModal}
-              >
-                <ModalContentWrapper>
-                  <ModalContentInfo>
-                    <img
-                      src={achievements.ferroVermelho}
-                      alt=""
-                      onClick={openAchievementModal}
-                    />
-                  </ModalContentInfo>
-                  <ModalContentDescription>
-                    <MascotDescriptionContainer>
-                      <h1>Ferro Vermelho</h1>
-                      <h2>Ao entregar 5 tarefas críticas (vermelhas) antes do prazo, você demonstra a força necessária para enfrentar os ambientes mais intensos da galáxia.</h2>
-                      <p>🔥 Velocidade sob pressão</p>
-                      <p>🔥 Compromisso com qualidade</p>
-                      <p>🔥 Espírito inabalável diante de falhas críticas</p>
-                      
-                      
-
-                      <ModalButtons>
-                        <CloseModalButton onClick={closeAchievementMascotModal}>
-                          Fechar
-                        </CloseModalButton>
-                      </ModalButtons>
-                    </MascotDescriptionContainer>
-                  </ModalContentDescription>
-                </ModalContentWrapper>
-              </AchievementModal>
-              <img src={achievements.exploradorDeSolido} alt="" />
-              <img src={achievements.fundadorDaFrota} alt="" />
-              <img src={achievements.raizSolida} alt="" />
-            </AchievementContent>
+              <AchievementPage />
+            </AchievementContainer>
           </MascotAchieveNewsContainer>
 
-          
-        <NewsContent>
-          <NewsMission />
-        </NewsContent>
+          <NewsContent>
+            <NewsMission tipo="Usuário" maxItems={4} />
+          </NewsContent>
         </SectionTwoContentOne>
-
 
         <SectionTwoContentTwo>
           <div>
             <span>Central de Comando</span>
+            <p>Projetos</p>
             <CommandCenterContent>
               <ProjectStatusCard />
             </CommandCenterContent>
@@ -166,8 +64,15 @@ export function Astronaut() {
 
           <div>
             <MissionStatusContent>
-              <MissionFilterCard />
-              <MissionCard />
+              <MissionFilterContainer>
+                <MissionFilterCard
+                  selectedFilter={selectedFilter}
+                  onFilterChange={setSelectedFilter}
+                />
+              </MissionFilterContainer>
+              <MissionCardContainer>
+                <MissionCard selectedFilter={selectedFilter} />
+              </MissionCardContainer>
             </MissionStatusContent>
           </div>
         </SectionTwoContentTwo>

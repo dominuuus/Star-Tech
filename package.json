@@ -10,13 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@phosphor-icons/react": "github:phosphor-icons/react",
+    "@react-three/drei": "^10.0.7",
+    "@react-three/fiber": "^9.1.2",
+    "axios": "^1.9.0",
+    "date-fns": "^4.1.0",
     "framer-motion": "^12.6.5",
     "phosphor-react": "^1.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.0",
-    "styled-components": "^6.1.17"
+    "styled-components": "^6.1.17",
+    "three": "^0.176.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

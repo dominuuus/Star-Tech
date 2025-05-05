@@ -13,11 +13,11 @@ export const MissionContainer = styled.div`
 `
 
 export const StatusMissionContainer = styled.div`
-    background-color: gray;
+    background-color: ${(props) => props.theme.colors.gray.light};
 `
 
 export const MissionDetailsContainer = styled.div`
-    background-color: gray;
+    background-color: ${(props) => props.theme.colors.gray.light};
 `
 export const MissionUpdatesContent = styled.div`
 height: 100%;
