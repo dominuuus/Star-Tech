@@ -31,28 +31,55 @@ import { fetchMission, Mission } from "../../../services/missionService";
 import achievements from "../../../assets/achievements";
 
 export function MissionDetails() {
-  const [missions, setMissions] = useState<Mission[]>([]);
+  const { id } = useParams<{ id: string }>();
+  const [mission, setMission] = useState<Mission | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetchMission().then(setMissions).catch(console.error);
-  }, []);
+    if (id) {
+      // Carregar missão específica por ID
+      fetchMissionById(Number(id))
+        .then((data) => {
+          setMission(data);
+          setLoading(false);
+        })
+        .catch((err) => {
+          setError(err.message);
+          setLoading(false);
+        });
+    } else {
+      // Carregar missão padrão (primeira atrasada ou primeira disponível)
+      fetchMission()
+        .then((missions) => {
+          if (missions.length === 0) {
+            setError("Nenhuma missão encontrada");
+            setLoading(false);
+            return;
+          }
+          // Priorizar missão com status "Atrasada"
+          const defaultMission =
+            missions.find((m) => m.Status === "Atrasada") || missions[0];
+          setMission(defaultMission);
+          setLoading(false);
+        })
+        .catch((err) => {
+          setError(err.message);
+          setLoading(false);
+        });
+    }
+  }, [id]);
 
-  const filteredMissions = missions.slice(0, 1);
+  if (loading) return <div>Carregando...</div>;
+  if (error) return <div>Erro: {error}</div>;
+  if (!mission) return <div>Missão não encontrada</div>;
 
-  return (
-    <>
-      <MissionDetailsContainer>
-        {filteredMissions.map((mission) => {
-          {
-            let ProgressBar = ProjectProgressCritical;
-            if (
-              mission.Progresso_missão >= 50 &&
-              mission.Progresso_missão <= 79
-            ) {
-              ProgressBar = ProjectProgressAlert;
-            } else if (mission.Progresso_missão >= 80) {
-              ProgressBar = ProjectProgressSuccess;
-            }
+  let ProgressBar = ProjectProgressCritical;
+  if (mission.Progresso_missão >= 50 && mission.Progresso_missão <= 79) {
+    ProgressBar = ProjectProgressAlert;
+  } else if (mission.Progresso_missão >= 80) {
+    ProgressBar = ProjectProgressSuccess;
+  }
 
             return (
               <MissionDetailsContent key={mission.Id}>
