@@ -19,23 +19,22 @@ export const MenuContainer = styled.div`
   div {
     margin-top: 20px;
   }
-  
 
   &:hover {
-    background-color:${(props) => props.theme.colors.primary};;
+    background-color: ${(props) => props.theme.colors.primary};
     width: 4rem;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     span {
-        opacity: 1;
+      opacity: 1;
     }
 
     a {
-        color: ${(props) => props.theme.colors.white};
+      color: ${(props) => props.theme.colors.white};
 
-        &:hover {
-            color: ${(props) => props.theme.colors.linkHover};
-        }
+      &:hover {
+        color: ${(props) => props.theme.colors.linkHover};
+      }
     }
   }
 `;
@@ -55,7 +54,6 @@ export const MenuItem = styled.div`
   &:hover {
     cursor: pointer;
     width: 4rem;
-
   }
 
   a {

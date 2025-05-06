@@ -2,7 +2,7 @@ export const defaultTheme = {
   colors: {
     primary: "#09152B", // Cor primária (elementos de destaque, menus)
     primaryHover: '#0D244E', //Hover primário
-    secondary: "#575D6D", // Cor secundária (detalhes, textos secundários)
+    secondary: "#213547", // Cor secundária (detalhes, textos secundários)
     tertiary: '#082751', // Cor terciária, dos botões de status de progresso dos projetos
     techLeader: "#F3A64B", // Cor de identificação do tech líder
     goldCoin: "#D8A214", // Cor dourada das moedas

@@ -85,3 +85,30 @@ export async function fetchMission(): Promise<Mission[]> {
     }
   }
 }
+
+export async function fetchMissionById(id: number): Promise<Mission> {
+  try {
+    const response = await api.get(`/missoes/${id}`);
+    const rawMission: RawMission = response.data;
+    if (!rawMission || typeof rawMission !== 'object') {
+      throw new Error('Missão não encontrada ou dados inválidos retornados pela API');
+    }
+    return mapRawMissionToMission(rawMission);
+  } catch (error: unknown) {
+    console.error(`Erro ao buscar missão ${id} via API:`, error);
+    try {
+      const rawMissions: RawMission[] = gameData.missoes.data;
+      if (!Array.isArray(rawMissions)) {
+        throw new Error('Dados de missões inválidos no db.json');
+      }
+      const rawMission = rawMissions.find(mission => mission.Id === id);
+      if (!rawMission) {
+        throw new Error(`Missão com ID ${id} não encontrada no db.json`);
+      }
+      return mapRawMissionToMission(rawMission);
+    } catch (fallbackError) {
+      console.error('Erro no fallback para db.json:', fallbackError);
+      throw new Error(`Falha ao carregar missão com ID ${id}. Verifique o JSON Server ou o arquivo db.json.`);
+    }
+  }
+}
