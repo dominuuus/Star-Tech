@@ -15,7 +15,7 @@ export function ProfileCard() {
             </ProfileContent>
 
             <NotificationContainer>
-                <Bell size={25} weight="fill" />
+                <Bell size={20} weight="fill" />
             </NotificationContainer>
 
             <CoinContainer>

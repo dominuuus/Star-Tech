@@ -2,7 +2,7 @@ import { api } from "../lib/axios";
 import gameData from "../assets/db/db.json";
 
 export interface Planet {
-    Id: number;
+    id: number;
     Nome: string;
     Descrição?: string;
     Status?: string;
@@ -12,17 +12,17 @@ export interface Planet {
 }
 
 interface RawPlanet {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição: string | null;
-  Status: {Id: number, Nome: string} | null;
+  Status: {id: number, Nome: string} | null;
   Qtd_missões: number | null;
-  Tema_Principal: {Id: number, Nome: string} | null;
+  Tema_Principal: {id: number, Nome: string} | null;
   Imagem: string | null;
 }
 
 const mapRawPlanetToPlanet = (raw: RawPlanet): Planet => ({
-    Id: raw.Id,
+    id: raw.id,
     Nome: raw.Nome,
     Descrição: raw.Descrição ? raw.Descrição : undefined,
     Status: raw.Status?.Nome ? raw.Status.Nome : undefined,

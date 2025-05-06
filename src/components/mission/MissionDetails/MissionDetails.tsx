@@ -109,30 +109,39 @@ export function MissionDetails() {
           </MissionDescription>
           <MissionTechnicalObjectiveContainer>
             <h4>Objetivo Técnico:</h4>
-            <span>{mission.Objetivo_Técnico}</span>
+            <span>{mission.Objetivo_Técnico.split('\n').map((item, index) => (
+  <li key={index}>{item}</li>
+))}</span>
           </MissionTechnicalObjectiveContainer>
           <ProgressContainer>
             <ProgressContainerHead>
               <h4 className="Progresso">Progresso</h4>
-              <p>{mission.relativeDueDate || "Sem prazo"}</p>
+
+              <p>
+                {(mission.Status !== "Concluída" &&
+                  `${mission.relativeDueDate}`) ||
+                  (mission.Status === "Concluída" &&
+                    `Concluída em ${mission.Concluído_em}`)}
+              </p>
             </ProgressContainerHead>
             <ProgressMissionBarInfo>
               <ProgressMissionBar>
                 <ProgressBar
-                  width={mission.Progresso_missão}
-                  background={mission.Progresso_missão}
+                  $width={mission.Progresso_missão}
+                  $background={mission.Progresso_missão}
                 />
               </ProgressMissionBar>
               <h4 className="Percentual">{mission.Progresso_missão}%</h4>
               <TechLiderProfile>
-                <img src={images.profile1} alt="Tech Líder" />
+                <img src={images.leader} alt="Tech Líder" />
                 <TechLiderProfileText>
-                  <p>Tech Líder</p>
-                  <h4>{mission.Tech_Líder_Nome || "Sem líder"}</h4>
-                  <span>
-                    @{mission.Tech_Líder_Nome?.replace(/\s/g, "") ||
+                  <h4>Tech Líder</h4>
+                  <span>{mission.Tech_Líder_Nome || "Sem líder"}</span>
+                  <p>
+                    @
+                    {mission.Tech_Líder_Nome?.replace(/\s/g, "") ||
                       "sra.commit"}
-                  </span>
+                  </p>
                 </TechLiderProfileText>
               </TechLiderProfile>
             </ProgressMissionBarInfo>

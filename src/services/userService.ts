@@ -2,7 +2,7 @@ import { api } from "../lib/axios";
 import gameData from "../assets/db/db.json";
 
 export interface User {
-  Id: number;
+  id: number;
   Nome: string;
   Email: string;
   Foto: string | null;
@@ -15,7 +15,7 @@ export interface User {
 }
 
 interface RawUser {
-  Id: number;
+  id: number;
   Nome: string;
   Email_Mascado: string;
   Foto: string | null;
@@ -23,21 +23,21 @@ interface RawUser {
   Estelares: number;
   Nível: number;
   Avatar: {
-    Id: number;
+    id: number;
     Nome: string;
     Imagem: string | null;
-    Tipo: { Id: number; Nome: string } | null;
+    Tipo: { id: number; Nome: string } | null;
   } | null;
   Equipe: {
-    Id: number;
+    id: number;
     Nome: string;
-    Status: { Id: number; Nome: string };
+    Status: { id: number; Nome: string };
   } | null;
   Cargo: string;
 }
 
 const mapRawUserToUser = (raw: RawUser): User => ({
-  Id: raw.Id,
+  id: raw.id,
   Nome: raw.Nome,
   Email: raw.Email_Mascado,
   Foto: raw.Foto,

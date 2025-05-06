@@ -30,9 +30,9 @@ export function NewsMission({tipo, maxItems}: NewsMissionProps) {
         {
             displayedNotification.length > 0 ? (
                 displayedNotification.map(notification => (
-                    <NewsContent key={notification.Id}>
+                    <NewsContent key={notification.id}>
           <span>{notification.Descrição}</span>
-          {notification.Id !== displayedNotification[displayedNotification.length - 1].Id && <hr />}
+          {notification.id !== displayedNotification[displayedNotification.length - 1].id && <hr />}
         </NewsContent>
                 ))
             ) : ( <span> Nenhuma notificação encontrada </span>)

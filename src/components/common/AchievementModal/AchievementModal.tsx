@@ -84,7 +84,7 @@ function AchievementList({ achievements }: AchievementListProps) {
     <>
       <AchievementContent>
         {achievements.map((mascot) => (
-          <div key={mascot.Id}>
+          <div key={mascot.id}>
             <img
               src={mascot.Imagem}
               alt={mascot.Nome}

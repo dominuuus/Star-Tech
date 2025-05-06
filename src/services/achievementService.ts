@@ -2,7 +2,7 @@ import gameData from "../assets/db/db.json";
 import { api } from "../lib/axios";
 
 export interface Achievement {
-    Id: number;
+    id: number;
     Nome: string;
     Descrição: string;
     Tarefas?: string;
@@ -13,18 +13,18 @@ export interface Achievement {
 }
 
 interface RawAchievement {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição: string;
   Tarefas: string | null;
   Qtd_moedas: number;
   Imagem: string;
-  Planeta: { Id: number; Nome: string };
-  Status: { Id: number; Nome: string };
+  Planeta: { id: number; Nome: string };
+  Status: { id: number; Nome: string };
 }
 
 const mapRawAchievementToAchievements = (raw: RawAchievement): Achievement => ({
-  Id: raw.Id,
+  id: raw.id,
   Nome: raw.Nome,
   Descrição: raw.Descrição,
   Tarefas: raw.Tarefas ? raw.Tarefas : undefined,

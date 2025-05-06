@@ -85,7 +85,7 @@ function MascotList({mascots}: MascotListProps) {
     <>
       <MascotContent>
           {mascots.map((mascot) => (
-            <div key={mascot.Id}>
+            <div key={mascot.id}>
               <img
                 src={mascot.Imagem}
                 alt={mascot.Nome}

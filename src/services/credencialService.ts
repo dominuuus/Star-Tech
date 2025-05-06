@@ -2,7 +2,7 @@ import { api } from "../lib/axios";
 import gameData from "../assets/db/db.json";
 
 export interface Credential {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição?: string;
   Status: string;
@@ -10,15 +10,15 @@ export interface Credential {
 }
 
 interface RawCredential {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição: string | null;
-  Status: { Id: number; Nome: string };
-  Tipo: { Id: number; Nome: string } | null;
+  Status: { id: number; Nome: string };
+  Tipo: { id: number; Nome: string } | null;
 }
 
 const mapRawCredentialToCredential = (raw: RawCredential): Credential => ({
-  Id: raw.Id,
+  id: raw.id,
   Nome: raw.Nome,
   Descrição: raw.Descrição ? raw.Descrição : undefined,
   Status: raw.Status.Nome,
