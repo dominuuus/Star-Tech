@@ -612,5 +612,98 @@
         "Planeta_Destino_Id": 3,
         "Progresso_Trajeto": 50.0
       }
+    ],
+    "achievements": [
+      {
+        "title": "Raiz Solida",
+        "description": "Completar todas as tarefas verdes de um ciclo",
+        "image": "raiz-solida.png",
+        "planet": "coreon.png",
+        "planetName": "Terrara"
+        
+      },
+      {
+        "title": "Explorador de Solo",
+        "description": "Complete o primeiro deploy sem falhas",
+        "image": "explorador-de-solo.png",
+        "planet": "aeris.png",
+        "planetName": "Terrara"
+      },
+      {
+        "title": "Fundador da Frota",
+        "description": "Completar todas as tarefas verdes de um ciclo",
+        "image": "fundador-da-frota.png",
+        "planet":"coreon.png",
+        "planetName": "Terrara"
+      },
+      {
+        "title": "Ferro Vermelho",
+        "description": "Entregar 5 tarefas vermelhas antes do prazo",
+        "image": "ferro-vermelho.png",
+        "planet": "pyron.png",
+        "planetName": "Pyron"
+      },
+      {
+        "title": "Caça ao Bug",
+        "description": "Corrigir um bug sem precisar de revisão posterior",
+        "image": "caça-ao-bug-aeris.png",
+         "planet": "aeris.png",
+         "planetName": "Aeris"
+
+      },
+      {
+        "title": "Crescimento Contínuo",
+        "description": "Manter evolução positiva de performance por 3 entregas seguidas",
+        "image": "crescimento-continuo-zephyra.png",
+        "planet": "coreon.png",
+        "planetName": "Zephyra"
+      },
+      {
+        "title": "Diplomata Cósmico",
+        "description": "Responder a 3 missões azuis (S.O.S.) de outras equipes.",
+        "image": "diplomata-cosmico.png",
+        "planet": "coreon.png",
+        "planetName": "Orthos"
+      },
+      {
+        "title": "Luz de Linter",
+        "description": "Concluir 10 tarefas sem erros de formatação ou estilo",
+        "image": "luz de linter-coreon.png",
+        "planet": "coreon.png",
+        "planetName": "Coreon"
+
+
+      },
+      {
+        "title": "Mestre do Estilo",
+        "description": "Padronizar um módulo inteiro seguindo o style guide",
+        "image": "mestre do estilo-coreon.png",
+        "planet": "coreon.png",
+        "planetName": "Coreon"
+
+      },
+      {
+        "title": "Evolutivo",
+        "description": "Subir o score de qualidade de código da nave em 10%.",
+        "image": "evolutivo-zephyra.png",
+        "planet": "aeris.png",
+        "planetName": "Zephyra"
+      
+      },
+      {
+        "title": "Qualidade Constante",
+        "description": "Detectar e corrigir um bug em ambiente de teste antes do QAo",
+        "image": "qualidade-constante.png",
+        "planet": "verdax.png",
+        "planetName": "Hexora"
+      },
+      {
+        "title": "Interface Fluída",
+        "description": "Redesenhar um componente com foco em UX",
+        "image": "verdax.png",
+        "planet": "verdax.png",
+        "planetName": "Verdax"
+
+      }
     ]
   }
