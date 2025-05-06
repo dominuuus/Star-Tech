@@ -5,6 +5,7 @@ export const MissionDetailsContainer = styled.div``;
 export const MissionDetailsContent = styled.div`
   background-color: white;
   padding-top: 30px;
+  padding-bottom: 300px;
 `;
 export const MissionDetailsHead = styled.div`
   display: flex;
@@ -91,13 +92,103 @@ export const TechLiderProfileText = styled.div`
   }
 `;
 
-export const RewardsContainer = styled.div `
+export const RewardsContainer = styled.div`
+  h4.Reward {
+    padding-bottom: 7px;
+  }
+`;
+export const RewardsCards = styled.div`
+  display: flex;
+  gap: 45px;
+  padding-bottom: 100px;
+`;
 
-`
-export const RewardsCards = styled.div `
-  background-color: ${(props) => props.theme.colors.mission.achievementBlockMission};
+export const RewardCardEstelar = styled.div`
+  background-color: ${(props) =>
+    props.theme.colors.mission.achievementBlockMission};
   width: 40%;
-`
+  display: flex;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  align-items: center;
+  h4 {
+    padding-left: 15px;
+  }
+`;
+
+export const RewardEstelarPhoto = styled.div`
+  background-color: ${(props) => props.theme.colors.mission.coinMission};
+  width: 30%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  img {
+    height: 3.5rem;
+    width: 3.8rem;
+  }
+`;
+
+export const RewardCardMedal = styled.div`
+  background-color: ${(props) =>
+    props.theme.colors.mission.achievementBlockMission};
+  width: 40%;
+  display: flex;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: justify;
+`;
+
+export const RewardCardMedalPhoto = styled.div`
+  background-color: ${(props) => props.theme.colors.mission.achievementMission};
+  width: 38%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  img {
+    height: 4rem;
+    width: 4rem;
+  }
+`;
+
+export const RewardCardMedalText = styled.div`
+  padding-top: 5px;
+  padding-left: 15px;
+  h4 {
+    font-size: 13px;
+  }
+  padding-right: 15px;
+`;
+
+export const PlayMissionContainer = styled.div`
+  display: flex;
+  gap: 300px;
+  div {
+    span {
+      color: white;
+    }
+  }
+`;
+
+export const PlayMission = styled.div`
+  background-color: ${(props) =>
+    props.theme.colors.mission.achievementBlockMission};
+  width: 40%;
+  height: 40px;
+  display: flex;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  align-items: center;
+  h4 {
+    padding-left: 30%;
+  }
+`;
 
 export const ProgressMissionBarContent = styled.div<ProgressProps>`
   padding: 0.75rem;

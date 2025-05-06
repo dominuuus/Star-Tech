@@ -19,8 +19,16 @@ import {
   TechLiderProfileText,
   RewardsContainer,
   RewardsCards,
+  RewardEstelarPhoto,
+  RewardCardEstelar,
+  RewardCardMedal,
+  RewardCardMedalPhoto,
+  RewardCardMedalText,
+  PlayMissionContainer,
+  PlayMission,
 } from "./MissionDetails.styles";
 import { fetchMission, Mission } from "../../../services/missionService";
+import achievements from "../../../assets/achievements";
 
 export function MissionDetails() {
   const [missions, setMissions] = useState<Mission[]>([]);
@@ -95,11 +103,36 @@ export function MissionDetails() {
                     </ProgressMissionBarInfo>
                   </ProgressContainer>
                   <RewardsContainer>
-                    <h4>Recompensas</h4>
+                    <h4 className="Reward">Recompensas</h4>
                     <RewardsCards>
-                      <h4>{mission.Qtd_moedas} Estelares</h4>
+                      <RewardCardEstelar>
+                        <RewardEstelarPhoto>
+                          <img src={images.coin} alt="" />
+                        </RewardEstelarPhoto>
+                        <h4>{mission.Qtd_moedas} Estelares</h4>
+                      </RewardCardEstelar>
+                      <RewardCardMedal>
+                        <RewardCardMedalPhoto>
+                          <img src={achievements.ferroVermelho} alt="" />
+                        </RewardCardMedalPhoto>
+                        <RewardCardMedalText>
+                          <h4>Código limpo</h4>
+                          <p>
+                            Eliminar redundâncias ou excessos de um código
+                            antigo
+                          </p>
+                        </RewardCardMedalText>
+                      </RewardCardMedal>
                     </RewardsCards>
                   </RewardsContainer>
+                  <PlayMissionContainer>
+                    <div>
+                      <span>Espaço em Branco</span>
+                    </div>
+                    <PlayMission>
+                      <h4>Ir para a Missão</h4>
+                    </PlayMission>
+                  </PlayMissionContainer>
                 </MissionDetailsBody>
               </MissionDetailsContent>
             );
