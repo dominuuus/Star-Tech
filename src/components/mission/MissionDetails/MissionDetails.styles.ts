@@ -5,11 +5,14 @@ export const MissionDetailsContainer = styled.div``;
 export const MissionDetailsContent = styled.div`
   background-color: white;
   padding-top: 30px;
+  padding-bottom: 300px;
 `;
+
 export const MissionDetailsHead = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 350px;
+  justify-content: space-between;
+  margin-bottom: 5px;
 `;
 export const MissionTitle = styled.div`
   display: flex;
@@ -20,32 +23,31 @@ export const MissionDeadLine = styled.div`
   font-size: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 `;
 export const MissionDetailsBody = styled.div`
+  gap: 100px;
   h4 {
     font-weight: bold;
-  }
-  h4.Progresso {
-    padding-top: 90px;
-  }
-  li {
-    padding-left: 30px;
   }
   p {
     font-size: 10px;
   }
 `;
+export const MissionTechnicalObjectiveContainer = styled.div`
+  padding-top: 25px;
+  padding-bottom: 25px;
+`;
+
 export const MissionDescription = styled.div`
   padding-top: 25px;
   padding-bottom: 25px;
 `;
+
 export const ProgressContainer = styled.div`
   padding-bottom: 25px;
 `;
 export const ProgressContainerHead = styled.div`
-  p {
-    padding-bottom: 10px;
-  }
 `;
 
 export const ProgressMissionBarInfo = styled.div`
@@ -91,13 +93,78 @@ export const TechLiderProfileText = styled.div`
   }
 `;
 
-export const RewardsContainer = styled.div `
+export const RewardsContainer = styled.div`
+  h4.Reward {
+    padding-bottom: 7px;
+  }
+`;
+export const RewardsCards = styled.div`
+  display: flex;
+  gap: 45px;
+  padding-bottom: 100px;
+`;
 
-`
-export const RewardsCards = styled.div `
-  background-color: ${(props) => props.theme.colors.mission.achievementBlockMission};
+export const RewardCardEstelar = styled.div`
+  background-color: ${(props) =>
+    props.theme.colors.mission.achievementBlockMission};
   width: 40%;
-`
+  display: flex;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  align-items: center;
+  h4 {
+    padding-left: 15px;
+  }
+`;
+
+export const RewardEstelarPhoto = styled.div`
+  background-color: ${(props) => props.theme.colors.mission.coinMission};
+  width: 30%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  img {
+    height: 3.5rem;
+    width: 3.8rem;
+  }
+`;
+
+export const RewardCardMedal = styled.div`
+  background-color: ${(props) =>
+    props.theme.colors.mission.achievementBlockMission};
+  width: 40%;
+  display: flex;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: justify;
+`;
+
+export const RewardCardMedalPhoto = styled.div`
+  background-color: ${(props) => props.theme.colors.mission.achievementMission};
+  width: 38%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  img {
+    height: 4rem;
+    width: 4rem;
+  }
+`;
+
+export const RewardCardMedalText = styled.div`
+  padding-top: 5px;
+  padding-left: 15px;
+  h4 {
+    font-size: 13px;
+  }
+  padding-right: 15px;
+`;
 
 export const ProgressMissionBarContent = styled.div<ProgressProps>`
   padding: 0.75rem;

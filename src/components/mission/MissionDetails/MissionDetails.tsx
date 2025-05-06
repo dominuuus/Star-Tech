@@ -19,9 +19,20 @@ import {
   TechLiderProfileText,
   RewardsContainer,
   RewardsCards,
+  RewardCardEstelar,
+  RewardEstelarPhoto,
+  RewardCardMedalPhoto,
+  RewardCardMedalText,
+  RewardCardMedal,
+  MissionTechnicalObjectiveContainer,
 } from "./MissionDetails.styles";
-import { fetchMission, fetchMissionById, Mission } from "../../../services/missionService";
+import {
+  fetchMission,
+  fetchMissionById,
+  Mission,
+} from "../../../services/missionService";
 import { useParams } from "react-router-dom";
+import achievements from "../../../assets/achievements";
 
 export function MissionDetails() {
   const { id } = useParams<{ id: string }>();
@@ -46,13 +57,13 @@ export function MissionDetails() {
       fetchMission()
         .then((missions) => {
           if (missions.length === 0) {
-            setError('Nenhuma missão encontrada');
+            setError("Nenhuma missão encontrada");
             setLoading(false);
             return;
           }
           // Priorizar missão com status "Atrasada"
           const defaultMission =
-            missions.find((m) => m.Status === 'Atrasada') || missions[0];
+            missions.find((m) => m.Status === "Atrasada") || missions[0];
           setMission(defaultMission);
           setLoading(false);
         })
@@ -80,11 +91,15 @@ export function MissionDetails() {
         <MissionDetailsHead>
           <MissionTitle>
             <span>{mission.Nome}</span>
-            <span>Projeto: {mission.Projeto_Nome || 'Sem projeto'}</span>
+            <span>Projeto: {mission.Projeto_Nome || "Sem projeto"}</span>
           </MissionTitle>
           <MissionDeadLine>
-            <span>Lançamento da missão: {mission.Data_Criação || 'Sem data'}</span>
-            <span>Prazo para a conclusão: {mission.Data_Prazo || 'Sem prazo'}</span>
+            <span>
+              Lançamento da missão: {mission.Data_Criação || "Sem data"}
+            </span>
+            <span>
+              Prazo para a conclusão: {mission.Data_Prazo || "Sem prazo"}
+            </span>
           </MissionDeadLine>
         </MissionDetailsHead>
         <hr />
@@ -92,14 +107,14 @@ export function MissionDetails() {
           <MissionDescription>
             <span>{mission.Descrição}</span>
           </MissionDescription>
-          <div>
+          <MissionTechnicalObjectiveContainer>
             <h4>Objetivo Técnico:</h4>
             <span>{mission.Objetivo_Técnico}</span>
-          </div>
+          </MissionTechnicalObjectiveContainer>
           <ProgressContainer>
             <ProgressContainerHead>
               <h4 className="Progresso">Progresso</h4>
-              <p>{mission.relativeDueDate || 'Sem prazo'}</p>
+              <p>{mission.relativeDueDate || "Sem prazo"}</p>
             </ProgressContainerHead>
             <ProgressMissionBarInfo>
               <ProgressMissionBar>
@@ -113,16 +128,33 @@ export function MissionDetails() {
                 <img src={images.profile1} alt="Tech Líder" />
                 <TechLiderProfileText>
                   <p>Tech Líder</p>
-                  <h4>{mission.Tech_Líder_Nome || 'Sem líder'}</h4>
-                  <span>@{mission.Tech_Líder_Nome?.replace(/\s/g, '') || 'sra.commit'}</span>
+                  <h4>{mission.Tech_Líder_Nome || "Sem líder"}</h4>
+                  <span>
+                    @{mission.Tech_Líder_Nome?.replace(/\s/g, "") ||
+                      "sra.commit"}
+                  </span>
                 </TechLiderProfileText>
               </TechLiderProfile>
             </ProgressMissionBarInfo>
           </ProgressContainer>
           <RewardsContainer>
-            <h4>Recompensas</h4>
+            <h4 className="Reward">Recompensas</h4>
             <RewardsCards>
-              <h4>{mission.Qtd_moedas} Estelares</h4>
+              <RewardCardEstelar>
+                <RewardEstelarPhoto>
+                  <img src={images.coin} alt="" />
+                </RewardEstelarPhoto>
+                <h4>{mission.Qtd_moedas} Estelares</h4>
+              </RewardCardEstelar>
+              <RewardCardMedal>
+                <RewardCardMedalPhoto>
+                  <img src={achievements.ferroVermelho} alt="" />
+                </RewardCardMedalPhoto>
+                <RewardCardMedalText>
+                  <h4>Código limpo</h4>
+                  <p>Eliminar redundâncias ou excessos de um código antigo</p>
+                </RewardCardMedalText>
+              </RewardCardMedal>
             </RewardsCards>
           </RewardsContainer>
         </MissionDetailsBody>
