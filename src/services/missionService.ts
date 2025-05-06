@@ -74,7 +74,7 @@ export async function fetchMission(): Promise<Mission[]> {
   } catch (error) {
     console.error('Erro ao buscar missões via API:', error);
     try {
-      const rawMissions: RawMission[] = gameData.missoes.data;
+      const rawMissions: RawMission[] = gameData.missoes;
       if (!Array.isArray(rawMissions)) {
         throw new Error('Dados de missões inválidos no db.json');
       }
@@ -97,7 +97,7 @@ export async function fetchMissionById(id: number): Promise<Mission> {
   } catch (error: unknown) {
     console.error(`Erro ao buscar missão ${id} via API:`, error);
     try {
-      const rawMissions: RawMission[] = gameData.missoes.data;
+      const rawMissions: RawMission[] = gameData.missoes;
       if (!Array.isArray(rawMissions)) {
         throw new Error('Dados de missões inválidos no db.json');
       }
