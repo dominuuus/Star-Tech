@@ -5,7 +5,7 @@ display: flex;
   flex-direction: column;
   gap: 0.8rem;
   height: 20rem;
-  background-color: ${(props) => props.theme.colors.secondary};
+  background-color: ${(props) => props.theme.colors.news};
   border-radius: 0.75rem;
   padding: 1.5rem;
   span {

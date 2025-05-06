@@ -8,6 +8,7 @@ import {
 
 import { fetchMission, Mission } from "../../../services/missionService";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 interface MissionCardProps {
   selectedFilter: string;
@@ -45,20 +46,21 @@ export function MissionCard({ selectedFilter }: MissionCardProps) {
   return (
     <>
       <MissionCardContainer>
-        {selectedMissions.map((missao) => (
-          <MissionCardContent key={missao.Id}>
+        {selectedMissions.map((mission) => (
+          <Link to={`/game/missoes/${mission.Id}`} key={mission.Id} >
+          <MissionCardContent>
             <MissionCardInfoContent>
               <MissionCardTitle>
-                <span>{missao.Nome}</span>
-                <span>Projeto: {missao.Projeto_Nome}</span>
+                <span>{mission.Nome}</span>
+                <span>Projeto: {mission.Projeto_Nome}</span>
               </MissionCardTitle>
               <div>
                 <CalendarCheck size={15} weight="fill" />
                 <p>
                   {(selectedFilter !== "done7days" &&
-                    ` ${missao.Data_Prazo} - ${missao.relativeDueDate}`) ||
+                    ` ${mission.Data_Prazo} - ${mission.relativeDueDate}`) ||
                     (selectedFilter === "done7days" &&
-                      ` ${missao.Concluído_em}`)}
+                      ` ${mission.Concluído_em}`)}
                 </p>
               </div>
             </MissionCardInfoContent>
@@ -66,6 +68,7 @@ export function MissionCard({ selectedFilter }: MissionCardProps) {
               <CaretCircleRight size={32} weight="fill" />
             </div>
           </MissionCardContent>
+          </Link>
         ))}
       </MissionCardContainer>
     </>

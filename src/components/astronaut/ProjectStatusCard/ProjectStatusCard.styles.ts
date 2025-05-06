@@ -17,8 +17,9 @@ export const MenuStats = styled.div`
 `;
 
 export const ButtonStatus = styled.div<ButtonProps>`
-  background: ${(props) => (props.$isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
-  color: ${(props) => props.theme.colors.primary};
+  background: ${(props) => (props.$isSelected ? props.theme.colors.tertiary : props.theme.colors.white)};
+  color: ${(props) => (props.$isSelected ? props.theme.colors.white : props.theme.colors.tertiary)};
+  
   border-radius: 30px;
   padding: 0.8rem 1rem;
   cursor: pointer;
@@ -26,10 +27,13 @@ export const ButtonStatus = styled.div<ButtonProps>`
   font-weight: bold;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.1),
               1px 1px 2px rgba(255,255,255,0.8);
+              transition:
+    color 0.15s,
+    background-color 0.15s;
   
   &:hover {
-    background-color: ${(props) => props.theme.colors.linkHover};
-    color: ${(props) => props.theme.colors.primary};
+    background-color: ${(props) => props.theme.colors.tertiary};
+    color: ${(props) => props.theme.colors.white};
   }
 `;
 

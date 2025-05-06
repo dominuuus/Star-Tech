@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 
 interface StatusProps {
@@ -20,8 +19,9 @@ const StatusMission = styled.div<StatusProps>`
   font-weight: bold;
   font-size: 0.65rem;
 
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.1),
-              -1px -1px 2px rgba(255,255,255,0.8);
+  box-shadow:
+    3px 3px 5px rgba(0, 0, 0, 0.1),
+    -1px -1px 2px rgba(255, 255, 255, 0.8);
 
   p {
     font-weight: lighter;
@@ -33,7 +33,8 @@ const StatusMission = styled.div<StatusProps>`
 
   &:hover {
     cursor: pointer;
-    background-color: ${(props) => props.theme.colors.linkHover};
+    background-color: ${(props) => props.theme.colors.tertiary};
+    color: ${(props) => props.theme.colors.white};
   }
 `;
 
@@ -44,7 +45,10 @@ export const NumberStyle = styled.span`
 
 export const StatusLateMission = styled.div<StatusProps>`
   border-radius: 30px;
-  background: ${(props) => (props.$isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
+  background: ${(props) =>
+    props.$isSelected ? props.theme.colors.tertiary : props.theme.colors.white};
+  color: ${(props) =>
+    props.$isSelected ? props.theme.colors.white : props.theme.colors.tertiary};
   gap: 15px;
   display: flex;
   flex-direction: row;
@@ -52,9 +56,13 @@ export const StatusLateMission = styled.div<StatusProps>`
   font-weight: bold;
   align-items: center;
   font-size: 0.65rem;
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.1),
-              1px 1px 2px rgba(255,255,255,0.8);
-  
+  box-shadow:
+    3px 3px 5px rgba(0, 0, 0, 0.1),
+    1px 1px 2px rgba(255, 255, 255, 0.8);
+  transition:
+    color 0.15s,
+    background-color 0.15s;
+
   div {
     font-size: 2rem;
     font-weight: bold;
@@ -63,14 +71,21 @@ export const StatusLateMission = styled.div<StatusProps>`
 
   &:hover {
     cursor: pointer;
-    background-color: ${(props) => props.theme.colors.linkHover};
+    background-color: ${(props) => props.theme.colors.tertiary};
+    color: ${(props) => props.theme.colors.white};
   }
 `;
 
 export const StatusInProgressMission = styled(StatusMission)<StatusProps>`
-  background: ${(props) => (props.$isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
-`
+  background: ${(props) =>
+    props.$isSelected ? props.theme.colors.tertiary : props.theme.colors.white};
+  color: ${(props) =>
+    props.$isSelected ? props.theme.colors.white : props.theme.colors.tertiary};
+`;
 
 export const StatusDoneMission = styled(StatusMission)<StatusProps>`
-  background: ${(props) => (props.$isSelected ? props.theme.colors.linkHover : props.theme.colors.white)};
-`
+  background: ${(props) =>
+    props.$isSelected ? props.theme.colors.tertiary : props.theme.colors.white};
+  color: ${(props) =>
+    props.$isSelected ? props.theme.colors.white : props.theme.colors.tertiary};
+`;

@@ -10,34 +10,34 @@ import {
   Planet,
   RocketLaunch,
   Trophy,
-  User,
   Wrench,
 } from "phosphor-react";
+import images from "../../../assets/images";
 
 export function SecondarySideMenu() {
   return (
     <MenuContainer>
       <MenuBlockOne>
         <MenuItem>
-          <NavLink to="nave" title="Tutorial">
+          <NavLink to="nave" title="Nave">
             <RocketLaunch size={23} weight="bold" />
             <span>Nave</span>
           </NavLink>
         </MenuItem>
         <MenuItem>
-          <NavLink to="piloto" title="Tutorial">
-            <User size={23} weight="bold" />
+          <NavLink to="piloto" title="Piloto">
+            <img src={images.helmet} height={23}/>
             <span>Piloto</span>
           </NavLink>
         </MenuItem>
         <MenuItem>
-          <NavLink to="missoes" title="Tutorial">
+          <NavLink to="missoes" title="Missões">
             <Lightning size={23} weight="bold"/>
             <span>Missões</span>
           </NavLink>
         </MenuItem>
         <MenuItem>
-          <NavLink to="conquistas" title="Tutorial">
+          <NavLink to="conquistas" title="Conquistas">
             <Trophy size={23} weight="bold" />
             <span>Conquistas</span>
           </NavLink>
@@ -46,14 +46,14 @@ export function SecondarySideMenu() {
 
       <MenuBlockTwo>
         <MenuItem>
-          <NavLink to="explorar" title="Tutorial">
+          <NavLink to="explorar" title="Explorar">
             <Planet size={23} weight="fill" />
             <span>Explorar</span>
           </NavLink>
         </MenuItem>
 
         <MenuItem>
-          <NavLink to="oficina" title="Tutorial">
+          <NavLink to="oficina" title="Oficina">
             <Wrench size={23} weight="fill" />
             <span>Oficina</span>
           </NavLink>
