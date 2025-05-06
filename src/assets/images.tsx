@@ -4,7 +4,8 @@ import coin from './images/moeda.png';
 import logo from './images/logo.png';
 import nave from './images/nave.png';
 import helmet from './images/helmet.svg';
+import leader from './images/leader.jpg';
 
 export default {
-    astronaut1, profile1, coin, logo, nave, helmet,
+    astronaut1, profile1, coin, logo, nave, helmet, leader,
 }

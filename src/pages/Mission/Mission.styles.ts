@@ -13,7 +13,8 @@ export const SectionFilter = styled.section`
 export const SectionMissionDetails = styled.section`
   width: 45%;
   min-width: 44rem;
-
+  margin-bottom: 10px;
+  height: fit-content;
 `;
 
 export const SectionMissionNotifications = styled.div`

@@ -2,7 +2,7 @@ import { api } from "../lib/axios";
 import gameData from "../assets/db/db.json";
 
 export interface Mascot {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição: string;
   Imagem: string;
@@ -14,11 +14,11 @@ export interface Mascot {
 }
 
 interface RawMascot {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição: string;
   Imagem: string;
-  Planeta: { Id: number; Nome: string } | null;
+  Planeta: { id: number; Nome: string } | null;
   Titulo: string;
   Personalidade: string;
   Habilidade_Especial: string;
@@ -26,7 +26,7 @@ interface RawMascot {
 }
 
 const mapRawMascotToMascot = (raw: RawMascot): Mascot => ({
-  Id: raw.Id,
+  id: raw.id,
   Nome: raw.Nome,
   Descrição: raw.Descrição,
   Imagem: raw.Imagem,

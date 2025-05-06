@@ -81,91 +81,89 @@ export function MissionDetails() {
     ProgressBar = ProjectProgressSuccess;
   }
 
-            return (
-              <MissionDetailsContent key={mission.Id}>
-                <MissionDetailsHead>
-                  <MissionTitle>
-                    <span>{mission.Nome}</span>
-                    <span>Projeto: {mission.Projeto_Nome}</span>
-                  </MissionTitle>
-                  <MissionDeadLine>
-                    <span>Lançamento da missão: {mission.Data_Criação}</span>
-                    <span>Prazo para a conclusão: {mission.Data_Prazo}</span>
-                  </MissionDeadLine>
-                </MissionDetailsHead>
-                <hr />
-                <MissionDetailsBody>
-                  <MissionDescription>
-                    <span>{mission.Descrição} </span>
-                  </MissionDescription>
-                  <div>
-                    <h4>Objetivo Técnico:</h4>
-                    <span>{mission.Objetivo_Técnico}</span>
-                  </div>
+  return (
+    <MissionDetailsContainer>
+      <MissionDetailsContent>
+        <MissionDetailsHead>
+          <MissionTitle>
+            <span>{mission.Nome}</span>
+            <span>Projeto: {mission.Projeto_Nome || "Sem projeto"}</span>
+          </MissionTitle>
+          <MissionDeadLine>
+            <span>
+              Lançamento da missão: {mission.Data_Criação || "Sem data"}
+            </span>
+            <span>
+              Prazo para a conclusão: {mission.Data_Prazo || "Sem prazo"}
+            </span>
+          </MissionDeadLine>
+        </MissionDetailsHead>
+        <hr />
+        <MissionDetailsBody>
+          <MissionDescription>
+            <span>{mission.Descrição}</span>
+          </MissionDescription>
+          <MissionTechnicalObjectiveContainer>
+            <h4>Objetivo Técnico:</h4>
+            <span>{mission.Objetivo_Técnico.split('\n').map((item, index) => (
+  <li key={index}>{item}</li>
+))}</span>
+          </MissionTechnicalObjectiveContainer>
+          <ProgressContainer>
+            <ProgressContainerHead>
+              <h4 className="Progresso">Progresso</h4>
 
-                  <ProgressContainer>
-                    <ProgressContainerHead>
-                      <h4 className="Progresso">Progresso</h4>
-                      <p>{mission.relativeDueDate}</p>
-                    </ProgressContainerHead>
-
-                    <ProgressMissionBarInfo>
-                      <ProgressMissionBar>
-                        <ProgressBar
-                          width={mission.Progresso_missão}
-                          background={mission.Progresso_missão}
-                        ></ProgressBar>
-                      </ProgressMissionBar>
-                      <h4 className="Percentual">
-                        {mission.Progresso_missão}%
-                      </h4>
-                      <TechLiderProfile>
-                        <img src={images.profile1} alt="" />
-                        <TechLiderProfileText>
-                          <p>Tech Lider</p>
-                          <h4>Maiara Pires</h4>
-                          <span>@Sra.Commit</span>
-                        </TechLiderProfileText>
-                      </TechLiderProfile>
-                    </ProgressMissionBarInfo>
-                  </ProgressContainer>
-                  <RewardsContainer>
-                    <h4 className="Reward">Recompensas</h4>
-                    <RewardsCards>
-                      <RewardCardEstelar>
-                        <RewardEstelarPhoto>
-                          <img src={images.coin} alt="" />
-                        </RewardEstelarPhoto>
-                        <h4>{mission.Qtd_moedas} Estelares</h4>
-                      </RewardCardEstelar>
-                      <RewardCardMedal>
-                        <RewardCardMedalPhoto>
-                          <img src={achievements.ferroVermelho} alt="" />
-                        </RewardCardMedalPhoto>
-                        <RewardCardMedalText>
-                          <h4>Código limpo</h4>
-                          <p>
-                            Eliminar redundâncias ou excessos de um código
-                            antigo
-                          </p>
-                        </RewardCardMedalText>
-                      </RewardCardMedal>
-                    </RewardsCards>
-                  </RewardsContainer>
-                  <PlayMissionContainer>
-                    <div>
-                      <span>Espaço em Branco</span>
-                    </div>
-                    <PlayMission>
-                      <h4>Ir para a Missão</h4>
-                    </PlayMission>
-                  </PlayMissionContainer>
-                </MissionDetailsBody>
-              </MissionDetailsContent>
-            );
-          }
-        })}
-      </MissionDetailsContainer>
-    </>
+              <p>
+                {(mission.Status !== "Concluída" &&
+                  `${mission.relativeDueDate}`) ||
+                  (mission.Status === "Concluída" &&
+                    `Concluída em ${mission.Concluído_em}`)}
+              </p>
+            </ProgressContainerHead>
+            <ProgressMissionBarInfo>
+              <ProgressMissionBar>
+                <ProgressBar
+                  $width={mission.Progresso_missão}
+                  $background={mission.Progresso_missão}
+                />
+              </ProgressMissionBar>
+              <h4 className="Percentual">{mission.Progresso_missão}%</h4>
+              <TechLiderProfile>
+                <img src={images.leader} alt="Tech Líder" />
+                <TechLiderProfileText>
+                  <h4>Tech Líder</h4>
+                  <span>{mission.Tech_Líder_Nome || "Sem líder"}</span>
+                  <p>
+                    @
+                    {mission.Tech_Líder_Nome?.replace(/\s/g, "") ||
+                      "sra.commit"}
+                  </p>
+                </TechLiderProfileText>
+              </TechLiderProfile>
+            </ProgressMissionBarInfo>
+          </ProgressContainer>
+          <RewardsContainer>
+            <h4 className="Reward">Recompensas</h4>
+            <RewardsCards>
+              <RewardCardEstelar>
+                <RewardEstelarPhoto>
+                  <img src={images.coin} alt="" />
+                </RewardEstelarPhoto>
+                <h4>{mission.Qtd_moedas} Estelares</h4>
+              </RewardCardEstelar>
+              <RewardCardMedal>
+                <RewardCardMedalPhoto>
+                  <img src={achievements.ferroVermelho} alt="" />
+                </RewardCardMedalPhoto>
+                <RewardCardMedalText>
+                  <h4>Código limpo</h4>
+                  <p>Eliminar redundâncias ou excessos de um código antigo</p>
+                </RewardCardMedalText>
+              </RewardCardMedal>
+            </RewardsCards>
+          </RewardsContainer>
+        </MissionDetailsBody>
+      </MissionDetailsContent>
+    </MissionDetailsContainer>
   );
 }

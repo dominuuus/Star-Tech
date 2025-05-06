@@ -127,19 +127,18 @@ export function MissionCardStatus() {
                 ref={statusRef}
                 value={filters.status}
                 onChange={handleFilterChange}>
-                <button></button>
                 <option value="all">Todas</option>
                 <option value="late">
-                  <span>Missões atrasadas</span>
+                Missões atrasadas
                 </option>
                 <option value="inProgress">
-                  <span>Missões em andamento</span>
+                Missões em andamento
                 </option>
                 <option value="pending">
-                  <span>Missões não iniciadas</span>
+                Missões não iniciadas
                 </option>
                 <option value="done">
-                  <span>Missões concluídas</span>
+                Missões concluídas
                 </option>
               </select>
             </BoxFilterContainer>
@@ -202,7 +201,7 @@ export function MissionCardStatus() {
               <p>Nenhuma missão encontrada.</p>
             ) : (
               selectedMissions.map((mission) => (
-                <Link to={`/game/missoes/${mission.Id}`} key={mission.Id} >
+                <Link to={`/game/missoes/${mission.id}`} key={mission.id} >
                 <CardMissionContent>
                   <div>
                     <div>
