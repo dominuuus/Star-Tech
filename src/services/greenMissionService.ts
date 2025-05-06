@@ -2,7 +2,7 @@ import { api } from "../lib/axios";
 import gameData from "../assets/db/db.json";
 
 export interface GreenMission {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição?: string;
   Status: string;
@@ -11,16 +11,16 @@ export interface GreenMission {
 }
 
 interface RawGreenMission {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição: string | null;
-  Status: {Id: number, Nome: string};
+  Status: {id: number, Nome: string};
   Qtd_moedas: number | null;
-  Nível: {Id: number, Nome: string} | null;
+  Nível: {id: number, Nome: string} | null;
 }
 
 const mapRawGreenMissionToGreenMission = (raw: RawGreenMission): GreenMission => ({
-    Id: raw.Id,
+    id: raw.id,
     Nome: raw.Nome,
     Descrição: raw.Descrição ? raw.Descrição : undefined,
     Status: raw.Status.Nome,

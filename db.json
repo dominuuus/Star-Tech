@@ -2,19 +2,19 @@
   "usuarios": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Astro João",
         "Email_Mascado": "joao.astro@***.com",
         "Foto": "https://xai.com/avatars/joao.webp",
         "Descrição": "Explorador de bugs estelares",
         "Estelares": 150,
         "Nível": 3,
-        "Avatar": { "Id": 1, "Nome": "Traje Lunar", "Imagem": "link.png", "Tipo": { "Id": 1, "Nome": "Traje" } },
-        "Equipe": { "Id": 1, "Nome": "Nave Orion", "Status": { "Id": 5, "Nome": "Ativa" } },
+        "Avatar": { "id": 1, "Nome": "Traje Lunar", "Imagem": "link.png", "Tipo": { "id": 1, "Nome": "Traje" } },
+        "Equipe": { "id": 1, "Nome": "Nave Orion", "Status": { "id": 5, "Nome": "Ativa" } },
         "Cargo": "Tech Líder"
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Luna Maria",
         "Email_Mascado": "luna.maria@***.com",
         "Foto": null,
@@ -22,7 +22,7 @@
         "Estelares": 50,
         "Nível": 1,
         "Avatar": null,
-        "Equipe": { "Id": 2, "Nome": "Estrela Polar", "Status": { "Id": 4, "Nome": "Inativa" } },
+        "Equipe": { "id": 2, "Nome": "Estrela Polar", "Status": { "id": 4, "Nome": "Inativa" } },
         "Cargo": "Desenvolvedor"
       }
     ],
@@ -31,18 +31,18 @@
   "equipes": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Nave Orion",
         "Descrição": "Tripulação de elite",
-        "Nave": { "Id": 1, "Nome": "Orion Explorer", "Imagem": "link.png" },
-        "Status": { "Id": 5, "Nome": "Ativa" }
+        "Nave": { "id": 1, "Nome": "Orion Explorer", "Imagem": "link.png" },
+        "Status": { "id": 5, "Nome": "Ativa" }
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Estrela Polar",
         "Descrição": "Equipe em formação",
         "Nave": null,
-        "Status": { "Id": 4, "Nome": "Inativa" }
+        "Status": { "id": 4, "Nome": "Inativa" }
       }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
@@ -50,21 +50,21 @@
   "planetas": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Nebula-7",
         "Descrição": "Planeta de nuvens cósmicas",
-        "Status": { "Id": 1, "Nome": "Não Explorado" },
+        "Status": { "id": 1, "Nome": "Não Explorado" },
         "Qtd_missões": 8,
-        "Tema_Principal": { "Id": 1, "Nome": "Entrega e Ação" },
+        "Tema_Principal": { "id": 1, "Nome": "Entrega e Ação" },
         "Imagem": "https://xai.com/planets/nebula7.webp"
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Astra-12",
         "Descrição": "Planeta rochoso",
-        "Status": { "Id": 6, "Nome": "Incompleto" },
+        "Status": { "id": 6, "Nome": "Incompleto" },
         "Qtd_missões": 8,
-        "Tema_Principal": { "Id": 2, "Nome": "Código Limpo" },
+        "Tema_Principal": { "id": 2, "Nome": "Código Limpo" },
         "Imagem": "https://xai.com/planets/astra12.webp"
       }
     ],
@@ -73,12 +73,12 @@
   "temas_principais": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Entrega e Ação",
         "Descrição": "Foco em entregas rápidas"
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Código Limpo",
         "Descrição": "Prioriza qualidade do código"
       }
@@ -88,220 +88,220 @@
   "missoes": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Corrigir Acessibilidade no APP",
         "Descrição": "Resolver falha crítica no sistema de defesa",
-        "Objetivo_Técnico": "Identificar e corrigir race condition no módulo de defesa",
-        "Tipo_Missão": { "Id": 1, "Nome": "Vermelha", "Peso": 3, "Cor": "red-500" },
+        "Objetivo_Técnico": "identificar e corrigir race condition no módulo de defesa",
+        "Tipo_Missão": { "id": 1, "Nome": "Vermelha", "Peso": 3, "Cor": "red-500" },
         "Progresso_missão": 45,
-        "Status": { "Id": 3, "Nome": "Atrasada" },
+        "Status": { "id": 3, "Nome": "Atrasada" },
         "Data_Criação": "2025-04-30T08:00:00Z",
         "Data_Prazo": "2025-05-02T18:00:59Z",
         "Data_Conclusão": null,
         "Qtd_moedas": 15,
         "Fases_Total": 3,
         "Fases_Concluídas": 1,
-        "Planeta": { "Id": 2, "Nome": "Terra" },
-        "Projeto": { "Id": 2, "Nome": "Acessibilidade App" },
-        "Tech_Líder": { "Id": 2, "Nome": "Dra. Vega" }
+        "Planeta": { "id": 2, "Nome": "Terra" },
+        "Projeto": { "id": 2, "Nome": "Acessibilidade App" },
+        "Tech_Líder": { "id": 2, "Nome": "Dra. Vega" }
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Atualizar Dependências Obsoletas",
         "Descrição": "Atualizar bibliotecas com vulnerabilidades conhecidas",
         "Objetivo_Técnico": "Atualizar 5 pacotes críticos para versões estáveis",
-        "Tipo_Missão": { "Id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
+        "Tipo_Missão": { "id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
         "Progresso_missão": 20,
-        "Status": { "Id": 3, "Nome": "Atrasada" },
+        "Status": { "id": 3, "Nome": "Atrasada" },
         "Data_Criação": "2025-04-05T10:00:00Z",
         "Data_Prazo": "2025-05-04T18:00:59Z",
         "Data_Conclusão": null,
         "Qtd_moedas": 10,
         "Fases_Total": 2,
         "Fases_Concluídas": 0,
-        "Planeta": { "Id": 3, "Nome": "Marte" },
-        "Projeto": { "Id": 3, "Nome": "Financiamento Imobiliário" },
-        "Tech_Líder": { "Id": 3, "Nome": "Eng. Orion" }
+        "Planeta": { "id": 3, "Nome": "Marte" },
+        "Projeto": { "id": 3, "Nome": "Financiamento Imobiliário" },
+        "Tech_Líder": { "id": 3, "Nome": "Eng. Orion" }
       },
       {
-        "Id": 3,
+        "id": 3,
         "Nome": "Implementar Novo Painel de Monitoramento",
         "Descrição": "Desenvolver dashboard para métricas de performance",
         "Objetivo_Técnico": "Criar 5 widgets essenciais para monitoramento em tempo real",
-        "Tipo_Missão": { "Id": 3, "Nome": "Azul", "Peso": 2, "Cor": "blue-500" },
+        "Tipo_Missão": { "id": 3, "Nome": "Azul", "Peso": 2, "Cor": "blue-500" },
         "Progresso_missão": 65,
-        "Status": { "Id": 2, "Nome": "Em Progresso" },
+        "Status": { "id": 2, "Nome": "Em Progresso" },
         "Data_Criação": "2025-05-02T09:00:00Z",
         "Data_Prazo": "2025-05-10T18:00:59Z",
         "Data_Conclusão": null,
         "Qtd_moedas": 20,
         "Fases_Total": 4,
         "Fases_Concluídas": 2,
-        "Planeta": { "Id": 4, "Nome": "Júpiter" },
-        "Projeto": { "Id": 4, "Nome": "Carteira bB" },
-        "Tech_Líder": { "Id": 4, "Nome": "Eng. Andrômeda" }
+        "Planeta": { "id": 4, "Nome": "Júpiter" },
+        "Projeto": { "id": 4, "Nome": "Carteira bB" },
+        "Tech_Líder": { "id": 4, "Nome": "Eng. Andrômeda" }
       },
       {
-        "Id": 4,
+        "id": 4,
         "Nome": "Refatorar Módulo de Autenticação",
         "Descrição": "Melhorar estrutura e segurança do sistema de login",
         "Objetivo_Técnico": "Implementar autenticação multifator e reduzir tempo de resposta em 40%",
-        "Tipo_Missão": { "Id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
+        "Tipo_Missão": { "id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
         "Progresso_missão": 30,
-        "Status": { "Id": 2, "Nome": "Em Progresso" },
+        "Status": { "id": 2, "Nome": "Em Progresso" },
         "Data_Criação": "2025-05-02T14:00:00Z",
         "Data_Prazo": "2025-05-08T11:00:59Z",
         "Data_Conclusão": null,
         "Qtd_moedas": 15,
         "Fases_Total": 3,
         "Fases_Concluídas": 1,
-        "Planeta": { "Id": 5, "Nome": "Saturno" },
-        "Projeto": { "Id": 5, "Nome": "BB Cash" },
-        "Tech_Líder": { "Id": 5, "Nome": "Dr. Cronos" }
+        "Planeta": { "id": 5, "Nome": "Saturno" },
+        "Projeto": { "id": 5, "Nome": "BB Cash" },
+        "Tech_Líder": { "id": 5, "Nome": "Dr. Cronos" }
       },
       {
-        "Id": 5,
+        "id": 5,
         "Nome": "Migrar Banco de Dados para Nova Versão",
         "Descrição": "Atualizar PostgreSQL para versão 16",
         "Objetivo_Técnico": "Migrar dados sem downtime e otimizar queries críticas",
-        "Tipo_Missão": { "Id": 1, "Nome": "Vermelha", "Peso": 3, "Cor": "red-500" },
+        "Tipo_Missão": { "id": 1, "Nome": "Vermelha", "Peso": 3, "Cor": "red-500" },
         "Progresso_missão": 50,
-        "Status": { "Id": 2, "Nome": "Em Progresso" },
+        "Status": { "id": 2, "Nome": "Em Progresso" },
         "Data_Criação": "2025-05-02T11:00:00Z",
         "Data_Prazo": "2025-05-06T16:00:59Z",
         "Data_Conclusão": null,
         "Qtd_moedas": 25,
         "Fases_Total": 5,
         "Fases_Concluídas": 2,
-        "Planeta": { "Id": 6, "Nome": "Urano" },
-        "Projeto": { "Id": 6, "Nome": "Open Finance" },
-        "Tech_Líder": { "Id": 6, "Nome": "Eng. Tritão" }
+        "Planeta": { "id": 6, "Nome": "Urano" },
+        "Projeto": { "id": 6, "Nome": "Open Finance" },
+        "Tech_Líder": { "id": 6, "Nome": "Eng. Tritão" }
       },
       {
-        "Id": 6,
+        "id": 6,
         "Nome": "Implementar Testes de Integração",
         "Descrição": "Criar suite de testes para módulo de pagamentos",
         "Objetivo_Técnico": "Atingir 80% de cobertura de testes para fluxos críticos",
-        "Tipo_Missão": { "Id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
+        "Tipo_Missão": { "id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
         "Progresso_missão": 75,
-        "Status": { "Id": 2, "Nome": "Em Progresso" },
+        "Status": { "id": 2, "Nome": "Em Progresso" },
         "Data_Criação": "2025-05-01T16:00:00Z",
         "Data_Prazo": "2025-05-07T20:00:59Z",
         "Data_Conclusão": null,
         "Qtd_moedas": 12,
         "Fases_Total": 2,
         "Fases_Concluídas": 1,
-        "Planeta": { "Id": 7, "Nome": "Netuno" },
-        "Projeto": { "Id": 7, "Nome": "BB Cash" },
-        "Tech_Líder": { "Id": 7, "Nome": "Dra. Solaris" }
+        "Planeta": { "id": 7, "Nome": "Netuno" },
+        "Projeto": { "id": 7, "Nome": "BB Cash" },
+        "Tech_Líder": { "id": 7, "Nome": "Dra. Solaris" }
       },
       {
-        "Id": 7,
+        "id": 7,
         "Nome": "Documentar API de Navegação",
         "Descrição": "Criar documentação Swagger para endpoints públicos",
         "Objetivo_Técnico": "Documentar 100% dos endpoints com exemplos de uso",
-        "Tipo_Missão": { "Id": 4, "Nome": "Verde", "Peso": 1, "Cor": "green-500" },
+        "Tipo_Missão": { "id": 4, "Nome": "Verde", "Peso": 1, "Cor": "green-500" },
         "Progresso_missão": 100,
-        "Status": { "Id": 1, "Nome": "Concluída" },
+        "Status": { "id": 1, "Nome": "Concluída" },
         "Data_Criação": "2025-04-25T10:00:00Z",
         "Data_Prazo": "2025-05-03T21:00:59Z",
         "Data_Conclusão": "2025-05-02T14:30:00Z",
         "Qtd_moedas": 8,
         "Fases_Total": 1,
         "Fases_Concluídas": 1,
-        "Planeta": { "Id": 8, "Nome": "Plutão" },
-        "Projeto": { "Id": 8, "Nome": "Empréstimo Pessoal" },
-        "Tech_Líder": { "Id": 8, "Nome": "Eng. Phoenix" }
+        "Planeta": { "id": 8, "Nome": "Plutão" },
+        "Projeto": { "id": 8, "Nome": "Empréstimo Pessoal" },
+        "Tech_Líder": { "id": 8, "Nome": "Eng. Phoenix" }
       },
       {
-        "Id": 8,
+        "id": 8,
         "Nome": "Atualizar Documentação do Código",
         "Descrição": "Revisar conteúdo da página de introdução para novos devs",
         "Objetivo_Técnico": "Incluir 5 novos tutoriais e melhorar fluxo de aprendizado",
-        "Tipo_Missão": { "Id": 4, "Nome": "Verde", "Peso": 1, "Cor": "green-500" },
+        "Tipo_Missão": { "id": 4, "Nome": "Verde", "Peso": 1, "Cor": "green-500" },
         "Progresso_missão": 100,
-        "Status": { "Id": 1, "Nome": "Concluída" },
+        "Status": { "id": 1, "Nome": "Concluída" },
         "Data_Criação": "2025-04-22T09:00:00Z",
         "Data_Prazo": "2025-04-29T22:00:59Z",
         "Data_Conclusão": "2025-05-01T11:15:00Z",
         "Qtd_moedas": 5,
         "Fases_Total": 1,
         "Fases_Concluídas": 1,
-        "Planeta": { "Id": 9, "Nome": "Lua" },
-        "Projeto": { "Id": 9, "Nome": "Conta Universitária" },
-        "Tech_Líder": { "Id": 9, "Nome": "Capitã Selene" }
+        "Planeta": { "id": 9, "Nome": "Lua" },
+        "Projeto": { "id": 9, "Nome": "Conta Universitária" },
+        "Tech_Líder": { "id": 9, "Nome": "Capitã Selene" }
       },
       {
-        "Id": 9,
+        "id": 9,
         "Nome": "Configurar Pipeline de CI/CD",
         "Descrição": "Automatizar processo de deploy em ambiente de staging",
         "Objetivo_Técnico": "Reduzir tempo de deploy em 50% com automação",
-        "Tipo_Missão": { "Id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
+        "Tipo_Missão": { "id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
         "Progresso_missão": 100,
-        "Status": { "Id": 1, "Nome": "Concluída" },
+        "Status": { "id": 1, "Nome": "Concluída" },
         "Data_Criação": "2025-04-25T13:00:00Z",
         "Data_Prazo": "2025-05-01T20:00:59Z",
         "Data_Conclusão": "2025-04-30T16:45:00Z",
         "Qtd_moedas": 15,
         "Fases_Total": 2,
         "Fases_Concluídas": 2,
-        "Planeta": { "Id": 10, "Nome": "Mercúrio" },
-        "Projeto": { "Id": 10, "Nome": "CDB DI" },
-        "Tech_Líder": { "Id": 10, "Nome": "Eng. Hermes" }
+        "Planeta": { "id": 10, "Nome": "Mercúrio" },
+        "Projeto": { "id": 10, "Nome": "CDB DI" },
+        "Tech_Líder": { "id": 10, "Nome": "Eng. Hermes" }
       },
       {
-        "Id": 10,
+        "id": 10,
         "Nome": "Implementar Sistema de Logs Centralizado",
         "Descrição": "Configurar ELK Stack para agregação de logs",
         "Objetivo_Técnico": "Reduzir tempo de diagnóstico de problemas em 60%",
-        "Tipo_Missão": { "Id": 1, "Nome": "Vermelha", "Peso": 3, "Cor": "red-500" },
+        "Tipo_Missão": { "id": 1, "Nome": "Vermelha", "Peso": 3, "Cor": "red-500" },
         "Progresso_missão": 100,
-        "Status": { "Id": 1, "Nome": "Concluída" },
+        "Status": { "id": 1, "Nome": "Concluída" },
         "Data_Criação": "2025-04-10T08:00:00Z",
         "Data_Prazo": "2025-04-25T22:00:59Z",
         "Data_Conclusão": "2025-04-20T12:00:00Z",
         "Qtd_moedas": 20,
         "Fases_Total": 3,
         "Fases_Concluídas": 3,
-        "Planeta": { "Id": 11, "Nome": "Vênus" },
-        "Projeto": { "Id": 11, "Nome": "Conta Universitária" },
-        "Tech_Líder": { "Id": 11, "Nome": "Dr. Skywalker" }
+        "Planeta": { "id": 11, "Nome": "Vênus" },
+        "Projeto": { "id": 11, "Nome": "Conta Universitária" },
+        "Tech_Líder": { "id": 11, "Nome": "Dr. Skywalker" }
       },
       {
-        "Id": 11,
+        "id": 11,
         "Nome": "Resolver Vazamento de Memória",
         "Descrição": "Revisar e atualizar documento de políticas de acesso",
         "Objetivo_Técnico": "Implementar 10 novas regras de compliance",
-        "Tipo_Missão": { "Id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
+        "Tipo_Missão": { "id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
         "Progresso_missão": 100,
-        "Status": { "Id": 1, "Nome": "Concluída" },
+        "Status": { "id": 1, "Nome": "Concluída" },
         "Data_Criação": "2025-03-15T14:00:00Z",
         "Data_Prazo": "2025-03-30T21:00:59Z",
         "Data_Conclusão": "2025-03-25T09:30:00Z",
         "Qtd_moedas": 10,
         "Fases_Total": 1,
         "Fases_Concluídas": 1,
-        "Planeta": { "Id": 12, "Nome": "Terra" },
-        "Projeto": { "Id": 12, "Nome": "BB Investimento" },
-        "Tech_Líder": { "Id": 12, "Nome": "Comandante Zeus" }
+        "Planeta": { "id": 12, "Nome": "Terra" },
+        "Projeto": { "id": 12, "Nome": "BB Investimento" },
+        "Tech_Líder": { "id": 12, "Nome": "Comandante Zeus" }
       },
       {
-        "Id": 12,
+        "id": 12,
         "Nome": "Otimizar Consultas ao Banco de Dados",
-        "Descrição": "Identificar e melhorar queries lentas",
+        "Descrição": "identificar e melhorar queries lentas",
         "Objetivo_Técnico": "Reduzir tempo médio de consulta em 35%",
-        "Tipo_Missão": { "Id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
+        "Tipo_Missão": { "id": 2, "Nome": "Amarela", "Peso": 2, "Cor": "yellow-500" },
         "Progresso_missão": 100,
-        "Status": { "Id": 1, "Nome": "Concluída" },
+        "Status": { "id": 1, "Nome": "Concluída" },
         "Data_Criação": "2025-02-01T11:00:00Z",
         "Data_Prazo": "2025-02-15T18:00:59Z",
         "Data_Conclusão": "2025-05-01T17:20:00Z",
         "Qtd_moedas": 12,
         "Fases_Total": 2,
         "Fases_Concluídas": 2,
-        "Planeta": { "Id": 13, "Nome": "Marte" },
-        "Projeto": { "Id": 13, "Nome": "BB Investimento" },
-        "Tech_Líder": { "Id": 13, "Nome": "Dra. Solaris" }
+        "Planeta": { "id": 13, "Nome": "Marte" },
+        "Projeto": { "id": 13, "Nome": "BB Investimento" },
+        "Tech_Líder": { "id": 13, "Nome": "Dra. Solaris" }
       }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
@@ -309,13 +309,13 @@
   "tipos_missoes": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Amarela",
         "Peso": 2,
         "Cor": "yellow-500"
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Vermelha",
         "Peso": 4,
         "Cor": "red-500"
@@ -326,121 +326,121 @@
   "projetos": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "CDB DI",
         "Descrição": "API para integração",
         "Progresso": 20.0,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Planeta_Base": { "Id": 1, "Nome": "Nebula-7" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Planeta_Base": { "id": 1, "Nome": "Nebula-7" },
         "Planeta_Destino": null,
         "Data_Início": "2025-04-01T00:00:00Z",
         "Data_Prevista_Término": null,
         "Data_Conclusão": null,
-        "Status": { "Id": 8, "Nome": "Em Progresso" }
+        "Status": { "id": 8, "Nome": "Em Progresso" }
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Conta Universitária",
         "Descrição": "Autenticação segura",
         "Progresso": 100.0,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Planeta_Base": { "Id": 2, "Nome": "Astra-12" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Planeta_Base": { "id": 2, "Nome": "Astra-12" },
         "Planeta_Destino": null,
         "Data_Início": "2025-03-15T00:00:00Z",
         "Data_Prevista_Término": "2025-04-28T23:59:59Z",
         "Data_Conclusão": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Concluída" }
+        "Status": { "id": 9, "Nome": "Concluída" }
       },
       {
-        "Id": 3,
+        "id": 3,
         "Nome": "Open Finance",
         "Descrição": "Autenticação segura",
         "Progresso": 88.0,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Planeta_Base": { "Id": 2, "Nome": "Astra-12" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Planeta_Base": { "id": 2, "Nome": "Astra-12" },
         "Planeta_Destino": null,
         "Data_Início": "2025-03-15T00:00:00Z",
         "Data_Prevista_Término": "2025-04-28T23:59:59Z",
         "Data_Conclusão": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Atrasada" }
+        "Status": { "id": 9, "Nome": "Atrasada" }
       },
       {
-        "Id": 4,
+        "id": 4,
         "Nome": "Carteira bB",
         "Descrição": "API para integração",
         "Progresso": 56.0,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Planeta_Base": { "Id": 1, "Nome": "Nebula-7" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Planeta_Base": { "id": 1, "Nome": "Nebula-7" },
         "Planeta_Destino": null,
         "Data_Início": "2025-04-01T00:00:00Z",
         "Data_Prevista_Término": null,
         "Data_Conclusão": null,
-        "Status": { "Id": 8, "Nome": "Em Progresso" }
+        "Status": { "id": 8, "Nome": "Em Progresso" }
       },
       {
-        "Id": 5,
+        "id": 5,
         "Nome": "BB Investimento",
         "Descrição": "Autenticação segura",
         "Progresso": 32.0,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Planeta_Base": { "Id": 2, "Nome": "Astra-12" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Planeta_Base": { "id": 2, "Nome": "Astra-12" },
         "Planeta_Destino": null,
         "Data_Início": "2025-03-15T00:00:00Z",
         "Data_Prevista_Término": "2025-04-28T23:59:59Z",
         "Data_Conclusão": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Concluída" }
+        "Status": { "id": 9, "Nome": "Concluída" }
       },
       {
-        "Id": 6,
+        "id": 6,
         "Nome": "Empréstimo Pessoal",
         "Descrição": "Autenticação segura",
         "Progresso": 92.0,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Planeta_Base": { "Id": 2, "Nome": "Astra-12" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Planeta_Base": { "id": 2, "Nome": "Astra-12" },
         "Planeta_Destino": null,
         "Data_Início": "2025-03-15T00:00:00Z",
         "Data_Prevista_Término": "2025-04-28T23:59:59Z",
         "Data_Conclusão": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Atrasada" }
+        "Status": { "id": 9, "Nome": "Atrasada" }
       },
       {
-        "Id": 7,
+        "id": 7,
         "Nome": "Acessibilidade App",
         "Descrição": "API para integração",
         "Progresso": 78.0,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Planeta_Base": { "Id": 1, "Nome": "Nebula-7" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Planeta_Base": { "id": 1, "Nome": "Nebula-7" },
         "Planeta_Destino": null,
         "Data_Início": "2025-04-01T00:00:00Z",
         "Data_Prevista_Término": null,
         "Data_Conclusão": null,
-        "Status": { "Id": 8, "Nome": "Em Progresso" }
+        "Status": { "id": 8, "Nome": "Em Progresso" }
       },
       {
-        "Id": 8,
+        "id": 8,
         "Nome": "BB Cash",
         "Descrição": "Autenticação segura",
         "Progresso": 65.0,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Planeta_Base": { "Id": 2, "Nome": "Astra-12" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Planeta_Base": { "id": 2, "Nome": "Astra-12" },
         "Planeta_Destino": null,
         "Data_Início": "2025-03-15T00:00:00Z",
         "Data_Prevista_Término": "2025-04-28T23:59:59Z",
         "Data_Conclusão": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Concluída" }
+        "Status": { "id": 9, "Nome": "Concluída" }
       },
       {
-        "Id": 9,
+        "id": 9,
         "Nome": "Financiamento Imobiliário",
         "Descrição": "Autenticação segura",
         "Progresso": 44.0,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Planeta_Base": { "Id": 2, "Nome": "Astra-12" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Planeta_Base": { "id": 2, "Nome": "Astra-12" },
         "Planeta_Destino": null,
         "Data_Início": "2025-03-15T00:00:00Z",
         "Data_Prevista_Término": "2025-04-28T23:59:59Z",
         "Data_Conclusão": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Atrasada" }
+        "Status": { "id": 9, "Nome": "Atrasada" }
       }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
@@ -448,110 +448,110 @@
   "mascotes": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Buggo",
         "Descrição": "Representação lúdica dos bugs, muda de cor conforme o estado do sistema.",
         "Imagem": "/images/mascot/buggo.png",
-        "Planeta": { "Id": 1, "Nome": "Nebula-7" },
+        "Planeta": { "id": 1, "Nome": "Nebula-7" },
         "Titulo": "O Camaleão do Caos",
         "Personalidade": "Imprevisível e brincalhão, mas cooperativo quando domado",
         "Habilidade_Especial": "Transforma-se em ferramenta útil quando o código é corrigido",
         "Aparência": "Esfera com pele de código vivo e olhos expressivos gigantes"
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Syntaxx",
         "Descrição": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas.",
         "Imagem": "/images/mascot/syntaxx.png",
-        "Planeta": { "Id": 2, "Nome": "Astra-12" },
+        "Planeta": { "id": 2, "Nome": "Astra-12" },
         "Titulo": "O Vigilante da Sintaxe",
         "Personalidade": "Metódico e um pouco exigente. Fica ansioso quando vê código desorganizado.",
         "Habilidade_Especial": "Pisca em vermelho quando detecta um erro de sintaxe e em verde quando tudo está perfeito",
         "Aparência": "Pequeno e angular, com olhos que brilham em diferentes cores conforme o estado do código."
       },
       {
-        "Id": 3,
+        "id": 3,
         "Nome": "Algorix",
         "Descrição": "Um ser geométrico que flutua suavemente, sempre calculando o caminho mais eficiente. Sua mente funciona como um algoritmo vivo, otimizando tudo ao seu redor.",
         "Imagem": "/images/mascot/algorix.png",
-        "Planeta": { "Id": 2, "Nome": "Astra-12" },
+        "Planeta": { "id": 2, "Nome": "Astra-12" },
         "Titulo": "O Estrategista de Código",
         "Personalidade": "Racional, paciente e estratégico. Fala em padrões lógicos e adora resolver problemas complexos.",
-        "Habilidade_Especial": "Identifica redundâncias em códigos e sugere estruturas mais eficientes.",
+        "Habilidade_Especial": "identifica redundâncias em códigos e sugere estruturas mais eficientes.",
         "Aparência": "Corpo formado por linhas luminosas que se rearranjam conforme pensa. Tem um núcleo brilhante que pulsa em ritmo algorítmico."
       },
       {
-        "Id": 4,
+        "id": 4,
         "Nome": "Floris",
         "Descrição": "Pequena criatura arbórea que personifica a força da natureza, capaz de florescer em qualquer ambiente.",
         "Imagem": "/images/mascot/floris.png",
-        "Planeta": { "Id": 2, "Nome": "Verdax" },
+        "Planeta": { "id": 2, "Nome": "Verdax" },
         "Titulo": "O Guardião da Vida Resiliente",
         "Personalidade": "Amigável, Brincalhão, Otimista",
         "Habilidade_Especial": "Cura pequenos danos ambientais ao seu redor. Farol natural: Atrai criaturas perdidas com um brilho aconchegante.",
         "Aparência": "Corpo verde-musgo com textura de casca jovem, Oito olhos redondos que brilham como vagalumes, Raízes móveis que se adaptam a qualquer solo, Galhos que florescem quando feliz."
       },
       {
-        "Id": 5,
+        "id": 5,
         "Nome": "Cachee",
         "Descrição": "Um mascote veloz que armazena informações frequentemente usadas para agilizar processos.",
         "Imagem": "/images/mascot/cachee.png",
-        "Planeta": { "Id": 2, "Nome": "Glaciora" },
+        "Planeta": { "id": 2, "Nome": "Glaciora" },
         "Titulo": "O Acelerador de Acesso",
         "Personalidade": "Rápido e eficiente, mas às vezes esquecido (quando o cache expira).",
         "Habilidade_Especial": "Reduz tempo de carregamento e evita consultas repetitivas.",
         "Aparência": "Pequeño e dinâmico, com um disco rígido simbólico girando em suas costas."
       },
       {
-        "Id": 6,
+        "id": 6,
         "Nome": "Stacko",
         "Descrição": "Um robô empilhador que adora estruturas ordenadas e detesta estouros de memória.",
         "Imagem": "/images/mascot/stacko.png",
-        "Planeta": { "Id": 2, "Nome": "Crystalia" },
+        "Planeta": { "id": 2, "Nome": "Crystalia" },
         "Titulo": "O Organizador de Pilhas",
         "Personalidade": "Organizado e um pouco obsessivo com limites.",
         "Habilidade_Especial": "Ajuda a gerenciar chamadas aninhadas e evita stack overflows.",
         "Aparência": "Parece uma torre de blocos com sensores que brilham conforme a profundidade da pilha."
       },
       {
-        "Id": 7,
+        "id": 7,
         "Nome": "Voidy",
         "Descrição": "Um ser feito de sombras estelares que habita espaços não renderizados ou regiões inexploradas do sistema.",
         "Imagem": "/images/mascot/voidy.png",
-        "Planeta": { "Id": 2, "Nome": "Tesserax" },
+        "Planeta": { "id": 2, "Nome": "Tesserax" },
         "Titulo": "O Explorador do Vazio",
         "Personalidade": "Curioso e um pouco solitário, adora descobrir bugs de renderização ou áreas esquecidas.",
         "Habilidade_Especial": "Revela zonas ocultas ou recursos não utilizados no código.",
         "Aparência": "Silhueta negra com constelações pulsantes em seu interior; parece 'desfocado' nas bordas."
       },
       {
-        "Id": 8,
+        "id": 8,
         "Nome": "Snipz",
         "Descrição": "Um especialista em snippets e macros, sempre pronto para oferecer trechos de código úteis.",
         "Imagem": "/images/mascot/snipz.png",
-        "Planeta": { "Id": 2, "Nome": "Bitron" },
+        "Planeta": { "id": 2, "Nome": "Bitron" },
         "Titulo": "O Mestre dos Atalhos",
         "Personalidade": "Prático e ágil, odeia repetição desnecessária.",
         "Habilidade_Especial": "Recomenda atalhos e autocompletar inteligente baseado em contextos anteriores.",
         "Aparência": "Pequeno e modular, como um bloco de construção que se transforma conforme a necessidade."
       },
       {
-        "Id": 9,
+        "id": 9,
         "Nome": "GigaFix",
         "Descrição": "Um robô robusto que lida com vazamentos de memória e gargalos de processamento.",
         "Imagem": "/images/mascot/gigafix.png",
-        "Planeta": { "Id": 2, "Nome": "Glaciora" },
+        "Planeta": { "id": 2, "Nome": "Glaciora" },
         "Titulo": "O Resolvedor de Problemas Pesados",
         "Personalidade": "Sólido e confiável, age como um 'faxineiro' de recursos.",
         "Habilidade_Especial": "Otimiza alocação de memória e reduz latência em operações pesadas.",
         "Aparência": "Grande e metálico, com placas de circuito expostas que brilham quando trabalha."
       },
       {
-        "Id": 10,
+        "id": 10,
         "Nome": "Poxel",
         "Descrição": "Mestre de desafios visuais, como ajustes de UI ou otimização de gráficos.",
         "Imagem": "/images/mascot/poxel.png",
-        "Planeta": { "Id": 2, "Nome": "Fluxaris" },
+        "Planeta": { "id": 2, "Nome": "Fluxaris" },
         "Titulo": "O Artista Pixelado",
         "Personalidade": "Criativo e detalhista, obsessivo por alinhamento perfeito.",
         "Habilidade_Especial": "Corrige pixel-off e sugere paletas de cores acessíveis.",
@@ -563,17 +563,17 @@
   "medalhas_cosmicas": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Medalha de Coragem",
         "Descrição": "Por concluir missão crítica",
-        "Tipo": { "Id": 4, "Nome": "Individual" },
+        "Tipo": { "id": 4, "Nome": "Individual" },
         "Imagem": "https://xai.com/medals/courage.webp"
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Medalha de Equipe",
         "Descrição": "Por colaboração estelar",
-        "Tipo": { "Id": 5, "Nome": "Equipe" },
+        "Tipo": { "id": 5, "Nome": "Equipe" },
         "Imagem": "https://xai.com/medals/team.webp"
       }
     ],
@@ -582,21 +582,21 @@
   "naves": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Orion Explorer",
         "Descrição": "Nave ágil",
-        "Status": { "Id": 11, "Nome": "Em Rota" },
-        "Planeta_Origem": { "Id": 1, "Nome": "Nebula-7" },
-        "Planeta_Destino": { "Id": 2, "Nome": "Astra-12" },
+        "Status": { "id": 11, "Nome": "Em Rota" },
+        "Planeta_Origem": { "id": 1, "Nome": "Nebula-7" },
+        "Planeta_Destino": { "id": 2, "Nome": "Astra-12" },
         "Progresso_Trajeto": 50.0,
         "Imagem": "https://xai.com/ships/orion.webp"
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Polaris",
         "Descrição": "Nave em manutenção",
-        "Status": { "Id": 3, "Nome": "Estacionada" },
-        "Planeta_Origem": { "Id": 2, "Nome": "Astra-12" },
+        "Status": { "id": 3, "Nome": "Estacionada" },
+        "Planeta_Origem": { "id": 2, "Nome": "Astra-12" },
         "Planeta_Destino": null,
         "Progresso_Trajeto": 0.0,
         "Imagem": "https://xai.com/ships/polaris.webp"
@@ -607,83 +607,83 @@
   "notificacoes": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Descrição": "Carteira bB - Correção na sincronização de saldos (90% dos ambientes atualizados)",
         "Data_Criação": "2025-04-25T08:00:00Z",
-        "Status": { "Id": 2, "Nome": "Pendente" },
-        "Usuário": { "Id": 1, "Nome": "Astro João" },
+        "Status": { "id": 2, "Nome": "Pendente" },
+        "Usuário": { "id": 1, "Nome": "Astro João" },
         "Equipe": null,
-        "Projeto": { "Id": 1, "Nome": "API Estelar" },
+        "Projeto": { "id": 1, "Nome": "API Estelar" },
         "Tipo": "Equipe"
       },
       {
-        "Id": 2,
+        "id": 2,
         "Descrição": "Conta Universitária/Empréstimo - Todos os hotfixes da sprint implementados (100% concluído)",
         "Data_Criação": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Status": { "id": 9, "Nome": "Concluída" },
         "Usuário": null,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Projeto": { "Id": 2, "Nome": "Sistema de Login" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Projeto": { "id": 2, "Nome": "Sistema de Login" },
         "Tipo": "Usuário"
       },
       {
-        "Id": 3,
+        "id": 3,
         "Descrição": "CDB DI - Ajuste na exibição de taxas (75% dos clientes impactados notificados)",
         "Data_Criação": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Status": { "id": 9, "Nome": "Concluída" },
         "Usuário": null,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Projeto": { "Id": 2, "Nome": "Sistema de Login" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Projeto": { "id": 2, "Nome": "Sistema de Login" },
         "Tipo": "Equipe"
       },
       {
-        "Id": 4,
+        "id": 4,
         "Descrição": "BB Financiamento - Corrigida validação de documentos (65% dos fluxos ajustados)",
         "Data_Criação": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Status": { "id": 9, "Nome": "Concluída" },
         "Usuário": null,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Projeto": { "Id": 2, "Nome": "Sistema de Login" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Projeto": { "id": 2, "Nome": "Sistema de Login" },
         "Tipo": "Usuário"
       },
       {
-        "Id": 5,
+        "id": 5,
         "Descrição": "BB Investimento - Resolvido race condition no módulo de rendimentos (55% dos casos testados)",
         "Data_Criação": "2025-04-25T08:00:00Z",
-        "Status": { "Id": 2, "Nome": "Pendente" },
-        "Usuário": { "Id": 1, "Nome": "Astro João" },
+        "Status": { "id": 2, "Nome": "Pendente" },
+        "Usuário": { "id": 1, "Nome": "Astro João" },
         "Equipe": null,
-        "Projeto": { "Id": 1, "Nome": "API Estelar" },
+        "Projeto": { "id": 1, "Nome": "API Estelar" },
         "Tipo": "Equipe"
       },
       {
-        "Id": 6,
+        "id": 6,
         "Descrição": "Acessibilidade App - Correção de contrastes em componentes (50% das telas validadas)",
         "Data_Criação": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Status": { "id": 9, "Nome": "Concluída" },
         "Usuário": null,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Projeto": { "Id": 2, "Nome": "Sistema de Login" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Projeto": { "id": 2, "Nome": "Sistema de Login" },
         "Tipo": "Usuário"
       },
       {
-        "Id": 7,
+        "id": 7,
         "Descrição": "Erro na API de integração com parceiros (30% dos endpoints corrigidos)",
         "Data_Criação": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Status": { "id": 9, "Nome": "Concluída" },
         "Usuário": null,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Projeto": { "Id": 2, "Nome": "Sistema de Login" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Projeto": { "id": 2, "Nome": "Sistema de Login" },
         "Tipo": "Equipe"
       },
       {
-        "Id": 8,
+        "id": 8,
         "Descrição": "Corrigido erro de arredondamento no cálculo de juros (25% das correções implementadas)",
         "Data_Criação": "2025-04-25T15:00:00Z",
-        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Status": { "id": 9, "Nome": "Concluída" },
         "Usuário": null,
-        "Equipe": { "Id": 1, "Nome": "Nave Orion" },
-        "Projeto": { "Id": 2, "Nome": "Sistema de Login" },
+        "Equipe": { "id": 1, "Nome": "Nave Orion" },
+        "Projeto": { "id": 2, "Nome": "Sistema de Login" },
         "Tipo": "Usuário"
       }
     ],
@@ -692,18 +692,18 @@
   "credenciais": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Projeto API Estelar",
-        "Tipo": { "Id": 1, "Nome": "Projeto" },
+        "Tipo": { "id": 1, "Nome": "Projeto" },
         "Descrição": "Participação na API",
-        "Status": { "Id": 5, "Nome": "Ativa" }
+        "Status": { "id": 5, "Nome": "Ativa" }
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Nave Orion",
-        "Tipo": { "Id": 2, "Nome": "Nave" },
+        "Tipo": { "id": 2, "Nome": "Nave" },
         "Descrição": "Membro da tripulação",
-        "Status": { "Id": 5, "Nome": "Ativa" }
+        "Status": { "id": 5, "Nome": "Ativa" }
       }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
@@ -711,20 +711,20 @@
   "itens": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Traje Lunar",
-        "Tipo": { "Id": 1, "Nome": "Traje" },
+        "Tipo": { "id": 1, "Nome": "Traje" },
         "Descrição": "Traje para exploração",
         "Imagem": "https://xai.com/items/lunar.webp",
-        "Status": { "Id": 5, "Nome": "Ativa" }
+        "Status": { "id": 5, "Nome": "Ativa" }
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Capacete Estelar",
-        "Tipo": { "Id": 2, "Nome": "Acessório" },
+        "Tipo": { "id": 2, "Nome": "Acessório" },
         "Descrição": "Capacete brilhante",
         "Imagem": "https://xai.com/items/helmet.webp",
-        "Status": { "Id": 5, "Nome": "Ativa" }
+        "Status": { "id": 5, "Nome": "Ativa" }
       }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
@@ -732,44 +732,44 @@
   "conquistas": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Raiz Sólida",
         "Descrição": "Ao completar todas as tarefas verdes de um ciclo, você prova que estabilidade também é poder.",
         "Tarefas": "🍃 Consistência nas entregas 🍃 Compromisso com o todo 🍃 Força invisível que sustenta o progresso",
         "Qtd_moedas": 10,
         "Imagem": "/images/achievement/raiz-solida.png",
-        "Planeta": { "Id": 1, "Nome": "Nebula-7" },
-        "Status": { "Id": 5, "Nome": "Ativa" }
+        "Planeta": { "id": 1, "Nome": "Nebula-7" },
+        "Status": { "id": 5, "Nome": "Ativa" }
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Ferro Vermelho",
         "Descrição": "Entregar 5 tarefas vermelhas antes do prazo",
         "Tarefas": "🔥 Velocidade sob pressão 🔥 Espírito inabalável diante de falhas críticas",
         "Qtd_moedas": 15,
         "Imagem": "/images/achievement/ferro-vermelho.png",
-        "Planeta": { "Id": 2, "Nome": "Astra-12" },
-        "Status": { "Id": 5, "Nome": "Ativa" }
+        "Planeta": { "id": 2, "Nome": "Astra-12" },
+        "Status": { "id": 5, "Nome": "Ativa" }
       },
       {
-        "Id": 3,
+        "id": 3,
         "Nome": "Explorador de Solo",
         "Descrição": "Complete o primeiro deploy sem falhas",
         "Tarefas": "🚀 Coragem no primeiro passo 🚀 Execução impecável 🚀 Início lendário na missão",
         "Qtd_moedas": 15,
         "Imagem": "/images/achievement/explorador-de-solo.png",
-        "Planeta": { "Id": 2, "Nome": "Astra-12" },
-        "Status": { "Id": 5, "Nome": "Ativa" }
+        "Planeta": { "id": 2, "Nome": "Astra-12" },
+        "Status": { "id": 5, "Nome": "Ativa" }
       },
       {
-        "Id": 4,
+        "id": 4,
         "Nome": "Qualidade Constante",
         "Descrição": "Detectar e corrigir um bug em ambiente de teste antes do QA",
         "Tarefas": "🧠 Olhar afiado para falhas 🧠 Ação antes da detecção externa 🧠 Excelência como rotina",
         "Qtd_moedas": 15,
         "Imagem": "/images/achievement/qualidade-constante.png",
-        "Planeta": { "Id": 2, "Nome": "Astra-12" },
-        "Status": { "Id": 5, "Nome": "Ativa" }
+        "Planeta": { "id": 2, "Nome": "Astra-12" },
+        "Status": { "id": 5, "Nome": "Ativa" }
       }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
@@ -777,22 +777,22 @@
   "transacoes": {
     "data": [
       {
-        "Id": 1,
-        "Usuário": { "Id": 1, "Nome": "Astro João" },
+        "id": 1,
+        "Usuário": { "id": 1, "Nome": "Astro João" },
         "Descrição": "Recompensa por missão",
         "Qtd_moedas": 10,
         "Data": "2025-04-25T15:00:00Z",
         "Tipo": "Missão",
-        "Referência_Id": 2
+        "Referência_id": 2
       },
       {
-        "Id": 2,
-        "Usuário": { "Id": 1, "Nome": "Astro João" },
+        "id": 2,
+        "Usuário": { "id": 1, "Nome": "Astro João" },
         "Descrição": "Compra de item",
         "Qtd_moedas": -50,
         "Data": "2025-04-26T10:00:00Z",
         "Tipo": "Compra",
-        "Referência_Id": 1
+        "Referência_id": 1
       }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
@@ -800,16 +800,16 @@
   "niveis_missoes_verdes": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Iniciação Cósmica",
         "Ordem": 1,
-        "Status": { "Id": 10, "Nome": "Desbloqueado" }
+        "Status": { "id": 10, "Nome": "Desbloqueado" }
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Explorador Novato",
         "Ordem": 2,
-        "Status": { "Id": 4, "Nome": "Bloqueado" }
+        "Status": { "id": 4, "Nome": "Bloqueado" }
       }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
@@ -817,20 +817,20 @@
   "missoes_verdes": {
     "data": [
       {
-        "Id": 1,
+        "id": 1,
         "Nome": "Tour Cósmico",
         "Descrição": "Explore a plataforma",
-        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Status": { "id": 9, "Nome": "Concluída" },
         "Qtd_moedas": 5,
-        "Nível": { "Id": 1, "Nome": "Iniciação Cósmica" }
+        "Nível": { "id": 1, "Nome": "Iniciação Cósmica" }
       },
       {
-        "Id": 2,
+        "id": 2,
         "Nome": "Primeiro Commit",
         "Descrição": "Faça seu primeiro commit",
-        "Status": { "Id": 2, "Nome": "Pendente" },
+        "Status": { "id": 2, "Nome": "Pendente" },
         "Qtd_moedas": 5,
-        "Nível": { "Id": 1, "Nome": "Iniciação Cósmica" }
+        "Nível": { "id": 1, "Nome": "Iniciação Cósmica" }
       }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
@@ -838,8 +838,8 @@
   "estatisticas": {
     "data": [
       {
-        "Id": 1,
-        "Usuário": { "Id": 1, "Nome": "Astro João" },
+        "id": 1,
+        "Usuário": { "id": 1, "Nome": "Astro João" },
         "Logins": 10,
         "Tempo_Plataforma": 3600,
         "Missões_Concluídas": 1,
@@ -848,8 +848,8 @@
         "Dívidas_Técnicas": 2
       },
       {
-        "Id": 2,
-        "Usuário": { "Id": 2, "Nome": "Luna Maria" },
+        "id": 2,
+        "Usuário": { "id": 2, "Nome": "Luna Maria" },
         "Logins": 5,
         "Tempo_Plataforma": 1800,
         "Missões_Concluídas": 0,
@@ -862,113 +862,113 @@
   },
   "status": {
     "data": [
-      { "Id": 1, "Nome": "Não Explorado", "Descrição": "Ainda não iniciado" },
-      { "Id": 2, "Nome": "Pendente", "Descrição": "Aguardando início" },
-      { "Id": 3, "Nome": "Estacionada", "Descrição": "Nave parada" },
-      { "Id": 4, "Nome": "Inativa", "Descrição": "Não ativa" },
-      { "Id": 5, "Nome": "Ativa", "Descrição": "Entidade ativa" },
-      { "Id": 6, "Nome": "Incompleto", "Descrição": "Parcialmente concluído" },
-      { "Id": 8, "Nome": "Em Progresso", "Descrição": "Em execução" },
-      { "Id": 9, "Nome": "Concluída", "Descrição": "Finalizada" },
-      { "Id": 10, "Nome": "Desbloqueado", "Descrição": "Acessível" },
-      { "Id": 11, "Nome": "Em Rota", "Descrição": "Nave em movimento" }
+      { "id": 1, "Nome": "Não Explorado", "Descrição": "Ainda não iniciado" },
+      { "id": 2, "Nome": "Pendente", "Descrição": "Aguardando início" },
+      { "id": 3, "Nome": "Estacionada", "Descrição": "Nave parada" },
+      { "id": 4, "Nome": "Inativa", "Descrição": "Não ativa" },
+      { "id": 5, "Nome": "Ativa", "Descrição": "Entidade ativa" },
+      { "id": 6, "Nome": "Incompleto", "Descrição": "Parcialmente concluído" },
+      { "id": 8, "Nome": "Em Progresso", "Descrição": "Em execução" },
+      { "id": 9, "Nome": "Concluída", "Descrição": "Finalizada" },
+      { "id": 10, "Nome": "Desbloqueado", "Descrição": "Acessível" },
+      { "id": 11, "Nome": "Em Rota", "Descrição": "Nave em movimento" }
     ],
     "meta": { "total": 10, "page": 1, "per_page": 10 }
   },
   "tipo_credencial": {
     "data": [
-      { "Id": 1, "Nome": "Projeto", "Descrição": "Credencial de projeto" },
-      { "Id": 2, "Nome": "Nave", "Descrição": "Credencial de nave" },
-      { "Id": 4, "Nome": "Individual", "Descrição": "Medalha individual" },
-      { "Id": 5, "Nome": "Equipe", "Descrição": "Medalha de equipe" }
+      { "id": 1, "Nome": "Projeto", "Descrição": "Credencial de projeto" },
+      { "id": 2, "Nome": "Nave", "Descrição": "Credencial de nave" },
+      { "id": 4, "Nome": "Individual", "Descrição": "Medalha individual" },
+      { "id": 5, "Nome": "Equipe", "Descrição": "Medalha de equipe" }
     ],
     "meta": { "total": 4, "page": 1, "per_page": 10 }
   },
   "tipo_item": {
     "data": [
-      { "Id": 1, "Nome": "Traje", "Descrição": "Roupas personalizadas" },
-      { "Id": 2, "Nome": "Acessório", "Descrição": "Itens decorativos" }
+      { "id": 1, "Nome": "Traje", "Descrição": "Roupas personalizadas" },
+      { "id": 2, "Nome": "Acessório", "Descrição": "Itens decorativos" }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
   },
   "entregas": {
     "data": [
       {
-        "Id": 1,
-        "Missão": { "Id": 1, "Nome": "Otimizar API Estelar" },
+        "id": 1,
+        "Missão": { "id": 1, "Nome": "Otimizar API Estelar" },
         "Nome": "Configurar Cache",
         "Descrição": "Implementar Redis",
-        "Status": { "Id": 2, "Nome": "Pendente" },
+        "Status": { "id": 2, "Nome": "Pendente" },
         "Data_Criação": "2025-04-25T08:00:00Z",
         "Data_Conclusão": null,
-        "Usuário": { "Id": 1, "Nome": "Astro João" }
+        "Usuário": { "id": 1, "Nome": "Astro João" }
       },
       {
-        "Id": 2,
-        "Missão": { "Id": 2, "Nome": "Corrigir Bug Crítico" },
+        "id": 2,
+        "Missão": { "id": 2, "Nome": "Corrigir Bug Crítico" },
         "Nome": "Debug Endpoint",
         "Descrição": "Corrigir erro 500",
-        "Status": { "Id": 9, "Nome": "Concluída" },
+        "Status": { "id": 9, "Nome": "Concluída" },
         "Data_Criação": "2025-04-20T09:00:00Z",
         "Data_Conclusão": "2025-04-25T15:00:00Z",
-        "Usuário": { "Id": 2, "Nome": "Luna Maria" }
+        "Usuário": { "id": 2, "Nome": "Luna Maria" }
       }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
   },
   "usuario_missao": {
     "data": [
-      { "Usuário_Id": 1, "Missão_Id": 1, "Data_Atribuição": "2025-04-25T08:00:00Z" },
-      { "Usuário_Id": 2, "Missão_Id": 2, "Data_Atribuição": "2025-04-20T09:00:00Z" }
+      { "Usuário_id": 1, "Missão_id": 1, "Data_Atribuição": "2025-04-25T08:00:00Z" },
+      { "Usuário_id": 2, "Missão_id": 2, "Data_Atribuição": "2025-04-20T09:00:00Z" }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
   },
   "usuario_mascote": {
     "data": [
-      { "Usuário_Id": 1, "Mascote_Id": 1, "Data_Conquista": "2025-04-25T10:00:00Z" },
-      { "Usuário_Id": 2, "Mascote_Id": 2, "Data_Conquista": "2025-04-26T10:00:00Z" }
+      { "Usuário_id": 1, "Mascote_id": 1, "Data_Conquista": "2025-04-25T10:00:00Z" },
+      { "Usuário_id": 2, "Mascote_id": 2, "Data_Conquista": "2025-04-26T10:00:00Z" }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
   },
   "usuario_medalha": {
     "data": [
-      { "Usuário_Id": 1, "Medalha_Id": 1, "Data_Conquista": "2025-04-25T15:00:00Z" },
-      { "Usuário_Id": 1, "Medalha_Id": 2, "Data_Conquista": "2025-04-26T10:00:00Z" }
+      { "Usuário_id": 1, "Medalha_id": 1, "Data_Conquista": "2025-04-25T15:00:00Z" },
+      { "Usuário_id": 1, "Medalha_id": 2, "Data_Conquista": "2025-04-26T10:00:00Z" }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
   },
   "usuario_credencial": {
     "data": [
-      { "Usuário_Id": 1, "Credencial_Id": 1 },
-      { "Usuário_Id": 1, "Credencial_Id": 2 }
+      { "Usuário_id": 1, "Credencial_id": 1 },
+      { "Usuário_id": 1, "Credencial_id": 2 }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
   },
   "usuario_item": {
     "data": [
-      { "Usuário_Id": 1, "Item_Id": 1, "Data_Aquisição": "2025-04-26T10:00:00Z" },
-      { "Usuário_Id": 2, "Item_Id": 2, "Data_Aquisição": "2025-04-26T11:00:00Z" }
+      { "Usuário_id": 1, "Item_id": 1, "Data_Aquisição": "2025-04-26T10:00:00Z" },
+      { "Usuário_id": 2, "Item_id": 2, "Data_Aquisição": "2025-04-26T11:00:00Z" }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
   },
   "usuario_conquista": {
     "data": [
-      { "Usuário_Id": 1, "Conquista_Id": 1, "Data_Resgate": "2025-04-25T15:00:00Z" },
-      { "Usuário_Id": 2, "Conquista_Id": 2, "Data_Resgate": "2025-04-26T10:00:00Z" }
+      { "Usuário_id": 1, "Conquista_id": 1, "Data_Resgate": "2025-04-25T15:00:00Z" },
+      { "Usuário_id": 2, "Conquista_id": 2, "Data_Resgate": "2025-04-26T10:00:00Z" }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
   },
   "usuario_nivel": {
     "data": [
-      { "Usuário_Id": 1, "Nível_Id": 1, "Status": { "Id": 9, "Nome": "Concluída" }, "Data_Conclusão": "2025-04-25T12:00:00Z" },
-      { "Usuário_Id": 2, "Nível_Id": 1, "Status": { "Id": 2, "Nome": "Pendente" }, "Data_Conclusão": null }
+      { "Usuário_id": 1, "Nível_id": 1, "Status": { "id": 9, "Nome": "Concluída" }, "Data_Conclusão": "2025-04-25T12:00:00Z" },
+      { "Usuário_id": 2, "Nível_id": 1, "Status": { "id": 2, "Nome": "Pendente" }, "Data_Conclusão": null }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
   },
   "usuario_missao_verde": {
     "data": [
-      { "Usuário_Id": 1, "Missão_Verde_Id": 1, "Status": { "Id": 9, "Nome": "Concluída" }, "Data_Conclusão": "2025-04-25T12:00:00Z" },
-      { "Usuário_Id": 2, "Missão_Verde_Id": 2, "Status": { "Id": 2, "Nome": "Pendente" }, "Data_Conclusão": null }
+      { "Usuário_id": 1, "Missão_Verde_id": 1, "Status": { "id": 9, "Nome": "Concluída" }, "Data_Conclusão": "2025-04-25T12:00:00Z" },
+      { "Usuário_id": 2, "Missão_Verde_id": 2, "Status": { "id": 2, "Nome": "Pendente" }, "Data_Conclusão": null }
     ],
     "meta": { "total": 2, "page": 1, "per_page": 10 }
   }

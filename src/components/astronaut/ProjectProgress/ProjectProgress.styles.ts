@@ -27,15 +27,16 @@ export const ProjectProgressDefault = styled.div`
   border-radius: 30px;
   width: 90%;
   font-size: 0.75rem;
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.1),
-              1px 1px 2px rgba(255,255,255,0.8);
+  box-shadow:
+    3px 3px 5px rgba(0, 0, 0, 0.1),
+    1px 1px 2px rgba(255, 255, 255, 0.8);
 `;
 
 const ProjectProgressStatus = styled.div<ProgressBarProps>`
   padding: 0.75rem;
   align-items: center;
   border-radius: 30px;
-    width: ${(props) => (props.$animate ? props.$progress : 0)}%;
+  width: ${(props) => (props.$animate ? props.$progress : 0)}%;
   animation: ${(props) => (props.$animate ? "grow 2.5s linear" : "none")};
   @keyframes grow {
     0% {

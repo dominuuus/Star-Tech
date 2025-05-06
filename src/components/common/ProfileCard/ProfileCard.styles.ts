@@ -34,11 +34,10 @@ export const ProfileContent = styled.div`
 export const NotificationContainer = styled.div`
     background-color: ${(props) => props.theme.colors.primary};
     border-radius: 50%;
-    height: 2.5rem;
-    width: 2.5rem;
-    align-items: center;
     text-align: center;
-    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
 `
 
 export const CoinContainer = styled.div`

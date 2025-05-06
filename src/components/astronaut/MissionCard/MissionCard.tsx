@@ -47,27 +47,27 @@ export function MissionCard({ selectedFilter }: MissionCardProps) {
     <>
       <MissionCardContainer>
         {selectedMissions.map((mission) => (
-          <Link to={`/game/missoes/${mission.Id}`} key={mission.Id} >
-          <MissionCardContent>
-            <MissionCardInfoContent>
-              <MissionCardTitle>
-                <span>{mission.Nome}</span>
-                <span>Projeto: {mission.Projeto_Nome}</span>
-              </MissionCardTitle>
+          <Link to={`/game/missoes/${mission.id}`} key={mission.id}>
+            <MissionCardContent>
+              <MissionCardInfoContent>
+                <MissionCardTitle>
+                  <span>{mission.Nome}</span>
+                  <span>Projeto: {mission.Projeto_Nome}</span>
+                </MissionCardTitle>
+                <div>
+                  <CalendarCheck size={15} weight="fill" />
+                  <p>
+                    {(selectedFilter !== "done7days" &&
+                      ` ${mission.Data_Prazo} - ${mission.relativeDueDate} `) ||
+                      (selectedFilter === "done7days" &&
+                        ` Concluída em ${mission.Concluído_em}`)}
+                  </p>
+                </div>
+              </MissionCardInfoContent>
               <div>
-                <CalendarCheck size={15} weight="fill" />
-                <p>
-                  {(selectedFilter !== "done7days" &&
-                    ` ${mission.Data_Prazo} - ${mission.relativeDueDate}`) ||
-                    (selectedFilter === "done7days" &&
-                      ` ${mission.Concluído_em}`)}
-                </p>
+                <CaretCircleRight size={32} weight="fill" />
               </div>
-            </MissionCardInfoContent>
-            <div>
-              <CaretCircleRight size={32} weight="fill" />
-            </div>
-          </MissionCardContent>
+            </MissionCardContent>
           </Link>
         ))}
       </MissionCardContainer>

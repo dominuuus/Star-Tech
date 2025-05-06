@@ -5,7 +5,7 @@ export const defaultTheme = {
     secondary: "#213547", // Cor secundária (detalhes, textos secundários)
     tertiary: '#082751', // Cor terciária, dos botões de status de progresso dos projetos
     techLeader: "#F3A64B", // Cor de identificação do tech líder
-    goldCoin: "#D8A214", // Cor dourada das moedas
+    goldCoin: "#FFC300", // Cor dourada das moedas
     news: "#575D6D", // Cor da barra de notícias
     white: "#FFFFFF", //Branco
     black: "#000000", //Preto

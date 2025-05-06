@@ -2,7 +2,7 @@ import { api } from "../lib/axios";
 import gameData from "../assets/db/db.json";
 
 export interface Spaceship {
-    Id: number;
+    id: number;
     Nome: string;
     Descrição?: string;
     Status?: string;
@@ -13,18 +13,18 @@ export interface Spaceship {
 }
 
 interface RawSpaceship {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição: string | null;
-  Status: {Id: number, Nome: string} | null;
-  Planeta_Origem?: {Id: number, Nome: string} | null;
-  Planeta_Destino?: {Id: number, Nome: string} | null;
+  Status: {id: number, Nome: string} | null;
+  Planeta_Origem?: {id: number, Nome: string} | null;
+  Planeta_Destino?: {id: number, Nome: string} | null;
   Progresso_Trajeto: number;
   Imagem: string | null;
 }
 
 const mapRawSquadToSquad = (raw: RawSpaceship): Spaceship => ({
-    Id: raw.Id,
+    id: raw.id,
     Nome: raw.Nome,
     Descrição: raw.Descrição ? raw.Descrição : undefined,
     Status: raw.Status?.Nome ? raw.Status.Nome : undefined,

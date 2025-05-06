@@ -2,7 +2,7 @@ import { api } from "../lib/axios";
 import gameData from "../assets/db/db.json";
 
 export interface Squad {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição?: string;
   Nave_Imagem?: string;
@@ -10,15 +10,15 @@ export interface Squad {
 }
 
 interface RawSquad {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição: string | null;
-  Nave: {Id: number, Nome: string, Imagem: string} | null;
-  Status: {Id: number, Nome: string} | null;
+  Nave: {id: number, Nome: string, Imagem: string} | null;
+  Status: {id: number, Nome: string} | null;
 }
 
 const mapRawSquadToSquad = (raw: RawSquad): Squad => ({
-    Id: raw.Id,
+    id: raw.id,
     Nome: raw.Nome,
     Descrição: raw.Descrição ? raw.Descrição : undefined,
     Nave_Imagem: raw.Nave?.Imagem ? raw.Nave.Imagem : undefined,

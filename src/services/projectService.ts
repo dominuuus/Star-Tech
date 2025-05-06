@@ -2,7 +2,7 @@ import { api } from "../lib/axios";
 import gameData from "../assets/db/db.json";
 
 export interface Project {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição: string;
   Progresso: number;
@@ -16,21 +16,21 @@ export interface Project {
 }
 
 interface RawProject {
-  Id: number;
+  id: number;
   Nome: string;
   Descrição: string;
   Progresso: number;
-  Equipe: { Id: number; Nome: string } | null;
-  Planeta_Base: { Id: number; Nome: string } | null;
-  Planeta_Destino: { Id: number; Nome: string } | null;
+  Equipe: { id: number; Nome: string } | null;
+  Planeta_Base: { id: number; Nome: string } | null;
+  Planeta_Destino: { id: number; Nome: string } | null;
   Data_Início: string;
   Data_Prevista_Término: string | null;
   Data_Conclusão: string | null;
-  Status: { Id: number; Nome: string } | null;
+  Status: { id: number; Nome: string } | null;
 }
 
 const mapRawProjectToMascot = (raw: RawProject): Project => ({
-    Id: raw.Id,
+    id: raw.id,
     Nome: raw.Nome,
     Descrição: raw.Descrição,
     Progresso: raw.Progresso,
