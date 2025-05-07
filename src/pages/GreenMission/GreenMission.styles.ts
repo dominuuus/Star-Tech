@@ -8,7 +8,7 @@ export const GreenMissionContainer = styled.div`
 
 export const GreenMissionBar = styled.div`
     background-color: ${(props) => props.theme.colors.gray.light};
-    width: 1340px;
+    width: 1770px;
     height: 150px;
 `
 
