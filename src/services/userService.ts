@@ -53,7 +53,7 @@ const mapRawUserToUser = (raw: RawUser): User => ({
 export async function fetchUser(): Promise<User[]> {
   try {
     const response = await api.get('/usuarios');
-    const rawUsers: RawUser[] = response.data.data;
+    const rawUsers: RawUser[] = response.data;
     if (!Array.isArray(rawUsers)) {
       throw new Error('Dados de usuários inválidos retornados pela API');
     }
@@ -61,7 +61,7 @@ export async function fetchUser(): Promise<User[]> {
   } catch (error) {
     console.error('Erro ao buscar usuários via API:', error);
     try {
-      const rawUsers: RawUser[] = gameData.usuarios.data;
+      const rawUsers: RawUser[] = gameData.usuarios;
       if (!Array.isArray(rawUsers)) {
         throw new Error('Dados de usuários inválidos no db.json');
       }

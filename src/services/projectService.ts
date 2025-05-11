@@ -46,7 +46,7 @@ const mapRawProjectToMascot = (raw: RawProject): Project => ({
 export async function fetchProject(): Promise<Project[]> {
   try {
     const response = await api.get("/projetos");
-    const rawProjects: RawProject[] = response.data.data;
+    const rawProjects: RawProject[] = response.data;
     if (!Array.isArray(rawProjects)) {
       throw new Error("Dados de projetos inválidos retornados pela API");
     }
@@ -54,7 +54,7 @@ export async function fetchProject(): Promise<Project[]> {
   } catch (error) {
     console.error("Erro ao buscar projetos via API:", error);
     try {
-      const rawProjects: RawProject[] = gameData.projetos.data;
+      const rawProjects: RawProject[] = gameData.projetos;
       if (!Array.isArray(rawProjects)) {
         throw new Error("Dados de projetos inválidos no db.json");
       }

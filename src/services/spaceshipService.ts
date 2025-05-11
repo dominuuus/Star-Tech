@@ -38,7 +38,7 @@ const mapRawSquadToSquad = (raw: RawSpaceship): Spaceship => ({
 export async function fetchSpaceship(): Promise<Spaceship[]> {
   try {
     const response = await api.get("/naves");
-    const rawSpaceship: RawSpaceship[] = response.data.data;
+    const rawSpaceship: RawSpaceship[] = response.data;
     if (!Array.isArray(rawSpaceship)) {
       throw new Error("Dados de naves inválidos retornados pela API");
     }
@@ -46,7 +46,7 @@ export async function fetchSpaceship(): Promise<Spaceship[]> {
   } catch (error) {
     console.error("Erro ao buscar naves via API:", error);
     try {
-      const rawSpaceship: RawSpaceship[] = gameData.naves.data;
+      const rawSpaceship: RawSpaceship[] = gameData.naves;
       if (!Array.isArray(rawSpaceship)) {
         throw new Error("Dados de naves inválidos no db.json");
       }

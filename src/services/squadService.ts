@@ -29,7 +29,7 @@ const mapRawSquadToSquad = (raw: RawSquad): Squad => ({
 export async function fetchSquad(): Promise<Squad[]> {
    try {
       const response = await api.get("/equipes");
-      const rawSquads: RawSquad[] = response.data.data;
+      const rawSquads: RawSquad[] = response.data;
       if (!Array.isArray(rawSquads)) {
         throw new Error("Dados de equipes inválidos retornados pela API");
       }
@@ -37,7 +37,7 @@ export async function fetchSquad(): Promise<Squad[]> {
     } catch (error) {
       console.error("Erro ao buscar equipes via API:", error);
       try {
-        const rawSquads: RawSquad[] = gameData.equipes.data;
+        const rawSquads: RawSquad[] = gameData.equipes;
         if (!Array.isArray(rawSquads)) {
           throw new Error("Dados de equipes inválidos no db.json");
         }

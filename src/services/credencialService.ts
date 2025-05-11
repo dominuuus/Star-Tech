@@ -28,7 +28,7 @@ const mapRawCredentialToCredential = (raw: RawCredential): Credential => ({
 export async function fetchCredential(): Promise<Credential[]> {
   try {
     const response = await api.get("/credenciais");
-    const rawCredentials: RawCredential[] = response.data.data;
+    const rawCredentials: RawCredential[] = response.data;
     if (!Array.isArray(rawCredentials)) {
       throw new Error("Dados de credenciais inválidos retornados pela API");
     }
@@ -36,7 +36,7 @@ export async function fetchCredential(): Promise<Credential[]> {
   } catch (error) {
     console.error("Erro ao buscar credenciais via API:", error);
     try {
-      const rawCredentials: RawCredential[] = gameData.credenciais.data;
+      const rawCredentials: RawCredential[] = gameData.credenciais;
       if (!Array.isArray(rawCredentials)) {
         throw new Error("Dados de credenciais inválidos no db.json");
       }

@@ -34,7 +34,7 @@ const mapRawPlanetToPlanet = (raw: RawPlanet): Planet => ({
 export async function fetchPlanet(): Promise<Planet[]> {
   try {
     const response = await api.get("/planetas");
-    const rawPlanets: RawPlanet[] = response.data.data;
+    const rawPlanets: RawPlanet[] = response.data;
     if (!Array.isArray(rawPlanets)) {
       throw new Error("Dados de planetas inválidos retornados pela API");
     }
@@ -42,7 +42,7 @@ export async function fetchPlanet(): Promise<Planet[]> {
   } catch (error) {
     console.error("Erro ao buscar planetas via API:", error);
     try {
-      const rawPlanets: RawPlanet[] = gameData.planetas.data;
+      const rawPlanets: RawPlanet[] = gameData.planetas;
       if (!Array.isArray(rawPlanets)) {
         throw new Error("Dados de planetas inválidos no db.json");
       }

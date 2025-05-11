@@ -38,13 +38,13 @@ export async function fetchAchievement(): Promise<Achievement[]> {
   try {
     const response = await api.get('/conquistas');
 
-    const rawAchievements: RawAchievement[] = response.data.data;
+    const rawAchievements: RawAchievement[] = response.data;
     return rawAchievements.map(mapRawAchievementToAchievements);
   } catch (e) {
     console.error('Erro ao buscar conquistas', e);
 
     try {
-      const rawAchievements: RawAchievement[] = gameData.conquistas.data;
+      const rawAchievements: RawAchievement[] = gameData.conquistas;
       return rawAchievements.map(mapRawAchievementToAchievements);
     } catch (fallbackError) {
       console.error('Erro no fallback para db.json:', fallbackError);

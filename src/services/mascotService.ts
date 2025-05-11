@@ -40,7 +40,7 @@ const mapRawMascotToMascot = (raw: RawMascot): Mascot => ({
 export async function fetchMascot(): Promise<Mascot[]> {
   try {
     const response = await api.get("/mascotes");
-    const rawMascots: RawMascot[] = response.data.data;
+    const rawMascots: RawMascot[] = response.data;
     if (!Array.isArray(rawMascots)) {
       throw new Error("Dados de mascotes inválidos retornados pela API");
     }
@@ -48,7 +48,7 @@ export async function fetchMascot(): Promise<Mascot[]> {
   } catch (error) {
     console.error("Erro ao buscar mascotes via API:", error);
     try {
-      const rawMascots: RawMascot[] = gameData.mascotes.data;
+      const rawMascots: RawMascot[] = gameData.mascotes;
       if (!Array.isArray(rawMascots)) {
         throw new Error("Dados de mascotes inválidos no db.json");
       }
