@@ -9,6 +9,7 @@ export interface Achievement {
     Qtd_moedas: number;
     Imagem: string;
     Planeta: string;
+    Planeta_Imagem?: string;
     Status: string;
 }
 
@@ -19,7 +20,7 @@ interface RawAchievement {
   Tarefas: string | null;
   Qtd_moedas: number;
   Imagem: string;
-  Planeta: { id: number; Nome: string };
+  Planeta: { id: number; Nome: string; Imagem: string };
   Status: { id: number; Nome: string };
 }
 
@@ -31,6 +32,7 @@ const mapRawAchievementToAchievements = (raw: RawAchievement): Achievement => ({
   Qtd_moedas: raw.Qtd_moedas,
   Imagem: raw.Imagem,
   Planeta: raw.Planeta.Nome,
+  Planeta_Imagem: raw.Planeta.Imagem,
   Status: raw.Status.Nome
 });
 

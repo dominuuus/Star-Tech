@@ -44,22 +44,87 @@
   "planetas": [
     {
       "id": 1,
-      "Nome": "Nebula-7",
-      "Descrição": "Planeta de nuvens cósmicas",
+      "Nome": "Aeris",
+      "Descrição": "Um planeta fértil e equilibrado, onde os primeiros projetos foram plantados. Ideal para times iniciantes, representa o começo da jornada e a estruturação de boas práticas de código.",
+      "Titulo": "O Berço dos Primeiros Códigos",
       "Status": { "id": 1, "Nome": "Não Explorado" },
       "Qtd_missões": 8,
       "Tema_Principal": { "id": 1, "Nome": "Entrega e Ação" },
-      "Imagem": "https://xai.com/planets/nebula7.webp"
+      "Imagem": "/images/planet/aeris.png",
+      "Gentilico": "Aerisianos",
+      "Mascotes": [
+        {
+          "id": 1,
+          "Nome": "Buggo",
+          "Imagem": "/images/mascot/buggo.png",
+          "Descrição": "Representação lúdica dos bugs, muda de cor conforme o estado do sistema."
+        },
+        {
+          "id": 2,
+          "Nome": "Syntaxx",
+          "Imagem": "/images/mascot/syntaxx.png",
+          "Descrição": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas."
+        }
+      ]
     },
     {
       "id": 2,
-      "Nome": "Astra-12",
-      "Descrição": "Planeta rochoso",
-      "Status": { "id": 6, "Nome": "Incompleto" },
-      "Qtd_missões": 8,
+      "Nome": "Coreon",
+      "Descrição": "Um planeta de ar puro e leveza, onde as ideias flutuam como nuvens. Ideal para equipes que buscam inovação e criatividade, simbolizando a liberdade de explorar novas abordagens.",
+      "Titulo": "O Planeta da Criatividade",
+      "Status": { "id": 2, "Nome": "Explorado" },
+      "Qtd_missões": 5,
       "Tema_Principal": { "id": 2, "Nome": "Código Limpo" },
-      "Imagem": "https://xai.com/planets/astra12.webp"
+      "Imagem": "/images/planet/coreon.png",
+      "Gentilico": "Coreonianos",
+      "Mascotes": [
+        {
+          "id": 3,
+          "Nome": "Algorix",
+          "Imagem": "/images/mascot/algorix.png",
+          "Descrição": "Um ser geométrico que flutua suavemente, sempre calculando o caminho mais eficiente."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Nome": "Pyron",
+      "Descrição": "Um planeta envolto em mistério e nebulosas, onde os dados dançam como estrelas. Ideal para equipes que trabalham com big data e análise de dados, simbolizando a complexidade e beleza dos dados.",
+      "Titulo": "O Planeta dos Dados",
+      "Status": { "id": 3, "Nome": "Explorado" },
+      "Qtd_missões": 10,
+      "Tema_Principal": { "id": 3, "Nome": "Dados e Análise" },
+      "Imagem": "/images/planet/pyron.png",
+      "Gentilico": "Pyronianos",
+      "Mascotes": [
+        {
+          "id": 4,
+          "Nome": "Patch-3",
+          "Imagem": "/images/mascot/patch-3.png",
+          "Descrição": "Um ser fluido que se adapta a qualquer forma de dado, sempre pronto para analisar."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Nome": "Crystalia",
+      "Descrição": "Um planeta de estrelas brilhantes e constelações, onde as ideias se conectam como estrelas em uma galáxia. Ideal para equipes que trabalham com integração e colaboração, simbolizando a união de esforços.",
+      "Titulo": "O Planeta da Integração",
+      "Status": { "id": 4, "Nome": "Explorado" },
+      "Qtd_missões": 7,
+      "Tema_Principal": { "id": 4, "Nome": "Integração e Colaboração" },
+      "Imagem": "/images/planet/estrela.png",
+      "Gentilico": "Crystalianos",
+      "Mascotes": [
+        {
+          "id": 5,
+          "Nome": "Algorix",
+          "Imagem": "/images/mascot/algorix.png",
+          "Descrição": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
+        }
+      ]
     }
+    
   ],
   "temas_principais": [
     {
@@ -634,110 +699,120 @@
       "Nome": "Buggo",
       "Descrição": "Representação lúdica dos bugs, muda de cor conforme o estado do sistema.",
       "Imagem": "/images/mascot/buggo.png",
-      "Planeta": { "id": 1, "Nome": "Nebula-7" },
+      "Planeta": { "id": 1, "Nome": "Aeris", "Imagem": "/images/planet/aeris.png" },
       "Titulo": "O Camaleão do Caos",
       "Personalidade": "Imprevisível e brincalhão, mas cooperativo quando domado",
       "Habilidade_Especial": "Transforma-se em ferramenta útil quando o código é corrigido",
-      "Aparência": "Esfera com pele de código vivo e olhos expressivos gigantes"
+      "Aparência": "Esfera com pele de código vivo e olhos expressivos gigantes",
+      "Status": { "id": 1, "Nome": "Conquistado" }
     },
     {
       "id": 2,
       "Nome": "Syntaxx",
       "Descrição": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas.",
       "Imagem": "/images/mascot/syntaxx.png",
-      "Planeta": { "id": 2, "Nome": "Astra-12" },
+      "Planeta": { "id": 2, "Nome": "Coreon", "Imagem": "/images/planet/coreon.png" },
       "Titulo": "O Vigilante da Sintaxe",
       "Personalidade": "Metódico e um pouco exigente. Fica ansioso quando vê código desorganizado.",
       "Habilidade_Especial": "Pisca em vermelho quando detecta um erro de sintaxe e em verde quando tudo está perfeito",
-      "Aparência": "Pequeno e angular, com olhos que brilham em diferentes cores conforme o estado do código."
+      "Aparência": "Pequeno e angular, com olhos que brilham em diferentes cores conforme o estado do código.",
+      "Status": { "id": 1, "Nome": "Conquistado" }
     },
     {
       "id": 3,
       "Nome": "Algorix",
       "Descrição": "Um ser geométrico que flutua suavemente, sempre calculando o caminho mais eficiente. Sua mente funciona como um algoritmo vivo, otimizando tudo ao seu redor.",
       "Imagem": "/images/mascot/algorix.png",
-      "Planeta": { "id": 2, "Nome": "Astra-12" },
+      "Planeta": { "id": 2, "Nome": "Crystalia", "Imagem": "/images/planet/crystalia.png" },
       "Titulo": "O Estrategista de Código",
       "Personalidade": "Racional, paciente e estratégico. Fala em padrões lógicos e adora resolver problemas complexos.",
       "Habilidade_Especial": "identifica redundâncias em códigos e sugere estruturas mais eficientes.",
-      "Aparência": "Corpo formado por linhas luminosas que se rearranjam conforme pensa. Tem um núcleo brilhante que pulsa em ritmo algorítmico."
+      "Aparência": "Corpo formado por linhas luminosas que se rearranjam conforme pensa. Tem um núcleo brilhante que pulsa em ritmo algorítmico.",
+      "Status": { "id": 1, "Nome": "Secreto" }
     },
     {
       "id": 4,
       "Nome": "Floris",
       "Descrição": "Pequena criatura arbórea que personifica a força da natureza, capaz de florescer em qualquer ambiente.",
       "Imagem": "/images/mascot/floris.png",
-      "Planeta": { "id": 2, "Nome": "Verdax" },
+      "Planeta": { "id": 2, "Nome": "Verdax", "Imagem": "/images/planet/verdax.png" },
       "Titulo": "O Guardião da Vida Resiliente",
       "Personalidade": "Amigável, Brincalhão, Otimista",
       "Habilidade_Especial": "Cura pequenos danos ambientais ao seu redor. Farol natural: Atrai criaturas perdidas com um brilho aconchegante.",
-      "Aparência": "Corpo verde-musgo com textura de casca jovem, Oito olhos redondos que brilham como vagalumes, Raízes móveis que se adaptam a qualquer solo, Galhos que florescem quando feliz."
+      "Aparência": "Corpo verde-musgo com textura de casca jovem, Oito olhos redondos que brilham como vagalumes, Raízes móveis que se adaptam a qualquer solo, Galhos que florescem quando feliz.",
+      "Status": { "id": 1, "Nome": "Secreto" }
     },
     {
       "id": 5,
       "Nome": "Cachee",
       "Descrição": "Um mascote veloz que armazena informações frequentemente usadas para agilizar processos.",
       "Imagem": "/images/mascot/cachee.png",
-      "Planeta": { "id": 2, "Nome": "Glaciora" },
+      "Planeta": { "id": 2, "Nome": "Glaciora", "Imagem": "/images/planet/glaciora.png" },
       "Titulo": "O Acelerador de Acesso",
       "Personalidade": "Rápido e eficiente, mas às vezes esquecido (quando o cache expira).",
       "Habilidade_Especial": "Reduz tempo de carregamento e evita consultas repetitivas.",
-      "Aparência": "Pequeño e dinâmico, com um disco rígido simbólico girando em suas costas."
+      "Aparência": "Pequeño e dinâmico, com um disco rígido simbólico girando em suas costas.",
+      "Status": { "id": 1, "Nome": "Conquistado" }
     },
     {
       "id": 6,
       "Nome": "Stacko",
       "Descrição": "Um robô empilhador que adora estruturas ordenadas e detesta estouros de memória.",
       "Imagem": "/images/mascot/stacko.png",
-      "Planeta": { "id": 2, "Nome": "Crystalia" },
+      "Planeta": { "id": 2, "Nome": "Crystalia", "Imagem": "/images/planet/crystalia.png" },
       "Titulo": "O Organizador de Pilhas",
       "Personalidade": "Organizado e um pouco obsessivo com limites.",
       "Habilidade_Especial": "Ajuda a gerenciar chamadas aninhadas e evita stack overflows.",
-      "Aparência": "Parece uma torre de blocos com sensores que brilham conforme a profundidade da pilha."
+      "Aparência": "Parece uma torre de blocos com sensores que brilham conforme a profundidade da pilha.",
+      "Status": { "id": 1, "Nome": "Conquistado" }
     },
     {
       "id": 7,
       "Nome": "Voidy",
       "Descrição": "Um ser feito de sombras estelares que habita espaços não renderizados ou regiões inexploradas do sistema.",
       "Imagem": "/images/mascot/voidy.png",
-      "Planeta": { "id": 2, "Nome": "Tesserax" },
+      "Planeta": { "id": 2, "Nome": "Tesserax", "Imagem": "/images/planet/tesserax.png" },
       "Titulo": "O Explorador do Vazio",
       "Personalidade": "Curioso e um pouco solitário, adora descobrir bugs de renderização ou áreas esquecidas.",
       "Habilidade_Especial": "Revela zonas ocultas ou recursos não utilizados no código.",
-      "Aparência": "Silhueta negra com constelações pulsantes em seu interior; parece 'desfocado' nas bordas."
+      "Aparência": "Silhueta negra com constelações pulsantes em seu interior; parece 'desfocado' nas bordas.",
+      "Status": { "id": 1, "Nome": "Conquistado" }
     },
     {
       "id": 8,
       "Nome": "Snipz",
       "Descrição": "Um especialista em snippets e macros, sempre pronto para oferecer trechos de código úteis.",
       "Imagem": "/images/mascot/snipz.png",
-      "Planeta": { "id": 2, "Nome": "Bitron" },
+      "Planeta": { "id": 2, "Nome": "Bitron", "Imagem": "/images/planet/bitron.png" },
       "Titulo": "O Mestre dos Atalhos",
       "Personalidade": "Prático e ágil, odeia repetição desnecessária.",
       "Habilidade_Especial": "Recomenda atalhos e autocompletar inteligente baseado em contextos anteriores.",
-      "Aparência": "Pequeno e modular, como um bloco de construção que se transforma conforme a necessidade."
+      "Aparência": "Pequeno e modular, como um bloco de construção que se transforma conforme a necessidade.",
+      "Status": { "id": 1, "Nome": "Bloqueado" }
     },
     {
       "id": 9,
       "Nome": "GigaFix",
       "Descrição": "Um robô robusto que lida com vazamentos de memória e gargalos de processamento.",
       "Imagem": "/images/mascot/gigafix.png",
-      "Planeta": { "id": 2, "Nome": "Glaciora" },
+      "Planeta": { "id": 2, "Nome": "Glaciora", "Imagem": "/images/planet/glaciora.png" },
       "Titulo": "O Resolvedor de Problemas Pesados",
       "Personalidade": "Sólido e confiável, age como um 'faxineiro' de recursos.",
       "Habilidade_Especial": "Otimiza alocação de memória e reduz latência em operações pesadas.",
-      "Aparência": "Grande e metálico, com placas de circuito expostas que brilham quando trabalha."
+      "Aparência": "Grande e metálico, com placas de circuito expostas que brilham quando trabalha.",
+      "Status": { "id": 1, "Nome": "Bloqueado" }
     },
     {
       "id": 10,
       "Nome": "Poxel",
       "Descrição": "Mestre de desafios visuais, como ajustes de UI ou otimização de gráficos.",
       "Imagem": "/images/mascot/poxel.png",
-      "Planeta": { "id": 2, "Nome": "Fluxaris" },
+      "Planeta": { "id": 2, "Nome": "Fluxaris", "Imagem": "/images/planet/fluxaris.png" },
       "Titulo": "O Artista Pixelado",
       "Personalidade": "Criativo e detalhista, obsessivo por alinhamento perfeito.",
       "Habilidade_Especial": "Corrige pixel-off e sugere paletas de cores acessíveis.",
-      "Aparência": "Cubo feito de pixels animados que se rearranjam como um rubik's cube."
+      "Aparência": "Cubo feito de pixels animados que se rearranjam como um rubik's cube.",
+      "Status": { "id": 1, "Nome": "Bloqueado" }
     }
   ],
   "medalhas_cosmicas": [
@@ -902,8 +977,10 @@
       "Tarefas": "🍃 Consistência nas entregas 🍃 Compromisso com o todo 🍃 Força invisível que sustenta o progresso",
       "Qtd_moedas": 10,
       "Imagem": "/images/achievement/raiz-solida.png",
-      "Planeta": { "id": 1, "Nome": "Nebula-7" },
-      "Status": { "id": 5, "Nome": "Ativa" }
+      "Planeta": { "id": 1, "Nome": "Aeris", "Imagem": "/images/planet/aeris.png" },
+      "Status": { "id": 5, "Nome": "Ativa" },
+      "Qtd_disponivel": 5,
+      "Qtd_conquistada": 2
     },
     {
       "id": 2,
@@ -912,8 +989,10 @@
       "Tarefas": "🔥 Velocidade sob pressão 🔥 Espírito inabalável diante de falhas críticas",
       "Qtd_moedas": 15,
       "Imagem": "/images/achievement/ferro-vermelho.png",
-      "Planeta": { "id": 2, "Nome": "Astra-12" },
-      "Status": { "id": 5, "Nome": "Ativa" }
+      "Planeta": { "id": 2, "Nome": "Pyron", "Imagem": "/images/planet/pyron.png" },
+      "Status": { "id": 5, "Nome": "Ativa" },
+      "Qtd_disponivel": 4,
+      "Qtd_conquistada": 3
     },
     {
       "id": 3,
@@ -922,8 +1001,10 @@
       "Tarefas": "🚀 Coragem no primeiro passo 🚀 Execução impecável 🚀 Início lendário na missão",
       "Qtd_moedas": 15,
       "Imagem": "/images/achievement/explorador-de-solo.png",
-      "Planeta": { "id": 2, "Nome": "Astra-12" },
-      "Status": { "id": 5, "Nome": "Ativa" }
+      "Planeta": { "id": 2, "Nome": "Crystalia", "Imagem": "/images/planet/crystalia.png" },
+      "Status": { "id": 5, "Nome": "Ativa" },
+      "Qtd_disponivel": 2,
+      "Qtd_conquistada": 1
     },
     {
       "id": 4,
@@ -932,8 +1013,10 @@
       "Tarefas": "🧠 Olhar afiado para falhas 🧠 Ação antes da detecção externa 🧠 Excelência como rotina",
       "Qtd_moedas": 15,
       "Imagem": "/images/achievement/qualidade-constante.png",
-      "Planeta": { "id": 2, "Nome": "Astra-12" },
-      "Status": { "id": 5, "Nome": "Ativa" }
+      "Planeta": { "id": 2, "Nome": "Aeris", "Imagem": "/images/planet/aeris.png" },
+      "Status": { "id": 5, "Nome": "Ativa" },
+      "Qtd_disponivel": 5,
+      "Qtd_conquistada": 2
     }
   ],
   "transacoes": [
