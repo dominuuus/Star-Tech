@@ -1,85 +1,75 @@
 import styled from "styled-components";
 
 export const BadgeWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-`
-
-export const AchievementList = styled.ul`
-    width: 46%;
-    max-height: 65vh;
-    overflow: hidden;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-`
-
-export const AchievementItem = styled.li`
-    list-style: none;
-`
-
-export const Badge = styled.button`
-    display: flex;
-    flex-direction: row;
-    margin: 7px;
-`
-
-export const BadgeImg = styled.img`
-    width: 150px;
-    height: 150px;
-`
-
-export const AchievementDetail = styled.div`
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid white;
-    justify-content: space-around;
-    border-radius: 35px;
-    width: 46%;
-    margin-left: 20px;
-`
-
-export const AchievementDetailHead = styled.div`
-    display: flex;
-    flex-direction: row;
-    height: 225px;
-    width: 100%;
-`
-
-export const AchievementDetailFoot = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-`
-
-export const AchievementDetailImg = styled.img`
-    width: 220px;
-    height: 220px;
-`
-
-export const AchievementDetailContent = styled.div`
-   font-size: 25px;
-   align-self: center;
-    
-   
-`
-
-export const PlanetImage = styled.img`
-  width: 150px;
-  height: 150px;
-  
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+  height: calc(100vh - 150px);
+  gap: 20px;
+  align-items: flex-start;
 `;
 
-export const PlanetInfo = styled.div`
-    display: flex;
-    flex-direction: row;
-`
+export const AchievementList = styled.ul`
+  min-width: 400px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  row-gap: 20px;
+  padding: 10px;
+  list-style: none;
+  align-content: start;
+  overflow-y: scroll;
 
-export const PlanetInfoTexts = styled.div`
-    align-self: center;
-    margin-right: 15px;
-`
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: ${(props) => props.theme.colors.gray.light};
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: ${(props) => props.theme.colors.primary};
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: ${(props) => props.theme.colors.primary};
+  }
+`;
+export const AchievementItem = styled.li`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  max-height: 160px;
+  min-height: 160px;
+`;
+
+export const Badge = styled.button`
+  display: flex;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+`;
+
+export const BadgeImg = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #2a2a2a;
+  padding: 8px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
