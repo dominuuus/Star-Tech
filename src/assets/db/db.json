@@ -4,7 +4,7 @@
       "id": 1,
       "Nome": "Astro João",
       "Email_Mascado": "joao.astro@***.com",
-      "Foto": "https://xai.com/avatars/joao.webp",
+      "Imagem": "https://xai.com/avatars/joao.webp",
       "Descrição": "Explorador de bugs estelares",
       "Estelares": 150,
       "Nível": 3,
@@ -16,7 +16,7 @@
       "id": 2,
       "Nome": "Luna Maria",
       "Email_Mascado": "luna.maria@***.com",
-      "Foto": null,
+      "Imagem": null,
       "Descrição": "Especialista em código limpo",
       "Estelares": 50,
       "Nível": 1,
@@ -28,17 +28,57 @@
   "equipes": [
     {
       "id": 1,
-      "Nome": "Nave Orion",
+      "Nome": "Codestar-1",
       "Descrição": "Tripulação de elite",
       "Nave": { "id": 1, "Nome": "Orion Explorer", "Imagem": "link.png" },
-      "Status": { "id": 5, "Nome": "Ativa" }
-    },
-    {
-      "id": 2,
-      "Nome": "Estrela Polar",
-      "Descrição": "Equipe em formação",
-      "Nave": null,
-      "Status": { "id": 4, "Nome": "Inativa" }
+      "Status": { "id": 5, "Nome": "Ativa" },
+      "Tripulação": [
+        { "id": 1, "Nome": "Maiara Pires", "Cargo": "Tech Líder", "Imagem": "/images/profile/maiara.png", "Username": "@sracommit", "Descrição": "Maiara lidera com precisão e visão sistêmica. Conhecida por sua capacidade de tomar decisões rápidas e guiar a equipe por nebulosas de código legado, ela equilibra estratégia técnica com empatia, sendo uma referência constante no radar da tripulação.", "Mascotes_preferidos": [
+          { "id": 1, "Nome": "Buggo", "Imagem": "/images/mascot/buggo.png" },
+          { "id": 2, "Nome": "Syntaxx", "Imagem": "/images/mascot/syntaxx.png" }
+        ]},
+        { "id": 2, "Nome": "Você", "Cargo": "Desenvolvedor", "Imagem": "/images/profile/matheus.png", "Username": "@nebula.dev", "Descrição": "Desenvolvedor multifuncional, @nebula.dev é o copiloto ideal nas missões mais desafiadoras. Com raciocínio afiado e uma visão holística da navegação entre camadas de código, se destaca por propor soluções inteligentes e sustentáveis para bugs persistentes.", "Mascotes_preferidos": [
+          { "id": 1, "Nome": "Voidy", "Imagem": "/images/mascot/voidy.png" },
+          { "id": 2, "Nome": "Snipz", "Imagem": "/images/mascot/snipz.png" },
+          { "id": 3, "Nome": "Nubbi", "Imagem": "/images/mascot/nubbi.png" },
+          { "id": 4, "Nome": "Buggo", "Imagem": "/images/mascot/buggo.png" }
+        ] },
+        { "id": 3, "Nome": "Lívia Marinho", "Cargo": "Desenvolvedora", "Imagem": "/images/profile/livia.png", "Username": "@ux.marinho", "Descrição": "Com olhar de designer e mente de engenheira, Lívia Marinho é a arquiteta das interfaces e fluxos da nave. Sua presença é marcada pela estética funcional, contribuindo para que cada módulo da missão seja não só eficiente, mas intuitivo. ", "Mascotes_preferidos": [
+          { "id": 1, "Nome": "Cometin", "Imagem": "/images/mascot/cometin.png" },
+          { "id": 2, "Nome": "Fixx", "Imagem": "/images/mascot/fixx.png" }
+        ] },
+        { "id": 4, "Nome": "Verônica Santos", "Cargo": "Desenvolvedora", "Imagem": "/images/profile/veronica.png", "Username": "@code.oracle", "Descrição": "Verônica é o coração analítico da tripulação. Com profundidade técnica e atenção cuidadosa aos impactos do código, ela traz uma perspectiva centrada no usuário e na robustez das soluções. Sua longa descrição pessoal é compatível com seu estilo: profunda, meticulosa e comprometida.", "Mascotes_preferidos": [
+          { "id": 1, "Nome": "Patch-3", "Imagem": "/images/mascot/patch-3.png" },
+          { "id": 2, "Nome": "Syntaxx", "Imagem": "/images/mascot/syntaxx.png" },
+          { "id": 3, "Nome": "Trixo", "Imagem": "/images/mascot/trixo.png" }
+        ] },
+        { "id": 5, "Nome": "Gabriel Martins", "Cargo": "Desenvolvedor", "Imagem": "/images/profile/gabriel.png", "Username": "@silent.patch", "Descrição": "Gabriel é um dos engenheiros silenciosos e eficientes da Codestar-1. Discreto, mas altamente produtivo, é o tipo de desenvolvedor que resolve uma falha crítica enquanto a nave ainda está em aceleração máxima.", "Mascotes_preferidos": [
+          { "id": 1, "Nome": "Quanti", "Imagem": "/images/mascot/quanti.png" },
+          { "id": 2, "Nome": "Orby", "Imagem": "/images/mascot/orby.png" }
+        ] },
+        { "id": 6, "Nome": "Vitor Nascimento", "Cargo": "Desenvolvedor", "Imagem": "/images/profile/vitor.png", "Username": "@vortex.vitor", "Descrição": "Vitor Nascimento é conhecido por sua consistência e adaptabilidade. Seja na versão 1.0 ou 2.0, ele mantém um alto padrão de entrega, sempre atento ao desempenho da nave. ", "Mascotes_preferidos": [
+          { "id": 1, "Nome": "Buggo", "Imagem": "/images/mascot/buggo.png" },
+          { "id": 2, "Nome": "Syntaxx", "Imagem": "/images/mascot/syntaxx.png" },
+          { "id": 3, "Nome": "Snipz", "Imagem": "/images/mascot/snipz.png" },
+          { "id": 4, "Nome": "Nubbi", "Imagem": "/images/mascot/nubbi.png" }
+        ] }
+      ],
+      "Missões_Abertas": [
+        { "id": 1, "Nome": "Corrigir Acessibilidade no APP", "Progresso": 45, "Status": { "id": 3, "Nome": "Em Progresso" }, "Posição": {"id": 1, "Posição1": 1, "Posição2": 1, "Posição3": 1} },
+        { "id": 2, "Nome": "Atualizar Dependências Obsoletas", "Progresso": 20, "Status": { "id": 3, "Nome": "Atrasada" }, "Posição": {"id": 1, "Posição1": 0, "Posição2": 2, "Posição3": 1}}
+      ],
+      "Planetas_Explorados": [
+        { "id": 1, "Nome": "Aeris", "Imagem": "/images/planet/aeris.png", "Descrição": "Descrição do planeta Aeris", "Mascotes": [
+          { "id": 1, "Nome": "Buggo", "Imagem": "/images/mascot/buggo.png", "Descrição": "Descrição do mascote Buggo" },
+          { "id": 2, "Nome": "Syntaxx", "Imagem": "/images/mascot/syntaxx.png", "Descrição": "Descrição do mascote Syntaxx" }
+        ] },
+        { "id": 2, "Nome": "Coreon", "Imagem": "/images/planet/coreon.png", "Descrição": "Descrição do planeta Coreon", "Mascotes": [
+          { "id": 3, "Nome": "Algorix", "Imagem": "/images/mascot/algorix.png", "Descrição": "Descrição do mascote Algorix" }
+        ] },
+        { "id": 3, "Nome": "Pyron", "Imagem": "/images/planet/pyron.png", "Descrição": "Descrição do planeta Pyron", "Mascotes": [
+          { "id": 4, "Nome": "Patch-3", "Imagem": "/images/mascot/patch-3.png", "Descrição": "Descrição do mascote Patch-3" }
+        ] }
+      ]
     }
   ],
   "planetas": [

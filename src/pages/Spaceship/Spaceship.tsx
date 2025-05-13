@@ -21,11 +21,18 @@ import { Canvas } from "@react-three/fiber";
 import { Codestar3D } from "../../components/common/Objetcs3D/Codestar3D";
 import { Html, OrbitControls } from "@react-three/drei";
 import { UsersThree, PlusCircle } from "phosphor-react";
+import { TripulationModal } from "../../components/spaceship/TripulationModal/TripulationModal";
 
 export function Spaceship() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openPlanetModal = () => setIsModalOpen(true);
   const closePlanetModal = () => setIsModalOpen(false);
+
+  const [isTripulationModalOpen, setIsTripulationModalOpen] = useState(false);
+
+  const toggleTripulationModal = () => {
+    setIsTripulationModalOpen((prev) => !prev);
+  };
 
   return (
     <>
@@ -33,6 +40,7 @@ export function Spaceship() {
         <div>
           <h1>Codestar-1</h1>
         </div>
+        {isTripulationModalOpen && <TripulationModal onClose={toggleTripulationModal}/>}
         <SpaceshipContent>
           <SpaceshipCardContainer>
             <Canvas
@@ -51,19 +59,20 @@ export function Spaceship() {
               <OrbitControls />
 
               <Html position={[-3, 0.2, 0]}>
-                <button onClick={() => alert("Tripulação da Codestar1!")}>
+                <button onClick={toggleTripulationModal}>
                   <UsersThree size={23} weight="bold" />
                   <span>Tripulação</span>
                 </button>
+                
               </Html>
+              
 
-              <Html position={[-1.5, 0.2, 0]}>
+              <Html as="div" position={[-1.5, 0.2, 0]}>
                 <h4 onClick={() => alert("Missão amarela da Codestar1!")}>
                   <PlusCircle size={20} weight="bold" />
                   <span>Corrigir Acessibilidade no APP</span>
                 </h4>
               </Html>
-
               <Html position={[1, -0.6, 0]}>
                 <h4 onClick={() => alert("Missão amarela da Codestar1!")}>
                   <PlusCircle size={20} weight="bold" />
