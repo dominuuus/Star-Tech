@@ -39,7 +39,7 @@ const mapRawNotificationToNotification = (
 export async function fetchNotification(): Promise<Notification[]> {
   try {
     const response = await api.get("/notificacoes");
-    const rawNotifications: RawNotification[] = response.data.data;
+    const rawNotifications: RawNotification[] = response.data;
     if (!Array.isArray(rawNotifications)) {
       throw new Error("Dados de notificacoes inválidos retornados pela API");
     }
@@ -47,7 +47,7 @@ export async function fetchNotification(): Promise<Notification[]> {
   } catch (error) {
     console.error("Erro ao buscar notificacoes via API:", error);
     try {
-      const rawNotifications: RawNotification[] = gameData.notificacoes.data;
+      const rawNotifications: RawNotification[] = gameData.notificacoes;
       if (!Array.isArray(rawNotifications)) {
         throw new Error("Dados de notificacoes inválidos no db.json");
       }

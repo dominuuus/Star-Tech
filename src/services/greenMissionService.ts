@@ -31,7 +31,7 @@ const mapRawGreenMissionToGreenMission = (raw: RawGreenMission): GreenMission =>
 export async function fetchGreenMission(): Promise<GreenMission[]> {
   try {
     const response = await api.get("/missoes_verdes");
-    const rawGreenMissions: RawGreenMission[] = response.data.data;
+    const rawGreenMissions: RawGreenMission[] = response.data;
     if (!Array.isArray(rawGreenMissions)) {
       throw new Error("Dados de missoes_verdes inválidos retornados pela API");
     }
@@ -39,7 +39,7 @@ export async function fetchGreenMission(): Promise<GreenMission[]> {
   } catch (error) {
     console.error("Erro ao buscar missoes_verdes via API:", error);
     try {
-      const rawGreenMissions: RawGreenMission[] = gameData.missoes_verdes.data;
+      const rawGreenMissions: RawGreenMission[] = gameData.missoes_verdes;
       if (!Array.isArray(rawGreenMissions)) {
         throw new Error("Dados de missoes_verdes inválidos no db.json");
       }

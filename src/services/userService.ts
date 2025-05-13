@@ -5,7 +5,7 @@ export interface User {
   id: number;
   Nome: string;
   Email: string;
-  Foto: string | null;
+  Imagem: string | null;
   Descrição: string;
   Estelares: number;
   Nível: number;
@@ -18,7 +18,7 @@ interface RawUser {
   id: number;
   Nome: string;
   Email_Mascado: string;
-  Foto: string | null;
+  Imagem: string | null;
   Descrição: string;
   Estelares: number;
   Nível: number;
@@ -40,7 +40,7 @@ const mapRawUserToUser = (raw: RawUser): User => ({
   id: raw.id,
   Nome: raw.Nome,
   Email: raw.Email_Mascado,
-  Foto: raw.Foto,
+  Imagem: raw.Imagem,
   Descrição: raw.Descrição,
   Estelares: raw.Estelares,
   Nível: raw.Nível,
@@ -53,7 +53,7 @@ const mapRawUserToUser = (raw: RawUser): User => ({
 export async function fetchUser(): Promise<User[]> {
   try {
     const response = await api.get('/usuarios');
-    const rawUsers: RawUser[] = response.data.data;
+    const rawUsers: RawUser[] = response.data;
     if (!Array.isArray(rawUsers)) {
       throw new Error('Dados de usuários inválidos retornados pela API');
     }
@@ -61,7 +61,7 @@ export async function fetchUser(): Promise<User[]> {
   } catch (error) {
     console.error('Erro ao buscar usuários via API:', error);
     try {
-      const rawUsers: RawUser[] = gameData.usuarios.data;
+      const rawUsers: RawUser[] = gameData.usuarios;
       if (!Array.isArray(rawUsers)) {
         throw new Error('Dados de usuários inválidos no db.json');
       }

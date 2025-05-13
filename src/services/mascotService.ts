@@ -7,10 +7,12 @@ export interface Mascot {
   Descrição: string;
   Imagem: string;
   Planeta?: string;
+  Planeta_Imagem?: string;
   Titulo: string;
   Personalidade: string;
   Habilidade_Especial: string;
   Aparência: string;
+  Status?: string;
 }
 
 interface RawMascot {
@@ -18,11 +20,12 @@ interface RawMascot {
   Nome: string;
   Descrição: string;
   Imagem: string;
-  Planeta: { id: number; Nome: string } | null;
+  Planeta: { id: number; Nome: string, Imagem: string } | null;
   Titulo: string;
   Personalidade: string;
   Habilidade_Especial: string;
   Aparência: string;
+  Status: { id: number; Nome: string } | null;
 }
 
 const mapRawMascotToMascot = (raw: RawMascot): Mascot => ({
@@ -31,16 +34,18 @@ const mapRawMascotToMascot = (raw: RawMascot): Mascot => ({
   Descrição: raw.Descrição,
   Imagem: raw.Imagem,
   Planeta: raw.Planeta ? raw.Planeta?.Nome : undefined,
+  Planeta_Imagem: raw.Planeta ? raw.Planeta?.Imagem : undefined,
   Titulo: raw.Titulo,
   Personalidade: raw.Personalidade,
   Habilidade_Especial: raw.Habilidade_Especial,
   Aparência: raw.Aparência,
+  Status: raw.Status ? raw.Status?.Nome : undefined,
 });
 
 export async function fetchMascot(): Promise<Mascot[]> {
   try {
     const response = await api.get("/mascotes");
-    const rawMascots: RawMascot[] = response.data.data;
+    const rawMascots: RawMascot[] = response.data;
     if (!Array.isArray(rawMascots)) {
       throw new Error("Dados de mascotes inválidos retornados pela API");
     }
@@ -48,7 +53,7 @@ export async function fetchMascot(): Promise<Mascot[]> {
   } catch (error) {
     console.error("Erro ao buscar mascotes via API:", error);
     try {
-      const rawMascots: RawMascot[] = gameData.mascotes.data;
+      const rawMascots: RawMascot[] = gameData.mascotes;
       if (!Array.isArray(rawMascots)) {
         throw new Error("Dados de mascotes inválidos no db.json");
       }

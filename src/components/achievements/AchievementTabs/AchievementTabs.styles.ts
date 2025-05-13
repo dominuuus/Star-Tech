@@ -1,30 +1,29 @@
-// AchievementTab/style.ts
 import styled from 'styled-components';
 
 export const TabContainer = styled.div`
   display: flex;
-  justify-content: center; // centraliza horizontalmente
-  margin: 32px 0;
-  gap: 20px;
+  justify-content: flex-start;
+  margin: 20px 0 10px 20px;
+  gap: 8px;
 `;
 
 export const TabButton = styled.button<{ active?: boolean }>`
-  width: 200px;
-  height: 48px;
-  padding: 12px; 0;
-  border-top-left-radius: 18px;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 0px;
+  width: 110px;
+  height: 36px;
+  padding: 8px 0;
+  border-radius: 8px;
   border: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   background-color: ${({ active }) => (active ? '#D8A214' : '#09152B')};
   color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   &:hover {
-    opacity: 0.8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
 
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
 `;
