@@ -4,7 +4,7 @@ import { api } from "../lib/axios";
 export interface Achievement {
     id: number;
     Nome: string;
-    Descrição: string;
+    Descrição?: string;
     Tarefas?: string;
     Qtd_moedas: number;
     Imagem: string;
@@ -16,7 +16,7 @@ export interface Achievement {
 interface RawAchievement {
   id: number;
   Nome: string;
-  Descrição: string;
+  Descrição: string | null;
   Tarefas: string | null;
   Qtd_moedas: number;
   Imagem: string;
@@ -27,7 +27,7 @@ interface RawAchievement {
 const mapRawAchievementToAchievements = (raw: RawAchievement): Achievement => ({
   id: raw.id,
   Nome: raw.Nome,
-  Descrição: raw.Descrição,
+  Descrição: raw.Descrição ? raw.Descrição : undefined,
   Tarefas: raw.Tarefas ? raw.Tarefas : undefined,
   Qtd_moedas: raw.Qtd_moedas,
   Imagem: raw.Imagem,
