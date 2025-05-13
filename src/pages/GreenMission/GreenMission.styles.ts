@@ -19,7 +19,7 @@ export const GreenMissionDetails = styled.div`
 `
 
 export const ListOfMissionsContainer = styled.div`
-    background-color: ${(props) => props.theme.colors.gray.light};
+    
     display: flex;
     flex-direction: column;
     gap: 10px;

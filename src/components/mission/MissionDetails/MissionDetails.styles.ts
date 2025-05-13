@@ -120,7 +120,63 @@ export const RewardCardEstelar = styled.div`
   background-color: ${(props) =>
     props.theme.colors.mission.achievementBlockMission};
   width: 40%;
-`
+  display: flex;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  align-items: center;
+  h4 {
+    padding-left: 15px;
+  }
+`;
+
+export const RewardEstelarPhoto = styled.div`
+  background-color: ${(props) => props.theme.colors.mission.coinMission};
+  width: 30%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  img {
+    height: 3.5rem;
+    width: 3.8rem;
+  }
+`;
+
+export const RewardCardMedal = styled.div`
+  background-color: ${(props) =>
+    props.theme.colors.mission.achievementBlockMission};
+  width: 40%;
+  display: flex;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: justify;
+`;
+
+export const RewardCardMedalPhoto = styled.div`
+  background-color: ${(props) => props.theme.colors.mission.achievementMission};
+  width: 38%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  img {
+    height: 4rem;
+    width: 4rem;
+  }
+`;
+
+export const RewardCardMedalText = styled.div`
+  padding-top: 5px;
+  padding-left: 15px;
+  h4 {
+    font-size: 13px;
+  }
+  padding-right: 15px;
+`;
 
 export const ProgressMissionBarContent = styled.div<ProgressProps>`
   padding: 0.75rem;

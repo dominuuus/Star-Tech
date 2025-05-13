@@ -19,15 +19,19 @@ import {
   TechLiderProfileText,
   RewardsContainer,
   RewardsCards,
-  RewardEstelarPhoto,
   RewardCardEstelar,
-  RewardCardMedal,
+  RewardEstelarPhoto,
   RewardCardMedalPhoto,
   RewardCardMedalText,
-  PlayMissionContainer,
-  PlayMission,
+  RewardCardMedal,
+  MissionTechnicalObjectiveContainer,
 } from "./MissionDetails.styles";
-import { fetchMission, Mission } from "../../../services/missionService";
+import {
+  fetchMission,
+  fetchMissionById,
+  Mission,
+} from "../../../services/missionService";
+import { useParams } from "react-router-dom";
 import achievements from "../../../assets/achievements";
 
 export function MissionDetails() {
