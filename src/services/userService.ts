@@ -5,7 +5,7 @@ export interface User {
   id: number;
   Nome: string;
   Email: string;
-  Foto: string | null;
+  Imagem: string | null;
   Descrição: string;
   Estelares: number;
   Nível: number;
@@ -18,7 +18,7 @@ interface RawUser {
   id: number;
   Nome: string;
   Email_Mascado: string;
-  Foto: string | null;
+  Imagem: string | null;
   Descrição: string;
   Estelares: number;
   Nível: number;
@@ -40,7 +40,7 @@ const mapRawUserToUser = (raw: RawUser): User => ({
   id: raw.id,
   Nome: raw.Nome,
   Email: raw.Email_Mascado,
-  Foto: raw.Foto,
+  Imagem: raw.Imagem,
   Descrição: raw.Descrição,
   Estelares: raw.Estelares,
   Nível: raw.Nível,
