@@ -22,11 +22,13 @@ import { Codestar3D } from "../../components/common/Objetcs3D/Codestar3D";
 import { Html, OrbitControls } from "@react-three/drei";
 import { UsersThree, PlusCircle } from "phosphor-react";
 import { TripulationModal } from "../../components/spaceship/TripulationModal/TripulationModal";
+import { MissionCardModal } from "../../components/spaceship/MissionCardModal/MissionCardModal";
 
 export function Spaceship() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openPlanetModal = () => setIsModalOpen(true);
   const closePlanetModal = () => setIsModalOpen(false);
+  const [isMissionModalOpen, setIsMissionModalOpen] = useState(false);
 
   const [isTripulationModalOpen, setIsTripulationModalOpen] = useState(false);
 
@@ -34,13 +36,24 @@ export function Spaceship() {
     setIsTripulationModalOpen((prev) => !prev);
   };
 
+  const toggleMissionModal = () => {
+    setIsMissionModalOpen((prev) => !prev);
+  };
   return (
     <>
       <SpaceshipContainer>
         <div>
           <h1>Codestar-1</h1>
         </div>
-        {isTripulationModalOpen && <TripulationModal onClose={toggleTripulationModal}/>}
+        {isTripulationModalOpen && (
+          <TripulationModal onClose={toggleTripulationModal} />
+        )}
+        {isMissionModalOpen && (
+          <MissionCardModal
+            missionName="Corrigir Acessibilidade no APP"
+            onClose={toggleMissionModal}
+          />
+        )}
         <SpaceshipContent>
           <SpaceshipCardContainer>
             <Canvas
@@ -63,16 +76,15 @@ export function Spaceship() {
                   <UsersThree size={23} weight="bold" />
                   <span>Tripulação</span>
                 </button>
-                
               </Html>
-              
 
-              <Html as="div" position={[-1.5, 0.2, 0]}>
-                <h4 onClick={() => alert("Missão amarela da Codestar1!")}>
+              <Html position={[-2, -0.2, -1]}>
+                <h4 onClick={toggleMissionModal}>
                   <PlusCircle size={20} weight="bold" />
                   <span>Corrigir Acessibilidade no APP</span>
                 </h4>
               </Html>
+
               <Html position={[1, -0.6, 0]}>
                 <h4 onClick={() => alert("Missão amarela da Codestar1!")}>
                   <PlusCircle size={20} weight="bold" />
@@ -150,7 +162,7 @@ export function Spaceship() {
             </ExploredPlanetContainer>
 
             <MissionUpdatesContent>
-              <NewsMission tipo="Equipe" maxItems={4}/>
+              <NewsMission tipo="Equipe" maxItems={4} />
             </MissionUpdatesContent>
           </SpaceshipCardContainer>
         </SpaceshipContent>
