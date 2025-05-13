@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AchievementDetailContainer = styled.div`
-  width: 70%;
+  width: 60%;
   min-height: 70vh;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,6 @@ export const AchievementDetailContainer = styled.div`
   padding: 25px;
   margin-left: 60px;
   background: rgba(26, 32, 44, 0.9);
-  position: sticky;
   top: 20px;
   overflow-y: auto;
 `;
@@ -20,22 +19,13 @@ export const AchievementHeader = styled.div`
   gap: 30px;
   margin-bottom: 20px;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
 `;
 
 export const AchievementImage = styled.img`
-  width: 220px;
+  min-width: 220px;
   height: 220px;
-  object-fit: contain;
   border-radius: 12px;
   flex-shrink: 0;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    height: auto;
-  }
 `;
 
 export const AchievementContent = styled.div`
@@ -44,7 +34,8 @@ export const AchievementContent = styled.div`
   flex-direction: column;
   justify-content: center;
   font-size: 20px;
-
+  color: ${(props) => props.theme.colors.white};
+  width: 600px;
   h2 {
     margin: 0 0 15px 0;
     font-size: 1.8rem;
@@ -53,7 +44,6 @@ export const AchievementContent = styled.div`
 
   .description {
     margin-bottom: 15px;
-    color: #ccc;
     line-height: 1.5;
   }
 
@@ -93,10 +83,7 @@ export const PlanetInfo = styled.div<{ $hasPlanet: boolean }>`
   .planet-text {
     text-align: right;
 
-    @media (max-width: 768px) {
-      text-align: center;
-    }
-
+    
     h3 {
       margin: 0 0 5px 0;
       color: #fff;
@@ -167,6 +154,7 @@ export const PlanetMapLayout = styled.div`
   .planet-image {
     width: 200px;
     height: 200px;
+    display: none;
   }
 
   .planet-name {

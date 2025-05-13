@@ -42,7 +42,7 @@ export function AchievementCard() {
           setContent(planets.map(p => ({
             ...p,
             Tipo: 'planet' as const,
-            Imagem: p.Imagem || '/default-planet.png' 
+            Imagem: p.Imagem || '' 
           })));
         } else {
           const mascots = await fetchMascot();
@@ -87,7 +87,7 @@ export function AchievementCard() {
                         src={imageUrl} 
                         alt={item.Nome}
                         onError={(e) => {
-                            (e.target as HTMLImageElement).src = '/default-image.png';
+                            (e.target as HTMLImageElement).src = '';
                         }}
                     />
                 </Badge>
@@ -110,7 +110,7 @@ return (
         <AchievementDetailComponent item={selectedItem} type={activeTab} />
       ) : (
         <div style={{ 
-          width: '70%', 
+          width: '100%', 
           display: 'flex', 
           alignItems: 'center', 
           justifyContent: 'center', 

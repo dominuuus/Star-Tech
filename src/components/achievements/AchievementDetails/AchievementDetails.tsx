@@ -33,7 +33,7 @@ export function AchievementDetailComponent({ item, type }: AchievementDetailProp
           src={item.Imagem} 
           alt={item.Nome}
           onError={(e) => {
-            (e.target as HTMLImageElement).src = '/default-image.png';
+            (e.target as HTMLImageElement).src = '';
           }}
         />
         
@@ -76,7 +76,7 @@ export function AchievementDetailComponent({ item, type }: AchievementDetailProp
               alt={item.Planeta}
               className="planet-image"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = '/default-planet.png';
+                (e.target as HTMLImageElement).src = '';
               }}
             />
             {item.Planeta && <h3 className="planet-name">{item.Planeta}</h3>}
@@ -89,7 +89,7 @@ export function AchievementDetailComponent({ item, type }: AchievementDetailProp
                 alt={item.Planeta}
                 className="planet-image"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = '/default-planet.png';
+                  (e.target as HTMLImageElement).src = '';
                 }}
               />
             )}
@@ -110,7 +110,7 @@ export function AchievementDetailComponent({ item, type }: AchievementDetailProp
                     src={mascote.Imagem} 
                     alt={mascote.Nome}
                     onError={(e) => {
-                      (e.target as HTMLImageElement).src = '/default-mascot.png';
+                      (e.target as HTMLImageElement).src = '';
                     }}
                   />
                   <MascoteName>{mascote.Nome}</MascoteName>
