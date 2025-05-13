@@ -1,6 +1,7 @@
 import { CoinContainer, NotificationContainer, ProfileCardContainer, ProfileContent } from "./ProfileCard.styles";
 import images from "../../../assets/images";
 import { Bell } from "phosphor-react";
+import { Link } from "react-router-dom";
 
 export function ProfileCard() {
     return (
@@ -15,7 +16,9 @@ export function ProfileCard() {
             </ProfileContent>
 
             <NotificationContainer>
+                <Link to={'/game/desafios'}>
                 <Bell size={20} weight="fill" />
+                </Link>
             </NotificationContainer>
 
             <CoinContainer>
