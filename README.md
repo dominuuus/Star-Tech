@@ -1,54 +1,76 @@
-# React + TypeScript + Vite
+# 🛰️ Projeto Gamificado Banco do Brasil
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Plataforma gamificada para desenvolvedores do Banco do Brasil: aumenta o engajamento, promove boas práticas e transforma produtividade em uma jornada espacial interativa.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Sobre o Projeto
 
-## Expanding the ESLint configuration
+O projeto gamificado foi desenvolvido para o Banco do Brasil com o objetivo de transformar rotinas de desenvolvimento em uma experiência lúdica e engajadora. Desenvolvedores são desafiados a realizar tarefas categorizadas por cor (vermelhas, amarelas, verdes), acumulando pontos e evoluindo componentes visuais de sua própria "nave" no sistema.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> 🛰 Missão: incentivar boas práticas, resolver problemas com agilidade e fortalecer o trabalho em equipe por meio de uma interface temática e recompensas visuais.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📲 A Aplicação
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+A interface representa um painel de controle onde desenvolvedores:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Visualizam suas tarefas e pontuações;
+- Acompanham sua nave e upgrades visuais;
+- Realizam ações que contribuem para missões em grupo e individuais.
+
+O sistema foi desenvolvido em **React + Vite + TypeScript**, com API fake para simulações via **JSON-server** e comunicação feita por **Axios**.
+
+---
+
+## ✅ Tecnologias Utilizadas
+
+| Camada         | Tecnologias                                                  |
+|----------------|--------------------------------------------------------------|
+| Interface      | React, Vite, TypeScript, Tailwind                            |
+| Integração     | JSON-server, Axios                                           |
+| Versionamento  | Git e GitHub                                                 |
+| Prototipação   | Figma (para wireframes e mockups das naves e upgrades)       |
+
+---
+
+## 🧩 Funcionalidades
+
+- ✅ Gamificação com categorias de missão (vermelha, amarela e verde);
+- ✅ Sistema de pontuação e ranking;
+- ✅ Customização visual por progresso;
+- ✅ Tarefas organizadas por cor e prioridade;
+- ✅ Painel individual e de equipe;
+- ✅ Armazenamento e simulação com JSON-server.
+
+---
+
+## 🤝 Colaboradores
+
+Agradecemos às seguintes pessoas do <strong>Squad 9 - Banco do Brasil</strong> que contribuíram para este projeto:
+
+<table>
+  <tr>
+    <td>Ayrton Oliveira</td>
+    <td>Domingos Santiago</td>
+  </tr>
+  <tr>
+    <td>Gabriel Albuquerque</td>
+    <td>Gilberto Quintino</td>
+  </tr>
+  <tr>
+    <td>Giseli Felix</td>
+    <td>João Vitor Malveira</td>
+  </tr>
+  <tr>
+    <td>Lucas Matheus</td>
+    <td>Maria Clara</td>
+  </tr>
+  <tr>
+    <td>Thayana Lira</td>
+    <td></td>
+  </tr>
+</table>
+
+---
