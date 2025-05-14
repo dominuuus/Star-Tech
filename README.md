@@ -37,7 +37,7 @@ O sistema foi desenvolvido em **React + Vite + TypeScript**, com API fake para s
 
 ## 🧩 Funcionalidades
 
-- ✅ Gamificação com categorias de missão (vermelha, amarela e verde);
+- ✅ Gamificação com categorias de missão (vermelha, amarela, azul e verde);
 - ✅ Sistema de pontuação e ranking;
 - ✅ Customização visual por progresso;
 - ✅ Tarefas organizadas por cor e prioridade;
