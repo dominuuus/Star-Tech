@@ -1,55 +1,55 @@
 import styled from "styled-components";
 
 export const ProfileCardContainer = styled.div`
-    background: ${(props) => props.theme.colors.gradients.profileMenu};
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 10px;
-    border-radius: 10px;
+  background: ${(props) => props.theme.colors.gradients.profileMenu};
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+  border-radius: 10px;
 
-    img {
-        height: 3;
-        border-radius: 0.5rem;
-    }
-`
+  img {
+    height: 3;
+    border-radius: 0.5rem;
+  }
+`;
 
 export const ProfileContent = styled.div`
+  display: flex;
+  width: 13rem;
+  align-items: center;
+  gap: 10px;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  div {
     display: flex;
-    width: 13rem;
-    align-items: center;
-    gap: 10px;
-
-    h1 {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-
-    div {
-        display: flex;
-        flex-direction: column;
-    }
-`
+    flex-direction: column;
+  }
+`;
 
 export const NotificationContainer = styled.div`
-    background-color: ${(props) => props.theme.colors.primary};
-    border-radius: 50%;
-    text-align: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 0.5rem;
-`
+  background-color: ${(props) => props.theme.colors.primary};
+  border-radius: 50%;
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+`;
 
 export const CoinContainer = styled.div`
-    display: flex;
-    align-items: center;
-    
-    span {
-        color: ${(props) => props.theme.colors.goldCoin};;
-        font-weight: bold;
-    }
-    
-    img {
-        height: 2.5rem;
-    }
-`
+  display: flex;
+  align-items: center;
+
+  span {
+    color: ${(props) => props.theme.colors.goldCoin};
+    font-weight: bold;
+  }
+
+  img {
+    height: 2.5rem;
+  }
+`;

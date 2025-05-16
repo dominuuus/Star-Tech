@@ -14,3 +14,11 @@ export const HeaderContainer = styled.section`
         height: 3rem;
     }
 `
+
+export const LogoContainer = styled.div`
+    padding: 0 2rem;
+` 
+
+export const TopMenuContainer = styled.div`
+    padding: 0 3rem;
+` 

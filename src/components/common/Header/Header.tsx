@@ -1,18 +1,18 @@
 import images from "../../../assets/images";
 import { MainTopMenu } from "../MainTopMenu/MainTopMenu";
-import { HeaderContainer } from "./Header.styles";
+import { HeaderContainer, LogoContainer, TopMenuContainer } from "./Header.styles";
 
 
 export function Header() {
     return (
         <HeaderContainer>
-            <div>
+            <LogoContainer>
                 <img src={images.logo} alt="" />
-            </div>
+            </LogoContainer>
 
-            <div>
+            <TopMenuContainer>
                 <MainTopMenu/>
-            </div>
+            </TopMenuContainer>
 
         </HeaderContainer>
     );

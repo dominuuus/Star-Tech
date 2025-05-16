@@ -15,11 +15,17 @@ export const HeaderContainer = styled.section`
     }
 `
 
+
+export const LogoContainer = styled.div`
+    padding: 0 2rem;
+` 
+
 export const MainTopMenuContainer = styled.div`
     display: grid;
     grid-template-columns: 40% 20% 40%;
     gap: 2rem;
     align-items: center;
+    padding: 0 3rem;
 `
 
 export const NavigationContainer = styled.div`
@@ -35,19 +41,4 @@ export const NavigationContainer = styled.div`
     li {
         list-style: none;
     }
-`
-
-export const SearchContainer = styled.div`
-
-    input {
-    background-color: white;
-    border-radius: 0.75rem;
-    width: 15rem;
-    height: 2.5rem;
-    padding: 1rem;
-    }
-`
-
-export const ProfileContainer = styled.div`
-    width: 25rem;
 `

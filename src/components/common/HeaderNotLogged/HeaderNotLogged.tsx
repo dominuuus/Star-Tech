@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
 import images from "../../../assets/images";
-import { HeaderContainer, MainTopMenuContainer, NavigationContainer, SearchContainer } from "./HeaderNotLogged.styles";
+import { HeaderContainer, LogoContainer, MainTopMenuContainer, NavigationContainer } from "./HeaderNotLogged.styles";
 
 
 export function HeaderNotLogged() {
     return (
         <HeaderContainer>
-            <div>
+            <LogoContainer>
                 <img src={images.logo} alt="" />
-            </div>
+            </LogoContainer>
 
             <MainTopMenuContainer>
             <NavigationContainer>
@@ -24,9 +24,6 @@ export function HeaderNotLogged() {
                 </nav>
             </NavigationContainer>
 
-            <SearchContainer>
-                <input type="text" placeholder="Pesquisar" />
-            </SearchContainer>
 
         </MainTopMenuContainer>
 

@@ -23,7 +23,7 @@ export const defaultTheme = {
       missionGreenAlert:
         "linear-gradient(180deg, #1b7c0c 0%, #051e0d 100%)", //Card de alerta das missões verdes na nave
       tripulation: "linear-gradient(90deg, #193083 29%, #24b9ca 100%)",
-      profileMenu: "linear-gradient(90deg, #193083 29%, #24b9ca 100%)",
+      profileMenu: "linear-gradient(143deg,rgba(6, 27, 61, 1) 8%, rgba(10, 29, 74, 1) 43%, rgba(27, 33, 91, 1) 60%, rgba(31, 24, 77, 1) 75%, rgba(35, 25, 79, 1) 82%, rgba(42, 28, 87, 1) 89%, rgba(42, 28, 89, 1) 97%)",
       planet: "linear-gradient(90deg, #8674A6 0%, #063977 100%)",
       mascotCard: "linear-gradient(90deg, #193083 29%, #24b9ca 100%)",
       bgExplorePage:

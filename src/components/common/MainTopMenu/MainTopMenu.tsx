@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { ProfileCard } from "../ProfileCard/ProfileCard";
 import { MainTopMenuContainer, NavigationContainer, ProfileContainer, SearchContainer } from "./MainTopMenu.styles";
+import { MagnifyingGlass } from "phosphor-react";
 
 export function MainTopMenu() {
     return (
@@ -19,6 +20,7 @@ export function MainTopMenu() {
             </NavigationContainer>
 
             <SearchContainer>
+                <MagnifyingGlass />
                 <input type="text" placeholder="Pesquisar" />
             </SearchContainer>
 
