@@ -8,7 +8,8 @@ export const GreenMissionTrail = styled.div`
   padding-top: 30px;
   padding-top: 40px;
   gap: 15px;
-   padding: 30px 0;
+  padding: 30px 0;
+  margin-left: 20px;
 
   overflow-x: auto;
   overflow-y: hidden;
@@ -17,20 +18,19 @@ export const GreenMissionTrail = styled.div`
   cursor: grab;
   user-select: none;
 
-
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
 `;
-
 
 export const SquareLevel = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
+
 export const PhotoSquareLevelBlack = styled.div`
   width: 100%;
   background-color: black;
@@ -49,8 +49,9 @@ export const PhotoSquareLevelBlack = styled.div`
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.2) translateY(-8px);
-    background-color: ${(props) => props.theme.colors.mission.achievementMission};
+    transform: scale(1.2) translateY(-15px);
+    background-color: ${(props) =>
+      props.theme.colors.mission.achievementMission};
     color: white;
 
     &::before {
@@ -83,8 +84,9 @@ export const PhotoSquareLevelBlack = styled.div`
 `;
 
 export const PhotosquareLevelGray = styled.div`
-  width: 100%;
-  background-color: ${(props) => props.theme.colors.gray.light};
+  width: 4rem;
+  height: 4rem;
+  background-color: ${(props) => props.theme.colors.gray.lighter};
   display: flex;
   justify-content: center;
   align-items: center;

@@ -2,7 +2,8 @@ import { useRef, useState } from "react";
 import achievements from "../../../assets/achievements";
 import {
   RocketLaunch, Alien, BugDroid, Calendar, Database, Vault,
-  Tag, Magnet, Package, FacebookLogo, Scissors, Infinity, Ladder, Table, QrCode
+  // eslint-disable-next-line no-shadow-restricted-names
+  Tag, Magnet, Package, FacebookLogo, Scissors, Ladder, Table, QrCode, Infinity,
 } from "phosphor-react";
 import {
   GreenMissionTrail,
@@ -57,37 +58,37 @@ export function GreenMissionLevel() {
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-            <RocketLaunch size={65} weight="fill"/>
+            <RocketLaunch size={25} weight="fill"/>
           </PhotosquareLevelGray>
           <span>Nivel 1</span>
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-            <Alien size={65} weight="fill" />
+            <Alien size={25} weight="fill" />
           </PhotosquareLevelGray>
           <span>nivel 2</span>
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-            <BugDroid size={65} weight="fill" />
+            <BugDroid size={25} weight="fill" />
           </PhotosquareLevelGray>
           <span>nivek 3</span>
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-            <Calendar size={65} weight="fill" />
+            <Calendar size={25} weight="fill" />
           </PhotosquareLevelGray>
           <span>nivel 4</span>
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-            <Database size={65} weight="fill" />
+            <Database size={25} weight="fill" />
           </PhotosquareLevelGray>
           <span>Nível 5</span>
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-            <Vault size={65} weight="fill" />
+            <Vault size={25} weight="fill" />
           </PhotosquareLevelGray>
           <span>nível 6</span>
         </SquareLevel>
@@ -99,25 +100,25 @@ export function GreenMissionLevel() {
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-             <Tag size={65} weight="fill" />
+             <Tag size={25} weight="fill" />
           </PhotosquareLevelGray>
           <span>Nível 7</span>
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-            <Magnet size={65} weight="fill" />
+            <Magnet size={25} weight="fill" />
           </PhotosquareLevelGray>
            <span>Nível 8</span>
         </SquareLevel>
          <SquareLevel>
           <PhotosquareLevelGray>
-             <Package size={65} weight="fill" />
+             <Package size={25} weight="fill" />
           </PhotosquareLevelGray>
           <span>Nível 9</span>
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-            <FacebookLogo size={65} weight="fill" />
+            <FacebookLogo size={25} weight="fill" />
           </PhotosquareLevelGray>
            <span>Nível 10</span>
         </SquareLevel>
@@ -129,31 +130,31 @@ export function GreenMissionLevel() {
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-             <Scissors size={65} weight="fill" />
+             <Scissors size={25} weight="fill" />
           </PhotosquareLevelGray>
           <span>Nível 11</span>
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-            <Infinity size={65} weight="fill" />
+            <Infinity size={25} weight="fill" />
           </PhotosquareLevelGray>
            <span>Nível 12</span>
         </SquareLevel>
          <SquareLevel>
           <PhotosquareLevelGray>
-             <Ladder size={65} weight="fill" />
+             <Ladder size={25} weight="fill" />
           </PhotosquareLevelGray>
           <span>Nível 13</span>
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-            <Table size={65} weight="fill" />
+            <Table size={25} weight="fill" />
           </PhotosquareLevelGray>
            <span>Nível 14</span>
         </SquareLevel>
          <SquareLevel>
           <PhotosquareLevelGray>
-            <QrCode size={65} weight="fill" />
+            <QrCode size={25} weight="fill" />
           </PhotosquareLevelGray>
            <span>Nível 15</span>
         </SquareLevel>
@@ -165,19 +166,19 @@ export function GreenMissionLevel() {
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-             <Scissors size={65} weight="fill" />
+             <Scissors size={25} weight="fill" />
           </PhotosquareLevelGray>
           <span>Nível 16</span>
         </SquareLevel>
         <SquareLevel>
           <PhotosquareLevelGray>
-            <Infinity size={65} weight="fill" />
+            <Infinity size={25} weight="fill" />
           </PhotosquareLevelGray>
            <span>Nível 17</span>
         </SquareLevel>
          <SquareLevel>
           <PhotosquareLevelGray>
-             <Ladder size={65} weight="fill" />
+             <Ladder size={25} weight="fill" />
           </PhotosquareLevelGray>
           <span>Nível 18</span>
         </SquareLevel>

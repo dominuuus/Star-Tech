@@ -25,8 +25,7 @@ export const GreenMissionContainer = styled.div`
 `;
 
 export const GreenMissionBar = styled.div`
-  background-color: ${(props) => props.theme.colors.gray.light};
-  width: 1340px;
+  width: 90vw;
   height: 150px;
 `;
 
@@ -47,7 +46,7 @@ export const MissionDetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: ${(props) => props.theme.colors.gray.light};
+  background-color: ${(props) => props.theme.colors.gray.lighter};
   border-radius: 10px;
   min-width: 70%;
   padding-bottom: 20px;
