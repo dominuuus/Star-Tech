@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const Cards = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: ${(props) => props.theme.colors.gray.light};
+  background-color: ${(props) => props.theme.colors.gray.lighter};
   border-radius: 7px;
   padding: 10px 30px;
   font-weight: 600;
