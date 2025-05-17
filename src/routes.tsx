@@ -9,6 +9,7 @@ import { Mission } from "./pages/Mission/Mission";
 import { LoginIn } from "./pages/LoginIn/LoginIn";
 import { GreenMission } from "./pages/GreenMission/GreenMission";
 import { UserPage } from "./pages/UserPublicProfile/UserPublicProfile";
+import { EditProfile } from "./pages/EditProfile/EditProfile";
 
 export function Router() {
   return (
@@ -17,6 +18,7 @@ export function Router() {
         <Route path="logged" element={<Astronaut />} />
         <Route path="piloto" element={<Astronaut />} />
         <Route path="conquistas" element={<Achievement />} />
+        <Route path="perfil" element={<EditProfile />} />
         <Route path="missoes" element={<Mission />}>
           <Route path=":id" element={<Mission />} />
         </Route>
