@@ -3,7 +3,7 @@ import { MissionCard } from "../../components/astronaut/MissionCard/MissionCard"
 import { MissionFilterCard } from "../../components/astronaut/MissionFilterCard/MissionFilterCard";
 import { ProjectStatusCard } from "../../components/astronaut/ProjectStatusCard/ProjectStatusCard";
 import { NewsMission } from "../../components/common/NewsMission/NewsMission";
-import { UserProfile } from "../UserProfile/UserProfile";
+import { UserProfile } from "../../components/common/UserProfile/UserProfile";
 import {
   AchievementContainer,
   AstronautContainer,
