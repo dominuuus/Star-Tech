@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { Backdrop, ModalContainer, CloseBtn } from "./ModalProfile.style";
 import { X } from "phosphor-react";

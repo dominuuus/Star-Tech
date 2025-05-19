@@ -1,11 +1,10 @@
 // src/pages/EditProfile/EditProfile.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   PencilSimpleLine,
   UserCircleGear,
   CurrencyCircleDollar,
 } from "phosphor-react";
-import Modal from "./ModalProfile";
 import images from "../../assets/images";
 
 import {
@@ -26,6 +25,7 @@ import {
   CredentialContent2,
 } from "./EditProfile.styles";
 import planets from "../../assets/planets";
+import ModalProfile from "./ModalProfile";
 
 export function EditProfile() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -112,12 +112,12 @@ export function EditProfile() {
         </MascotsAndAchievements>
       </Profile>
 
-      <Modal open={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
+      <ModalProfile open={isPopupOpen} onClose={() => setIsPopupOpen(false)}>
         <h2>Seu status</h2>
         <p>Aqui você pode ver detalhes sobre o seu nível, XP, conquistas...</p>
 
         <button onClick={() => setIsPopupOpen(false)}>Fechar</button>
-      </Modal>
+      </ModalProfile>
     </>
   );
 }

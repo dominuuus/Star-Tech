@@ -5,7 +5,7 @@ export const Backdrop = styled.div`
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(2px);
-  z-index: 999;
+  z-index: 1000;
 `;
 
 export const ModalContainer = styled.div`
