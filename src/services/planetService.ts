@@ -14,6 +14,9 @@ export interface Planet {
     Mascote_nome: string[];
     Mascote_imagem: string[];
     Mascote_descricao: string[];
+    categoria: string;
+    top: number;
+    left: number;
 }
 
 interface RawPlanet {
@@ -27,7 +30,9 @@ interface RawPlanet {
   Imagem: string | null;
   Gentilico: string;
   Mascotes: {id: number, Nome: string, Imagem: string, Descrição: string}[] | null;
-
+  categoria: string;
+  top: number;
+  left: number;
 }
 
 const mapRawPlanetToPlanet = (raw: RawPlanet): Planet => ({
@@ -43,6 +48,9 @@ const mapRawPlanetToPlanet = (raw: RawPlanet): Planet => ({
     Mascote_nome: raw.Mascotes ? raw.Mascotes.map(mascote => mascote.Nome) : [],
     Mascote_imagem: raw.Mascotes ? raw.Mascotes.map(mascote => mascote.Imagem) : [],
     Mascote_descricao: raw.Mascotes ? raw.Mascotes.map(mascote => mascote.Descrição) : [],
+    categoria: raw.categoria,
+    top: raw.top,
+    left: raw.left,
 });
 
 export async function fetchPlanet(): Promise<Planet[]> {

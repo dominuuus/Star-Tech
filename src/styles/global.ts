@@ -14,6 +14,8 @@ export const GlobalStyle = createGlobalStyle`
     html, body, #root {
     width: 100%;
     height: 100%;
+
+    color: ${(props) => props.theme.colors.white};
   }
 
   @keyframes spin {

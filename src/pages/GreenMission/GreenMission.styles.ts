@@ -4,6 +4,9 @@ export const GreenMissionContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 50px;
+  background-color: inherit;
+  height: 100vh;
+  color: ${(props) => props.theme.colors.primary};
   h4 {
     font-weight: bold;
     padding-left: 50px;

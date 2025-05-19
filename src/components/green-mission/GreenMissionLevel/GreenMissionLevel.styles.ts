@@ -10,6 +10,8 @@ export const GreenMissionTrail = styled.div`
   gap: 15px;
   padding: 30px 0;
   margin-left: 20px;
+  background-color: inherit;
+  color: ${(props) => props.theme.colors.primary};
 
   overflow-x: auto;
   overflow-y: hidden;
@@ -22,6 +24,10 @@ export const GreenMissionTrail = styled.div`
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  span {
+    color: ${(props) => props.theme.colors.white};
   }
 `;
 

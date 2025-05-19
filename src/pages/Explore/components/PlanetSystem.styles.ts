@@ -1,0 +1,53 @@
+import styled from "styled-components";
+
+interface PlanetSystemProps {
+  $zoom: number;
+}
+
+export const PlanetSystemContainer = styled.div<PlanetSystemProps>`
+  width: 100%;
+  height: 100%;
+  transform: scale(${(props) => props.$zoom});
+`;
+
+export const SpaceshipContainer = styled.div`
+  position: absolute;
+  top: 150px;
+  left: 650px;
+
+  img {
+    height: 6rem;
+
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+`;
+
+export const LineOnePlanet = styled.div`
+  border: 10px solid ${(props) => props.theme.colors.gray.light};
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  border-radius: 50%;
+  top: -500px;
+  left: -500px;
+`;
+
+export const LineTwoPlanet = styled.div`
+  border: 10px solid ${(props) => props.theme.colors.gray.light};
+  position: absolute;
+  width: 3000px;
+  height: 3000px;
+  border-radius: 50%;
+  top: -1000px;
+  left: -900px;
+`;
+
+export const LineThreePlanet = styled.div`
+  border-top: 5px dotted ${(props) => props.theme.colors.gray.light};
+  position: absolute;
+  width: 5000px;
+  left: -1400px;
+  top: 350px;
+`;

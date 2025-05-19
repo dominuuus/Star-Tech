@@ -4,6 +4,7 @@ export const MissionContainer = styled.section`
   display: flex;
   flex-direction: row;
   gap: 3rem;
+  background-color: inherit;
 `;
 
 export const SectionFilter = styled.section`
