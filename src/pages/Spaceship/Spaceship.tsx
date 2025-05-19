@@ -66,7 +66,7 @@ export function Spaceship() {
                 width: "95vw",
               }}
             >
-              <ambientLight intensity={3} />
+              <ambientLight intensity={3.5} />
               <spotLight position={[-20, 10, 10]} angle={0.15} penumbra={1} />
               <Codestar3D />
               <OrbitControls />

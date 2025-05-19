@@ -1,7 +1,11 @@
+import { HangarContainer } from "./Hangar.styles";
+
 export function Hangar() {
     return (
         <>
-        <h1>Hangar</h1>
+        <HangarContainer>
+            <h1>Hangar</h1>
+        </HangarContainer>
         </>
     )
 }

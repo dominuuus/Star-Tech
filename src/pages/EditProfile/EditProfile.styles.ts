@@ -4,6 +4,7 @@ export const Profile = styled.div`
   display: flex;
   flex-direction: row;
   gap: 160px;
+  height: 100vh;
 
   /* camadas — degradê + estrelas */
   background:
@@ -66,7 +67,7 @@ export const PlanetAndCredentials = styled.div`
   color: white;
 `;
 
-export const PlanetTitle = styled.div`
+export const PlanetTitle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,8 +124,7 @@ export const MascotsTitle = styled.span`
   font-weight: bold;
   align-items: center;
   img {
-    width: 150%;
-    height: auto;
+    height: 10rem;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     &:hover {
@@ -151,7 +151,6 @@ export const AvatarCircle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
 
   img {
     width: 50%;
@@ -211,7 +210,7 @@ export const EstelarBalance = styled.div`
     left: 0;
     right: 0;
     bottom: -4px;
-    right: -30px;
+    right: -20px;
     height: 1px;
     background: white;
   }
@@ -221,7 +220,7 @@ export const EstelarBalance = styled.div`
     left: 0;
     right: 0;
     bottom: -8px;
-    right: -10px;
+    right: 0px;
     height: 1px;
     background: white;
   }

@@ -1,7 +1,7 @@
 import { CoinContainer, NotificationContainer, ProfileCardContainer, ProfileContent } from "./ProfileCard.styles";
 import images from "../../../assets/images";
 import { Bell } from "phosphor-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export function ProfileCard() {
     return (
@@ -9,10 +9,13 @@ export function ProfileCard() {
         <ProfileCardContainer>
             <ProfileContent>
                 <img src={images.profile1} alt="" />
-                <div>
+                
+
+                <NavLink to="perfil">
+<div>
                     <h1>Matheus</h1>
                     <span>@nebula.dev</span>
-                </div>
+                </div>            </NavLink>
             </ProfileContent>
 
             <NotificationContainer>

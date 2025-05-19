@@ -48,7 +48,7 @@ export function EditProfile() {
               <ActionButton>
                 <span>Carteira Digital</span>
               </ActionButton>
-               <ActionButton>
+              <ActionButton>
                 <span>BB Financiamento</span>
               </ActionButton>
             </CredentialContent>
@@ -59,10 +59,9 @@ export function EditProfile() {
               <ActionButton>
                 <span>Acessibilidade App</span>
               </ActionButton>
-               <ActionButton>
+              <ActionButton>
                 <span>TeamMaiaraPires</span>
               </ActionButton>
-              
             </CredentialContent2>
           </CredentialTitle>
         </PlanetAndCredentials>
@@ -82,7 +81,7 @@ export function EditProfile() {
 
             <EstelarBalance>
               <CurrencyCircleDollar size={22} weight="fill" />
-              <p>: 280 Est.</p>
+              <p>: 1000 Est.</p>
             </EstelarBalance>
 
             <img src={images.astronaut1} alt="Astronauta" />
@@ -109,7 +108,7 @@ export function EditProfile() {
             <img src={images.MascotsIcone} alt="" />
           </MascotsTitle>
           <span>Conquistas</span>
-        </MascotsAndAchievements>
+        </MascotsAndAchievements> 
       </Profile>
 
       <ModalProfile open={isPopupOpen} onClose={() => setIsPopupOpen(false)}>

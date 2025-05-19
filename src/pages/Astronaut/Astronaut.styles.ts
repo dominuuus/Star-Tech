@@ -75,12 +75,12 @@ export const MissionCardContainer = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.news};
     border-radius: 3px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.news};
   }
 `;
 
