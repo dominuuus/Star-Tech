@@ -14,6 +14,14 @@ export const AchievementDetailContainer = styled.div`
   overflow-y: auto;
 `;
 
+export const ButtonClose = styled.button`
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(26, 32, 44, 0.9);
+`
+
 export const AchievementHeader = styled.div`
   display: flex;
   gap: 30px;
@@ -35,7 +43,7 @@ export const AchievementContent = styled.div`
   justify-content: center;
   font-size: 20px;
   color: ${(props) => props.theme.colors.white};
-  width: 600px;
+  width: 700px;
   h2 {
     margin: 0 0 15px 0;
     font-size: 1.8rem;
@@ -164,3 +172,21 @@ export const PlanetMapLayout = styled.div`
     text-align: center;
   }
 `;
+
+export const CoinDisplay = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.9rem;
+  span {
+    font-size: 2rem; 
+    font-weight: bold;
+  }
+`;
+
+export const CoinIcon = styled.img`
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+`;
+

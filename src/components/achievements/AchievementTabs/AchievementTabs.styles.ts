@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const TabContainer = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin: 20px 0 10px 20px;
+  margin: 20px 0 10px 34px;
   gap: 8px;
 `;
 

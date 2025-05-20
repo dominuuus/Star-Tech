@@ -1,4 +1,4 @@
-// AchievementTabs.tsx
+
 import { TabContainer, TabButton } from './AchievementTabs.styles';
 
 interface AchievementTabsProps {
