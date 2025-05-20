@@ -10,8 +10,8 @@ export const BadgeWrapper = styled.div`
 `;
 
 export const AchievementList = styled.ul`
-  min-width: 400px;
-  height: 80vh;
+  min-width: 360px;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -22,7 +22,7 @@ export const AchievementList = styled.ul`
   overflow-y: scroll;
 
   scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1;
+  scrollbar-color: #888rgb(153, 35, 35);
 
   &::-webkit-scrollbar {
     width: 6px;

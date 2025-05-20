@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import {BadgeWrapper, AchievementList, AchievementItem, Badge, BadgeImg} from "./AchievementCard.style";
+import { BadgeWrapper, AchievementList, AchievementItem, Badge, BadgeImg} from "./AchievementCard.style";
 import { fetchAchievement } from "../../../services/achievementService";
 import { fetchPlanet } from "../../../services/planetService";
 import { fetchMascot } from "../../../services/mascotService";
 import { AchievementDetailComponent } from "../AchievementDetails/AchievementDetails";
 import { AchievementTabs } from "../AchievementTabs/AchievementTabs";
+import { LockSimple } from "phosphor-react";
 
 
 type ContentType = {
@@ -26,6 +27,8 @@ export function AchievementCard() {
   const [activeTab, setActiveTab] = useState<TabType>('badges');
   const [content, setContent] = useState<ContentType[]>([]);
   const [selectedItem, setSelectedItem] = useState<ContentType | null>(null);
+  const [achievementDetailVisibility, setAchievementDetailVisibility] = useState<boolean>();
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -69,57 +72,75 @@ export function AchievementCard() {
     }
   };
 
+  const isLocked = (status?: string) => {
+    const lockedStatuses = ['bloqueado', 'secreto', 'não explorado'];
+    return status ? lockedStatuses.includes(status.toLowerCase()) : false;
+  };
+
   const renderItemList = () => {
     return content.map((item) => {
-        const imageUrl = getImageUrl(item.Imagem);
-        const planetUrl = item.Planeta_Imagem ? getImageUrl(item.Planeta_Imagem) : undefined;
+      const imageUrl = getImageUrl(item.Imagem);
+      const planetUrl = item.Planeta_Imagem ? getImageUrl(item.Planeta_Imagem) : undefined;
 
-        return (
-            <AchievementItem key={`${item.Tipo}-${item.id}`}>
-                <Badge onClick={() => {
-                    setSelectedItem({
-                        ...item,
-                        Imagem: imageUrl,
-                        ...(planetUrl && { Planeta_Imagem: planetUrl })
-                    });
-                }}>
-                    <BadgeImg 
-                        src={imageUrl} 
-                        alt={item.Nome}
-                        onError={(e) => {
-                            (e.target as HTMLImageElement).src = '';
-                        }}
-                    />
-                </Badge>
-            </AchievementItem>
-        );
+      const locked = 'Status' in item ? isLocked(item.Status) : false;
+
+      return (
+        <AchievementItem key={`${item.Tipo}-${item.id}`}>
+          <Badge
+            onClick={() => {
+              if (!locked) {
+                setSelectedItem({
+                  ...item,
+                  Imagem: imageUrl,
+                  ...(planetUrl && { Planeta_Imagem: planetUrl }),
+                });
+                setAchievementDetailVisibility(true)
+              }
+            }}
+            style={{ cursor: locked ? 'not-allowed' : 'pointer' }}
+          >
+          <div style={{ position: "relative", zIndex: -1}}>
+            <BadgeImg
+              src={imageUrl}
+              alt={item.Nome}
+              style={{ filter: locked ? 'blur(1px) grayscale(100%)' : 'none', opacity: locked ? 0.5 : 1 }}
+              onError={(e) => {
+                (e.target as HTMLImageElement).src = '';
+          
+              }}
+              
+            />
+            {locked && <LockSimple style={{ position: "absolute", right: 5, top: 5 }} />}
+          </div>
+          </Badge>
+        </AchievementItem>
+      );
     });
-};
+  };
 
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+      <AchievementTabs activeTab={activeTab} setActiveTab={setActiveTab} />
+      
+      <BadgeWrapper>
+        <AchievementList>
+          {renderItemList()}
+        </AchievementList>
 
-return (
-  <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-    <AchievementTabs activeTab={activeTab} setActiveTab={setActiveTab} />
-    
-    <BadgeWrapper>
-      <AchievementList>
-        {renderItemList()}
-      </AchievementList>
-
-      {selectedItem ? (
-        <AchievementDetailComponent item={selectedItem} type={activeTab} />
-      ) : (
-        <div style={{ 
-          width: '100%', 
-          display: 'flex', 
-          alignItems: 'center', 
-          justifyContent: 'center', 
-          color: '#666' 
-        }}>
-          Selecione um item para ver os detalhes
-        </div>
-      )}
-    </BadgeWrapper>
-  </div>
-);
+        {selectedItem && achievementDetailVisibility ? (
+          <AchievementDetailComponent item={selectedItem} type={activeTab} visible={achievementDetailVisibility} setVisibility={setAchievementDetailVisibility} />
+        ) : (
+          <div style={{ 
+            width: '100%', 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center', 
+            color: '#666' 
+          }}>
+            Selecione um item para ver os detalhes
+          </div>
+        )}
+      </BadgeWrapper>
+    </div>
+  );
 }
