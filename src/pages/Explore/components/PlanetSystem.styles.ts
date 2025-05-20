@@ -17,9 +17,9 @@ export const SpaceshipContainer = styled.div`
 
   img {
     height: 6rem;
-
+    transition: transform 0.2s ease-in-out;
     &:hover {
-      transform: translate(-50%, -50%) scale(1.1);
+      transform: scale(1.2) translateY(-8px);
     }
   }
 `;

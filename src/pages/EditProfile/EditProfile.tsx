@@ -108,7 +108,8 @@ export function EditProfile() {
             <img src={images.MascotsIcone} alt="" />
           </MascotsTitle>
           <span>Conquistas</span>
-        </MascotsAndAchievements> 
+          <img src={images.conquistas} alt="" />
+        </MascotsAndAchievements>
       </Profile>
 
       <ModalProfile open={isPopupOpen} onClose={() => setIsPopupOpen(false)}>

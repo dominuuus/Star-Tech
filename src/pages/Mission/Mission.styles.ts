@@ -9,6 +9,7 @@ export const MissionContainer = styled.section`
 
 export const SectionFilter = styled.section`
   width: 30%;
+  
 `;
 
 export const SectionMissionDetails = styled.section`
@@ -16,6 +17,8 @@ export const SectionMissionDetails = styled.section`
   min-width: 44rem;
   margin-bottom: 10px;
   height: fit-content;
+  background: ${(props) => props.theme.colors.background};
+  color: ${(props) => props.theme.colors.gray.light};
 `;
 
 export const SectionMissionNotifications = styled.div`

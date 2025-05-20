@@ -10,6 +10,7 @@ export const defaultTheme = {
     white: "#FFFFFF", //Branco
     black: "#000000", //Preto
     linkHover: '#646cff', //Hover dos links
+    background: 'radial-gradient(circle at 30% 30%,  #07070b 0%,  #0c0d14 35%,  #11131d 55%,  #1b1e2b 100%)',
     mission: {
       achievementBlockMission: "rgba(0, 176, 252, 0.18)", //Cor azul para destaque de recompensas na página de missões
       missionCardHighlighted: "#575D6D", //Cores do card de missão destacado
@@ -28,7 +29,7 @@ export const defaultTheme = {
       mascotCard: "linear-gradient(90deg, #193083 29%, #24b9ca 100%)",
       bgExplorePage:
         "linear-gradient(90deg, #000000 10%, #000000 22%, #010C1A 36%, #02162F 47%, #031B39 52%, #04244B 62%, #04244C 63%, #052C5C 71%, #053268 77%,  #063977 86%,  #063977 96%,  #063977 100%)",
-      bgLoginIn: "linear-gradient(180deg, #09152B 39%, #1b8c99 100%)",
+      bgLoginIn: "radial-gradient(circle at 30% 30%,  #07070b 0%,  #0c0d14 35%,  #11131d 55%,  #1b1e2b 100%)",
     },
     planet: {
       scale1: "#8674A6", // Cor para exibição do planeta - escala 1

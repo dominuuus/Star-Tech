@@ -35,7 +35,7 @@ export function Explore() {
       viewportRef.current.scrollTo({
         left: 2500 - window.innerWidth / 2,
         top: 2500 - window.innerHeight / 2,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   }, []);
@@ -96,7 +96,7 @@ export function Explore() {
         >
           <PlanetSystem planets={planet} zoom={zoom} />
         </Viewport>
-        
+
         <ZoomControls>
           <ZoomButton onClick={zoomIn}>+</ZoomButton>
           <ZoomButton onClick={zoomOut}>−</ZoomButton>

@@ -116,6 +116,15 @@ export const MascotsAndAchievements = styled.div`
   padding-right: 50px;
   font-weight: bold;
   color: white;
+
+  img {
+    height: 7rem;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2) translateY(-8px);
+    }
+  }
 `;
 
 export const MascotsTitle = styled.span`

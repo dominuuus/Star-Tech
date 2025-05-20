@@ -12,7 +12,7 @@ export const CardMissionContainer = styled.div`
 export const CardMissionContent = styled.div`
   display: grid;
   grid-template-columns: 1fr 40px;
-  background-color: ${(props) => props.theme.colors.gray.lighter};
+  background-color: ${(props) => props.theme.colors.gray.light};
   padding: 20px;
   align-items: center;
   border-radius: 30px;
@@ -69,7 +69,8 @@ export const MissionFilterContainer = styled.section`
   }
   select {
     border: 2px solid ${(props) => props.theme.colors.gray.light};
-    background: #eee;
+    background: ${(props) => props.theme.colors.gray.lighter};
+
     padding: 10px;
     transition: 0.4s;
     border-radius: 5px;
@@ -94,7 +95,7 @@ export const MissionFilterContainer = styled.section`
     gap: 20px;
 
     border: 2px solid ${(props) => props.theme.colors.gray.lighter};
-    background: ${(props) => props.theme.colors.gray.lighter};
+    background-color: ${(props) => props.theme.colors.gray.light};
     padding: 10px;
     transition: 0.4s;
 
@@ -118,11 +119,13 @@ export const MissionFilterContainer = styled.section`
   p {
     display: flex;
     gap: 10px;
+    
   }
 
   label {
     width: fit-content;
     align-self: center;
+    
   }
 `;
 
@@ -134,11 +137,13 @@ export const BoxFilterContainer = styled.section`
 export const ProjectFilterContainer = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
+
 `;
 
 export const DateFilterContainer = styled.section`
   display: flex;
   gap: 5px;
+  
 `;
 
 export const ButtonsContainer = styled.div`

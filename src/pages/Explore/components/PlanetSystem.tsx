@@ -65,14 +65,11 @@ export function PlanetSystem({ planets, zoom }: PlanetSystemProps) {
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseUp}
       >
-        <LineOnePlanet>
-        </LineOnePlanet>
-        
-        <LineTwoPlanet>
-        </LineTwoPlanet>
+        <LineOnePlanet></LineOnePlanet>
 
-        <LineThreePlanet>
-        </LineThreePlanet>
+        <LineTwoPlanet></LineTwoPlanet>
+
+        <LineThreePlanet></LineThreePlanet>
 
         <SpaceshipContainer>
           <img src={images.nave} alt="" />

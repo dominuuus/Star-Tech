@@ -6,7 +6,8 @@ import nave from './images/nave.png';
 import helmet from './images/helmet.svg';
 import leader from './images/leader.jpg';
 import MascotsIcone from './images/MascotsIcone.png'
+import conquistas from './images/conquistas.png'
 
 export default {
-    astronaut1, profile1, coin, logo, nave, helmet, leader, MascotsIcone
+    astronaut1, profile1, coin, logo, nave, helmet, leader, MascotsIcone, conquistas,
 }

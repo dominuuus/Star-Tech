@@ -9,24 +9,18 @@ interface PlanetProps {
 
 export const PlanetStyled = styled.div<PlanetProps>`
   position: absolute;
-  left: ${(props) =>
-    props.$isCentral
-      ? "200px"
-      : `${props.$left}px`};
-  top: ${(props) =>
-    props.$isCentral
-      ? "200px"
-      : `${props.$top}px`};
+  left: ${(props) => (props.$isCentral ? "200px" : `${props.$left}px`)};
+  top: ${(props) => (props.$isCentral ? "200px" : `${props.$top}px`)};
 
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease-in-out;
 
   img {
     height: 20rem;
   }
 
   &:hover {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: scale(1.5) translateY(-8px);
   }
 `;
 
