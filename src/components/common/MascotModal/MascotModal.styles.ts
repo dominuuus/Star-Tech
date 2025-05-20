@@ -11,10 +11,12 @@ export const ModalOverlay = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  
 `;
 
 export const ModalContent = styled.div`
   background-color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.primary};
   padding: 10px;
   border-radius: 8px;
   max-width: 600px;

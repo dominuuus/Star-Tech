@@ -4,14 +4,14 @@ export const BadgeWrapper = styled.div`
   display: flex;
   flex-direction: row;
   padding: 0 20px;
-  height: calc(100vh - 150px);
+  height: 100vh;
   gap: 20px;
   align-items: flex-start;
 `;
 
 export const AchievementList = styled.ul`
   min-width: 400px;
-  height: 100vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;

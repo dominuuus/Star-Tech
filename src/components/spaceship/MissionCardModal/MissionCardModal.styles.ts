@@ -11,6 +11,7 @@ export const MissionCardModalContainer = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  color: ${(props) => props.theme.colors.primary};
 `;
 
 export const MissionCardModalContent = styled.div`

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const DefaultLayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   background:
     radial-gradient(
       2px 2px at 20% 10%,
