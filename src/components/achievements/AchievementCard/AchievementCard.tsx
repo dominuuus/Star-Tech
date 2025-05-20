@@ -99,7 +99,7 @@ export function AchievementCard() {
             }}
             style={{ cursor: locked ? 'not-allowed' : 'pointer' }}
           >
-          <div style={{ position: "relative", zIndex: -1}}>
+          <div>
             <BadgeImg
               src={imageUrl}
               alt={item.Nome}

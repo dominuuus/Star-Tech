@@ -4,14 +4,14 @@ export const BadgeWrapper = styled.div`
   display: flex;
   flex-direction: row;
   padding: 0 20px;
-  height: 100vh;
   gap: 20px;
   align-items: flex-start;
+
 `;
 
 export const AchievementList = styled.ul`
   min-width: 360px;
-  height: 100vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -21,8 +21,6 @@ export const AchievementList = styled.ul`
   align-content: start;
   overflow-y: scroll;
 
-  scrollbar-width: thin;
-  scrollbar-color: #888rgb(153, 35, 35);
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -34,12 +32,12 @@ export const AchievementList = styled.ul`
   }
 
   &::-webkit-scrollbar-thumb {
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.gray.light};
     border-radius: 3px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.gray.light};
   }
 `;
 export const AchievementItem = styled.li`
@@ -56,8 +54,7 @@ export const Badge = styled.button`
   border: none;
   background: none;
   cursor: pointer;
-  width: 100%;
-  height: 100%;
+
 `;
 
 export const BadgeImg = styled.img`
