@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { MissionCard } from "../../components/astronaut/MissionCard/MissionCard";
-import { MissionFilterCard } from "../../components/astronaut/MissionFilterCard/MissionFilterCard";
-import { ProjectStatusCard } from "../../components/astronaut/ProjectStatusCard/ProjectStatusCard";
+import { MissionCard } from "./components/MissionCard/MissionCard";
+import { MissionFilterCard } from "./components/MissionFilterCard/MissionFilterCard";
+import { ProjectStatusCard } from "./components/ProjectStatusCard/ProjectStatusCard";
 import { NewsMission } from "../../components/common/NewsMission/NewsMission";
 import { UserProfile } from "../../components/common/UserProfile/UserProfile";
 import {

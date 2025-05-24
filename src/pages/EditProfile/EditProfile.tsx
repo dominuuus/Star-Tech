@@ -25,7 +25,8 @@ import {
   CredentialContent2,
 } from "./EditProfile.styles";
 import planets from "../../assets/planets";
-import ModalProfile from "./ModalProfile";
+import ModalProfile from "./components/ModalProfile";
+import { NavLink } from "react-router-dom";
 
 export function EditProfile() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -75,7 +76,9 @@ export function EditProfile() {
 
               <ActionButton>
                 <UserCircleGear size={22} />
-                Personalizar
+                <NavLink to="/game/avatar" title="Avatar">
+                        Personalizar
+                    </NavLink> 
               </ActionButton>
             </ActionPanel>
 

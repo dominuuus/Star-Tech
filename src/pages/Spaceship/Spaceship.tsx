@@ -21,8 +21,8 @@ import { Canvas } from "@react-three/fiber";
 import { Codestar3D } from "../../components/common/Objetcs3D/Codestar3D";
 import { Html, OrbitControls } from "@react-three/drei";
 import { UsersThree, PlusCircle } from "phosphor-react";
-import { TripulationModal } from "../../components/spaceship/TripulationModal/TripulationModal";
-import { MissionCardModal } from "../../components/spaceship/MissionCardModal/MissionCardModal";
+import { MissionCardModal } from "./components/MissionCardModal/MissionCardModal";
+import { TripulationModal } from "./components/TripulationModal/TripulationModal";
 
 export function Spaceship() {
   const [isModalOpen, setIsModalOpen] = useState(false);

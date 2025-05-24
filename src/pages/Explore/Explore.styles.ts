@@ -80,7 +80,7 @@ export const ZoomButton = styled.button`
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: ${(props) => props.theme.fontSize.large};
 
   &:hover {
     background: #555;

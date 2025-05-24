@@ -5,14 +5,14 @@ export const SpaceshipContainer = styled.div`
   flex-direction: column;
 
   h1 {
-    font-size: 2rem;
+    font-size: ${(props) => props.theme.fontSize.extraLarge};
   }
 `;
 
 export const SpaceshipContent = styled.div`
   display: flex;
   h1 {
-    font-size: 2rem;
+    font-size: ${(props) => props.theme.fontSize.extraLarge};
   }
 `;
 
@@ -53,7 +53,7 @@ export const SpaceshipCardContainer = styled.div`
       opacity: 0;
       width: 0;
       overflow: hidden;
-      font-size: 1rem;
+      font-size: ${(props) => props.theme.fontSize.large};
       font-weight: bold;
       transition:
         opacity 0.3s ease,
@@ -77,7 +77,7 @@ export const SpaceshipCardContainer = styled.div`
     padding: 10px;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 0.75rem;
+    font-size: ${(props) => props.theme.fontSize.medium};
 
     span {
       opacity: 0;
@@ -106,7 +106,7 @@ export const SpaceshipCardContainer = styled.div`
     padding: 10px;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 0.75rem;
+    font-size: ${(props) => props.theme.fontSize.medium};
 
     span {
       opacity: 0;
@@ -139,7 +139,7 @@ export const ModalContentWrapper = styled.div`
   gap: 10px;
   margin: 20px 20px 20px 10px;
   align-items: center;
-  font-size: 0.75rem;
+  font-size: ${(props) => props.theme.fontSize.medium};
 
   img {
     height: 17rem;
@@ -151,16 +151,16 @@ export const MascotDescriptionContainer = styled.div`
   flex-direction: column;
 
   h1 {
-    font-size: 1.3rem;
+    font-size: ${(props) => props.theme.fontSize.large};
     margin-top: 10px;
   }
   h2 {
-    font-size: 0.75rem;
+    font-size: ${(props) => props.theme.fontSize.medium};
     font-weight: 400;
     margin-bottom: 10px;
   }
   h3 {
-    font-size: 0.75rem;
+    font-size: ${(props) => props.theme.fontSize.medium};
     font-weight: bold;
   }
 
@@ -186,7 +186,7 @@ export const ModalContentInfo = styled.div`
 
   span {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: ${(props) => props.theme.fontSize.large};
   }
 `;
 export const ModalButtons = styled.div`

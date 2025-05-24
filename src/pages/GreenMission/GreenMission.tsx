@@ -1,5 +1,5 @@
-import { GreenMissionCard } from "../../components/green-mission/GreenMissionCard/GreenMissionCard";
-import { GreenMissionLevel } from "../../components/green-mission/GreenMissionLevel/GreenMissionLevel";
+import { GreenMissionCard } from "./components/GreenMissionCard/GreenMissionCard";
+import { GreenMissionLevel } from "./components/GreenMissionLevel/GreenMissionLevel";
 import {
     GoChallegeButton,
   GoChallegeButtonContainer,

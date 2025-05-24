@@ -12,7 +12,9 @@ export function MainTopMenu() {
                     <NavLink to="/" title="Home">
                         Home
                     </NavLink>  
-                    <span>Docs</span> 
+                    <NavLink to="/docs" title="Documentação">
+                        Docs
+                    </NavLink> 
                     <span>Tutorial</span>
                     <span>Playground</span>  
                     </ul>

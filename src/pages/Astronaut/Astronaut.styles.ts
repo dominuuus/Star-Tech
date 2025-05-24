@@ -38,7 +38,7 @@ export const SectionTwoContentTwo = styled.div`
   }
 
   p {
-    font-size: 0.75rem;
+    font-size: ${(props) => props.theme.fontSize.medium};
   }
 `;
 

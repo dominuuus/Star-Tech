@@ -71,7 +71,7 @@ export const AuthSection = styled.section`
   margin-top: 300px;
 
   span {
-    font-size: 1.3rem;
+    font-size: ${(props) => props.theme.fontSize.extraLarge};
     font-weight: bold;
   }
 

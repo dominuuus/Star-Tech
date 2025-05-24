@@ -4,9 +4,9 @@ import {
   SectionMissionDetails,
   SectionMissionNotifications,
 } from "./Mission.styles";
-import { MissionDetails } from "../../components/mission/MissionDetails/MissionDetails";
+import { MissionDetails } from "./components/MissionDetails/MissionDetails";
 import { NewsMission } from "../../components/common/NewsMission/NewsMission";
-import { MissionCardStatus } from "../../components/mission/MissionCardStatus/MissionCardStatus";
+import { MissionCardStatus } from "./components/MissionCardStatus/MissionCardStatus";
 
 export function Mission() {
   return (

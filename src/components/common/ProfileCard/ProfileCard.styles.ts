@@ -9,7 +9,7 @@ export const ProfileCardContainer = styled.div`
   border-radius: 10px;
 
   img {
-    height: 3;
+    height: 2.5rem;
     border-radius: 0.5rem;
   }
 `;

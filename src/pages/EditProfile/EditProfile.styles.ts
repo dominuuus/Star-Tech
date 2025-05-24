@@ -55,6 +55,14 @@ export const Profile = styled.div`
         center;
     }
   }
+
+  a {
+    color: ${(props) => props.theme.colors.primary};
+
+    &:hover {
+      color: ${(props) => props.theme.colors.white};
+    }
+  }
 `;
 
 export const PlanetAndCredentials = styled.div`
@@ -182,7 +190,7 @@ export const ActionButton = styled.div`
   gap: 6px;
   padding: 8px 10px;
   font-weight: bold;
-  font-size: 11px;
+  font-size: ${(props) => props.theme.fontSize.medium};
   border-radius: 10px;
   background: ${({ theme }) => theme.colors.gray.light};
   color: black;
