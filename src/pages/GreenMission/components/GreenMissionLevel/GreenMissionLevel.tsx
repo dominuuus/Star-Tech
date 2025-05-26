@@ -8,9 +8,14 @@ import achievements from "../../../../assets/achievements";
 import { fetchGreenMission, GreenMission } from "../../../../services/greenMissionService";
 import { MissionItem } from "./GreenMissionItem";
 
+interface GreenMissionLevelProps {
+  onSelectLevel: (levelId: number) => void;
+}
 
-export function GreenMissionLevel() {
+export function GreenMissionLevel({ onSelectLevel }: GreenMissionLevelProps) {
   const [missions, setMissions] = useState<GreenMission[]>([]);
+    const [selectedMissionId, setSelectedMissionId] = useState<number | null>(null);
+
   const trailRef = useRef<HTMLDivElement>(null);
   const [isDown, setIsDown] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -39,8 +44,19 @@ export function GreenMissionLevel() {
   };
 
   useEffect(() => {
-      fetchGreenMission().then(setMissions).catch(console.error);
-    }, []);
+    fetchGreenMission().then((data) => {
+      setMissions(data);
+      if (data.length > 0) {
+        setSelectedMissionId(data[0].id);
+        onSelectLevel(data[0].id);
+      }
+    }).catch(console.error);
+  }, [onSelectLevel]);
+
+    const handleMissionClick = (missionId: number) => {
+    setSelectedMissionId(missionId);
+    onSelectLevel(missionId);
+  };
 
   return (
     <GreenMissionTrail
@@ -50,7 +66,8 @@ export function GreenMissionLevel() {
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
     >
-        <SquareLevel>
+        <SquareLevel onClick={() => handleMissionClick(0)}
+        style={{ backgroundColor: selectedMissionId === 0 ? '#e0e0e0' : 'transparent' }}>
           <PhotoSquareLevelBlack>
             <img src={achievements.diplomataCosmico} alt="" />
           </PhotoSquareLevelBlack>

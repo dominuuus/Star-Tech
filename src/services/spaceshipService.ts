@@ -3,35 +3,41 @@ import gameData from "../assets/db/db.json";
 
 export interface Spaceship {
     id: number;
-    Nome: string;
-    Descrição?: string;
-    Status?: string;
-    Planeta_Origem?: string;
-    Planeta_Destino?: string;
-    Progresso_Trajeto: number;
-    Imagem?: string;
+    nome: string;
+    descricao?: string;
+    status?: string;
+    planeta_origem?: string;
+    planeta_destino?: string;
+    progresso_trajeto: number;
+    imagem?: string;
+    top: number;
+    left: number;
 }
 
 interface RawSpaceship {
   id: number;
-  Nome: string;
-  Descrição: string | null;
-  Status: {id: number, Nome: string} | null;
-  Planeta_Origem?: {id: number, Nome: string} | null;
-  Planeta_Destino?: {id: number, Nome: string} | null;
-  Progresso_Trajeto: number;
-  Imagem: string | null;
+  nome: string;
+  descricao: string | null;
+  status: {id: number, nome: string} | null;
+  planeta_origem?: {id: number, nome: string} | null;
+  planeta_destino?: {id: number, nome: string} | null;
+  progresso_trajeto: number;
+  imagem: string | null;
+  top: number;
+  left: number;
 }
 
 const mapRawSquadToSquad = (raw: RawSpaceship): Spaceship => ({
     id: raw.id,
-    Nome: raw.Nome,
-    Descrição: raw.Descrição ? raw.Descrição : undefined,
-    Status: raw.Status?.Nome ? raw.Status.Nome : undefined,
-    Planeta_Origem: raw.Planeta_Origem?.Nome ? raw.Planeta_Origem.Nome : undefined,
-    Planeta_Destino: raw.Planeta_Destino?.Nome ? raw.Planeta_Destino.Nome : undefined,
-    Progresso_Trajeto: raw.Progresso_Trajeto,
-    Imagem: raw.Imagem ? raw.Imagem : undefined,
+    nome: raw.nome,
+    descricao: raw.descricao ? raw.descricao : undefined,
+    status: raw.status?.nome ? raw.status.nome : undefined,
+    planeta_origem: raw.planeta_origem?.nome ? raw.planeta_origem.nome : undefined,
+    planeta_destino: raw.planeta_destino?.nome ? raw.planeta_destino.nome : undefined,
+    progresso_trajeto: raw.progresso_trajeto,
+    imagem: raw.imagem ? raw.imagem : undefined,
+    top: raw.top,
+    left: raw.left,
 });
 
 

@@ -7,6 +7,7 @@ export const HeaderContainer = styled.section`
     align-items: center;
     padding: 10px;
     background: ${(props) => props.theme.colors.primary};
+    
     color: white;
     height: 5rem;
 

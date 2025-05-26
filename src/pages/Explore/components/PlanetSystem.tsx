@@ -2,14 +2,13 @@ import {
   LineOnePlanet,
   LineThreePlanet,
   LineTwoPlanet,
-  NewSpaceshipContainer,
   PlanetSystemContainer,
   SpaceshipContainer,
 } from "./PlanetSystem.styles";
 import { Planet as PlanetType } from "../../../services/planetService";
 import { Planet } from "./Planet";
-import images from "../../../assets/images";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { fetchSpaceship, Spaceship } from "../../../services/spaceshipService";
 
 interface PlanetSystemProps {
   planets: PlanetType[];
@@ -17,6 +16,8 @@ interface PlanetSystemProps {
 }
 
 export function PlanetSystem({ planets, zoom }: PlanetSystemProps) {
+    const [spaceships, setSpaceships] = useState<Spaceship[]>([]);
+  
   const [isDragging, setIsDragging] = useState<boolean>(false);
   const [startPos, setStartPos] = useState<{ x: number; y: number }>({
     x: 0,
@@ -57,6 +58,11 @@ export function PlanetSystem({ planets, zoom }: PlanetSystemProps) {
     setIsDragging(false);
   };
 
+
+  useEffect(() => {
+      fetchSpaceship().then(setSpaceships).catch(console.error);
+    }, []);
+
   return (
     <>
       <PlanetSystemContainer
@@ -72,13 +78,11 @@ export function PlanetSystem({ planets, zoom }: PlanetSystemProps) {
 
         <LineThreePlanet></LineThreePlanet>
 
-        <SpaceshipContainer>
-          <img src={images.naveAnimada} alt="" />
+        {spaceships.map((spaceship) => (
+          <SpaceshipContainer key={spaceship.id} $top={spaceship.top} $left={spaceship.left}>
+          <img src={spaceship.imagem} alt={spaceship.descricao} />
         </SpaceshipContainer>
-
-        <NewSpaceshipContainer>
-          <img src={images.newnave} alt="" />
-        </NewSpaceshipContainer>
+        ))}
 
         {planets.map((planet) => (
           <Planet

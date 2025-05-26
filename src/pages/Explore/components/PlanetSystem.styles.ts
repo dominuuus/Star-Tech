@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 interface PlanetSystemProps {
-  $zoom: number;
+  $zoom?: number;
+  $top?: number;
+  $left?: number;
 }
 
 export const PlanetSystemContainer = styled.div<PlanetSystemProps>`
@@ -10,10 +12,10 @@ export const PlanetSystemContainer = styled.div<PlanetSystemProps>`
   transform: scale(${(props) => props.$zoom});
 `;
 
-export const SpaceshipContainer = styled.div`
+export const SpaceshipContainer = styled.div<PlanetSystemProps>`
   position: absolute;
-  top: 150px;
-  left: 650px;
+  top: ${(props) => props.$top}px;
+  left: ${(props) => props.$left}px;
 
   img {
     height: 6rem;

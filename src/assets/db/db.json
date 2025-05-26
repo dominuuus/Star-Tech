@@ -43,7 +43,7 @@
       "id": 1,
       "Nome": "Codestar-1",
       "Descrição": "Tripulação de elite",
-      "Nave": { "id": 1, "Nome": "Orion Explorer", "Imagem": "link.png" },
+      "Nave": { "id": 1, "Nome": "Orion Explorer", "Imagem": "/images/spaceship/codestar1.gif" },
       "Status": { "id": 5, "Nome": "Ativa" },
       "Tripulação": [
         {
@@ -214,7 +214,7 @@
           ]
         }
       ]
-    }
+    }    
   ],
   "planetas": [
     {
@@ -227,9 +227,9 @@
       "Tema_Principal": { "id": 1, "Nome": "Entrega e Ação" },
       "Imagem": "/images/planet/terrara.png",
       "Gentilico": "Aerisianos",
-      "categoria": "Planeta Principal",
+      "categoria": "Planeta Secundário",
       "top": 0,
-      "left": 0,
+      "left": 800,
       "Mascotes": [
         {
           "id": 1,
@@ -596,7 +596,36 @@
           "Descrição": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
         }
       ]
+    },
+    {
+      "id": 18,
+      "Nome": "Sol",
+      "Descrição": "Um planeta fértil e equilibrado, onde os primeiros projetos foram plantados. Ideal para times iniciantes, representa o começo da jornada e a estruturação de boas práticas de código.",
+      "Titulo": "O Berço dos Primeiros Códigos",
+      "Status": { "id": 1, "Nome": "Não Explorado" },
+      "Qtd_missões": 8,
+      "Tema_Principal": { "id": 1, "Nome": "Entrega e Ação" },
+      "Imagem": "/images/planet/sol.png",
+      "Gentilico": "Aerisianos",
+      "categoria": "Planeta Principal",
+      "top": 0,
+      "left": 0,
+      "Mascotes": [
+        {
+          "id": 1,
+          "Nome": "Buggo",
+          "Imagem": "/images/mascot/buggo.png",
+          "Descrição": "Representação lúdica dos bugs, muda de cor conforme o estado do sistema."
+        },
+        {
+          "id": 2,
+          "Nome": "Syntaxx",
+          "Imagem": "/images/mascot/syntaxx.png",
+          "Descrição": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas."
+        }
+      ]
     }
+    
   ],
   "temas_principais": [
     {
@@ -1355,23 +1384,51 @@
   "naves": [
     {
       "id": 1,
-      "Nome": "Orion Explorer",
-      "Descrição": "Nave ágil",
-      "Status": { "id": 11, "Nome": "Em Rota" },
-      "Planeta_Origem": { "id": 1, "Nome": "Nebula-7" },
-      "Planeta_Destino": { "id": 2, "Nome": "Astra-12" },
-      "Progresso_Trajeto": 50.0,
-      "Imagem": "https://xai.com/ships/orion.webp"
+      "nome": "Codestar-1",
+      "descricao": "Nave ágil",
+      "status": { "id": 11, "nome": "Em Rota" },
+      "planeta_origem": { "id": 1, "nome": "Nebula-7" },
+      "planeta_destino": { "id": 2, "nome": "Astra-12" },
+      "progresso_trajeto": 50.0,
+      "imagem": "/images/spaceship/codestar1.gif",
+      "left": 1100,
+      "top": 0
     },
     {
       "id": 2,
-      "Nome": "Polaris",
-      "Descrição": "Nave em manutenção",
-      "Status": { "id": 3, "Nome": "Estacionada" },
-      "Planeta_Origem": { "id": 2, "Nome": "Astra-12" },
-      "Planeta_Destino": null,
-      "Progresso_Trajeto": 0.0,
-      "Imagem": "https://xai.com/ships/polaris.webp"
+      "nome": "Bug Free One",
+      "descricao": "Nave ágil",
+      "status": { "id": 11, "nome": "Em Rota" },
+      "planeta_origem": { "id": 1, "nome": "Nebula-7" },
+      "planeta_destino": { "id": 2, "nome": "Astra-12" },
+      "progresso_trajeto": 50.0,
+      "imagem": "/images/spaceship/bugfreeone.gif",
+      "left": 1600,
+      "top": 0
+    },
+    {
+      "id": 3,
+      "nome": "R2 Deploy-2",
+      "descricao": "Nave ágil",
+      "status": { "id": 11, "nome": "Em Rota" },
+      "planeta_origem": { "id": 1, "nome": "Nebula-7" },
+      "planeta_destino": { "id": 2, "nome": "Astra-12" },
+      "progresso_trajeto": 50.0,
+      "imagem": "/images/spaceship/r2deploy2.gif",
+      "left": -100,
+      "top": 800
+    },
+    {
+      "id": 4,
+      "nome": "Quantum Patch",
+      "descricao": "Nave ágil",
+      "status": { "id": 11, "nome": "Em Rota" },
+      "planeta_origem": { "id": 1, "nome": "Nebula-7" },
+      "planeta_destino": { "id": 2, "nome": "Astra-12" },
+      "progresso_trajeto": 50.0,
+      "imagem": "/images/spaceship/quantumpatch.gif",
+      "left": 1000,
+      "top": 700
     }
   ],
   "notificacoes": [
@@ -1611,20 +1668,179 @@
       "Referência_id": 1
     }
   ],
-  "niveis_missoes_verdes": [
+"desafios_missoes_verdes": [
     {
       "id": 1,
-      "Nome": "Iniciação Cósmica",
-      "Ordem": 1,
-      "Status": { "id": 10, "Nome": "Desbloqueado" }
+      "nome": "Clique em cada aba do menu principal pelo menos uma vez",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Concluído" },
+      "progresso": 0,
+      "recompensa": 10,
+      "missao_verde_id": 1
     },
     {
       "id": 2,
-      "Nome": "Explorador Novato",
-      "Ordem": 2,
-      "Status": { "id": 4, "Nome": "Bloqueado" }
+      "nome": "Faça o tour completo pela plataforma",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Concluído" },
+      "progresso": 100,
+      "recompensa": 10,
+      "missao_verde_id": 1
+    },
+    {
+      "id": 3,
+      "nome": "Acesse o painel de missões de cada planeta",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Bloqueado" },
+      "progresso": 0,
+      "recompensa": 10,
+      "missao_verde_id": 1
+    },
+    {
+      "id": 4,
+      "nome": "Explore o inventário de personalizações disponíveis",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Desbloqueado" },
+      "progresso": 100,
+      "recompensa": 10,
+      "missao_verde_id": 3
+    },
+    {
+      "id": 5,
+      "nome": "Visite o mural de conquistas de um colega",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Bloqueado" },
+      "progresso": 0,
+      "recompensa": 10,
+      "missao_verde_id": 1
+    },
+    {
+      "id": 6,
+      "nome": "Visualize seu histórico de missões",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Concluído" },
+      "progresso": 100,
+      "recompensa": 10,
+      "missao_verde_id": 2
+    },
+    {
+      "id": 7,
+      "nome": "Acesse o mapa do universo pela primeira vez",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Bloqueado" },
+      "progresso": 100,
+      "recompensa": 10,
+      "missao_verde_id": 4
+    },
+    {
+      "id": 8,
+      "nome": "Aplique um acessório no pet",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Concluído" },
+      "progresso": 100,
+      "recompensa": 1,
+      "missao_verde_id": 5
+    },
+    {
+      "id": 9,
+      "nome": "Mostre seu avatar no mural da equipe",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Desbloqueado" },
+      "progresso": 0,
+      "recompensa": 1,
+      "missao_verde_id": 6
+    },
+    {
+      "id": 10,
+      "nome": "Indique um colega para receber Estelares",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Desbloqueado" },
+      "progresso": 100,
+      "recompensa": 1,
+      "missao_verde_id": 7
+    },
+    {
+      "id": 11,
+      "nome": "Convide alguém para uma missão verde conjunta",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Bloqueado" },
+      "progresso": 0,
+      "recompensa": 1,
+      "missao_verde_id": 8
+    },
+    {
+      "id": 12,
+      "nome": "Dê um feedback positivo para alguém",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Concluído" },
+      "progresso": 100,
+      "recompensa": 1,
+      "missao_verde_id": 9
+    },
+    {
+      "id": 13,
+      "nome": "Comemore uma conquista alheia com fogos virtuais",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Bloqueado" },
+      "progresso": 100,
+      "recompensa": 1,
+      "missao_verde_id": 10
+    },
+    {
+      "id": 14,
+      "nome": "Crie um grito de guerra para a tripulação",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Bloqueado" },
+      "progresso": 0,
+      "recompensa": 1,
+      "missao_verde_id": 11
+    },
+    {
+      "id": 15,
+      "nome": "Compartilhe uma frase motivacional",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Concluído" },
+      "progresso": 100,
+      "recompensa": 1,
+      "missao_verde_id": 12
+    },
+    {
+      "id": 16,
+      "nome": "Marque um colega em um post da galáxia",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Bloqueado" },
+      "progresso": 100,
+      "recompensa": 1,
+      "missao_verde_id": 13
+    },
+    {
+      "id": 17,
+      "nome": "Vote em uma enquete da comunidade",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Bloqueado" },
+      "progresso": 0,
+      "recompensa": 1,
+      "missao_verde_id": 14
+    },
+    {
+      "id": 18,
+      "nome": "Reaja a um “momento do dia” da tripulação",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Concluído" },
+      "progresso": 100,
+      "recompensa": 1,
+      "missao_verde_id": 15
+    },
+    {
+      "id": 19,
+      "nome": "Nomeie uma missão",
+      "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
+      "status": { "id": 1, "nome": "Bloqueado" },
+      "progresso": 100,
+      "recompensa": 1,
+      "missao_verde_id": 13
     }
-  ],
+      ],
   "missoes_verdes": [
     {
       "id": 1,
@@ -1676,10 +1892,10 @@
       "status": { "id": 3, "nome": "Bloqueado" },
       "descricao": "Descrição do nível",
       "qtd_desafios": 5,
-      "tipo": "Comum",
+      "tipo": "Especial",
       "qtd_moedas": 5,
       "progresso": 100,
-      "imagem": "https://xai.com/mission/level1.webp"
+      "imagem": "/images/achievement/qualidade-constante.png"
     },
     {
       "id": 6,
@@ -1690,7 +1906,7 @@
       "tipo": "Comum",
       "qtd_moedas": 5,
       "progresso": 100,
-      "imagem": "https://xai.com/mission/level1.webp"
+      "imagem": "/images/achievement/qualidade-constante.png"
     },
     {
       "id": 7,
@@ -1698,7 +1914,7 @@
       "status": { "id": 3, "nome": "Bloqueado" },
       "descricao": "Descrição do nível",
       "qtd_desafios": 5,
-      "tipo": "Especial",
+      "tipo": "Comum",
       "qtd_moedas": 5,
       "progresso": 100,
       "imagem": "/images/achievement/qualidade-constante.png"
@@ -1712,7 +1928,84 @@
       "tipo": "Comum",
       "qtd_moedas": 5,
       "progresso": 100,
+      "imagem": "/images/mascot/algorix.png"
+    },
+    {
+      "id": 9,
+      "nivel": "Nível 9",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Especial",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": "/images/mascot/algorix.png"
+    },
+    {
+      "id": 10,
+      "nivel": "Nível 10",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Comum",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": "/images/mascot/algorix.png"
+    },
+    {
+      "id": 11,
+      "nivel": "Nível 11",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Comum",
+      "qtd_moedas": 5,
+      "progresso": 100,
       "imagem": ""
+    },
+    {
+      "id": 12,
+      "nivel": "Nível 12",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Comum",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": ""
+    },
+    {
+      "id": 13,
+      "nivel": "Nível 13",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Comum",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": ""
+    },
+    {
+      "id": 14,
+      "nivel": "Nível 14",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Especial",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": "/images/planet/tesserax.png"
+    },
+    {
+      "id": 15,
+      "nivel": "Nível 15",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Comum",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": "/images/planet/tesserax.png"
     }
   ],
   "estatisticas": [

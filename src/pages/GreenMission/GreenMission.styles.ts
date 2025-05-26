@@ -10,21 +10,11 @@ export const GreenMissionContainer = styled.div`
   color: ${(props) => props.theme.colors.white};
   h4 {
     font-weight: bold;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 40px;
-  }
-  p {
-    font-weight: bold;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   hr {
     width: 95%;
-    margin: 20px auto;
-    height: 2.5px;
-    background-color: black;
+    margin-bottom: 20px;
   }
 `;
 
@@ -55,12 +45,31 @@ export const MissionDetailContainer = styled.div`
   border-radius: 10px;
   min-width: 70%;
   padding-bottom: 20px;
+  height: fit-content;
+  padding: 40px;
 `;
 
 export const GoChallegeButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+`;
+
+export const ChellengeRewardContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  div {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
+    align-items: center;
+    span {
+      font-weight: bold;
+    }
+  }
+  img {
+    height: 3rem;
+  }
 `;
 
 export const GoChallegeButton = styled.div`

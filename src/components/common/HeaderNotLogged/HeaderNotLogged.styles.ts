@@ -6,10 +6,9 @@ export const HeaderContainer = styled.section`
   grid-template-columns: 10% 90%;
   align-items: center;
   padding: 10px;
-  background: ${(props) => props.theme.colors.background};
+  background: ${(props) => props.theme.colors.primary};
   color: white;
   height: 5rem;
-  border-bottom: 1px solid white;
 
   img {
     height: 3rem;

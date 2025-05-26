@@ -46,7 +46,7 @@ export const PhotoSquareLevelBlack = styled.div`
   position: relative;
   overflow: hidden;
   img {
-    width: 8rem;
+    height: 7rem;
     z-index: 2;
   }
 
