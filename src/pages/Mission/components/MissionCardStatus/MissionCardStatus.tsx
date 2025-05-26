@@ -20,8 +20,6 @@ import {
 import { fetchMission, Mission } from "../../../../services/missionService";
 import { Link } from "react-router-dom";
 
-
-
 interface Filters {
   status: string;
   project: string;
@@ -32,16 +30,16 @@ interface Filters {
 export function MissionCardStatus() {
   const [missions, setMissions] = useState<Mission[]>([]);
   const [filters, setFilters] = useState<Filters>({
-    status: 'late',
-    project: '',
-    dataInicio: '',
-    dataFim: '',
+    status: "late",
+    project: "",
+    dataInicio: "",
+    dataFim: "",
   });
   const [appliedFilters, setAppliedFilters] = useState<Filters>({
-    status: 'late',
-    project: '',
-    dataInicio: '',
-    dataFim: '',
+    status: "late",
+    project: "",
+    dataInicio: "",
+    dataFim: "",
   });
   useEffect(() => {
     fetchMission().then(setMissions).catch(console.error);
@@ -55,23 +53,23 @@ export function MissionCardStatus() {
   const filterMissions = (missions: Mission[]): Mission[] => {
     return missions.filter((mission) => {
       // Filtro por status
-      if (appliedFilters.status && appliedFilters.status !== 'all') {
+      if (appliedFilters.status && appliedFilters.status !== "all") {
         let statusLabel: string;
         switch (appliedFilters.status) {
-          case 'late':
-            statusLabel = 'Atrasada';
+          case "late":
+            statusLabel = "Atrasada";
             break;
-          case 'inProgress':
-            statusLabel = 'Em Progresso';
+          case "inProgress":
+            statusLabel = "Em Progresso";
             break;
-          case 'pending':
-            statusLabel = 'Não iniciada';
+          case "pending":
+            statusLabel = "Não iniciada";
             break;
-          case 'done':
-            statusLabel = 'Concluída';
+          case "done":
+            statusLabel = "Concluída";
             break;
           default:
-            statusLabel = '';
+            statusLabel = "";
         }
         if (mission.Status !== statusLabel) {
           return false;
@@ -79,14 +77,17 @@ export function MissionCardStatus() {
       }
 
       // Filtro por projeto
-      if (appliedFilters.project && mission.Projeto_Nome !== appliedFilters.project) {
+      if (
+        appliedFilters.project &&
+        mission.Projeto_Nome !== appliedFilters.project
+      ) {
         return false;
       }
 
-            return true;
+      return true;
     });
   };
-  
+
   const handleFilterChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
@@ -100,18 +101,18 @@ export function MissionCardStatus() {
 
   const handleClearFilters = () => {
     const defaultFilters: Filters = {
-      status: 'late',
-      project: '',
-      dataInicio: '',
-      dataFim: '',
+      status: "late",
+      project: "",
+      dataInicio: "",
+      dataFim: "",
     };
     setFilters(defaultFilters);
     setAppliedFilters(defaultFilters);
     // Limpar os inputs
-    if (statusRef.current) statusRef.current.value = 'late';
-    if (projectRef.current) projectRef.current.value = '';
-    if (dataInicioRef.current) dataInicioRef.current.value = '';
-    if (dataFimRef.current) dataFimRef.current.value = '';
+    if (statusRef.current) statusRef.current.value = "late";
+    if (projectRef.current) projectRef.current.value = "";
+    if (dataInicioRef.current) dataInicioRef.current.value = "";
+    if (dataFimRef.current) dataFimRef.current.value = "";
   };
 
   const selectedMissions = filterMissions(missions);
@@ -119,27 +120,21 @@ export function MissionCardStatus() {
   return (
     <>
       <SectionFilter>
-        <details open>
-          <summary>Filtros das missões</summary>
-          <MissionFilterContainer>
+        <MissionFilterContainer>
+          <details>
+            <summary>Filtrar missões</summary>
             <BoxFilterContainer>
-              <select name="status"
+              <select
+                name="status"
                 ref={statusRef}
                 value={filters.status}
-                onChange={handleFilterChange}>
+                onChange={handleFilterChange}
+              >
                 <option value="all">Todas</option>
-                <option value="late">
-                Missões atrasadas
-                </option>
-                <option value="inProgress">
-                Missões em andamento
-                </option>
-                <option value="pending">
-                Missões não iniciadas
-                </option>
-                <option value="done">
-                Missões concluídas
-                </option>
+                <option value="late">Missões atrasadas</option>
+                <option value="inProgress">Missões em andamento</option>
+                <option value="pending">Missões não iniciadas</option>
+                <option value="done">Missões concluídas</option>
               </select>
             </BoxFilterContainer>
 
@@ -150,11 +145,13 @@ export function MissionCardStatus() {
               </div>
 
               <div>
-                <input name="project"
+                <input
+                  name="project"
                   list="project"
                   ref={projectRef}
                   value={filters.project}
-                  onChange={handleFilterChange} />
+                  onChange={handleFilterChange}
+                />
                 <datalist id="project">
                   <option value="BB Cash"></option>
                   <option value="Open Finance"></option>
@@ -168,63 +165,67 @@ export function MissionCardStatus() {
             <DateFilterContainer>
               <div>
                 <label htmlFor="data_inicio">Data inicial:</label>
-                <input type="date"
+                <input
+                  type="date"
                   id="data_inicio"
                   name="dataInicio"
                   ref={dataInicioRef}
                   value={filters.dataInicio}
-                  onChange={handleFilterChange} />
+                  onChange={handleFilterChange}
+                />
               </div>
 
               <div>
                 <label htmlFor="data_fim">Data final:</label>
-                <input type="date"
+                <input
+                  type="date"
                   id="data_fim"
                   name="dataFim"
                   ref={dataFimRef}
                   value={filters.dataFim}
-                  onChange={handleFilterChange} />
+                  onChange={handleFilterChange}
+                />
               </div>
             </DateFilterContainer>
 
             <ButtonsContainer>
               <button onClick={handleClearFilters}>Limpar filtros</button>
-              <ConfirmFilterButton onClick={handleConfirmFilters}>Confirmar</ConfirmFilterButton>
+              <ConfirmFilterButton onClick={handleConfirmFilters}>
+                Confirmar
+              </ConfirmFilterButton>
             </ButtonsContainer>
-          </MissionFilterContainer>
-        </details>
+          </details>
+        </MissionFilterContainer>
 
-        <details open>
-          <summary>Lista de missões</summary>
-          <CardMissionContainer>
-          {selectedMissions.length === 0 ? (
+        <CardMissionContainer>
+          <details open>
+            <summary>Lista de missões</summary>
+            {selectedMissions.length === 0 ? (
               <p>Nenhuma missão encontrada.</p>
             ) : (
               selectedMissions.map((mission) => (
-                <Link to={`/game/missoes/${mission.id}`} key={mission.id} >
-                <CardMissionContent>
-                  <div>
+                <Link to={`/game/missoes/${mission.id}`} key={mission.id}>
+                  <CardMissionContent>
                     <div>
-                      <p>{mission.Nome}</p>
-                      <p>Projeto: {mission.Projeto_Nome || 'Sem projeto'}</p>
+                      <div>
+                        <p>{mission.Nome}</p>
+                        <p>Projeto: {mission.Projeto_Nome || "Sem projeto"}</p>
+                      </div>
+                      <MissionStatusContainer>
+                        <CalendarCheck size={15} weight="fill" />
+                        <span>{mission.Status}</span>
+                      </MissionStatusContainer>
                     </div>
-                    <MissionStatusContainer>
-                      <CalendarCheck size={15} weight="fill" />
-                      <span>{mission.Status}</span>
-                    </MissionStatusContainer>
-                  </div>
-                  <div>
-                    <CaretCircleRight size={32} weight="fill" />
-                  </div>
-                </CardMissionContent>
+                    <div>
+                      <CaretCircleRight size={32} weight="fill" />
+                    </div>
+                  </CardMissionContent>
                 </Link>
               ))
             )}
-          </CardMissionContainer>
-        </details>
+          </details>
+        </CardMissionContainer>
       </SectionFilter>
     </>
   );
 }
-
-

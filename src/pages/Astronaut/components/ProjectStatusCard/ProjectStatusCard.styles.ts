@@ -27,9 +27,7 @@ export const ButtonStatus = styled.div<ButtonProps>`
   cursor: pointer;
   font-size: ${(props) => props.theme.fontSize.medium};
   font-weight: bold;
-  box-shadow:
-    3px 3px 5px rgba(0, 0, 0, 0.1),
-    1px 1px 2px rgba(255, 255, 255, 0.8);
+
   transition:
     color 0.15s,
     background-color 0.15s;

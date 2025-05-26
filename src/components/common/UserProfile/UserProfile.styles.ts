@@ -18,3 +18,7 @@ export const AstronautProfileContainer = styled.div`
     }
   }
 `;
+
+export const Astronaut3DContainer = styled.div`
+
+`;

@@ -2,6 +2,7 @@ import {
   LineOnePlanet,
   LineThreePlanet,
   LineTwoPlanet,
+  NewSpaceshipContainer,
   PlanetSystemContainer,
   SpaceshipContainer,
 } from "./PlanetSystem.styles";
@@ -72,8 +73,13 @@ export function PlanetSystem({ planets, zoom }: PlanetSystemProps) {
         <LineThreePlanet></LineThreePlanet>
 
         <SpaceshipContainer>
-          <img src={images.nave} alt="" />
+          <img src={images.naveAnimada} alt="" />
         </SpaceshipContainer>
+
+        <NewSpaceshipContainer>
+          <img src={images.newnave} alt="" />
+        </NewSpaceshipContainer>
+
         {planets.map((planet) => (
           <Planet
             key={planet.id}

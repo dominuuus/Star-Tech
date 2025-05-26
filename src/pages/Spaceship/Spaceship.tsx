@@ -18,7 +18,7 @@ import {
 import mascotes from "../../assets/mascots";
 import achievements from "../../assets/achievements";
 import { Canvas } from "@react-three/fiber";
-import { Codestar3D } from "../../components/common/Objetcs3D/Codestar3D";
+import { Codestar3D } from "../../components/3D/Codestar3D";
 import { Html, OrbitControls } from "@react-three/drei";
 import { UsersThree, PlusCircle } from "phosphor-react";
 import { MissionCardModal } from "./components/MissionCardModal/MissionCardModal";
@@ -162,7 +162,7 @@ export function Spaceship() {
             </ExploredPlanetContainer>
 
             <MissionUpdatesContent>
-              <NewsMission tipo="Equipe" maxItems={4} />
+              <NewsMission tipo="Equipe" maxItems={6} />
             </MissionUpdatesContent>
           </SpaceshipCardContainer>
         </SpaceshipContent>

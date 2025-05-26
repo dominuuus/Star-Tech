@@ -7,19 +7,22 @@ export const AstronautContainer = styled.main`
 
 export const AstronautSectionTwo = styled.section`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 2rem;
 `;
 
 export const AstronautSectionOne = styled.section`
   display: flex;
   flex-direction: column;
+  width: 40%;
 `;
 
 export const SectionTwoContentOne = styled.div`
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
   margin-top: 1rem;
   gap: 0.5rem;
+  width: 50%;
 `;
 
 export const MascotAchieveNewsContainer = styled.div`
@@ -27,34 +30,37 @@ export const MascotAchieveNewsContainer = styled.div`
   grid-template-columns: 2fr 1fr;
 `;
 
-export const SectionTwoContentTwo = styled.div`
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4.5rem;
+export const Title = styled.span`
+  font-size: bold;
+`;
 
-  span {
-    font-weight: bold;
-  }
+export const SectionTwoContentTwo = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  border-radius: 1rem;
+  padding: 2.5rem;
 
   p {
     font-size: ${(props) => props.theme.fontSize.medium};
   }
 `;
 
-export const NewsContent = styled.div`
-  width: 100%;
+export const SectionTwoContentThree = styled.div`
+  width: 45%;
+
+
 `;
 
 export const MissionStatusContent = styled.div`
   display: flex;
   flex-direction: column;
-  background: ${(props) => props.theme.colors.gray.lighter};
-  height: 26rem;
+  background: inherit;
+  height: 45rem;
   border-radius: 0.75rem;
-  padding: 1rem;
+  padding: 3rem;
   gap: 1.2rem;
-  margin-top: 20px;
+  overflow: auto;
 `;
 
 export const MissionFilterContainer = styled.div`

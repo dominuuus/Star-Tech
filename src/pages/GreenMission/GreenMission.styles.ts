@@ -6,7 +6,8 @@ export const GreenMissionContainer = styled.div`
   gap: 50px;
   background-color: inherit;
   height: 100vh;
-  color: ${(props) => props.theme.colors.primary};
+  padding: 0 40px;
+  color: ${(props) => props.theme.colors.white};
   h4 {
     font-weight: bold;
     padding-left: 50px;
@@ -35,7 +36,8 @@ export const GreenMissionBar = styled.div`
 export const GreenMissionDetails = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 50px;
+  padding: 40px;
 `;
 
 export const ListOfMissionsContainer = styled.div`
@@ -49,7 +51,7 @@ export const MissionDetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: ${(props) => props.theme.colors.gray.lighter};
+  background-color: ${(props) => props.theme.colors.secondary};
   border-radius: 10px;
   min-width: 70%;
   padding-bottom: 20px;

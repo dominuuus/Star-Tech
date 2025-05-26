@@ -13,6 +13,7 @@ export interface Project {
   Data_Prevista_Término?: string;
   Data_Conclusão?: string;
   Status?: string;
+  icone: string;
 }
 
 interface RawProject {
@@ -27,6 +28,7 @@ interface RawProject {
   Data_Prevista_Término: string | null;
   Data_Conclusão: string | null;
   Status: { id: number; Nome: string } | null;
+  icone: string;
 }
 
 const mapRawProjectToMascot = (raw: RawProject): Project => ({
@@ -41,6 +43,7 @@ const mapRawProjectToMascot = (raw: RawProject): Project => ({
     Data_Prevista_Término: raw.Data_Prevista_Término ? raw.Data_Prevista_Término : undefined,
     Data_Conclusão: raw.Data_Conclusão ? raw.Data_Conclusão : undefined,
     Status: raw.Status ? raw.Status?.Nome : undefined,
+    icone: raw.icone,
 });
 
 export async function fetchProject(): Promise<Project[]> {

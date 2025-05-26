@@ -1058,7 +1058,8 @@
       "Data_Início": "2025-04-01T00:00:00Z",
       "Data_Prevista_Término": null,
       "Data_Conclusão": null,
-      "Status": { "id": 8, "Nome": "Em Progresso" }
+      "Status": { "id": 8, "Nome": "Em Progresso" },
+      "icone": "⌛"
     },
     {
       "id": 2,
@@ -1071,7 +1072,8 @@
       "Data_Início": "2025-03-15T00:00:00Z",
       "Data_Prevista_Término": "2025-04-28T23:59:59Z",
       "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": { "id": 9, "Nome": "Concluída" }
+      "Status": { "id": 9, "Nome": "Concluída" },
+      "icone": "⌛"
     },
     {
       "id": 3,
@@ -1084,7 +1086,8 @@
       "Data_Início": "2025-03-15T00:00:00Z",
       "Data_Prevista_Término": "2025-04-28T23:59:59Z",
       "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": { "id": 9, "Nome": "Atrasada" }
+      "Status": { "id": 9, "Nome": "Atrasada" },
+      "icone": "⌛"
     },
     {
       "id": 4,
@@ -1097,7 +1100,8 @@
       "Data_Início": "2025-04-01T00:00:00Z",
       "Data_Prevista_Término": null,
       "Data_Conclusão": null,
-      "Status": { "id": 8, "Nome": "Em Progresso" }
+      "Status": { "id": 8, "Nome": "Em Progresso" },
+      "icone": "⌛"
     },
     {
       "id": 5,
@@ -1110,7 +1114,8 @@
       "Data_Início": "2025-03-15T00:00:00Z",
       "Data_Prevista_Término": "2025-04-28T23:59:59Z",
       "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": { "id": 9, "Nome": "Concluída" }
+      "Status": { "id": 9, "Nome": "Concluída" },
+      "icone": "⌛"
     },
     {
       "id": 6,
@@ -1123,7 +1128,8 @@
       "Data_Início": "2025-03-15T00:00:00Z",
       "Data_Prevista_Término": "2025-04-28T23:59:59Z",
       "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": { "id": 9, "Nome": "Atrasada" }
+      "Status": { "id": 9, "Nome": "Atrasada" },
+      "icone": "⌛"
     },
     {
       "id": 7,
@@ -1136,7 +1142,8 @@
       "Data_Início": "2025-04-01T00:00:00Z",
       "Data_Prevista_Término": null,
       "Data_Conclusão": null,
-      "Status": { "id": 8, "Nome": "Em Progresso" }
+      "Status": { "id": 8, "Nome": "Em Progresso" },
+      "icone": "⌛"
     },
     {
       "id": 8,
@@ -1149,20 +1156,22 @@
       "Data_Início": "2025-03-15T00:00:00Z",
       "Data_Prevista_Término": "2025-04-28T23:59:59Z",
       "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": { "id": 9, "Nome": "Concluída" }
+      "Status": { "id": 9, "Nome": "Concluída" },
+      "icone": "⌛"
     },
     {
       "id": 9,
       "Nome": "Financiamento Imobiliário",
       "Descrição": "Autenticação segura",
-      "Progresso": 44.0,
+      "Progresso": 20.0,
       "Equipe": { "id": 1, "Nome": "Nave Orion" },
       "Planeta_Base": { "id": 2, "Nome": "Astra-12" },
       "Planeta_Destino": null,
       "Data_Início": "2025-03-15T00:00:00Z",
       "Data_Prevista_Término": "2025-04-28T23:59:59Z",
       "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": { "id": 9, "Nome": "Atrasada" }
+      "Status": { "id": 9, "Nome": "Atrasada" },
+      "icone": "⌛"
     }
   ],
   "mascotes": [
@@ -1373,7 +1382,12 @@
       "Status": { "id": 2, "Nome": "Pendente" },
       "Usuário": { "id": 1, "Nome": "Astro João" },
       "Equipe": null,
-      "Projeto": { "id": 1, "Nome": "API Estelar" },
+      "Projeto": {
+        "id": 1,
+        "Nome": "Empréstimo Pessoal",
+        "icone": "✔️",
+        "progresso": 55
+      },
       "Tipo": "Equipe"
     },
     {
@@ -1383,7 +1397,12 @@
       "Status": { "id": 9, "Nome": "Concluída" },
       "Usuário": null,
       "Equipe": { "id": 1, "Nome": "Nave Orion" },
-      "Projeto": { "id": 2, "Nome": "Sistema de Login" },
+      "Projeto": {
+        "id": 2,
+        "Nome": "Open Finance",
+        "icone": "🛠️",
+        "progresso": 70
+      },
       "Tipo": "Usuário"
     },
     {
@@ -1393,7 +1412,7 @@
       "Status": { "id": 9, "Nome": "Concluída" },
       "Usuário": null,
       "Equipe": { "id": 1, "Nome": "Nave Orion" },
-      "Projeto": { "id": 2, "Nome": "Sistema de Login" },
+      "Projeto": { "id": 2, "Nome": "BB Cash", "icone": "⌛", "progresso": 70 },
       "Tipo": "Equipe"
     },
     {
@@ -1403,8 +1422,13 @@
       "Status": { "id": 9, "Nome": "Concluída" },
       "Usuário": null,
       "Equipe": { "id": 1, "Nome": "Nave Orion" },
-      "Projeto": { "id": 2, "Nome": "Sistema de Login" },
-      "Tipo": "Usuário"
+      "Projeto": {
+        "id": 2,
+        "Nome": "Carteira bB",
+        "icone": "⚠️",
+        "progresso": 2
+      },
+      "Tipo": "Equipe"
     },
     {
       "id": 5,
@@ -1413,7 +1437,12 @@
       "Status": { "id": 2, "Nome": "Pendente" },
       "Usuário": { "id": 1, "Nome": "Astro João" },
       "Equipe": null,
-      "Projeto": { "id": 1, "Nome": "API Estelar" },
+      "Projeto": {
+        "id": 1,
+        "Nome": "BB Investimento",
+        "icone": "🌳",
+        "progresso": 35
+      },
       "Tipo": "Equipe"
     },
     {
@@ -1423,7 +1452,12 @@
       "Status": { "id": 9, "Nome": "Concluída" },
       "Usuário": null,
       "Equipe": { "id": 1, "Nome": "Nave Orion" },
-      "Projeto": { "id": 2, "Nome": "Sistema de Login" },
+      "Projeto": {
+        "id": 2,
+        "Nome": "Empréstimo Pessoal",
+        "icone": "🎯",
+        "progresso": 90
+      },
       "Tipo": "Usuário"
     },
     {
@@ -1433,7 +1467,12 @@
       "Status": { "id": 9, "Nome": "Concluída" },
       "Usuário": null,
       "Equipe": { "id": 1, "Nome": "Nave Orion" },
-      "Projeto": { "id": 2, "Nome": "Sistema de Login" },
+      "Projeto": {
+        "id": 2,
+        "Nome": "Financiamento Imobiliário",
+        "icone": "🧩",
+        "progresso": 100
+      },
       "Tipo": "Equipe"
     },
     {
@@ -1443,8 +1482,13 @@
       "Status": { "id": 9, "Nome": "Concluída" },
       "Usuário": null,
       "Equipe": { "id": 1, "Nome": "Nave Orion" },
-      "Projeto": { "id": 2, "Nome": "Sistema de Login" },
-      "Tipo": "Usuário"
+      "Projeto": {
+        "id": 2,
+        "Nome": "Acessibilidade App",
+        "icone": "⚡",
+        "progresso": 80
+      },
+      "Tipo": "Equipe"
     }
   ],
   "credenciais": [
@@ -1584,19 +1628,91 @@
   "missoes_verdes": [
     {
       "id": 1,
-      "Nome": "Tour Cósmico",
-      "Descrição": "Explore a plataforma",
-      "Status": { "id": 9, "Nome": "Concluída" },
-      "Qtd_moedas": 5,
-      "Nível": { "id": 1, "Nome": "Iniciação Cósmica" }
+      "nivel": "Nível 1",
+      "status": { "id": 1, "nome": "Concluído" },
+      "descricao": "Descrição do nível",
+      "tipo": "Comum",
+      "qtd_desafios": 5,
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": "https://xai.com/mission/level1.webp"
     },
     {
       "id": 2,
-      "Nome": "Primeiro Commit",
-      "Descrição": "Faça seu primeiro commit",
-      "Status": { "id": 2, "Nome": "Pendente" },
-      "Qtd_moedas": 5,
-      "Nível": { "id": 1, "Nome": "Iniciação Cósmica" }
+      "nivel": "Nível 2",
+      "status": { "id": 1, "nome": "Concluído" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Comum",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": "https://xai.com/mission/level1.webp"
+    },
+    {
+      "id": 3,
+      "nivel": "Nível 3",
+      "status": { "id": 2, "nome": "Desbloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Comum",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": "https://xai.com/mission/level1.webp"
+    },
+    {
+      "id": 4,
+      "nivel": "Nível 4",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Comum",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": "https://xai.com/mission/level1.webp"
+    },
+    {
+      "id": 5,
+      "nivel": "Nível 5",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Comum",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": "https://xai.com/mission/level1.webp"
+    },
+    {
+      "id": 6,
+      "nivel": "Nível 6",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Comum",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": "https://xai.com/mission/level1.webp"
+    },
+    {
+      "id": 7,
+      "nivel": "Nível 7",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Especial",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": "/images/achievement/qualidade-constante.png"
+    },
+    {
+      "id": 8,
+      "nivel": "Nível 8",
+      "status": { "id": 3, "nome": "Bloqueado" },
+      "descricao": "Descrição do nível",
+      "qtd_desafios": 5,
+      "tipo": "Comum",
+      "qtd_moedas": 5,
+      "progresso": 100,
+      "imagem": ""
     }
   ],
   "estatisticas": [

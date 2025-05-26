@@ -1,22 +1,45 @@
 import styled from "styled-components";
 
 export const CardMissionContainer = styled.div`
-  padding: 10px;
+  padding: 1rem;
+  overflow: auto;
+  border-radius: 1rem;
+  margin-top: 1rem;
 
   a {
     color: ${(props) => props.theme.colors.secondary};
     font-weight: 400;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: ${(props) => props.theme.colors.gray.light};
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: ${(props) => props.theme.colors.news};
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: ${(props) => props.theme.colors.news};
   }
 `;
 
 export const CardMissionContent = styled.div`
   display: grid;
   grid-template-columns: 1fr 40px;
-  background-color: ${(props) => props.theme.colors.gray.light};
+  background-color: ${(props) => props.theme.colors.secondary};
   padding: 20px;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 10px;
   margin-bottom: 10px;
+  color: ${(props) => props.theme.colors.white};
+
   transition:
     color 0.15s,
     background-color 0.15s;
@@ -45,14 +68,12 @@ export const MissionStatusContainer = styled.div`
   gap: 3px;
 `;
 
-export const SectionFilter = styled.section`
-  summary {
-    margin-top: 10px;
-  }
-`;
+export const SectionFilter = styled.section``;
 
 export const MissionFilterContainer = styled.section`
-  margin-top: 10px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: ${(props) => props.theme.colors.secondary};
   div {
     input {
       width: 100%;
@@ -119,13 +140,11 @@ export const MissionFilterContainer = styled.section`
   p {
     display: flex;
     gap: 10px;
-    
   }
 
   label {
     width: fit-content;
     align-self: center;
-    
   }
 `;
 
@@ -135,15 +154,15 @@ export const BoxFilterContainer = styled.section`
 `;
 
 export const ProjectFilterContainer = styled.div`
-  margin-top: 10px;
-  margin-bottom: 10px;
-
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: ${(props) => props.theme.fontSize.medium};
 `;
 
 export const DateFilterContainer = styled.section`
   display: flex;
   gap: 5px;
-  
+  font-size: ${(props) => props.theme.fontSize.medium};
 `;
 
 export const ButtonsContainer = styled.div`

@@ -3,29 +3,39 @@ import gameData from "../assets/db/db.json";
 
 export interface GreenMission {
   id: number;
-  Nome: string;
-  Descrição?: string;
-  Status: string;
-  Qtd_moedas?: number;
-  Nível?: string;
+  nivel: string;
+  status: string;
+  descricao?: string;
+  tipo?: string;
+  qtd_desafios?: number;
+  qtd_moedas?: number;
+  progresso?: number;
+  imagem?: string;
 }
 
 interface RawGreenMission {
   id: number;
-  Nome: string;
-  Descrição: string | null;
-  Status: {id: number, Nome: string};
-  Qtd_moedas: number | null;
-  Nível: {id: number, Nome: string} | null;
+  nivel: string;
+  status: { id: number; nome: string };
+  descricao: string | null;
+  tipo?: string | null;
+  qtd_desafios: number | null;
+  qtd_moedas?: number | null;
+  progresso?: number | null;
+  imagem: string | null;
+
 }
 
 const mapRawGreenMissionToGreenMission = (raw: RawGreenMission): GreenMission => ({
     id: raw.id,
-    Nome: raw.Nome,
-    Descrição: raw.Descrição ? raw.Descrição : undefined,
-    Status: raw.Status.Nome,
-    Qtd_moedas: raw.Qtd_moedas ? raw.Qtd_moedas : undefined,
-    Nível: raw.Nível?.Nome ? raw.Nível.Nome : undefined,
+    nivel: raw.nivel,
+    descricao: raw.descricao ? raw.descricao : undefined,
+    status: raw.status.nome,
+    tipo: raw.tipo ? raw.tipo : undefined,
+    qtd_desafios: raw.qtd_desafios ?? undefined,
+    qtd_moedas: raw.qtd_moedas ?? undefined,
+    progresso: raw.progresso ?? undefined,
+    imagem: raw.imagem ? raw.imagem : undefined
 });
 
 export async function fetchGreenMission(): Promise<GreenMission[]> {

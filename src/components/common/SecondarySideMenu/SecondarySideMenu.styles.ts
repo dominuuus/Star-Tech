@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MenuContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.colors.secondary};
   width: 2rem;
   height: 30rem;
   align-items: center;
@@ -21,7 +21,7 @@ export const MenuContainer = styled.div`
   }
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.primary};
+    background-color: ${(props) => props.theme.colors.secondary};
     width: 4rem;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;

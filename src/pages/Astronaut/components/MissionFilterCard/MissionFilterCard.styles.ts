@@ -19,10 +19,7 @@ const StatusMission = styled.div<StatusProps>`
   font-weight: bold;
   font-size: ${(props) => props.theme.fontSize.medium};
 
-  box-shadow:
-    3px 3px 5px rgba(0, 0, 0, 0.1),
-    -1px -1px 2px rgba(255, 255, 255, 0.8);
-
+  
   p {
     font-weight: lighter;
   }
@@ -56,9 +53,7 @@ export const StatusLateMission = styled.div<StatusProps>`
   font-weight: bold;
   align-items: center;
   font-size: ${(props) => props.theme.fontSize.medium};
-  box-shadow:
-    3px 3px 5px rgba(0, 0, 0, 0.1),
-    1px 1px 2px rgba(255, 255, 255, 0.8);
+  
   transition:
     color 0.15s,
     background-color 0.15s;

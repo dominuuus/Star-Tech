@@ -18,7 +18,7 @@ export const SpaceshipContent = styled.div`
 
 export const MissionUpdatesContent = styled.div`
   width: 20rem;
-  height: 50rem;
+  height: fit-content;
   margin-left: 68rem;
 `;
 

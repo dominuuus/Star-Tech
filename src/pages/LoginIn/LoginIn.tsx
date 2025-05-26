@@ -1,13 +1,13 @@
 import { Canvas } from "@react-three/fiber";
 import { HeaderNotLogged } from "../../components/common/HeaderNotLogged/HeaderNotLogged";
 import { OrbitControls } from "@react-three/drei";
-import { Aeris3D } from "../../components/common/Objetcs3D/Aeris3D";
 import {
   AuthSection,
   LoginInContainer,
   LoginInContent,
 } from "./LoginIn.styles";
 import { NavLink } from "react-router-dom";
+import { Pyron3D } from "../../components/3D/Pyron3D";
 
 export function LoginIn() {
   return (
@@ -22,7 +22,7 @@ export function LoginIn() {
           >
             <ambientLight intensity={3} />
             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-              <Aeris3D />
+              <Pyron3D />
             <OrbitControls autoRotate autoRotateSpeed={0.6} />
           </Canvas>
 

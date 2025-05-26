@@ -24,6 +24,20 @@ export const SpaceshipContainer = styled.div`
   }
 `;
 
+export const NewSpaceshipContainer = styled.div`
+  position: absolute;
+  top: 450px;
+  left: 650px;
+
+  img {
+    height: 6rem;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.2) translateY(-8px);
+    }
+  }
+`;
+
 export const LineOnePlanet = styled.div`
   border: 10px solid ${(props) => props.theme.colors.gray.light};
   position: absolute;

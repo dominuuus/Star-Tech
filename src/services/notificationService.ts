@@ -8,7 +8,9 @@ export interface Notification {
   Status: string;
   Usuário?: string;
   Equipe?: string;
-  Projeto?: string;
+  Projeto_nome?: string;
+  Projeto_icone?: string;
+  Projeto_progresso?: number;
   Tipo: string;
 }
 
@@ -19,7 +21,7 @@ interface RawNotification {
   Status: { id: number; Nome: string };
   Usuário: { id: number; Nome: string } | null;
   Equipe: { id: number; Nome: string } | null;
-  Projeto: { id: number; Nome: string } | null;
+  Projeto: { id: number; Nome: string, icone: string, progresso: number } | null;
   Tipo: string;
 }
 
@@ -32,7 +34,9 @@ const mapRawNotificationToNotification = (
   Status: raw.Status.Nome,
   Usuário: raw.Usuário?.Nome ? raw.Usuário.Nome : undefined,
   Equipe: raw.Equipe?.Nome ? raw.Equipe.Nome : undefined,
-  Projeto: raw.Projeto?.Nome ? raw.Projeto.Nome : undefined,
+  Projeto_nome: raw.Projeto?.Nome ? raw.Projeto.Nome : undefined,
+  Projeto_icone: raw.Projeto?.icone ? raw.Projeto.icone : undefined,
+  Projeto_progresso: raw.Projeto?.progresso ? raw.Projeto.progresso : undefined,
   Tipo: raw.Tipo,
 });
 

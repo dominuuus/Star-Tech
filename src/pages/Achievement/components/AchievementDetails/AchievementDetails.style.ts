@@ -20,6 +20,7 @@ export const ButtonClose = styled.button`
   align-items: center;
   justify-content: center;
   background-color: rgba(26, 32, 44, 0.9);
+  color: ${(props) => props.theme.colors.white};
 `
 
 export const AchievementHeader = styled.div`

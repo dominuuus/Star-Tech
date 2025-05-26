@@ -23,19 +23,17 @@ export const ProjectProgressContent = styled.div`
 `;
 
 export const ProjectProgressDefault = styled.div`
-  background-color: ${(props) => props.theme.colors.gray.light};
+  background-color: ${(props) => props.theme.colors.secondary};
   border-radius: 30px;
   width: 90%;
-  font-size: ${(props) => props.theme.fontSize.medium};
-  box-shadow:
-    3px 3px 5px rgba(0, 0, 0, 0.1),
-    1px 1px 2px rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
 `;
 
 const ProjectProgressStatus = styled.div<ProgressBarProps>`
   padding: 0.75rem;
   align-items: center;
   border-radius: 30px;
+  color: ${(props) => props.theme.colors.white};
   width: ${(props) => (props.$animate ? props.$progress : 0)}%;
   animation: ${(props) => (props.$animate ? "grow 2.5s linear" : "none")};
   @keyframes grow {

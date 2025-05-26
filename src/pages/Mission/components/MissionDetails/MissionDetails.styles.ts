@@ -6,13 +6,10 @@ interface ProgressProps {
 }
 
 export const MissionDetailsContainer = styled.div`
-  border: 1px solid ${(props) => props.theme.colors.gray.light};
   padding: 0 2rem;
   border-radius: 20px;
   background-color: inherit;
-  box-shadow:
-    2px 3px 3px rgba(0, 0, 0, 0.1),
-    1px 1px 2px rgba(255, 255, 255, 0.8);
+
 `;
 
 export const MissionDetailsContent = styled.div`

@@ -17,16 +17,16 @@ export const MissionCardContainer = styled.div`
 
 export const MissionCardContent = styled.div`
   display: flex;
-  background-color: ${(props) => props.theme.colors.white};
-  border-radius: 37px;
+  color: ${(props) => props.theme.colors.gray.light};
+  background-color: ${(props) => props.theme.colors.secondary};
+  border-radius: 10px;
   padding: 10px;
+  height: 6rem;
   align-items: center;
   transition:
     color 0.15s,
     background-color 0.15s;
-  box-shadow:
-    3px 3px 5px rgba(0, 0, 0, 0.1),
-    1px 1px 2px rgba(255, 255, 255, 0.8);
+  
   div {
     margin-right: 20px;
   }

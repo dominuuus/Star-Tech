@@ -2,7 +2,6 @@ import { useState } from "react";
 import { MissionCard } from "./components/MissionCard/MissionCard";
 import { MissionFilterCard } from "./components/MissionFilterCard/MissionFilterCard";
 import { ProjectStatusCard } from "./components/ProjectStatusCard/ProjectStatusCard";
-import { NewsMission } from "../../components/common/NewsMission/NewsMission";
 import { UserProfile } from "../../components/common/UserProfile/UserProfile";
 import {
   AchievementContainer,
@@ -15,9 +14,10 @@ import {
   MissionCardContainer,
   MissionFilterContainer,
   MissionStatusContent,
-  NewsContent,
   SectionTwoContentOne,
+  SectionTwoContentThree,
   SectionTwoContentTwo,
+  Title,
 } from "./Astronaut.styles";
 import { MascotPage } from "../../components/common/MascotModal/MascotModal";
 import { AchievementPage } from "../../components/common/AchievementModal/AchievementModal";
@@ -36,46 +36,42 @@ export function Astronaut() {
           <MascotAchieveNewsContainer>
             <MascotContainer>
               <div>
-                <span>Mascotes</span>
+                <Title>Mascotes</Title>
               </div>
               <MascotPage />
             </MascotContainer>
             <AchievementContainer>
               <div>
-                <span>Conquistas</span>
+                <Title>Conquistas</Title>
               </div>
               <AchievementPage />
             </AchievementContainer>
           </MascotAchieveNewsContainer>
-
-          <NewsContent>
-            <NewsMission tipo="Usuário" maxItems={4} />
-          </NewsContent>
+          <div>
+            <SectionTwoContentTwo>
+              <CommandCenterContent>
+                <ProjectStatusCard />
+              </CommandCenterContent>
+            </SectionTwoContentTwo>
+          </div>
         </SectionTwoContentOne>
 
-        <SectionTwoContentTwo>
-          <div>
-            <span>Central de Comando</span>
-            <p>Projetos</p>
-            <CommandCenterContent>
-              <ProjectStatusCard />
-            </CommandCenterContent>
-          </div>
+        <SectionTwoContentThree>
+                      
 
-          <div>
-            <MissionStatusContent>
-              <MissionFilterContainer>
-                <MissionFilterCard
-                  selectedFilter={selectedFilter}
-                  onFilterChange={setSelectedFilter}
-                />
-              </MissionFilterContainer>
-              <MissionCardContainer>
-                <MissionCard selectedFilter={selectedFilter} />
-              </MissionCardContainer>
-            </MissionStatusContent>
-          </div>
-        </SectionTwoContentTwo>
+          <MissionStatusContent>
+            <Title>🛰️Radar de transmissões</Title>
+            <MissionFilterContainer>
+              <MissionFilterCard
+                selectedFilter={selectedFilter}
+                onFilterChange={setSelectedFilter}
+              />
+            </MissionFilterContainer>
+            <MissionCardContainer>
+              <MissionCard selectedFilter={selectedFilter} />
+            </MissionCardContainer>
+          </MissionStatusContent>
+        </SectionTwoContentThree>
       </AstronautSectionTwo>
     </AstronautContainer>
   );
