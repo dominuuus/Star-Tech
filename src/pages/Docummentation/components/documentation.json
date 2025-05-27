@@ -1,0 +1,39 @@
+{
+  "documentacao": [
+    {
+      "id": 1,
+      "titulo": "Visão Geral",
+      "conteudo": "### Objetivo\n---\n\nTornar a rotina de desenvolvedores mais lúdica, motivadora e engajada por meio da gamificação. A proposta incentiva a melhoria contínua da qualidade do código, o cumprimento de prazos e a colaboração entre equipes.\n\n### Tema\n---\n\nA temática central é uma aventura espacial, onde cada equipe de desenvolvedores representa a tripulação de uma nave.\n\nAs ações dos integrantes afetam diretamente a qualidade do código, a reputação da tripulação e o sucesso da jornada pelo universo do projeto."
+    },
+    {
+      "id": 2,
+      "titulo": "Temática e Cenário",
+      "conteudo": "### Ambientação\n---\n\n- **Espaçonave e Tripulação**: Cada equipe de devs é uma tripulação responsável por uma nave.\n- **Universo do Jogo**: O cenário é um cosmos explorável, onde planetas e galáxias representam etapas do projeto.\n- **Estado Inicial**: A nave começa quebrada em um planeta, exigindo reparos (missões vermelhas) para decolar.\n\n### Alegorias das Missões\n---\n\n- **Reparos da Nave** ↔ **Correção de bugs e demandas críticas**.\n- **Melhorias da Nave** ↔ **Otimizações de código e features adicionais**.\n- **Missões de Resgate** ↔ **Colaboração entre equipes**."
+    },
+    {
+      "id": 3,
+      "titulo": "Objetos e Papéis dos Usuários",
+      "conteudo": "### Tipos de Missões\n---\n\n**🔴 Missões Vermelhas (Urgente)**\n- Objetivo: Resolver bugs críticos e tarefas essenciais para o funcionamento do projeto.\n- Recompensa: Avanço no progresso da nave (reparos básicos).\n\n**🟡 Missões Amarelas (Melhoria)**\n- Objetivo: Otimizações, refatorações e melhorias de performance.\n- Recompensa: Estelares (moeda do jogo).\n\n**🔵 Missões Azuis (Colaboração)**\n- Objetivo: Ajudar outras equipes em tarefas emergenciais ou de alta complexidade.\n- Recompensa: Itens exclusivos e Medalha Cósmica.\n\n**🟢 Missões Verdes (Básica)**\n- Objetivo: Tarefas simples, documentação, pequenas melhorias.\n- Recompensa: XP e customizações de avatar.\n\n### Personagens e Customização\n---\n\n- **Avatar do Dev**: Cada participante pode personalizar seu avatar com roupas, acessórios e equipamentos temáticos.\n- **Pets Alienígenas**: Criaturas colecionáveis que acompanham a tripulação. Servem como elementos de diversão e diferenciação estética (sem impacto direto no progresso)."
+    },
+    {
+      "id": 4,
+      "titulo": "Mecânicas Principais",
+      "conteudo": "### Sistema de Missões\n---\n\n- **Missões Vermelhas**: Devem ser concluídas para \"decolar a nave\" (entregar o projeto funcional).\n- **Missões Amarelas**: Liberam Estelares, usados para melhorias de desempenho e cosméticos.\n- **Missões Azuis**: Eventos de colaboração entre equipes, com recompensas exclusivas.\n\n### Economia do Jogo (Estelares)\n---\n\n- **O que comprar?**\n  - Melhorias de nave (performance do projeto).\n  - Itens de avatar (personalização).\n  - Pets e itens colecionáveis.\n\n### Sistema de Medalhas e Premiações\n---\n\n- **Medalha Cósmica**: Ganha ao completar missões azuis.\n- **Prêmios Reais**: Ao juntar 5 medalhas, o dev recebe benefícios do \"Banco Galático\" (BB)."
+    },
+    {
+      "id": 5,
+      "titulo": "Progressão e Recompensas",
+      "conteudo": "### Viagens e Etapas do Projeto\n---\n\n- Cada **planeta explorado** = **etapa concluída do projeto**.\n- Chegar antes do prazo = bônus (melhorias extras).\n\n### Colecionismo e Pets\n---\n\n- **Pets Tamagotchi**: Encontrados em planetas, evoluem com interação.\n- **Itens Raros**: Adquiridos em missões colaborativas."
+    },
+    {
+      "id": 6,
+      "titulo": "Premiações e Reconhecimento",
+      "conteudo": "### No Jogo\n---\n\n- **Ranking de Tripulações**: Equipes mais eficientes.\n- **Medalhas Cósmicas**: Destaque em colaboração.\n\n### No Mundo Real\n---\n\n- **Prêmios do Banco do Brasil**: Para devs com mais medalhas (ex.: vale-presente, dias de folga)."
+    },
+    {
+      "id": 7,
+      "titulo": "Considerações Finais",
+      "conteudo": "### Flexibilidade\n---\n\n- Número de medalhas para prêmios pode ser ajustado.\n\n### Expansões Futuras\n---\n\n- Novos planetas (projetos), raças alienígenas (equipes externas), e eventos sazonais."
+    }
+  ]
+}

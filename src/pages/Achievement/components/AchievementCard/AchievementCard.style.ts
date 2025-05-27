@@ -32,12 +32,12 @@ export const AchievementList = styled.ul`
   }
 
   &::-webkit-scrollbar-thumb {
-    background: ${(props) => props.theme.colors.gray.light};
+    background: ${(props) => props.theme.colors.secondary};
     border-radius: 3px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: ${(props) => props.theme.colors.gray.light};
+    background: ${(props) => props.theme.colors.secondary};
   }
 `;
 export const AchievementItem = styled.li`
