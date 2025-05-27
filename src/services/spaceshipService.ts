@@ -10,6 +10,7 @@ export interface Spaceship {
     planeta_destino?: string;
     progresso_trajeto: number;
     imagem?: string;
+    estatico?: string;
     top: number;
     left: number;
 }
@@ -23,6 +24,7 @@ interface RawSpaceship {
   planeta_destino?: {id: number, nome: string} | null;
   progresso_trajeto: number;
   imagem: string | null;
+  estatico: string | null;
   top: number;
   left: number;
 }
@@ -36,6 +38,7 @@ const mapRawSquadToSquad = (raw: RawSpaceship): Spaceship => ({
     planeta_destino: raw.planeta_destino?.nome ? raw.planeta_destino.nome : undefined,
     progresso_trajeto: raw.progresso_trajeto,
     imagem: raw.imagem ? raw.imagem : undefined,
+    estatico: raw.estatico ? raw.estatico : undefined,
     top: raw.top,
     left: raw.left,
 });

@@ -2,7 +2,7 @@ import { useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export function Codestar3D() {
-  const gltf = useLoader(GLTFLoader, '/codestar.glb');
+  const gltf = useLoader(GLTFLoader, '/files/codestar.glb');
 
   return (
     <primitive 

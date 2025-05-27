@@ -37,7 +37,6 @@ export const UniverseContainer = styled.div`
     80px 80px,
     100% 100%;
 
-  /* ▼ animação suave */
   background-position:
     0 0,
     0 0,
