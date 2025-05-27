@@ -7,7 +7,15 @@ import helmet from './images/helmet.svg';
 import leader from './images/leader.jpg';
 import MascotsIcone from './images/MascotsIcone.png'
 import conquistas from './images/conquistas.png'
+import bracelete from './images/bracelete.png'
+import capaceteCromado from './images/capaceteCromado.png'
+import capaceteColorido from './images/capaceteColorido.png'
+import celular from './images/celular.png'
+import cilindro from './images/cilindro.png'
+import jetPack from './images/jetPack.png'
+import manopla from './images/manopla.png'
+import traje from './images/traje.png'
 
 export default {
-    astronaut1, profile1, coin, logo, nave, helmet, leader, MascotsIcone, conquistas,
+    astronaut1, profile1, coin, logo, nave, helmet, leader, MascotsIcone, conquistas, bracelete, capaceteCromado, capaceteColorido, celular, cilindro, jetPack, manopla, traje
 }
