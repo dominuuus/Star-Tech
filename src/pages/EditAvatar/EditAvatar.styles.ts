@@ -3,18 +3,22 @@ import styled from "styled-components";
 export const EditAvatarContainer = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   height: 100vh;
+  gap: 100px;
+  width: 90vw;
+  margin-top: 20px;
   span {
     font-weight: bold;
     padding: 5px;
     font-size: 22px;
   }
 `;
+
 export const Inventory = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 120px;
 `;
 export const GridInventario = styled.div`
   display: grid;
@@ -52,8 +56,9 @@ export const Equip = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: 80px;
 `;
+
 export const GridEquip = styled.div`
   display: flex;
   flex-direction: column;
@@ -67,7 +72,7 @@ export const BodyCell = styled.div`
 
 export const ZoomableAstronaut = styled.div<{ "data-zoom"?: boolean }>`
   transition: transform 0.5s ease;
-  transform: ${({ 'data-zoom': zoom }) =>
+  transform: ${({ "data-zoom": zoom }) =>
     zoom ? "scale(2.5) translateY(-30%)" : "scale(1) translateY(0)"};
   transform-origin: top center;
 
@@ -80,7 +85,6 @@ export const ZoomableAstronaut = styled.div<{ "data-zoom"?: boolean }>`
 
 export const AstronautImage = styled.div`
   position: relative;
-  padding: 90px;
   img {
     width: 300px;
     display: block;
