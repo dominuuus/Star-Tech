@@ -7,9 +7,9 @@ export function BugFreeOne3D() {
   return (
     <primitive 
       object={gltf.scene} 
-      scale={6} 
+      scale={4} 
       position={[-0.5, 0, 0]}
-      rotation={[0, Math.PI, 0]}
+      rotation={[0.1, Math.PI, 0]}
           />
   );
 }

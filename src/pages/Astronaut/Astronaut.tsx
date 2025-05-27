@@ -57,8 +57,6 @@ export function Astronaut() {
         </SectionTwoContentOne>
 
         <SectionTwoContentThree>
-                      
-
           <MissionStatusContent>
             <Title>🛰️Radar de transmissões</Title>
             <MissionFilterContainer>

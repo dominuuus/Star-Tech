@@ -9,7 +9,7 @@ export const AchievementDetailContainer = styled.div`
   border-radius: 35px;
   padding: 25px;
   margin-left: 60px;
-  background: rgba(26, 32, 44, 0.9);
+  background: ${(props) => props.theme.colors.secondary};
   top: 20px;
   overflow-y: auto;
 `;
@@ -19,7 +19,7 @@ export const ButtonClose = styled.button`
   align-self: flex-end;
   align-items: center;
   justify-content: center;
-  background-color: rgba(26, 32, 44, 0.9);
+  background-color: ${(props) => props.theme.colors.secondary};
   color: ${(props) => props.theme.colors.white};
 `
 

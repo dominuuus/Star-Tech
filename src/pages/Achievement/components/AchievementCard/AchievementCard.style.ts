@@ -62,7 +62,7 @@ export const BadgeImg = styled.img`
   height: 100%;
   object-fit: contain;
   border-radius: 8px;
-  background: #2a2a2a;
+  background:${(props) => props.theme.colors.secondary};
   padding: 8px;
   transition: transform 0.2s;
 

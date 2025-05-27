@@ -52,6 +52,7 @@ export const ProjectProgressSuccess = styled(ProjectProgressStatus)`
   background-color: ${(props) => props.theme.colors.status.green};
 `;
 export const ProjectProgressAlert = styled(ProjectProgressStatus)`
+  color: ${(props) => props.theme.colors.secondary};
   background-color: ${(props) => props.theme.colors.status.yellow};
 `;
 export const ProjectProgressCritical = styled(ProjectProgressStatus)`

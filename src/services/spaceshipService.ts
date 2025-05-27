@@ -2,47 +2,77 @@ import { api } from "../lib/axios";
 import gameData from "../assets/db/db.json";
 
 export interface Spaceship {
-    id: number;
-    nome: string;
-    descricao?: string;
-    status?: string;
-    planeta_origem?: string;
-    planeta_destino?: string;
-    progresso_trajeto: number;
-    imagem?: string;
-    estatico?: string;
-    top: number;
-    left: number;
+  id: number;
+  nome: string;
+  descricao?: string;
+  status?: string;
+  planeta_origem?: string;
+  planeta_destino?: string;
+  progresso_trajeto: number;
+  imagem?: string;
+  estatico?: string;
+  top: number;
+  left: number;
+  velocidade_inercial: number;
+  altitude: number;
+  apogeu: number;
+  perigeu: number;
+  inclinacao: number;
+  altura: number;
+  diametro: number;
+  capacidade_carga: number;
+  combustivel: number;
 }
 
 interface RawSpaceship {
   id: number;
   nome: string;
   descricao: string | null;
-  status: {id: number, nome: string} | null;
-  planeta_origem?: {id: number, nome: string} | null;
-  planeta_destino?: {id: number, nome: string} | null;
+  status: { id: number; nome: string } | null;
+  planeta_origem?: { id: number; nome: string } | null;
+  planeta_destino?: { id: number; nome: string } | null;
   progresso_trajeto: number;
   imagem: string | null;
   estatico: string | null;
   top: number;
   left: number;
+  velocidade_inercial: number;
+  altitude: number;
+  apogeu: number;
+  perigeu: number;
+  inclinacao: number;
+  altura: number;
+  diametro: number;
+  capacidade_carga: number;
+  combustivel: number;
 }
 
 const mapRawSquadToSquad = (raw: RawSpaceship): Spaceship => ({
-    id: raw.id,
-    nome: raw.nome,
-    descricao: raw.descricao ? raw.descricao : undefined,
-    status: raw.status?.nome ? raw.status.nome : undefined,
-    planeta_origem: raw.planeta_origem?.nome ? raw.planeta_origem.nome : undefined,
-    planeta_destino: raw.planeta_destino?.nome ? raw.planeta_destino.nome : undefined,
-    progresso_trajeto: raw.progresso_trajeto,
-    imagem: raw.imagem ? raw.imagem : undefined,
-    estatico: raw.estatico ? raw.estatico : undefined,
-    top: raw.top,
-    left: raw.left,
+  id: raw.id,
+  nome: raw.nome,
+  descricao: raw.descricao ? raw.descricao : undefined,
+  status: raw.status?.nome ? raw.status.nome : undefined,
+  planeta_origem: raw.planeta_origem?.nome
+    ? raw.planeta_origem.nome
+    : undefined,
+  planeta_destino: raw.planeta_destino?.nome
+    ? raw.planeta_destino.nome
+    : undefined,
+  progresso_trajeto: raw.progresso_trajeto,
+  imagem: raw.imagem ? raw.imagem : undefined,
+  estatico: raw.estatico ? raw.estatico : undefined,
+  top: raw.top,
+  left: raw.left,
+  velocidade_inercial: raw.velocidade_inercial,
+  altitude: raw.altitude,
+  apogeu: raw.apogeu,
+  perigeu: raw.perigeu,
+  inclinacao: raw.inclinacao,
+  altura: raw.altura,
+  diametro: raw.diametro,
+  capacidade_carga: raw.capacidade_carga,
+  combustivel: raw.combustivel,
 });
-
 
 export async function fetchSpaceship(): Promise<Spaceship[]> {
   try {

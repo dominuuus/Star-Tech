@@ -1,107 +1,137 @@
-import { useEffect, useRef, useState } from "react";
-import { fetchPlanet, Planet } from "../../services/planetService";
+import { useEffect, useState } from "react";
 import {
-  UniverseContainer,
-  Viewport,
-  ZoomButton,
+  Orbit,
+  PlanetImage,
+  PlanetWrapper,
+  ProgressBarContainer,
+  ProgressContainer,
+  SolarWrapper,
+  SpaceshipContainer,
+  Sun,
+  ZoomContainer,
   ZoomControls,
 } from "./Explore.styles";
-import { PlanetSystem } from "./components/PlanetSystem";
+import { fetchPlanet, Planet } from "../../services/planetService";
+import { fetchSpaceship, Spaceship } from "../../services/spaceshipService";
 
 export function Explore() {
-  const [planet, setPlanets] = useState<Planet[]>([]);
-  const [zoom, setZoom] = useState<number>(0.8);
-  const [isDragging, setIsDragging] = useState<boolean>(false);
-  const [startPos, setStartPos] = useState<{ x: number; y: number }>({
-    x: 0,
-    y: 0,
-  });
-  const [startScroll, setStartScroll] = useState<{ left: number; top: number }>(
-    { left: 0, top: 0 }
-  );
-  const viewportRef = useRef<HTMLDivElement>(null);
+  const [planets, setPlanets] = useState<Planet[]>([]);
 
-  const handleWheel = (e: React.WheelEvent<HTMLDivElement>) => {
+  useEffect(() => {
+    fetchPlanet().then(setPlanets);
+  }, []);
+
+  const [spaceships, setSpaceships] = useState<Spaceship[]>([]);
+
+  useEffect(() => {
+    fetchSpaceship().then(setSpaceships).catch(console.error);
+  }, []);
+
+  const [zoomLevel, setZoomLevel] = useState(1.2);
+  const [offset, setOffset] = useState({ x: 0, y: 0 });
+  const [isDragging, setIsDragging] = useState(false);
+  const [startDrag, setStartDrag] = useState({ x: 0, y: 0 });
+
+  const handleZoomIn = () => setZoomLevel((prev) => Math.min(prev + 0.1, 3));
+  const handleZoomOut = () => setZoomLevel((prev) => Math.max(prev - 0.1, 0.3));
+  const handleResetZoom = () => {
+    setZoomLevel(1);
+    setOffset({ x: 0, y: 0 });
+  };
+
+  const handleWheel = (e: React.WheelEvent) => {
+    if (e.ctrlKey || !e.deltaY) return;
     e.preventDefault();
-    setZoom((prev) => {
-      const newZoom = Math.min(Math.max(prev - e.deltaY * 0.001, 0.2), 2);
-      console.log(`Zoom: ${newZoom}`);
-      return newZoom;
+    const direction = e.deltaY > 0 ? -0.1 : 0.1;
+    setZoomLevel((prev) => Math.min(Math.max(prev + direction, 0.3), 3));
+  };
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setIsDragging(true);
+    setStartDrag({ x: e.clientX - offset.x, y: e.clientY - offset.y });
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging) return;
+    setOffset({
+      x: e.clientX - startDrag.x,
+      y: e.clientY - startDrag.y,
     });
   };
 
-  useEffect(() => {
-    if (viewportRef.current) {
-      viewportRef.current.scrollTo({
-        left: 2500 - window.innerWidth / 2,
-        top: 2500 - window.innerHeight / 2,
-        behavior: "smooth",
-      });
-    }
-  }, []);
-
-  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (viewportRef.current) {
-      setIsDragging(true);
-      setStartPos({ x: e.clientX, y: e.clientY });
-      setStartScroll({
-        left: viewportRef.current.scrollLeft,
-        top: viewportRef.current.scrollTop,
-      });
-    }
-  };
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (isDragging && viewportRef.current) {
-      const dx = e.clientX - startPos.x;
-      const dy = e.clientY - startPos.y;
-      viewportRef.current.scrollTo({
-        left: startScroll.left - dx,
-        top: startScroll.top - dy,
-        behavior: "auto",
-      });
-      console.log(
-        `Dragging: dx=${dx}, dy=${dy}, scrollLeft=${startScroll.left - dx}, scrollTop=${startScroll.top - dy}`
-      );
-    }
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  const zoomIn = () => {
-    setZoom((prev) => Math.min(prev + 0.1, 2));
-  };
-
-  const zoomOut = () => {
-    setZoom((prev) => Math.max(prev - 0.1, 0.2));
-  };
-
-  useEffect(() => {
-    fetchPlanet().then(setPlanets).catch(console.error);
-  }, []);
+  const handleMouseUp = () => setIsDragging(false);
 
   return (
     <>
-      <UniverseContainer>
-        <Viewport
-          ref={viewportRef}
-          $isDragging={isDragging}
+      <SolarWrapper>
+        <ZoomContainer
+          zoom={zoomLevel}
+          offset={offset}
           onWheel={handleWheel}
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp}
         >
-          <PlanetSystem planets={planet} zoom={zoom} />
-        </Viewport>
+          <Sun />
+          {planets.map((planet, index) => {
+            const radius = 100 + index * 50 + Math.random() * 20;
+            const angle = (45 / planets.length) * index;
 
+            const x = radius * Math.cos(angle);
+            const y = radius * Math.sin(angle);
+
+            return (
+              <Orbit radius={radius}>
+                <PlanetWrapper
+                  key={planet.id}
+                  angle={angle}
+                  style={{
+                    top: `calc(50% + ${y}px)`,
+                    left: `calc(50% + ${x}px)`,
+                  }}
+                >
+                  <PlanetImage src={planet.Imagem} alt={planet.Nome} />
+                  <span>{planet.Nome}</span>
+                </PlanetWrapper>
+              </Orbit>
+            );
+          })}
+
+          {spaceships.map((spaceship) => (
+            <SpaceshipContainer
+              key={spaceship.id}
+              $top={spaceship.top}
+              $left={spaceship.left}
+            >
+              <img src={spaceship.imagem} alt={spaceship.descricao} />
+              <div>
+                <h2>{spaceship.nome}</h2>
+
+                <span>
+                  Viajando a {spaceship.velocidade_inercial.toLocaleString()}{" "}
+                  km/h
+                </span>
+
+                <ProgressContainer>
+                  <span>
+                    {spaceship.planeta_origem} → {spaceship.planeta_destino}
+                  </span>
+
+                  <ProgressBarContainer $progress={spaceship.progresso_trajeto}>
+                    <span>{spaceship.progresso_trajeto}%</span>
+                  </ProgressBarContainer>
+                </ProgressContainer>
+              </div>
+            </SpaceshipContainer>
+          ))}
+        </ZoomContainer>
         <ZoomControls>
-          <ZoomButton onClick={zoomIn}>+</ZoomButton>
-          <ZoomButton onClick={zoomOut}>−</ZoomButton>
+          <button onClick={handleZoomIn}>+</button>
+          <button onClick={handleZoomOut}>−</button>
+          <button onClick={handleResetZoom}>⟳</button>
         </ZoomControls>
-      </UniverseContainer>
+      </SolarWrapper>
     </>
   );
 }

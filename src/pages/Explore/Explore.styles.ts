@@ -1,89 +1,175 @@
 import styled from "styled-components";
 
 interface ExploreProps {
-  $isDragging: boolean;
+  radius?: number;
+  angle?: number;
+  zoom?: number;
+  offset?: { x: number; y: number };
+  $top?: number;
+  $left?: number;
+  $progress?: number;
 }
 
-export const UniverseContainer = styled.div`
-  overflow: auto;
-  background:
-    radial-gradient(
-      2px 2px at 20% 10%,
-      rgba(255, 255, 255, 0.9) 50%,
-      transparent 52%
-    ),
-    radial-gradient(
-      1.6px 1.6px at 70% 80%,
-      rgba(255, 255, 255, 0.8) 50%,
-      transparent 52%
-    ),
-    radial-gradient(
-      1.2px 1.2px at 40% 60%,
-      rgba(255, 255, 255, 0.6) 50%,
-      transparent 52%
-    ),
-    radial-gradient(
-      circle at 30% 30%,
-      #07070b 0%,
-      #0c0d14 35%,
-      #11131d 55%,
-      #1b1e2b 100%
-    );
+export const SolarWrapper = styled.div`
+  position: relative;
+  width: 90vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
-  background-repeat: repeat;
-  background-size:
-    200px 200px,
-    120px 120px,
-    80px 80px,
-    100% 100%;
+export const Sun = styled.div`
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #ffd700, #ffa500);
+  border-radius: 50%;
+  z-index: 10;
+  left: 46.5%;
+  top: 44.5%;
+`;
 
-  background-position:
-    0 0,
-    0 0,
-    0 0,
-    center;
-  animation: starScroll 80s linear infinite;
+export const Orbit = styled.div<ExploreProps>`
+  position: absolute;
+  width: ${({ radius = 0 }) => radius * 2}px;
+  height: ${({ radius = 0 }) => radius * 2}px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
 
-  @keyframes starScroll {
-    to {
-      background-position:
-        1000px 0,
-        600px 0,
-        400px 0,
-        center;
+export const PlanetWrapper = styled.div<ExploreProps>`
+  position: absolute;
+  transform: rotate(${({ angle }) => angle}deg) translateX(50%)
+    rotate(-${({ angle }) => angle}deg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+
+  span {
+    font-size: ${(props) => props.theme.fontSize.medium};
+  }
+`;
+
+export const PlanetImage = styled.img`
+  width: 60px;
+  height: 60px;
+`;
+
+export const ZoomContainer = styled.div<ExploreProps>`
+  transform: translate(
+      ${({ offset = { x: 0, y: 0 } }) => `${offset.x}px, ${offset.y}px`}
+    )
+    scale(${({ zoom }) => zoom});
+  transform-origin: center center;
+  transition: transform 0.1s ease-out;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  user-select: none;
+`;
+
+export const ZoomControls = styled.div`
+  position: sticky;
+  z-index: 200;
+  display: flex;
+  flex-direction: row;
+
+  button {
+    background: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => props.theme.colors.white};
+    font-size: ${(props) => props.theme.fontSize.large};
+    margin: 4px;
+    border: none;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      background: ${(props) => props.theme.colors.tertiary};
     }
   }
 `;
 
-export const Viewport = styled.div<ExploreProps>`
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background: transparent;
+export const SpaceshipContainer = styled.div<ExploreProps>`
+  position: absolute;
+  top: ${(props) => props.$top}px;
+  left: ${(props) => props.$left}px;
   display: flex;
-  cursor: ${(props) => (props.$isDragging ? "grabbing" : "grab")};
-`;
+  flex-direction: row;
 
-export const ZoomControls = styled.div`
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  gap: 10px;
-`;
+  img {
+    height: 3rem;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.2) translateY(-8px);
+    }
+  }
 
-export const ZoomButton = styled.button`
-  background: #333;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: ${(props) => props.theme.fontSize.large};
+  h2 {
+    font-size: ${(props) => props.theme.fontSize.large};
+  }
 
+  h4 {
+    font-size: ${(props) => props.theme.fontSize.small};
+  }
+
+  span {
+    font-size: ${(props) => props.theme.fontSize.medium};
+  }
+
+  div {
+    display: none;
+  }
   &:hover {
-    background: #555;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
   }
 `;
 
+export const ProgressContainer = styled.div<ExploreProps>`
+  width: 100%;
+  background-color: ${(props) => props.theme.colors.secondary};
+  border-radius: 0 0 10px 10px;
+  height: 20px;
+  padding-left: 5px;
+`;
 
+export const ProgressBarContainer = styled.div<ExploreProps>`
+  width: ${(props) => props.$progress}%;
+  background-color: ${(props) => props.theme.colors.goldCoin};
+  border-radius: 20px 0 20px 20px;
+  height: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  animation: ${(props) => (props.$progress ? "grow 4.5s linear" : "none")};
+  @keyframes grow {
+    0% {
+      width: 10%;
+      transform: scale(1);
+    }
+    ${(props) => props.$progress} {
+      width: ${(props) => props.$progress}%;
+      transform: scale(1);
+    }
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 0.5rem;
+  }
+`;

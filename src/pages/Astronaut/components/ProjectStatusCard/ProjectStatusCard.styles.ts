@@ -49,7 +49,7 @@ export const ProjectProgressBar = styled.div`
   padding-right: 0.5rem;
 
   &::-webkit-scrollbar {
-    width: 6px;
+    display: none;
   }
 
   &::-webkit-scrollbar-track {
