@@ -32,12 +32,12 @@ export const AchievementList = styled.ul`
   }
 
   &::-webkit-scrollbar-thumb {
-    background: ${(props) => props.theme.colors.gray.light};
+    background: ${(props) => props.theme.colors.secondary};
     border-radius: 3px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: ${(props) => props.theme.colors.gray.light};
+    background: ${(props) => props.theme.colors.secondary};
   }
 `;
 export const AchievementItem = styled.li`
@@ -62,7 +62,7 @@ export const BadgeImg = styled.img`
   height: 100%;
   object-fit: contain;
   border-radius: 8px;
-  background: #2a2a2a;
+  background:rgb(0, 0, 0);
   padding: 8px;
   transition: transform 0.2s;
 
