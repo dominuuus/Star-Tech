@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Header } from "../../components/common/Header/Header";
 import { DocummentationContainer, DocummentationContent, DocumentationLayout } from "./Docummentation.styles";
 import { TabMenu } from './components/TabMenu';
 import { ContentDetails } from './components/ContentDetails';
@@ -15,7 +14,6 @@ export function Docummentation() {
 
   return (
     <DocummentationContainer>
-      <Header />
       <DocumentationLayout>
         <TabMenu
           items={documentationData.documentacao.map(({ id, titulo }) => ({ id, titulo }))}

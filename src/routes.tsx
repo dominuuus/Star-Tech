@@ -12,6 +12,8 @@ import { UserPage } from "./pages/UserPublicProfile/UserPublicProfile";
 import { EditProfile } from "./pages/EditProfile/EditProfile";
 import { Docummentation } from "./pages/Docummentation/Docummentation";
 import { EditAvatar } from "./pages/EditAvatar/EditAvatar";
+import { AboutUs } from "./pages/About/About";
+import { NotLoggedLayout } from "./layouts/notLogged/notLoggedLayout";
 
 export function Router() {
   return (
@@ -29,13 +31,15 @@ export function Router() {
         <Route path="oficina" element={<Hangar />} />
         <Route path="nave" element={<Spaceship />} />
         <Route path="desafios" element={<GreenMission />} />
+        <Route path="docs" element={<Docummentation />} />
       </Route>
 
       <Route path="/usuarios/:id" element={<UserPage />} />
-      <Route path="/docs" element={<Docummentation />} />
 
-      <Route path="/" element={<LoginIn />}>
-        <Route path="404" element={<Astronaut />} />
+      <Route path="/" element={<NotLoggedLayout />}>
+        <Route path="/" element={<LoginIn />} />
+        <Route path="sobre" element={<AboutUs />} />
+        <Route path="docs" element={<Docummentation />} />
       </Route>
     </Routes>
   );

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProfileCardContainer = styled.div`
-  background: ${(props) => props.theme.colors.gradients.profileMenu};
+  background: ${(props) => props.theme.colors.secondary};
   display: flex;
   align-items: center;
   gap: 1rem;

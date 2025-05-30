@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { Canvas } from "@react-three/fiber";
 
 export const LoginInContainer = styled.section`
-  height: 100vh;
+  min-height: 91vh;
   background:
     radial-gradient(
       2px 2px at 20% 10%,
@@ -54,21 +55,28 @@ export const LoginInContainer = styled.section`
 
 export const LoginInContent = styled.section`
   display: flex;
-  flex-direction: column;
-  max-width: 100vw;
-  height: 86vh;
+  flex-direction: row;
+  height: 91vh;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    height: 70vh;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    height: 70vh;
+  }
 `;
 
 export const AuthSection = styled.section`
-  position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 20px;
   color: ${(props) => props.theme.colors.white};
-  margin-left: 900px;
-  margin-top: 300px;
+  left: 60%;
+  top: 50%;
 
   span {
     font-size: ${(props) => props.theme.fontSize.extraLarge};
@@ -77,7 +85,7 @@ export const AuthSection = styled.section`
 
   button {
     width: 12rem;
-    background: ${(props) => props.theme.colors.primary};
+    background: ${(props) => props.theme.colors.secondary};
     color: ${(props) => props.theme.colors.white};
     border: 0px;
 
@@ -86,5 +94,25 @@ export const AuthSection = styled.section`
       color: ${(props) => props.theme.colors.white};
       border: 0px;
     }
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    left: 35%;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    left: 35%;
+  }
+`;
+
+export const StyledCanvas = styled(Canvas)`
+  right: 10%;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    right: 0;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    right: 0;
   }
 `;

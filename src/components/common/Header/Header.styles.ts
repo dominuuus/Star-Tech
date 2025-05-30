@@ -8,7 +8,7 @@ export const HeaderContainer = styled.section`
     padding: 10px;
     background: ${(props) => props.theme.colors.primary};
     
-    color: white;
+    color: ${(props) => props.theme.colors.white};
     height: 5rem;
 
     img {

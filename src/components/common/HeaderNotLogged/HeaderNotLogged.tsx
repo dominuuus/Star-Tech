@@ -7,19 +7,19 @@ export function HeaderNotLogged() {
     return (
         <HeaderContainer>
             <LogoContainer>
-                <img src={images.logo} alt="" />
+                <NavLink to="/"><img src={images.logo} alt="" /></NavLink>
             </LogoContainer>
 
             <MainTopMenuContainer>
             <NavigationContainer>
                 <nav>
                     <ul>
-                    <NavLink to="/" title="Home">
-                        Home
+                    <NavLink to="/sobre" title="Home">
+                        Sobre
                     </NavLink>  
-                    <span>Docs</span> 
-                    <span>Tutorial</span>
-                    <span>Playground</span> 
+                    <NavLink to="/docs" title="Documentação">
+                        Docs
+                    </NavLink> 
                     </ul>
                 </nav>
             </NavigationContainer>

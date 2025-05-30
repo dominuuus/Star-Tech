@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.section`
   width: 100vw;
-  display: grid;
-  grid-template-columns: 10% 90%;
+  display: flex;
   align-items: center;
   padding: 10px;
-  background: ${(props) => props.theme.colors.primary};
-  color: white;
+  color: ${(props) => props.theme.colors.white};
   height: 5rem;
+  justify-content: space-between;
+  font-size: ${(props) => props.theme.fontSize.medium};
 
   img {
     height: 3rem;

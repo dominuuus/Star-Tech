@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const MainTopMenuContainer = styled.div`
-  display: grid;
-  grid-template-columns: 40% 20% 40%;
+  display: flex;
+  justify-content: space-between;
   gap: 2rem;
   align-items: center;
 `;
@@ -10,6 +10,7 @@ export const MainTopMenuContainer = styled.div`
 export const NavigationContainer = styled.div`
   display: flex;
   flex-direction: row;
+  font-size: ${(props) => props.theme.fontSize.medium};
 
   ul {
     display: flex;
@@ -59,4 +60,6 @@ export const SearchContainer = styled.div`
 
 export const ProfileContainer = styled.div`
   width: 25rem;
+  display: flex;
+  justify-content: right;
 `;

@@ -15,7 +15,8 @@ import cilindro from './images/cilindro.png'
 import jetPack from './images/jetPack.png'
 import manopla from './images/manopla.png'
 import traje from './images/traje.png'
+import aboutStarTech from './images/aboutStarTech.png'
 
 export default {
-    astronaut1, profile1, coin, logo, nave, helmet, leader, MascotsIcone, conquistas, bracelete, capaceteCromado, capaceteColorido, celular, cilindro, jetPack, manopla, traje
+    astronaut1, profile1, coin, logo, nave, helmet, leader, MascotsIcone, conquistas, bracelete, capaceteCromado, capaceteColorido, celular, cilindro, jetPack, manopla, traje, aboutStarTech,
 }

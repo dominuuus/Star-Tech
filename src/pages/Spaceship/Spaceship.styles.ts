@@ -7,6 +7,9 @@ export const SpaceshipContainer = styled.div`
   h1 {
     font-size: ${(props) => props.theme.fontSize.extraLarge};
   }
+
+  
+
 `;
 
 export const SpaceshipContent = styled.div`
@@ -20,6 +23,12 @@ export const MissionUpdatesContent = styled.div`
   width: 20rem;
   height: fit-content;
   margin-left: 68rem;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 2rem;
+  }
 `;
 
 export const ExploredPlanetContainer = styled.div`
@@ -194,6 +203,11 @@ export const ModalButtons = styled.div`
   gap: 10px;
   justify-content: right;
   margin-top: 20px;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 `;
 
 export const CloseModalButton = styled.button`
@@ -203,3 +217,4 @@ export const CloseModalButton = styled.button`
   border-radius: 4px;
   cursor: pointer;
 `;
+
