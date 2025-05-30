@@ -14,10 +14,10 @@ import {
   SpaceshipCardContainer,
   SpaceshipContainer,
   SpaceshipContent,
+  StyledCanvas,
 } from "./Spaceship.styles";
 import mascotes from "../../assets/mascots";
 import achievements from "../../assets/achievements";
-import { Canvas } from "@react-three/fiber";
 import { Codestar3D } from "../../components/3D/Codestar3D";
 import { Html, OrbitControls } from "@react-three/drei";
 import { UsersThree, PlusCircle } from "phosphor-react";
@@ -56,12 +56,10 @@ export function Spaceship() {
         )}
         <SpaceshipContent>
           <SpaceshipCardContainer>
-            <Canvas
+            <StyledCanvas
               camera={{ position: [0, 0, 5], fov: 50 }}
               style={{
                 position: "absolute",
-                top: 96,
-                left: 32,
                 zIndex: 0,
                 width: "95vw",
               }}
@@ -98,7 +96,7 @@ export function Spaceship() {
                   <span>Corrigir Falha de Segurança</span>
                 </h3>
               </Html>
-            </Canvas>
+            </StyledCanvas>
 
             <ExploredPlanetContainer>
               <img src={planets.aeris} alt="" onClick={openPlanetModal} />

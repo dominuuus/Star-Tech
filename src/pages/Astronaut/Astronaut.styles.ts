@@ -2,13 +2,7 @@ import styled from "styled-components";
 
 export const AstronautContainer = styled.main`
   display: flex;
-  flex-direction: column;
   margin-bottom: 2rem;
-  gap: 1rem;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
 `;
 
 export const AstronautSectionTwo = styled.section`
@@ -33,12 +27,7 @@ export const SectionTwoContentOne = styled.div`
 
 export const MascotAchieveNewsContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-
-  @media (min-width: 768px) {
-    grid-template-columns: 2fr 1fr;
-  }
+  grid-template-columns: 2fr 1fr;
 `;
 
 export const Title = styled.span`
@@ -59,6 +48,8 @@ export const SectionTwoContentTwo = styled.div`
 
 export const SectionTwoContentThree = styled.div`
   width: 45%;
+
+
 `;
 
 export const MissionStatusContent = styled.div`
@@ -72,7 +63,9 @@ export const MissionStatusContent = styled.div`
   overflow: auto;
 `;
 
-export const MissionFilterContainer = styled.div``;
+export const MissionFilterContainer = styled.div`
+
+`;
 
 export const MissionCardContainer = styled.div`
   overflow-y: auto;
@@ -97,9 +90,11 @@ export const MissionCardContainer = styled.div`
   }
 `;
 
+
 export const CommandCenterContent = styled.div`
   height: 20rem;
   border-radius: 0.75rem;
+  height: 26rem;
 `;
 
 export const MascotContainer = styled.div`

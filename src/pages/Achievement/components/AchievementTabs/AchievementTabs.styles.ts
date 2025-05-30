@@ -20,7 +20,7 @@ export const TabButton = styled.button<AchievementTabsProps>`
   font-weight: bold;
   cursor: pointer;
   background-color: ${($active) => ($active ? '#D8A214' : '#09152B')};
-  color: white;
+  color: ${(props) => props.theme.colors.white};;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   &:hover {

@@ -27,6 +27,23 @@ export const ProjectDescriptionContainer = styled.div`
   img {
     height: 30rem;
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+    padding: 50px 50px 30px 50px;
+
+    img {
+      height: 25rem;
+    }
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    flex-direction: column;
+    img {
+      height: 25rem;
+    }
+  }
+
 `;
 
 export const StaffContainer = styled.div`
@@ -78,6 +95,13 @@ export const FooterContainer = styled.div`
 export const FooterContent = styled.div`
   display: flex;
   flex-direction: row;
-    gap: 100px;
+  gap: 100px;
 
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    flex-direction: column;
+  }
 `;

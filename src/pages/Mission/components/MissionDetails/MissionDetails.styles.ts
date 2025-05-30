@@ -23,6 +23,17 @@ export const MissionDetailsHead = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 5px;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
 `;
 export const MissionTitle = styled.div`
   display: flex;
@@ -71,6 +82,8 @@ export const ProgressMissionBarInfo = styled.div`
   h4.Percentual {
     padding-left: 15px;
   }
+
+  
 `;
 export const ProgressMissionBar = styled.div`
   background-color: ${(props) => props.theme.colors.gray.lighter};
@@ -107,12 +120,24 @@ export const RewardsContainer = styled.div`
   border-top: 1px solid ${(props) => props.theme.colors.gray.light};
   padding: 1rem 2rem 4rem 2rem;
   margin: 2rem 1rem;
+
+  
 `;
 
 export const RewardsCards = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 export const RewardCardEstelar = styled.div`
@@ -123,8 +148,17 @@ export const RewardCardEstelar = styled.div`
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   align-items: center;
+
   h4 {
     padding-left: 15px;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 100%;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    width: 100%;
   }
 `;
 
@@ -141,6 +175,8 @@ export const RewardEstelarPhoto = styled.div`
     height: 3.5rem;
     width: 3.8rem;
   }
+
+  
 `;
 
 export const RewardCardMedal = styled.div`
@@ -151,6 +187,14 @@ export const RewardCardMedal = styled.div`
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   text-align: justify;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 100%;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    width: 100%;
+  }
 `;
 
 export const RewardCardMedalPhoto = styled.div`

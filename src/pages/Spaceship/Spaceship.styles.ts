@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Canvas } from "@react-three/fiber";
 
 export const SpaceshipContainer = styled.div`
   display: flex;
@@ -7,9 +8,6 @@ export const SpaceshipContainer = styled.div`
   h1 {
     font-size: ${(props) => props.theme.fontSize.extraLarge};
   }
-
-  
-
 `;
 
 export const SpaceshipContent = styled.div`
@@ -24,11 +22,14 @@ export const MissionUpdatesContent = styled.div`
   height: fit-content;
   margin-left: 68rem;
 
-  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    margin-left: 0;
-    width: 100%;
-    margin-top: 2rem;
+   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: none;
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    display: none;
+  }
+
 `;
 
 export const ExploredPlanetContainer = styled.div`
@@ -44,6 +45,8 @@ export const ExploredPlanetContainer = styled.div`
       transform: scale(1.2);
     }
   }
+
+  
 `;
 
 export const SpaceshipCardContainer = styled.div`
@@ -204,10 +207,6 @@ export const ModalButtons = styled.div`
   justify-content: right;
   margin-top: 20px;
 
-  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    flex-direction: column;
-    align-items: stretch;
-  }
 `;
 
 export const CloseModalButton = styled.button`
@@ -218,3 +217,16 @@ export const CloseModalButton = styled.button`
   cursor: pointer;
 `;
 
+export const StyledCanvas = styled(Canvas)`
+  position: absolute;
+  top: 10%;
+  left: 1%;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    left: 8%;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    left: 8%;
+  }
+`;

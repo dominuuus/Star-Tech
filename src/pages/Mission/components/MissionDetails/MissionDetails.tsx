@@ -42,7 +42,6 @@ export function MissionDetails() {
 
   useEffect(() => {
     if (id) {
-      // Carregar missão específica por ID
       fetchMissionById(Number(id))
         .then((data) => {
           setMission(data);
@@ -53,7 +52,6 @@ export function MissionDetails() {
           setLoading(false);
         });
     } else {
-      // Carregar missão padrão (primeira atrasada ou primeira disponível)
       fetchMission()
         .then((missions) => {
           if (missions.length === 0) {
@@ -61,7 +59,6 @@ export function MissionDetails() {
             setLoading(false);
             return;
           }
-          // Priorizar missão com status "Atrasada"
           const defaultMission =
             missions.find((m) => m.Status === "Atrasada") || missions[0];
           setMission(defaultMission);

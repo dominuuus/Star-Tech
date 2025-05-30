@@ -21,13 +21,12 @@ export const ButtonClose = styled.button`
   justify-content: center;
   background-color: ${(props) => props.theme.colors.secondary};
   color: ${(props) => props.theme.colors.white};
-`
+`;
 
 export const AchievementHeader = styled.div`
   display: flex;
   gap: 30px;
   margin-bottom: 20px;
-
 `;
 
 export const AchievementImage = styled.img`
@@ -44,7 +43,6 @@ export const AchievementContent = styled.div`
   justify-content: center;
   font-size: ${(props) => props.theme.fontSize.large};
   color: ${(props) => props.theme.colors.white};
-  width: 700px;
   h2 {
     margin: 0 0 15px 0;
     font-size: ${(props) => props.theme.fontSize.extraLarge};
@@ -70,6 +68,16 @@ export const AchievementContent = styled.div`
       white-space: nowrap;
     }
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: row;
+    width: 70vw;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    flex-direction: row;
+    width: 70vw;
+  }
 `;
 
 export const AchievementFooter = styled.div`
@@ -80,7 +88,7 @@ export const AchievementFooter = styled.div`
 
 export const PlanetInfo = styled.div<{ $hasPlanet: boolean }>`
   display: flex;
-  justify-content: ${({ $hasPlanet }) => $hasPlanet ? 'flex-end' : 'center'};
+  justify-content: ${({ $hasPlanet }) => ($hasPlanet ? "flex-end" : "center")};
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
@@ -92,7 +100,6 @@ export const PlanetInfo = styled.div<{ $hasPlanet: boolean }>`
   .planet-text {
     text-align: right;
 
-    
     h3 {
       margin: 0 0 5px 0;
       color: #fff;
@@ -168,7 +175,7 @@ export const PlanetMapLayout = styled.div`
 
   .planet-name {
     color: #fff;
-    font-size: ${(props) => props.theme.fontSize.extraLarge};;
+    font-size: ${(props) => props.theme.fontSize.extraLarge};
     margin-top: 10px;
     text-align: center;
   }
@@ -180,7 +187,7 @@ export const CoinDisplay = styled.div`
   gap: 0.3rem;
   margin-top: 0.9rem;
   span {
-    font-size: ${(props) => props.theme.fontSize.extraLarge};; 
+    font-size: ${(props) => props.theme.fontSize.extraLarge};
     font-weight: bold;
   }
 `;
@@ -190,4 +197,3 @@ export const CoinIcon = styled.img`
   height: 60px;
   object-fit: contain;
 `;
-

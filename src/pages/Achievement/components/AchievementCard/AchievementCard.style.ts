@@ -7,6 +7,14 @@ export const BadgeWrapper = styled.div`
   gap: 20px;
   align-items: flex-start;
 
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    flex-direction: column;
+  }
+
 `;
 
 export const AchievementList = styled.ul`
@@ -47,6 +55,7 @@ export const AchievementItem = styled.li`
   aspect-ratio: 1 / 1;
   max-height: 160px;
   min-height: 160px;
+
 `;
 
 export const Badge = styled.button`
