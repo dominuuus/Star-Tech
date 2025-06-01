@@ -4,9 +4,15 @@ import { Canvas } from "@react-three/fiber";
 export const SpaceshipContainer = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100vh;
 
   h1 {
     font-size: ${(props) => props.theme.fontSize.extraLarge};
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    max-width: 80vw;
+    height: 100vh;
   }
 `;
 
@@ -22,14 +28,13 @@ export const MissionUpdatesContent = styled.div`
   height: fit-content;
   margin-left: 68rem;
 
-   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     display: none;
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
     display: none;
   }
-
 `;
 
 export const ExploredPlanetContainer = styled.div`
@@ -46,7 +51,11 @@ export const ExploredPlanetContainer = styled.div`
     }
   }
 
-  
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    max-width: 18rem;
+    overflow-y: auto;
+    padding: 10px;
+  }
 `;
 
 export const SpaceshipCardContainer = styled.div`
@@ -156,6 +165,14 @@ export const ModalContentWrapper = styled.div`
   img {
     height: 17rem;
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+
+    img {
+    height: 7rem;
+  }
+  }
 `;
 
 export const MascotDescriptionContainer = styled.div`
@@ -183,6 +200,13 @@ export const MascotDescriptionContainer = styled.div`
   img {
     height: 3rem;
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+
+    img {
+    height: 2rem;
+  }
+  }
 `;
 
 export const ModalContentDescription = styled.div`
@@ -206,7 +230,6 @@ export const ModalButtons = styled.div`
   gap: 10px;
   justify-content: right;
   margin-top: 20px;
-
 `;
 
 export const CloseModalButton = styled.button`

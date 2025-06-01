@@ -12,6 +12,10 @@ export const ModalOverlay = styled.div`
   align-items: center;
   z-index: 1000;
   color: ${(props) => props.theme.colors.primary};
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 100vw;
+  }
 `;
 
 export const ModalContent = styled.div`
@@ -22,6 +26,12 @@ export const ModalContent = styled.div`
   width: 90%;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    width: 300px;
+  }
 `;
 
 export const ModalContentWrapper = styled.div`
@@ -34,6 +44,14 @@ export const ModalContentWrapper = styled.div`
 
   img {
     height: 10rem;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+  flex-direction: column;
+
+  img {
+    height: 8rem;
+  }
   }
 `;
 
@@ -58,6 +76,10 @@ export const AchievementContent = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-wrap: nowrap;
+  }
 `;
 
 export const AchievementDescriptionContainer = styled.div`

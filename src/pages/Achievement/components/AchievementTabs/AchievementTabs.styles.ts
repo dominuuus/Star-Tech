@@ -8,6 +8,14 @@ export const TabContainer = styled.div`
   justify-content: flex-start;
   margin: 20px 0 10px 34px;
   gap: 8px;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+    width: 70vw;
+    gap: 8px;
+  }
 `;
 
 export const TabButton = styled.button<AchievementTabsProps>`

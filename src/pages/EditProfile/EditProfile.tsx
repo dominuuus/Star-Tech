@@ -75,7 +75,9 @@ export function EditProfile() {
             <ActionPanel>
               <ActionButton>
                 <PencilSimpleLine size={18} />
-                Editar
+                <NavLink to="" title="Avatar">
+                        Editar
+                    </NavLink> 
               </ActionButton>
 
               <ActionButton>

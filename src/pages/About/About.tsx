@@ -53,10 +53,10 @@ export function AboutUs() {
                 <h2>Ayrton Oliveira</h2>
                 <span>Desenvolvedor</span>
                 <div>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/ayrtonoliveira70411/" target="blank">
                     <LinkedinLogo size={32} />
                   </a>
-                  <a href="">
+                  <a href="https://github.com/AyrtonOliveira" target="blank">
                     <GithubLogoIcon size={32} />
                   </a>
                 </div>
@@ -68,10 +68,10 @@ export function AboutUs() {
                 <h2>Domingos Santiago</h2>
                 <span>Gestor do Projeto & Dev.</span>
                 <div>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/domingos-s-santiago/" target="blank">
                     <LinkedinLogo size={32} />
                   </a>
-                  <a href="">
+                  <a href="https://github.com/dominuuus" target="blank">
                     <GithubLogoIcon size={32} />
                   </a>
                 </div>
@@ -83,10 +83,10 @@ export function AboutUs() {
                 <h2>Gilberto Quintino</h2>
                 <span>Doc. & Geração de Imagens</span>
                 <div>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/gilberto-quintino-2880b71bb/" target="blank">
                     <LinkedinLogo size={32} />
                   </a>
-                  <a href="">
+                  <a href="https://github.com/gilbertoquintino" target="blank">
                     <GithubLogoIcon size={32} />
                   </a>
                 </div>
@@ -98,10 +98,10 @@ export function AboutUs() {
                 <h2>Giseli Felix</h2>
                 <span>Doc. & Geração de Imagens</span>
                 <div>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/giseli-felix-b1a297233/" target="blank">
                     <LinkedinLogo size={32} />
                   </a>
-                  <a href="">
+                  <a href="https://github.com/giseli25" target="blank">
                     <GithubLogoIcon size={32} />
                   </a>
                 </div>
@@ -113,10 +113,10 @@ export function AboutUs() {
                 <h2>João Vitor Malveira</h2>
                 <span>Desenvolvedor</span>
                 <div>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-malveira-0728b218a/" target="blank">
                     <LinkedinLogo size={32} />
                   </a>
-                  <a href="">
+                  <a href="https://github.com/Malveira16" target="blank">
                     <GithubLogoIcon size={32} />
                   </a>
                 </div>
@@ -143,10 +143,10 @@ export function AboutUs() {
                 <h2>Lucas Matheus</h2>
                 <span>Modelagem 3D</span>
                 <div>
-                  <a href="">
+                  <a href="" target="blank">
                     <LinkedinLogo size={32} />
                   </a>
-                  <a href="">
+                  <a href="https://github.com/LucasMOCunha" target="blank">
                     <GithubLogoIcon size={32} />
                   </a>
                 </div>
@@ -158,10 +158,10 @@ export function AboutUs() {
                 <h2>Maria Clara Melo</h2>
                 <span>Desenvolvedora</span>
                 <div>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/maria-clara-de-melo-11b145247/" target="blank">
                     <LinkedinLogo size={32} />
                   </a>
-                  <a href="">
+                  <a href="https://github.com/ClaraMelo72" target="blank">
                     <GithubLogoIcon size={32} />
                   </a>
                 </div>
@@ -173,10 +173,10 @@ export function AboutUs() {
                 <h2>Thayana Lira</h2>
                 <span>Eng. de Requisitos</span>
                 <div>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/thayanalira/" target="blank">
                     <LinkedinLogo size={32} />
                   </a>
-                  <a href="">
+                  <a href="https://github.com/thayanalira" target="blank"> 
                     <GithubLogoIcon size={32} />
                   </a>
                 </div>

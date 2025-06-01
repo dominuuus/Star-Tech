@@ -16,11 +16,21 @@ export const GreenMissionContainer = styled.div`
     width: 95%;
     margin-bottom: 20px;
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    max-width: 80vw;
+    padding: 0;
+    height: 100rem;
+  }
 `;
 
 export const GreenMissionBar = styled.div`
   width: 90vw;
   height: 150px;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    max-width: 300px;
+  }
 `;
 
 export const GreenMissionDetails = styled.div`
@@ -28,6 +38,10 @@ export const GreenMissionDetails = styled.div`
   flex-direction: row;
   gap: 50px;
   padding: 40px;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+  }
 `;
 
 export const ListOfMissionsContainer = styled.div`
@@ -35,6 +49,10 @@ export const ListOfMissionsContainer = styled.div`
   flex-direction: column;
   gap: 10px;
   width: 30%;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 100%;
+  }
 `;
 
 export const MissionDetailContainer = styled.div`
@@ -47,6 +65,10 @@ export const MissionDetailContainer = styled.div`
   padding-bottom: 20px;
   height: fit-content;
   padding: 40px;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    min-width: 100%;
+  }
 `;
 
 export const GoChallegeButtonContainer = styled.div`
@@ -87,5 +109,9 @@ export const GoChallegeButton = styled.div`
   cursor: pointer;
   &:hover {
     transform: scale(1.05);
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    padding:10px;
   }
 `;

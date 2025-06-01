@@ -61,7 +61,7 @@ export function Spaceship() {
               style={{
                 position: "absolute",
                 zIndex: 0,
-                width: "95vw",
+                width: "90vw",
               }}
             >
               <ambientLight intensity={3.5} />

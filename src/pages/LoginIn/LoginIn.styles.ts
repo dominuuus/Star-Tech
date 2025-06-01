@@ -97,12 +97,9 @@ export const AuthSection = styled.section`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    left: 35%;
+    left: 20%;
   }
 
-  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    left: 35%;
-  }
 `;
 
 export const StyledCanvas = styled(Canvas)`

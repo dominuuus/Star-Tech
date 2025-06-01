@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { ProfileCard } from "../ProfileCard/ProfileCard";
 import {
+  CardMobileMenu,
   HamburgerIcon,
   MainTopMenuContainer,
   NavigationContainer,
@@ -31,8 +32,13 @@ export function MainTopMenu() {
         <div></div>
       </HamburgerIcon>
       <NavigationContainer $isOpen={isOpen}>
+        
         <nav>
+          
           <ul>
+            <CardMobileMenu>
+              <ProfileCard />
+            </CardMobileMenu>
             <li>
               <NavLink to="/game/piloto" title="Home">
                 Home
@@ -44,12 +50,9 @@ export function MainTopMenu() {
               </NavLink>
             </li>
             <li>
-              <span>Tutorial</span>
+              <span>Shop</span>
             </li>
             <li>
-              <span>Playground</span>
-            </li>
-             <li>
               <NavLink to="/" title="Home">
                 Sair
               </NavLink>

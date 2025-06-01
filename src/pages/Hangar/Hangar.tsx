@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {
+  BlockedShip,
   HangarContainer,
   HangarDetailsContainer,
   HangarImageContainer,
@@ -31,20 +32,7 @@ function renderSpaceshipModel(spaceship: Spaceship | null) {
                 width: "900px",
               }}
             />
-            <p
-              style={{
-                position: "absolute",
-                top: 200,
-                left: 200,
-                fontSize: "2rem",
-                backgroundColor: "rgba(0, 0, 0, 0.744)",
-                color: "#e2e2db",
-                padding: "20px",
-                borderRadius: "20px",
-              }}
-            >
-              Nave Bloqueada
-            </p>
+            <BlockedShip>Nave Bloqueada</BlockedShip>
           </Html>
         </mesh>
       );
@@ -83,7 +71,9 @@ export function Hangar() {
                 <p>{selectedSpaceship.descricao}</p>
               </div>
             ) : spaceships.length > 0 ? (
-              <p className="ShipTitle">Selecione uma nave para ver os detalhes.</p>
+              <p className="ShipTitle">
+                Selecione uma nave para ver os detalhes.
+              </p>
             ) : (
               <p className="ShipTitle">Não há naves disponíveis.</p>
             )}

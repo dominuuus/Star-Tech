@@ -17,8 +17,12 @@ export const AstronautProfileContainer = styled.div`
       transform: scale(1.15);
     }
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    img {
+      height: 30rem;
+    }
+  }
 `;
 
-export const Astronaut3DContainer = styled.div`
-
-`;
+export const Astronaut3DContainer = styled.div``;

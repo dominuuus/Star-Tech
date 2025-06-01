@@ -17,6 +17,7 @@ export const MainTopMenuContainer = styled.div`
     flex-wrap: wrap;
     justify-content: right;
     padding: 0.5rem;
+
   }
 `;
 
@@ -78,7 +79,8 @@ export const NavigationContainer = styled.div<TopMenuProps>`
     list-style: none;
   }
 
-  a, span {
+  a,
+  span {
     color: ${(props) => props.theme.colors.white};
     text-decoration: none;
     transition: color 0.2s ease;
@@ -98,7 +100,7 @@ export const NavigationContainer = styled.div<TopMenuProps>`
     transform: translateX(${(props) => (props.$isOpen ? "0" : "100%")});
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
-    padding-top: 60px; 
+    padding-top: 60px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
 
     nav {
@@ -117,7 +119,8 @@ export const NavigationContainer = styled.div<TopMenuProps>`
       width: 100%;
     }
 
-    a, span {
+    a,
+    span {
       display: block;
       padding: 0.5rem 0;
       font-size: ${(props) => props.theme.fontSize.large};
@@ -167,5 +170,13 @@ export const ProfileContainer = styled.div`
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     display: none;
+  }
+`;
+
+export const CardMobileMenu = styled.div`
+  display: none;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: flex;
   }
 `;

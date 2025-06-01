@@ -55,7 +55,7 @@ export function MissionCard({ selectedFilter }: MissionCardProps) {
                   <span>Projeto: {mission.Projeto_Nome}</span>
                 </MissionCardTitle>
                 <div>
-                  <CalendarCheck size={15} weight="fill" />
+                  <CalendarCheck size={20} weight="fill" />
                   <p>
                     {(selectedFilter !== "done7days" &&
                       ` ${mission.Data_Prazo} - ${mission.relativeDueDate} `) ||

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 interface ExploreProps {
-  radius?: number;
-  angle?: number;
-  zoom?: number;
-  offset?: { x: number; y: number };
+  $radius?: number;
+  $angle?: number;
+  $zoom?: number;
+  $offset?: { x: number; y: number };
   $top?: number;
   $left?: number;
   $progress?: number;
@@ -18,9 +18,10 @@ export const SolarWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    width: 100vw;
+    max-width: 80vw;
     height: 100vh;
     overflow-x: auto;
   }
@@ -32,7 +33,7 @@ export const Sun = styled.div`
   height: 100px;
   background: radial-gradient(circle, #ffd700, #ffa500);
   border-radius: 50%;
-  z-index: 10;
+  z-index: 1;
   left: 46.5%;
   top: 44.5%;
 
@@ -46,23 +47,25 @@ export const Sun = styled.div`
 
 export const Orbit = styled.div<ExploreProps>`
   position: absolute;
-  width: ${({ radius = 0 }) => radius * 2}px;
-  height: ${({ radius = 0 }) => radius * 2}px;
+  width: ${({ $radius = 0 }) => $radius * 2}px;
+  height: ${({ $radius = 0 }) => $radius * 2}px;
   border: 1px dashed rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 `;
 
 export const PlanetWrapper = styled.div<ExploreProps>`
   position: absolute;
-  transform: rotate(${({ angle }) => angle}deg) translateX(50%)
-    rotate(-${({ angle }) => angle}deg);
+  transform: rotate(${({ $angle }) => $angle}deg) translateX(50%)
+    rotate(-${({ $angle }) => $angle}deg);
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  z-index: 1;
 
   span {
     font-size: ${(props) => props.theme.fontSize.medium};
@@ -86,9 +89,9 @@ export const PlanetImage = styled.img`
 
 export const ZoomContainer = styled.div<ExploreProps>`
   transform: translate(
-      ${({ offset = { x: 0, y: 0 } }) => `${offset.x}px, ${offset.y}px`}
+      ${({ $offset = { x: 0, y: 0 } }) => `${$offset.x}px, ${$offset.y}px`}
     )
-    scale(${({ zoom }) => zoom});
+    scale(${({ $zoom }) => $zoom});
   transform-origin: center center;
   transition: transform 0.1s ease-out;
   position: relative;
@@ -100,7 +103,6 @@ export const ZoomContainer = styled.div<ExploreProps>`
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     transform-origin: top left;
     cursor: auto;
-    -webkit-overflow-scrolling: touch;
   }
 `;
 
@@ -129,7 +131,7 @@ export const ZoomControls = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    position: absolute;
+    position: relative;
     flex-direction: column;
 
     button {

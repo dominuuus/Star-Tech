@@ -16,6 +16,13 @@ export const Profile = styled.div`
       color: ${(props) => props.theme.colors.white};
     }
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+    max-width: 80vw;
+    height: fit-content;
+    min-width: 80vw;
+  }
 `;
 
 export const PlanetAndCredentials = styled.div`
@@ -26,6 +33,10 @@ export const PlanetAndCredentials = styled.div`
   font-weight: bold;
   align-items: center;
   color: white;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: none;
+  }
 `;
 
 export const PlanetTitle = styled.section`
@@ -77,6 +88,10 @@ export const MascotsAndAchievements = styled.div`
       transform: scale(1.2) translateY(-8px);
     }
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: none;
+  }
 `;
 
 export const MascotsTitle = styled.span`
@@ -85,15 +100,13 @@ export const MascotsTitle = styled.span`
   font-weight: bold;
   align-items: center;
   flex-wrap: wrap;
-  
 `;
 
-
 export const MascotsContainer = styled.div`
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-img {
+  img {
     height: 5rem;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
@@ -101,7 +114,6 @@ img {
       transform: scale(1.2) translateY(-8px);
     }
   }
-
 `;
 
 export const AvatarContainer = styled.div`
@@ -109,6 +121,12 @@ export const AvatarContainer = styled.div`
   padding-left: 1px;
   display: flex;
   color: white;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    padding-top: 0;
+    padding-left: 0;
+    max-width: 300px;
+  }
 `;
 
 export const AvatarCircle = styled.div`
@@ -127,6 +145,17 @@ export const AvatarCircle = styled.div`
     width: 50%;
     height: auto;
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 280px;
+    height: 280px;
+
+  }
+
+  img {
+    width: 60%;
+    height: auto;
+  }
 `;
 
 export const ActionPanel = styled.div`
@@ -137,6 +166,13 @@ export const ActionPanel = styled.div`
   display: flex;
   gap: 130px;
   z-index: 5;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    gap: 30px;
+  }
 `;
 
 export const ActionButton = styled.div`
@@ -156,7 +192,6 @@ export const ActionButton = styled.div`
     color: ${({ theme }) => theme.colors.white};
   }
 `;
-
 
 export const EstelarTitle = styled.div`
   position: absolute;
@@ -226,6 +261,8 @@ export const Status = styled.div`
     height: 1px;
     background: white;
   }
+
+  
 `;
 
 export const OrbitRing = styled.div`

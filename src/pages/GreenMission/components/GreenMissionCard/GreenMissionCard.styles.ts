@@ -20,6 +20,10 @@ export const Cards = styled.div`
     background-color: ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.white};
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    padding: 5px;
+  }
 `;
 
 export const TitleCard = styled.div<CardProps>`
@@ -30,17 +34,15 @@ export const TitleCard = styled.div<CardProps>`
   justify-content: space-between;
   padding: 10px;
   background-color: ${(props) =>
-    props.$isSelected
-      ? 'transparent'
-      : 'transparent'};
+    props.$isSelected ? "transparent" : "transparent"};
 `;
 
 export const ChallengeTitle = styled.div`
   min-width: 90%;
-`
+`;
 
 export const ChallengeIcon = styled.div`
   width: 3rem;
   display: flex;
   justify-content: right;
-`
+`;

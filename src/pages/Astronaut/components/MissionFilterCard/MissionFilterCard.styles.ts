@@ -7,6 +7,11 @@ interface StatusProps {
 export const MissionFilterCardContainer = styled.div`
   display: flex;
   gap: 0.5rem;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const StatusMission = styled.div<StatusProps>`

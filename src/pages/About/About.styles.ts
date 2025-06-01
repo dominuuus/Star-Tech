@@ -33,16 +33,10 @@ export const ProjectDescriptionContainer = styled.div`
     padding: 50px 50px 30px 50px;
 
     img {
-      height: 25rem;
+      height: 20rem;
     }
   }
 
-  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    flex-direction: column;
-    img {
-      height: 25rem;
-    }
-  }
 
 `;
 
@@ -101,7 +95,4 @@ export const FooterContent = styled.div`
     flex-direction: column;
   }
 
-  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    flex-direction: column;
-  }
 `;

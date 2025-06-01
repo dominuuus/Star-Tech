@@ -11,7 +11,7 @@ export const HangarContainer = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     flex-direction: column;
     height: 60rem;
-    width: 100vw;
+    max-width: 80vw;
     padding: 1rem;
   }
 `;
@@ -56,9 +56,21 @@ export const StyledCanvas = styled(Canvas)`
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     position: relative;
-    top: 48%;
+    top: 38%;
     left: 12%;
   }
+`;
+
+export const BlockedShip = styled.div`
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.744);
+  color: #e2e2db;
+  padding: 20px;
+  border-radius: 20px;
+
 `;
 
 export const HangarDetailsContainer = styled.div`
@@ -81,16 +93,15 @@ export const HangarImageContainer = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    min-width: 60vw;    
+    min-width: 60vw;
 
     h1 {
-    font-size: ${(props) => props.theme.fontSize.large};
-  }
+      font-size: ${(props) => props.theme.fontSize.large};
+    }
 
-  .ShipTitle {
-    max-width: 80%;
-  }
-
+    .ShipTitle {
+      max-width: 80%;
+    }
   }
 `;
 

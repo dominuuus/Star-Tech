@@ -65,8 +65,8 @@ export function Explore() {
     <>
       <SolarWrapper>
         <ZoomContainer
-          zoom={zoomLevel}
-          offset={offset}
+          $zoom={zoomLevel}
+          $offset={offset}
           onWheel={handleWheel}
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
@@ -82,10 +82,9 @@ export function Explore() {
             const y = radius * Math.sin(angle);
 
             return (
-              <Orbit radius={radius}>
+              <Orbit $radius={radius} key={planet.id}>
                 <PlanetWrapper
-                  key={planet.id}
-                  angle={angle}
+                  $angle={angle}
                   style={{
                     top: `calc(50% + ${y}px)`,
                     left: `calc(50% + ${x}px)`,

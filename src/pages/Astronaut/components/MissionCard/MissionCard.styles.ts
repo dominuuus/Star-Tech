@@ -13,6 +13,7 @@ export const MissionCardContainer = styled.div`
     color: ${(props) => props.theme.colors.secondary};
     font-weight: 400;
   }
+  
 `;
 
 export const MissionCardContent = styled.div`
@@ -21,7 +22,7 @@ export const MissionCardContent = styled.div`
   background-color: ${(props) => props.theme.colors.secondary};
   border-radius: 10px;
   padding: 10px;
-  height: 6rem;
+  height: fit-content;
   align-items: center;
   transition:
     color 0.15s,
@@ -35,6 +36,10 @@ export const MissionCardContent = styled.div`
     cursor: pointer;
     background-color: ${(props) => props.theme.colors.tertiary};
     color: ${(props) => props.theme.colors.white};
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    height: fit-content;
   }
 `;
 
@@ -53,10 +58,18 @@ export const MissionCardInfoContent = styled.div`
   p {
     font-size: ${(props) => props.theme.fontSize.medium};
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    p {
+    font-size: ${(props) => props.theme.fontSize.small};
+  }
+  }
 `;
 
 export const MissionCardTitle = styled.section`
   display: flex;
   flex-direction: column;
   font-weight: bold;
+
+  gap: 5px;
 `;

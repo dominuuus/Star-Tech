@@ -85,6 +85,10 @@ export const ModalProfile = styled.div`
   span {
     font-size: ${(props) => props.theme.fontSize.medium};
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    min-height: 30rem;
+  }
 `;
 
 export const ProfileInfo = styled.div`

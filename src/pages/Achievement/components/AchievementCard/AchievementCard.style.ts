@@ -9,12 +9,11 @@ export const BadgeWrapper = styled.div`
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: 0;
   }
-
-  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    flex-direction: column;
-  }
-
 `;
 
 export const AchievementList = styled.ul`
@@ -28,7 +27,6 @@ export const AchievementList = styled.ul`
   list-style: none;
   align-content: start;
   overflow-y: scroll;
-
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -47,6 +45,19 @@ export const AchievementList = styled.ul`
   &::-webkit-scrollbar-thumb:hover {
     background: ${(props) => props.theme.colors.secondary};
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    min-width: 15rem;
+    max-width: 15rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    row-gap: 0;
+    padding: 0;
+    align-content: center;
+    overflow-y: auto;
+  }
 `;
 export const AchievementItem = styled.li`
   display: flex;
@@ -56,6 +67,10 @@ export const AchievementItem = styled.li`
   max-height: 160px;
   min-height: 160px;
 
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    max-height: 120px;
+    min-height: 120px;
+  }
 `;
 
 export const Badge = styled.button`
@@ -63,7 +78,6 @@ export const Badge = styled.button`
   border: none;
   background: none;
   cursor: pointer;
-
 `;
 
 export const BadgeImg = styled.img`
@@ -71,11 +85,21 @@ export const BadgeImg = styled.img`
   height: 100%;
   object-fit: contain;
   border-radius: 8px;
-  background:${(props) => props.theme.colors.secondary};
+  background: ${(props) => props.theme.colors.secondary};
   padding: 8px;
   transition: transform 0.2s;
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    &:hover {
+      transform: none;
+    }
+
+    &.active {
+      transform: scale(1.05);
+    }
   }
 `;

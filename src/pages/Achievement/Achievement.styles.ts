@@ -4,7 +4,8 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  width: 90vw;
-  
-
+  max-width: 90vw;
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    height: 100rem;
+  }
 `;

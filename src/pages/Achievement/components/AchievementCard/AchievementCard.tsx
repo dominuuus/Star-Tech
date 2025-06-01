@@ -119,7 +119,7 @@ export function AchievementCard() {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', maxWidth: '80vw' }}>
       <AchievementTabs activeTab={activeTab} setActiveTab={setActiveTab} />
       
       <BadgeWrapper>

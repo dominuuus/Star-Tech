@@ -12,6 +12,13 @@ export const AchievementDetailContainer = styled.div`
   background: ${(props) => props.theme.colors.secondary};
   top: 20px;
   overflow-y: auto;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 18rem;
+    margin-left: 0;
+    margin-right: 50px;
+    min-height: fit-content;
+  }
 `;
 
 export const ButtonClose = styled.button`
@@ -27,6 +34,11 @@ export const AchievementHeader = styled.div`
   display: flex;
   gap: 30px;
   margin-bottom: 20px;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+    gap: 0;
+  }
 `;
 
 export const AchievementImage = styled.img`
@@ -34,6 +46,12 @@ export const AchievementImage = styled.img`
   height: 220px;
   border-radius: 12px;
   flex-shrink: 0;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    min-width: 80px;
+    height: 230px;
+    border-radius: 0;
+  }
 `;
 
 export const AchievementContent = styled.div`
@@ -70,13 +88,7 @@ export const AchievementContent = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    flex-direction: row;
-    width: 70vw;
-  }
-
-  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
-    flex-direction: row;
-    width: 70vw;
+    flex-direction: column;
   }
 `;
 
