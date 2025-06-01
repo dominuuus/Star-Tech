@@ -6,9 +6,9 @@ import {
   HangarListContainer,
   SpaceshipInfoContainer,
   SpachipContainer,
+  StyledCanvas,
 } from "./Hangar.styles";
 import { fetchSpaceship, Spaceship } from "../../services/spaceshipService";
-import { Canvas } from "@react-three/fiber";
 import { Html, OrbitControls } from "@react-three/drei";
 import { BugFreeOne3D } from "../../components/3D/BugFreeOne3D";
 import { Codestar3D } from "../../components/3D/Codestar3D";
@@ -78,21 +78,19 @@ export function Hangar() {
         <HangarDetailsContainer>
           <HangarImageContainer>
             {selectedSpaceship ? (
-              <div>
+              <div className="ShipTitle">
                 <h1>{selectedSpaceship.nome}</h1>
                 <p>{selectedSpaceship.descricao}</p>
               </div>
             ) : spaceships.length > 0 ? (
-              <p>Selecione uma nave para ver os detalhes.</p>
+              <p className="ShipTitle">Selecione uma nave para ver os detalhes.</p>
             ) : (
-              <p>Não há naves disponíveis.</p>
+              <p className="ShipTitle">Não há naves disponíveis.</p>
             )}
-            <Canvas
+            <StyledCanvas
               camera={{ position: [0, 0, 5], fov: 50 }}
               style={{
                 position: "absolute",
-                top: 85,
-                left: 265,
                 zIndex: 0,
                 width: "80vw",
               }}
@@ -102,7 +100,7 @@ export function Hangar() {
               {selectedSpaceship &&
                 renderSpaceshipModel(selectedSpaceship)}{" "}
               <OrbitControls />
-            </Canvas>
+            </StyledCanvas>
           </HangarImageContainer>
 
           <SpaceshipInfoContainer>
@@ -161,7 +159,7 @@ export function Hangar() {
             ) : spaceships.length > 0 ? (
               <p></p>
             ) : (
-              <p>Não há naves disponíveis.</p>
+              <p className="ShipTitle">Não há naves disponíveis.</p>
             )}
           </SpaceshipInfoContainer>
         </HangarDetailsContainer>

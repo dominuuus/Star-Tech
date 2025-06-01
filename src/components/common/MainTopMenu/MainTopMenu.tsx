@@ -1,35 +1,71 @@
 import { NavLink } from "react-router-dom";
 import { ProfileCard } from "../ProfileCard/ProfileCard";
-import { MainTopMenuContainer, NavigationContainer, ProfileContainer, SearchContainer } from "./MainTopMenu.styles";
+import {
+  HamburgerIcon,
+  MainTopMenuContainer,
+  NavigationContainer,
+  ProfileContainer,
+  SearchContainer,
+} from "./MainTopMenu.styles";
 import { MagnifyingGlass } from "phosphor-react";
+import { useState } from "react";
 
 export function MainTopMenu() {
-    return (
-        <MainTopMenuContainer>
-            <NavigationContainer>
-                <nav>
-                    <ul>
-                    <NavLink to="/" title="Home">
-                        Home
-                    </NavLink>  
-                    <NavLink to="docs" title="Documentação">
-                        Docs
-                    </NavLink> 
-                    <span>Tutorial</span>
-                    <span>Playground</span>  
-                    </ul>
-                </nav>
-            </NavigationContainer>
+  const [isOpen, setIsOpen] = useState(false);
 
-            <SearchContainer>
-                <MagnifyingGlass />
-                <input type="text" placeholder="Pesquisar" />
-            </SearchContainer>
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-            <ProfileContainer>
-                <ProfileCard/>
-            </ProfileContainer>
+  return (
+    <MainTopMenuContainer>
+      <HamburgerIcon
+        className={isOpen ? "open" : ""}
+        onClick={toggleMenu}
+        role="button"
+        aria-expanded={isOpen}
+        aria-label="Toggle menu"
+      >
+        <div></div>
+        <div></div>
+        <div></div>
+      </HamburgerIcon>
+      <NavigationContainer $isOpen={isOpen}>
+        <nav>
+          <ul>
+            <li>
+              <NavLink to="/game/piloto" title="Home">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="docs" title="Documentação">
+                Docs
+              </NavLink>
+            </li>
+            <li>
+              <span>Tutorial</span>
+            </li>
+            <li>
+              <span>Playground</span>
+            </li>
+             <li>
+              <NavLink to="/" title="Home">
+                Sair
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </NavigationContainer>
 
-        </MainTopMenuContainer>
-    )
+      <SearchContainer>
+        <MagnifyingGlass />
+        <input type="text" placeholder="Pesquisar" />
+      </SearchContainer>
+
+      <ProfileContainer>
+        <ProfileCard />
+      </ProfileContainer>
+    </MainTopMenuContainer>
+  );
 }

@@ -1,5 +1,4 @@
-// src/pages/EditProfile/EditProfile.tsx
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   PencilSimpleLine,
   UserCircleGear,
@@ -22,14 +21,21 @@ import {
   PlanetTitle,
   CredentialTitle,
   CredentialContent,
-  CredentialContent2,
+  MascotsContainer,
 } from "./EditProfile.styles";
 import planets from "../../assets/planets";
 import ModalProfile from "./components/ModalProfile";
 import { NavLink } from "react-router-dom";
+import { fetchMascot, Mascot } from "../../services/mascotService";
 
 export function EditProfile() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const [mascots, setMascots] = useState<Mascot[]>([]);
+  
+    useEffect(() => {
+      fetchMascot().then(setMascots).catch(console.error);
+    }, []);
 
   return (
     <>
@@ -37,8 +43,8 @@ export function EditProfile() {
         <PlanetAndCredentials>
           <PlanetTitle>
             <span>Planeta atual</span>
-            <img src={planets.aeris} alt="" />
-            <span>Aeris</span>
+            <img src={planets.pyron} alt="" />
+            <span>Pyron</span>
           </PlanetTitle>
           <CredentialTitle>
             <span>Suas Credenciais</span>
@@ -52,8 +58,6 @@ export function EditProfile() {
               <ActionButton>
                 <span>BB Financiamento</span>
               </ActionButton>
-            </CredentialContent>
-            <CredentialContent2>
               <ActionButton>
                 <span>BB Crédito</span>
               </ActionButton>
@@ -63,7 +67,7 @@ export function EditProfile() {
               <ActionButton>
                 <span>TeamMaiaraPires</span>
               </ActionButton>
-            </CredentialContent2>
+            </CredentialContent>
           </CredentialTitle>
         </PlanetAndCredentials>
         <AvatarContainer>
@@ -108,7 +112,11 @@ export function EditProfile() {
         <MascotsAndAchievements>
           <MascotsTitle>
             <span>Mascotes</span>
-            <img src={images.MascotsIcone} alt="" />
+            {mascots.map((mascot) => (
+              <MascotsContainer><img src={mascot.Imagem} alt={mascot.Descrição} /></MascotsContainer>
+
+            ))}
+            
           </MascotsTitle>
           <span>Conquistas</span>
           <img src={images.conquistas} alt="" />

@@ -18,6 +18,12 @@ export const SolarWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+  }
 `;
 
 export const Sun = styled.div`
@@ -29,6 +35,13 @@ export const Sun = styled.div`
   z-index: 10;
   left: 46.5%;
   top: 44.5%;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 60px;
+    height: 60px;
+    left: 40%;
+    top: 45%;
+  }
 `;
 
 export const Orbit = styled.div<ExploreProps>`
@@ -59,6 +72,16 @@ export const PlanetWrapper = styled.div<ExploreProps>`
 export const PlanetImage = styled.img`
   width: 60px;
   height: 60px;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const ZoomContainer = styled.div<ExploreProps>`
@@ -73,6 +96,12 @@ export const ZoomContainer = styled.div<ExploreProps>`
   height: 100%;
   cursor: grab;
   user-select: none;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    transform-origin: top left;
+    cursor: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 `;
 
 export const ZoomControls = styled.div`
@@ -96,6 +125,18 @@ export const ZoomControls = styled.div`
 
     &:hover {
       background: ${(props) => props.theme.colors.tertiary};
+    }
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    position: absolute;
+    flex-direction: column;
+
+    button {
+      width: 35px;
+      height: 35px;
+      font-size: ${(props) => props.theme.fontSize.medium};
+      margin: 2px;
     }
   }
 `;
@@ -134,6 +175,18 @@ export const SpaceshipContainer = styled.div<ExploreProps>`
     div {
       display: flex;
       flex-direction: column;
+    }
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    top: ${(props) => (props.$top ? props.$top * 1.2 : 0)}px;
+    left: ${(props) => (props.$left ? props.$left * 0.5 : 0)}px;
+    h2 {
+      font-size: ${(props) => props.theme.fontSize.medium};
+    }
+
+    span {
+      font-size: ${(props) => props.theme.fontSize.small};
     }
   }
 `;

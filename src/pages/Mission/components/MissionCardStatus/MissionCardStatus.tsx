@@ -52,7 +52,6 @@ export function MissionCardStatus() {
 
   const filterMissions = (missions: Mission[]): Mission[] => {
     return missions.filter((mission) => {
-      // Filtro por status
       if (appliedFilters.status && appliedFilters.status !== "all") {
         let statusLabel: string;
         switch (appliedFilters.status) {
@@ -76,7 +75,6 @@ export function MissionCardStatus() {
         }
       }
 
-      // Filtro por projeto
       if (
         appliedFilters.project &&
         mission.Projeto_Nome !== appliedFilters.project
@@ -108,7 +106,6 @@ export function MissionCardStatus() {
     };
     setFilters(defaultFilters);
     setAppliedFilters(defaultFilters);
-    // Limpar os inputs
     if (statusRef.current) statusRef.current.value = "late";
     if (projectRef.current) projectRef.current.value = "";
     if (dataInicioRef.current) dataInicioRef.current.value = "";
@@ -191,7 +188,7 @@ export function MissionCardStatus() {
             <ButtonsContainer>
               <button onClick={handleClearFilters}>Limpar filtros</button>
               <ConfirmFilterButton onClick={handleConfirmFilters}>
-                Confirmar
+                Filtrar
               </ConfirmFilterButton>
             </ButtonsContainer>
           </details>

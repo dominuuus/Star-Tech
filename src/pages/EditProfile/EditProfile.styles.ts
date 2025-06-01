@@ -3,58 +3,11 @@ import { styled } from "styled-components";
 export const Profile = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 160px;
   height: 100vh;
-
-  /* camadas — degradê + estrelas */
-  background:
-    radial-gradient(
-      2px 2px at 20% 10%,
-      rgba(255, 255, 255, 0.9) 50%,
-      transparent 52%
-    ),
-    radial-gradient(
-      1.6px 1.6px at 70% 80%,
-      rgba(255, 255, 255, 0.8) 50%,
-      transparent 52%
-    ),
-    radial-gradient(
-      1.2px 1.2px at 40% 60%,
-      rgba(255, 255, 255, 0.6) 50%,
-      transparent 52%
-    ),
-    radial-gradient(
-      circle at 30% 30%,
-      #07070b 0%,
-      #0c0d14 35%,
-      #11131d 55%,
-      #1b1e2b 100%
-    );
-
-  background-repeat: repeat;
-  background-size:
-    200px 200px,
-    120px 120px,
-    80px 80px,
-    100% 100%;
-
-  /* ▼ animação suave */
-  background-position:
-    0 0,
-    0 0,
-    0 0,
-    center;
-  animation: starScroll 80s linear infinite;
-
-  @keyframes starScroll {
-    to {
-      background-position:
-        1000px 0,
-        600px 0,
-        400px 0,
-        center;
-    }
-  }
+  min-width: 90vw;
+  margin-top: 1rem;
 
   a {
     color: ${(props) => props.theme.colors.primary};
@@ -100,18 +53,9 @@ export const CredentialContent = styled.div`
   gap: 10px;
   text-align: justify;
   text-align: center;
-  padding-left: 60px;
   color: black;
-`;
-export const CredentialContent2 = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  text-align: justify;
-  text-align: center;
-  padding-left: 60px;
-  color: black;
+  max-width: 30rem;
+  flex-wrap: wrap;
 `;
 
 export const MascotsAndAchievements = styled.div`
@@ -137,17 +81,27 @@ export const MascotsAndAchievements = styled.div`
 
 export const MascotsTitle = styled.span`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-weight: bold;
   align-items: center;
-  img {
-    height: 10rem;
+  flex-wrap: wrap;
+  
+`;
+
+
+export const MascotsContainer = styled.div`
+display: flex;
+flex-direction: row;
+
+img {
+    height: 5rem;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     &:hover {
       transform: scale(1.2) translateY(-8px);
     }
   }
+
 `;
 
 export const AvatarContainer = styled.div`
@@ -198,10 +152,11 @@ export const ActionButton = styled.div`
   cursor: pointer;
 
   &:hover {
-    background: ${({ theme }) => theme.colors.primary};
-    color: #fff;
+    background: ${({ theme }) => theme.colors.tertiary};
+    color: ${({ theme }) => theme.colors.white};
   }
 `;
+
 
 export const EstelarTitle = styled.div`
   position: absolute;

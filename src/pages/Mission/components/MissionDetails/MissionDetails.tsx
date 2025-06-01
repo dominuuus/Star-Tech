@@ -32,7 +32,6 @@ import {
   Mission,
 } from "../../../../services/missionService";
 import { useParams } from "react-router-dom";
-import achievements from "../../../../assets/achievements";
 
 export function MissionDetails() {
   const { id } = useParams<{ id: string }>();
@@ -106,9 +105,11 @@ export function MissionDetails() {
           </MissionDescription>
           <MissionTechnicalObjectiveContainer>
             <h4>Objetivo Técnico:</h4>
-            <span>{mission.Objetivo_Técnico.split('\n').map((item, index) => (
-  <li key={index}>{item}</li>
-))}</span>
+            <span>
+              {mission.Objetivo_Técnico.split("\n").map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </span>
           </MissionTechnicalObjectiveContainer>
           <ProgressContainer>
             <ProgressContainerHead>
@@ -130,7 +131,7 @@ export function MissionDetails() {
               </ProgressMissionBar>
               <h4 className="Percentual">{mission.Progresso_missão}%</h4>
               <TechLiderProfile>
-                <img src={images.leader} alt="Tech Líder" />
+                <img src={mission.Tech_Líder_img} alt="Tech Líder" />
                 <TechLiderProfileText>
                   <h4>Tech Líder</h4>
                   <span>{mission.Tech_Líder_Nome || "Sem líder"}</span>
@@ -154,11 +155,11 @@ export function MissionDetails() {
               </RewardCardEstelar>
               <RewardCardMedal>
                 <RewardCardMedalPhoto>
-                  <img src={achievements.ferroVermelho} alt="" />
+                  <img src={mission.Conquista_img} alt="" />
                 </RewardCardMedalPhoto>
                 <RewardCardMedalText>
-                  <h4>Código limpo</h4>
-                  <p>Eliminar redundâncias ou excessos de um código antigo</p>
+                  <h4>{mission.Conquista_nome}</h4>
+                  <p>{mission.Conquista_descricao}</p>
                 </RewardCardMedalText>
               </RewardCardMedal>
             </RewardsCards>

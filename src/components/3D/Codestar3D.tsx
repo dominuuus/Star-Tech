@@ -7,7 +7,7 @@ export function Codestar3D() {
   return (
     <primitive 
       object={gltf.scene} 
-      scale={6} 
+      scale={5.5} 
       position={[-0.5, 0, 0]}
       rotation={[0, Math.PI, 0]}
           />

@@ -66,10 +66,12 @@ export function Spaceship() {
             >
               <ambientLight intensity={3.5} />
               <spotLight position={[-20, 10, 10]} angle={0.15} penumbra={1} />
-              <Codestar3D />
+              <mesh>
+                <Codestar3D />
+              </mesh>
               <OrbitControls />
 
-              <Html position={[-3, 0.2, 0]}>
+              <Html position={[-2.8, 0.2, 0]}>
                 <button onClick={toggleTripulationModal}>
                   <UsersThree size={23} weight="bold" />
                   <span>Tripulação</span>

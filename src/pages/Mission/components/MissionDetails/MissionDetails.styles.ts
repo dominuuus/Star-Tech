@@ -9,7 +9,6 @@ export const MissionDetailsContainer = styled.div`
   padding: 0 2rem;
   border-radius: 20px;
   background-color: inherit;
-
 `;
 
 export const MissionDetailsContent = styled.div`
@@ -33,7 +32,6 @@ export const MissionDetailsHead = styled.div`
     flex-direction: column;
     gap: 10px;
   }
-
 `;
 export const MissionTitle = styled.div`
   display: flex;
@@ -72,7 +70,14 @@ export const MissionDescription = styled.div`
 
 export const ProgressContainer = styled.div`
   padding-bottom: 25px;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
+
 export const ProgressContainerHead = styled.div``;
 
 export const ProgressMissionBarInfo = styled.div`
@@ -83,12 +88,23 @@ export const ProgressMissionBarInfo = styled.div`
     padding-left: 15px;
   }
 
-  
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    flex-direction: column;
+    gap: 1rem;
+
+    .Percentual {
+      display: none;
+    }
+  }
 `;
 export const ProgressMissionBar = styled.div`
   background-color: ${(props) => props.theme.colors.gray.lighter};
   border-radius: 30px;
   width: 50%;
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    display: none;
+  }
 `;
 
 export const TechLiderProfile = styled.div`
@@ -107,7 +123,7 @@ export const TechLiderProfileText = styled.div`
   margin-left: 5px;
   h4 {
     color: ${(props) => props.theme.colors.techLeader};
-    font-size:${(props) => props.theme.fontSize.medium};
+    font-size: ${(props) => props.theme.fontSize.medium};
   }
 
   span {
@@ -121,7 +137,10 @@ export const RewardsContainer = styled.div`
   padding: 1rem 2rem 4rem 2rem;
   margin: 2rem 1rem;
 
-  
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    padding: 1rem;
+    margin: 1rem;
+  }
 `;
 
 export const RewardsCards = styled.div`
@@ -149,10 +168,6 @@ export const RewardCardEstelar = styled.div`
   border-bottom-right-radius: 20px;
   align-items: center;
 
-  h4 {
-    padding-left: 15px;
-  }
-
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     width: 100%;
   }
@@ -163,9 +178,8 @@ export const RewardCardEstelar = styled.div`
 `;
 
 export const RewardEstelarPhoto = styled.div`
-  background-color: ${(props) => props.theme.colors.mission.coinMission};
-  width: 30%;
-  height: 70px;
+  width: 40%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,18 +189,15 @@ export const RewardEstelarPhoto = styled.div`
     height: 3.5rem;
     width: 3.8rem;
   }
-
-  
 `;
 
 export const RewardCardMedal = styled.div`
   background-color: ${(props) =>
     props.theme.colors.mission.achievementBlockMission};
-  width: 40%;
+  width: 55%;
   display: flex;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  text-align: justify;
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     width: 100%;
@@ -198,9 +209,8 @@ export const RewardCardMedal = styled.div`
 `;
 
 export const RewardCardMedalPhoto = styled.div`
-  background-color: ${(props) => props.theme.colors.mission.achievementMission};
-  width: 38%;
-  height: 70px;
+  width: 40%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,12 +223,10 @@ export const RewardCardMedalPhoto = styled.div`
 `;
 
 export const RewardCardMedalText = styled.div`
-  padding-top: 5px;
-  padding-left: 15px;
+  padding: 10px;
   h4 {
     font-size: ${(props) => props.theme.fontSize.medium};
   }
-  padding-right: 15px;
 `;
 
 export const ProgressMissionBarContent = styled.div<ProgressProps>`

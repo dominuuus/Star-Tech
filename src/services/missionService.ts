@@ -21,6 +21,10 @@ export interface Mission {
   Projeto_Nome?: string;
   Tech_Líder_Nome?: string;
   relativeDueDate?: string;
+  Tech_Líder_img?: string;
+  Conquista_nome?: string;
+  Conquista_img?: string;
+  Conquista_descricao?: string;
 }
 
 interface RawMission {
@@ -39,7 +43,8 @@ interface RawMission {
   Fases_Concluídas: number;
   Planeta: { id: number; Nome: string } | null;
   Projeto: { id: number; Nome: string } | null;
-  Tech_Líder: { id: number; Nome: string } | null;
+  Tech_Líder: { id: number; Nome: string; Image: string } | null;
+  conquista: { id: number; Nome: string; imagem: string, descricao: string } | null;
 }
 
 const mapRawMissionToMission = (raw: RawMission): Mission => ({
@@ -60,6 +65,10 @@ const mapRawMissionToMission = (raw: RawMission): Mission => ({
   Planeta_Nome: raw.Planeta ? raw.Planeta?.Nome : undefined,
   Projeto_Nome: raw.Projeto ? raw.Projeto?.Nome : undefined,
   Tech_Líder_Nome: raw.Tech_Líder ? raw.Tech_Líder?.Nome : undefined,
+  Tech_Líder_img: raw.Tech_Líder ? raw.Tech_Líder?.Image : undefined,
+  Conquista_nome: raw.conquista ? raw.conquista?.Nome : undefined,
+  Conquista_img: raw.conquista ? raw.conquista?.imagem : undefined,
+  Conquista_descricao: raw.conquista ? raw.conquista?.descricao : undefined,
   relativeDueDate: getRelativeDate(raw.Data_Prazo),
 });
 

@@ -175,5 +175,5 @@ export const ButtonsContainer = styled.div`
 
 export const ConfirmFilterButton = styled.button`
   color: ${(props) => props.theme.colors.white};
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.colors.linkHover};
 `;
