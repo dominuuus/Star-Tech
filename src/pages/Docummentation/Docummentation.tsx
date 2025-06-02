@@ -1,16 +1,32 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { DocummentationContainer, DocummentationContent, DocumentationLayout } from "./Docummentation.styles";
 import { TabMenu } from './components/TabMenu';
 import { ContentDetails } from './components/ContentDetails';
+import { SecondaryTab } from './components/SecondaryTab'; // Novo import
 import documentationData from './components/documentation.json';
-
 
 export function Docummentation() {
   const [activeTab, setActiveTab] = useState(1);
+  const [headings, setHeadings] = useState<{ id: string; text: string }[]>([]);
+  const [activeHeading, setActiveHeading] = useState('');
 
-  const activeContent = documentationData.documentacao.find(
-    (item) => item.id === activeTab
-  )?.conteudo || '';
+  // Extrai os subtítulos (###) do conteúdo Markdown
+  useEffect(() => {
+    const activeContent = documentationData.documentacao.find(
+      (item) => item.id === activeTab
+    )?.conteudo || '';
+
+    const headingMatches = activeContent.match(/### (.*?)\n/g) || [];
+    const extractedHeadings = headingMatches.map((match, index) => ({
+      id: `heading-${index}`,
+      text: match.replace('### ', '').trim(),
+    }));
+
+    setHeadings(extractedHeadings);
+    if (extractedHeadings.length > 0) {
+      setActiveHeading(extractedHeadings[0].id);
+    }
+  }, [activeTab]);
 
   return (
     <DocummentationContainer>
@@ -21,8 +37,18 @@ export function Docummentation() {
           onTabChange={setActiveTab}
         />
         <DocummentationContent>
-          <ContentDetails content={activeContent} />
+          <ContentDetails content={
+            documentationData.documentacao.find((item) => item.id === activeTab)?.conteudo || ''
+          } />
         </DocummentationContent>
+        {/* Novo componente adicionado */}
+        {headings.length > 0 && (
+          <SecondaryTab
+            headings={headings}
+            activeHeading={activeHeading}
+            onHeadingClick={setActiveHeading}
+          />
+        )}
       </DocumentationLayout>
     </DocummentationContainer>
   );
