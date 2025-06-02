@@ -14,6 +14,7 @@ import { Docummentation } from "./pages/Docummentation/Docummentation";
 import { EditAvatar } from "./pages/EditAvatar/EditAvatar";
 import { AboutUs } from "./pages/About/About";
 import { NotLoggedLayout } from "./layouts/notLogged/notLoggedLayout";
+import { NotFound } from "./pages/404/NotFound";
 
 export function Router() {
   return (
@@ -41,6 +42,8 @@ export function Router() {
         <Route path="sobre" element={<AboutUs />} />
         <Route path="docs" element={<Docummentation />} />
       </Route>
+
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
