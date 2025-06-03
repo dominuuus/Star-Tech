@@ -32,9 +32,7 @@ export function MainTopMenu() {
         <div></div>
       </HamburgerIcon>
       <NavigationContainer $isOpen={isOpen}>
-        
         <nav>
-          
           <ul>
             <CardMobileMenu>
               <ProfileCard />

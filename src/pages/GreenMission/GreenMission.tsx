@@ -50,8 +50,8 @@ export function GreenMission() {
         <MissionDetailContainer>
           {selectedChallenge ? (
             <div>
-                <h4>{selectedChallenge.nome}</h4>
-              
+              <h4>{selectedChallenge.nome}</h4>
+
               <hr />
               <p>{selectedChallenge.descricao}</p>
               <span>Recompensa: {selectedChallenge.recompensa} estelares</span>

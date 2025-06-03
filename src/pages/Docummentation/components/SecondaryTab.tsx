@@ -1,5 +1,5 @@
-import React from 'react';
-import { SecondaryTabContainer, SecondaryTabItem } from './SecondaryTab.styles';
+import React from "react";
+import { SecondaryTabContainer, SecondaryTabItem } from "./SecondaryTab.styles";
 
 interface SecondaryTabProps {
   headings: { id: string; text: string }[];
@@ -7,10 +7,10 @@ interface SecondaryTabProps {
   onHeadingClick: (id: string) => void;
 }
 
-export const SecondaryTab: React.FC<SecondaryTabProps> = ({ 
-  headings, 
-  activeHeading, 
-  onHeadingClick 
+export const SecondaryTab: React.FC<SecondaryTabProps> = ({
+  headings,
+  activeHeading,
+  onHeadingClick,
 }) => {
   return (
     <SecondaryTabContainer>

@@ -32,18 +32,22 @@ interface RawProject {
 }
 
 const mapRawProjectToMascot = (raw: RawProject): Project => ({
-    id: raw.id,
-    Nome: raw.nome,
-    Descrição: raw.descricao,
-    Progresso: raw.progresso,
-    Equipe_Nome: raw.equipe ? raw.equipe?.nome : undefined,
-    Planeta_Base_Nome: raw.planeta_base ? raw.planeta_base?.nome : undefined,
-    Planeta_Destino_Nome: raw.planeta_destino ? raw.planeta_destino?.nome : undefined,
-    Data_Início: raw.data_inicio,
-    Data_Prevista_Término: raw.data_prevista_termino ? raw.data_prevista_termino : undefined,
-    Data_Conclusão: raw.data_conclusao ? raw.data_conclusao : undefined,
-    Status: raw.status ? raw.status?.nome : undefined,
-    icone: raw.icone,
+  id: raw.id,
+  Nome: raw.nome,
+  Descrição: raw.descricao,
+  Progresso: raw.progresso,
+  Equipe_Nome: raw.equipe ? raw.equipe?.nome : undefined,
+  Planeta_Base_Nome: raw.planeta_base ? raw.planeta_base?.nome : undefined,
+  Planeta_Destino_Nome: raw.planeta_destino
+    ? raw.planeta_destino?.nome
+    : undefined,
+  Data_Início: raw.data_inicio,
+  Data_Prevista_Término: raw.data_prevista_termino
+    ? raw.data_prevista_termino
+    : undefined,
+  Data_Conclusão: raw.data_conclusao ? raw.data_conclusao : undefined,
+  Status: raw.status ? raw.status?.nome : undefined,
+  icone: raw.icone,
 });
 
 export async function fetchProject(): Promise<Project[]> {

@@ -215,7 +215,7 @@
           "progresso": 45,
           "status": {
             "id": 3,
-            "nome": "Em progresso"
+            "nome": "Em Progresso"
           },
           "posicao": {
             "id": 1,
@@ -294,559 +294,595 @@
   ],
   "planetas": [
     {
+    "id": 1,
+    "nome": "Aeris",
+    "descricao": "Mundo gasoso com ilhas flutuantes, criaturas planadoras e desafios verticais. É o lar dos puzzles tridimensionais e minigames de equilíbrio. Ideal para caçadores de bugs e desenvolvedores que trabalham com correções em áreas críticas.",
+    "titulo": "Ilhas no Vento",
+    "status": {
       "id": 1,
-      "nome": "Terrara",
-      "descricao": "Um planeta fértil e equilibrado, onde os primeiros projetos foram plantados. Ideal para times iniciantes, representa o começo da jornada e a estruturação de boas práticas de código.",
-      "titulo": "O Berço dos Primeiros Códigos",
-      "status": {
-        "id": 1,
-        "nome": "Não Explorado"
-      },
-      "qtd_missoes": 8,
-      "tema_principal": {
-        "id": 1,
-        "nome": "Entrega e Ação"
-      },
-      "imagem": "/images/planet/terrara.png",
-      "gentilico": "Aerisianos",
-      "categoria": "planeta Secundário",
-      "top": 0,
-      "left": 800,
-      "mascotes": [
-        {
-          "id": 1,
-          "nome": "Buggo",
-          "imagem": "/images/mascot/buggo.png",
-          "descricao": "Representação lúdica dos bugs, muda de cor conforme o estado do sistema."
-        },
-        {
-          "id": 2,
-          "nome": "Syntaxx",
-          "imagem": "/images/mascot/syntaxx.png",
-          "descricao": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas."
-        }
-      ]
+      "nome": "Explorado"
     },
-    {
+    "qtd_missoes": 7,
+    "tema_principal": {
+      "id": 1,
+      "nome": "Correção de Bugs"
+    },
+    "imagem": "/images/planet/aeris.png",
+    "gentilico": "Aeriano / Aeriana",
+    "categoria": "Planeta Secundário",
+    "top": 950,
+    "left": -1000,
+    "mascotes": [
+      {
+        "id": 1,
+        "nome": "Buggo",
+        "imagem": "/images/mascot/buggo.png",
+        "descricao": "Representação lúdica dos bugs, muda de cor conforme o estado do sistema."
+      },
+      {
+        "id": 18,
+        "nome": "Trixo",
+        "imagem": "/images/mascot/trixo.png",
+        "descricao": "Especialista em quebra-cabeças e desafios lúdicos (ex.: Easter eggs, puzzles ocultos)."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Aetheria",
+    "descricao": "Aetheria é o centro da sincronia e da comunicação cósmica. Aqui, as naves se conectam com clareza, e a transparência entre as tripulações é essencial para alcançar harmonia no desenvolvimento. O planeta representa a fluidez da comunicação entre times e stakeholders, além da importância do alinhamento técnico, emocional e estratégico",
+    "titulo": "Planeta das Comunicações",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 8,
+    "tema_principal": {
       "id": 2,
-      "nome": "coreon",
-      "descricao": "Um mundo com grandes torres de dados, cidades flutuantes e com campos de energia onde tudo se transforma. Aqui, o foco é raciocínio rápido e tomada de decisão sob pressão. O ambiente responde ao estado do código da tripulacao. Ideal para tarefas de limpeza e padronização.",
-      "titulo": "A Mente da Máquina",
-      "status": {
-        "id": 2,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 5,
-      "tema_principal": {
-        "id": 2,
-        "nome": "Código Limpo"
-      },
-      "imagem": "/images/planet/coreon.png",
-      "gentilico": "coreonianos",
-      "categoria": "planeta Secundário",
-      "top": -600,
-      "left": 600,
-      "mascotes": [
-        {
-          "id": 1,
-          "nome": "Clippyon",
-          "imagem": "/images/mascot/clippyon.png",
-          "descricao": "Um pequeno ajudante que aparece discretamente para sugerir refatorações e padrões mais limpos."
-        },
-        {
-          "id": 2,
-          "nome": "Linty",
-          "imagem": "/images/mascot/linty.png",
-          "descricao": "ET perfeccionista que elimina redundâncias e sujeira de código."
-        },
-        {
-          "id": 3,
-          "nome": "Syntaxx",
-          "imagem": "/images/mascot/syntaxx.png",
-          "descricao": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas."
-        }
-      ]
+      "nome": "Fluidez das comunicações"
     },
-    {
+    "imagem": "/images/planet/aetheria.png",
+    "gentilico": "Aetheriano / Aetheriana",
+    "categoria": "Planeta Secundário",
+    "top": 700,
+    "left": 1800,
+    "mascotes": [
+      {
+        "id": 2,
+        "nome": "Lumis",
+        "imagem": "/images/mascot/lumis.png",
+        "descricao": "Entidade de névoa e luz que absorve memórias perdidas da Floresta de Ametista, agindo como um arquivo vivo dos segredos cósmicos."
+      },
+      {
+        "id": 19,
+        "nome": "Solin",
+        "imagem": "/images/mascot/solin.png",
+        "descricao": "Representa a energia vital do projeto. Seu brilho aumenta com a coesão da equipe e conquistas."
+      },
+      {
+        "id": 32,
+        "nome": "GigaFix",
+        "imagem": "/images/mascot/gigafix.png",
+        "descricao": "Um robô robusto que lida com vazamentos de memória e gargalos de processamento."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Bitron",
+    "descricao": "Planeta artificial com zonas de hacking, firewalls vivos e simulações de dados. Missões de infiltração, lógica e engenharia. Recompensa quem entrega com qualidade sem perder prazos. Ideal para gerenciamento e priorização de backlog.",
+    "titulo": "A Rede Viva",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 7,
+    "tema_principal": {
       "id": 3,
-      "nome": "Pyron",
-      "descricao": "Um planeta vulcânico com rios de lava e tempestades elétricas. Um mundo de desertos metálicos, fornalhas e tempestades elétricas. Exige ritmo, decisão e ação. Ideal para entregas rápidas e correções críticas.",
-      "titulo": "Fornalha do Desafio",
-      "status": {
-        "id": 3,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 10,
-      "tema_principal": {
-        "id": 3,
-        "nome": "Entrega e Ação"
-      },
-      "imagem": "/images/planet/pyron.png",
-      "gentilico": "Pyronianos",
-      "categoria": "planeta Secundário",
-      "top": 0,
-      "left": 1300,
-      "mascotes": [
-        {
-          "id": 1,
-          "nome": "Cometim",
-          "imagem": "/images/mascot/cometim.png",
-          "descricao": "Mascote veloz que reduz tempos de espera e incentiva produtividade com sua energia contagiante."
-        },
-        {
-          "id": 2,
-          "nome": "Fixx",
-          "imagem": "/images/mascot/fixx.png",
-          "descricao": "Mascote de suporte técnico que simplifica problemas complexos."
-        },
-        {
-          "id": 3,
-          "nome": "Patch-3",
-          "imagem": "/images/mascot/patch-3.png",
-          "descricao": "É um mini robô prático, ágil e programado para resolver problemas sérios no menor tempo possível. Ele adora missões vermelhas e vive dizendo: 'Se é urgente, deixa comigo!'"
-        }
-      ]
+      "nome": "Equilíbrio entre prazo e qualidade"
     },
-    {
+    "imagem": "/images/planet/bitron.png",
+    "gentilico": "Bitroniano / Bitroniana",
+    "categoria": "Planeta Secundário",
+    "top": 200,
+    "left": 2600,
+    "mascotes": [
+      {
+        "id": 3,
+        "nome": "Bytron",
+        "imagem": "/images/mascot/bytron.png",
+        "descricao": "Guardião de performance que otimiza processos lentos com tecnologia de ponta."
+      },
+      {
+        "id": 20,
+        "nome": "Nubbi",
+        "imagem": "/images/mascot/nubbi.png",
+        "descricao": "Vive em servidores remotos e ajuda a estruturar arquivos, APIs e cloud storage."
+      },
+      {
+        "id": 33,
+        "nome": "Snipz",
+        "imagem": "/images/mascot/snipz.png",
+        "descricao": "Um especialista em snippets e macros, sempre pronto para oferecer trechos de código úteis."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Coreon",
+    "descricao": "Um mundo com grandes torres de dados, cidades flutuantes e com campos de energia onde tudo se transforma. Aqui, o foco é raciocínio rápido e tomada de decisão sob pressão. O ambiente responde ao estado do código da tripulação. Ideal para tarefas de limpeza e padronização.",
+    "titulo": "A Mente da Máquina",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 4,
+    "tema_principal": {
       "id": 4,
-      "nome": "Crystalia",
-      "descricao": "Um planeta de cristais inteligentes que armazenam dados de sistemas antigos. Suas formações geram labirintos lógicos ideais para desafios de algoritmos. Indicado para explorar lógica de programação e arquitetura.",
-      "titulo": "O Oráculo Binário",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Ambiente e Deploy"
-      },
-      "imagem": "/images/planet/crystalia.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": 800,
-      "left": -500,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Algorix",
-          "imagem": "/images/mascot/algorix.png",
-          "descricao": "Um ser geométrico que flutua suavemente, sempre calculando o caminho mais eficiente. Sua mente funciona como um algoritmo vivo, otimizando tudo ao seu redor."
-        },
-        {
-          "id": 6,
-          "nome": "Loopin",
-          "imagem": "/images/mascot/loopin.png",
-          "descricao": "Um mascote que, literalmente, gira em círculos quando encontra loops infinitos ou lógicas repetitivas. Só para quando alguém otimiza o código."
-        },
-        {
-          "id": 7,
-          "nome": "Stacko",
-          "imagem": "/images/mascot/stacko.png",
-          "descricao": "Um robô empilhador que adora estruturas ordenadas e detesta estouros de memória."
-        }
-      ]
+      "nome": "Código Limpo"
     },
-    {
+    "imagem": "/images/planet/coreon.png",
+    "gentilico": "Coreoniano / Coreoniana",
+    "categoria": "Planeta Secundário",
+    "top": -600,
+    "left": 600,
+    "mascotes": [
+      {
+        "id": 4,
+        "nome": "Clippyon",
+        "imagem": "/images/mascot/clippyon.png",
+        "descricao": "Um pequeno ajudante que aparece discretamente para sugerir refatorações e padrões mais limpos."
+      },
+      {
+        "id": 21,
+        "nome": "Linty",
+        "imagem": "/images/mascot/linty.png",
+        "descricao": "ET perfeccionista que elimina redundâncias e sujeira de código."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "Crystalia",
+    "descricao": "Um planeta de cristais inteligentes que armazenam dados de sistemas antigos. Suas formações geram labirintos lógicos ideais para desafios de algoritmos. Indicado para explorar lógica de programação e arquitetura.",
+    "titulo": "O Oráculo Binário",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 7,
+    "tema_principal": {
       "id": 5,
-      "nome": "Aetheria",
-      "descricao": "Aetheria é o centro da sincronia e da comunicação cósmica. Aqui, as posicaos se conectam com clareza, e a transparência entre as tripulações é essencial para alcançar harmonia no desenvolvimento. O planeta representa a fluidez da comunicação entre times e stakeholders, além da importância do alinhamento técnico, emocional e estratégico.",
-      "titulo": "planeta das Comunicações",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Integração e Colaboração"
-      },
-      "imagem": "/images/planet/aetheria.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": 700,
-      "left": 1800,
-      "mascotes": [
-        {
-          "id": 7,
-          "nome": "Lumis",
-          "imagem": "/images/mascot/lumis.png",
-          "descricao": "Entidade de névoa e luz que absorve memórias perdidas da Floresta de Ametista, agindo como um arquivo vivo dos segredos cósmicos."
-        },
-        {
-          "id": 8,
-          "nome": "Solin",
-          "imagem": "/images/mascot/solin.png",
-          "descricao": "Representa a energia vital do projeto. Seu brilho aumenta com a coesão da equipe e conquistas."
-        }
-      ]
+      "nome": "Ambiente e Deploy"
     },
-    {
+    "imagem": "/images/planet/crystalia.png",
+    "gentilico": "Crystalino / Crystalina",
+    "categoria": "Planeta Secundário",
+    "top": 800,
+    "left": -500,
+    "mascotes": [
+      {
+        "id": 5,
+        "nome": "Algorix",
+        "imagem": "/images/mascot/algorix.png",
+        "descricao": "Um ser geométrico que flutua suavemente, sempre calculando o caminho mais eficiente. Sua mente funciona como um algoritmo vivo, otimizando tudo ao seu redor."
+      },
+      {
+        "id": 22,
+        "nome": "Loopin",
+        "imagem": "/images/mascot/loopin.png",
+        "descricao": "Um mascote que, literalmente, gira em círculos quando encontra loops infinitos ou lógicas repetitivas. Só para quando alguém otimiza o código."
+      },
+      {
+        "id": 34,
+        "nome": "Cometim",
+        "imagem": "/images/mascot/cometim.png",
+        "descricao": "Mascote veloz que reduz tempos de espera e incentiva produtividade com sua energia contagiante."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nome": "Ecliptor",
+    "descricao": "Um planeta orbitando uma estrela binária, repleto de zonas escuras e sensores ocultos. Ele exige atenção aos detalhes e é voltado para testes, QA e monitoramento. Ideal para squads com foco em qualidade.",
+    "titulo": "O Sentinela das Sombras",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 4,
+    "tema_principal": {
       "id": 6,
-      "nome": "Ecliptor",
-      "descricao": "Um planeta orbitando uma estrela binária, repleto de zonas escuras e sensores ocultos. Ele exige atenção aos detalhes e é voltado para testes, QA e monitoramento. Ideal para squads com foco em qualidade.",
-      "titulo": "O Sentinela das Sombras",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Gestão do Tempo"
-      },
-      "imagem": "/images/planet/ecliptor.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": -1100,
-      "left": 900,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Orby",
-          "imagem": "/images/mascot/orby.png",
-          "descricao": "Uma entidade que gira em torno de entidades importantes, como um satélite natural de eventos críticos."
-        },
-        {
-          "id": 5,
-          "nome": "Trillex",
-          "imagem": "/images/mascot/trillex.png",
-          "descricao": "Um especialista em rastrear eventos e desvendar mensagens de erro crípticas."
-        },
-        {
-          "id": 5,
-          "nome": "Zyntra",
-          "imagem": "/images/mascot/zyntra.png",
-          "descricao": "Aparece durante eventos raros (eclipses, alinhamentos de servidores) e traz benefícios aleatórios."
-        }
-      ]
+      "nome": "Gestão do Tempo"
     },
-    {
+    "imagem": "/images/planet/ecliptor.png",
+    "gentilico": "Ecliptoriano / Ecliptoriana",
+    "categoria": "Planeta Secundário",
+    "top": -1100,
+    "left": 900,
+    "mascotes": [
+      {
+        "id": 6,
+        "nome": "Orby",
+        "imagem": "/images/mascot/orby.png",
+        "descricao": "Uma entidade que gira em torno de entidades importantes, como um satélite natural de eventos críticos."
+      },
+      {
+        "id": 23,
+        "nome": "Trillex",
+        "imagem": "/images/mascot/trillex.png",
+        "descricao": "Um especialista em rastrear eventos e desvendar mensagens de erro crípticas."
+      },
+      {
+        "id": 35,
+        "nome": "Zyntra",
+        "imagem": "/images/mascot/zyntra.png",
+        "descricao": "Aparece durante eventos raros (eclipses, alinhamentos de servidores) e traz benefícios aleatórios."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "nome": "Fluxaris",
+    "descricao": "Um planeta radiante que pulsa com energia criativa. Elementos flutuam no ar e mudam de forma com a interação do jogador. Ideal para tarefas de UI/UX, design de interfaces e acessibilidade",
+    "titulo": "O Mundo da Energia Criativa",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 4,
+    "tema_principal": {
       "id": 7,
-      "nome": "Fluxaris",
-      "descricao": "Um planeta radiante que pulsa com energia criativa. Elementos flutuam no ar e mudam de forma com a interação do jogador. Ideal para tarefas de UI/UX, design de interfaces e acessibilidade.",
-      "titulo": "O Mundo da Energia Criativa",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Documentação e Legado"
-      },
-      "imagem": "/images/planet/fluxaris.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": 600,
-      "left": 1250,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Bytee",
-          "imagem": "/images/mascot/bytee.png",
-          "descricao": "Um alienígena fofo que mistura características de byte e pelúcia, com circuitos visíveis sob sua 'pele' de tecido digital. Adora aprender novos códigos e fazer piadas nerds."
-        },
-        {
-          "id": 6,
-          "nome": "Poxel",
-          "imagem": "/images/mascot/poxel.png",
-          "descricao": "Mestre de desafios visuais, como ajustes de UI ou otimização de gráficos."
-        }
-      ]
+      "nome": "Documentação e Legado"
     },
-    {
+    "imagem": "/images/planet/fluxaris.png",
+    "gentilico": "Fluxariano / Fluxariana",
+    "categoria": "Planeta Secundário",
+    "top": 600,
+    "left": 1250,
+    "mascotes": [
+      {
+        "id": 7,
+        "nome": "Bytee",
+        "imagem": "/images/mascot/bytee.png",
+        "descricao": "Um alienígena fofo que mistura características de byte e pelúcia, com circuitos visíveis sob sua 'pele' de tecido digital. Adora aprender novos códigos e fazer piadas nerds."
+      },
+      {
+        "id": 24,
+        "nome": "Poxel",
+        "imagem": "/images/mascot/poxel.png",
+        "descricao": "Mestre de desafios visuais, como ajustes de UI ou otimização de gráficos."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nome": "Glaciora",
+    "descricao": "Um planeta coberto por campos de gelo cristalino e auroras pulsantes. Sua atmosfera fria exige manutenção constante da nave, representando a importância da estabilidade do código. Ideal para missões de refatoração e otimização.",
+    "titulo": "O Guardião do Frio Estável",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 4,
+    "tema_principal": {
       "id": 8,
-      "nome": "Nixar",
-      "descricao": "Um mundo gelado de estrutura rígida e atmosfera rarefeita, onde cristais naturais formam redes que armazenam dados ambientais ao longo de milênios. É um planeta antigo e enigmático, associado à sabedoria acumulada, isolamento analítico e persistência em condições extremas.",
-      "titulo": "O Mistério Ancião",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Armazenamento de Dados"
-      },
-      "imagem": "/images/planet/nixar.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": -450,
-      "left": 1800,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Algorix",
-          "imagem": "/images/mascot/algorix.png",
-          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
-        }
-      ]
+      "nome": "Segurança da Informação"
     },
-    {
+    "imagem": "/images/planet/glaciora.png",
+    "gentilico": "Glaciorano / Glaciorana",
+    "categoria": "Planeta Secundário",
+    "top": 1200,
+    "left": 800,
+    "mascotes": [
+      {
+        "id": 8,
+        "nome": "Cachee",
+        "imagem": "/images/mascot/cachee.png",
+        "descricao": "Um mascote veloz que armazena informações frequentemente usadas para agilizar processos."
+      },
+      {
+        "id": 25,
+        "nome": "Refacto",
+        "imagem": "/images/mascot/refacto.png",
+        "descricao": "Mestre da estrutura limpa, transforma caos em elegância lógica."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "nome": "Hexora",
+    "descricao": "Mundo dividido em módulos hexagonais que se movem, mudando o cenário a cada ciclo. Um planeta onde tudo precisa ser validado antes de ser real. O solo só se estabiliza quando testado. Ideal para missões voltadas a TDD, testes automatizados e validações de interface.",
+    "titulo": "A Dimensão Modular",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 6,
+    "tema_principal": {
       "id": 9,
-      "nome": "Hexora",
-      "descricao": "Mundo dividido em módulos hexagonais que se movem, mudando o cenário a cada ciclo.   Um planeta onde tudo precisa ser validado antes de ser real. O solo só se estabiliza quando testado. Ideal para missões voltadas a TDD, testes automatizados e validações de interface.",
-      "titulo": "A Dimensão Modular",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Testes e Validação"
-      },
-      "imagem": "/images/planet/hexora.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": 200,
-      "left": -1000,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Galaxito",
-          "imagem": "/images/mascot/galaxito.png",
-          "descricao": "Mascote que ganha novas formas ao atingir marcos de performance."
-        },
-        {
-          "id": 8,
-          "nome": "Nebby",
-          "imagem": "/images/mascot/nebby.png",
-          "descricao": "Mascote que muda de forma conforme o progresso do usuário, representando evolução."
-        }
-      ]
+      "nome": "Testes e Validação"
     },
-    {
-      "id": 10,
-      "nome": "Tesserax",
-      "descricao": "Um mundo com dimensões sobrepostas. Cada tarefa revela uma nova camada do planeta. Excelente para desenvolvedores que trabalham com microsserviços ou integrações complexas.",
-      "titulo": "O Labirinto Dimensional",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
+    "imagem": "/images/planet/hexora.png",
+    "gentilico": "Hexoriano / Hexoriana",
+    "categoria": "Planeta Secundário",
+    "top": 200,
+    "left": -1000,
+    "mascotes": [
+      {
+        "id": 9,
+        "nome": "Galaxito",
+        "imagem": "/images/mascot/galaxito.png",
+        "descricao": "Mascote que ganha novas formas ao atingir marcos de performance."
       },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Fluxos e Integrações"
-      },
-      "imagem": "/images/planet/tesserax.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": -100,
-      "left": -540,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Quanti",
-          "imagem": "/images/mascot/quanti.png",
-          "descricao": "Vive em superposicao de estados, ajudando em testes de cenários múltiplos (ex.: A/B testing, simulações)."
-        },
-        {
-          "id": 6,
-          "nome": "Voidy",
-          "imagem": "/images/mascot/voidy.png",
-          "descricao": "Um ser feito de sombras estelares que habita espaços não renderizados ou regiões inexploradas do sistema."
-        }
-      ]
+      {
+        "id": 26,
+        "nome": "Nebby",
+        "imagem": "/images/mascot/nebby.png",
+        "descricao": "Mascote que muda de forma conforme o progresso do usuário, representando evolução."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "nome": "Nixar",
+    "descricao": "Um mundo gelado de estrutura rígida e atmosfera rarefeita, onde cristais naturais formam redes que armazenam dados ambientais ao longo de milênios. É um planeta antigo e enigmático, associado à sabedoria acumulada, isolamento analítico e persistência em condições extremas.",
+    "titulo": "O Mistério Ancião",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
     },
-    {
+    "qtd_missoes": 5,
+    "tema_principal": {
       "id": 11,
-      "nome": "Orthos",
-      "descricao": "planeta com tempestade perpétua no centro, representando caos e poder. Representa cooperação entre equipes e comunicação eficiente.",
-      "titulo": "O Núcleo da Tempestade",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Colaboração"
-      },
-      "imagem": "/images/planet/orthos.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": 1400,
-      "left": 1500,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Algorix",
-          "imagem": "/images/mascot/algorix.png",
-          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
-        }
-      ]
+      "nome": "Armazenamento de Dados"
     },
-    {
+    "imagem": "/images/planet/nixar.png",
+    "gentilico": "Nixariano / Nixariana",
+    "categoria": "Planeta Secundário",
+    "top": -450,
+    "left": 1800,
+    "mascotes": [
+      {
+        "id": 10,
+        "nome": "Syntaxx",
+        "imagem": "/images/mascot/syntaxx.png",
+        "descricao": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas."
+      },
+      {
+        "id": 27,
+        "nome": "Stacko",
+        "imagem": "/images/mascot/stacko.png",
+        "descricao": "Um robô empilhador que adora estruturas ordenadas e detesta estouros de memória."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "nome": "Orthos",
+    "descricao": "Planeta com tempestade perpétua no centro, representando caos e poder. Representa cooperação entre equipes e comunicação eficiente.",
+    "titulo": "O Núcleo da Tempestade",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 7,
+    "tema_principal": {
       "id": 12,
-      "nome": "Bitron",
-      "descricao": "planeta artificial com zonas de hacking, firewalls vivos e simulações de dados. Missões de infiltração, lógica e engenharia. Recompensa quem entrega com qualidade sem perder prazos. Ideal para gerenciamento e priorização de backlog.",
-      "titulo": "A Rede Viva",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Equilíbrio entre prazo e qualidade"
-      },
-      "imagem": "/images/planet/bitron.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": 200,
-      "left": 2600,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Algorix",
-          "imagem": "/images/mascot/algorix.png",
-          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
-        }
-      ]
+      "nome": "Colaboração"
     },
-    {
+    "imagem": "/images/planet/orthos.png",
+    "gentilico": "Ortheano / Ortheana",
+    "categoria": "Planeta Secundário",
+    "top": 1400,
+    "left": 1500,
+    "mascotes": [
+      {
+        "id": 11,
+        "nome": "Zappy",
+        "imagem": "/images/mascot/zappy.png",
+        "descricao": "Alien energético que encontra gargalos e otimiza fluxkeyboard_arrow_rightfluxos."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "nome": "Pyron",
+    "descricao": "Um planeta vulcânico com rios de lava e tempestades elétricas. Um mundo de desertos metálicos, fornalhas e tempestades elétricas. Exige ritmo, decisão e ação. Ideal para entregas rápidas e correções críticas.",
+    "titulo": "Fornalha do Desafio",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 4,
+    "tema_principal": {
       "id": 13,
-      "nome": "Verdax",
-      "descricao": "Florestas alienígenas com árvores gigantes, comunicação via vibrações e missões de interação ambiental. Um mundo vivo e conectado. Focado em criação de conteúdo, novos módulos e experiências. Ideal para sprints de inovação.",
-      "titulo": "O Eco Cósmico",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Inovação e Design"
-      },
-      "imagem": "/images/planet/verdax.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": 200,
-      "left": 3200,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Algorix",
-          "imagem": "/images/mascot/algorix.png",
-          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
-        }
-      ]
+      "nome": "Entrega e Ação"
     },
-    {
+    "imagem": "/images/planet/pyron.png",
+    "gentilico": "Pyroner / Pyronera",
+    "categoria": "Planeta Secundário",
+    "top": 0,
+    "left": 1300,
+    "mascotes": [
+      {
+        "id": 12,
+        "nome": "Patch-3",
+        "imagem": "/images/mascot/patch-3.png",
+        "descricao": "É um mini robô prático, ágil e programado para resolver problemas sérios no menor tempo possível. Ele adora missões vermelhas e vive dizendo: 'Se é urgente, deixa comigo!'"
+      },
+      {
+        "id": 28,
+        "nome": "Fixx",
+        "imagem": "/images/mascot/fixx.png",
+        "descricao": "Mascote de suporte técnico que simplifica problemas complexos."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "nome": "Terrara",
+    "descricao": "Um planeta fértil e equilibrado, onde os primeiros projetos foram plantados. Ideal para times iniciantes, representa o começo da jornada e a estruturação de boas práticas de código.",
+    "titulo": "O Berço dos Primeiros Códigos",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 7,
+    "tema_principal": {
       "id": 14,
-      "nome": "Vortan",
-      "descricao": "planeta em constante mutação, onde o tempo e o espaço se dobram. Ideal para corrigir tarefas esquecidas (minor issues acumuladas), representando a complexidade e a dívida técnica que cresce se ignorada.",
-      "titulo": "A Singularidade Caótica",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Lógica e Performance"
-      },
-      "imagem": "/images/planet/vortan.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": 1800,
-      "left": 400,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Algorix",
-          "imagem": "/images/mascot/algorix.png",
-          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
-        }
-      ]
+      "nome": "Início da Jornada"
     },
-    {
+    "imagem": "/images/planet/terrara.png",
+    "gentilico": "Terrariano / Terrariana",
+    "categoria": "Planeta Secundário",
+    "top": 0,
+    "left": 800,
+    "mascotes": [
+      {
+        "id": 13,
+        "nome": "Astroli",
+        "imagem": "/images/mascot/astroli.png",
+        "descricao": "Uma criatura galáctica que evolui visualmente a cada conquista, absorvendo conhecimento como um pequeno cientista estelar."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "nome": "Tesserax",
+    "descricao": "Um mundo com dimensões sobrepostas. Cada tarefa revela uma nova camada do planeta. Excelente para desenvolvedores que trabalham com microsserviços ou integrações complexas",
+    "titulo": "O Labirinto Dimensional",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 5,
+    "tema_principal": {
       "id": 15,
-      "nome": "Zephyra",
-      "descricao": "Um deserto escuro com energia natural em forma de ventos carregados. Jogadores aqui constroem equipamentos e mineram recursos raros. Focado em melhoria contínua, é excelente para acompanhar o progresso do time e evoluções no projeto.",
-      "titulo": "Tempestade dos Sussurros",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Evolução Contínua"
-      },
-      "imagem": "/images/planet/zephyra.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": -800,
-      "left": -600,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Algorix",
-          "imagem": "/images/mascot/algorix.png",
-          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
-        }
-      ]
+      "nome": "Fluxos e Integrações"
     },
-    {
+    "imagem": "/images/planet/tesserax.png",
+    "gentilico": "Tesseraxiano / Tesseraxiana",
+    "categoria": "Planeta Secundário",
+    "top": -100,
+    "left": -540,
+    "mascotes": [
+      {
+        "id": 14,
+        "nome": "Quanti",
+        "imagem": "/images/mascot/quanti.png",
+        "descricao": "Vive em superposição de estados, ajudando em testes de cenários múltiplos (ex.: A/B testing, simulações)."
+      },
+      {
+        "id": 29,
+        "nome": "Voidy",
+        "imagem": "/images/mascot/voidy.png",
+        "descricao": "Um ser feito de sombras estelares que habita espaços não renderizados ou regiões inexploradas do sistema."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "nome": "Verdax",
+    "descricao": "Florestas alienígenas com árvores gigantes, comunicação via vibrações e missões de interação ambiental. Um mundo vivo e conectado. Focado em criação de conteúdo, novos módulos e experiências. Ideal para sprints de inovação.",
+    "titulo": "O Eco Cósmico",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 4,
+    "tema_principal": {
       "id": 16,
-      "nome": "Aeris",
-      "descricao": "Mundo gasoso com ilhas flutuantes, criaturas planadoras e desafios verticais. É o lar dos puzzles tridimensionais e minigames de equilíbrio. Ideal para caçadores de bugs e desenvolvedores que trabalham com correções em áreas críticas.",
-      "titulo": "Ilhas no Vento",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
-      },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "correção de Bugs"
-      },
-      "imagem": "/images/planet/aeris.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": 950,
-      "left": -1000,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Algorix",
-          "imagem": "/images/mascot/algorix.png",
-          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
-        }
-      ]
+      "nome": "Inovação e Design"
     },
-    {
+    "imagem": "/images/planet/verdax.png",
+    "gentilico": "Verdaxiano / Verdaxiana",
+    "categoria": "Planeta Secundário",
+    "top": 200,
+    "left": 3200,
+    "mascotes": [
+      {
+        "id": 15,
+        "nome": "Floris",
+        "imagem": "/images/mascot/floris.png",
+        "descricao": "Pequena criatura arbórea que personifica a força da natureza, capaz de florescer em qualquer ambiente."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "nome": "Vortan",
+    "descricao": "Planeta em constante mutação, onde o tempo e o espaço se dobram. Ideal para corrigir tarefas esquecidas (minor issues acumuladas), representando a complexidade e a dívida técnica que cresce se ignorada.",
+    "titulo": "A Singularidade Caótica",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 8,
+    "tema_principal": {
       "id": 17,
-      "nome": "Glaciora",
-      "descricao": "Um planeta coberto por campos de gelo cristalino e auroras pulsantes. Sua atmosfera fria exige manutenção constante da posicao, representando a importância da estabilidade do código. Ideal para missões de refatoração e otimização.",
-      "titulo": "O Guardião do Frio Estável",
-      "status": {
-        "id": 4,
-        "nome": "Explorado"
+      "nome": "Lógica e Performance"
+    },
+    "imagem": "/images/planet/vortan.png",
+    "gentilico": "Vortaniano / Vortaniana",
+    "categoria": "Planeta Secundário",
+    "top": 1800,
+    "left": 400,
+    "mascotes": [
+      {
+        "id": 16,
+        "nome": "Debu",
+        "imagem": "/images/mascot/debu.png",
+        "descricao": "Especialista em encontrar e corrigir dívidas técnicas antes que causem problemas."
       },
-      "qtd_missoes": 7,
-      "tema_principal": {
-        "id": 4,
-        "nome": "Segurança da Informação"
+      {
+        "id": 30,
+        "nome": "Nulli",
+        "imagem": "/images/mascot/nulli.png",
+        "descricao": "Um ser enigmático que surge quando variáveis são nulas ou indefinidas."
       },
-      "imagem": "/images/planet/glaciora.png",
-      "gentilico": "Crystalianos",
-      "categoria": "planeta Secundário",
-      "top": 1200,
-      "left": 800,
-      "mascotes": [
-        {
-          "id": 5,
-          "nome": "Algorix",
-          "imagem": "/images/mascot/algorix.png",
-          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
-        }
-      ]
-    }
+      {
+        "id": 36,
+        "nome": "Xilo",
+        "imagem": "/images/mascot/xilo.png",
+        "descricao": "Explorador de mecânicas não documentadas ou features experimentais."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "nome": "Zephyra",
+    "descricao": "Um deserto escuro com energia natural em forma de ventos carregados. Jogadores aqui constroem equipamentos e mineram recursos raros. Focado em melhoria contínua, é excelente para acompanhar o progresso do time e evoluções no projeto.",
+    "titulo": "Tempestade dos Sussurros",
+    "status": {
+      "id": 1,
+      "nome": "Explorado"
+    },
+    "qtd_missoes": 7,
+    "tema_principal": {
+      "id": 18,
+      "nome": "Evolução Contínua"
+    },
+    "imagem": "/images/planet/zephyra.png",
+    "gentilico": "Zephyriano / Zephyriana",
+    "categoria": "Planeta Secundário",
+    "top": -800,
+    "left": -600,
+    "mascotes": [
+      {
+        "id": 17,
+        "nome": "Pluxi",
+        "imagem": "/images/mascot/pluxi.png",
+        "descricao": "Um caçador de recompensas digital que aparece em eventos raros para coletar loot (gemas de código, artefatos de versões antigas)."
+      },
+      {
+        "id": 31,
+        "nome": "Starlux",
+        "imagem": "/images/mascot/starlux.png",
+        "descricao": "Guardião que brilha conforme a eficiência nas entregas, premiando cumprimento de prazos."
+      }
+    ]
+  }
   ],
   "temas_principais": [
     {
@@ -863,7 +899,7 @@
   "missoes": [
     {
       "id": 1,
-      "nome": "corrigir Acessibilidade do Formulário de Cadastro",
+      "nome": "Corrigir Acessibilidade do Formulário de Cadastro",
       "descricao": "Esta atividade visa resolver falhas de acessibilidade no formulário de cadastro de novos clientes. É crucial garantir que usuários com deficiência visual e motora possam interagir com o formulário de forma eficaz, cumprindo as diretrizes WCAG 2.1.",
       "objetivo_tecnico": "1. Implementar ARIA labels descritivas para todos os campos de entrada e botões\n2. Garantir ordem de tabulação lógica para posicaogação via teclado em todos os campos\n3. Assegurar contraste mínimo de 4.5:1 para textos e elementos da interface\n4. Adicionar feedback claro para validação de campos, compatível com leitores de tela",
       "tipo_missao": {
@@ -905,7 +941,7 @@
     },
     {
       "id": 2,
-      "nome": "corrigir Botão \"Finalizar Transação\" Intermitente",
+      "nome": "Corrigir Botão \"Finalizar Transação\" Intermitente",
       "descricao": "O botão \"Finalizar Transação\" na tela de pagamento apresenta falha intermitente, não respondendo ao clique em certas condições de rede ou estado da sessão. Isso impede a conclusão de transações e gera frustração no usuário.",
       "objetivo_tecnico": "1. Investigar e eliminar race conditions ou estados de carregamento que bloqueiam o evento de clique\n2. Assegurar que o event listener do botão seja sempre ativado corretamente\n3. Implementar tratamento de erros robusto para requisições assíncronas associadas ao botão\n4. Adicionar validação de estado da sessão antes de habilitar o botão",
       "tipo_missao": {
@@ -959,7 +995,7 @@
       "progresso_missao": 65,
       "status": {
         "id": 2,
-        "nome": "Em progresso"
+        "nome": "Em Progresso"
       },
       "data_criacao": "2025-05-02T09:00:00Z",
       "data_prazo": "2025-05-10T18:00:59Z",
@@ -1001,7 +1037,7 @@
       "progresso_missao": 30,
       "status": {
         "id": 2,
-        "nome": "Em progresso"
+        "nome": "Em Progresso"
       },
       "data_criacao": "2025-05-02T14:00:00Z",
       "data_prazo": "2025-05-08T11:00:59Z",
@@ -1043,7 +1079,7 @@
       "progresso_missao": 50,
       "status": {
         "id": 2,
-        "nome": "Em progresso"
+        "nome": "Em Progresso"
       },
       "data_criacao": "2025-05-02T11:00:00Z",
       "data_prazo": "2025-05-06T16:00:59Z",
@@ -1694,7 +1730,7 @@
       "data_conclusao": null,
       "status": {
         "id": 8,
-        "nome": "Em progresso"
+        "nome": "Em Progresso"
       },
       "icone": "⌛"
     },
@@ -1763,7 +1799,7 @@
       "data_conclusao": null,
       "status": {
         "id": 8,
-        "nome": "Em progresso"
+        "nome": "Em Progresso"
       },
       "icone": "⌛"
     },
@@ -1832,7 +1868,7 @@
       "data_conclusao": null,
       "status": {
         "id": 8,
-        "nome": "Em progresso"
+        "nome": "Em Progresso"
       },
       "icone": "⌛"
     },
@@ -1919,7 +1955,7 @@
     "aparencia": "Alienígena verde com antenas flexíveis e um sorriso malicioso.",
     "status": {
       "id": 1,
-      "nome": "Conquistado"
+      "nome": "Bloqueado"
     }
   },
   {
@@ -1938,7 +1974,7 @@
     "aparencia": "Vulto semi-transparente com núcleo brilhante, corpo de névoa cintilante que muda de cor conforme as emoções (roxo/azul/dourado).",
     "status": {
       "id": 1,
-      "nome": "Conquistado"
+      "nome": "Bloqueado"
     }
   },
   {
@@ -2109,7 +2145,7 @@
     "aparencia": "Uma esfera com anéis giratórios que aceleram ou desaceleram conforme a complexidade do código.",
     "status": {
       "id": 1,
-      "nome": "Conquistado"
+      "nome": "Bloqueado"
     }
   },
   {
@@ -2299,7 +2335,7 @@
     "aparencia": "Ser translúcido com raios sob a pele e antenas pulsantes.",
     "status": {
       "id": 1,
-      "nome": "Conquistado"
+      "nome": "Bloqueado"
     }
   },
   {
@@ -2432,7 +2468,7 @@
     "aparencia": "Forma difusa com vários 'eus' menores sobrepostos, como um holograma.",
     "status": {
       "id": 1,
-      "nome": "Conquistado"
+      "nome": "Bloqueado"
     }
   },
   {
@@ -2768,7 +2804,7 @@
         "icone": "✔️",
         "progresso": 55
       },
-      "tipo": "equipe"
+      "tipo": "Equipe"
     },
     {
       "id": 2,
@@ -2789,7 +2825,7 @@
         "icone": "🛠️",
         "progresso": 70
       },
-      "tipo": "usuario"
+      "tipo": "Usuário"
     },
     {
       "id": 3,
@@ -2810,7 +2846,7 @@
         "icone": "⌛",
         "progresso": 70
       },
-      "tipo": "equipe"
+      "tipo": "Equipe"
     },
     {
       "id": 4,
@@ -2831,7 +2867,7 @@
         "icone": "⚠️",
         "progresso": 2
       },
-      "tipo": "equipe"
+      "tipo": "Equipe"
     },
     {
       "id": 5,
@@ -2852,7 +2888,7 @@
         "icone": "🌳",
         "progresso": 35
       },
-      "tipo": "equipe"
+      "tipo": "Equipe"
     },
     {
       "id": 6,
@@ -2873,7 +2909,7 @@
         "icone": "🎯",
         "progresso": 90
       },
-      "tipo": "usuario"
+      "tipo": "Usuário"
     },
     {
       "id": 7,
@@ -2894,7 +2930,7 @@
         "icone": "🧩",
         "progresso": 100
       },
-      "tipo": "equipe"
+      "tipo": "Equipe"
     },
     {
       "id": 8,
@@ -2915,7 +2951,7 @@
         "icone": "⚡",
         "progresso": 80
       },
-      "tipo": "equipe"
+      "tipo": "Equipe"
     }
   ],
   "credenciais": [
@@ -2978,81 +3014,670 @@
   ],
   "conquistas": [
     {
-      "id": 1,
-      "nome": "Raiz Sólida",
-      "descricao": "Ao completar todas as tarefas verdes de um ciclo, você prova que estabilidade também é poder.",
-      "tarefas": "🍃 Consistência nas entregas 🍃 Compromisso com o todo 🍃 Força invisível que sustenta o progresso",
-      "qtd_moedas": 10,
-      "imagem": "/images/achievement/raiz-solida.png",
-      "planeta": {
-        "id": 1,
-        "nome": "Aeris",
-        "imagem": "/images/planet/aeris.png"
-      },
-      "status": {
-        "id": 5,
-        "nome": "Ativa"
-      },
-      "qtd_disponivel": 5,
-      "qtd_conquistada": 2
-    },
-    {
-      "id": 2,
-      "nome": "Ferro Vermelho",
-      "descricao": "Entregar 5 tarefas vermelhas antes do prazo",
-      "tarefas": "🔥 Velocidade sob pressão 🔥 Espírito inabalável diante de falhas críticas",
-      "qtd_moedas": 15,
-      "imagem": "/images/achievement/ferro-vermelho.png",
-      "planeta": {
-        "id": 2,
-        "nome": "Pyron",
-        "imagem": "/images/planet/pyron.png"
-      },
-      "status": {
-        "id": 5,
-        "nome": "Ativa"
-      },
-      "qtd_disponivel": 4,
-      "qtd_conquistada": 3
-    },
-    {
+    "id": 9,
+    "nome": "Ação Tática",
+    "descricao": "Ajustar um módulo de código após feedback de PO",
+    "tarefas": "🎯 Ajuste código após feedback em daily ou planning.\n🎯 Implemente melhoria sugerida pelo PO.\n🎯 Reestruture componente após revisão de design.",
+    "qtd_moedas": 29,
+    "imagem": "/images/achievement/acao-tatica.png",
+    "planeta": {
       "id": 3,
-      "nome": "Explorador de Solo",
-      "descricao": "Complete o primeiro deploy sem falhas",
-      "tarefas": "🚀 coragem no primeiro passo 🚀 Execução impecável 🚀 Início lendário na missão",
-      "qtd_moedas": 15,
-      "imagem": "/images/achievement/explorador-de-solo.png",
-      "planeta": {
-        "id": 2,
-        "nome": "Crystalia",
-        "imagem": "/images/planet/crystalia.png"
-      },
-      "status": {
-        "id": 5,
-        "nome": "Ativa"
-      },
-      "qtd_disponivel": 2,
-      "qtd_conquistada": 1
+      "nome": "Coreon",
+      "imagem": "/images/planet/coreon.png"
     },
-    {
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 3,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 26,
+    "nome": "Arquitetônico Cósmico",
+    "descricao": "Contribua com 3 soluções reutilizáveis para a base do projeto",
+    "tarefas": "🏗 Criar 3 hooks reutilizáveis para múltiplos componentes.\n🏗 Construir função utilitária adotada por mais de um módulo.",
+    "qtd_moedas": 29,
+    "imagem": "/images/achievement/arquiteto-cosmico.png",
+    "planeta": {
+      "id": 7,
+      "nome": "Glaciora",
+      "imagem": "/images/planet/glaciora.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 1,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 13,
+    "nome": "Caça ao Bug",
+    "descricao": "Corrigir um bug sem precisar de revisão posterior",
+    "tarefas": "🐞 Identifique e corrija um bug sem que ele volte a ocorrer.\n🐞 Corrija um erro sem passar por código de revisão.\n🐞 Resolva um problema detectado apenas em ambiente de produção.",
+    "qtd_moedas": 29,
+    "imagem": "/images/achievement/caca-ao-bug.png",
+    "planeta": {
+      "id": 1,
+      "nome": "Aeris",
+      "imagem": "/images/planet/aeris.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 1,
+    "qtd_conquistada": 0
+  },
+  {
+    "id": 30,
+    "nome": "Código Turbinado",
+    "descricao": "Otimizar um trecho de código e reduzir o tempo de resposta em 50%",
+    "tarefas": "🚀 Otimizar algoritmo que reduz tempo de resposta em 50%.\n🚀 Implementar cache ou lazy loading com ganho mensurável.",
+    "qtd_moedas": 30,
+    "imagem": "/images/achievement/codigo-turbinado.png",
+    "planeta": {
+      "id": 14,
+      "nome": "Vortan",
+      "imagem": "/images/planet/vortan.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 2,
+    "qtd_conquistada": 0
+  },
+  {
+    "id": 16,
+    "nome": "Crescimento Contínuo",
+    "descricao": "Manter evolução positiva de performance por 3 entregas seguidas",
+    "tarefas": "📈 Aumente o índice de qualidade por 3 ciclos seguidos.\n📈 Mantenha desempenho crescente nas métricas da nave.\n📈 Eleve o score de equipe sprint após sprint.",
+    "qtd_moedas": 21,
+    "imagem": "/images/achievement/crescimento-continuo.png",
+    "planeta": {
+      "id": 9,
+      "nome": "Orthos",
+      "imagem": "/images/planet/orthos.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 5,
+    "qtd_conquistada": 4
+  },
+  {
+    "id": 27,
+    "nome": "Deploy Limpo",
+    "descricao": "Realizar deploy sem rollback em ambiente produtivo",
+    "tarefas": "✅ Realizar deploy sem rollback.\n✅ Concluir merge e deploy com sucesso e sem bugs.",
+    "qtd_moedas": 9,
+    "imagem": "/images/achievement/deploy-limpo.png",
+    "planeta": {
+      "id": 7,
+      "nome": "Glaciora",
+      "imagem": "/images/planet/glaciora.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 1,
+    "qtd_conquistada": 0
+  },
+  {
+    "id": 14,
+    "nome": "Diplomata Cósmico",
+    "descricao": "Responder a 3 missões azuis (S.O.S.) de outras equipes",
+    "tarefas": "🤝 Atenda 3 pedidos de ajuda de outras equipes.\n🤝 Corrija bugs em projeto de outro time.\n🤝 Dê suporte técnico durante uma falha crítica de parceiro.",
+    "qtd_moedas": 30,
+    "imagem": "/images/achievement/diplomata-cosmico.png",
+    "planeta": {
+      "id": 1,
+      "nome": "Aeris",
+      "imagem": "/images/planet/aeris.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 2,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 29,
+    "nome": "Dominador do Caos",
+    "descricao": "Corrija tarefas de 3 áreas diferentes da nave",
+    "tarefas": "🌌 Corrigir tarefas de frontend, backend e banco de dados.\n🌌 Atuar em três domínios técnicos distintos em uma sprint.\n🌌 Solucionar bugs distribuídos por áreas diferentes do sistema.",
+    "qtd_moedas": 14,
+    "imagem": "/images/achievement/dominador-do-caos.png",
+    "planeta": {
       "id": 4,
-      "nome": "Qualidade Constante",
-      "descricao": "Detectar e corrigir um bug em ambiente de teste antes do QA",
-      "tarefas": "🧠 Olhar afiado para falhas 🧠 Ação antes da detecção externa 🧠 Excelência como rotina",
-      "qtd_moedas": 15,
-      "imagem": "/images/achievement/qualidade-constante.png",
-      "planeta": {
-        "id": 2,
-        "nome": "Aeris",
-        "imagem": "/images/planet/aeris.png"
-      },
-      "status": {
-        "id": 5,
-        "nome": "Ativa"
-      },
-      "qtd_disponivel": 5,
-      "qtd_conquistada": 2
-    }
+      "nome": "Crystalia",
+      "imagem": "/images/planet/crystalia.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 5,
+    "qtd_conquistada": 3
+  },
+  {
+    "id": 15,
+    "nome": "Dupla Estelar",
+    "descricao": "Concluir uma missão junto com outro tripulante",
+    "tarefas": "🧑 Concluir uma tarefa emparelhada com outro dev.\n🧑 Finalizar uma missão conjunta com colaboração em tempo real.\n🧑 Participar de code review junto a outro tripulante.",
+    "qtd_moedas": 13,
+    "imagem": "/images/achievement/dupla-estelar.png",
+    "planeta": {
+      "id": 1,
+      "nome": "Aeris",
+      "imagem": "/images/planet/aeris.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 4,
+    "qtd_conquistada": 3
+  },
+  {
+    "id": 6,
+    "nome": "Engenheiro do Deserto",
+    "descricao": "Atingir 100% de performance em 3 sprints consecutivos",
+    "tarefas": "🏜 Mantenha performance da equipe em 100% por 3 semanas.\n🏜 Entregue todas as tarefas da sprint com qualidade total.\n🏜 Não registre nenhum bug por 3 ciclos consecutivos.",
+    "qtd_moedas": 17,
+    "imagem": "/images/achievement/engenheiro-do-deserto.png",
+    "planeta": {
+      "id": 10,
+      "nome": "Pyron",
+      "imagem": "/images/planet/pyron.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 4,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 19,
+    "nome": "Equilíbrio Cósmico",
+    "descricao": "Manter qualidade >90% e cumprimento de SLA por 4 semanas",
+    "tarefas": "⚖️ Mantenha índice de SLA e qualidade acima de 90% por 4 semanas.\n⚖️ Sem bugs registrados em produção por 1 mês.\n⚖️ Alto desempenho técnico e comunicação clara com PO e time.",
+    "qtd_moedas": 16,
+    "imagem": "/images/achievement/equilibrio-cosmico.png",
+    "planeta": {
+      "id": 2,
+      "nome": "Bitron",
+      "imagem": "/images/planet/bitron.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 1,
+    "qtd_conquistada": 0
+  },
+  {
+    "id": 17,
+    "nome": "Evolutivo",
+    "descricao": "Subir o score de qualidade de código da nave em 10%.",
+    "tarefas": "🔧 Suba o score de qualidade da nave em 10% com tarefas amarelas.\n🔧 Elimine bugs que reduziam a pontuação técnica.\n🔧 Refatore arquivos que causavam acúmulo de dívidas.",
+    "qtd_moedas": 23,
+    "imagem": "/images/achievement/evolutivo.png",
+    "planeta": {
+      "id": 15,
+      "nome": "Zephyra",
+      "imagem": "/images/planet/zephyra.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 2,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 34,
+    "nome": "Explorador das Dimensões",
+    "descricao": "Colaborar em 3 módulos distintos do sistema",
+    "tarefas": "🌠 Contribuir em backend, frontend e infra em um mesmo ciclo.\n🌠 Participar de tarefas em três times diferentes.\n🌠 Atuar em múltiplos contextos de projeto.",
+    "qtd_moedas": 24,
+    "imagem": "/images/achievement/explorador-das-dimensoes.png",
+    "planeta": {
+      "id": 6,
+      "nome": "Fluxaris",
+      "imagem": "/images/planet/fluxaris.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 5,
+    "qtd_conquistada": 4
+  },
+  {
+    "id": 3,
+    "nome": "Explorador de Solo",
+    "descricao": "Complete o primeiro deploy sem falhas",
+    "tarefas": "🧪 Realize o primeiro deploy sem falhas de build.\n🧪 Suba a aplicação em ambiente de testes com sucesso.\n🧪 Implemente pipeline de deploy automático e sem rollback.",
+    "qtd_moedas": 26,
+    "imagem": "/images/achievement/explorador-de-solo.png",
+    "planeta": {
+      "id": 11,
+      "nome": "Terrara",
+      "imagem": "/images/planet/terrara.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 5,
+    "qtd_conquistada": 3
+  },
+  {
+    "id": 12,
+    "nome": "Exterminador Estelar",
+    "descricao": "Resolver 15 bugs relatados por QA",
+    "tarefas": "🛠 Resolva 15 bugs registrados no sistema de QA.\n🛠 Corrija falhas intermitentes apontadas por testes automatizados.\n🛠 Resolver erros que causam travamento na aplicação.",
+    "qtd_moedas": 7,
+    "imagem": "/images/achievement/exterminador-estelar.png",
+    "planeta": {
+      "id": 3,
+      "nome": "Coreon",
+      "imagem": "/images/planet/coreon.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 5,
+    "qtd_conquistada": 3
+  },
+  {
+    "id": 5,
+    "nome": "Ferro Vermelho",
+    "descricao": "Entregar 5 tarefas vermelhas antes do prazo",
+    "tarefas": "🔥 Entregue 2 tarefas vermelhas críticas antes do prazo.\n🔥 Resolva falha de segurança antes da data prevista.\n🔥 Complete 5 tarefas vermelhas sem necessidade de retrabalho.",
+    "qtd_moedas": 9,
+    "imagem": "/images/achievement/ferro-vermelho.png",
+    "planeta": {
+      "id": 10,
+      "nome": "Pyron",
+      "imagem": "/images/planet/pyron.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 1,
+    "qtd_conquistada": 0
+  },
+  {
+    "id": 32,
+    "nome": "Fluxo Fluído",
+    "descricao": "Resolver tarefas de acessibilidade ou responsividade",
+    "tarefas": "🔄 Corrigir problema de acessibilidade crítica.\n🔄 Tornar componente 100% responsivo.\n🔄 Adequar módulo para navegação por teclado e leitores de tela.",
+    "qtd_moedas": 19,
+    "imagem": "/images/achievement/fluxo-fluido.png",
+    "planeta": {
+      "id": 5,
+      "nome": "Ecliptor",
+      "imagem": "/images/planet/ecliptor.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 3,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 21,
+    "nome": "Foco Prioritário",
+    "descricao": "Eliminar as duas tarefas mais urgentes sem falhas",
+    "tarefas": "🧠 Resolver as duas tarefas mais urgentes da sprint sem bugs.\n🧠 Finalizar funcionalidades prioritárias antes da daily final.\n🧠 Corrigir falhas urgentes antes de tarefas secundárias.",
+    "qtd_moedas": 27,
+    "imagem": "/images/achievement/foco-prioritario.png",
+    "planeta": {
+      "id": 2,
+      "nome": "Bitron",
+      "imagem": "/images/planet/bitron.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 2,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 2,
+    "nome": "Fundador da Frota",
+    "descricao": "Montar nave com pontuação máxima de saúde",
+    "tarefas": "🚀 Personalize a nave com todos os upgrades disponíveis.\n🚀 Alcance 100% de saúde da nave após cumprir tarefas de qualidade.\n🚀 Complete uma revisão geral de módulos antigos e melhore o score da nave.",
+    "qtd_moedas": 14,
+    "imagem": "/images/achievement/fundador-da-frota.png",
+    "planeta": {
+      "id": 11,
+      "nome": "Terrara",
+      "imagem": "/images/planet/terrara.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 4,
+    "qtd_conquistada": 4
+  },
+  {
+    "id": 25,
+    "nome": "Guardião de Segredos",
+    "descricao": "Remover dados sensíveis expostos no código",
+    "tarefas": "🔐 Remover token ou credencial hardcoded.\n🔐 Eliminar dados sensíveis de logs e mensagens.\n🔐 Criar variáveis de ambiente seguras e documentadas.",
+    "qtd_moedas": 16,
+    "imagem": "/images/achievement/guardiao-de-segredos.png",
+    "planeta": {
+      "id": 7,
+      "nome": "Glaciora",
+      "imagem": "/images/planet/glaciora.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 2,
+    "qtd_conquistada": 0
+  },
+  {
+    "id": 23,
+    "nome": "Interface Fluída",
+    "descricao": "Redesenhar um componente com foco em UX",
+    "tarefas": "🖍 Recriar formulário com foco em acessibilidade e UX.\n🖍 Reestruturar componente para mobile com feedback positivo.\n🖍 Corrigir fluxo de navegação para melhorar a jornada do usuário.",
+    "qtd_moedas": 5,
+    "imagem": "/images/achievement/interface-fluida.png",
+    "planeta": {
+      "id": 8,
+      "nome": "Hexora",
+      "imagem": "/images/planet/hexora.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 5,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 10,
+    "nome": "Luz do Linter",
+    "descricao": "Concluir 10 tarefas sem erros de formatação ou estilo",
+    "tarefas": "🌟 Submeta código que passe em todas as validações do linter.\n🌟 Evite erros de formatação por 10 tarefas consecutivas.\n🌟 Corrija arquivos que não seguem o padrão do projeto.",
+    "qtd_moedas": 30,
+    "imagem": "/images/achievement/luz-do-linter.png",
+    "planeta": {
+      "id": 3,
+      "nome": "Coreon",
+      "imagem": "/images/planet/coreon.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 1,
+    "qtd_conquistada": 0
+  },
+  {
+    "id": 35,
+    "nome": "Magnetizador",
+    "descricao": "Resolver um conflito de integração entre dois serviços",
+    "tarefas": "🧲 Resolver conflito entre microserviços.\n🧲 Ajustar incompatibilidades entre integrações REST.\n🧲 Eliminar falha de comunicação entre APIs internas.",
+    "qtd_moedas": 28,
+    "imagem": "/images/achievement/magnetizador.png",
+    "planeta": {
+      "id": 12,
+      "nome": "Tesserax",
+      "imagem": "/images/planet/tesserax.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 3,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 11,
+    "nome": "Mestre do Estilo",
+    "descricao": "Padronizar um módulo inteiro seguindo o style guide",
+    "tarefas": "🎨 Aplique o style guide em todo o módulo de autenticação.\n🎨 Reescreva um componente com base no guia de UI.\n🎨 Atualize arquivos SCSS para padronizar estilos da aplicação.",
+    "qtd_moedas": 8,
+    "imagem": "/images/achievement/mestre-do-estilo.png",
+    "planeta": {
+      "id": 3,
+      "nome": "Coreon",
+      "imagem": "/images/planet/coreon.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 2,
+    "qtd_conquistada": 0
+  },
+  {
+    "id": 24,
+    "nome": "Mestre do Refactor",
+    "descricao": "Conclua 10 missões de reorganização de código sem falhas",
+    "tarefas": "🧹 Finalizar 10 tarefas de refatoração sem erro.\n🧹 Eliminar duplicações em todo o módulo principal.\n🧹 Refatorar código com aumento de performance comprovado.",
+    "qtd_moedas": 13,
+    "imagem": "/images/achievement/mestre-do-refactor.png",
+    "planeta": {
+      "id": 13,
+      "nome": "Verdax",
+      "imagem": "/images/planet/verdax.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 1,
+    "qtd_conquistada": 0
+  },
+  {
+    "id": 7,
+    "nome": "Missão Relâmpago",
+    "descricao": "Resolver uma tarefa crítica em menos de 24h",
+    "tarefas": "⚡ Corrija um bug crítico em menos de 24h após abertura.\n⚡ Entregue uma feature urgente no mesmo dia.\n⚡ Conclua uma revisão e entrega no mesmo ciclo de abertura.",
+    "qtd_moedas": 18,
+    "imagem": "/images/achievement/missao-relampago.png",
+    "planeta": {
+      "id": 10,
+      "nome": "Pyron",
+      "imagem": "/images/planet/pyron.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 2,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 8,
+    "nome": "Montador Rápido",
+    "descricao": "Concluir uma sprint com 100% de entrega no prazo",
+    "tarefas": "🔧 Finalize 100% das tarefas da sprint antes do prazo.\n🔧 Feche todas as pendências do board em um ciclo.\n🔧 Entregue tarefas com documentação e testes finalizados.",
+    "qtd_moedas": 30,
+    "imagem": "/images/achievement/montador-rapido.png",
+    "planeta": {
+      "id": 3,
+      "nome": "Coreon",
+      "imagem": "/images/planet/coreon.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 1,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 18,
+    "nome": "Navegador do Foco",
+    "descricao": "Concluir 5 tarefas amarelas e vermelhas no mesmo ciclo",
+    "tarefas": "🎯 Finalizar 5 tarefas críticas e de melhoria no mesmo ciclo.\n🎯 Concluir missões vermelhas e amarelas em equilíbrio.\n🎯 Manter a entrega de alta prioridade combinada com refatorações.",
+    "qtd_moedas": 22,
+    "imagem": "/images/achievement/navegador-do-foco.png",
+    "planeta": {
+      "id": 15,
+      "nome": "Zephyra",
+      "imagem": "/images/planet/zephyra.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 2,
+    "qtd_conquistada": 0
+  },
+  {
+    "id": 33,
+    "nome": "Pluma da História",
+    "descricao": "Escrever o changelog completo de uma release",
+    "tarefas": "📝 Escrever changelog completo de uma versão entregue.\n📝 Documentar features e bugs resolvidos com clareza.\n📝 Contribuir para histórico de projeto em repositório público.",
+    "qtd_moedas": 8,
+    "imagem": "/images/achievement/pluma-da-historia.png",
+    "planeta": {
+      "id": 5,
+      "nome": "Ecliptor",
+      "imagem": "/images/planet/ecliptor.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 5,
+    "qtd_conquistada": 3
+  },
+  {
+    "id": 4,
+    "nome": "Primeira Navegação",
+    "descricao": "Faça a primeira leitura e organização de um backlog",
+    "tarefas": "🧭 Acesse o backlog e organize tarefas por prioridade.\n🧭 Adicione labels e categorias para as tarefas de uma sprint.\n🧭 Revise com a equipe o backlog antes do início do ciclo.",
+    "qtd_moedas": 28,
+    "imagem": "/images/achievement/primeira-navegacao.png",
+    "planeta": {
+      "id": 10,
+      "nome": "Pyron",
+      "imagem": "/images/planet/pyron.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 4,
+    "qtd_conquistada": 2
+  },
+  {
+    "id": 22,
+    "nome": "Qualidade Constante",
+    "descricao": "Detectar e corrigir um bug em ambiente de teste antes do QA",
+    "tarefas": "🧪 Corrigir falha antes de ser identificada por QA.\n🧪 Detectar problema durante testes locais e corrigi-lo.\n🧪 Submeter pull request sem necessidade de ajustes.",
+    "qtd_moedas": 24,
+    "imagem": "/images/achievement/qualidade-constante.png",
+    "planeta": {
+      "id": 2,
+      "nome": "Bitron",
+      "imagem": "/images/planet/bitron.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 4,
+    "qtd_conquistada": 2
+  },
+  {
+    "id": 28,
+    "nome": "Quebrador de Loops",
+    "descricao": "Resolva 20 minor issues em sequência",
+    "tarefas": "🌀 Resolver 20 minor issues acumuladas.\n🌀 Limpar backlog técnico de pequenos ajustes.\n🌀 Corrigir dívidas técnicas históricas.",
+    "qtd_moedas": 12,
+    "imagem": "/images/achievement/quebrador-de-loops.png",
+    "planeta": {
+      "id": 4,
+      "nome": "Crystalia",
+      "imagem": "/images/planet/crystalia.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 4,
+    "qtd_conquistada": 4
+  },
+  {
+    "id": 1,
+    "nome": "Raiz Sólida",
+    "descricao": "Completar todas as tarefas verdes de um ciclo",
+    "tarefas": "🌱 Complete o tour da plataforma e preencha seu perfil 100%.\n🌱 Curta o perfil de um colega e conclua uma tarefa verde.\n🌱 Realize 3 tarefas verdes seguidas em uma semana.",
+    "qtd_moedas": 12,
+    "imagem": "/images/achievement/raiz-solida.png",
+    "planeta": {
+      "id": 11,
+      "nome": "Terrara",
+      "imagem": "/images/planet/terrara.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 1,
+    "qtd_conquistada": 1
+  },
+  {
+    "id": 31,
+    "nome": "Sábio do Tempo",
+    "descricao": "Manter regularidade nas entregas por 4 semanas",
+    "tarefas": "⏱ Cumprir os prazos por 4 semanas sem atraso.\n⏱ Finalizar toda sprint com entregas antes do deadline.\n⏱ Documentar entregas com histórico consistente.",
+    "qtd_moedas": 11,
+    "imagem": "/images/achievement/sabio-do-tempo.png",
+    "planeta": {
+      "id": 14,
+      "nome": "Vortan",
+      "imagem": "/images/planet/vortan.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 5,
+    "qtd_conquistada": 2
+  },
+  {
+    "id": 20,
+    "nome": "Tempo e Valor",
+    "descricao": "Entregar tarefa no prazo com código 100% testado",
+    "tarefas": "⏳ Entregar código com testes 100% automatizados.\n⏳ Cumprir o prazo e garantir estabilidade da entrega.\n⏳ Concluir tarefa crítica com cobertura de testes elevada.",
+    "qtd_moedas": 13,
+    "imagem": "/images/achievement/tempo-e-valor.png",
+    "planeta": {
+      "id": 2,
+      "nome": "Bitron",
+      "imagem": "/images/planet/bitron.png"
+    },
+    "status": {
+      "id": 1,
+      "nome": "Ativa"
+    },
+    "qtd_disponivel": 2,
+    "qtd_conquistada": 1
+  }
   ],
   "desafios_missoes_verdes": [
     {
@@ -3529,7 +4154,7 @@
     },
     {
       "id": 8,
-      "nome": "Em progresso",
+      "nome": "Em Progresso",
       "descricao": "Em execução"
     },
     {

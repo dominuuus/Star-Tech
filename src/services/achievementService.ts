@@ -2,15 +2,15 @@ import gameData from "../assets/db/db.json";
 import { api } from "../lib/axios";
 
 export interface Achievement {
-    id: number;
-    Nome: string;
-    Descrição?: string;
-    Tarefas?: string;
-    Qtd_moedas: number;
-    Imagem: string;
-    Planeta: string;
-    Planeta_Imagem?: string;
-    Status: string;
+  id: number;
+  Nome: string;
+  Descrição?: string;
+  Tarefas?: string;
+  Qtd_moedas: number;
+  Imagem: string;
+  Planeta: string;
+  Planeta_Imagem?: string;
+  Status: string;
 }
 
 interface RawAchievement {
@@ -33,24 +33,26 @@ const mapRawAchievementToAchievements = (raw: RawAchievement): Achievement => ({
   Imagem: raw.imagem,
   Planeta: raw.planeta.nome,
   Planeta_Imagem: raw.planeta.imagem,
-  Status: raw.status.nome
+  Status: raw.status.nome,
 });
 
 export async function fetchAchievement(): Promise<Achievement[]> {
   try {
-    const response = await api.get('/conquistas');
+    const response = await api.get("/conquistas");
 
     const rawAchievements: RawAchievement[] = response.data;
     return rawAchievements.map(mapRawAchievementToAchievements);
   } catch (e) {
-    console.error('Erro ao buscar conquistas', e);
+    console.error("Erro ao buscar conquistas", e);
 
     try {
       const rawAchievements: RawAchievement[] = gameData.conquistas;
       return rawAchievements.map(mapRawAchievementToAchievements);
     } catch (fallbackError) {
-      console.error('Erro no fallback para db.json:', fallbackError);
-      throw new Error('Falha ao carregar conquistas. Verifique o JSON Server ou o arquivo db.json.');
-    }
+      console.error("Erro no fallback para db.json:", fallbackError);
+      throw new Error(
+        "Falha ao carregar conquistas. Verifique o JSON Server ou o arquivo db.json."
+      );
     }
   }
+}

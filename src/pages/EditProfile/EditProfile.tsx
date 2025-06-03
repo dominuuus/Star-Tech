@@ -32,10 +32,10 @@ export function EditProfile() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const [mascots, setMascots] = useState<Mascot[]>([]);
-  
-    useEffect(() => {
-      fetchMascot().then(setMascots).catch(console.error);
-    }, []);
+
+  useEffect(() => {
+    fetchMascot().then(setMascots).catch(console.error);
+  }, []);
 
   return (
     <>
@@ -76,15 +76,15 @@ export function EditProfile() {
               <ActionButton>
                 <PencilSimpleLine size={18} />
                 <NavLink to="" title="Avatar">
-                        Editar
-                    </NavLink> 
+                  Editar
+                </NavLink>
               </ActionButton>
 
               <ActionButton>
                 <UserCircleGear size={22} />
                 <NavLink to="/game/avatar" title="Avatar">
-                        Personalizar
-                    </NavLink> 
+                  Personalizar
+                </NavLink>
               </ActionButton>
             </ActionPanel>
 
@@ -115,10 +115,10 @@ export function EditProfile() {
           <MascotsTitle>
             <span>Mascotes</span>
             {mascots.map((mascot) => (
-              <MascotsContainer><img src={mascot.Imagem} alt={mascot.Descrição} /></MascotsContainer>
-
+              <MascotsContainer>
+                <img src={mascot.Imagem} alt={mascot.Descrição} />
+              </MascotsContainer>
             ))}
-            
           </MascotsTitle>
           <span>Conquistas</span>
           <img src={images.conquistas} alt="" />

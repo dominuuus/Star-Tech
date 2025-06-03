@@ -35,7 +35,9 @@ export function NewsMission({ tipo, maxItems }: NewsMissionProps) {
                 <h5>{notification.Projeto_icone}</h5>
                 <h5>{notification.Projeto_nome}</h5>
               </div>
-              <div><span>{notification.Projeto_progresso}% concluído</span></div>
+              <div>
+                <span>{notification.Projeto_progresso}% concluído</span>
+              </div>
               {notification.id !==
                 displayedNotification[displayedNotification.length - 1].id}
             </NewsContent>

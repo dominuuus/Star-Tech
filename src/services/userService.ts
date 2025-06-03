@@ -49,26 +49,27 @@ const mapRawUserToUser = (raw: RawUser): User => ({
   Cargo: raw.cargo,
 });
 
-
 export async function fetchUser(): Promise<User[]> {
   try {
-    const response = await api.get('/usuarios');
+    const response = await api.get("/usuarios");
     const rawUsers: RawUser[] = response.data;
     if (!Array.isArray(rawUsers)) {
-      throw new Error('Dados de usuários inválidos retornados pela API');
+      throw new Error("Dados de usuários inválidos retornados pela API");
     }
     return rawUsers.map(mapRawUserToUser);
   } catch (error) {
-    console.error('Erro ao buscar usuários via API:', error);
+    console.error("Erro ao buscar usuários via API:", error);
     try {
       const rawUsers: RawUser[] = gameData.usuarios;
       if (!Array.isArray(rawUsers)) {
-        throw new Error('Dados de usuários inválidos no db.json');
+        throw new Error("Dados de usuários inválidos no db.json");
       }
       return rawUsers.map(mapRawUserToUser);
     } catch (fallbackError) {
-      console.error('Erro no fallback para db.json:', fallbackError);
-      throw new Error('Falha ao carregar usuários. Verifique o JSON Server ou o arquivo db.json.');
+      console.error("Erro no fallback para db.json:", fallbackError);
+      throw new Error(
+        "Falha ao carregar usuários. Verifique o JSON Server ou o arquivo db.json."
+      );
     }
   }
 }

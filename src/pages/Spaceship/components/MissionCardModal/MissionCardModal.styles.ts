@@ -39,8 +39,8 @@ export const MissionCardModalDescription = styled.div`
 `;
 
 export const ButtonContainer = styled.div`
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 export const GoToMissionButton = styled.button`
@@ -51,4 +51,3 @@ export const GoToMissionButton = styled.button`
   cursor: pointer;
   margin: 1rem 0;
 `;
-

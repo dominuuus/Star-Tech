@@ -10,7 +10,6 @@ interface ModalProps {
 }
 
 export default function Modal({ open, onClose, children }: ModalProps) {
-  // impede o scroll da página quando o modal estiver aberto
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "auto";
     return () => {
@@ -26,7 +25,7 @@ export default function Modal({ open, onClose, children }: ModalProps) {
       <ModalContainer
         role="dialog"
         aria-modal="true"
-        onClick={(e) => e.stopPropagation()} // evita fechar ao clicar dentro
+        onClick={(e) => e.stopPropagation()}
       >
         <CloseBtn onClick={onClose}>
           <X size={20} weight="bold" />
@@ -34,6 +33,6 @@ export default function Modal({ open, onClose, children }: ModalProps) {
         {children}
       </ModalContainer>
     </>,
-    document.getElementById("modal-root")! // crie esta div no index.html
+    document.getElementById("modal-root")!
   );
 }

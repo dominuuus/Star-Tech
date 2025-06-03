@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 interface AchievementTabsProps {
   $active: boolean;
@@ -27,8 +27,8 @@ export const TabButton = styled.button<AchievementTabsProps>`
   font-size: ${(props) => props.theme.fontSize.medium};
   font-weight: bold;
   cursor: pointer;
-  background-color: ${($active) => ($active ? '#D8A214' : '#09152B')};
-  color: ${(props) => props.theme.colors.white};;
+  background-color: ${($active) => ($active ? "#D8A214" : "#09152B")};
+  color: ${(props) => props.theme.colors.white};
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   &:hover {

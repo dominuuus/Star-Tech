@@ -47,11 +47,11 @@ export const ModalContentWrapper = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-  flex-direction: column;
+    flex-direction: column;
 
-  img {
-    height: 8rem;
-  }
+    img {
+      height: 8rem;
+    }
   }
 `;
 

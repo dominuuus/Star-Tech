@@ -24,7 +24,6 @@ const StatusMission = styled.div<StatusProps>`
   font-weight: bold;
   font-size: ${(props) => props.theme.fontSize.medium};
 
-  
   p {
     font-weight: lighter;
   }
@@ -58,7 +57,7 @@ export const StatusLateMission = styled.div<StatusProps>`
   font-weight: bold;
   align-items: center;
   font-size: ${(props) => props.theme.fontSize.medium};
-  
+
   transition:
     color 0.15s,
     background-color 0.15s;

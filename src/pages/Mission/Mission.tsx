@@ -21,7 +21,9 @@ export function Mission() {
         </SectionMissionDetails>
 
         <SectionMissionNotifications>
-          <div><span>🛰️Radar de transmissões</span></div>
+          <div>
+            <span>🛰️Radar de transmissões</span>
+          </div>
           <div>
             <NewsMission maxItems={7} />
           </div>

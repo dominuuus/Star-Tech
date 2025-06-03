@@ -33,7 +33,10 @@ export function EditAvatar() {
   const handleZoomClick = () => {
     setZoomHead((prev) => !prev);
     setTimeout(() => {
-      astronautRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+      astronautRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
     }, 50);
   };
 
@@ -78,9 +81,8 @@ export function EditAvatar() {
             <Cell>
               <Shield size={30} weight="fill" />
             </Cell>
-          
           </BodyCell>
-          
+
           <Cell>
             <Boot size={30} weight="fill" />
           </Cell>

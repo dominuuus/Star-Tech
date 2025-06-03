@@ -11,7 +11,7 @@ export const ModalOverlay = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  
+
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     width: 100vw;
   }
@@ -26,8 +26,6 @@ export const ModalContent = styled.div`
   width: 90%;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-  
 `;
 
 export const MascotContent = styled.div`
@@ -40,7 +38,6 @@ export const MascotContent = styled.div`
     overflow-y: auto;
     width: 250px;
   }
-  
 `;
 
 export const ModalContentWrapper = styled.div`
@@ -56,11 +53,11 @@ export const ModalContentWrapper = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-  flex-direction: column;
+    flex-direction: column;
 
-  img {
-    height: 8rem;
-  }
+    img {
+      height: 8rem;
+    }
   }
 `;
 
@@ -128,5 +125,3 @@ export const FavoriteModalButton = styled.button`
   border-radius: 4px;
   background: ${(props) => props.theme.colors.status.yellow};
 `;
-
-

@@ -40,8 +40,6 @@ export function Router() {
         <Route path="docs" element={<Docummentation />} />
         <Route path="*" element={<NotFound />} />
       </Route>
-
-      
     </Routes>
   );
 }

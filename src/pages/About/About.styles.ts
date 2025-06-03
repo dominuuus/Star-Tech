@@ -36,8 +36,6 @@ export const ProjectDescriptionContainer = styled.div`
       height: 20rem;
     }
   }
-
-
 `;
 
 export const StaffContainer = styled.div`
@@ -94,5 +92,4 @@ export const FooterContent = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     flex-direction: column;
   }
-
 `;

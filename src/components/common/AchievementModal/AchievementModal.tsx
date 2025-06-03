@@ -80,10 +80,14 @@ function AchievementList({ achievements }: AchievementListProps) {
     setIsModalOpen(false);
   };
 
+  const filteredAchievements = achievements
+    .filter(achievement => achievement.Status === "Ativa")
+    .slice(0, 6);
+
   return (
     <>
       <AchievementContent>
-        {achievements.map((mascot) => (
+        {filteredAchievements.map((mascot) => (
           <div key={mascot.id}>
             <img
               src={mascot.Imagem}

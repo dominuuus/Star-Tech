@@ -1,16 +1,9 @@
-import {
-
-  MissionStatusContainer,
-
-} from "./MissionStatus.styles";
+import { MissionStatusContainer } from "./MissionStatus.styles";
 
 export function MissionStatus() {
   return (
     <>
-      <MissionStatusContainer>
-
-        
-      </MissionStatusContainer>
+      <MissionStatusContainer></MissionStatusContainer>
     </>
   );
 }

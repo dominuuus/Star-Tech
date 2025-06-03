@@ -26,11 +26,10 @@ export const AstronautSectionOne = styled.section`
   flex-direction: column;
   width: 40%;
 
-@media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     width: 20%;
     margin-left: 40%;
   }
-
 `;
 
 export const SectionTwoContentOne = styled.div`
@@ -74,7 +73,7 @@ export const SectionTwoContentTwo = styled.div`
 export const SectionTwoContentThree = styled.div`
   width: 45%;
 
-@media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     width: 100%;
   }
 `;
@@ -96,9 +95,7 @@ export const MissionStatusContent = styled.div`
   }
 `;
 
-export const MissionFilterContainer = styled.div`
-
-`;
+export const MissionFilterContainer = styled.div``;
 
 export const MissionCardContainer = styled.div`
   overflow-y: auto;
@@ -121,10 +118,7 @@ export const MissionCardContainer = styled.div`
   &::-webkit-scrollbar-thumb:hover {
     background: ${(props) => props.theme.colors.news};
   }
-
-  
 `;
-
 
 export const CommandCenterContent = styled.div`
   height: 20rem;
@@ -146,9 +140,10 @@ export const MascotContainer = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-img {
-    height: 8rem;}  }
-  
+    img {
+      height: 8rem;
+    }
+  }
 `;
 
 export const AchievementContainer = styled.div`

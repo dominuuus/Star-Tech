@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AchievementDetailContainer = styled.div`
-  width: 60%;
+  width: 70%;
   min-height: 70vh;
   display: flex;
   flex-direction: column;
@@ -61,6 +61,7 @@ export const AchievementContent = styled.div`
   justify-content: center;
   font-size: ${(props) => props.theme.fontSize.large};
   color: ${(props) => props.theme.colors.white};
+  gap: 5px;
   h2 {
     margin: 0 0 15px 0;
     font-size: ${(props) => props.theme.fontSize.extraLarge};
@@ -85,6 +86,10 @@ export const AchievementContent = styled.div`
       margin: 0;
       white-space: nowrap;
     }
+  }
+
+  li {
+    list-style: none;
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {

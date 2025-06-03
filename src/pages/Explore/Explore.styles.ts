@@ -54,7 +54,6 @@ export const Orbit = styled.div<ExploreProps>`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
 `;
 
 export const PlanetWrapper = styled.div<ExploreProps>`
@@ -65,7 +64,6 @@ export const PlanetWrapper = styled.div<ExploreProps>`
   flex-direction: row;
   align-items: center;
   gap: 5px;
-  z-index: 1;
 
   span {
     font-size: ${(props) => props.theme.fontSize.medium};

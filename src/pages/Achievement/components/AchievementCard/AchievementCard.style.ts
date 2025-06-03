@@ -27,6 +27,7 @@ export const AchievementList = styled.ul`
   list-style: none;
   align-content: start;
   overflow-y: scroll;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     width: 6px;

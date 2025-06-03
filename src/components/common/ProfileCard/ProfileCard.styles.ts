@@ -78,8 +78,8 @@ export const CoinContainer = styled.div`
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     img {
-    height: 2.5rem;
-  }
+      height: 2.5rem;
+    }
   }
 `;
 export const NotificationCoinContainer = styled.div`

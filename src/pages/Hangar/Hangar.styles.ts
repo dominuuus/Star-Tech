@@ -70,7 +70,6 @@ export const BlockedShip = styled.div`
   color: #e2e2db;
   padding: 20px;
   border-radius: 20px;
-
 `;
 
 export const HangarDetailsContainer = styled.div`

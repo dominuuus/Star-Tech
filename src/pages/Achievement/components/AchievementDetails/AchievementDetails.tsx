@@ -112,7 +112,13 @@ export function AchievementDetailComponent({
                 {item.Descrição && (
                   <p className="description">{item.Descrição}</p>
                 )}
-                {item.Tarefas && <p className="tarefas">{item.Tarefas}</p>}
+                {item.Tarefas && (
+                  <p className="tarefas">
+                    {item.Tarefas.split("\n").map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </p>
+                )}
 
                 <CoinDisplay>
                   <CoinIcon src={images.coin} alt="Moeda" />
@@ -146,11 +152,7 @@ export function AchievementDetailComponent({
 
             {item.Tipo === "mascot" && (
               <>
-                {item.Titulo && (
-                  <p>
-                    {item.Titulo} 
-                  </p>
-                )}
+                {item.Titulo && <p>{item.Titulo}</p>}
                 {item.Descrição && (
                   <p className="description">{item.Descrição}</p>
                 )}

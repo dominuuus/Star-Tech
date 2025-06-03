@@ -23,19 +23,20 @@ interface RawGreenMission {
   qtd_moedas?: number | null;
   progresso?: number | null;
   imagem: string | null;
-
 }
 
-const mapRawGreenMissionToGreenMission = (raw: RawGreenMission): GreenMission => ({
-    id: raw.id,
-    nivel: raw.nivel,
-    descricao: raw.descricao ? raw.descricao : undefined,
-    status: raw.status.nome,
-    tipo: raw.tipo ? raw.tipo : undefined,
-    qtd_desafios: raw.qtd_desafios ?? undefined,
-    qtd_moedas: raw.qtd_moedas ?? undefined,
-    progresso: raw.progresso ?? undefined,
-    imagem: raw.imagem ? raw.imagem : undefined
+const mapRawGreenMissionToGreenMission = (
+  raw: RawGreenMission
+): GreenMission => ({
+  id: raw.id,
+  nivel: raw.nivel,
+  descricao: raw.descricao ? raw.descricao : undefined,
+  status: raw.status.nome,
+  tipo: raw.tipo ? raw.tipo : undefined,
+  qtd_desafios: raw.qtd_desafios ?? undefined,
+  qtd_moedas: raw.qtd_moedas ?? undefined,
+  progresso: raw.progresso ?? undefined,
+  imagem: raw.imagem ? raw.imagem : undefined,
 });
 
 export async function fetchGreenMission(): Promise<GreenMission[]> {

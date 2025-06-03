@@ -1,6 +1,6 @@
-import { api } from '../lib/axios';
-import gameData from '../assets/db/db.json';
-import { formatDate, getRelativeDate } from '../utils/dateUtils';
+import { api } from "../lib/axios";
+import gameData from "../assets/db/db.json";
+import { formatDate, getRelativeDate } from "../utils/dateUtils";
 
 export interface Mission {
   id: number;
@@ -44,7 +44,12 @@ interface RawMission {
   planeta: { id: number; nome: string } | null;
   projeto: { id: number; nome: string } | null;
   tech_lider: { id: number; nome: string; imagem: string } | null;
-  conquista: { id: number; nome: string; imagem: string, descricao: string } | null;
+  conquista: {
+    id: number;
+    nome: string;
+    imagem: string;
+    descricao: string;
+  } | null;
 }
 
 const mapRawMissionToMission = (raw: RawMission): Mission => ({
@@ -74,23 +79,25 @@ const mapRawMissionToMission = (raw: RawMission): Mission => ({
 
 export async function fetchMission(): Promise<Mission[]> {
   try {
-    const response = await api.get('/missoes');
+    const response = await api.get("/missoes");
     const rawMissions: RawMission[] = response.data;
     if (!Array.isArray(rawMissions)) {
-      throw new Error('Dados de missões inválidos retornados pela API');
+      throw new Error("Dados de missões inválidos retornados pela API");
     }
     return rawMissions.map(mapRawMissionToMission);
   } catch (error) {
-    console.error('Erro ao buscar missões via API:', error);
+    console.error("Erro ao buscar missões via API:", error);
     try {
       const rawMissions: RawMission[] = gameData.missoes;
       if (!Array.isArray(rawMissions)) {
-        throw new Error('Dados de missões inválidos no db.json');
+        throw new Error("Dados de missões inválidos no db.json");
       }
       return rawMissions.map(mapRawMissionToMission);
     } catch (fallbackError) {
-      console.error('Erro no fallback para db.json:', fallbackError);
-      throw new Error('Falha ao carregar missões. Verifique o JSON Server ou o arquivo db.json.');
+      console.error("Erro no fallback para db.json:", fallbackError);
+      throw new Error(
+        "Falha ao carregar missões. Verifique o JSON Server ou o arquivo db.json."
+      );
     }
   }
 }
@@ -99,8 +106,10 @@ export async function fetchMissionById(id: number): Promise<Mission> {
   try {
     const response = await api.get(`/missoes/${id}`);
     const rawMission: RawMission = response.data;
-    if (!rawMission || typeof rawMission !== 'object') {
-      throw new Error('Missão não encontrada ou dados inválidos retornados pela API');
+    if (!rawMission || typeof rawMission !== "object") {
+      throw new Error(
+        "Missão não encontrada ou dados inválidos retornados pela API"
+      );
     }
     return mapRawMissionToMission(rawMission);
   } catch (error: unknown) {
@@ -108,16 +117,18 @@ export async function fetchMissionById(id: number): Promise<Mission> {
     try {
       const rawMissions: RawMission[] = gameData.missoes;
       if (!Array.isArray(rawMissions)) {
-        throw new Error('Dados de missões inválidos no db.json');
+        throw new Error("Dados de missões inválidos no db.json");
       }
-      const rawMission = rawMissions.find(mission => mission.id === id);
+      const rawMission = rawMissions.find((mission) => mission.id === id);
       if (!rawMission) {
         throw new Error(`Missão com id ${id} não encontrada no db.json`);
       }
       return mapRawMissionToMission(rawMission);
     } catch (fallbackError) {
-      console.error('Erro no fallback para db.json:', fallbackError);
-      throw new Error(`Falha ao carregar missão com id ${id}. Verifique o JSON Server ou o arquivo db.json.`);
+      console.error("Erro no fallback para db.json:", fallbackError);
+      throw new Error(
+        `Falha ao carregar missão com id ${id}. Verifique o JSON Server ou o arquivo db.json.`
+      );
     }
   }
 }

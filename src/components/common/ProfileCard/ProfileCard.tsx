@@ -25,15 +25,15 @@ export function ProfileCard() {
         </ProfileContent>
 
         <NotificationCoinContainer>
-            <NotificationContainer>
-              <Link to={"/game/desafios"}>
-                <Medal size={20} weight="fill" />
-              </Link>
-            </NotificationContainer>
-            <CoinContainer>
-              <img src={images.coin} alt="" />
-              <span>1.000</span>
-            </CoinContainer>
+          <NotificationContainer>
+            <Link to={"/game/desafios"}>
+              <Medal size={20} weight="fill" />
+            </Link>
+          </NotificationContainer>
+          <CoinContainer>
+            <img src={images.coin} alt="" />
+            <span>1.000</span>
+          </CoinContainer>
         </NotificationCoinContainer>
       </ProfileCardContainer>
     </>

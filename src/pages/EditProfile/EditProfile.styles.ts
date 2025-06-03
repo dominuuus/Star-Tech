@@ -149,7 +149,6 @@ export const AvatarCircle = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     width: 280px;
     height: 280px;
-
   }
 
   img {
@@ -261,8 +260,6 @@ export const Status = styled.div`
     height: 1px;
     background: white;
   }
-
-  
 `;
 
 export const OrbitRing = styled.div`

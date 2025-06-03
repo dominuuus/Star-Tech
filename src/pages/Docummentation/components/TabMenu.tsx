@@ -1,5 +1,5 @@
-import React from 'react';
-import { TabMenuContainer, TabMenuItem } from './TabMenu.styles';
+import React from "react";
+import { TabMenuContainer, TabMenuItem } from "./TabMenu.styles";
 
 interface TabMenuProps {
   items: { id: number; titulo: string }[];
@@ -7,7 +7,11 @@ interface TabMenuProps {
   onTabChange: (id: number) => void;
 }
 
-export const TabMenu: React.FC<TabMenuProps> = ({ items, activeTab, onTabChange }) => {
+export const TabMenu: React.FC<TabMenuProps> = ({
+  items,
+  activeTab,
+  onTabChange,
+}) => {
   return (
     <TabMenuContainer>
       {items.map((item) => (

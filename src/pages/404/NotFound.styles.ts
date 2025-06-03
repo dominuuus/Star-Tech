@@ -17,7 +17,7 @@ export const NotFoundContainer = styled.div`
     font-size: ${(props) => props.theme.fontSize.large};
 
     img {
-    height: 10rem;
-  }
+      height: 10rem;
+    }
   }
 `;

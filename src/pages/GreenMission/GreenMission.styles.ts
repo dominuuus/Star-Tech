@@ -112,6 +112,6 @@ export const GoChallegeButton = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-    padding:10px;
+    padding: 10px;
   }
 `;

@@ -20,7 +20,7 @@ interface RawMascot {
   nome: string;
   descricao: string;
   imagem: string;
-  planeta: { id: number; nome: string, imagem: string } | null;
+  planeta: { id: number; nome: string; imagem: string } | null;
   titulo: string;
   personalidade: string;
   habilidade_especial: string;

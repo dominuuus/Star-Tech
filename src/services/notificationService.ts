@@ -21,7 +21,12 @@ interface RawNotification {
   status: { id: number; nome: string };
   usuario: { id: number; nome: string } | null;
   equipe: { id: number; nome: string } | null;
-  projeto: { id: number; nome: string, icone: string, progresso: number } | null;
+  projeto: {
+    id: number;
+    nome: string;
+    icone: string;
+    progresso: number;
+  } | null;
   tipo: string;
 }
 

@@ -17,7 +17,6 @@ export const MainTopMenuContainer = styled.div`
     flex-wrap: wrap;
     justify-content: right;
     padding: 0.5rem;
-
   }
 `;
 

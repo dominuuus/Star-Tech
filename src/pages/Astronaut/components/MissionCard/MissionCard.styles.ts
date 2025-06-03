@@ -13,7 +13,6 @@ export const MissionCardContainer = styled.div`
     color: ${(props) => props.theme.colors.secondary};
     font-weight: 400;
   }
-  
 `;
 
 export const MissionCardContent = styled.div`
@@ -27,7 +26,7 @@ export const MissionCardContent = styled.div`
   transition:
     color 0.15s,
     background-color 0.15s;
-  
+
   div {
     margin-right: 20px;
   }
@@ -61,8 +60,8 @@ export const MissionCardInfoContent = styled.div`
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     p {
-    font-size: ${(props) => props.theme.fontSize.small};
-  }
+      font-size: ${(props) => props.theme.fontSize.small};
+    }
   }
 `;
 

@@ -170,8 +170,8 @@ export const ModalContentWrapper = styled.div`
     flex-direction: column;
 
     img {
-    height: 7rem;
-  }
+      height: 7rem;
+    }
   }
 `;
 
@@ -202,10 +202,9 @@ export const MascotDescriptionContainer = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
-
     img {
-    height: 2rem;
-  }
+      height: 2rem;
+    }
   }
 `;
 

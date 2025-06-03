@@ -97,10 +97,16 @@ const mapRawSquadToSquad = (raw: RawSquad): Squad => ({
   Tripulação_User_imagem: raw.tripulacao
     ? raw.tripulacao.map((user) => user.imagem)
     : undefined,
-    Tripulação_User_Mascote_Nome: raw.tripulacao
-    ? raw.tripulacao.map(user => user.mascotes_preferidos.map(mascote => mascote.nome)) : undefined,
+  Tripulação_User_Mascote_Nome: raw.tripulacao
+    ? raw.tripulacao.map((user) =>
+        user.mascotes_preferidos.map((mascote) => mascote.nome)
+      )
+    : undefined,
   Tripulação_User_Mascote_Imagem: raw.tripulacao
-    ? raw.tripulacao.map(user => user.mascotes_preferidos.map(mascote => mascote.imagem)) : undefined,
+    ? raw.tripulacao.map((user) =>
+        user.mascotes_preferidos.map((mascote) => mascote.imagem)
+      )
+    : undefined,
   Tripulação_Missao_id: raw.missoes_abertas
     ? raw.missoes_abertas.map((missao) => missao.id)
     : undefined,
