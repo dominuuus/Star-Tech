@@ -72,8 +72,7 @@ export const CredentialContent = styled.div`
 export const MascotsAndAchievements = styled.div`
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   width: 15%;
   gap: 35px;
   padding-right: 50px;
@@ -94,12 +93,13 @@ export const MascotsAndAchievements = styled.div`
   }
 `;
 
-export const MascotsTitle = styled.span`
+export const MascotsTitle = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-weight: bold;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 10px;
+  
 `;
 
 export const MascotsContainer = styled.div`
@@ -121,17 +121,23 @@ export const AchievementsTitle = styled.div `
   flex-direction: column;
   font-weight: bold;
   align-items: center;
-  margin-top: 60px;
-  gap: 22px;
+  gap: 10px;
+  
+`;
+
+export const AchievementsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+
   img {
-    height: 10rem;
+    height: 4rem;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     &:hover {
       transform: scale(1.2) translateY(-8px);
     }
   }
-`
+`;
 
 export const AvatarContainer = styled.div`
   padding-top: 30px;

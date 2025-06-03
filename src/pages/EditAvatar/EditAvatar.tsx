@@ -13,11 +13,10 @@ import {
   Inventory,
   InventoryButtons,
   LineWrapper,
-  ScoreBox
+  ScoreBox,
 } from "./EditAvatar.styles";
 import images from "../../assets/images";
 import { Hand, Shield, TShirt } from "phosphor-react";
-import { Boot } from "@phosphor-icons/react";
 
 export function EditAvatar() {
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
@@ -58,22 +57,22 @@ export function EditAvatar() {
 
       <AstronautImage>
         <img src={images.astronaut1} alt="Astronauta" />
-        {/* Cabeça */}
-        <LineWrapper style={{ top: "100px", left: "250px" }}>
+        <LineWrapper style={{ top: "80px", left: "180px" }}>
           <DiagonalLine />
           <HorizontalLine />
           <ScoreBox>+0 DEF</ScoreBox>
         </LineWrapper>
 
-        {/* Tronco */}
-        <LineWrapper style={{ top: "220px", left: "90px" }} data-mirrored="true">
+        <LineWrapper
+          style={{ top: "220px", left: "60px" }}
+          data-mirrored="true"
+        >
           <DiagonalLine />
           <HorizontalLine />
           <ScoreBox>+12 DEF</ScoreBox>
         </LineWrapper>
 
-        {/* Pés */}
-        <LineWrapper style={{ top: "530px", left: "300px" }}>
+        <LineWrapper style={{ top: "440px", left: "210px" }}>
           <DiagonalLine />
           <HorizontalLine />
           <ScoreBox>+3 DEF</ScoreBox>

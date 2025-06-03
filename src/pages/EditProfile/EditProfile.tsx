@@ -21,22 +21,40 @@ import {
   PlanetTitle,
   CredentialTitle,
   CredentialContent,
-  CredentialContent2,
   AchievementsTitle,
+  MascotsContainer,
+  AchievementsContainer,
 } from "./EditProfile.styles";
 import planets from "../../assets/planets";
 import ModalProfile from "./components/ModalProfile";
 import { NavLink } from "react-router-dom";
 import { fetchMascot, Mascot } from "../../services/mascotService";
+import {
+  Achievement,
+  fetchAchievement,
+} from "../../services/achievementService";
 
 export function EditProfile() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const [mascots, setMascots] = useState<Mascot[]>([]);
+  const [achievements, setAchievements] = useState<Achievement[]>([]);
 
   useEffect(() => {
     fetchMascot().then(setMascots).catch(console.error);
   }, []);
+
+  useEffect(() => {
+    fetchAchievement().then(setAchievements).catch(console.error);
+  }, []);
+
+  const filteredMascots = mascots
+    .filter((mascot) => mascot.Status === "Conquistado")
+    .slice(0, 6);
+
+  const filteredAchievements = achievements
+    .filter((achievement) => achievement.Status === "Ativa")
+    .slice(0, 6);
 
   return (
     <>
@@ -115,15 +133,19 @@ export function EditProfile() {
         <MascotsAndAchievements>
           <MascotsTitle>
             <span>Mascotes</span>
-            {mascots.map((mascot) => (
-              <MascotsContainer>
+            {filteredMascots.map((mascot) => (
+              <MascotsContainer key={mascot.id}>
                 <img src={mascot.Imagem} alt={mascot.Descrição} />
               </MascotsContainer>
             ))}
           </MascotsTitle>
           <AchievementsTitle>
             <span>Conquistas</span>
-            <img src={images.conquistas} alt="" />
+            {filteredAchievements.map((achievement) => (
+              <AchievementsContainer key={achievement.id}>
+                <img src={achievement.Imagem} alt={achievement.Descrição} />
+              </AchievementsContainer>
+            ))}
           </AchievementsTitle>
         </MascotsAndAchievements>
       </Profile>
