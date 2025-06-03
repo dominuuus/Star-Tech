@@ -1,15 +1,8 @@
-# 🛰️ Star Tech
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://github.com/dominuuus/Star-Tech/blob/master/src/assets/images/aboutStarTech.png" width="300px;" alt="Foto do Steve Jobs"/>
-    </td>
-    <td align="center">
-      Uma plataforma de gamificação criada especialmente para os desenvolvedores do Banco do Brasil, unindo o melhor da aventura espacial com os desafios do dia a dia de quem vive e respira código.
-    </td>
-  </tr>
-</table>
+<div align="center">
+<img src="https://github.com/dominuuus/Star-Tech/blob/master/src/assets/images/startechmarca.png" width="150px;" alt="Logo da Star Tech"/>
+</div>
+Uma plataforma de gamificação criada especialmente para os desenvolvedores do Banco do Brasil, unindo o melhor da aventura espacial com os desafios do dia a dia de quem vive e respira código.
 
 ---
 
@@ -70,7 +63,7 @@ Este projeto foi desenvolvido pelos alunos com mentoria de Matheus De La Barra e
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/AyrtonOliveira" title="defina o título do link">
+      <a href="https://github.com/AyrtonOliveira" title="Ayrton Oliveira">
         <img src="https://avatars.githubusercontent.com/u/97975293?v=4" width="100px;" alt="Foto de Ayrton Oliveira"/><br>
         <sub>
           <b>Ayrton Oliveira</b>
@@ -78,7 +71,7 @@ Este projeto foi desenvolvido pelos alunos com mentoria de Matheus De La Barra e
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/dominuuus" title="defina o título do link">
+      <a href="https://github.com/dominuuus" title="Domingos Santiago">
         <img src="https://avatars.githubusercontent.com/u/125357626?v=4" width="100px;" alt="Foto de Domingos Santiago"/><br>
         <sub>
           <b>Domingos Santiago</b>
@@ -86,8 +79,8 @@ Este projeto foi desenvolvido pelos alunos com mentoria de Matheus De La Barra e
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/gilbertoquintino" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/180477993?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
+      <a href="https://github.com/gilbertoquintino" title="Gilberto Quintino">
+        <img src="https://avatars.githubusercontent.com/u/180477993?v=4" width="100px;" alt="Foto de Gilberto Quintino"/><br>
         <sub>
           <b>Gilberto Quintino</b>
         </sub>
@@ -95,47 +88,47 @@ Este projeto foi desenvolvido pelos alunos com mentoria de Matheus De La Barra e
     </td>
     <td align="center">
       <a href="https://github.com/giseli25" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/179042589?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
+        <img src="https://avatars.githubusercontent.com/u/179042589?v=4" width="100px;" alt="Foto de Giseli Felix"/><br>
         <sub>
           <b>Giseli Felix</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/Malveira16" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/131298045?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
+      <a href="https://github.com/Malveira16" title="João Malveira">
+        <img src="https://avatars.githubusercontent.com/u/131298045?v=4" width="100px;" alt="Foto de João Vitor Malveira"/><br>
         <sub>
           <b>João Vitor Malveira</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/leticiamendesz" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/174049209?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
+      <a href="https://github.com/leticiamendesz" title="Letícia Mendes">
+        <img src="https://avatars.githubusercontent.com/u/174049209?v=4" width="100px;" alt="Foto de Letícia Mendes"/><br>
         <sub>
           <b>Letícia Mendes</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/LucasMOCunha" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/180361394?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
+      <a href="https://github.com/LucasMOCunha" title="Lucas Matheus">
+        <img src="https://avatars.githubusercontent.com/u/180361394?v=4" width="100px;" alt="Foto de Lucas Matheus"/><br>
         <sub>
           <b>Lucas Matheus</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/ClaraMelo72" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/180476267?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
+      <a href="https://github.com/ClaraMelo72" title="Maria Clara Melo">
+        <img src="https://avatars.githubusercontent.com/u/180476267?v=4" width="100px;" alt="Foto de Maria Clara"/><br>
         <sub>
           <b>Maria Clara Melo</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/thayanalira" title="defina o título do link">
-        <img src="https://avatars.githubusercontent.com/u/144850050?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
+      <a href="https://github.com/thayanalira" title="Thayana Lira">
+        <img src="https://avatars.githubusercontent.com/u/144850050?v=4" width="100px;" alt="Foto de Thayana Lira"/><br>
         <sub>
           <b>Thayana Lira</b>
         </sub>
