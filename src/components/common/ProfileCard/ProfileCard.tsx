@@ -27,7 +27,7 @@ export function ProfileCard() {
         <NotificationCoinContainer>
           <NotificationContainer>
             <Link to={"/game/desafios"}>
-              <Medal size={20} weight="fill" />
+              <Medal size={25} weight="fill" />
             </Link>
           </NotificationContainer>
           <CoinContainer>

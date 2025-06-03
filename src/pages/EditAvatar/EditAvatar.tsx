@@ -17,6 +17,7 @@ import {
 } from "./EditAvatar.styles";
 import images from "../../assets/images";
 import { Hand, Shield, TShirt } from "phosphor-react";
+import { Boot } from "@phosphor-icons/react";
 
 export function EditAvatar() {
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
@@ -97,7 +98,9 @@ export function EditAvatar() {
               <Shield size={30} weight="fill" />
             </Cell>
           </BodyCell>
-          <Cell />
+          <Cell>
+            <Boot size={30} weight="fill" />
+          </Cell>
         </GridEquip>
       </Equip>
     </EditAvatarContainer>
