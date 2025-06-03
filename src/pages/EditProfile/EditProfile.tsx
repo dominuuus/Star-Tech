@@ -23,6 +23,7 @@ import {
   CredentialTitle,
   CredentialContent,
   CredentialContent2,
+  AchievementsTitle,
 } from "./EditProfile.styles";
 import planets from "../../assets/planets";
 import ModalProfile from "./components/ModalProfile";
@@ -77,8 +78,8 @@ export function EditProfile() {
               <ActionButton>
                 <UserCircleGear size={22} />
                 <NavLink to="/game/avatar" title="Avatar">
-                        Personalizar
-                    </NavLink> 
+                  Personalizar
+                </NavLink>
               </ActionButton>
             </ActionPanel>
 
@@ -110,8 +111,10 @@ export function EditProfile() {
             <span>Mascotes</span>
             <img src={images.MascotsIcone} alt="" />
           </MascotsTitle>
-          <span>Conquistas</span>
-          <img src={images.conquistas} alt="" />
+          <AchievementsTitle>
+            <span>Conquistas</span>
+            <img src={images.conquistas} alt="" />
+          </AchievementsTitle>
         </MascotsAndAchievements>
       </Profile>
 
