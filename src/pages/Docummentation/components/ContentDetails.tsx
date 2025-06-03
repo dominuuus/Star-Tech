@@ -13,3 +13,4 @@ export const ContentDetails: React.FC<ContentDetailsProps> = ({ content }) => {
     </ContentContainer>
   );
 };
+
