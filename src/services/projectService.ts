@@ -18,31 +18,31 @@ export interface Project {
 
 interface RawProject {
   id: number;
-  Nome: string;
-  Descrição: string;
-  Progresso: number;
-  Equipe: { id: number; Nome: string } | null;
-  Planeta_Base: { id: number; Nome: string } | null;
-  Planeta_Destino: { id: number; Nome: string } | null;
-  Data_Início: string;
-  Data_Prevista_Término: string | null;
-  Data_Conclusão: string | null;
-  Status: { id: number; Nome: string } | null;
+  nome: string;
+  descricao: string;
+  progresso: number;
+  equipe: { id: number; nome: string } | null;
+  planeta_base: { id: number; nome: string } | null;
+  planeta_destino: { id: number; nome: string } | null;
+  data_inicio: string;
+  data_prevista_termino: string | null;
+  data_conclusao: string | null;
+  status: { id: number; nome: string } | null;
   icone: string;
 }
 
 const mapRawProjectToMascot = (raw: RawProject): Project => ({
     id: raw.id,
-    Nome: raw.Nome,
-    Descrição: raw.Descrição,
-    Progresso: raw.Progresso,
-    Equipe_Nome: raw.Equipe ? raw.Equipe?.Nome : undefined,
-    Planeta_Base_Nome: raw.Planeta_Base ? raw.Planeta_Base?.Nome : undefined,
-    Planeta_Destino_Nome: raw.Planeta_Destino ? raw.Planeta_Destino?.Nome : undefined,
-    Data_Início: raw.Data_Início,
-    Data_Prevista_Término: raw.Data_Prevista_Término ? raw.Data_Prevista_Término : undefined,
-    Data_Conclusão: raw.Data_Conclusão ? raw.Data_Conclusão : undefined,
-    Status: raw.Status ? raw.Status?.Nome : undefined,
+    Nome: raw.nome,
+    Descrição: raw.descricao,
+    Progresso: raw.progresso,
+    Equipe_Nome: raw.equipe ? raw.equipe?.nome : undefined,
+    Planeta_Base_Nome: raw.planeta_base ? raw.planeta_base?.nome : undefined,
+    Planeta_Destino_Nome: raw.planeta_destino ? raw.planeta_destino?.nome : undefined,
+    Data_Início: raw.data_inicio,
+    Data_Prevista_Término: raw.data_prevista_termino ? raw.data_prevista_termino : undefined,
+    Data_Conclusão: raw.data_conclusao ? raw.data_conclusao : undefined,
+    Status: raw.status ? raw.status?.nome : undefined,
     icone: raw.icone,
 });
 

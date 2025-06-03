@@ -16,28 +16,28 @@ export interface Notification {
 
 interface RawNotification {
   id: number;
-  Descrição: string;
-  Data_Criação: string;
-  Status: { id: number; Nome: string };
-  Usuário: { id: number; Nome: string } | null;
-  Equipe: { id: number; Nome: string } | null;
-  Projeto: { id: number; Nome: string, icone: string, progresso: number } | null;
-  Tipo: string;
+  descricao: string;
+  data_criacao: string;
+  status: { id: number; nome: string };
+  usuario: { id: number; nome: string } | null;
+  equipe: { id: number; nome: string } | null;
+  projeto: { id: number; nome: string, icone: string, progresso: number } | null;
+  tipo: string;
 }
 
 const mapRawNotificationToNotification = (
   raw: RawNotification
 ): Notification => ({
   id: raw.id,
-  Descrição: raw.Descrição,
-  Data_Criação: raw.Data_Criação,
-  Status: raw.Status.Nome,
-  Usuário: raw.Usuário?.Nome ? raw.Usuário.Nome : undefined,
-  Equipe: raw.Equipe?.Nome ? raw.Equipe.Nome : undefined,
-  Projeto_nome: raw.Projeto?.Nome ? raw.Projeto.Nome : undefined,
-  Projeto_icone: raw.Projeto?.icone ? raw.Projeto.icone : undefined,
-  Projeto_progresso: raw.Projeto?.progresso ? raw.Projeto.progresso : undefined,
-  Tipo: raw.Tipo,
+  Descrição: raw.descricao,
+  Data_Criação: raw.data_criacao,
+  Status: raw.status.nome,
+  Usuário: raw.usuario?.nome ? raw.usuario.nome : undefined,
+  Equipe: raw.equipe?.nome ? raw.equipe.nome : undefined,
+  Projeto_nome: raw.projeto?.nome ? raw.projeto.nome : undefined,
+  Projeto_icone: raw.projeto?.icone ? raw.projeto.icone : undefined,
+  Projeto_progresso: raw.projeto?.progresso ? raw.projeto.progresso : undefined,
+  Tipo: raw.tipo,
 });
 
 export async function fetchNotification(): Promise<Notification[]> {

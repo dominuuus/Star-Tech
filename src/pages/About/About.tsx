@@ -128,10 +128,10 @@ export function AboutUs() {
                 <h2>Letícia Mendes</h2>
                 <span>Documentação</span>
                 <div>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/let%C3%ADcia-mendes-portela-9934ba2a9" target="blank">
                     <LinkedinLogo size={32} />
                   </a>
-                  <a href="">
+                  <a href="https://github.com/leticiamendesz" target="blank">
                     <GithubLogoIcon size={32} />
                   </a>
                 </div>
@@ -143,7 +143,7 @@ export function AboutUs() {
                 <h2>Lucas Matheus</h2>
                 <span>Modelagem 3D</span>
                 <div>
-                  <a href="" target="blank">
+                  <a href="https://www.linkedin.com/in/lucas-m-cunha-9063a0322/" target="blank">
                     <LinkedinLogo size={32} />
                   </a>
                   <a href="https://github.com/LucasMOCunha" target="blank">
@@ -188,35 +188,29 @@ export function AboutUs() {
         <FooterContainer>
           <FooterContent>
             <StaffMemberContainer>
-              <img src={staff.linard} alt="" />
+              <img src="https://media.licdn.com/dms/image/v2/D4D03AQFYHvh1vuPBqQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1677525410611?e=1754524800&v=beta&t=JWU__oZ3NsRuYCfmu_mdoOP5u8mXxOmxREk8mPsw2a0" alt="" />
               <StaffMemberDetailsContainer>
                 <h2>Lucas Linard</h2>
                 <span>Product Owner</span>
                 <span>Time de QA do Banco do Brasil</span>
                 <div>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/lucaslinard/" target="blank">
                     <LinkedinLogo size={32} />
-                  </a>
-                  <a href="">
-                    <GithubLogoIcon size={32} />
                   </a>
                 </div>
               </StaffMemberDetailsContainer>
             </StaffMemberContainer>
             <StaffMemberContainer>
               <img
-                src="https://avatars.githubusercontent.com/u/109989560?v=4"
+                src="https://media.licdn.com/dms/image/v2/D4D03AQHQ4vcwWTkV9Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1695589612094?e=1754524800&v=beta&t=dAAjI3gKYIIWjMqy4iUKjRiD7PFRCWll0-wWp5prMyM"
                 alt=""
               />
               <StaffMemberDetailsContainer>
                 <h2>Matheus de La Barra</h2>
                 <span>Mentor do Porto Digital</span>
                 <div>
-                  <a href="">
+                  <a href="https://www.linkedin.com/in/matheusdelabarra/" target="blank">
                     <LinkedinLogo size={32} />
-                  </a>
-                  <a href="">
-                    <GithubLogoIcon size={32} />
                   </a>
                 </div>
               </StaffMemberDetailsContainer>

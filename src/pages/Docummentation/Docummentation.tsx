@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { DocummentationContainer, DocummentationContent, DocumentationLayout } from "./Docummentation.styles";
+import { DocummentationContainer, DocummentationContent, DocumentationLayout, SecondaryTabContainerNav } from "./Docummentation.styles";
 import { TabMenu } from './components/TabMenu';
 import { ContentDetails } from './components/ContentDetails';
 import { SecondaryTab } from './components/SecondaryTab'; // Novo import
@@ -10,7 +10,6 @@ export function Docummentation() {
   const [headings, setHeadings] = useState<{ id: string; text: string }[]>([]);
   const [activeHeading, setActiveHeading] = useState('');
 
-  // Extrai os subtítulos (###) do conteúdo Markdown
   useEffect(() => {
     const activeContent = documentationData.documentacao.find(
       (item) => item.id === activeTab
@@ -41,14 +40,16 @@ export function Docummentation() {
             documentationData.documentacao.find((item) => item.id === activeTab)?.conteudo || ''
           } />
         </DocummentationContent>
-        {/* Novo componente adicionado */}
-        {headings.length > 0 && (
-          <SecondaryTab
-            headings={headings}
-            activeHeading={activeHeading}
-            onHeadingClick={setActiveHeading}
-          />
-        )}
+        
+        <SecondaryTabContainerNav>
+          {headings.length > 0 && (
+            <SecondaryTab
+              headings={headings}
+              activeHeading={activeHeading}
+              onHeadingClick={setActiveHeading}
+            />
+          )}
+        </SecondaryTabContainerNav>
       </DocumentationLayout>
     </DocummentationContainer>
   );

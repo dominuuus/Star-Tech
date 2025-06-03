@@ -29,47 +29,47 @@ export interface Mission {
 
 interface RawMission {
   id: number;
-  Nome: string;
-  Descrição: string;
-  Objetivo_Técnico: string;
-  Tipo_Missão: { id: number; Nome: string; Peso: number; Cor: string };
-  Progresso_missão: number;
-  Status: { id: number; Nome: string };
-  Data_Criação: string;
-  Data_Prazo: string;
-  Data_Conclusão: string | null;
-  Qtd_moedas: number;
-  Fases_Total: number;
-  Fases_Concluídas: number;
-  Planeta: { id: number; Nome: string } | null;
-  Projeto: { id: number; Nome: string } | null;
-  Tech_Líder: { id: number; Nome: string; Image: string } | null;
-  conquista: { id: number; Nome: string; imagem: string, descricao: string } | null;
+  nome: string;
+  descricao: string;
+  objetivo_tecnico: string;
+  tipo_missao: { id: number; nome: string; peso: number; cor: string };
+  progresso_missao: number;
+  status: { id: number; nome: string };
+  data_criacao: string;
+  data_prazo: string;
+  data_conclusao: string | null;
+  qtd_moedas: number;
+  fases_total: number;
+  fases_concluidas: number;
+  planeta: { id: number; nome: string } | null;
+  projeto: { id: number; nome: string } | null;
+  tech_lider: { id: number; nome: string; imagem: string } | null;
+  conquista: { id: number; nome: string; imagem: string, descricao: string } | null;
 }
 
 const mapRawMissionToMission = (raw: RawMission): Mission => ({
   id: raw.id,
-  Nome: raw.Nome,
-  Descrição: raw.Descrição,
-  Objetivo_Técnico: raw.Objetivo_Técnico,
-  Tipo_Missão_Nome: raw.Tipo_Missão.Nome,
-  Progresso_missão: raw.Progresso_missão,
-  Status: raw.Status.Nome,
-  Data_Criação: formatDate(raw.Data_Criação),
-  Data_Prazo: formatDate(raw.Data_Prazo),
-  Data_Conclusão: raw.Data_Conclusão ? raw.Data_Conclusão : undefined,
-  Concluído_em: formatDate(raw.Data_Conclusão),
-  Qtd_moedas: raw.Qtd_moedas,
-  Fases_Total: raw.Fases_Total,
-  Fases_Concluídas: raw.Fases_Concluídas,
-  Planeta_Nome: raw.Planeta ? raw.Planeta?.Nome : undefined,
-  Projeto_Nome: raw.Projeto ? raw.Projeto?.Nome : undefined,
-  Tech_Líder_Nome: raw.Tech_Líder ? raw.Tech_Líder?.Nome : undefined,
-  Tech_Líder_img: raw.Tech_Líder ? raw.Tech_Líder?.Image : undefined,
-  Conquista_nome: raw.conquista ? raw.conquista?.Nome : undefined,
+  Nome: raw.nome,
+  Descrição: raw.descricao,
+  Objetivo_Técnico: raw.objetivo_tecnico,
+  Tipo_Missão_Nome: raw.tipo_missao.nome,
+  Progresso_missão: raw.progresso_missao,
+  Status: raw.status.nome,
+  Data_Criação: formatDate(raw.data_criacao),
+  Data_Prazo: formatDate(raw.data_prazo),
+  Data_Conclusão: raw.data_conclusao ? raw.data_conclusao : undefined,
+  Concluído_em: formatDate(raw.data_conclusao),
+  Qtd_moedas: raw.qtd_moedas,
+  Fases_Total: raw.fases_total,
+  Fases_Concluídas: raw.fases_concluidas,
+  Planeta_Nome: raw.planeta ? raw.planeta?.nome : undefined,
+  Projeto_Nome: raw.projeto ? raw.projeto?.nome : undefined,
+  Tech_Líder_Nome: raw.tech_lider ? raw.tech_lider?.nome : undefined,
+  Tech_Líder_img: raw.tech_lider ? raw.tech_lider?.imagem : undefined,
+  Conquista_nome: raw.conquista ? raw.conquista?.nome : undefined,
   Conquista_img: raw.conquista ? raw.conquista?.imagem : undefined,
   Conquista_descricao: raw.conquista ? raw.conquista?.descricao : undefined,
-  relativeDueDate: getRelativeDate(raw.Data_Prazo),
+  relativeDueDate: getRelativeDate(raw.data_prazo),
 });
 
 export async function fetchMission(): Promise<Mission[]> {

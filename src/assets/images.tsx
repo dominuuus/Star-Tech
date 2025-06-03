@@ -1,4 +1,5 @@
 import astronaut1 from './images/astronaut1.png';
+import notfound from './images/404.gif';
 import profile1 from './images/profile1.jpg';
 import coin from './images/moeda.png';
 import logo from './images/logo.png';
@@ -18,5 +19,5 @@ import traje from './images/traje.png'
 import aboutStarTech from './images/aboutStarTech.png'
 
 export default {
-    astronaut1, profile1, coin, logo, nave, helmet, leader, MascotsIcone, conquistas, bracelete, capaceteCromado, capaceteColorido, celular, cilindro, jetPack, manopla, traje, aboutStarTech,
+    astronaut1, profile1, coin, logo, nave, helmet, leader, MascotsIcone, conquistas, bracelete, capaceteCromado, capaceteColorido, celular, cilindro, jetPack, manopla, traje, aboutStarTech, notfound,
 }

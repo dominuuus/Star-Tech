@@ -17,29 +17,29 @@ export interface Mascot {
 
 interface RawMascot {
   id: number;
-  Nome: string;
-  Descrição: string;
-  Imagem: string;
-  Planeta: { id: number; Nome: string, Imagem: string } | null;
-  Titulo: string;
-  Personalidade: string;
-  Habilidade_Especial: string;
-  Aparência: string;
-  Status: { id: number; Nome: string } | null;
+  nome: string;
+  descricao: string;
+  imagem: string;
+  planeta: { id: number; nome: string, imagem: string } | null;
+  titulo: string;
+  personalidade: string;
+  habilidade_especial: string;
+  aparencia: string;
+  status: { id: number; nome: string } | null;
 }
 
 const mapRawMascotToMascot = (raw: RawMascot): Mascot => ({
   id: raw.id,
-  Nome: raw.Nome,
-  Descrição: raw.Descrição,
-  Imagem: raw.Imagem,
-  Planeta: raw.Planeta ? raw.Planeta?.Nome : undefined,
-  Planeta_Imagem: raw.Planeta ? raw.Planeta?.Imagem : undefined,
-  Titulo: raw.Titulo,
-  Personalidade: raw.Personalidade,
-  Habilidade_Especial: raw.Habilidade_Especial,
-  Aparência: raw.Aparência,
-  Status: raw.Status ? raw.Status?.Nome : undefined,
+  Nome: raw.nome,
+  Descrição: raw.descricao,
+  Imagem: raw.imagem,
+  Planeta: raw.planeta ? raw.planeta?.nome : undefined,
+  Planeta_Imagem: raw.planeta ? raw.planeta?.imagem : undefined,
+  Titulo: raw.titulo,
+  Personalidade: raw.personalidade,
+  Habilidade_Especial: raw.habilidade_especial,
+  Aparência: raw.aparencia,
+  Status: raw.status ? raw.status?.nome : undefined,
 });
 
 export async function fetchMascot(): Promise<Mascot[]> {

@@ -16,37 +16,37 @@ export interface User {
 
 interface RawUser {
   id: number;
-  Nome: string;
-  Email_Mascado: string;
-  Imagem: string | null;
-  Descrição: string;
-  Estelares: number;
-  Nível: number;
-  Avatar: {
+  nome: string;
+  email_mascado: string;
+  imagem: string | null;
+  descricao: string;
+  estelares: number;
+  nivel: number;
+  avatar: {
     id: number;
-    Nome: string;
-    Imagem: string | null;
-    Tipo: { id: number; Nome: string } | null;
+    nome: string;
+    imagem: string | null;
+    tipo: { id: number; nome: string } | null;
   } | null;
-  Equipe: {
+  equipe: {
     id: number;
-    Nome: string;
-    Status: { id: number; Nome: string };
+    nome: string;
+    status: { id: number; nome: string };
   } | null;
-  Cargo: string;
+  cargo: string;
 }
 
 const mapRawUserToUser = (raw: RawUser): User => ({
   id: raw.id,
-  Nome: raw.Nome,
-  Email: raw.Email_Mascado,
-  Imagem: raw.Imagem,
-  Descrição: raw.Descrição,
-  Estelares: raw.Estelares,
-  Nível: raw.Nível,
-  Avatar_Imagem: raw.Avatar ? raw.Avatar.Imagem : null,
-  Equipe_Nome: raw.Equipe ? raw.Equipe.Nome : null,
-  Cargo: raw.Cargo,
+  Nome: raw.nome,
+  Email: raw.email_mascado,
+  Imagem: raw.imagem,
+  Descrição: raw.descricao,
+  Estelares: raw.estelares,
+  Nível: raw.nivel,
+  Avatar_Imagem: raw.avatar ? raw.avatar.imagem : null,
+  Equipe_Nome: raw.equipe ? raw.equipe.nome : null,
+  Cargo: raw.cargo,
 });
 
 

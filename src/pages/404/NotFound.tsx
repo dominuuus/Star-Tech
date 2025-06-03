@@ -1,16 +1,23 @@
-import { Link } from "react-router-dom";
-import { HeaderNotLogged } from "../../components/common/HeaderNotLogged/HeaderNotLogged";
+import images from "../../assets/images";
+import { NotFoundContainer } from "./NotFound.styles";
 
 export function NotFound() {
   return (
-
-    <> 
-    <HeaderNotLogged/>
-      <div>
-      <h1>404 - Página não encontrada</h1>
-      <p>Oops! A página que você tentou acessar não existe.</p>
-      <Link to="/">Voltar para a página inicial</Link>
-    </div>
+    <>
+      <NotFoundContainer>
+          <div>
+            <p>
+              Erro 404. 
+            </p>
+            <p>
+              Página fora de órbita. 
+            </p>
+            <p>
+              Talvez seja um buraco de minhoca inesperado.
+            </p>
+          </div>
+          <div><img src={images.notfound} alt="" /></div>
+      </NotFoundContainer>
     </>
-  )
+  );
 }

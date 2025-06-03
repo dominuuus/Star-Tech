@@ -8,7 +8,6 @@ import { Spaceship } from "./pages/Spaceship/Spaceship";
 import { Mission } from "./pages/Mission/Mission";
 import { LoginIn } from "./pages/LoginIn/LoginIn";
 import { GreenMission } from "./pages/GreenMission/GreenMission";
-import { UserPage } from "./pages/UserPublicProfile/UserPublicProfile";
 import { EditProfile } from "./pages/EditProfile/EditProfile";
 import { Docummentation } from "./pages/Docummentation/Docummentation";
 import { EditAvatar } from "./pages/EditAvatar/EditAvatar";
@@ -33,17 +32,16 @@ export function Router() {
         <Route path="nave" element={<Spaceship />} />
         <Route path="desafios" element={<GreenMission />} />
         <Route path="docs" element={<Docummentation />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
-
-      <Route path="/usuarios/:id" element={<UserPage />} />
-
       <Route path="/" element={<NotLoggedLayout />}>
         <Route path="/" element={<LoginIn />} />
         <Route path="sobre" element={<AboutUs />} />
         <Route path="docs" element={<Docummentation />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
 
-      <Route path="*" element={<NotFound />} />
+      
     </Routes>
   );
 }

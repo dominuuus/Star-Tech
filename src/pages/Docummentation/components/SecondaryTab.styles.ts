@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const SecondaryTabContainer = styled.div`
   width: 250px;
@@ -27,27 +26,16 @@ export const SecondaryTabContainer = styled.div`
   }
 
   transition: all 0.3s ease-in-out;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    position: absolute;
-    z-index: 1000;
-    height: 100vh;
-    left: -100%;
-    background-color: ${(props) => props.theme.colors.secondary};
-    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
-  }
 `;
-
 
 export const SecondaryTabItem = styled.div<{ active: boolean }>`
   padding: 0.75rem 1.5rem;
   cursor: pointer;
-  font-weight: ${({ active }) => (active ? '600' : '400')};
+  font-weight: ${({ active }) => (active ? "600" : "400")};
   color: ${({ theme }) => theme.colors.white};
   background-color: transparent;
   border-left: 3px solid
-    ${({ active, theme }) => (active ? theme.colors.news : 'transparent')};
+    ${({ active, theme }) => (active ? theme.colors.news : "transparent")};
   transition: all 0.2s ease;
   margin-right: 1rem;
 
@@ -56,5 +44,3 @@ export const SecondaryTabItem = styled.div<{ active: boolean }>`
     border-left: 3px solid ${({ theme }) => theme.colors.news};
   }
 `;
-
-

@@ -11,18 +11,18 @@ export interface Credential {
 
 interface RawCredential {
   id: number;
-  Nome: string;
-  Descrição: string | null;
-  Status: { id: number; Nome: string };
-  Tipo: { id: number; Nome: string } | null;
+  nome: string;
+  descricao: string | null;
+  status: { id: number; nome: string };
+  tipo: { id: number; nome: string } | null;
 }
 
 const mapRawCredentialToCredential = (raw: RawCredential): Credential => ({
   id: raw.id,
-  Nome: raw.Nome,
-  Descrição: raw.Descrição ? raw.Descrição : undefined,
-  Status: raw.Status.Nome,
-  Tipo: raw.Tipo?.Nome ? raw.Tipo.Nome : undefined,
+  Nome: raw.nome,
+  Descrição: raw.descricao ? raw.descricao : undefined,
+  Status: raw.status.nome,
+  Tipo: raw.tipo?.nome ? raw.tipo.nome : undefined,
 });
 
 export async function fetchCredential(): Promise<Credential[]> {

@@ -2,290 +2,290 @@
   "usuarios": [
     {
       "id": 1,
-      "Nome": "Astro João",
-      "Email_Mascado": "joao.astro@***.com",
-      "Imagem": "https://xai.com/avatars/joao.webp",
-      "Descrição": "Explorador de bugs estelares",
-      "Estelares": 150,
-      "Nível": 3,
-      "Avatar": {
+      "nome": "Astro João",
+      "email_mascado": "joao.astro@***.com",
+      "imagem": "https://xai.com/avatars/joao.webp",
+      "descricao": "Explorador de bugs estelares",
+      "estelares": 150,
+      "nivel": 3,
+      "avatar": {
         "id": 1,
-        "Nome": "Traje Lunar",
-        "Imagem": "link.png",
-        "Tipo": {
+        "nome": "Traje Lunar",
+        "imagem": "link.png",
+        "tipo": {
           "id": 1,
-          "Nome": "Traje"
+          "nome": "Traje"
         }
       },
-      "Equipe": {
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion",
-        "Status": {
+        "nome": "posicao Orion",
+        "status": {
           "id": 5,
-          "Nome": "Ativa"
+          "nome": "Ativa"
         }
       },
-      "Cargo": "Tech Líder"
+      "cargo": "Tech Líder"
     },
     {
       "id": 2,
-      "Nome": "Luna Maria",
-      "Email_Mascado": "luna.maria@***.com",
-      "Imagem": null,
-      "Descrição": "Especialista em código limpo",
-      "Estelares": 50,
-      "Nível": 1,
-      "Avatar": null,
-      "Equipe": {
+      "nome": "Luna Maria",
+      "email_mascado": "luna.maria@***.com",
+      "imagem": null,
+      "descricao": "Especialista em código limpo",
+      "estelares": 50,
+      "nivel": 1,
+      "avatar": null,
+      "equipe": {
         "id": 2,
-        "Nome": "Estrela Polar",
-        "Status": {
+        "nome": "Estrela Polar",
+        "status": {
           "id": 4,
-          "Nome": "Inativa"
+          "nome": "Inativa"
         }
       },
-      "Cargo": "Desenvolvedor"
+      "cargo": "Desenvolvedor"
     }
   ],
   "equipes": [
     {
       "id": 1,
-      "Nome": "Codestar-1",
-      "Descrição": "Tripulação de elite",
-      "Nave": {
+      "nome": "Codestar-1",
+      "descricao": "tripulacao de elite",
+      "nave": {
         "id": 1,
-        "Nome": "Orion Explorer",
-        "Imagem": "/images/spaceship/codestar1.gif"
+        "nome": "Orion Explorer",
+        "imagem": "/images/spaceship/codestar1.gif"
       },
-      "Status": {
+      "status": {
         "id": 5,
-        "Nome": "Ativa"
+        "nome": "Ativa"
       },
-      "Tripulação": [
+      "tripulacao": [
         {
           "id": 1,
-          "Nome": "Maiara Pires",
-          "Cargo": "Tech Líder",
-          "Imagem": "/images/profile/maiara.png",
-          "Username": "@sracommit",
-          "Descrição": "Maiara lidera com precisão e visão sistêmica. Conhecida por sua capacidade de tomar decisões rápidas e guiar a equipe por nebulosas de código legado, ela equilibra estratégia técnica com empatia, sendo uma referência constante no radar da tripulação.",
-          "Mascotes_preferidos": [
+          "nome": "Maiara Pires",
+          "cargo": "Tech Líder",
+          "imagem": "/images/profile/maiara.png",
+          "username": "@sracommit",
+          "descricao": "Maiara lidera com precisão e visão sistêmica. Conhecida por sua capacidade de tomar decisões rápidas e guiar a equipe por nebulosas de código legado, ela equilibra estratégia técnica com empatia, sendo uma referência constante no radar da tripulacao.",
+          "mascotes_preferidos": [
             {
               "id": 1,
-              "Nome": "Buggo",
-              "Imagem": "/images/mascot/buggo.png"
+              "nome": "Buggo",
+              "imagem": "/images/mascot/buggo.png"
             },
             {
               "id": 2,
-              "Nome": "Syntaxx",
-              "Imagem": "/images/mascot/syntaxx.png"
+              "nome": "Syntaxx",
+              "imagem": "/images/mascot/syntaxx.png"
             }
           ]
         },
         {
           "id": 2,
-          "Nome": "Você",
-          "Cargo": "Desenvolvedor",
-          "Imagem": "/images/profile/matheus.png",
-          "Username": "@nebula.dev",
-          "Descrição": "Desenvolvedor multifuncional, @nebula.dev é o copiloto ideal nas missões mais desafiadoras. Com raciocínio afiado e uma visão holística da navegação entre camadas de código, se destaca por propor soluções inteligentes e sustentáveis para bugs persistentes.",
-          "Mascotes_preferidos": [
+          "nome": "Você",
+          "cargo": "Desenvolvedor",
+          "imagem": "/images/profile/matheus.png",
+          "username": "@nebula.dev",
+          "descricao": "Desenvolvedor multifuncional, @nebula.dev é o copiloto ideal nas missões mais desafiadoras. Com raciocínio afiado e uma visão holística da posicaogação entre camadas de código, se destaca por propor soluções inteligentes e sustentáveis para bugs persistentes.",
+          "mascotes_preferidos": [
             {
               "id": 1,
-              "Nome": "Voidy",
-              "Imagem": "/images/mascot/voidy.png"
+              "nome": "Voidy",
+              "imagem": "/images/mascot/voidy.png"
             },
             {
               "id": 2,
-              "Nome": "Snipz",
-              "Imagem": "/images/mascot/snipz.png"
+              "nome": "Snipz",
+              "imagem": "/images/mascot/snipz.png"
             },
             {
               "id": 3,
-              "Nome": "Nubbi",
-              "Imagem": "/images/mascot/nubbi.png"
+              "nome": "Nubbi",
+              "imagem": "/images/mascot/nubbi.png"
             },
             {
               "id": 4,
-              "Nome": "Buggo",
-              "Imagem": "/images/mascot/buggo.png"
+              "nome": "Buggo",
+              "imagem": "/images/mascot/buggo.png"
             }
           ]
         },
         {
           "id": 3,
-          "Nome": "Lívia Marinho",
-          "Cargo": "Desenvolvedora",
-          "Imagem": "/images/profile/livia.png",
-          "Username": "@ux.marinho",
-          "Descrição": "Com olhar de designer e mente de engenheira, Lívia Marinho é a arquiteta das interfaces e fluxos da nave. Sua presença é marcada pela estética funcional, contribuindo para que cada módulo da missão seja não só eficiente, mas intuitivo. ",
-          "Mascotes_preferidos": [
+          "nome": "Lívia Marinho",
+          "cargo": "Desenvolvedora",
+          "imagem": "/images/profile/livia.png",
+          "username": "@ux.marinho",
+          "descricao": "Com olhar de designer e mente de engenheira, Lívia Marinho é a arquiteta das interfaces e fluxos da posicao. Sua presença é marcada pela estética funcional, contribuindo para que cada módulo da missão seja não só eficiente, mas intuitivo. ",
+          "mascotes_preferidos": [
             {
               "id": 1,
-              "Nome": "Cometin",
-              "Imagem": "/images/mascot/cometin.png"
+              "nome": "Cometin",
+              "imagem": "/images/mascot/cometin.png"
             },
             {
               "id": 2,
-              "Nome": "Fixx",
-              "Imagem": "/images/mascot/fixx.png"
+              "nome": "Fixx",
+              "imagem": "/images/mascot/fixx.png"
             }
           ]
         },
         {
           "id": 4,
-          "Nome": "Verônica Santos",
-          "Cargo": "Desenvolvedora",
-          "Imagem": "/images/profile/veronica.png",
-          "Username": "@code.oracle",
-          "Descrição": "Verônica é o coração analítico da tripulação. Com profundidade técnica e atenção cuidadosa aos impactos do código, ela traz uma perspectiva centrada no usuário e na robustez das soluções. Sua longa descrição pessoal é compatível com seu estilo: profunda, meticulosa e comprometida.",
-          "Mascotes_preferidos": [
+          "nome": "Verônica Santos",
+          "cargo": "Desenvolvedora",
+          "imagem": "/images/profile/veronica.png",
+          "username": "@code.oracle",
+          "descricao": "Verônica é o coração analítico da tripulacao. Com profundidade técnica e atenção cuidadosa aos impactos do código, ela traz uma perspectiva centrada no usuário e na robustez das soluções. Sua longa descricao pessoal é compatível com seu estilo: profunda, meticulosa e comprometida.",
+          "mascotes_preferidos": [
             {
               "id": 1,
-              "Nome": "Patch-3",
-              "Imagem": "/images/mascot/patch-3.png"
+              "nome": "Patch-3",
+              "imagem": "/images/mascot/patch-3.png"
             },
             {
               "id": 2,
-              "Nome": "Syntaxx",
-              "Imagem": "/images/mascot/syntaxx.png"
+              "nome": "Syntaxx",
+              "imagem": "/images/mascot/syntaxx.png"
             },
             {
               "id": 3,
-              "Nome": "Trixo",
-              "Imagem": "/images/mascot/trixo.png"
+              "nome": "Trixo",
+              "imagem": "/images/mascot/trixo.png"
             }
           ]
         },
         {
           "id": 5,
-          "Nome": "Gabriel Martins",
-          "Cargo": "Desenvolvedor",
-          "Imagem": "/images/profile/gabriel.png",
-          "Username": "@silent.patch",
-          "Descrição": "Gabriel é um dos engenheiros silenciosos e eficientes da Codestar-1. Discreto, mas altamente produtivo, é o tipo de desenvolvedor que resolve uma falha crítica enquanto a nave ainda está em aceleração máxima.",
-          "Mascotes_preferidos": [
+          "nome": "Gabriel Martins",
+          "cargo": "Desenvolvedor",
+          "imagem": "/images/profile/gabriel.png",
+          "username": "@silent.patch",
+          "descricao": "Gabriel é um dos engenheiros silenciosos e eficientes da Codestar-1. Discreto, mas altamente produtivo, é o tipo de desenvolvedor que resolve uma falha crítica enquanto a posicao ainda está em aceleração máxima.",
+          "mascotes_preferidos": [
             {
               "id": 1,
-              "Nome": "Quanti",
-              "Imagem": "/images/mascot/quanti.png"
+              "nome": "Quanti",
+              "imagem": "/images/mascot/quanti.png"
             },
             {
               "id": 2,
-              "Nome": "Orby",
-              "Imagem": "/images/mascot/orby.png"
+              "nome": "Orby",
+              "imagem": "/images/mascot/orby.png"
             }
           ]
         },
         {
           "id": 6,
-          "Nome": "Vitor Nascimento",
-          "Cargo": "Desenvolvedor",
-          "Imagem": "/images/profile/vitor.png",
-          "Username": "@vortex.vitor",
-          "Descrição": "Vitor Nascimento é conhecido por sua consistência e adaptabilidade. Seja na versão 1.0 ou 2.0, ele mantém um alto padrão de entrega, sempre atento ao desempenho da nave. ",
-          "Mascotes_preferidos": [
+          "nome": "Vitor Nascimento",
+          "cargo": "Desenvolvedor",
+          "imagem": "/images/profile/vitor.png",
+          "username": "@vortex.vitor",
+          "descricao": "Vitor Nascimento é conhecido por sua consistência e adaptabilidade. Seja na versão 1.0 ou 2.0, ele mantém um alto padrão de entrega, sempre atento ao desempenho da posicao. ",
+          "mascotes_preferidos": [
             {
               "id": 1,
-              "Nome": "Buggo",
-              "Imagem": "/images/mascot/buggo.png"
+              "nome": "Buggo",
+              "imagem": "/images/mascot/buggo.png"
             },
             {
               "id": 2,
-              "Nome": "Syntaxx",
-              "Imagem": "/images/mascot/syntaxx.png"
+              "nome": "Syntaxx",
+              "imagem": "/images/mascot/syntaxx.png"
             },
             {
               "id": 3,
-              "Nome": "Snipz",
-              "Imagem": "/images/mascot/snipz.png"
+              "nome": "Snipz",
+              "imagem": "/images/mascot/snipz.png"
             },
             {
               "id": 4,
-              "Nome": "Nubbi",
-              "Imagem": "/images/mascot/nubbi.png"
+              "nome": "Nubbi",
+              "imagem": "/images/mascot/nubbi.png"
             }
           ]
         }
       ],
-      "Missões_Abertas": [
+      "missoes_abertas": [
         {
           "id": 1,
-          "Nome": "Corrigir Acessibilidade no APP",
-          "Progresso": 45,
-          "Status": {
+          "nome": "corrigir Acessibilidade no APP",
+          "progresso": 45,
+          "status": {
             "id": 3,
-            "Nome": "Em Progresso"
+            "nome": "Em progresso"
           },
-          "Posição": {
+          "posicao": {
             "id": 1,
-            "Posição1": 1,
-            "Posição2": 1,
-            "Posição3": 1
+            "posicao1": 1,
+            "posicao2": 1,
+            "posicao3": 1
           }
         },
         {
           "id": 2,
-          "Nome": "Atualizar Dependências Obsoletas",
-          "Progresso": 20,
-          "Status": {
+          "nome": "Atualizar Dependências Obsoletas",
+          "progresso": 20,
+          "status": {
             "id": 3,
-            "Nome": "Atrasada"
+            "nome": "Atrasada"
           },
-          "Posição": {
+          "posicao": {
             "id": 1,
-            "Posição1": 0,
-            "Posição2": 2,
-            "Posição3": 1
+            "posicao1": 0,
+            "posicao2": 2,
+            "posicao3": 1
           }
         }
       ],
-      "Planetas_Explorados": [
+      "planetas_explorados": [
         {
           "id": 1,
-          "Nome": "Aeris",
-          "Imagem": "/images/planet/aeris.png",
-          "Descrição": "Descrição do planeta Aeris",
-          "Mascotes": [
+          "nome": "Aeris",
+          "imagem": "/images/planet/aeris.png",
+          "descricao": "descricao do planeta Aeris",
+          "mascotes": [
             {
               "id": 1,
-              "Nome": "Buggo",
-              "Imagem": "/images/mascot/buggo.png",
-              "Descrição": "Descrição do mascote Buggo"
+              "nome": "Buggo",
+              "imagem": "/images/mascot/buggo.png",
+              "descricao": "descricao do mascote Buggo"
             },
             {
               "id": 2,
-              "Nome": "Syntaxx",
-              "Imagem": "/images/mascot/syntaxx.png",
-              "Descrição": "Descrição do mascote Syntaxx"
+              "nome": "Syntaxx",
+              "imagem": "/images/mascot/syntaxx.png",
+              "descricao": "descricao do mascote Syntaxx"
             }
           ]
         },
         {
           "id": 2,
-          "Nome": "Coreon",
-          "Imagem": "/images/planet/coreon.png",
-          "Descrição": "Descrição do planeta Coreon",
-          "Mascotes": [
+          "nome": "coreon",
+          "imagem": "/images/planet/coreon.png",
+          "descricao": "descricao do planeta coreon",
+          "mascotes": [
             {
               "id": 3,
-              "Nome": "Algorix",
-              "Imagem": "/images/mascot/algorix.png",
-              "Descrição": "Descrição do mascote Algorix"
+              "nome": "Algorix",
+              "imagem": "/images/mascot/algorix.png",
+              "descricao": "descricao do mascote Algorix"
             }
           ]
         },
         {
           "id": 3,
-          "Nome": "Pyron",
-          "Imagem": "/images/planet/pyron.png",
-          "Descrição": "Descrição do planeta Pyron",
-          "Mascotes": [
+          "nome": "Pyron",
+          "imagem": "/images/planet/pyron.png",
+          "descricao": "descricao do planeta Pyron",
+          "mascotes": [
             {
               "id": 4,
-              "Nome": "Patch-3",
-              "Imagem": "/images/mascot/patch-3.png",
-              "Descrição": "Descrição do mascote Patch-3"
+              "nome": "Patch-3",
+              "imagem": "/images/mascot/patch-3.png",
+              "descricao": "descricao do mascote Patch-3"
             }
           ]
         }
@@ -295,555 +295,555 @@
   "planetas": [
     {
       "id": 1,
-      "Nome": "Terrara",
-      "Descrição": "Um planeta fértil e equilibrado, onde os primeiros projetos foram plantados. Ideal para times iniciantes, representa o começo da jornada e a estruturação de boas práticas de código.",
-      "Titulo": "O Berço dos Primeiros Códigos",
-      "Status": {
+      "nome": "Terrara",
+      "descricao": "Um planeta fértil e equilibrado, onde os primeiros projetos foram plantados. Ideal para times iniciantes, representa o começo da jornada e a estruturação de boas práticas de código.",
+      "titulo": "O Berço dos Primeiros Códigos",
+      "status": {
         "id": 1,
-        "Nome": "Não Explorado"
+        "nome": "Não Explorado"
       },
-      "Qtd_missões": 8,
-      "Tema_Principal": {
+      "qtd_missoes": 8,
+      "tema_principal": {
         "id": 1,
-        "Nome": "Entrega e Ação"
+        "nome": "Entrega e Ação"
       },
-      "Imagem": "/images/planet/terrara.png",
-      "Gentilico": "Aerisianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/terrara.png",
+      "gentilico": "Aerisianos",
+      "categoria": "planeta Secundário",
       "top": 0,
       "left": 800,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 1,
-          "Nome": "Buggo",
-          "Imagem": "/images/mascot/buggo.png",
-          "Descrição": "Representação lúdica dos bugs, muda de cor conforme o estado do sistema."
+          "nome": "Buggo",
+          "imagem": "/images/mascot/buggo.png",
+          "descricao": "Representação lúdica dos bugs, muda de cor conforme o estado do sistema."
         },
         {
           "id": 2,
-          "Nome": "Syntaxx",
-          "Imagem": "/images/mascot/syntaxx.png",
-          "Descrição": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas."
+          "nome": "Syntaxx",
+          "imagem": "/images/mascot/syntaxx.png",
+          "descricao": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas."
         }
       ]
     },
     {
       "id": 2,
-      "Nome": "Coreon",
-      "Descrição": "Um mundo com grandes torres de dados, cidades flutuantes e com campos de energia onde tudo se transforma. Aqui, o foco é raciocínio rápido e tomada de decisão sob pressão. O ambiente responde ao estado do código da tripulação. Ideal para tarefas de limpeza e padronização.",
-      "Titulo": "A Mente da Máquina",
-      "Status": {
+      "nome": "coreon",
+      "descricao": "Um mundo com grandes torres de dados, cidades flutuantes e com campos de energia onde tudo se transforma. Aqui, o foco é raciocínio rápido e tomada de decisão sob pressão. O ambiente responde ao estado do código da tripulacao. Ideal para tarefas de limpeza e padronização.",
+      "titulo": "A Mente da Máquina",
+      "status": {
         "id": 2,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 5,
-      "Tema_Principal": {
+      "qtd_missoes": 5,
+      "tema_principal": {
         "id": 2,
-        "Nome": "Código Limpo"
+        "nome": "Código Limpo"
       },
-      "Imagem": "/images/planet/coreon.png",
-      "Gentilico": "Coreonianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/coreon.png",
+      "gentilico": "coreonianos",
+      "categoria": "planeta Secundário",
       "top": -600,
       "left": 600,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 1,
-          "Nome": "Clippyon",
-          "Imagem": "/images/mascot/clippyon.png",
-          "Descrição": "Um pequeno ajudante que aparece discretamente para sugerir refatorações e padrões mais limpos."
+          "nome": "Clippyon",
+          "imagem": "/images/mascot/clippyon.png",
+          "descricao": "Um pequeno ajudante que aparece discretamente para sugerir refatorações e padrões mais limpos."
         },
         {
           "id": 2,
-          "Nome": "Linty",
-          "Imagem": "/images/mascot/linty.png",
-          "Descrição": "ET perfeccionista que elimina redundâncias e sujeira de código."
+          "nome": "Linty",
+          "imagem": "/images/mascot/linty.png",
+          "descricao": "ET perfeccionista que elimina redundâncias e sujeira de código."
         },
         {
           "id": 3,
-          "Nome": "Syntaxx",
-          "Imagem": "/images/mascot/syntaxx.png",
-          "Descrição": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas."
+          "nome": "Syntaxx",
+          "imagem": "/images/mascot/syntaxx.png",
+          "descricao": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas."
         }
       ]
     },
     {
       "id": 3,
-      "Nome": "Pyron",
-      "Descrição": "Um planeta vulcânico com rios de lava e tempestades elétricas. Um mundo de desertos metálicos, fornalhas e tempestades elétricas. Exige ritmo, decisão e ação. Ideal para entregas rápidas e correções críticas.",
-      "Titulo": "Fornalha do Desafio",
-      "Status": {
+      "nome": "Pyron",
+      "descricao": "Um planeta vulcânico com rios de lava e tempestades elétricas. Um mundo de desertos metálicos, fornalhas e tempestades elétricas. Exige ritmo, decisão e ação. Ideal para entregas rápidas e correções críticas.",
+      "titulo": "Fornalha do Desafio",
+      "status": {
         "id": 3,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 10,
-      "Tema_Principal": {
+      "qtd_missoes": 10,
+      "tema_principal": {
         "id": 3,
-        "Nome": "Entrega e Ação"
+        "nome": "Entrega e Ação"
       },
-      "Imagem": "/images/planet/pyron.png",
-      "Gentilico": "Pyronianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/pyron.png",
+      "gentilico": "Pyronianos",
+      "categoria": "planeta Secundário",
       "top": 0,
       "left": 1300,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 1,
-          "Nome": "Cometim",
-          "Imagem": "/images/mascot/cometim.png",
-          "Descrição": "Mascote veloz que reduz tempos de espera e incentiva produtividade com sua energia contagiante."
+          "nome": "Cometim",
+          "imagem": "/images/mascot/cometim.png",
+          "descricao": "Mascote veloz que reduz tempos de espera e incentiva produtividade com sua energia contagiante."
         },
         {
           "id": 2,
-          "Nome": "Fixx",
-          "Imagem": "/images/mascot/fixx.png",
-          "Descrição": "Mascote de suporte técnico que simplifica problemas complexos."
+          "nome": "Fixx",
+          "imagem": "/images/mascot/fixx.png",
+          "descricao": "Mascote de suporte técnico que simplifica problemas complexos."
         },
         {
           "id": 3,
-          "Nome": "Patch-3",
-          "Imagem": "/images/mascot/patch-3.png",
-          "Descrição": "É um mini robô prático, ágil e programado para resolver problemas sérios no menor tempo possível. Ele adora missões vermelhas e vive dizendo: 'Se é urgente, deixa comigo!'"
+          "nome": "Patch-3",
+          "imagem": "/images/mascot/patch-3.png",
+          "descricao": "É um mini robô prático, ágil e programado para resolver problemas sérios no menor tempo possível. Ele adora missões vermelhas e vive dizendo: 'Se é urgente, deixa comigo!'"
         }
       ]
     },
     {
       "id": 4,
-      "Nome": "Crystalia",
-      "Descrição": "Um planeta de cristais inteligentes que armazenam dados de sistemas antigos. Suas formações geram labirintos lógicos ideais para desafios de algoritmos. Indicado para explorar lógica de programação e arquitetura.",
-      "Titulo": "O Oráculo Binário",
-      "Status": {
+      "nome": "Crystalia",
+      "descricao": "Um planeta de cristais inteligentes que armazenam dados de sistemas antigos. Suas formações geram labirintos lógicos ideais para desafios de algoritmos. Indicado para explorar lógica de programação e arquitetura.",
+      "titulo": "O Oráculo Binário",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Ambiente e Deploy"
+        "nome": "Ambiente e Deploy"
       },
-      "Imagem": "/images/planet/crystalia.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/crystalia.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": 800,
       "left": -500,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Algorix",
-          "Imagem": "/images/mascot/algorix.png",
-          "Descrição": "Um ser geométrico que flutua suavemente, sempre calculando o caminho mais eficiente. Sua mente funciona como um algoritmo vivo, otimizando tudo ao seu redor."
+          "nome": "Algorix",
+          "imagem": "/images/mascot/algorix.png",
+          "descricao": "Um ser geométrico que flutua suavemente, sempre calculando o caminho mais eficiente. Sua mente funciona como um algoritmo vivo, otimizando tudo ao seu redor."
         },
         {
           "id": 6,
-          "Nome": "Loopin",
-          "Imagem": "/images/mascot/loopin.png",
-          "Descrição": "Um mascote que, literalmente, gira em círculos quando encontra loops infinitos ou lógicas repetitivas. Só para quando alguém otimiza o código."
+          "nome": "Loopin",
+          "imagem": "/images/mascot/loopin.png",
+          "descricao": "Um mascote que, literalmente, gira em círculos quando encontra loops infinitos ou lógicas repetitivas. Só para quando alguém otimiza o código."
         },
         {
           "id": 7,
-          "Nome": "Stacko",
-          "Imagem": "/images/mascot/stacko.png",
-          "Descrição": "Um robô empilhador que adora estruturas ordenadas e detesta estouros de memória."
+          "nome": "Stacko",
+          "imagem": "/images/mascot/stacko.png",
+          "descricao": "Um robô empilhador que adora estruturas ordenadas e detesta estouros de memória."
         }
       ]
     },
     {
       "id": 5,
-      "Nome": "Aetheria",
-      "Descrição": "Aetheria é o centro da sincronia e da comunicação cósmica. Aqui, as naves se conectam com clareza, e a transparência entre as tripulações é essencial para alcançar harmonia no desenvolvimento. O planeta representa a fluidez da comunicação entre times e stakeholders, além da importância do alinhamento técnico, emocional e estratégico.",
-      "Titulo": "Planeta das Comunicações",
-      "Status": {
+      "nome": "Aetheria",
+      "descricao": "Aetheria é o centro da sincronia e da comunicação cósmica. Aqui, as posicaos se conectam com clareza, e a transparência entre as tripulações é essencial para alcançar harmonia no desenvolvimento. O planeta representa a fluidez da comunicação entre times e stakeholders, além da importância do alinhamento técnico, emocional e estratégico.",
+      "titulo": "planeta das Comunicações",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Integração e Colaboração"
+        "nome": "Integração e Colaboração"
       },
-      "Imagem": "/images/planet/aetheria.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/aetheria.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": 700,
       "left": 1800,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 7,
-          "Nome": "Lumis",
-          "Imagem": "/images/mascot/lumis.png",
-          "Descrição": "Entidade de névoa e luz que absorve memórias perdidas da Floresta de Ametista, agindo como um arquivo vivo dos segredos cósmicos."
+          "nome": "Lumis",
+          "imagem": "/images/mascot/lumis.png",
+          "descricao": "Entidade de névoa e luz que absorve memórias perdidas da Floresta de Ametista, agindo como um arquivo vivo dos segredos cósmicos."
         },
         {
           "id": 8,
-          "Nome": "Solin",
-          "Imagem": "/images/mascot/solin.png",
-          "Descrição": "Representa a energia vital do projeto. Seu brilho aumenta com a coesão da equipe e conquistas."
+          "nome": "Solin",
+          "imagem": "/images/mascot/solin.png",
+          "descricao": "Representa a energia vital do projeto. Seu brilho aumenta com a coesão da equipe e conquistas."
         }
       ]
     },
     {
       "id": 6,
-      "Nome": "Ecliptor",
-      "Descrição": "Um planeta orbitando uma estrela binária, repleto de zonas escuras e sensores ocultos. Ele exige atenção aos detalhes e é voltado para testes, QA e monitoramento. Ideal para squads com foco em qualidade.",
-      "Titulo": "O Sentinela das Sombras",
-      "Status": {
+      "nome": "Ecliptor",
+      "descricao": "Um planeta orbitando uma estrela binária, repleto de zonas escuras e sensores ocultos. Ele exige atenção aos detalhes e é voltado para testes, QA e monitoramento. Ideal para squads com foco em qualidade.",
+      "titulo": "O Sentinela das Sombras",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Gestão do Tempo"
+        "nome": "Gestão do Tempo"
       },
-      "Imagem": "/images/planet/ecliptor.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/ecliptor.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": -1100,
       "left": 900,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Orbyx",
-          "Imagem": "/images/mascot/orbyx.png",
-          "Descrição": "Uma entidade que gira em torno de entidades importantes, como um satélite natural de eventos críticos."
+          "nome": "Orby",
+          "imagem": "/images/mascot/orby.png",
+          "descricao": "Uma entidade que gira em torno de entidades importantes, como um satélite natural de eventos críticos."
         },
         {
           "id": 5,
-          "Nome": "Trillex",
-          "Imagem": "/images/mascot/trillex.png",
-          "Descrição": "Um especialista em rastrear eventos e desvendar mensagens de erro crípticas."
+          "nome": "Trillex",
+          "imagem": "/images/mascot/trillex.png",
+          "descricao": "Um especialista em rastrear eventos e desvendar mensagens de erro crípticas."
         },
         {
           "id": 5,
-          "Nome": "Zyntra",
-          "Imagem": "/images/mascot/zyntra.png",
-          "Descrição": "Aparece durante eventos raros (eclipses, alinhamentos de servidores) e traz benefícios aleatórios."
+          "nome": "Zyntra",
+          "imagem": "/images/mascot/zyntra.png",
+          "descricao": "Aparece durante eventos raros (eclipses, alinhamentos de servidores) e traz benefícios aleatórios."
         }
       ]
     },
     {
       "id": 7,
-      "Nome": "Fluxaris",
-      "Descrição": "Um planeta radiante que pulsa com energia criativa. Elementos flutuam no ar e mudam de forma com a interação do jogador. Ideal para tarefas de UI/UX, design de interfaces e acessibilidade.",
-      "Titulo": "O Mundo da Energia Criativa",
-      "Status": {
+      "nome": "Fluxaris",
+      "descricao": "Um planeta radiante que pulsa com energia criativa. Elementos flutuam no ar e mudam de forma com a interação do jogador. Ideal para tarefas de UI/UX, design de interfaces e acessibilidade.",
+      "titulo": "O Mundo da Energia Criativa",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Documentação e Legado"
+        "nome": "Documentação e Legado"
       },
-      "Imagem": "/images/planet/fluxaris.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/fluxaris.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": 600,
       "left": 1250,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Bytee",
-          "Imagem": "/images/mascot/bytee.png",
-          "Descrição": "Um alienígena fofo que mistura características de byte e pelúcia, com circuitos visíveis sob sua 'pele' de tecido digital. Adora aprender novos códigos e fazer piadas nerds."
+          "nome": "Bytee",
+          "imagem": "/images/mascot/bytee.png",
+          "descricao": "Um alienígena fofo que mistura características de byte e pelúcia, com circuitos visíveis sob sua 'pele' de tecido digital. Adora aprender novos códigos e fazer piadas nerds."
         },
         {
           "id": 6,
-          "Nome": "Poxel",
-          "Imagem": "/images/mascot/poxel.png",
-          "Descrição": "Mestre de desafios visuais, como ajustes de UI ou otimização de gráficos."
+          "nome": "Poxel",
+          "imagem": "/images/mascot/poxel.png",
+          "descricao": "Mestre de desafios visuais, como ajustes de UI ou otimização de gráficos."
         }
       ]
     },
     {
       "id": 8,
-      "Nome": "Nixar",
-      "Descrição": "Um mundo gelado de estrutura rígida e atmosfera rarefeita, onde cristais naturais formam redes que armazenam dados ambientais ao longo de milênios. É um planeta antigo e enigmático, associado à sabedoria acumulada, isolamento analítico e persistência em condições extremas.",
-      "Titulo": "O Mistério Ancião",
-      "Status": {
+      "nome": "Nixar",
+      "descricao": "Um mundo gelado de estrutura rígida e atmosfera rarefeita, onde cristais naturais formam redes que armazenam dados ambientais ao longo de milênios. É um planeta antigo e enigmático, associado à sabedoria acumulada, isolamento analítico e persistência em condições extremas.",
+      "titulo": "O Mistério Ancião",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Armazenamento de Dados"
+        "nome": "Armazenamento de Dados"
       },
-      "Imagem": "/images/planet/nixar.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/nixar.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": -450,
       "left": 1800,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Algorix",
-          "Imagem": "/images/mascot/algorix.png",
-          "Descrição": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
+          "nome": "Algorix",
+          "imagem": "/images/mascot/algorix.png",
+          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
         }
       ]
     },
     {
       "id": 9,
-      "Nome": "Hexora",
-      "Descrição": "Mundo dividido em módulos hexagonais que se movem, mudando o cenário a cada ciclo.   Um planeta onde tudo precisa ser validado antes de ser real. O solo só se estabiliza quando testado. Ideal para missões voltadas a TDD, testes automatizados e validações de interface.",
-      "Titulo": "A Dimensão Modular",
-      "Status": {
+      "nome": "Hexora",
+      "descricao": "Mundo dividido em módulos hexagonais que se movem, mudando o cenário a cada ciclo.   Um planeta onde tudo precisa ser validado antes de ser real. O solo só se estabiliza quando testado. Ideal para missões voltadas a TDD, testes automatizados e validações de interface.",
+      "titulo": "A Dimensão Modular",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Testes e Validação"
+        "nome": "Testes e Validação"
       },
-      "Imagem": "/images/planet/hexora.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/hexora.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": 200,
       "left": -1000,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Galaxito",
-          "Imagem": "/images/mascot/galaxito.png",
-          "Descrição": "Mascote que ganha novas formas ao atingir marcos de performance."
+          "nome": "Galaxito",
+          "imagem": "/images/mascot/galaxito.png",
+          "descricao": "Mascote que ganha novas formas ao atingir marcos de performance."
         },
         {
           "id": 8,
-          "Nome": "Nebby",
-          "Imagem": "/images/mascot/nebby.png",
-          "Descrição": "Mascote que muda de forma conforme o progresso do usuário, representando evolução."
+          "nome": "Nebby",
+          "imagem": "/images/mascot/nebby.png",
+          "descricao": "Mascote que muda de forma conforme o progresso do usuário, representando evolução."
         }
       ]
     },
     {
       "id": 10,
-      "Nome": "Tesserax",
-      "Descrição": "Um mundo com dimensões sobrepostas. Cada tarefa revela uma nova camada do planeta. Excelente para desenvolvedores que trabalham com microsserviços ou integrações complexas.",
-      "Titulo": "O Labirinto Dimensional",
-      "Status": {
+      "nome": "Tesserax",
+      "descricao": "Um mundo com dimensões sobrepostas. Cada tarefa revela uma nova camada do planeta. Excelente para desenvolvedores que trabalham com microsserviços ou integrações complexas.",
+      "titulo": "O Labirinto Dimensional",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Fluxos e Integrações"
+        "nome": "Fluxos e Integrações"
       },
-      "Imagem": "/images/planet/tesserax.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/tesserax.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": -100,
       "left": -540,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Quanti",
-          "Imagem": "/images/mascot/quanti.png",
-          "Descrição": "Vive em superposição de estados, ajudando em testes de cenários múltiplos (ex.: A/B testing, simulações)."
+          "nome": "Quanti",
+          "imagem": "/images/mascot/quanti.png",
+          "descricao": "Vive em superposicao de estados, ajudando em testes de cenários múltiplos (ex.: A/B testing, simulações)."
         },
         {
           "id": 6,
-          "Nome": "Voidy",
-          "Imagem": "/images/mascot/voidy.png",
-          "Descrição": "Um ser feito de sombras estelares que habita espaços não renderizados ou regiões inexploradas do sistema."
+          "nome": "Voidy",
+          "imagem": "/images/mascot/voidy.png",
+          "descricao": "Um ser feito de sombras estelares que habita espaços não renderizados ou regiões inexploradas do sistema."
         }
       ]
     },
     {
       "id": 11,
-      "Nome": "Orthos",
-      "Descrição": "Planeta com tempestade perpétua no centro, representando caos e poder. Representa cooperação entre equipes e comunicação eficiente.",
-      "Titulo": "O Núcleo da Tempestade",
-      "Status": {
+      "nome": "Orthos",
+      "descricao": "planeta com tempestade perpétua no centro, representando caos e poder. Representa cooperação entre equipes e comunicação eficiente.",
+      "titulo": "O Núcleo da Tempestade",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Colaboração"
+        "nome": "Colaboração"
       },
-      "Imagem": "/images/planet/orthos.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/orthos.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": 1400,
       "left": 1500,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Algorix",
-          "Imagem": "/images/mascot/algorix.png",
-          "Descrição": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
+          "nome": "Algorix",
+          "imagem": "/images/mascot/algorix.png",
+          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
         }
       ]
     },
     {
       "id": 12,
-      "Nome": "Bitron",
-      "Descrição": "Planeta artificial com zonas de hacking, firewalls vivos e simulações de dados. Missões de infiltração, lógica e engenharia. Recompensa quem entrega com qualidade sem perder prazos. Ideal para gerenciamento e priorização de backlog.",
-      "Titulo": "A Rede Viva",
-      "Status": {
+      "nome": "Bitron",
+      "descricao": "planeta artificial com zonas de hacking, firewalls vivos e simulações de dados. Missões de infiltração, lógica e engenharia. Recompensa quem entrega com qualidade sem perder prazos. Ideal para gerenciamento e priorização de backlog.",
+      "titulo": "A Rede Viva",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Equilíbrio entre prazo e qualidade"
+        "nome": "Equilíbrio entre prazo e qualidade"
       },
-      "Imagem": "/images/planet/bitron.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/bitron.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": 200,
       "left": 2600,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Algorix",
-          "Imagem": "/images/mascot/algorix.png",
-          "Descrição": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
+          "nome": "Algorix",
+          "imagem": "/images/mascot/algorix.png",
+          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
         }
       ]
     },
     {
       "id": 13,
-      "Nome": "Verdax",
-      "Descrição": "Florestas alienígenas com árvores gigantes, comunicação via vibrações e missões de interação ambiental. Um mundo vivo e conectado. Focado em criação de conteúdo, novos módulos e experiências. Ideal para sprints de inovação.",
-      "Titulo": "O Eco Cósmico",
-      "Status": {
+      "nome": "Verdax",
+      "descricao": "Florestas alienígenas com árvores gigantes, comunicação via vibrações e missões de interação ambiental. Um mundo vivo e conectado. Focado em criação de conteúdo, novos módulos e experiências. Ideal para sprints de inovação.",
+      "titulo": "O Eco Cósmico",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Inovação e Design"
+        "nome": "Inovação e Design"
       },
-      "Imagem": "/images/planet/verdax.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/verdax.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": 200,
       "left": 3200,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Algorix",
-          "Imagem": "/images/mascot/algorix.png",
-          "Descrição": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
+          "nome": "Algorix",
+          "imagem": "/images/mascot/algorix.png",
+          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
         }
       ]
     },
     {
       "id": 14,
-      "Nome": "Vortan",
-      "Descrição": "Planeta em constante mutação, onde o tempo e o espaço se dobram. Ideal para corrigir tarefas esquecidas (minor issues acumuladas), representando a complexidade e a dívida técnica que cresce se ignorada.",
-      "Titulo": "A Singularidade Caótica",
-      "Status": {
+      "nome": "Vortan",
+      "descricao": "planeta em constante mutação, onde o tempo e o espaço se dobram. Ideal para corrigir tarefas esquecidas (minor issues acumuladas), representando a complexidade e a dívida técnica que cresce se ignorada.",
+      "titulo": "A Singularidade Caótica",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Lógica e Performance"
+        "nome": "Lógica e Performance"
       },
-      "Imagem": "/images/planet/vortan.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/vortan.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": 1800,
       "left": 400,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Algorix",
-          "Imagem": "/images/mascot/algorix.png",
-          "Descrição": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
+          "nome": "Algorix",
+          "imagem": "/images/mascot/algorix.png",
+          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
         }
       ]
     },
     {
       "id": 15,
-      "Nome": "Zephyra",
-      "Descrição": "Um deserto escuro com energia natural em forma de ventos carregados. Jogadores aqui constroem equipamentos e mineram recursos raros. Focado em melhoria contínua, é excelente para acompanhar o progresso do time e evoluções no projeto.",
-      "Titulo": "Tempestade dos Sussurros",
-      "Status": {
+      "nome": "Zephyra",
+      "descricao": "Um deserto escuro com energia natural em forma de ventos carregados. Jogadores aqui constroem equipamentos e mineram recursos raros. Focado em melhoria contínua, é excelente para acompanhar o progresso do time e evoluções no projeto.",
+      "titulo": "Tempestade dos Sussurros",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Evolução Contínua"
+        "nome": "Evolução Contínua"
       },
-      "Imagem": "/images/planet/zephyra.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/zephyra.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": -800,
       "left": -600,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Algorix",
-          "Imagem": "/images/mascot/algorix.png",
-          "Descrição": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
+          "nome": "Algorix",
+          "imagem": "/images/mascot/algorix.png",
+          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
         }
       ]
     },
     {
       "id": 16,
-      "Nome": "Aeris",
-      "Descrição": "Mundo gasoso com ilhas flutuantes, criaturas planadoras e desafios verticais. É o lar dos puzzles tridimensionais e minigames de equilíbrio. Ideal para caçadores de bugs e desenvolvedores que trabalham com correções em áreas críticas.",
-      "Titulo": "Ilhas no Vento",
-      "Status": {
+      "nome": "Aeris",
+      "descricao": "Mundo gasoso com ilhas flutuantes, criaturas planadoras e desafios verticais. É o lar dos puzzles tridimensionais e minigames de equilíbrio. Ideal para caçadores de bugs e desenvolvedores que trabalham com correções em áreas críticas.",
+      "titulo": "Ilhas no Vento",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Correção de Bugs"
+        "nome": "correção de Bugs"
       },
-      "Imagem": "/images/planet/aeris.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/aeris.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": 950,
       "left": -1000,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Algorix",
-          "Imagem": "/images/mascot/algorix.png",
-          "Descrição": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
+          "nome": "Algorix",
+          "imagem": "/images/mascot/algorix.png",
+          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
         }
       ]
     },
     {
       "id": 17,
-      "Nome": "Glaciora",
-      "Descrição": "Um planeta coberto por campos de gelo cristalino e auroras pulsantes. Sua atmosfera fria exige manutenção constante da nave, representando a importância da estabilidade do código. Ideal para missões de refatoração e otimização.",
-      "Titulo": "O Guardião do Frio Estável",
-      "Status": {
+      "nome": "Glaciora",
+      "descricao": "Um planeta coberto por campos de gelo cristalino e auroras pulsantes. Sua atmosfera fria exige manutenção constante da posicao, representando a importância da estabilidade do código. Ideal para missões de refatoração e otimização.",
+      "titulo": "O Guardião do Frio Estável",
+      "status": {
         "id": 4,
-        "Nome": "Explorado"
+        "nome": "Explorado"
       },
-      "Qtd_missões": 7,
-      "Tema_Principal": {
+      "qtd_missoes": 7,
+      "tema_principal": {
         "id": 4,
-        "Nome": "Segurança da Informação"
+        "nome": "Segurança da Informação"
       },
-      "Imagem": "/images/planet/glaciora.png",
-      "Gentilico": "Crystalianos",
-      "categoria": "Planeta Secundário",
+      "imagem": "/images/planet/glaciora.png",
+      "gentilico": "Crystalianos",
+      "categoria": "planeta Secundário",
       "top": 1200,
       "left": 800,
-      "Mascotes": [
+      "mascotes": [
         {
           "id": 5,
-          "Nome": "Algorix",
-          "Imagem": "/images/mascot/algorix.png",
-          "Descrição": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
+          "nome": "Algorix",
+          "imagem": "/images/mascot/algorix.png",
+          "descricao": "Um ser que brilha intensamente, sempre unindo diferentes partes do universo."
         }
       ]
     }
@@ -851,1250 +851,1744 @@
   "temas_principais": [
     {
       "id": 1,
-      "Nome": "Entrega e Ação",
-      "Descrição": "Foco em entregas rápidas"
+      "nome": "Entrega e Ação",
+      "descricao": "Foco em entregas rápidas"
     },
     {
       "id": 2,
-      "Nome": "Código Limpo",
-      "Descrição": "Prioriza qualidade do código"
+      "nome": "Código Limpo",
+      "descricao": "Prioriza qualidade do código"
     }
   ],
   "missoes": [
     {
       "id": 1,
-      "Nome": "Corrigir Acessibilidade do Formulário de Cadastro",
-      "Descrição": "Esta atividade visa resolver falhas de acessibilidade no formulário de cadastro de novos clientes. É crucial garantir que usuários com deficiência visual e motora possam interagir com o formulário de forma eficaz, cumprindo as diretrizes WCAG 2.1.",
-      "Objetivo_Técnico": "1. Implementar ARIA labels descritivas para todos os campos de entrada e botões\n2. Garantir ordem de tabulação lógica para navegação via teclado em todos os campos\n3. Assegurar contraste mínimo de 4.5:1 para textos e elementos da interface\n4. Adicionar feedback claro para validação de campos, compatível com leitores de tela",
-      "Tipo_Missão": {
+      "nome": "corrigir Acessibilidade do Formulário de Cadastro",
+      "descricao": "Esta atividade visa resolver falhas de acessibilidade no formulário de cadastro de novos clientes. É crucial garantir que usuários com deficiência visual e motora possam interagir com o formulário de forma eficaz, cumprindo as diretrizes WCAG 2.1.",
+      "objetivo_tecnico": "1. Implementar ARIA labels descritivas para todos os campos de entrada e botões\n2. Garantir ordem de tabulação lógica para posicaogação via teclado em todos os campos\n3. Assegurar contraste mínimo de 4.5:1 para textos e elementos da interface\n4. Adicionar feedback claro para validação de campos, compatível com leitores de tela",
+      "tipo_missao": {
         "id": 1,
-        "Nome": "Vermelha",
-        "Peso": 3,
-        "Cor": "red-500"
+        "nome": "Vermelha",
+        "peso": 3,
+        "cor": "red-500"
       },
-      "Progresso_missão": 45,
-      "Status": {
+      "progresso_missao": 45,
+      "status": {
         "id": 3,
-        "Nome": "Atrasada"
+        "nome": "Atrasada"
       },
-      "Data_Criação": "2025-04-30T08:00:00Z",
-      "Data_Prazo": "2025-05-02T18:00:59Z",
-      "Data_Conclusão": null,
-      "Qtd_moedas": 15,
+      "data_criacao": "2025-04-30T08:00:00Z",
+      "data_prazo": "2025-05-02T18:00:59Z",
+      "data_conclusao": null,
+      "qtd_moedas": 15,
       "conquista": {
         "id": 1,
-        "Nome": "Qualidade Constante",
+        "nome": "Qualidade Constante",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 3,
-      "Fases_Concluídas": 1,
-      "Planeta": {
+      "fases_total": 3,
+      "fases_concluidas": 1,
+      "planeta": {
         "id": 2,
-        "Nome": "Terra"
+        "nome": "Terra"
       },
-      "Projeto": {
+      "projeto": {
         "id": 2,
-        "Nome": "Acessibilidade App"
+        "nome": "Acessibilidade App"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 2,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 2,
-      "Nome": "Corrigir Botão \"Finalizar Transação\" Intermitente",
-    "Descrição": "O botão \"Finalizar Transação\" na tela de pagamento apresenta falha intermitente, não respondendo ao clique em certas condições de rede ou estado da sessão. Isso impede a conclusão de transações e gera frustração no usuário.",
-    "Objetivo_Técnico": "1. Investigar e eliminar race conditions ou estados de carregamento que bloqueiam o evento de clique\n2. Assegurar que o event listener do botão seja sempre ativado corretamente\n3. Implementar tratamento de erros robusto para requisições assíncronas associadas ao botão\n4. Adicionar validação de estado da sessão antes de habilitar o botão",
-      "Tipo_Missão": {
+      "nome": "corrigir Botão \"Finalizar Transação\" Intermitente",
+      "descricao": "O botão \"Finalizar Transação\" na tela de pagamento apresenta falha intermitente, não respondendo ao clique em certas condições de rede ou estado da sessão. Isso impede a conclusão de transações e gera frustração no usuário.",
+      "objetivo_tecnico": "1. Investigar e eliminar race conditions ou estados de carregamento que bloqueiam o evento de clique\n2. Assegurar que o event listener do botão seja sempre ativado corretamente\n3. Implementar tratamento de erros robusto para requisições assíncronas associadas ao botão\n4. Adicionar validação de estado da sessão antes de habilitar o botão",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 20,
-      "Status": {
+      "progresso_missao": 20,
+      "status": {
         "id": 3,
-        "Nome": "Atrasada"
+        "nome": "Atrasada"
       },
-      "Data_Criação": "2025-04-05T10:00:00Z",
-      "Data_Prazo": "2025-05-04T18:00:59Z",
-      "Data_Conclusão": null,
-      "Qtd_moedas": 10,
+      "data_criacao": "2025-04-05T10:00:00Z",
+      "data_prazo": "2025-05-04T18:00:59Z",
+      "data_conclusao": null,
+      "qtd_moedas": 10,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 2,
-      "Fases_Concluídas": 0,
-      "Planeta": {
+      "fases_total": 2,
+      "fases_concluidas": 0,
+      "planeta": {
         "id": 3,
-        "Nome": "Marte"
+        "nome": "Marte"
       },
-      "Projeto": {
+      "projeto": {
         "id": 3,
-        "Nome": "Financiamento Imobiliário"
+        "nome": "Financiamento Imobiliário"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 3,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 3,
-      "Nome": "Otimizar Carregamento de Imagens na Página Inicial",
-    "Descrição": "A página inicial do internet banking exibe atrasos significativos no carregamento de imagens de banners promocionais e ícones de serviços. Isso afeta a percepção de velocidade da aplicação e a experiência do usuário.",
-    "Objetivo_Técnico": "1. Comprimir e otimizar tamanho de arquivos de imagem (JPG, PNG) sem perda de qualidade visível\n2. Implementar lazy loading para imagens fora do viewport inicial\n3. Avaliar e configurar cache HTTP adequado para imagens estáticas\n4. Utilizar formatos de imagem mais eficientes (e.g., WebP) onde aplicável",
-      "Tipo_Missão": {
+      "nome": "Otimizar Carregamento de Imagens na Página Inicial",
+      "descricao": "A página inicial do internet banking exibe atrasos significativos no carregamento de imagens de banners promocionais e ícones de serviços. Isso afeta a percepção de velocidade da aplicação e a experiência do usuário.",
+      "objetivo_tecnico": "1. Comprimir e otimizar tamanho de arquivos de imagem (JPG, PNG) sem perda de qualidade visível\n2. Implementar lazy loading para imagens fora do viewport inicial\n3. Avaliar e configurar cache HTTP adequado para imagens estáticas\n4. Utilizar formatos de imagem mais eficientes (e.g., WebP) onde aplicável",
+      "tipo_missao": {
         "id": 3,
-        "Nome": "Azul",
-        "Peso": 2,
-        "Cor": "blue-500"
+        "nome": "Azul",
+        "peso": 2,
+        "cor": "blue-500"
       },
-      "Progresso_missão": 65,
-      "Status": {
+      "progresso_missao": 65,
+      "status": {
         "id": 2,
-        "Nome": "Em Progresso"
+        "nome": "Em progresso"
       },
-      "Data_Criação": "2025-05-02T09:00:00Z",
-      "Data_Prazo": "2025-05-10T18:00:59Z",
-      "Data_Conclusão": null,
-      "Qtd_moedas": 20,
+      "data_criacao": "2025-05-02T09:00:00Z",
+      "data_prazo": "2025-05-10T18:00:59Z",
+      "data_conclusao": null,
+      "qtd_moedas": 20,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 4,
-      "Fases_Concluídas": 2,
-      "Planeta": {
+      "fases_total": 4,
+      "fases_concluidas": 2,
+      "planeta": {
         "id": 4,
-        "Nome": "Júpiter"
+        "nome": "Júpiter"
       },
-      "Projeto": {
+      "projeto": {
         "id": 4,
-        "Nome": "Carteira bB"
+        "nome": "Carteira bB"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 4,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 4,
-      "Nome": "Ajustar Validação do Campo \"CPF\" no Cadastro",
-    "Descrição": "O campo de CPF no formulário de cadastro apresenta inconsistências na validação, aceitando formatos inválidos ou falhando em reconhecer CPFs corretos sob certas condições.",
-    "Objetivo_Técnico": "1. Unificar a lógica de validação de CPF no frontend e backend\n2. Garantir que a máscara de entrada do campo permita apenas dígitos numéricos e formato correto\n3. Fornecer mensagens de erro específicas e claras para cada tipo de falha de validação\n4. Implementar validação em tempo real (on-blur) para feedback imediato ao usuário",
-      "Tipo_Missão": {
+      "nome": "Ajustar Validação do Campo \"CPF\" no Cadastro",
+      "descricao": "O campo de CPF no formulário de cadastro apresenta inconsistências na validação, aceitando formatos inválidos ou falhando em reconhecer CPFs corretos sob certas condições.",
+      "objetivo_tecnico": "1. Unificar a lógica de validação de CPF no frontend e backend\n2. Garantir que a máscara de entrada do campo permita apenas dígitos numéricos e formato correto\n3. Fornecer mensagens de erro específicas e claras para cada tipo de falha de validação\n4. Implementar validação em tempo real (on-blur) para feedback imediato ao usuário",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 30,
-      "Status": {
+      "progresso_missao": 30,
+      "status": {
         "id": 2,
-        "Nome": "Em Progresso"
+        "nome": "Em progresso"
       },
-      "Data_Criação": "2025-05-02T14:00:00Z",
-      "Data_Prazo": "2025-05-08T11:00:59Z",
-      "Data_Conclusão": null,
-      "Qtd_moedas": 15,
+      "data_criacao": "2025-05-02T14:00:00Z",
+      "data_prazo": "2025-05-08T11:00:59Z",
+      "data_conclusao": null,
+      "qtd_moedas": 15,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 3,
-      "Fases_Concluídas": 1,
-      "Planeta": {
+      "fases_total": 3,
+      "fases_concluidas": 1,
+      "planeta": {
         "id": 5,
-        "Nome": "Saturno"
+        "nome": "Saturno"
       },
-      "Projeto": {
+      "projeto": {
         "id": 5,
-        "Nome": "BB Cash"
+        "nome": "BB Cash"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 5,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 5,
-      "Nome": "Revisar Textos para Ortografia e Gramática na Área Logada",
-    "Descrição": "Há múltiplos pequenos erros de digitação e gramática em mensagens de sucesso, erro e rótulos na área logada do cliente. Isso compromete a imagem de profissionalismo do banco.",
-    "Objetivo_Técnico": "1. Realizar uma auditoria completa dos textos em todas as telas da área logada\n2. Padronizar a linguagem e tom de voz em todas as mensagens\n3. Corrigir todos os erro ortográficos e gramaticais identificados\n4. Implementar um processo de revisão de textos para futuras atualizações",
-      "Tipo_Missão": {
+      "nome": "Revisar Textos para Ortografia e Gramática na Área Logada",
+      "descricao": "Há múltiplos pequenos erros de digitação e gramática em mensagens de sucesso, erro e rótulos na área logada do cliente. Isso compromete a imagem de profissionalismo do banco.",
+      "objetivo_tecnico": "1. Realizar uma auditoria completa dos textos em todas as telas da área logada\n2. Padronizar a linguagem e tom de voz em todas as mensagens\n3. corrigir todos os erro ortográficos e gramaticais identificados\n4. Implementar um processo de revisão de textos para futuras atualizações",
+      "tipo_missao": {
         "id": 1,
-        "Nome": "Vermelha",
-        "Peso": 3,
-        "Cor": "red-500"
+        "nome": "Vermelha",
+        "peso": 3,
+        "cor": "red-500"
       },
-      "Progresso_missão": 50,
-      "Status": {
+      "progresso_missao": 50,
+      "status": {
         "id": 2,
-        "Nome": "Em Progresso"
+        "nome": "Em progresso"
       },
-      "Data_Criação": "2025-05-02T11:00:00Z",
-      "Data_Prazo": "2025-05-06T16:00:59Z",
-      "Data_Conclusão": null,
-      "Qtd_moedas": 25,
+      "data_criacao": "2025-05-02T11:00:00Z",
+      "data_prazo": "2025-05-06T16:00:59Z",
+      "data_conclusao": null,
+      "qtd_moedas": 25,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 5,
-      "Fases_Concluídas": 2,
-      "Planeta": {
+      "fases_total": 5,
+      "fases_concluidas": 2,
+      "planeta": {
         "id": 6,
-        "Nome": "Urano"
+        "nome": "Urano"
       },
-      "Projeto": {
+      "projeto": {
         "id": 6,
-        "Nome": "Open Finance"
+        "nome": "Open Finance"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 6,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 6,
-      "Nome": "Corrigir Bug na Geração de Extrato com Data Limite",
-    "Descrição": "A funcionalidade de geração de extrato falha ou retorna dados incorretos quando o usuário seleciona um período que abrange o último dia do mês em anos bissextos ou datas específicas de feriado.",
-    "Objetivo_Técnico": "1. Analisar e ajustar a lógica de tratamento de datas para considerar anos bissextos e limites de mês/ano\n2. Adicionar testes de unidade e integração para cobrir cenários de \"edge case\" de datas\n3. Garantir que a consulta ao banco de dados lide corretamente com os intervalos de data\n4. Validar o formato e integridade dos dados retornados pelo extrato nessas situações",
-      "Tipo_Missão": {
+      "nome": "corrigir Bug na Geração de Extrato com Data Limite",
+      "descricao": "A funcionalidade de geração de extrato falha ou retorna dados incorretos quando o usuário seleciona um período que abrange o último dia do mês em anos bissextos ou datas específicas de feriado.",
+      "objetivo_tecnico": "1. Analisar e ajustar a lógica de tratamento de datas para considerar anos bissextos e limites de mês/ano\n2. Adicionar testes de unidade e integração para cobrir cenários de \"edge case\" de datas\n3. Garantir que a consulta ao banco de dados lide corretamente com os intervalos de data\n4. Validar o formato e integridade dos dados retornados pelo extrato nessas situações",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 75,
-      "Status": {
+      "progresso_missao": 75,
+      "status": {
         "id": 2,
-        "Nome": "Em Progresso"
+        "nome": "Em Progresso"
       },
-      "Data_Criação": "2025-05-01T16:00:00Z",
-      "Data_Prazo": "2025-05-07T20:00:59Z",
-      "Data_Conclusão": null,
-      "Qtd_moedas": 12,
+      "data_criacao": "2025-05-01T16:00:00Z",
+      "data_prazo": "2025-05-07T20:00:59Z",
+      "data_conclusao": null,
+      "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 2,
-      "Fases_Concluídas": 1,
-      "Planeta": {
+      "fases_total": 2,
+      "fases_concluidas": 1,
+      "planeta": {
         "id": 7,
-        "Nome": "Netuno"
+        "nome": "Netuno"
       },
-      "Projeto": {
+      "projeto": {
         "id": 7,
-        "Nome": "BB Cash"
+        "nome": "BB Cash"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 7,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 7,
-      "Nome": "Padronizar Estilos de Botões e Formulários",
-    "Descrição": "Componentes como botões, campos de entrada e cabeçalhos apresentam variações de estilo (tamanho, cor, tipografia) entre diferentes módulos do sistema, quebrando a consistência visual.",
-    "Objetivo_Técnico": "1. Criar ou atualizar um Design System/Guia de Estilos com as especificações para cada componente\n2. Aplicar os estilos padronizados em todos os componentes inconsistentes\n3. Remover estilos CSS inline ou redundantes que causam as inconsistências\n4. Utilizar componentes reutilizáveis para garantir a uniformidade visual",
-      "Tipo_Missão": {
+      "nome": "Padronizar Estilos de Botões e Formulários",
+      "descricao": "Componentes como botões, campos de entrada e cabeçalhos apresentam variações de estilo (tamanho, cor, tipografia) entre diferentes módulos do sistema, quebrando a consistência visual.",
+      "objetivo_tecnico": "1. Criar ou atualizar um Design System/Guia de Estilos com as especificações para cada componente\n2. Aplicar os estilos padronizados em todos os componentes inconsistentes\n3. Remover estilos CSS inline ou redundantes que causam as inconsistências\n4. Utilizar componentes reutilizáveis para garantir a uniformidade visual",
+      "tipo_missao": {
         "id": 4,
-        "Nome": "Verde",
-        "Peso": 1,
-        "Cor": "green-500"
+        "nome": "Verde",
+        "peso": 1,
+        "cor": "green-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-04-25T10:00:00Z",
-      "Data_Prazo": "2025-05-03T21:00:59Z",
-      "Data_Conclusão": "2025-05-02T14:30:00Z",
-      "Qtd_moedas": 8,
+      "data_criacao": "2025-04-25T10:00:00Z",
+      "data_prazo": "2025-05-03T21:00:59Z",
+      "data_conclusao": "2025-05-02T14:30:00Z",
+      "qtd_moedas": 8,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 1,
-      "Fases_Concluídas": 1,
-      "Planeta": {
+      "fases_total": 1,
+      "fases_concluidas": 1,
+      "planeta": {
         "id": 8,
-        "Nome": "Plutão"
+        "nome": "Plutão"
       },
-      "Projeto": {
+      "projeto": {
         "id": 8,
-        "Nome": "Empréstimo Pessoal"
+        "nome": "Empréstimo Pessoal"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 8,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 8,
-      "Nome": "Melhorar Clareza das Mensagens de Erro",
-    "Descrição": "O sistema exibe mensagens de erro como \"Ocorreu um erro inesperado\" ou \"Falha na operação\", que não fornecem contexto ou direcionamento ao usuário, levando à confusão e chamadas desnecessárias ao suporte.",
-    "Objetivo_Técnico": "1. Mapear todas as mensagens de erro genéricas no sistema\n2. Substituí-las por mensagens específicas e acionáveis, indicando a causa do erro e/ou a solução\n3. Implementar um sistema centralizado de mensagens de erro para facilitar a manutenção\n4. Garantir que as mensagens sejam amigáveis e compreensíveis para o usuário final",
-      "Tipo_Missão": {
+      "nome": "Melhorar Clareza das Mensagens de Erro",
+      "descricao": "O sistema exibe mensagens de erro como \"Ocorreu um erro inesperado\" ou \"Falha na operação\", que não fornecem contexto ou direcionamento ao usuário, levando à confusão e chamadas desnecessárias ao suporte.",
+      "objetivo_tecnico": "1. Mapear todas as mensagens de erro genéricas no sistema\n2. Substituí-las por mensagens específicas e acionáveis, indicando a causa do erro e/ou a solução\n3. Implementar um sistema centralizado de mensagens de erro para facilitar a manutenção\n4. Garantir que as mensagens sejam amigáveis e compreensíveis para o usuário final",
+      "tipo_missao": {
         "id": 4,
-        "Nome": "Verde",
-        "Peso": 1,
-        "Cor": "green-500"
+        "nome": "Verde",
+        "peso": 1,
+        "cor": "green-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-04-22T09:00:00Z",
-      "Data_Prazo": "2025-04-29T22:00:59Z",
-      "Data_Conclusão": "2025-05-01T11:15:00Z",
-      "Qtd_moedas": 5,
+      "data_criacao": "2025-04-22T09:00:00Z",
+      "data_prazo": "2025-04-29T22:00:59Z",
+      "data_conclusao": "2025-05-01T11:15:00Z",
+      "qtd_moedas": 5,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 1,
-      "Fases_Concluídas": 1,
-      "Planeta": {
+      "fases_total": 1,
+      "fases_concluidas": 1,
+      "planeta": {
         "id": 9,
-        "Nome": "Lua"
+        "nome": "Lua"
       },
-      "Projeto": {
+      "projeto": {
         "id": 9,
-        "Nome": "Conta Universitária"
+        "nome": "Conta Universitária"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 9,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 9,
-      "Nome": "Corrigir Rolagem Inconsistente na Página de Extrato Detalhado",
-    "Descrição": "Usuários relatam que a rolagem da página do extrato detalhado se comporta de forma errática, saltando ou travando em dispositivos específicos ou após certas interações.",
-    "Objetivo_Técnico": "1. Investigar conflitos de CSS 'overflow' ou posicionamento de elementos\n2. Verificar o impacto de componentes de terceiros ou bibliotecas na rolagem\n3. Garantir a compatibilidade do comportamento de scroll em diferentes navegadores e dispositivos\n4. Remover scripts de rolagem personalizados que possam estar causando a inconsistência",
-      "Tipo_Missão": {
+      "nome": "corrigir Rolagem Inconsistente na Página de Extrato Detalhado",
+      "descricao": "Usuários relatam que a rolagem da página do extrato detalhado se comporta de forma errática, saltando ou travando em dispositivos específicos ou após certas interações.",
+      "objetivo_tecnico": "1. Investigar conflitos de CSS 'overflow' ou posicionamento de elementos\n2. Verificar o impacto de componentes de terceiros ou bibliotecas na rolagem\n3. Garantir a compatibilidade do comportamento de scroll em diferentes posicaogadores e dispositivos\n4. Remover scripts de rolagem personalizados que possam estar causando a inconsistência",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-04-25T13:00:00Z",
-      "Data_Prazo": "2025-05-01T20:00:59Z",
-      "Data_Conclusão": "2025-04-30T16:45:00Z",
-      "Qtd_moedas": 15,
+      "data_criacao": "2025-04-25T13:00:00Z",
+      "data_prazo": "2025-05-01T20:00:59Z",
+      "data_conclusao": "2025-04-30T16:45:00Z",
+      "qtd_moedas": 15,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 2,
-      "Fases_Concluídas": 2,
-      "Planeta": {
+      "fases_total": 2,
+      "fases_concluidas": 2,
+      "planeta": {
         "id": 10,
-        "Nome": "Mercúrio"
+        "nome": "Mercúrio"
       },
-      "Projeto": {
+      "projeto": {
         "id": 10,
-        "Nome": "CDB DI"
+        "nome": "CDB DI"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 10,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 10,
-      "Nome": "Resolver Cache de Saldos Antigos Após Transações",
-    "Descrição": "O saldo da conta não é atualizado imediatamente após uma transação na mesma sessão, exigindo que o usuário faça logout e login novamente ou atualize a página manualmente para ver o valor correto.",
-    "Objetivo_Técnico": "1. Invalidar ou recarregar o cache do saldo imediatamente após a conclusão de uma transação\n2. Implementar mecanismos de refresh de dados no frontend após alterações no backend\n3. Ajustar as diretivas de cache HTTP para dados sensíveis\n4. Garantir que a API de saldo retorne sempre os dados mais recentes",
-      "Tipo_Missão": {
+      "nome": "Resolver Cache de Saldos Antigos Após Transações",
+      "descricao": "O saldo da conta não é atualizado imediatamente após uma transação na mesma sessão, exigindo que o usuário faça logout e login novamente ou atualize a página manualmente para ver o valor correto.",
+      "objetivo_tecnico": "1. Invalidar ou recarregar o cache do saldo imediatamente após a conclusão de uma transação\n2. Implementar mecanismos de refresh de dados no frontend após alterações no backend\n3. Ajustar as diretivas de cache HTTP para dados sensíveis\n4. Garantir que a API de saldo retorne sempre os dados mais recentes",
+      "tipo_missao": {
         "id": 1,
-        "Nome": "Vermelha",
-        "Peso": 3,
-        "Cor": "red-500"
+        "nome": "Vermelha",
+        "peso": 3,
+        "cor": "red-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-04-10T08:00:00Z",
-      "Data_Prazo": "2025-04-25T22:00:59Z",
-      "Data_Conclusão": "2025-04-20T12:00:00Z",
-      "Qtd_moedas": 20,
+      "data_criacao": "2025-04-10T08:00:00Z",
+      "data_prazo": "2025-04-25T22:00:59Z",
+      "data_conclusao": "2025-04-20T12:00:00Z",
+      "qtd_moedas": 20,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 3,
-      "Fases_Concluídas": 3,
-      "Planeta": {
+      "fases_total": 3,
+      "fases_concluidas": 3,
+      "planeta": {
         "id": 11,
-        "Nome": "Vênus"
+        "nome": "Vênus"
       },
-      "Projeto": {
+      "projeto": {
         "id": 11,
-        "Nome": "Conta Universitária"
+        "nome": "Conta Universitária"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 11,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 11,
-      "Nome": "Ajustar Layout para Internet Explorer 11 no Painel Administrativo",
-    "Descrição": "O painel administrativo interno apresenta falhas de layout e funcionalidades quebradas para usuários que ainda acessam via Internet Explorer 11, impactando a operação da equipe.",
-    "Objetivo_Técnico": "1. Identificar e corrigir propriedades CSS não suportadas ou que se comportam diferentemente no IE11\n2. Utilizar polyfills ou transpilação para funcionalidades JavaScript modernas\n3. Testar e garantir a funcionalidade básica do painel no IE11\n4. Adicionar um alerta ao usuário sobre navegadores não suportados, se necessário",
-      "Tipo_Missão": {
+      "nome": "Ajustar Layout para Internet Explorer 11 no Painel Administrativo",
+      "descricao": "O painel administrativo interno apresenta falhas de layout e funcionalidades quebradas para usuários que ainda acessam via Internet Explorer 11, impactando a operação da equipe.",
+      "objetivo_tecnico": "1. Identificar e corrigir propriedades CSS não suportadas ou que se comportam diferentemente no IE11\n2. Utilizar polyfills ou transpilação para funcionalidades JavaScript modernas\n3. Testar e garantir a funcionalidade básica do painel no IE11\n4. Adicionar um alerta ao usuário sobre posicaogadores não suportados, se necessário",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-03-15T14:00:00Z",
-      "Data_Prazo": "2025-03-30T21:00:59Z",
-      "Data_Conclusão": "2025-03-25T09:30:00Z",
-      "Qtd_moedas": 10,
+      "data_criacao": "2025-03-15T14:00:00Z",
+      "data_prazo": "2025-03-30T21:00:59Z",
+      "data_conclusao": "2025-03-25T09:30:00Z",
+      "qtd_moedas": 10,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Ao completar todas as tarefas verdes de um ciclo, você prova que estabilidade também é poder."
       },
-      "Fases_Total": 1,
-      "Fases_Concluídas": 1,
-      "Planeta": {
+      "fases_total": 1,
+      "fases_concluidas": 1,
+      "planeta": {
         "id": 12,
-        "Nome": "Terra"
+        "nome": "Terra"
       },
-      "Projeto": {
+      "projeto": {
         "id": 12,
-        "Nome": "BB Investimento"
+        "nome": "BB Investimento"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 12,
-        "Nome": "Veronica Martins",
-        "Image": "/images/profile/veronica.png"
+        "nome": "Veronica Martins",
+        "imagem": "/images/profile/veronica.png"
       }
     },
     {
       "id": 12,
-      "Nome": "Corrigir Envios de Notificações de Saque",
-    "Descrição": "Clientes relatam não receber notificações por push ou e-mail sobre saques efetuados, ou, em alguns casos, recebem a mesma notificação duplicada.",
-    "Objetivo_Técnico": "1. Auditar a lógica de disparo de notificações para identificar falhas ou duplicações\n2. Assegurar que a API de notificação esteja sendo chamada corretamente e com os parâmetros certos\n3. Implementar um controle de idempotência para evitar notificações duplicadas\n4. Verificar a integridade dos dados de registro de notificação no banco de dados",
-      "Tipo_Missão": {
+      "nome": "corrigir Envios de Notificações de Saque",
+      "descricao": "Clientes relatam não receber notificações por push ou e-mail sobre saques efetuados, ou, em alguns casos, recebem a mesma notificação duplicada.",
+      "objetivo_tecnico": "1. Auditar a lógica de disparo de notificações para identificar falhas ou duplicações\n2. Assegurar que a API de notificação esteja sendo chamada corretamente e com os parâmetros certos\n3. Implementar um controle de idempotência para evitar notificações duplicadas\n4. Verificar a integridade dos dados de registro de notificação no banco de dados",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-02-01T11:00:00Z",
-      "Data_Prazo": "2025-02-15T18:00:59Z",
-      "Data_Conclusão": "2025-05-01T17:20:00Z",
-      "Qtd_moedas": 12,
+      "data_criacao": "2025-02-01T11:00:00Z",
+      "data_prazo": "2025-02-15T18:00:59Z",
+      "data_conclusao": "2025-05-01T17:20:00Z",
+      "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 2,
-      "Fases_Concluídas": 2,
-      "Planeta": {
+      "fases_total": 2,
+      "fases_concluidas": 2,
+      "planeta": {
         "id": 13,
-        "Nome": "Marte"
+        "nome": "Marte"
       },
-      "Projeto": {
+      "projeto": {
         "id": 13,
-        "Nome": "BB Investimento"
+        "nome": "BB Investimento"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 13,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 13,
-      "Nome": "Ajustar Formatação do Relatório de Transações em PDF",
-    "Descrição": "O relatório de transações exportado em formato PDF apresenta pequenas falhas de formatação, como quebras de linha indevidas, alinhamento incorreto de colunas e fontes desalinhadas.",
-    "Objetivo_Técnico": "1. Revisar a biblioteca ou ferramenta de geração de PDF utilizada\n2. Ajustar as regras de CSS/estilos aplicadas na geração do PDF\n3. Garantir que o layout da tabela e o alinhamento de texto estejam corretos\n4. Testar a exportação em diferentes volumes de dados para identificar quebras",
-      "Tipo_Missão": {
+      "nome": "Ajustar Formatação do Relatório de Transações em PDF",
+      "descricao": "O relatório de transações exportado em formato PDF apresenta pequenas falhas de formatação, como quebras de linha indevidas, alinhamento incorreto de colunas e fontes desalinhadas.",
+      "objetivo_tecnico": "1. Revisar a biblioteca ou ferramenta de geração de PDF utilizada\n2. Ajustar as regras de CSS/estilos aplicadas na geração do PDF\n3. Garantir que o layout da tabela e o alinhamento de texto estejam corretos\n4. Testar a exportação em diferentes volumes de dados para identificar quebras",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-02-01T11:00:00Z",
-      "Data_Prazo": "2025-02-15T18:00:59Z",
-      "Data_Conclusão": "2025-05-01T17:20:00Z",
-      "Qtd_moedas": 12,
+      "data_criacao": "2025-02-01T11:00:00Z",
+      "data_prazo": "2025-02-15T18:00:59Z",
+      "data_conclusao": "2025-05-01T17:20:00Z",
+      "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 2,
-      "Fases_Concluídas": 2,
-      "Planeta": {
+      "fases_total": 2,
+      "fases_concluidas": 2,
+      "planeta": {
         "id": 13,
-        "Nome": "Marte"
+        "nome": "Marte"
       },
-      "Projeto": {
+      "projeto": {
         "id": 13,
-        "Nome": "BB Investimento"
+        "nome": "BB Investimento"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 13,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 14,
-      "Nome": "Otimizar API de Consulta de Histórico de Investimentos",
-    "Descrição": "A API que consulta o histórico de investimentos está com um tempo de resposta ligeiramente elevado (e.g., 500ms), impactando a fluidez da experiência do usuário ao navegar por essa seção.",
-    "Objetivo_Técnico": "1. Analisar consultas ao banco de dados na API para identificar gargalos (e.g., falta de índices)\n2. Implementar cache de dados para requisições frequentes e estáticas\n3. Otimizar a lógica de negócio na API para reduzir o tempo de processamento\n4. Avaliar e ajustar a configuração do servidor onde a API está hospedada",
-      "Tipo_Missão": {
+      "nome": "Otimizar API de Consulta de Histórico de Investimentos",
+      "descricao": "A API que consulta o histórico de investimentos está com um tempo de resposta ligeiramente elevado (e.g., 500ms), impactando a fluidez da experiência do usuário ao posicaogar por essa seção.",
+      "objetivo_tecnico": "1. Analisar consultas ao banco de dados na API para identificar gargalos (e.g., falta de índices)\n2. Implementar cache de dados para requisições frequentes e estáticas\n3. Otimizar a lógica de negócio na API para reduzir o tempo de processamento\n4. Avaliar e ajustar a configuração do servidor onde a API está hospedada",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-02-01T11:00:00Z",
-      "Data_Prazo": "2025-02-15T18:00:59Z",
-      "Data_Conclusão": "2025-05-01T17:20:00Z",
-      "Qtd_moedas": 12,
+      "data_criacao": "2025-02-01T11:00:00Z",
+      "data_prazo": "2025-02-15T18:00:59Z",
+      "data_conclusao": "2025-05-01T17:20:00Z",
+      "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 2,
-      "Fases_Concluídas": 2,
-      "Planeta": {
+      "fases_total": 2,
+      "fases_concluidas": 2,
+      "planeta": {
         "id": 13,
-        "Nome": "Marte"
+        "nome": "Marte"
       },
-      "Projeto": {
+      "projeto": {
         "id": 13,
-        "Nome": "BB Investimento"
+        "nome": "BB Investimento"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 13,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 15,
-      "Nome": "Corrigir Filtragem por Data em Lista de Lançamentos",
-    "Descrição": "A funcionalidade de filtragem por data na lista de lançamentos bancários não está funcionando corretamente, exibindo resultados inconsistentes ou incompletos após a aplicação do filtro.",
-    "Objetivo_Técnico": "1. Verificar a lógica de filtragem no frontend e backend para inconsistências\n2. Garantir que a query ao banco de dados aplique corretamente os parâmetros de data\n3. Assegurar que os formatos de data sejam consistentes em toda a aplicação\n4. Adicionar testes unitários e de integração específicos para a funcionalidade de filtragem",
-      "Tipo_Missão": {
+      "nome": "corrigir Filtragem por Data em Lista de Lançamentos",
+      "descricao": "A funcionalidade de filtragem por data na lista de lançamentos bancários não está funcionando corretamente, exibindo resultados inconsistentes ou incompletos após a aplicação do filtro.",
+      "objetivo_tecnico": "1. Verificar a lógica de filtragem no frontend e backend para inconsistências\n2. Garantir que a query ao banco de dados aplique corretamente os parâmetros de data\n3. Assegurar que os formatos de data sejam consistentes em toda a aplicação\n4. Adicionar testes unitários e de integração específicos para a funcionalidade de filtragem",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-02-01T11:00:00Z",
-      "Data_Prazo": "2025-02-15T18:00:59Z",
-      "Data_Conclusão": "2025-05-01T17:20:00Z",
-      "Qtd_moedas": 12,
+      "data_criacao": "2025-02-01T11:00:00Z",
+      "data_prazo": "2025-02-15T18:00:59Z",
+      "data_conclusao": "2025-05-01T17:20:00Z",
+      "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 2,
-      "Fases_Concluídas": 2,
-      "Planeta": {
+      "fases_total": 2,
+      "fases_concluidas": 2,
+      "planeta": {
         "id": 13,
-        "Nome": "Marte"
+        "nome": "Marte"
       },
-      "Projeto": {
+      "projeto": {
         "id": 13,
-        "Nome": "BB Investimento"
+        "nome": "BB Investimento"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 13,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 16,
-      "Nome": "Adicionar Alt Text em Todas as Imagens Informativas",
-    "Descrição": "Muitas imagens no aplicativo, especialmente gráficos de performance de investimentos, logotipos informativos e ícones de status, não possuem \"alt text\" descritivo ou possuem descrições genéricas. Isso impede que usuários com leitores de tela compreendam o conteúdo visual importante.",
-    "Objetivo_Técnico": "1. Realizar uma auditoria completa para identificar todas as imagens informativas (não decorativas)\n2. Para cada imagem identificada, adicionar um atributo alt com texto conciso e descritivo, que transmita a informação contida na imagem\n3. Garantir que imagens decorativas tenham alt=\"\" ou sejam gerenciadas via CSS para serem ignoradas por leitores de tela\n4. Atualizar o pipeline de desenvolvimento para incluir a revisão de alt text como parte do processo de entrega de imagens",
-      "Tipo_Missão": {
+      "nome": "Adicionar Alt Text em Todas as Imagens Informativas",
+      "descricao": "Muitas imagens no aplicativo, especialmente gráficos de performance de investimentos, logotipos informativos e ícones de status, não possuem \"alt text\" descritivo ou possuem descrições genéricas. Isso impede que usuários com leitores de tela compreendam o conteúdo visual importante.",
+      "objetivo_tecnico": "1. Realizar uma auditoria completa para identificar todas as imagens informativas (não decorativas)\n2. Para cada imagem identificada, adicionar um atributo alt com texto conciso e descritivo, que transmita a informação contida na imagem\n3. Garantir que imagens decorativas tenham alt=\"\" ou sejam gerenciadas via CSS para serem ignoradas por leitores de tela\n4. Atualizar o pipeline de desenvolvimento para incluir a revisão de alt text como parte do processo de entrega de imagens",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-02-01T11:00:00Z",
-      "Data_Prazo": "2025-02-15T18:00:59Z",
-      "Data_Conclusão": "2025-05-01T17:20:00Z",
-      "Qtd_moedas": 12,
+      "data_criacao": "2025-02-01T11:00:00Z",
+      "data_prazo": "2025-02-15T18:00:59Z",
+      "data_conclusao": "2025-05-01T17:20:00Z",
+      "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 2,
-      "Fases_Concluídas": 2,
-      "Planeta": {
+      "fases_total": 2,
+      "fases_concluidas": 2,
+      "planeta": {
         "id": 13,
-        "Nome": "Marte"
+        "nome": "Marte"
       },
-      "Projeto": {
+      "projeto": {
         "id": 13,
-        "Nome": "BB Investimento"
+        "nome": "BB Investimento"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 13,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 17,
-      "Nome": "Otimizar Fluxo de Navegação por Teclado em Páginas de Transferência",
-    "Descrição": "Usuários que dependem de navegação por teclado (sem mouse) enfrentam dificuldades na tela de transferência de valores. O foco do teclado pula elementos ou não segue uma ordem lógica esperada, impedindo a conclusão da operação.",
-    "Objetivo_Técnico": "1. Verificar e ajustar a ordem do DOM para garantir que o fluxo de navegação por teclado (tabindex) seja lógico e intuitivo\n2. Garantir que todos os elementos interativos (campos de entrada, botões, links, checkboxes, radio buttons) sejam acessíveis via teclado\n3. Implementar um indicador de foco visível (:focus styling) para todos os elementos interativos\n4. Tratar elementos customizados (divs com onClick) para que sejam acessíveis via teclado, adicionando tabindex=\"0\" e manipuladores de eventos de teclado (e.g., onKeyUp para Enter/Espaço)",
-      "Tipo_Missão": {
+      "nome": "Otimizar Fluxo de posicaogação por Teclado em Páginas de Transferência",
+      "descricao": "Usuários que dependem de posicaogação por teclado (sem mouse) enfrentam dificuldades na tela de transferência de valores. O foco do teclado pula elementos ou não segue uma ordem lógica esperada, impedindo a conclusão da operação.",
+      "objetivo_tecnico": "1. Verificar e ajustar a ordem do DOM para garantir que o fluxo de posicaogação por teclado (tabindex) seja lógico e intuitivo\n2. Garantir que todos os elementos interativos (campos de entrada, botões, links, checkboxes, radio buttons) sejam acessíveis via teclado\n3. Implementar um indicador de foco visível (:focus styling) para todos os elementos interativos\n4. Tratar elementos customizados (divs com onClick) para que sejam acessíveis via teclado, adicionando tabindex=\"0\" e manipuladores de eventos de teclado (e.g., onKeyUp para Enter/Espaço)",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-02-01T11:00:00Z",
-      "Data_Prazo": "2025-02-15T18:00:59Z",
-      "Data_Conclusão": "2025-05-01T17:20:00Z",
-      "Qtd_moedas": 12,
+      "data_criacao": "2025-02-01T11:00:00Z",
+      "data_prazo": "2025-02-15T18:00:59Z",
+      "data_conclusao": "2025-05-01T17:20:00Z",
+      "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 2,
-      "Fases_Concluídas": 2,
-      "Planeta": {
+      "fases_total": 2,
+      "fases_concluidas": 2,
+      "planeta": {
         "id": 13,
-        "Nome": "Marte"
+        "nome": "Marte"
       },
-      "Projeto": {
+      "projeto": {
         "id": 13,
-        "Nome": "BB Investimento"
+        "nome": "BB Investimento"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 13,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 18,
-      "Nome": "Melhorar Semântica HTML na Página de Detalhes de Extrato",
-    "Descrição": "A página de detalhes do extrato usa divs genéricas para estruturar o conteúdo principal e listas de transações, em vez de elementos semânticos como <header>, <main>, <nav>, <footer>, <section>, <article>, <dl>, <ol>, <ul>, <table>. Isso dificulta a compreensão da estrutura por leitores de tela e tecnologias assistivas.",
-    "Objetivo_Técnico": "1. Refatorar o código HTML para utilizar tags semânticas apropriadas (<header>, <main>, <footer>, <nav>, <section>, <article>, <table>, etc.) para delimitar as diferentes seções da página\n2. Estruturar listas de transações com elementos de lista (<ul>, <ol>, <dl>) quando apropriado, em vez de divs\n3. Garantir que os cabeçalhos (<h1> a <h6>) sejam usados corretamente para definir a hierarquia de conteúdo e não apenas para fins de estilo\n4. Validar a estrutura semântica do HTML usando ferramentas de acessibilidade",
-      "Tipo_Missão": {
+      "nome": "Melhorar Semântica HTML na Página de Detalhes de Extrato",
+      "descricao": "A página de detalhes do extrato usa divs genéricas para estruturar o conteúdo principal e listas de transações, em vez de elementos semânticos como <header>, <main>, <nav>, <footer>, <section>, <article>, <dl>, <ol>, <ul>, <table>. Isso dificulta a compreensão da estrutura por leitores de tela e tecnologias assistivas.",
+      "objetivo_tecnico": "1. Refatorar o código HTML para utilizar tags semânticas apropriadas (<header>, <main>, <footer>, <nav>, <section>, <article>, <table>, etc.) para delimitar as diferentes seções da página\n2. Estruturar listas de transações com elementos de lista (<ul>, <ol>, <dl>) quando apropriado, em vez de divs\n3. Garantir que os cabeçalhos (<h1> a <h6>) sejam usados corretamente para definir a hierarquia de conteúdo e não apenas para fins de estilo\n4. Validar a estrutura semântica do HTML usando ferramentas de acessibilidade",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-02-01T11:00:00Z",
-      "Data_Prazo": "2025-02-15T18:00:59Z",
-      "Data_Conclusão": "2025-05-01T17:20:00Z",
-      "Qtd_moedas": 12,
+      "data_criacao": "2025-02-01T11:00:00Z",
+      "data_prazo": "2025-02-15T18:00:59Z",
+      "data_conclusao": "2025-05-01T17:20:00Z",
+      "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 2,
-      "Fases_Concluídas": 2,
-      "Planeta": {
+      "fases_total": 2,
+      "fases_concluidas": 2,
+      "planeta": {
         "id": 13,
-        "Nome": "Marte"
+        "nome": "Marte"
       },
-      "Projeto": {
+      "projeto": {
         "id": 13,
-        "Nome": "BB Investimento"
+        "nome": "BB Investimento"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 13,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     },
     {
       "id": 19,
-      "Nome": "Tornar Alertas e Mensagens de Erro Acessíveis a Leitores de Tela",
-    "Descrição": "Quando um usuário realiza uma ação (e.g., transação bem-sucedida, erro de validação), as mensagens de sucesso/erro aparecem na tela, mas não são anunciadas por leitores de tela, fazendo com que usuários com deficiência visual percam informações críticas.",
-    "Objetivo_Técnico": "1. Implementar regiões ARIA Live (aria-live=\"polite\" ou \"assertive\") para mensagens de feedback dinâmicas (sucesso, erro, alerta)\n2. Garantir que as mensagens sejam injetadas ou atualizadas dentro dessas regiões ARIA Live para que leitores de tela as anunciem automaticamente\n3. Prover feedback visual e auditivo para o usuário em caso de sucesso ou falha em operações importantes\n4. Associar mensagens de erro diretamente aos campos de formulário relevantes usando aria-describedby ou aria-errormessage para feedback específico",
-      "Tipo_Missão": {
+      "nome": "Tornar Alertas e Mensagens de Erro Acessíveis a Leitores de Tela",
+      "descricao": "Quando um usuário realiza uma ação (e.g., transação bem-sucedida, erro de validação), as mensagens de sucesso/erro aparecem na tela, mas não são anunciadas por leitores de tela, fazendo com que usuários com deficiência visual percam informações críticas.",
+      "objetivo_tecnico": "1. Implementar regiões ARIA Live (aria-live=\"polite\" ou \"assertive\") para mensagens de feedback dinâmicas (sucesso, erro, alerta)\n2. Garantir que as mensagens sejam injetadas ou atualizadas dentro dessas regiões ARIA Live para que leitores de tela as anunciem automaticamente\n3. Prover feedback visual e auditivo para o usuário em caso de sucesso ou falha em operações importantes\n4. Associar mensagens de erro diretamente aos campos de formulário relevantes usando aria-describedby ou aria-errormessage para feedback específico",
+      "tipo_missao": {
         "id": 2,
-        "Nome": "Amarela",
-        "Peso": 2,
-        "Cor": "yellow-500"
+        "nome": "Amarela",
+        "peso": 2,
+        "cor": "yellow-500"
       },
-      "Progresso_missão": 100,
-      "Status": {
+      "progresso_missao": 100,
+      "status": {
         "id": 1,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Data_Criação": "2025-02-01T11:00:00Z",
-      "Data_Prazo": "2025-02-15T18:00:59Z",
-      "Data_Conclusão": "2025-05-01T17:20:00Z",
-      "Qtd_moedas": 12,
+      "data_criacao": "2025-02-01T11:00:00Z",
+      "data_prazo": "2025-02-15T18:00:59Z",
+      "data_conclusao": "2025-05-01T17:20:00Z",
+      "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "Nome": "Atrasada",
+        "nome": "Atrasada",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
-      "Fases_Total": 2,
-      "Fases_Concluídas": 2,
-      "Planeta": {
+      "fases_total": 2,
+      "fases_concluidas": 2,
+      "planeta": {
         "id": 13,
-        "Nome": "Marte"
+        "nome": "Marte"
       },
-      "Projeto": {
+      "projeto": {
         "id": 13,
-        "Nome": "BB Investimento"
+        "nome": "BB Investimento"
       },
-      "Tech_Líder": {
+      "tech_lider": {
         "id": 13,
-        "Nome": "Maiara Silva",
-        "Image": "/images/profile/maiara.png"
+        "nome": "Maiara Silva",
+        "imagem": "/images/profile/maiara.png"
       }
     }
   ],
   "tipos_missoes": [
     {
       "id": 1,
-      "Nome": "Amarela",
-      "Peso": 2,
-      "Cor": "yellow-500"
+      "nome": "Amarela",
+      "peso": 2,
+      "cor": "yellow-500"
     },
     {
       "id": 2,
-      "Nome": "Vermelha",
-      "Peso": 4,
-      "Cor": "red-500"
+      "nome": "Vermelha",
+      "peso": 4,
+      "cor": "red-500"
     }
   ],
   "projetos": [
     {
       "id": 1,
-      "Nome": "CDB DI",
-      "Descrição": "API para integração",
-      "Progresso": 20.0,
-      "Equipe": {
+      "nome": "CDB DI",
+      "descricao": "API para integração",
+      "progresso": 20.0,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Planeta_Base": {
+      "planeta_base": {
         "id": 1,
-        "Nome": "Nebula-7"
+        "nome": "Nebula-7"
       },
-      "Planeta_Destino": null,
-      "Data_Início": "2025-04-01T00:00:00Z",
-      "Data_Prevista_Término": null,
-      "Data_Conclusão": null,
-      "Status": {
+      "planeta_destino": null,
+      "data_inicio": "2025-04-01T00:00:00Z",
+      "data_prevista_termino": null,
+      "data_conclusao": null,
+      "status": {
         "id": 8,
-        "Nome": "Em Progresso"
+        "nome": "Em progresso"
       },
       "icone": "⌛"
     },
     {
       "id": 2,
-      "Nome": "Conta Universitária",
-      "Descrição": "Autenticação segura",
-      "Progresso": 100.0,
-      "Equipe": {
+      "nome": "Conta Universitária",
+      "descricao": "Autenticação segura",
+      "progresso": 100.0,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Planeta_Base": {
+      "planeta_base": {
         "id": 2,
-        "Nome": "Astra-12"
+        "nome": "Astra-12"
       },
-      "Planeta_Destino": null,
-      "Data_Início": "2025-03-15T00:00:00Z",
-      "Data_Prevista_Término": "2025-04-28T23:59:59Z",
-      "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": {
+      "planeta_destino": null,
+      "data_inicio": "2025-03-15T00:00:00Z",
+      "data_prevista_termino": "2025-04-28T23:59:59Z",
+      "data_conclusao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
       "icone": "⌛"
     },
     {
       "id": 3,
-      "Nome": "Open Finance",
-      "Descrição": "Autenticação segura",
-      "Progresso": 88.0,
-      "Equipe": {
+      "nome": "Open Finance",
+      "descricao": "Autenticação segura",
+      "progresso": 88.0,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Planeta_Base": {
+      "planeta_base": {
         "id": 2,
-        "Nome": "Astra-12"
+        "nome": "Astra-12"
       },
-      "Planeta_Destino": null,
-      "Data_Início": "2025-03-15T00:00:00Z",
-      "Data_Prevista_Término": "2025-04-28T23:59:59Z",
-      "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": {
+      "planeta_destino": null,
+      "data_inicio": "2025-03-15T00:00:00Z",
+      "data_prevista_termino": "2025-04-28T23:59:59Z",
+      "data_conclusao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Atrasada"
+        "nome": "Atrasada"
       },
       "icone": "⌛"
     },
     {
       "id": 4,
-      "Nome": "Carteira bB",
-      "Descrição": "API para integração",
-      "Progresso": 56.0,
-      "Equipe": {
+      "nome": "Carteira bB",
+      "descricao": "API para integração",
+      "progresso": 56.0,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Planeta_Base": {
+      "planeta_base": {
         "id": 1,
-        "Nome": "Nebula-7"
+        "nome": "Nebula-7"
       },
-      "Planeta_Destino": null,
-      "Data_Início": "2025-04-01T00:00:00Z",
-      "Data_Prevista_Término": null,
-      "Data_Conclusão": null,
-      "Status": {
+      "planeta_destino": null,
+      "data_inicio": "2025-04-01T00:00:00Z",
+      "data_prevista_termino": null,
+      "data_conclusao": null,
+      "status": {
         "id": 8,
-        "Nome": "Em Progresso"
+        "nome": "Em progresso"
       },
       "icone": "⌛"
     },
     {
       "id": 5,
-      "Nome": "BB Investimento",
-      "Descrição": "Autenticação segura",
-      "Progresso": 32.0,
-      "Equipe": {
+      "nome": "BB Investimento",
+      "descricao": "Autenticação segura",
+      "progresso": 32.0,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Planeta_Base": {
+      "planeta_base": {
         "id": 2,
-        "Nome": "Astra-12"
+        "nome": "Astra-12"
       },
-      "Planeta_Destino": null,
-      "Data_Início": "2025-03-15T00:00:00Z",
-      "Data_Prevista_Término": "2025-04-28T23:59:59Z",
-      "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": {
+      "planeta_destino": null,
+      "data_inicio": "2025-03-15T00:00:00Z",
+      "data_prevista_termino": "2025-04-28T23:59:59Z",
+      "data_conclusao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
       "icone": "⌛"
     },
     {
       "id": 6,
-      "Nome": "Empréstimo Pessoal",
-      "Descrição": "Autenticação segura",
-      "Progresso": 92.0,
-      "Equipe": {
+      "nome": "Empréstimo Pessoal",
+      "descricao": "Autenticação segura",
+      "progresso": 92.0,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Planeta_Base": {
+      "planeta_base": {
         "id": 2,
-        "Nome": "Astra-12"
+        "nome": "Astra-12"
       },
-      "Planeta_Destino": null,
-      "Data_Início": "2025-03-15T00:00:00Z",
-      "Data_Prevista_Término": "2025-04-28T23:59:59Z",
-      "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": {
+      "planeta_destino": null,
+      "data_inicio": "2025-03-15T00:00:00Z",
+      "data_prevista_termino": "2025-04-28T23:59:59Z",
+      "data_conclusao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Atrasada"
+        "nome": "Atrasada"
       },
       "icone": "⌛"
     },
     {
       "id": 7,
-      "Nome": "Acessibilidade App",
-      "Descrição": "API para integração",
-      "Progresso": 78.0,
-      "Equipe": {
+      "nome": "Acessibilidade App",
+      "descricao": "API para integração",
+      "progresso": 78.0,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Planeta_Base": {
+      "planeta_base": {
         "id": 1,
-        "Nome": "Nebula-7"
+        "nome": "Nebula-7"
       },
-      "Planeta_Destino": null,
-      "Data_Início": "2025-04-01T00:00:00Z",
-      "Data_Prevista_Término": null,
-      "Data_Conclusão": null,
-      "Status": {
+      "planeta_destino": null,
+      "data_inicio": "2025-04-01T00:00:00Z",
+      "data_prevista_termino": null,
+      "data_conclusao": null,
+      "status": {
         "id": 8,
-        "Nome": "Em Progresso"
+        "nome": "Em progresso"
       },
       "icone": "⌛"
     },
     {
       "id": 8,
-      "Nome": "BB Cash",
-      "Descrição": "Autenticação segura",
-      "Progresso": 65.0,
-      "Equipe": {
+      "nome": "BB Cash",
+      "descricao": "Autenticação segura",
+      "progresso": 65.0,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Planeta_Base": {
+      "planeta_base": {
         "id": 2,
-        "Nome": "Astra-12"
+        "nome": "Astra-12"
       },
-      "Planeta_Destino": null,
-      "Data_Início": "2025-03-15T00:00:00Z",
-      "Data_Prevista_Término": "2025-04-28T23:59:59Z",
-      "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": {
+      "planeta_destino": null,
+      "data_inicio": "2025-03-15T00:00:00Z",
+      "data_prevista_termino": "2025-04-28T23:59:59Z",
+      "data_conclusao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
       "icone": "⌛"
     },
     {
       "id": 9,
-      "Nome": "Financiamento Imobiliário",
-      "Descrição": "Autenticação segura",
-      "Progresso": 20.0,
-      "Equipe": {
+      "nome": "Financiamento Imobiliário",
+      "descricao": "Autenticação segura",
+      "progresso": 20.0,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Planeta_Base": {
+      "planeta_base": {
         "id": 2,
-        "Nome": "Astra-12"
+        "nome": "Astra-12"
       },
-      "Planeta_Destino": null,
-      "Data_Início": "2025-03-15T00:00:00Z",
-      "Data_Prevista_Término": "2025-04-28T23:59:59Z",
-      "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Status": {
+      "planeta_destino": null,
+      "data_inicio": "2025-03-15T00:00:00Z",
+      "data_prevista_termino": "2025-04-28T23:59:59Z",
+      "data_conclusao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Atrasada"
+        "nome": "Atrasada"
       },
       "icone": "⌛"
     }
   ],
   "mascotes": [
     {
+    "id": 1,
+    "nome": "Buggo",
+    "descricao": "Representação lúdica dos bugs, muda de cor conforme o estado do sistema.",
+    "imagem": "/images/mascot/buggo.png",
+    "planeta": {
       "id": 1,
-      "Nome": "Buggo",
-      "Descrição": "Representação lúdica dos bugs, muda de cor conforme o estado do sistema.",
-      "Imagem": "/images/mascot/buggo.png",
-      "Planeta": {
-        "id": 1,
-        "Nome": "Aeris",
-        "Imagem": "/images/planet/aeris.png"
-      },
-      "Titulo": "O Camaleão do Caos",
-      "Personalidade": "Imprevisível e brincalhão, mas cooperativo quando domado",
-      "Habilidade_Especial": "Transforma-se em ferramenta útil quando o código é corrigido",
-      "Aparência": "Esfera com pele de código vivo e olhos expressivos gigantes",
-      "Status": {
-        "id": 1,
-        "Nome": "Conquistado"
-      }
+      "nome": "Aeris",
+      "imagem": "/images/planet/aeris.png"
     },
-    {
-      "id": 2,
-      "Nome": "Syntaxx",
-      "Descrição": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas.",
-      "Imagem": "/images/mascot/syntaxx.png",
-      "Planeta": {
-        "id": 2,
-        "Nome": "Coreon",
-        "Imagem": "/images/planet/coreon.png"
-      },
-      "Titulo": "O Vigilante da Sintaxe",
-      "Personalidade": "Metódico e um pouco exigente. Fica ansioso quando vê código desorganizado.",
-      "Habilidade_Especial": "Pisca em vermelho quando detecta um erro de sintaxe e em verde quando tudo está perfeito",
-      "Aparência": "Pequeno e angular, com olhos que brilham em diferentes cores conforme o estado do código.",
-      "Status": {
-        "id": 1,
-        "Nome": "Conquistado"
-      }
-    },
-    {
-      "id": 3,
-      "Nome": "Algorix",
-      "Descrição": "Um ser geométrico que flutua suavemente, sempre calculando o caminho mais eficiente. Sua mente funciona como um algoritmo vivo, otimizando tudo ao seu redor.",
-      "Imagem": "/images/mascot/algorix.png",
-      "Planeta": {
-        "id": 2,
-        "Nome": "Crystalia",
-        "Imagem": "/images/planet/crystalia.png"
-      },
-      "Titulo": "O Estrategista de Código",
-      "Personalidade": "Racional, paciente e estratégico. Fala em padrões lógicos e adora resolver problemas complexos.",
-      "Habilidade_Especial": "identifica redundâncias em códigos e sugere estruturas mais eficientes.",
-      "Aparência": "Corpo formado por linhas luminosas que se rearranjam conforme pensa. Tem um núcleo brilhante que pulsa em ritmo algorítmico.",
-      "Status": {
-        "id": 1,
-        "Nome": "Secreto"
-      }
-    },
-    {
-      "id": 4,
-      "Nome": "Floris",
-      "Descrição": "Pequena criatura arbórea que personifica a força da natureza, capaz de florescer em qualquer ambiente.",
-      "Imagem": "/images/mascot/floris.png",
-      "Planeta": {
-        "id": 2,
-        "Nome": "Verdax",
-        "Imagem": "/images/planet/verdax.png"
-      },
-      "Titulo": "O Guardião da Vida Resiliente",
-      "Personalidade": "Amigável, Brincalhão, Otimista",
-      "Habilidade_Especial": "Cura pequenos danos ambientais ao seu redor. Farol natural: Atrai criaturas perdidas com um brilho aconchegante.",
-      "Aparência": "Corpo verde-musgo com textura de casca jovem, Oito olhos redondos que brilham como vagalumes, Raízes móveis que se adaptam a qualquer solo, Galhos que florescem quando feliz.",
-      "Status": {
-        "id": 1,
-        "Nome": "Secreto"
-      }
-    },
-    {
-      "id": 5,
-      "Nome": "Cachee",
-      "Descrição": "Um mascote veloz que armazena informações frequentemente usadas para agilizar processos.",
-      "Imagem": "/images/mascot/cachee.png",
-      "Planeta": {
-        "id": 2,
-        "Nome": "Glaciora",
-        "Imagem": "/images/planet/glaciora.png"
-      },
-      "Titulo": "O Acelerador de Acesso",
-      "Personalidade": "Rápido e eficiente, mas às vezes esquecido (quando o cache expira).",
-      "Habilidade_Especial": "Reduz tempo de carregamento e evita consultas repetitivas.",
-      "Aparência": "Pequeño e dinâmico, com um disco rígido simbólico girando em suas costas.",
-      "Status": {
-        "id": 1,
-        "Nome": "Conquistado"
-      }
-    },
-    {
-      "id": 6,
-      "Nome": "Stacko",
-      "Descrição": "Um robô empilhador que adora estruturas ordenadas e detesta estouros de memória.",
-      "Imagem": "/images/mascot/stacko.png",
-      "Planeta": {
-        "id": 2,
-        "Nome": "Crystalia",
-        "Imagem": "/images/planet/crystalia.png"
-      },
-      "Titulo": "O Organizador de Pilhas",
-      "Personalidade": "Organizado e um pouco obsessivo com limites.",
-      "Habilidade_Especial": "Ajuda a gerenciar chamadas aninhadas e evita stack overflows.",
-      "Aparência": "Parece uma torre de blocos com sensores que brilham conforme a profundidade da pilha.",
-      "Status": {
-        "id": 1,
-        "Nome": "Conquistado"
-      }
-    },
-    {
-      "id": 7,
-      "Nome": "Voidy",
-      "Descrição": "Um ser feito de sombras estelares que habita espaços não renderizados ou regiões inexploradas do sistema.",
-      "Imagem": "/images/mascot/voidy.png",
-      "Planeta": {
-        "id": 2,
-        "Nome": "Tesserax",
-        "Imagem": "/images/planet/tesserax.png"
-      },
-      "Titulo": "O Explorador do Vazio",
-      "Personalidade": "Curioso e um pouco solitário, adora descobrir bugs de renderização ou áreas esquecidas.",
-      "Habilidade_Especial": "Revela zonas ocultas ou recursos não utilizados no código.",
-      "Aparência": "Silhueta negra com constelações pulsantes em seu interior; parece 'desfocado' nas bordas.",
-      "Status": {
-        "id": 1,
-        "Nome": "Conquistado"
-      }
-    },
-    {
-      "id": 8,
-      "Nome": "Snipz",
-      "Descrição": "Um especialista em snippets e macros, sempre pronto para oferecer trechos de código úteis.",
-      "Imagem": "/images/mascot/snipz.png",
-      "Planeta": {
-        "id": 2,
-        "Nome": "Bitron",
-        "Imagem": "/images/planet/bitron.png"
-      },
-      "Titulo": "O Mestre dos Atalhos",
-      "Personalidade": "Prático e ágil, odeia repetição desnecessária.",
-      "Habilidade_Especial": "Recomenda atalhos e autocompletar inteligente baseado em contextos anteriores.",
-      "Aparência": "Pequeno e modular, como um bloco de construção que se transforma conforme a necessidade.",
-      "Status": {
-        "id": 1,
-        "Nome": "Bloqueado"
-      }
-    },
-    {
-      "id": 9,
-      "Nome": "GigaFix",
-      "Descrição": "Um robô robusto que lida com vazamentos de memória e gargalos de processamento.",
-      "Imagem": "/images/mascot/gigafix.png",
-      "Planeta": {
-        "id": 2,
-        "Nome": "Glaciora",
-        "Imagem": "/images/planet/glaciora.png"
-      },
-      "Titulo": "O Resolvedor de Problemas Pesados",
-      "Personalidade": "Sólido e confiável, age como um 'faxineiro' de recursos.",
-      "Habilidade_Especial": "Otimiza alocação de memória e reduz latência em operações pesadas.",
-      "Aparência": "Grande e metálico, com placas de circuito expostas que brilham quando trabalha.",
-      "Status": {
-        "id": 1,
-        "Nome": "Bloqueado"
-      }
-    },
-    {
-      "id": 10,
-      "Nome": "Poxel",
-      "Descrição": "Mestre de desafios visuais, como ajustes de UI ou otimização de gráficos.",
-      "Imagem": "/images/mascot/poxel.png",
-      "Planeta": {
-        "id": 2,
-        "Nome": "Fluxaris",
-        "Imagem": "/images/planet/fluxaris.png"
-      },
-      "Titulo": "O Artista Pixelado",
-      "Personalidade": "Criativo e detalhista, obsessivo por alinhamento perfeito.",
-      "Habilidade_Especial": "Corrige pixel-off e sugere paletas de cores acessíveis.",
-      "Aparência": "Cubo feito de pixels animados que se rearranjam como um rubik's cube.",
-      "Status": {
-        "id": 1,
-        "Nome": "Bloqueado"
-      }
+    "titulo": "O Camaleão do Caos",
+    "personalidade": "Imprevisível e brincalhão, mas cooperativo quando domado.",
+    "habilidade_especial": "Transforma-se em ferramenta útil quando o código é corrigido.",
+    "aparencia": "Esfera com pele de código vivo e olhos expressivos gigantes.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
     }
+  },
+  {
+    "id": 17,
+    "nome": "Trixo",
+    "descricao": "Especialista em quebra-cabeças e desafios lúdicos (ex.: Easter eggs, puzzles ocultos).",
+    "imagem": "/images/mascot/trixo.png",
+    "planeta": {
+      "id": 1,
+      "nome": "Aeris",
+      "imagem": "/images/planet/aeris.png"
+    },
+    "titulo": "O Traquinas dos Minigames",
+    "personalidade": "Travesso e hiperativo, adora pregar peças inofensivas.",
+    "habilidade_especial": "Desbloqueia minigames secretos que treinam lógica de programação.",
+    "aparencia": "Alienígena verde com antenas flexíveis e um sorriso malicioso.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 30,
+    "nome": "Lumis",
+    "descricao": "Entidade de névoa e luz que absorve memórias perdidas da Floresta de Ametista, agindo como um arquivo vivo dos segredos cósmicos.",
+    "imagem": "/images/mascot/lumis.png",
+    "planeta": {
+      "id": 2,
+      "nome": "Aetheria",
+      "imagem": "/images/planet/aetheria.png"
+    },
+    "titulo": "O Guardião das Histórias Esquecidas",
+    "personalidade": "Curioso para explorar, calmo e entusiasmado para encontrar relíquias",
+    "habilidade_especial": "Projeta hologramas das histórias que guarda usando cristais como medium.",
+    "aparencia": "Vulto semi-transparente com núcleo brilhante, corpo de névoa cintilante que muda de cor conforme as emoções (roxo/azul/dourado).",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 27,
+    "nome": "Solin",
+    "descricao": "Representa a energia vital do projeto. Seu brilho aumenta com a coesão da equipe e conquistas.",
+    "imagem": "/images/mascot/solin.png",
+    "planeta": {
+      "id": 2,
+      "nome": "Aetheria",
+      "imagem": "/images/planet/aetheria.png"
+    },
+    "titulo": "O Guardião Solar",
+    "personalidade": "Motivador e caloroso, age como um 'farol' em crises.",
+    "habilidade_especial": "Recupera moral da equipe após falhas ou prazos apertados.",
+    "aparencia": "Esfera dourada com raios que pulsam como um coração; emite pequenas chamas acolhedoras.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 13,
+    "nome": "Bytron",
+    "descricao": "Guardião de performance que otimiza processos lentos com tecnologia de ponta.",
+    "imagem": "/images/mascot/bytron.png",
+    "planeta": {
+      "id": 3,
+      "nome": "Bitron",
+      "imagem": "/images/planet/bitron.png"
+    },
+    "titulo": "O Robô Veloz",
+    "personalidade": "Confiante e analítico, fala em métricas.",
+    "habilidade_especial": "Acelera ações e desbloqueia 'modo turbo'.",
+    "aparencia": "Robô prateado com detalhes em azul-neon, linhas aerodinâmicas.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 33,
+    "nome": "Nubbi",
+    "descricao": "Vive em servidores remotos e ajuda a estruturar arquivos, APIs e cloud storage.",
+    "imagem": "/images/mascot/nubbi.png",
+    "planeta": {
+      "id": 3,
+      "nome": "Bitron",
+      "imagem": "/images/planet/bitron.png"
+    },
+    "titulo": "O Organizador de Nuvens",
+    "personalidade": "Paciente e metódico, odeia desordem em buckets ou diretórios.",
+    "habilidade_especial": "Identifica arquivos duplicados ou não utilizados na nuvem.",
+    "aparencia": "Bolha flutuante com ícones de pastas e linhas de conexão brilhantes.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 8,
+    "nome": "Snipz",
+    "descricao": "Um especialista em snippets e macros, sempre pronto para oferecer trechos de código úteis.",
+    "imagem": "/images/mascot/snipz.png",
+    "planeta": {
+      "id": 3,
+      "nome": "Bitron",
+      "imagem": "/images/planet/bitron.png"
+    },
+    "titulo": "O Mestre dos Atalhos",
+    "personalidade": "Prático e ágil, odeia repetição desnecessária.",
+    "habilidade_especial": "Recomenda atalhos e autocompletar inteligente baseado em contextos anteriores.",
+    "aparencia": "Pequeno e modular, como um bloco de construção que se transforma conforme a necessidade.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 14,
+    "nome": "Clippyon",
+    "descricao": "Um pequeno ajudante que aparece discretamente para sugerir refatorações e padrões mais limpos.",
+    "imagem": "/images/mascot/clippyon.png",
+    "planeta": {
+      "id": 4,
+      "nome": "Coreon",
+      "imagem": "/images/planet/coreon.png"
+    },
+    "titulo": "O Assistente de Boas Práticas",
+    "personalidade": "Educado e discreto, mas persistente quando vê algo que pode ser melhorado.",
+    "habilidade_especial": "Oferece dicas contextuais para melhorar legibilidade e manutenibilidade.",
+    "aparencia": "Parece um pequeno fantasma de código, translúcido e com fragmentos de texto flutuando ao seu redor.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 25,
+    "nome": "Linty",
+    "descricao": "ET perfeccionista que elimina redundâncias e sujeira de código.",
+    "imagem": "/images/mascot/linty.png",
+    "planeta": {
+      "id": 4,
+      "nome": "Coreon",
+      "imagem": "/images/planet/coreon.png"
+    },
+    "titulo": "O Faxineiro",
+    "personalidade": "Detalhista e um pouco obsessivo por ordem.",
+    "habilidade_especial": "Sinaliza inconsistências e comemora códigos imaculados.",
+    "aparencia": "Corpo alongado com vassoura luminescente e aura de limpeza.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 2,
+    "nome": "Syntaxx",
+    "descricao": "Um pequeno guardião que vive nas linhas de código, sempre alerta para erros de digitação e estruturas malformadas.",
+    "imagem": "/images/mascot/syntaxx.png",
+    "planeta": {
+      "id": 4,
+      "nome": "Coreon",
+      "imagem": "/images/planet/coreon.png"
+    },
+    "titulo": "O Vigilante da Sintaxe",
+    "personalidade": "Metódico e um pouco exigente. Fica ansioso quando vê código desorganizado.",
+    "habilidade_especial": "Pisca em vermelho quando detecta um erro de sintaxe e em verde quando tudo está perfeito",
+    "aparencia": "Pequeno e angular, com olhos que brilham em diferentes cores conforme o estado do código.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 3,
+    "nome": "Algorix",
+    "descricao": "Um ser geométrico que flutua suavemente, sempre calculando o caminho mais eficiente. Sua mente funciona como um algoritmo vivo, otimizando tudo ao seu redor.",
+    "imagem": "/images/mascot/algorix.png",
+    "planeta": {
+      "id": 5,
+      "nome": "Crystalia",
+      "imagem": "/images/planet/crystalia.png"
+    },
+    "titulo": "O Estrategista de Código",
+    "personalidade": "Racional, paciente e estratégico. Fala em padrões lógicos e adora resolver problemas complexos.",
+    "habilidade_especial": "Identifica redundâncias em códigos e sugere estruturas mais eficientes.",
+    "aparencia": "Corpo formado por linhas luminosas que se rearranjam conforme pensa. Tem um núcleo brilhante que pulsa em ritmo algorítmico.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 28,
+    "nome": "Loopin",
+    "descricao": "Um mascote que, literalmente, gira em círculos quando encontra loops infinitos ou lógicas repetitivas. Só para quando alguém otimiza o código.",
+    "imagem": "/images/mascot/loopin.png",
+    "planeta": {
+      "id": 5,
+      "nome": "Crystalia",
+      "imagem": "/images/planet/crystalia.png"
+    },
+    "titulo": "O Preso em Laços",
+    "personalidade": "Desorientado, mas bem-intencionado. Fica aliviado quando alguém simplifica estruturas complexas.",
+    "habilidade_especial": "Ajuda a identificar recursões desnecessárias e loops ineficientes.",
+    "aparencia": "Uma esfera com anéis giratórios que aceleram ou desaceleram conforme a complexidade do código.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 6,
+    "nome": "Stacko",
+    "descricao": "Um robô empilhador que adora estruturas ordenadas e detesta estouros de memória.",
+    "imagem": "/images/mascot/stacko.png",
+    "planeta": {
+      "id": 5,
+      "nome": "Crystalia",
+      "imagem": "/images/planet/crystalia.png"
+    },
+    "titulo": "O Organizador de Pilhas",
+    "personalidade": "Organizado e um pouco obsessivo com limites.",
+    "habilidade_especial": "Ajuda a gerenciar chamadas aninhadas e evita stack overflows.",
+    "aparencia": "Parece uma torre de blocos com sensores que brilham conforme a profundidade da pilha.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 29,
+    "nome": "Orby",
+    "descricao": "Uma entidade que gira em torno de entidades importantes, como um satélite natural de eventos críticos.",
+    "imagem": "/images/mascot/orby.png",
+    "planeta": {
+      "id": 6,
+      "nome": "Ecliptor",
+      "imagem": "/images/planet/ecliptor.png"
+    },
+    "titulo": "O Orbitante Místico",
+    "personalidade": "Sereno e observador, só interfere em momentos decisivos.",
+    "habilidade_especial": "Aumenta a precisão em operações delicadas (ex.: migrações, deploys).",
+    "aparencia": "Esfera prateada com anéis luminosos que se expandem conforme a importância da ação.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 16,
+    "nome": "Trillex",
+    "descricao": "Um especialista em rastrear eventos e desvendar mensagens de erro crípticas.",
+    "imagem": "/images/mascot/trillex.png",
+    "planeta": {
+      "id": 6,
+      "nome": "Ecliptor",
+      "imagem": "/images/planet/ecliptor.png"
+    },
+    "titulo": "O Decifrador de Logs",
+    "personalidade": "Analítico e paciente, como um detetive de sistemas.",
+    "habilidade_especial": "Organiza logs e destaca padrões importantes para debugging.",
+    "aparencia": "Tem uma lupa digital e uma cauda que deixa um rastro de linhas de comando.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 26,
+    "nome": "Zyntra",
+    "descricao": "Aparece durante eventos raros (eclipses, alinhamentos de servidores) e traz benefícios aleatórios.",
+    "imagem": "/images/mascot/zyntra.png",
+    "planeta": {
+      "id": 6,
+      "nome": "Ecliptor",
+      "imagem": "/images/planet/ecliptor.png"
+    },
+    "titulo": "O Portador da Sorte Cósmica",
+    "personalidade": "Imprevisível e brincalhão, mas generoso quando reconhecido.",
+    "habilidade_especial": "Ativa buffs temporários (ex.: velocidade de compilação +10%).",
+    "aparencia": "Corpo translúcido com cores cambiantes, como auroras boreais digitais.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 12,
+    "nome": "Bytee",
+    "descricao": "Um alienígena fofo que mistura características de byte e pelúcia, com circuitos visíveis sob sua 'pele' de tecido digital. Adora aprender novos códigos e fazer piadas nerds.",
+    "imagem": "/images/mascot/bytee.png",
+    "planeta": {
+      "id": 7,
+      "nome": "Fluxaris",
+      "imagem": "/images/planet/fluxaris.png"
+    },
+    "titulo": "O Pelúcia Digital",
+    "personalidade": "Engraçado, sociável e um pouco nerd. Sempre animado para ajudar ou debugar.",
+    "habilidade_especial": "Conecta-se a dispositivos para extrair dados úteis e criar minigames educativos.",
+    "aparencia": "Corpo macio como pelúcia com padrões de circuito brilhantes, olhos LED expressivos e antenas que piscam em binário.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 10,
+    "nome": "Poxel",
+    "descricao": "Mestre de desafios visuais, como ajustes de UI ou otimização de gráficos.",
+    "imagem": "/images/mascot/poxel.png",
+    "planeta": {
+      "id": 7,
+      "nome": "Fluxaris",
+      "imagem": "/images/planet/fluxaris.png"
+    },
+    "titulo": "O Artista Pixelado",
+    "personalidade": "Criativo e detalhista, obsessivo por alinhamento perfeito.",
+    "habilidade_especial": "Corrige pixel-off e sugere paletas de cores acessíveis.",
+    "aparencia": "Cubo feito de pixels animados que se rearranjam como um rubik's cube.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 5,
+    "nome": "Cachee",
+    "descricao": "Um mascote veloz que armazena informações frequentemente usadas para agilizar processos.",
+    "imagem": "/images/mascot/cachee.png",
+    "planeta": {
+      "id": 8,
+      "nome": "Glaciora",
+      "imagem": "/images/planet/glaciora.png"
+    },
+    "titulo": "O Acelerador de Acesso",
+    "personalidade": "Rápido e eficiente, mas às vezes esquecido (quando o cache expira).",
+    "habilidade_especial": "Reduz tempo de carregamento e evita consultas repetitivas.",
+    "aparencia": "Pequeno e dinâmico, com um disco rígido simbólico girando em suas costas.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 9,
+    "nome": "GigaFix",
+    "descricao": "Um robô robusto que lida com vazamentos de memória e gargalos de processamento.",
+    "imagem": "/images/mascot/gigafix.png",
+    "planeta": {
+      "id": 8,
+      "nome": "Glaciora",
+      "imagem": "/images/planet/glaciora.png"
+    },
+    "titulo": "O Resolvedor de Problemas Pesados",
+    "personalidade": "Sólido e confiável, age como um 'faxineiro' de recursos.",
+    "habilidade_especial": "Otimiza alocação de memória e reduz latência em operações pesadas.",
+    "aparencia": "Grande e metálico, com placas de circuito expostas que brilham quando trabalha.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 24,
+    "nome": "Refacto",
+    "descricao": "Mestre da estrutura limpa, transforma caos em elegância lógica.",
+    "imagem": "/images/mascot/refacto.png",
+    "planeta": {
+      "id": 8,
+      "nome": "Glaciora",
+      "imagem": "/images/planet/glaciora.png"
+    },
+    "titulo": "O Arquiteto",
+    "personalidade": "Sábio e minimalista, fala em padrões.",
+    "habilidade_especial": "Reorganiza sistemas com toque de eficiência.",
+    "aparencia": "Figura geométrica com traços mutáveis e olhos hexagonais.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 20,
+    "nome": "Zappy",
+    "descricao": "Alien energético que encontra gargalos e otimiza fluxos.",
+    "imagem": "/images/mascot/zappy.png",
+    "planeta": {
+      "id": 8,
+      "nome": "Glaciora",
+      "imagem": "/images/planet/glaciora.png"
+    },
+    "titulo": "O Mestre das Correntes",
+    "personalidade": "Curioso e hiperfocado, adora sistemas bem oleados.",
+    "habilidade_especial": "Canaliza energia para áreas de alta demanda.",
+    "aparencia": "Ser translúcido com raios sob a pele e antenas pulsantes.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 23,
+    "nome": "Galaxito",
+    "descricao": "Mascote que ganha novas formas ao atingir marcos de performance.",
+    "imagem": "/images/mascot/galaxito.png",
+    "planeta": {
+      "id": 9,
+      "nome": "Hexora",
+      "imagem": "/images/planet/hexora.png"
+    },
+    "titulo": "O Evolutivo",
+    "personalidade": "Empolgado e orgulhoso de cada evolução.",
+    "habilidade_especial": "Desbloqueia habilidades exclusivas por fase.",
+    "aparencia": "Núcleo estelar cercado por anéis de conquistas.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 19,
+    "nome": "Nebby",
+    "descricao": "Mascote que muda de forma conforme o progresso do usuário, representando evolução.",
+    "imagem": "/images/mascot/nebby.png",
+    "planeta": {
+      "id": 9,
+      "nome": "Hexora",
+      "imagem": "/images/planet/hexora.png"
+    },
+    "titulo": "O Transformista",
+    "personalidade": "Misterioso e adaptável, raramente repete a mesma forma.",
+    "habilidade_especial": "Visualiza conquistas como acessórios cósmicos.",
+    "aparencia": "Névoa cintilante que pode assumir contornos de objetos ou criaturas.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 15,
+    "nome": "Cometim",
+    "descricao": "Mascote veloz que reduz tempos de espera e incentiva produtividade com sua energia contagiante.",
+    "imagem": "/images/mascot/cometim.png",
+    "planeta": {
+      "id": 10,
+      "nome": "Pyron",
+      "imagem": "/images/planet/pyron.png"
+    },
+    "titulo": "O Acelerador",
+    "personalidade": "Hiperativo e motivador, adora competições saudáveis.",
+    "habilidade_especial": "Diminui cooldowns e prazos simbolicamente.",
+    "aparencia": "Pequeno cometa azul-elétrico com cauda de partículas, traços aerodinâmicos.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 22,
+    "nome": "Fixx",
+    "descricao": "Mascote de suporte técnico que simplifica problemas complexos.",
+    "imagem": "/images/mascot/fixx.png",
+    "planeta": {
+      "id": 10,
+      "nome": "Pyron",
+      "imagem": "/images/planet/pyron.png"
+    },
+    "titulo": "O Solucionador Rápido",
+    "personalidade": "Paciente e didático, explica em etapas.",
+    "habilidade_especial": "Oferece tutoriais contextuais em tempo real.",
+    "aparencia": "Chaveiro flutuante com ferramentas holográficas.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 35,
+    "nome": "Patch-3",
+    "descricao": "É um mini robô prático, ágil e programado para resolver problemas sérios no menor tempo possível. Ele adora missões vermelhas e vive dizendo: 'Se é urgente, deixa comigo!'",
+    "imagem": "/images/mascot/patch-3.png",
+    "planeta": {
+      "id": 10,
+      "nome": "Pyron",
+      "imagem": "/images/planet/pyron.png"
+    },
+    "titulo": "O Entregador de Correções",
+    "personalidade": "Preciso e urgente, odeia atrasos.",
+    "habilidade_especial": "Antecipa falhas e previne crashes.",
+    "aparencia": "Robô compacto com mochila de atualizações e LEDs piscantes.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 11,
+    "nome": "Astroli",
+    "descricao": "Uma criatura galáctica que evolui visualmente a cada conquista, absorvendo conhecimento como um pequeno cientista estelar.",
+    "imagem": "/images/mascot/astroli.png",
+    "planeta": {
+      "id": 11,
+      "nome": "Terrara",
+      "imagem": "/images/planet/terrara.png"
+    },
+    "titulo": "O Aprendiz Cósmico",
+    "personalidade": "Curioso e observador, fica horas analisando padrões.",
+    "habilidade_especial": "Gera hologramas com lições aprendidas de missões passadas.",
+    "aparencia": "Corpo negro com constelações internas, olhos grandes que refletem dados e membros etéreos.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 32,
+    "nome": "Quanti",
+    "descricao": "Vive em superposição de estados, ajudando em testes de cenários múltiplos (ex.: A/B testing, simulações).",
+    "imagem": "/images/mascot/quanti.png",
+    "planeta": {
+      "id": 12,
+      "nome": "Tesserax",
+      "imagem": "/images/planet/tesserax.png"
+    },
+    "titulo": "O Viajante das Linhas do Tempo",
+    "personalidade": "Filosófico e multitarefa, fala em paradoxos.",
+    "habilidade_especial": "Previsão de impactos de mudanças com base em dados históricos.",
+    "aparencia": "Forma difusa com vários 'eus' menores sobrepostos, como um holograma.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 7,
+    "nome": "Voidy",
+    "descricao": "Um ser feito de sombras estelares que habita espaços não renderizados ou regiões inexploradas do sistema.",
+    "imagem": "/images/mascot/voidy.png",
+    "planeta": {
+      "id": 12,
+      "nome": "Tesserax",
+      "imagem": "/images/planet/tesserax.png"
+    },
+    "titulo": "O Explorador do Vazio",
+    "personalidade": "Curioso e um pouco solitário, adora descobrir bugs de renderização ou áreas esquecidas.",
+    "habilidade_especial": "Revela zonas ocultas ou recursos não utilizados no código.",
+    "aparencia": "Silhueta negra com constelações pulsantes em seu interior; parece 'desfocado' nas bordas.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 4,
+    "nome": "Floris",
+    "descricao": "Pequena criatura arbórea que personifica a força da natureza, capaz de florescer em qualquer ambiente.",
+    "imagem": "/images/mascot/floris.png",
+    "planeta": {
+      "id": 13,
+      "nome": "Verdax",
+      "imagem": "/images/planet/verdax.png"
+    },
+    "titulo": "O Guardião da Vida Resiliente",
+    "personalidade": "Amigável (adora fazer novos companheiros), Brincalhão (se esconde entre folhagens para surpreender), Otimista (sempre em busca de novos lugares para explorar).",
+    "habilidade_especial": "Cura pequenos danos ambientais ao seu redor. Farol natural: Atrai criaturas perdidas com um brilho aconchegante.",
+    "aparencia": "Corpo verde-musgo com textura de casca jovem, Oito olhos redondos que brilham como vagalumes, Raízes móveis que se adaptam a qualquer solo, Galhos que florescem quando feliz.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 21,
+    "nome": "Debu",
+    "descricao": "Especialista em encontrar e corrigir dívidas técnicas antes que causem problemas.",
+    "imagem": "/images/mascot/debu.png",
+    "planeta": {
+      "id": 14,
+      "nome": "Vortan",
+      "imagem": "/images/planet/vortan.png"
+    },
+    "titulo": "O Caçador de Débitos",
+    "personalidade": "Metódico e persistente, não descansa até resolver.",
+    "habilidade_especial": "Detecta más práticas e sugere correções.",
+    "aparencia": "Robô imã com sensores vermelhos, corpo metálico e detalhes de alerta.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 34,
+    "nome": "Nulli",
+    "descricao": "Um ser enigmático que surge quando variáveis são nulas ou indefinidas.",
+    "imagem": "/images/mascot/nulli.png",
+    "planeta": {
+      "id": 14,
+      "nome": "Vortan",
+      "imagem": "/images/planet/vortan.png"
+    },
+    "titulo": "O Guardião do Vazio",
+    "personalidade": "Misterioso e um pouco sombrio, mas útil quando compreendido.",
+    "habilidade_especial": "Ajuda a debugar referências nulas e evita crashes inesperados.",
+    "aparencia": "Forma etérea, quase invisível, com contornos que piscam quando algo está ausente.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 31,
+    "nome": "Xilo",
+    "descricao": "Explorador de mecânicas não documentadas ou features experimentais.",
+    "imagem": "/images/mascot/xilo.png",
+    "planeta": {
+      "id": 14,
+      "nome": "Vortan",
+      "imagem": "/images/planet/vortan.png"
+    },
+    "titulo": "O Pioneiro de Asteroides",
+    "personalidade": "Corajoso e inquisitivo, sempre testando limites.",
+    "habilidade_especial": "Revela funcionalidades ocultas ou backdoors úteis.",
+    "aparencia": "Robô com escavadeiras magnéticas e um capacete de astronauta digital.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 18,
+    "nome": "Pluxi",
+    "descricao": "Um caçador de recompensas digital que aparece em eventos raros para coletar loot (gemas de código, artefatos de versões antigas).",
+    "imagem": "/images/mascot/pluxi.png",
+    "planeta": {
+      "id": 15,
+      "nome": "Zephyra",
+      "imagem": "/images/planet/zephyra.png"
+    },
+    "titulo": "O Colecionador Estelar",
+    "personalidade": "Ganancioso, mas justo. Negocia recursos exclusivos.",
+    "habilidade_especial": "Troca itens colecionáveis por benefícios (ex.: skins de UI, temas de IDE).",
+    "aparencia": "Robô baixo com mochila de cristais, olhos scanner e garras magnéticas.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  },
+  {
+    "id": 36,
+    "nome": "Starlux",
+    "descricao": "Guardião que brilha conforme a eficiência nas entregas, premiando cumprimento de prazos.",
+    "imagem": "/images/mascot/starlux.png",
+    "planeta": {
+      "id": 15,
+      "nome": "Zephyra",
+      "imagem": "/images/planet/zephyra.png"
+    },
+    "titulo": "O Pontual",
+    "personalidade": "Organizado e leal, vibra quando vê cronogramas sendo seguidos.",
+    "habilidade_especial": "Emite recompensas quando tarefas são finalizadas no tempo.",
+    "aparencia": "Corpo estelar com fragmentos de luz dourada, núcleo pulsante.",
+    "status": {
+      "id": 1,
+      "nome": "Conquistado"
+    }
+  }
   ],
   "medalhas_cosmicas": [
     {
       "id": 1,
-      "Nome": "Medalha de Coragem",
-      "Descrição": "Por concluir missão crítica",
-      "Tipo": {
+      "nome": "Medalha de coragem",
+      "descricao": "Por concluir missão crítica",
+      "tipo": {
         "id": 4,
-        "Nome": "Individual"
+        "nome": "Individual"
       },
-      "Imagem": "https://xai.com/medals/courage.webp"
+      "imagem": "https://xai.com/medals/courage.webp"
     },
     {
       "id": 2,
-      "Nome": "Medalha de Equipe",
-      "Descrição": "Por colaboração estelar",
-      "Tipo": {
+      "nome": "Medalha de equipe",
+      "descricao": "Por colaboração estelar",
+      "tipo": {
         "id": 5,
-        "Nome": "Equipe"
+        "nome": "equipe"
       },
-      "Imagem": "https://xai.com/medals/team.webp"
+      "imagem": "https://xai.com/medals/team.webp"
     }
   ],
   "naves": [
@@ -2104,7 +2598,7 @@
       "descricao": "Ágil como um felino cósmico, ideal para missões rápidas e furtivas.",
       "status": {
         "id": 11,
-        "nome": "Disponível"
+        "nome": "Disponivel"
       },
       "planeta_origem": {
         "id": 1,
@@ -2132,10 +2626,10 @@
     {
       "id": 2,
       "nome": "Bug Free One",
-      "descricao": "Nave de comunicação e colaboração entre equipes, equipada com sensores de longo alcance.",
+      "descricao": "posicao de comunicação e colaboração entre equipes, equipada com sensores de longo alcance.",
       "status": {
         "id": 11,
-        "nome": "Disponível"
+        "nome": "Disponivel"
       },
       "planeta_origem": {
         "id": 1,
@@ -2201,7 +2695,7 @@
       },
       "planeta_origem": {
         "id": 1,
-        "nome": "Coreon"
+        "nome": "coreon"
       },
       "planeta_destino": {
         "id": 2,
@@ -2225,7 +2719,7 @@
     {
       "id": 5,
       "nome": "Cosmotrix",
-      "descricao": "Uma nave de alto desempenho, feita para grandes explorações interplanetárias.",
+      "descricao": "Uma posicao de alto desempenho, feita para grandes explorações interplanetárias.",
       "status": {
         "id": 11,
         "nome": "Bloqueado"
@@ -2257,333 +2751,307 @@
   "notificacoes": [
     {
       "id": 1,
-      "Descrição": "Carteira bB - Correção na sincronização de saldos (90% dos ambientes atualizados)",
-      "Data_Criação": "2025-04-25T08:00:00Z",
-      "Status": {
+      "descricao": "Carteira bB - correção na sincronização de saldos (90% dos ambientes atualizados)",
+      "data_criacao": "2025-04-25T08:00:00Z",
+      "status": {
         "id": 2,
-        "Nome": "Pendente"
+        "nome": "Pendente"
       },
-      "Usuário": {
+      "usuario": {
         "id": 1,
-        "Nome": "Astro João"
+        "nome": "Astro João"
       },
-      "Equipe": null,
-      "Projeto": {
+      "equipe": null,
+      "projeto": {
         "id": 1,
-        "Nome": "Empréstimo Pessoal",
+        "nome": "Empréstimo Pessoal",
         "icone": "✔️",
         "progresso": 55
       },
-      "Tipo": "Equipe"
+      "tipo": "equipe"
     },
     {
       "id": 2,
-      "Descrição": "Conta Universitária/Empréstimo - Todos os hotfixes da sprint implementados (100% concluído)",
-      "Data_Criação": "2025-04-25T15:00:00Z",
-      "Status": {
+      "descricao": "Conta Universitária/Empréstimo - Todos os hotfixes da sprint implementados (100% concluído)",
+      "data_criacao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Usuário": null,
-      "Equipe": {
+      "usuario": null,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Projeto": {
+      "projeto": {
         "id": 2,
-        "Nome": "Open Finance",
+        "nome": "Open Finance",
         "icone": "🛠️",
         "progresso": 70
       },
-      "Tipo": "Usuário"
+      "tipo": "usuario"
     },
     {
       "id": 3,
-      "Descrição": "CDB DI - Ajuste na exibição de taxas (75% dos clientes impactados notificados)",
-      "Data_Criação": "2025-04-25T15:00:00Z",
-      "Status": {
+      "descricao": "CDB DI - Ajuste na exibição de taxas (75% dos clientes impactados notificados)",
+      "data_criacao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Usuário": null,
-      "Equipe": {
+      "usuario": null,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Projeto": {
+      "projeto": {
         "id": 2,
-        "Nome": "BB Cash",
+        "nome": "BB Cash",
         "icone": "⌛",
         "progresso": 70
       },
-      "Tipo": "Equipe"
+      "tipo": "equipe"
     },
     {
       "id": 4,
-      "Descrição": "BB Financiamento - Corrigida validação de documentos (65% dos fluxos ajustados)",
-      "Data_Criação": "2025-04-25T15:00:00Z",
-      "Status": {
+      "descricao": "BB Financiamento - corrigida validação de documentos (65% dos fluxos ajustados)",
+      "data_criacao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Usuário": null,
-      "Equipe": {
+      "usuario": null,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Projeto": {
+      "projeto": {
         "id": 2,
-        "Nome": "Carteira bB",
+        "nome": "Carteira bB",
         "icone": "⚠️",
         "progresso": 2
       },
-      "Tipo": "Equipe"
+      "tipo": "equipe"
     },
     {
       "id": 5,
-      "Descrição": "BB Investimento - Resolvido race condition no módulo de rendimentos (55% dos casos testados)",
-      "Data_Criação": "2025-04-25T08:00:00Z",
-      "Status": {
+      "descricao": "BB Investimento - Resolvido race condition no módulo de rendimentos (55% dos casos testados)",
+      "data_criacao": "2025-04-25T08:00:00Z",
+      "status": {
         "id": 2,
-        "Nome": "Pendente"
+        "nome": "Pendente"
       },
-      "Usuário": {
+      "usuario": {
         "id": 1,
-        "Nome": "Astro João"
+        "nome": "Astro João"
       },
-      "Equipe": null,
-      "Projeto": {
+      "equipe": null,
+      "projeto": {
         "id": 1,
-        "Nome": "BB Investimento",
+        "nome": "BB Investimento",
         "icone": "🌳",
         "progresso": 35
       },
-      "Tipo": "Equipe"
+      "tipo": "equipe"
     },
     {
       "id": 6,
-      "Descrição": "Acessibilidade App - Correção de contrastes em componentes (50% das telas validadas)",
-      "Data_Criação": "2025-04-25T15:00:00Z",
-      "Status": {
+      "descricao": "Acessibilidade App - correção de contrastes em componentes (50% das telas validadas)",
+      "data_criacao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Usuário": null,
-      "Equipe": {
+      "usuario": null,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Projeto": {
+      "projeto": {
         "id": 2,
-        "Nome": "Empréstimo Pessoal",
+        "nome": "Empréstimo Pessoal",
         "icone": "🎯",
         "progresso": 90
       },
-      "Tipo": "Usuário"
+      "tipo": "usuario"
     },
     {
       "id": 7,
-      "Descrição": "Erro na API de integração com parceiros (30% dos endpoints corrigidos)",
-      "Data_Criação": "2025-04-25T15:00:00Z",
-      "Status": {
+      "descricao": "Erro na API de integração com parceiros (30% dos endpoints corrigidos)",
+      "data_criacao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Usuário": null,
-      "Equipe": {
+      "usuario": null,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Projeto": {
+      "projeto": {
         "id": 2,
-        "Nome": "Financiamento Imobiliário",
+        "nome": "Financiamento Imobiliário",
         "icone": "🧩",
         "progresso": 100
       },
-      "Tipo": "Equipe"
+      "tipo": "equipe"
     },
     {
       "id": 8,
-      "Descrição": "Corrigido erro de arredondamento no cálculo de juros (25% das correções implementadas)",
-      "Data_Criação": "2025-04-25T15:00:00Z",
-      "Status": {
+      "descricao": "corrigido erro de arredondamento no cálculo de juros (25% das correções implementadas)",
+      "data_criacao": "2025-04-25T15:00:00Z",
+      "status": {
         "id": 9,
-        "Nome": "Concluída"
+        "nome": "Concluída"
       },
-      "Usuário": null,
-      "Equipe": {
+      "usuario": null,
+      "equipe": {
         "id": 1,
-        "Nome": "Nave Orion"
+        "nome": "posicao Orion"
       },
-      "Projeto": {
+      "projeto": {
         "id": 2,
-        "Nome": "Acessibilidade App",
+        "nome": "Acessibilidade App",
         "icone": "⚡",
         "progresso": 80
       },
-      "Tipo": "Equipe"
+      "tipo": "equipe"
     }
   ],
   "credenciais": [
     {
       "id": 1,
-      "Nome": "Projeto API Estelar",
-      "Tipo": {
+      "nome": "projeto API Estelar",
+      "tipo": {
         "id": 1,
-        "Nome": "Projeto"
+        "nome": "projeto"
       },
-      "Descrição": "Participação na API",
-      "Status": {
+      "descricao": "Participação na API",
+      "status": {
         "id": 5,
-        "Nome": "Ativa"
+        "nome": "Ativa"
       }
     },
     {
       "id": 2,
-      "Nome": "Nave Orion",
-      "Tipo": {
+      "nome": "posicao Orion",
+      "tipo": {
         "id": 2,
-        "Nome": "Nave"
+        "nome": "posicao"
       },
-      "Descrição": "Membro da tripulação",
-      "Status": {
+      "descricao": "Membro da tripulacao",
+      "status": {
         "id": 5,
-        "Nome": "Ativa"
+        "nome": "Ativa"
       }
     }
   ],
   "itens": [
     {
       "id": 1,
-      "Nome": "Traje Lunar",
-      "Tipo": {
+      "nome": "Traje Lunar",
+      "tipo": {
         "id": 1,
-        "Nome": "Traje"
+        "nome": "Traje"
       },
-      "Descrição": "Traje para exploração",
-      "Imagem": "https://xai.com/items/lunar.webp",
-      "Status": {
+      "descricao": "Traje para exploração",
+      "imagem": "https://xai.com/items/lunar.webp",
+      "status": {
         "id": 5,
-        "Nome": "Ativa"
+        "nome": "Ativa"
       }
     },
     {
       "id": 2,
-      "Nome": "Capacete Estelar",
-      "Tipo": {
+      "nome": "Capacete Estelar",
+      "tipo": {
         "id": 2,
-        "Nome": "Acessório"
+        "nome": "Acessório"
       },
-      "Descrição": "Capacete brilhante",
-      "Imagem": "https://xai.com/items/helmet.webp",
-      "Status": {
+      "descricao": "Capacete brilhante",
+      "imagem": "https://xai.com/items/helmet.webp",
+      "status": {
         "id": 5,
-        "Nome": "Ativa"
+        "nome": "Ativa"
       }
     }
   ],
   "conquistas": [
     {
       "id": 1,
-      "Nome": "Raiz Sólida",
-      "Descrição": "Ao completar todas as tarefas verdes de um ciclo, você prova que estabilidade também é poder.",
-      "Tarefas": "🍃 Consistência nas entregas 🍃 Compromisso com o todo 🍃 Força invisível que sustenta o progresso",
-      "Qtd_moedas": 10,
-      "Imagem": "/images/achievement/raiz-solida.png",
-      "Planeta": {
+      "nome": "Raiz Sólida",
+      "descricao": "Ao completar todas as tarefas verdes de um ciclo, você prova que estabilidade também é poder.",
+      "tarefas": "🍃 Consistência nas entregas 🍃 Compromisso com o todo 🍃 Força invisível que sustenta o progresso",
+      "qtd_moedas": 10,
+      "imagem": "/images/achievement/raiz-solida.png",
+      "planeta": {
         "id": 1,
-        "Nome": "Aeris",
-        "Imagem": "/images/planet/aeris.png"
+        "nome": "Aeris",
+        "imagem": "/images/planet/aeris.png"
       },
-      "Status": {
+      "status": {
         "id": 5,
-        "Nome": "Ativa"
+        "nome": "Ativa"
       },
-      "Qtd_disponivel": 5,
-      "Qtd_conquistada": 2
+      "qtd_disponivel": 5,
+      "qtd_conquistada": 2
     },
     {
       "id": 2,
-      "Nome": "Ferro Vermelho",
-      "Descrição": "Entregar 5 tarefas vermelhas antes do prazo",
-      "Tarefas": "🔥 Velocidade sob pressão 🔥 Espírito inabalável diante de falhas críticas",
-      "Qtd_moedas": 15,
-      "Imagem": "/images/achievement/ferro-vermelho.png",
-      "Planeta": {
+      "nome": "Ferro Vermelho",
+      "descricao": "Entregar 5 tarefas vermelhas antes do prazo",
+      "tarefas": "🔥 Velocidade sob pressão 🔥 Espírito inabalável diante de falhas críticas",
+      "qtd_moedas": 15,
+      "imagem": "/images/achievement/ferro-vermelho.png",
+      "planeta": {
         "id": 2,
-        "Nome": "Pyron",
-        "Imagem": "/images/planet/pyron.png"
+        "nome": "Pyron",
+        "imagem": "/images/planet/pyron.png"
       },
-      "Status": {
+      "status": {
         "id": 5,
-        "Nome": "Ativa"
+        "nome": "Ativa"
       },
-      "Qtd_disponivel": 4,
-      "Qtd_conquistada": 3
+      "qtd_disponivel": 4,
+      "qtd_conquistada": 3
     },
     {
       "id": 3,
-      "Nome": "Explorador de Solo",
-      "Descrição": "Complete o primeiro deploy sem falhas",
-      "Tarefas": "🚀 Coragem no primeiro passo 🚀 Execução impecável 🚀 Início lendário na missão",
-      "Qtd_moedas": 15,
-      "Imagem": "/images/achievement/explorador-de-solo.png",
-      "Planeta": {
+      "nome": "Explorador de Solo",
+      "descricao": "Complete o primeiro deploy sem falhas",
+      "tarefas": "🚀 coragem no primeiro passo 🚀 Execução impecável 🚀 Início lendário na missão",
+      "qtd_moedas": 15,
+      "imagem": "/images/achievement/explorador-de-solo.png",
+      "planeta": {
         "id": 2,
-        "Nome": "Crystalia",
-        "Imagem": "/images/planet/crystalia.png"
+        "nome": "Crystalia",
+        "imagem": "/images/planet/crystalia.png"
       },
-      "Status": {
+      "status": {
         "id": 5,
-        "Nome": "Ativa"
+        "nome": "Ativa"
       },
-      "Qtd_disponivel": 2,
-      "Qtd_conquistada": 1
+      "qtd_disponivel": 2,
+      "qtd_conquistada": 1
     },
     {
       "id": 4,
-      "Nome": "Qualidade Constante",
-      "Descrição": "Detectar e corrigir um bug em ambiente de teste antes do QA",
-      "Tarefas": "🧠 Olhar afiado para falhas 🧠 Ação antes da detecção externa 🧠 Excelência como rotina",
-      "Qtd_moedas": 15,
-      "Imagem": "/images/achievement/qualidade-constante.png",
-      "Planeta": {
+      "nome": "Qualidade Constante",
+      "descricao": "Detectar e corrigir um bug em ambiente de teste antes do QA",
+      "tarefas": "🧠 Olhar afiado para falhas 🧠 Ação antes da detecção externa 🧠 Excelência como rotina",
+      "qtd_moedas": 15,
+      "imagem": "/images/achievement/qualidade-constante.png",
+      "planeta": {
         "id": 2,
-        "Nome": "Aeris",
-        "Imagem": "/images/planet/aeris.png"
+        "nome": "Aeris",
+        "imagem": "/images/planet/aeris.png"
       },
-      "Status": {
+      "status": {
         "id": 5,
-        "Nome": "Ativa"
+        "nome": "Ativa"
       },
-      "Qtd_disponivel": 5,
-      "Qtd_conquistada": 2
-    }
-  ],
-  "transacoes": [
-    {
-      "id": 1,
-      "Usuário": {
-        "id": 1,
-        "Nome": "Astro João"
-      },
-      "Descrição": "Recompensa por missão",
-      "Qtd_moedas": 10,
-      "Data": "2025-04-25T15:00:00Z",
-      "Tipo": "Missão",
-      "Referência_id": 2
-    },
-    {
-      "id": 2,
-      "Usuário": {
-        "id": 1,
-        "Nome": "Astro João"
-      },
-      "Descrição": "Compra de item",
-      "Qtd_moedas": -50,
-      "Data": "2025-04-26T10:00:00Z",
-      "Tipo": "Compra",
-      "Referência_id": 1
+      "qtd_disponivel": 5,
+      "qtd_conquistada": 2
     }
   ],
   "desafios_missoes_verdes": [
@@ -2697,7 +3165,7 @@
     },
     {
       "id": 10,
-      "nome": "Indique um colega para receber Estelares",
+      "nome": "Indique um colega para receber estelares",
       "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
       "status": {
         "id": 1,
@@ -2745,7 +3213,7 @@
     },
     {
       "id": 14,
-      "nome": "Crie um grito de guerra para a tripulação",
+      "nome": "Crie um grito de guerra para a tripulacao",
       "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
       "status": {
         "id": 1,
@@ -2793,7 +3261,7 @@
     },
     {
       "id": 18,
-      "nome": "Reaja a um “momento do dia” da tripulação",
+      "nome": "Reaja a um “momento do dia” da tripulacao",
       "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
       "status": {
         "id": 1,
@@ -2805,7 +3273,7 @@
     },
     {
       "id": 19,
-      "nome": "Nomeie uma missão",
+      "nome": "nomeie uma missão",
       "descricao": "Clique em tutoriais e conheça um pouco da plataforma do jogo. Ao concluir o tour, você estará apto para visitar",
       "status": {
         "id": 1,
@@ -2819,12 +3287,12 @@
   "missoes_verdes": [
     {
       "id": 1,
-      "nivel": "Nível 1",
+      "nivel": "nivel 1",
       "status": {
         "id": 1,
         "nome": "Concluído"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "tipo": "Comum",
       "qtd_desafios": 5,
       "qtd_moedas": 5,
@@ -2833,12 +3301,12 @@
     },
     {
       "id": 2,
-      "nivel": "Nível 2",
+      "nivel": "nivel 2",
       "status": {
         "id": 1,
         "nome": "Concluído"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Comum",
       "qtd_moedas": 5,
@@ -2847,12 +3315,12 @@
     },
     {
       "id": 3,
-      "nivel": "Nível 3",
+      "nivel": "nivel 3",
       "status": {
         "id": 2,
         "nome": "Desbloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Comum",
       "qtd_moedas": 5,
@@ -2861,12 +3329,12 @@
     },
     {
       "id": 4,
-      "nivel": "Nível 4",
+      "nivel": "nivel 4",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Comum",
       "qtd_moedas": 5,
@@ -2875,12 +3343,12 @@
     },
     {
       "id": 5,
-      "nivel": "Nível 5",
+      "nivel": "nivel 5",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Especial",
       "qtd_moedas": 5,
@@ -2889,12 +3357,12 @@
     },
     {
       "id": 6,
-      "nivel": "Nível 6",
+      "nivel": "nivel 6",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Comum",
       "qtd_moedas": 5,
@@ -2903,12 +3371,12 @@
     },
     {
       "id": 7,
-      "nivel": "Nível 7",
+      "nivel": "nivel 7",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Comum",
       "qtd_moedas": 5,
@@ -2917,12 +3385,12 @@
     },
     {
       "id": 8,
-      "nivel": "Nível 8",
+      "nivel": "nivel 8",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Comum",
       "qtd_moedas": 5,
@@ -2931,12 +3399,12 @@
     },
     {
       "id": 9,
-      "nivel": "Nível 9",
+      "nivel": "nivel 9",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Especial",
       "qtd_moedas": 5,
@@ -2945,12 +3413,12 @@
     },
     {
       "id": 10,
-      "nivel": "Nível 10",
+      "nivel": "nivel 10",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Comum",
       "qtd_moedas": 5,
@@ -2959,12 +3427,12 @@
     },
     {
       "id": 11,
-      "nivel": "Nível 11",
+      "nivel": "nivel 11",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Comum",
       "qtd_moedas": 5,
@@ -2973,12 +3441,12 @@
     },
     {
       "id": 12,
-      "nivel": "Nível 12",
+      "nivel": "nivel 12",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Comum",
       "qtd_moedas": 5,
@@ -2987,12 +3455,12 @@
     },
     {
       "id": 13,
-      "nivel": "Nível 13",
+      "nivel": "nivel 13",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Comum",
       "qtd_moedas": 5,
@@ -3001,12 +3469,12 @@
     },
     {
       "id": 14,
-      "nivel": "Nível 14",
+      "nivel": "nivel 14",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Especial",
       "qtd_moedas": 5,
@@ -3015,12 +3483,12 @@
     },
     {
       "id": 15,
-      "nivel": "Nível 15",
+      "nivel": "nivel 15",
       "status": {
         "id": 3,
         "nome": "Bloqueado"
       },
-      "descricao": "Descrição do nível",
+      "descricao": "descricao do nivel",
       "qtd_desafios": 5,
       "tipo": "Comum",
       "qtd_moedas": 5,
@@ -3028,268 +3496,127 @@
       "imagem": "/images/planet/tesserax.png"
     }
   ],
-  "estatisticas": [
-    {
-      "id": 1,
-      "Usuário": {
-        "id": 1,
-        "Nome": "Astro João"
-      },
-      "Logins": 10,
-      "Tempo_Plataforma": 3600,
-      "Missões_Concluídas": 1,
-      "Bugs_Corrigidos": 5,
-      "Cobertura_Testes": 80.0,
-      "Dívidas_Técnicas": 2
-    },
-    {
-      "id": 2,
-      "Usuário": {
-        "id": 2,
-        "Nome": "Luna Maria"
-      },
-      "Logins": 5,
-      "Tempo_Plataforma": 1800,
-      "Missões_Concluídas": 0,
-      "Bugs_Corrigidos": 0,
-      "Cobertura_Testes": 0.0,
-      "Dívidas_Técnicas": 0
-    }
-  ],
   "status": [
     {
       "id": 1,
-      "Nome": "Não Explorado",
-      "Descrição": "Ainda não iniciado"
+      "nome": "Não Explorado",
+      "descricao": "Ainda não iniciado"
     },
     {
       "id": 2,
-      "Nome": "Pendente",
-      "Descrição": "Aguardando início"
+      "nome": "Pendente",
+      "descricao": "Aguardando início"
     },
     {
       "id": 3,
-      "Nome": "Estacionada",
-      "Descrição": "Nave parada"
+      "nome": "Estacionada",
+      "descricao": "posicao parada"
     },
     {
       "id": 4,
-      "Nome": "Inativa",
-      "Descrição": "Não ativa"
+      "nome": "Inativa",
+      "descricao": "Não ativa"
     },
     {
       "id": 5,
-      "Nome": "Ativa",
-      "Descrição": "Entidade ativa"
+      "nome": "Ativa",
+      "descricao": "Entidade ativa"
     },
     {
       "id": 6,
-      "Nome": "Incompleto",
-      "Descrição": "Parcialmente concluído"
+      "nome": "Incompleto",
+      "descricao": "Parcialmente concluído"
     },
     {
       "id": 8,
-      "Nome": "Em Progresso",
-      "Descrição": "Em execução"
+      "nome": "Em progresso",
+      "descricao": "Em execução"
     },
     {
       "id": 9,
-      "Nome": "Concluída",
-      "Descrição": "Finalizada"
+      "nome": "Concluída",
+      "descricao": "Finalizada"
     },
     {
       "id": 10,
-      "Nome": "Desbloqueado",
-      "Descrição": "Acessível"
+      "nome": "Desbloqueado",
+      "descricao": "Acessível"
     },
     {
       "id": 11,
-      "Nome": "Em Rota",
-      "Descrição": "Nave em movimento"
+      "nome": "Em Rota",
+      "descricao": "posicao em movimento"
     }
   ],
   "tipo_credencial": [
     {
       "id": 1,
-      "Nome": "Projeto",
-      "Descrição": "Credencial de projeto"
+      "nome": "projeto",
+      "descricao": "Credencial de projeto"
     },
     {
       "id": 2,
-      "Nome": "Nave",
-      "Descrição": "Credencial de nave"
+      "nome": "posicao",
+      "descricao": "Credencial de posicao"
     },
     {
       "id": 4,
-      "Nome": "Individual",
-      "Descrição": "Medalha individual"
+      "nome": "Individual",
+      "descricao": "Medalha individual"
     },
     {
       "id": 5,
-      "Nome": "Equipe",
-      "Descrição": "Medalha de equipe"
+      "nome": "equipe",
+      "descricao": "Medalha de equipe"
     }
   ],
   "tipo_item": [
     {
       "id": 1,
-      "Nome": "Traje",
-      "Descrição": "Roupas personalizadas"
+      "nome": "Traje",
+      "descricao": "Roupas personalizadas"
     },
     {
       "id": 2,
-      "Nome": "Acessório",
-      "Descrição": "Itens decorativos"
+      "nome": "Acessório",
+      "descricao": "Itens decorativos"
     }
   ],
-  "entregas": [
+  "documentacao": [
     {
       "id": 1,
-      "Missão": {
-        "id": 1,
-        "Nome": "Otimizar API Estelar"
-      },
-      "Nome": "Configurar Cache",
-      "Descrição": "Implementar Redis",
-      "Status": {
-        "id": 2,
-        "Nome": "Pendente"
-      },
-      "Data_Criação": "2025-04-25T08:00:00Z",
-      "Data_Conclusão": null,
-      "Usuário": {
-        "id": 1,
-        "Nome": "Astro João"
-      }
+      "titulo": "Visão Geral",
+      "conteudo": "### Objetivo\n---\n\nTornar a rotina de desenvolvedores mais lúdica, motivadora e engajada por meio da gamificação. A proposta incentiva a melhoria contínua da qualidade do código, o cumprimento de prazos e a colaboração entre equipes.\n\n### Tema\n---\n\nA temática central é uma aventura espacial, onde cada equipe de desenvolvedores representa a tripulacao de uma posicao.\n\nAs ações dos integrantes afetam diretamente a qualidade do código, a reputação da tripulacao e o sucesso da jornada pelo universo do projeto."
     },
     {
       "id": 2,
-      "Missão": {
-        "id": 2,
-        "Nome": "Corrigir Bug Crítico"
-      },
-      "Nome": "Debug Endpoint",
-      "Descrição": "Corrigir erro 500",
-      "Status": {
-        "id": 9,
-        "Nome": "Concluída"
-      },
-      "Data_Criação": "2025-04-20T09:00:00Z",
-      "Data_Conclusão": "2025-04-25T15:00:00Z",
-      "Usuário": {
-        "id": 2,
-        "Nome": "Luna Maria"
-      }
-    }
-  ],
-  "usuario_missao": [
-    {
-      "Usuário_id": 1,
-      "Missão_id": 1,
-      "Data_Atribuição": "2025-04-25T08:00:00Z"
+      "titulo": "Temática e Cenário",
+      "conteudo": "### Ambientação\n---\n\n- **Espaçoposicao e tripulacao**: Cada equipe de devs é uma tripulacao responsável por uma posicao.\n- **Universo do Jogo**: O cenário é um cosmos explorável, onde planetas e galáxias representam etapas do projeto.\n- **Estado Inicial**: A posicao começa quebrada em um planeta, exigindo reparos (missões vermelhas) para decolar.\n\n### Alegorias das Missões\n---\n\n- **Reparos da posicao** ↔ **correção de bugs e demandas críticas**.\n- **Melhorias da posicao** ↔ **Otimizações de código e features adicionais**.\n- **Missões de Resgate** ↔ **Colaboração entre equipes**."
     },
     {
-      "Usuário_id": 2,
-      "Missão_id": 2,
-      "Data_Atribuição": "2025-04-20T09:00:00Z"
-    }
-  ],
-  "usuario_mascote": [
-    {
-      "Usuário_id": 1,
-      "Mascote_id": 1,
-      "Data_Conquista": "2025-04-25T10:00:00Z"
+      "id": 3,
+      "titulo": "Objetos e Papéis dos Usuários",
+      "conteudo": "### Tipos de Missões\n---\n\n**🔴 Missões Vermelhas (Urgente)**\n- Objetivo: Resolver bugs críticos e tarefas essenciais para o funcionamento do projeto.\n- Recompensa: Avanço no progresso da posicao (reparos básicos).\n\n**🟡 Missões Amarelas (Melhoria)**\n- Objetivo: Otimizações, refatorações e melhorias de performance.\n- Recompensa: estelares (moeda do jogo).\n\n**🔵 Missões Azuis (Colaboração)**\n- Objetivo: Ajudar outras equipes em tarefas emergenciais ou de alta complexidade.\n- Recompensa: Itens exclusivos e Medalha Cósmica.\n\n**🟢 Missões Verdes (Básica)**\n- Objetivo: Tarefas simples, documentação, pequenas melhorias.\n- Recompensa: XP e customizações de avatar.\n\n### Personagens e Customização\n---\n\n- **avatar do Dev**: Cada participante pode personalizar seu avatar com roupas, acessórios e equipamentos temáticos.\n- **Pets Alienígenas**: Criaturas colecionáveis que acompanham a tripulacao. Servem como elementos de diversão e diferenciação estética (sem impacto direto no progresso)."
     },
     {
-      "Usuário_id": 2,
-      "Mascote_id": 2,
-      "Data_Conquista": "2025-04-26T10:00:00Z"
-    }
-  ],
-  "usuario_medalha": [
-    {
-      "Usuário_id": 1,
-      "Medalha_id": 1,
-      "Data_Conquista": "2025-04-25T15:00:00Z"
+      "id": 4,
+      "titulo": "Mecânicas Principais",
+      "conteudo": "### Sistema de Missões\n---\n\n- **Missões Vermelhas**: Devem ser concluídas para \"decolar a posicao\" (entregar o projeto funcional).\n- **Missões Amarelas**: Liberam estelares, usados para melhorias de desempenho e cosméticos.\n- **Missões Azuis**: Eventos de colaboração entre equipes, com recompensas exclusivas.\n\n### Economia do Jogo (estelares)\n---\n\n- **O que comprar?**\n  - Melhorias de posicao (performance do projeto).\n  - Itens de avatar (personalização).\n  - Pets e itens colecionáveis.\n\n### Sistema de Medalhas e Premiações\n---\n\n- **Medalha Cósmica**: Ganha ao completar missões azuis.\n- **Prêmios Reais**: Ao juntar 5 medalhas, o dev recebe benefícios do \"Banco Galático\" (BB)."
     },
     {
-      "Usuário_id": 1,
-      "Medalha_id": 2,
-      "Data_Conquista": "2025-04-26T10:00:00Z"
-    }
-  ],
-  "usuario_credencial": [
-    {
-      "Usuário_id": 1,
-      "Credencial_id": 1
+      "id": 5,
+      "titulo": "Progressão e Recompensas",
+      "conteudo": "### Viagens e Etapas do projeto\n---\n\n- Cada **planeta explorado** = **etapa concluída do projeto**.\n- Chegar antes do prazo = bônus (melhorias extras).\n\n### Colecionismo e Pets\n---\n\n- **Pets Tamagotchi**: Encontrados em planetas, evoluem com interação.\n- **Itens Raros**: Adquiridos em missões colaborativas."
     },
     {
-      "Usuário_id": 1,
-      "Credencial_id": 2
-    }
-  ],
-  "usuario_item": [
-    {
-      "Usuário_id": 1,
-      "Item_id": 1,
-      "Data_Aquisição": "2025-04-26T10:00:00Z"
+      "id": 6,
+      "titulo": "Premiações e Reconhecimento",
+      "conteudo": "### No Jogo\n---\n\n- **Ranking de Tripulações**: equipes mais eficientes.\n- **Medalhas Cósmicas**: Destaque em colaboração.\n\n### No Mundo Real\n---\n\n- **Prêmios do Banco do Brasil**: Para devs com mais medalhas (ex.: vale-presente, dias de folga)."
     },
     {
-      "Usuário_id": 2,
-      "Item_id": 2,
-      "Data_Aquisição": "2025-04-26T11:00:00Z"
-    }
-  ],
-  "usuario_conquista": [
-    {
-      "Usuário_id": 1,
-      "Conquista_id": 1,
-      "Data_Resgate": "2025-04-25T15:00:00Z"
-    },
-    {
-      "Usuário_id": 2,
-      "Conquista_id": 2,
-      "Data_Resgate": "2025-04-26T10:00:00Z"
-    }
-  ],
-  "usuario_nivel": [
-    {
-      "Usuário_id": 1,
-      "Nível_id": 1,
-      "Status": {
-        "id": 9,
-        "Nome": "Concluída"
-      },
-      "Data_Conclusão": "2025-04-25T12:00:00Z"
-    },
-    {
-      "Usuário_id": 2,
-      "Nível_id": 1,
-      "Status": {
-        "id": 2,
-        "Nome": "Pendente"
-      },
-      "Data_Conclusão": null
-    }
-  ],
-  "usuario_missao_verde": [
-    {
-      "Usuário_id": 1,
-      "Missão_Verde_id": 1,
-      "Status": {
-        "id": 9,
-        "Nome": "Concluída"
-      },
-      "Data_Conclusão": "2025-04-25T12:00:00Z"
-    },
-    {
-      "Usuário_id": 2,
-      "Missão_Verde_id": 2,
-      "Status": {
-        "id": 2,
-        "Nome": "Pendente"
-      },
-      "Data_Conclusão": null
+      "id": 7,
+      "titulo": "Considerações Finais",
+      "conteudo": "### Flexibilidade\n---\n\n- Número de medalhas para prêmios pode ser ajustado.\n\n### Expansões Futuras\n---\n\n- Novos planetas (projetos), raças alienígenas (equipes externas), e eventos sazonais."
     }
   ]
 }

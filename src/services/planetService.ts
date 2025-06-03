@@ -21,15 +21,15 @@ export interface Planet {
 
 interface RawPlanet {
   id: number;
-  Nome: string;
-  Descrição: string | null;
-  Titulo: string;
-  Status: {id: number, Nome: string} | null;
-  Qtd_missões: number | null;
-  Tema_Principal: {id: number, Nome: string} | null;
-  Imagem: string | null;
-  Gentilico: string;
-  Mascotes: {id: number, Nome: string, Imagem: string, Descrição: string}[] | null;
+  nome: string;
+  descricao: string | null;
+  titulo: string;
+  status: {id: number, nome: string} | null;
+  qtd_missoes: number | null;
+  tema_principal: {id: number, nome: string} | null;
+  imagem: string | null;
+  gentilico: string;
+  mascotes: {id: number, nome: string, imagem: string, descricao: string}[] | null;
   categoria: string;
   top: number;
   left: number;
@@ -37,17 +37,17 @@ interface RawPlanet {
 
 const mapRawPlanetToPlanet = (raw: RawPlanet): Planet => ({
     id: raw.id,
-    Nome: raw.Nome,
-    Descrição: raw.Descrição ? raw.Descrição : undefined,
-    Titulo: raw.Titulo,
-    Status: raw.Status?.Nome ? raw.Status.Nome : undefined,
-    Qtd_missões: raw.Qtd_missões ? raw.Qtd_missões : undefined,
-    Tema_Principal: raw.Tema_Principal?.Nome ? raw.Tema_Principal.Nome : undefined,
-    Imagem: raw.Imagem ? raw.Imagem : undefined,
-    Gentilico: raw.Gentilico,
-    Mascote_nome: raw.Mascotes ? raw.Mascotes.map(mascote => mascote.Nome) : [],
-    Mascote_imagem: raw.Mascotes ? raw.Mascotes.map(mascote => mascote.Imagem) : [],
-    Mascote_descricao: raw.Mascotes ? raw.Mascotes.map(mascote => mascote.Descrição) : [],
+    Nome: raw.nome,
+    Descrição: raw.descricao ? raw.descricao : undefined,
+    Titulo: raw.titulo,
+    Status: raw.status?.nome ? raw.status.nome : undefined,
+    Qtd_missões: raw.qtd_missoes ? raw.qtd_missoes : undefined,
+    Tema_Principal: raw.tema_principal?.nome ? raw.tema_principal.nome : undefined,
+    Imagem: raw.imagem ? raw.imagem : undefined,
+    Gentilico: raw.gentilico,
+    Mascote_nome: raw.mascotes ? raw.mascotes.map(mascote => mascote.nome) : [],
+    Mascote_imagem: raw.mascotes ? raw.mascotes.map(mascote => mascote.imagem) : [],
+    Mascote_descricao: raw.mascotes ? raw.mascotes.map(mascote => mascote.descricao) : [],
     categoria: raw.categoria,
     top: raw.top,
     left: raw.left,
