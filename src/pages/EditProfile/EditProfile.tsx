@@ -21,7 +21,8 @@ import {
   PlanetTitle,
   CredentialTitle,
   CredentialContent,
-  MascotsContainer,
+  CredentialContent2,
+  AchievementsTitle,
 } from "./EditProfile.styles";
 import planets from "../../assets/planets";
 import ModalProfile from "./components/ModalProfile";
@@ -120,8 +121,10 @@ export function EditProfile() {
               </MascotsContainer>
             ))}
           </MascotsTitle>
-          <span>Conquistas</span>
-          <img src={images.conquistas} alt="" />
+          <AchievementsTitle>
+            <span>Conquistas</span>
+            <img src={images.conquistas} alt="" />
+          </AchievementsTitle>
         </MascotsAndAchievements>
       </Profile>
 

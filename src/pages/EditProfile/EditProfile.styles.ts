@@ -116,6 +116,23 @@ export const MascotsContainer = styled.div`
   }
 `;
 
+export const AchievementsTitle = styled.div `
+   display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  align-items: center;
+  margin-top: 60px;
+  gap: 22px;
+  img {
+    height: 10rem;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2) translateY(-8px);
+    }
+  }
+`
+
 export const AvatarContainer = styled.div`
   padding-top: 30px;
   padding-left: 1px;

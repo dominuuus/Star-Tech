@@ -18,7 +18,56 @@ export const EditAvatarContainer = styled.div`
 export const Inventory = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+`;
+
+export const InventoryButtons = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-bottom: 8px;
+`;
+export const Button = styled.div`
+  position: relative;
+  width: 105px;
+  height: 40px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background-color: #09152B;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: skewX(-20deg);
+  transform-origin: left;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background-color: white;
+    transition: width 0.4s ease, left 0.4s ease;
+    z-index: -1;
+    transform: skewX(-20deg);
+    transform-origin: left;
+  }
+
+  &:hover::before {
+    width: 160px;
+    left: 0;
+  }
+
+  &:hover {
+    color: #09152B;
+  }
 `;
 export const GridInventario = styled.div`
   display: grid;
@@ -70,23 +119,76 @@ export const BodyCell = styled.div`
   flex-direction: row;
 `;
 
-export const ZoomableAstronaut = styled.div<{ "data-zoom"?: boolean }>`
-  transition: transform 0.5s ease;
-  transform: ${({ "data-zoom": zoom }) =>
-    zoom ? "scale(2.5) translateY(-30%)" : "scale(1) translateY(0)"};
-  transform-origin: top center;
-
-  img {
-    width: 300px;
-    height: auto;
-    display: block;
-  }
-`;
-
 export const AstronautImage = styled.div`
   position: relative;
   img {
     width: 300px;
     display: block;
+  }
+`;
+
+export const LineWrapper = styled.div`
+  position: absolute;
+  &[data-mirrored="true"] {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+`;
+
+export const DiagonalLine = styled.div`
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(-45deg);
+  transform-origin: left;
+  position: absolute;
+
+  ${LineWrapper}[data-mirrored="true"] & {
+    transform: rotate(45deg);
+    transform-origin: right;
+    left: auto;
+    right: 0;
+  }
+`;
+
+export const HorizontalLine = styled.div`
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  margin-left: -5px;
+  margin-top: -15px;
+  left: 20px;
+  position: relative;
+
+  ${LineWrapper}[data-mirrored="true"] & {
+    left: auto;
+    right: 20px;
+    margin-left: 0;
+    margin-right: -5px;
+  }
+`;
+
+export const ScoreBox = styled.div`
+  position: absolute;
+  left: 60px;
+  top: 2px;
+  padding: 5px 10px;
+  background-color: #2d3748;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: -60px;
+
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  ${LineWrapper}[data-mirrored="true"] & {
+    left: auto;
+    right: 60px;
   }
 `;
