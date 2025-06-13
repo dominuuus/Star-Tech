@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
 import { NewsContainer, NewsContent } from "./NewsMission.styles";
 import {
   fetchNotification,
   Notification,
 } from "../../../services/notificationService";
+import { useQuery } from "@tanstack/react-query";
+import { SpinnerGap } from "phosphor-react";
 
 interface NewsMissionProps {
   tipo?: string;
@@ -11,15 +12,19 @@ interface NewsMissionProps {
 }
 
 export function NewsMission({ tipo, maxItems }: NewsMissionProps) {
-  const [notifications, setNotifications] = useState<Notification[]>([]);
 
-  useEffect(() => {
-    fetchNotification().then(setNotifications).catch(console.error);
-  }, []);
+  const { data: notifications, isLoading, isError, error } = useQuery<Notification[], Error>({
+    queryKey: ['notificacoes'],
+    queryFn: fetchNotification,
+  });
+
+  if (isLoading) return <p><SpinnerGap size={32} /></p>;
+  if (isError) return <p>Erro: {error?.message || 'Erro ao carregar mascotes'}</p>;
+
 
   const filteredNotification = tipo
-    ? notifications.filter((notification) => notification.Tipo === tipo)
-    : notifications;
+    ? (notifications ?? []).filter((notification) => notification.Tipo === tipo)
+    : (notifications ?? []);
 
   const displayedNotification = maxItems
     ? filteredNotification.slice(0, maxItems)

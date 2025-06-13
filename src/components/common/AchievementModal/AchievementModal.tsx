@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   Achievement,
   fetchAchievement,
@@ -16,6 +16,8 @@ import {
 } from "./AchievementModal.styles";
 
 import images from "../../../assets/images";
+import { useQuery } from "@tanstack/react-query";
+import { SpinnerGap } from "phosphor-react";
 
 interface AchievementModalProps {
   isOpen: boolean;
@@ -107,11 +109,13 @@ function AchievementList({ achievements }: AchievementListProps) {
 }
 
 export function AchievementPage() {
-  const [achievements, setAchievements] = useState<Achievement[]>([]);
+  const { data: achievements, isLoading, isError, error } = useQuery<Achievement[], Error>({
+    queryKey: ['achievements'],
+    queryFn: fetchAchievement,
+  });
 
-  useEffect(() => {
-    fetchAchievement().then(setAchievements).catch(console.error);
-  }, []);
+  if (isLoading) return <p><SpinnerGap size={32} /></p>;
+  if (isError) return <p>Erro: {error?.message || 'Erro ao carregar conquistas'}</p>;
 
-  return <AchievementList achievements={achievements} />;
+  return <AchievementList achievements={achievements || []} />;
 }

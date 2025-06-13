@@ -2,63 +2,53 @@
   "usuarios": [
     {
       "id": 1,
-      "nome": "Astro João",
-      "email_mascado": "joao.astro@***.com",
-      "imagem": "https://xai.com/avatars/joao.webp",
+      "nome": "Matheus Rodrigues",
+      "email_mascado": "matheusdev@***.com.br",
+      "imagem": "/images/profile/matheus.png",
       "descricao": "Explorador de bugs estelares",
-      "estelares": 150,
+      "estelares": 1000,
       "nivel": 3,
-      "avatar": {
-        "id": 1,
-        "nome": "Traje Lunar",
-        "imagem": "link.png",
-        "tipo": {
-          "id": 1,
-          "nome": "Traje"
-        }
-      },
       "equipe": {
         "id": 1,
-        "nome": "posicao Orion",
+        "nome": "Codestar-1",
         "status": {
           "id": 5,
           "nome": "Ativa"
         }
       },
-      "cargo": "Tech Líder"
+      "cargo": "Desenvolvedor"
     },
     {
       "id": 2,
-      "nome": "Luna Maria",
-      "email_mascado": "luna.maria@***.com",
+      "nome": "Maiara Silva",
+      "email_mascado": "maiara@***.com.br",
       "imagem": null,
       "descricao": "Especialista em código limpo",
-      "estelares": 50,
+      "estelares": 2500,
       "nivel": 1,
-      "avatar": null,
       "equipe": {
-        "id": 2,
-        "nome": "Estrela Polar",
+        "id": 1,
+        "nome": "Codestar-1",
         "status": {
-          "id": 4,
-          "nome": "Inativa"
+          "id": 1,
+          "nome": "Ativa"
         }
       },
-      "cargo": "Desenvolvedor"
+      "cargo": "Tech Líder"
     }
   ],
   "equipes": [
     {
       "id": 1,
       "nome": "Codestar-1",
-      "descricao": "tripulacao de elite",
+      "descricao": "Tripulacao de elite",
       "nave": {
         "id": 1,
-        "nome": "Orion Explorer",
+        "nome": "Codestar-1",
         "imagem": "/images/spaceship/codestar1.gif"
       },
       "status": {
-        "id": 5,
+        "id": 1,
         "nome": "Ativa"
       },
       "tripulacao": [
@@ -913,8 +903,8 @@
         "id": 3,
         "nome": "Atrasada"
       },
-      "data_criacao": "2025-04-30T08:00:00Z",
-      "data_prazo": "2025-05-02T18:00:59Z",
+      "data_criacao": "2025-06-04T08:00:00Z",
+      "data_prazo": "2025-06-10T18:00:59Z",
       "data_conclusao": null,
       "qtd_moedas": 15,
       "conquista": {
@@ -955,13 +945,13 @@
         "id": 3,
         "nome": "Atrasada"
       },
-      "data_criacao": "2025-04-05T10:00:00Z",
-      "data_prazo": "2025-05-04T18:00:59Z",
+      "data_criacao": "2025-06-05T10:00:00Z",
+      "data_prazo": "2025-06-12T18:00:59Z",
       "data_conclusao": null,
       "qtd_moedas": 10,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
+        "nome": "Qualidade Constante",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
@@ -997,13 +987,13 @@
         "id": 2,
         "nome": "Em Progresso"
       },
-      "data_criacao": "2025-05-02T09:00:00Z",
-      "data_prazo": "2025-05-10T18:00:59Z",
+      "data_criacao": "2025-06-10T09:00:00Z",
+      "data_prazo": "2025-06-17T18:00:59Z",
       "data_conclusao": null,
       "qtd_moedas": 20,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
+        "nome": "Qualidade Constante",
         "imagem": "/images/achievement/qualidade-constante.png",
         "descricao": "Eliminar redundâncias ou excessos de um código antigo"
       },
@@ -1167,7 +1157,7 @@
       },
       "data_criacao": "2025-04-25T10:00:00Z",
       "data_prazo": "2025-05-03T21:00:59Z",
-      "data_conclusao": "2025-05-02T14:30:00Z",
+      "data_conclusao": "2025-06-10T14:30:00Z",
       "qtd_moedas": 8,
       "conquista": {
         "id": 1,
@@ -4243,5 +4233,259 @@
       "titulo": "Considerações Finais",
       "conteudo": "### Flexibilidade\n---\n\n- Número de medalhas para prêmios pode ser ajustado.\n\n### Expansões Futuras\n---\n\n- Novos planetas (projetos), raças alienígenas (equipes externas), e eventos sazonais."
     }
+  ],
+  "shop": [
+    {
+    "id": 1,
+    "nome": "Almofada Buggo",
+    "descricao": "Almofada Buggo",
+    "categoria": "Almofada",
+    "genero": "",
+    "estelares": 800,
+    "imagem": "/images/shop/almofada-buggo.png"
+  },
+  {
+    "id": 2,
+    "nome": "Almofada Nulli",
+    "descricao": "Almofada Nulli",
+    "categoria": "Almofada",
+    "genero": "",
+    "estelares": 800,
+    "imagem": "/images/shop/almofada-nulli.png"
+  },
+  {
+    "id": 3,
+    "nome": "Caderno Buggo",
+    "descricao": "Caderno Buggo",
+    "categoria": "Caderno",
+    "genero": "",
+    "estelares": 1000,
+    "imagem": "/images/shop/caderno-buggo.png"
+  },
+  {
+    "id": 4,
+    "nome": "Camisa Pyron",
+    "descricao": "Camisa Pyron",
+    "categoria": "Camisa",
+    "genero": "M",
+    "estelares": 1500,
+    "imagem": "/images/shop/camisaM-pyron.png"
+  },
+  {
+    "id": 5,
+    "nome": "Camisa Syntaxx",
+    "descricao": "Camisa Syntaxx",
+    "categoria": "Camisa",
+    "genero": "M",
+    "estelares": 1500,
+    "imagem": "/images/shop/camisaM-syntaxx.png"
+  },
+  {
+    "id": 6,
+    "nome": "Camiseta Nubbi",
+    "descricao": "Camiseta Nubbi",
+    "categoria": "Camiseta",
+    "genero": "U",
+    "estelares": 1500,
+    "imagem": "/images/shop/camiseta-nubbi.png"
+  },
+  {
+    "id": 7,
+    "nome": "Camiseta Voidy",
+    "descricao": "Camiseta Voidy",
+    "categoria": "Camiseta",
+    "genero": "M",
+    "estelares": 1500,
+    "imagem": "/images/shop/camisetaM-voidy.png"
+  },
+  {
+    "id": 8,
+    "nome": "Caneca Snipz",
+    "descricao": "Caneca Snipz",
+    "categoria": "Caneca",
+    "genero": "",
+    "estelares": 500,
+    "imagem": "/images/shop/caneca-snipz.png"
+  },
+  {
+    "id": 10,
+    "nome": "Almofada Voidy",
+    "descricao": "Almofada Voidy",
+    "categoria": "Almofada",
+    "genero": "",
+    "estelares": 800,
+    "imagem": "/images/shop/almofada-voidy.png"
+  },
+  {
+    "id": 11,
+    "nome": "Caneca Syntaxx",
+    "descricao": "Caneca Syntaxx",
+    "categoria": "Caneca",
+    "genero": "",
+    "estelares": 500,
+    "imagem": "/images/shop/caneca-syntaxx.png"
+  },
+  {
+    "id": 12,
+    "nome": "Camiseta Cometin",
+    "descricao": "Camiseta Cometin",
+    "categoria": "Camiseta",
+    "genero": "F",
+    "estelares": 1500,
+    "imagem": "/images/shop/camisetaF-cometin.png"
+  },
+  {
+    "id": 13,
+    "nome": "Camiseta Patch3",
+    "descricao": "Camiseta Patch3",
+    "categoria": "Camiseta",
+    "genero": "M",
+    "estelares": 1500,
+    "imagem": "/images/shop/camisetaM-patch3.png"
+  },
+  {
+    "id": 14,
+    "nome": "Caneca Nulli",
+    "descricao": "Caneca Nulli",
+    "categoria": "Caneca",
+    "genero": "",
+    "estelares": 500,
+    "imagem": "/images/shop/caneca-nulli.png"
+  },
+  {
+    "id": 15,
+    "nome": "Casaco Bugfreeone",
+    "descricao": "Casaco Bugfreeone",
+    "categoria": "Casaco",
+    "genero": "",
+    "estelares": 2200,
+    "imagem": "/images/shop/casaco-bugFreeOne.png"
+  },
+  {
+    "id": 16,
+    "nome": "Adesivo Nubbi",
+    "descricao": "Adesivo Nubbi",
+    "categoria": "Adesivo",
+    "genero": "",
+    "estelares": 100,
+    "imagem": "/images/shop/adesivo-nubbi.png"
+  },
+  {
+    "id": 17,
+    "nome": "Casaco Comostrix",
+    "descricao": "Casaco Comostrix",
+    "categoria": "Casaco",
+    "genero": "",
+    "estelares": 2200,
+    "imagem": "/images/shop/casaco-nave2.png"
+  },
+  {
+    "id": 18,
+    "nome": "Almofada Cometin",
+    "descricao": "Almofada Cometin",
+    "categoria": "Almofada",
+    "genero": "",
+    "estelares": 800,
+    "imagem": "/images/shop/almofada-cometin.png"
+  },
+  {
+    "id": 19,
+    "nome": "Camisa Orbix",
+    "descricao": "Camisa Orbix",
+    "categoria": "Camisa",
+    "genero": "M",
+    "estelares": 1500,
+    "imagem": "/images/shop/camisaM-orbix.png"
+  },
+  {
+    "id": 20,
+    "nome": "Caneca Algorix",
+    "descricao": "Caneca Algorix",
+    "categoria": "Caneca",
+    "genero": "",
+    "estelares": 500,
+    "imagem": "/images/shop/caneca-algorix.png"
+  },
+  {
+    "id": 21,
+    "nome": "Caneca Voidy",
+    "descricao": "Caneca Voidy",
+    "categoria": "Caneca",
+    "genero": "",
+    "estelares": 500,
+    "imagem": "/images/shop/caneca-voidy.png"
+  },
+  {
+    "id": 22,
+    "nome": "Caneca Buggo",
+    "descricao": "Caneca Buggo",
+    "categoria": "Caneca",
+    "genero": "",
+    "estelares": 500,
+    "imagem": "/images/shop/caneca-buggo.png"
+  },
+  {
+    "id": 23,
+    "nome": "Camiseta Galaxito",
+    "descricao": "Camisetaf Galaxito",
+    "categoria": "Camiseta",
+    "genero": "F",
+    "estelares": 1500,
+    "imagem": "/images/shop/camisetaF-galaxito.png"
+  },
+  {
+    "id": 24,
+    "nome": "Camiseta Bytron",
+    "descricao": "Camiseta Bytron",
+    "categoria": "Camiseta",
+    "genero": "U",
+    "estelares": 1500,
+    "imagem": "/images/shop/camiseta-bytron.png"
+  },
+  {
+    "id": 25,
+    "nome": "Camiseta Floris",
+    "descricao": "Camiseta Floris",
+    "categoria": "Camiseta",
+    "genero": "",
+    "estelares": 1500,
+    "imagem": "/images/shop/camiseta-floris.png"
+  },
+  {
+    "id": 26,
+    "nome": "Caderno Cometin",
+    "descricao": "Caderno Cometin",
+    "categoria": "Caderno",
+    "genero": "",
+    "estelares": 1000,
+    "imagem": "/images/shop/caderno-cometin.png"
+  },
+  {
+    "id": 27,
+    "nome": "Almofada Nubbi",
+    "descricao": "Almofada Nubbi",
+    "categoria": "Almofada",
+    "genero": "",
+    "estelares": 800,
+    "imagem": "/images/shop/almofada-nubbi.png"
+  },
+  {
+    "id": 28,
+    "nome": "Almofada Poxel",
+    "descricao": "Almofada Poxel",
+    "categoria": "Almofada",
+    "genero": "",
+    "estelares": 800,
+    "imagem": "/images/shop/almofada-poxel.png"
+  },
+  {
+    "id": 29,
+    "nome": "Caderno Xilo",
+    "descricao": "Caderno Xilo",
+    "categoria": "Caderno",
+    "genero": "",
+    "estelares": 1000,
+    "imagem": "/images/shop/caderno-xilo.png"
+  }
   ]
 }

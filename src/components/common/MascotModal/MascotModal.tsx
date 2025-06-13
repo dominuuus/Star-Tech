@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { fetchMascot, Mascot } from "../../../services/mascotService";
 import {
   CloseModalButton,
@@ -12,6 +12,8 @@ import {
   ModalContentWrapper,
   ModalOverlay,
 } from "./MascotModal.styles";
+import { useQuery } from "@tanstack/react-query";
+import { SpinnerGap } from "phosphor-react";
 
 interface MascotModalProps {
   isOpen: boolean;
@@ -101,11 +103,13 @@ function MascotList({ mascots }: MascotListProps) {
 }
 
 export function MascotPage() {
-  const [mascots, setMascots] = useState<Mascot[]>([]);
+  const { data: mascots, isLoading, isError, error } = useQuery<Mascot[], Error>({
+    queryKey: ['mascots'],
+    queryFn: fetchMascot,
+  });
 
-  useEffect(() => {
-    fetchMascot().then(setMascots).catch(console.error);
-  }, []);
+  if (isLoading) return <p><SpinnerGap size={32} /></p>;
+  if (isError) return <p>Erro: {error?.message || 'Erro ao carregar mascotes'}</p>;
 
-  return <MascotList mascots={mascots} />;
+  return <MascotList mascots={mascots || []} />;
 }

@@ -48,7 +48,9 @@ export function MainTopMenu() {
               </NavLink>
             </li>
             <li>
-              <span>Shop</span>
+              <NavLink to="shop" title="Shop">
+                Shop
+              </NavLink>
             </li>
             <li>
               <NavLink to="/" title="Home">

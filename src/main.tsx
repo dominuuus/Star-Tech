@@ -4,11 +4,14 @@ import "./index.css";
 import { App } from "./App";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./styles/theme/defaultTheme";
+import { QueryClientWrapper } from "./lib/QueryClientProvider";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={defaultTheme}>
-      <App />
+      <QueryClientWrapper>
+        <App />
+      </QueryClientWrapper>
     </ThemeProvider>
-  </StrictMode>
+  </StrictMode> 
 );

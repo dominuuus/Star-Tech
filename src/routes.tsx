@@ -14,6 +14,7 @@ import { EditAvatar } from "./pages/EditAvatar/EditAvatar";
 import { AboutUs } from "./pages/About/About";
 import { NotLoggedLayout } from "./layouts/notLogged/notLoggedLayout";
 import { NotFound } from "./pages/404/NotFound";
+import LojaEstelar from "./pages/Shop/Shop";
 
 export function Router() {
   return (
@@ -33,6 +34,7 @@ export function Router() {
         <Route path="desafios" element={<GreenMission />} />
         <Route path="docs" element={<Docummentation />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="shop" element={<LojaEstelar />} />
       </Route>
       <Route path="/" element={<NotLoggedLayout />}>
         <Route path="/" element={<LoginIn />} />
