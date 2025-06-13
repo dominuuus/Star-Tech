@@ -159,7 +159,7 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas em s
    Clone o repositório do projeto para sua máquina local usando o comando abaixo:
 
    ```bash
-   git clone <https://github.com/dominuuus/Star-Tech.git>
+   git clone https://github.com/dominuuus/Star-Tech.git
    cd star-tech
    ```
 
