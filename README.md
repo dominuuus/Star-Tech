@@ -177,6 +177,7 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas em s
    - **TypeScript** (v5) - Para tipagem estática.
    - **Styled Components** (v6) - Para estilização.
    - **React Router DOM** (v7) - Para roteamento.
+   - **React Query** (v5) - Para lidar com dados do servidor (server state).
    - **Three.js**, **@react-three/fiber**, e **@react-three/drei** - Para renderização 3D.
    - **Framer Motion** (v12) - Para animações.
    - **Axios** (v1) - Para requisições HTTP.

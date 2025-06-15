@@ -26,6 +26,8 @@ const tipos = [
   "Camiseta",
   "Caneca",
   "Casaco",
+  "Lego",
+  "Pelúcia"
 ] as const;
 
 export default function LojaEstelar() {
@@ -116,7 +118,7 @@ export default function LojaEstelar() {
             />
             <SelectQuantity>
               <h2>{prod.nome}</h2>
-              <p>{prod.estelares} estelares</p>
+              <p>{prod.estelares.toLocaleString("de-DE")} estelares</p>
               <div>
                 <label htmlFor={`quantidade-${prod.id}`} className="sr-only">
                   Quantidade:

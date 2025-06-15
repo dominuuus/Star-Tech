@@ -127,7 +127,7 @@ export async function fetchMissionById(id: number): Promise<Mission> {
     } catch (fallbackError) {
       console.error("Erro no fallback para db.json:", fallbackError);
       throw new Error(
-        `Falha ao carregar missão com id ${id}. Verifique o JSON Server ou o arquivo db.json.`
+        `Falha ao carregar missão com id ${id}. Ou ela não existe.`
       );
     }
   }

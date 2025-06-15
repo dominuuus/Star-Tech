@@ -30,7 +30,7 @@ interface Filters {
 export function MissionCardStatus() {
   const [missions, setMissions] = useState<Mission[]>([]);
   const [filters, setFilters] = useState<Filters>({
-    status: "late",
+    status: "all",
     project: "",
     dataInicio: "",
     dataFim: "",
@@ -99,7 +99,7 @@ export function MissionCardStatus() {
 
   const handleClearFilters = () => {
     const defaultFilters: Filters = {
-      status: "late",
+      status: "all",
       project: "",
       dataInicio: "",
       dataFim: "",
@@ -150,11 +150,14 @@ export function MissionCardStatus() {
                   onChange={handleFilterChange}
                 />
                 <datalist id="project">
+                  <option value="Acessibilidade App"></option>
                   <option value="BB Cash"></option>
-                  <option value="Open Finance"></option>
-                  <option value="BB Investimento"></option>
-                  <option value="BB Financiamento"></option>
+                  <option value="Carteira bB"></option>
                   <option value="CDB DI"></option>
+                  <option value="Conta Universitária"></option>
+                  <option value="Empréstimo Pessoal"></option>
+                  <option value="Financiamento Imobiliário"></option>
+                  <option value="Open Finance"></option>
                 </datalist>
               </div>
             </ProjectFilterContainer>

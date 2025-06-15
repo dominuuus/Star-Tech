@@ -364,7 +364,7 @@
     "titulo": "A Rede Viva",
     "status": {
       "id": 1,
-      "nome": "Explorado"
+      "nome": "Bloqueado"
     },
     "qtd_missoes": 7,
     "tema_principal": {
@@ -478,7 +478,7 @@
     "titulo": "O Sentinela das Sombras",
     "status": {
       "id": 1,
-      "nome": "Explorado"
+      "nome": "Bloqueado"
     },
     "qtd_missoes": 4,
     "tema_principal": {
@@ -518,7 +518,7 @@
     "titulo": "O Mundo da Energia Criativa",
     "status": {
       "id": 1,
-      "nome": "Explorado"
+      "nome": "Bloqueado"
     },
     "qtd_missoes": 4,
     "tema_principal": {
@@ -552,7 +552,7 @@
     "titulo": "O Guardião do Frio Estável",
     "status": {
       "id": 1,
-      "nome": "Explorado"
+      "nome": "Bloqueado"
     },
     "qtd_missoes": 4,
     "tema_principal": {
@@ -586,7 +586,7 @@
     "titulo": "A Dimensão Modular",
     "status": {
       "id": 1,
-      "nome": "Explorado"
+      "nome": "Bloqueado"
     },
     "qtd_missoes": 6,
     "tema_principal": {
@@ -806,7 +806,7 @@
     "titulo": "A Singularidade Caótica",
     "status": {
       "id": 1,
-      "nome": "Explorado"
+      "nome": "Bloqueado"
     },
     "qtd_missoes": 8,
     "tema_principal": {
@@ -846,7 +846,7 @@
     "titulo": "Tempestade dos Sussurros",
     "status": {
       "id": 1,
-      "nome": "Explorado"
+      "nome": "Bloqueado"
     },
     "qtd_missoes": 7,
     "tema_principal": {
@@ -904,20 +904,20 @@
         "nome": "Atrasada"
       },
       "data_criacao": "2025-06-04T08:00:00Z",
-      "data_prazo": "2025-06-10T18:00:59Z",
+      "data_prazo": "2025-06-13T18:00:59Z",
       "data_conclusao": null,
-      "qtd_moedas": 15,
+      "qtd_moedas": 20,
       "conquista": {
         "id": 1,
-        "nome": "Qualidade Constante",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Fluxo Fluído",
+        "imagem": "/images/achievement/fluxo-fluido.png",
+        "descricao": "Resolver tarefas de acessibilidade ou responsividade"
       },
       "fases_total": 3,
       "fases_concluidas": 1,
       "planeta": {
         "id": 2,
-        "nome": "Terra"
+        "nome": "Terrara"
       },
       "projeto": {
         "id": 2,
@@ -951,9 +951,9 @@
       "qtd_moedas": 10,
       "conquista": {
         "id": 1,
-        "nome": "Qualidade Constante",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Fluxo Fluído",
+        "imagem": "/images/achievement/fluxo-fluido.png",
+        "descricao": "Resolver tarefas de acessibilidade ou responsividade"
       },
       "fases_total": 2,
       "fases_concluidas": 0,
@@ -963,7 +963,7 @@
       },
       "projeto": {
         "id": 3,
-        "nome": "Financiamento Imobiliário"
+        "nome": "Acessibilidade App"
       },
       "tech_lider": {
         "id": 3,
@@ -995,7 +995,7 @@
         "id": 1,
         "nome": "Qualidade Constante",
         "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "descricao": "Detectar e corrigir um bug em ambiente de teste antes do QA"
       },
       "fases_total": 4,
       "fases_concluidas": 2,
@@ -1029,15 +1029,15 @@
         "id": 2,
         "nome": "Em Progresso"
       },
-      "data_criacao": "2025-05-02T14:00:00Z",
-      "data_prazo": "2025-05-08T11:00:59Z",
+      "data_criacao": "2025-06-10T14:00:00Z",
+      "data_prazo": "2025-06-18T11:00:59Z",
       "data_conclusao": null,
       "qtd_moedas": 15,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
+        "nome": "Qualidade Constante",
         "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "descricao": "Detectar e corrigir um bug em ambiente de teste antes do QA"
       },
       "fases_total": 3,
       "fases_concluidas": 1,
@@ -1046,8 +1046,8 @@
         "nome": "Saturno"
       },
       "projeto": {
-        "id": 5,
-        "nome": "BB Cash"
+        "id": 4,
+        "nome": "Carteira bB"
       },
       "tech_lider": {
         "id": 5,
@@ -1071,15 +1071,15 @@
         "id": 2,
         "nome": "Em Progresso"
       },
-      "data_criacao": "2025-05-02T11:00:00Z",
-      "data_prazo": "2025-05-06T16:00:59Z",
+      "data_criacao": "2025-06-12T11:00:00Z",
+      "data_prazo": "2025-06-17T16:00:59Z",
       "data_conclusao": null,
-      "qtd_moedas": 25,
+      "qtd_moedas": 100,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Missão Relâmpago",
+        "imagem": "/images/achievement/missao-relampago.png",
+        "descricao": "Resolver uma tarefa crítica em menos de um semana"
       },
       "fases_total": 5,
       "fases_concluidas": 2,
@@ -1099,7 +1099,7 @@
     },
     {
       "id": 6,
-      "nome": "corrigir Bug na Geração de Extrato com Data Limite",
+      "nome": "Corrigir Bug na Geração de Extrato com Data Limite",
       "descricao": "A funcionalidade de geração de extrato falha ou retorna dados incorretos quando o usuário seleciona um período que abrange o último dia do mês em anos bissextos ou datas específicas de feriado.",
       "objetivo_tecnico": "1. Analisar e ajustar a lógica de tratamento de datas para considerar anos bissextos e limites de mês/ano\n2. Adicionar testes de unidade e integração para cobrir cenários de \"edge case\" de datas\n3. Garantir que a consulta ao banco de dados lide corretamente com os intervalos de data\n4. Validar o formato e integridade dos dados retornados pelo extrato nessas situações",
       "tipo_missao": {
@@ -1113,15 +1113,15 @@
         "id": 2,
         "nome": "Em Progresso"
       },
-      "data_criacao": "2025-05-01T16:00:00Z",
-      "data_prazo": "2025-05-07T20:00:59Z",
+      "data_criacao": "2025-06-01T16:00:00Z",
+      "data_prazo": "2025-06-17T20:00:59Z",
       "data_conclusao": null,
       "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
+        "nome": "Qualidade Constante",
         "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "descricao": "Detectar e corrigir um bug em ambiente de teste antes do QA"
       },
       "fases_total": 2,
       "fases_concluidas": 1,
@@ -1155,15 +1155,15 @@
         "id": 1,
         "nome": "Concluída"
       },
-      "data_criacao": "2025-04-25T10:00:00Z",
-      "data_prazo": "2025-05-03T21:00:59Z",
+      "data_criacao": "2025-05-25T10:00:00Z",
+      "data_prazo": "2025-06-03T21:00:59Z",
       "data_conclusao": "2025-06-10T14:30:00Z",
       "qtd_moedas": 8,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Luz do Linter",
+        "imagem": "/images/achievement/luz-do-linter.png",
+        "descricao": "Concluir 10 tarefas sem erros de formatação ou estilo"
       },
       "fases_total": 1,
       "fases_concluidas": 1,
@@ -1197,15 +1197,15 @@
         "id": 1,
         "nome": "Concluída"
       },
-      "data_criacao": "2025-04-22T09:00:00Z",
-      "data_prazo": "2025-04-29T22:00:59Z",
-      "data_conclusao": "2025-05-01T11:15:00Z",
+      "data_criacao": "2025-05-22T09:00:00Z",
+      "data_prazo": "2025-06-29T22:00:59Z",
+      "data_conclusao": "2025-06-12T11:15:00Z",
       "qtd_moedas": 5,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Mestre do Estilo",
+        "imagem": "/images/achievement/mestre-do-estilo.png",
+        "descricao": "Padronizar um módulo inteiro seguindo o style guide"
       },
       "fases_total": 1,
       "fases_concluidas": 1,
@@ -1225,7 +1225,7 @@
     },
     {
       "id": 9,
-      "nome": "corrigir Rolagem Inconsistente na Página de Extrato Detalhado",
+      "nome": "Corrigir Rolagem Inconsistente na Página de Extrato Detalhado",
       "descricao": "Usuários relatam que a rolagem da página do extrato detalhado se comporta de forma errática, saltando ou travando em dispositivos específicos ou após certas interações.",
       "objetivo_tecnico": "1. Investigar conflitos de CSS 'overflow' ou posicionamento de elementos\n2. Verificar o impacto de componentes de terceiros ou bibliotecas na rolagem\n3. Garantir a compatibilidade do comportamento de scroll em diferentes posicaogadores e dispositivos\n4. Remover scripts de rolagem personalizados que possam estar causando a inconsistência",
       "tipo_missao": {
@@ -1239,15 +1239,15 @@
         "id": 1,
         "nome": "Concluída"
       },
-      "data_criacao": "2025-04-25T13:00:00Z",
-      "data_prazo": "2025-05-01T20:00:59Z",
-      "data_conclusao": "2025-04-30T16:45:00Z",
+      "data_criacao": "2025-05-25T13:00:00Z",
+      "data_prazo": "2025-06-01T20:00:59Z",
+      "data_conclusao": "2025-05-30T16:45:00Z",
       "qtd_moedas": 15,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Mestre do Refactor",
+        "imagem": "/images/achievement/mestre-do-refactor.png",
+        "descricao": "Conclua 10 missões de reorganização de código sem falhas"
       },
       "fases_total": 2,
       "fases_concluidas": 2,
@@ -1257,7 +1257,7 @@
       },
       "projeto": {
         "id": 10,
-        "nome": "CDB DI"
+        "nome": "Financiamento Imobiliário"
       },
       "tech_lider": {
         "id": 10,
@@ -1281,15 +1281,15 @@
         "id": 1,
         "nome": "Concluída"
       },
-      "data_criacao": "2025-04-10T08:00:00Z",
-      "data_prazo": "2025-04-25T22:00:59Z",
-      "data_conclusao": "2025-04-20T12:00:00Z",
+      "data_criacao": "2025-05-10T08:00:00Z",
+      "data_prazo": "2025-05-25T22:00:59Z",
+      "data_conclusao": "2025-05-20T12:00:00Z",
       "qtd_moedas": 20,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Navegador do Foco",
+        "imagem": "/images/achievement/navegador-do-foco.png",
+        "descricao": "Concluir 5 tarefas amarelas e vermelhas no mesmo ciclo"
       },
       "fases_total": 3,
       "fases_concluidas": 3,
@@ -1323,15 +1323,15 @@
         "id": 1,
         "nome": "Concluída"
       },
-      "data_criacao": "2025-03-15T14:00:00Z",
-      "data_prazo": "2025-03-30T21:00:59Z",
-      "data_conclusao": "2025-03-25T09:30:00Z",
+      "data_criacao": "2025-06-12T14:00:00Z",
+      "data_prazo": "2025-06-30T21:00:59Z",
+      "data_conclusao": "2025-06-14T09:30:00Z",
       "qtd_moedas": 10,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Ao completar todas as tarefas verdes de um ciclo, você prova que estabilidade também é poder."
+        "nome": "Mestre do Estilo",
+        "imagem": "/images/achievement/mestre-do-estilo.png",
+        "descricao": "Padronizar um módulo inteiro seguindo o style guide"
       },
       "fases_total": 1,
       "fases_concluidas": 1,
@@ -1365,15 +1365,15 @@
         "id": 1,
         "nome": "Concluída"
       },
-      "data_criacao": "2025-02-01T11:00:00Z",
-      "data_prazo": "2025-02-15T18:00:59Z",
+      "data_criacao": "2025-04-01T11:00:00Z",
+      "data_prazo": "2025-04-15T18:00:59Z",
       "data_conclusao": "2025-05-01T17:20:00Z",
       "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Equilíbrio Cósmico",
+        "imagem": "/images/achievement/equilibrio-cosmico.png",
+        "descricao": "Manter qualidade >90% e cumprimento de SLA por 4 semanas"
       },
       "fases_total": 2,
       "fases_concluidas": 2,
@@ -1407,15 +1407,15 @@
         "id": 1,
         "nome": "Concluída"
       },
-      "data_criacao": "2025-02-01T11:00:00Z",
-      "data_prazo": "2025-02-15T18:00:59Z",
-      "data_conclusao": "2025-05-01T17:20:00Z",
+      "data_criacao": "2025-06-01T11:00:00Z",
+      "data_prazo": "2025-06-15T18:00:59Z",
+      "data_conclusao": "2025-06-11T17:20:00Z",
       "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Ação Tática",
+        "imagem": "/images/achievement/acao-tatica.png",
+        "descricao": "Ajustar um módulo de código após feedback de PO ou QA"
       },
       "fases_total": 2,
       "fases_concluidas": 2,
@@ -1425,7 +1425,7 @@
       },
       "projeto": {
         "id": 13,
-        "nome": "BB Investimento"
+        "nome": "Financiamento Imobiliário"
       },
       "tech_lider": {
         "id": 13,
@@ -1449,15 +1449,15 @@
         "id": 1,
         "nome": "Concluída"
       },
-      "data_criacao": "2025-02-01T11:00:00Z",
-      "data_prazo": "2025-02-15T18:00:59Z",
-      "data_conclusao": "2025-05-01T17:20:00Z",
+      "data_criacao": "2025-06-01T11:00:00Z",
+      "data_prazo": "2025-06-15T18:00:59Z",
+      "data_conclusao": "2025-06-13T17:20:00Z",
       "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Magnetizador",
+        "imagem": "/images/achievement/magnetizador.png",
+        "descricao": "Resolver um conflito de integração entre dois serviços"
       },
       "fases_total": 2,
       "fases_concluidas": 2,
@@ -1477,7 +1477,7 @@
     },
     {
       "id": 15,
-      "nome": "corrigir Filtragem por Data em Lista de Lançamentos",
+      "nome": "Corrigir Filtragem por Data em Lista de Lançamentos",
       "descricao": "A funcionalidade de filtragem por data na lista de lançamentos bancários não está funcionando corretamente, exibindo resultados inconsistentes ou incompletos após a aplicação do filtro.",
       "objetivo_tecnico": "1. Verificar a lógica de filtragem no frontend e backend para inconsistências\n2. Garantir que a query ao banco de dados aplique corretamente os parâmetros de data\n3. Assegurar que os formatos de data sejam consistentes em toda a aplicação\n4. Adicionar testes unitários e de integração específicos para a funcionalidade de filtragem",
       "tipo_missao": {
@@ -1497,9 +1497,9 @@
       "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Crescimento Contínuo",
+        "imagem": "/images/achievement/crescimento-continuo.png",
+        "descricao": "Manter evolução positiva de performance por 3 entregas seguidas"
       },
       "fases_total": 2,
       "fases_concluidas": 2,
@@ -1539,9 +1539,9 @@
       "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Interface Fluída",
+        "imagem": "/images/achievement/interface-fluida.png",
+        "descricao": "Redesenhar um componente com foco em UX"
       },
       "fases_total": 2,
       "fases_concluidas": 2,
@@ -1561,9 +1561,9 @@
     },
     {
       "id": 17,
-      "nome": "Otimizar Fluxo de posicaogação por Teclado em Páginas de Transferência",
-      "descricao": "Usuários que dependem de posicaogação por teclado (sem mouse) enfrentam dificuldades na tela de transferência de valores. O foco do teclado pula elementos ou não segue uma ordem lógica esperada, impedindo a conclusão da operação.",
-      "objetivo_tecnico": "1. Verificar e ajustar a ordem do DOM para garantir que o fluxo de posicaogação por teclado (tabindex) seja lógico e intuitivo\n2. Garantir que todos os elementos interativos (campos de entrada, botões, links, checkboxes, radio buttons) sejam acessíveis via teclado\n3. Implementar um indicador de foco visível (:focus styling) para todos os elementos interativos\n4. Tratar elementos customizados (divs com onClick) para que sejam acessíveis via teclado, adicionando tabindex=\"0\" e manipuladores de eventos de teclado (e.g., onKeyUp para Enter/Espaço)",
+      "nome": "Otimizar Fluxo de posição por Teclado em Páginas de Transferência",
+      "descricao": "Usuários que dependem de posição por teclado (sem mouse) enfrentam dificuldades na tela de transferência de valores. O foco do teclado pula elementos ou não segue uma ordem lógica esperada, impedindo a conclusão da operação.",
+      "objetivo_tecnico": "1. Verificar e ajustar a ordem do DOM para garantir que o fluxo de posição por teclado (tabindex) seja lógico e intuitivo\n2. Garantir que todos os elementos interativos (campos de entrada, botões, links, checkboxes, radio buttons) sejam acessíveis via teclado\n3. Implementar um indicador de foco visível (:focus styling) para todos os elementos interativos\n4. Tratar elementos customizados (divs com onClick) para que sejam acessíveis via teclado, adicionando tabindex=\"0\" e manipuladores de eventos de teclado (e.g., onKeyUp para Enter/Espaço)",
       "tipo_missao": {
         "id": 2,
         "nome": "Amarela",
@@ -1581,9 +1581,9 @@
       "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Exterminador Estelar",
+        "imagem": "/images/achievement/exterminador-estelar.png",
+        "descricao": "Resolver 15 bugs relatados por QA"
       },
       "fases_total": 2,
       "fases_concluidas": 2,
@@ -1623,9 +1623,9 @@
       "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Ferro Vermelho",
+        "imagem": "/images/achievement/ferro-vermelho.png",
+        "descricao": "Entregar 5 tarefas vermelhas antes do prazo"
       },
       "fases_total": 2,
       "fases_concluidas": 2,
@@ -1665,9 +1665,9 @@
       "qtd_moedas": 12,
       "conquista": {
         "id": 1,
-        "nome": "Atrasada",
-        "imagem": "/images/achievement/qualidade-constante.png",
-        "descricao": "Eliminar redundâncias ou excessos de um código antigo"
+        "nome": "Engenheiro do Deserto",
+        "imagem": "/images/achievement/engenheiro-do-deserto.png",
+        "descricao": "Atingir 100% de performance em 3 sprints consecutivos"
       },
       "fases_total": 2,
       "fases_concluidas": 2,
@@ -1677,7 +1677,7 @@
       },
       "projeto": {
         "id": 13,
-        "nome": "BB Investimento"
+        "nome": "Acessibilidade App"
       },
       "tech_lider": {
         "id": 13,
@@ -1705,17 +1705,17 @@
       "id": 1,
       "nome": "CDB DI",
       "descricao": "API para integração",
-      "progresso": 20.0,
+      "progresso": 33.0,
       "equipe": {
         "id": 1,
-        "nome": "posicao Orion"
+        "nome": "Codestar-1"
       },
       "planeta_base": {
         "id": 1,
-        "nome": "Nebula-7"
+        "nome": "Pyron"
       },
       "planeta_destino": null,
-      "data_inicio": "2025-04-01T00:00:00Z",
+      "data_inicio": "2025-06-01T00:00:00Z",
       "data_prevista_termino": null,
       "data_conclusao": null,
       "status": {
@@ -1731,16 +1731,16 @@
       "progresso": 100.0,
       "equipe": {
         "id": 1,
-        "nome": "posicao Orion"
+        "nome": "Codestar-1"
       },
       "planeta_base": {
         "id": 2,
-        "nome": "Astra-12"
+        "nome": "Terrara"
       },
       "planeta_destino": null,
-      "data_inicio": "2025-03-15T00:00:00Z",
-      "data_prevista_termino": "2025-04-28T23:59:59Z",
-      "data_conclusao": "2025-04-25T15:00:00Z",
+      "data_inicio": "2025-05-15T00:00:00Z",
+      "data_prevista_termino": "2025-05-28T23:59:59Z",
+      "data_conclusao": "2025-05-25T15:00:00Z",
       "status": {
         "id": 9,
         "nome": "Concluída"
@@ -1754,16 +1754,16 @@
       "progresso": 88.0,
       "equipe": {
         "id": 1,
-        "nome": "posicao Orion"
+        "nome": "Codestar-1"
       },
       "planeta_base": {
         "id": 2,
-        "nome": "Astra-12"
+        "nome": "Nixar"
       },
       "planeta_destino": null,
-      "data_inicio": "2025-03-15T00:00:00Z",
-      "data_prevista_termino": "2025-04-28T23:59:59Z",
-      "data_conclusao": "2025-04-25T15:00:00Z",
+      "data_inicio": "2025-05-15T00:00:00Z",
+      "data_prevista_termino": "2025-05-28T23:59:59Z",
+      "data_conclusao": null,
       "status": {
         "id": 9,
         "nome": "Atrasada"
@@ -1774,14 +1774,14 @@
       "id": 4,
       "nome": "Carteira bB",
       "descricao": "API para integração",
-      "progresso": 56.0,
+      "progresso": 75.0,
       "equipe": {
         "id": 1,
-        "nome": "posicao Orion"
+        "nome": "Codestar-1"
       },
       "planeta_base": {
         "id": 1,
-        "nome": "Nebula-7"
+        "nome": "Nixar"
       },
       "planeta_destino": null,
       "data_inicio": "2025-04-01T00:00:00Z",
@@ -1800,19 +1800,19 @@
       "progresso": 32.0,
       "equipe": {
         "id": 1,
-        "nome": "posicao Orion"
+        "nome": "Codestar-1"
       },
       "planeta_base": {
         "id": 2,
-        "nome": "Astra-12"
+        "nome": "Pyron"
       },
       "planeta_destino": null,
-      "data_inicio": "2025-03-15T00:00:00Z",
-      "data_prevista_termino": "2025-04-28T23:59:59Z",
-      "data_conclusao": "2025-04-25T15:00:00Z",
+      "data_inicio": "2025-05-15T00:00:00Z",
+      "data_prevista_termino": "2025-06-28T23:59:59Z",
+      "data_conclusao": null,
       "status": {
         "id": 9,
-        "nome": "Concluída"
+        "nome": "Em Progresso"
       },
       "icone": "⌛"
     },
@@ -1823,19 +1823,19 @@
       "progresso": 92.0,
       "equipe": {
         "id": 1,
-        "nome": "posicao Orion"
+        "nome": "Codestar-1"
       },
       "planeta_base": {
         "id": 2,
-        "nome": "Astra-12"
+        "nome": "Pyron"
       },
       "planeta_destino": null,
-      "data_inicio": "2025-03-15T00:00:00Z",
-      "data_prevista_termino": "2025-04-28T23:59:59Z",
-      "data_conclusao": "2025-04-25T15:00:00Z",
+      "data_inicio": "2025-05-15T00:00:00Z",
+      "data_prevista_termino": "2025-06-18T23:59:59Z",
+      "data_conclusao": null,
       "status": {
         "id": 9,
-        "nome": "Atrasada"
+        "nome": "Em Progresso"
       },
       "icone": "⌛"
     },
@@ -1846,15 +1846,15 @@
       "progresso": 78.0,
       "equipe": {
         "id": 1,
-        "nome": "posicao Orion"
+        "nome": "Codestar-1"
       },
       "planeta_base": {
         "id": 1,
-        "nome": "Nebula-7"
+        "nome": "Pyron"
       },
       "planeta_destino": null,
-      "data_inicio": "2025-04-01T00:00:00Z",
-      "data_prevista_termino": null,
+      "data_inicio": "2025-06-01T00:00:00Z",
+      "data_prevista_termino": "2025-06-20T00:00:00Z",
       "data_conclusao": null,
       "status": {
         "id": 8,
@@ -1866,19 +1866,19 @@
       "id": 8,
       "nome": "BB Cash",
       "descricao": "Autenticação segura",
-      "progresso": 65.0,
+      "progresso": 99.0,
       "equipe": {
         "id": 1,
-        "nome": "posicao Orion"
+        "nome": "Codestar-1"
       },
       "planeta_base": {
         "id": 2,
-        "nome": "Astra-12"
+        "nome": "Nixar"
       },
       "planeta_destino": null,
-      "data_inicio": "2025-03-15T00:00:00Z",
-      "data_prevista_termino": "2025-04-28T23:59:59Z",
-      "data_conclusao": "2025-04-25T15:00:00Z",
+      "data_inicio": "2025-04-15T00:00:00Z",
+      "data_prevista_termino": "2025-05-28T23:59:59Z",
+      "data_conclusao": "2025-05-25T15:00:00Z",
       "status": {
         "id": 9,
         "nome": "Concluída"
@@ -1892,16 +1892,16 @@
       "progresso": 20.0,
       "equipe": {
         "id": 1,
-        "nome": "posicao Orion"
+        "nome": "Codestar-1"
       },
       "planeta_base": {
         "id": 2,
-        "nome": "Astra-12"
+        "nome": "Nixar"
       },
       "planeta_destino": null,
-      "data_inicio": "2025-03-15T00:00:00Z",
-      "data_prevista_termino": "2025-04-28T23:59:59Z",
-      "data_conclusao": "2025-04-25T15:00:00Z",
+      "data_inicio": "2025-05-15T00:00:00Z",
+      "data_prevista_termino": "2025-06-10T23:59:59Z",
+      "data_conclusao": null,
       "status": {
         "id": 9,
         "nome": "Atrasada"
@@ -1983,7 +1983,7 @@
     "aparencia": "Esfera dourada com raios que pulsam como um coração; emite pequenas chamas acolhedoras.",
     "status": {
       "id": 1,
-      "nome": "Conquistado"
+      "nome": "Bloqueado"
     }
   },
   {
@@ -2306,7 +2306,7 @@
     "aparencia": "Figura geométrica com traços mutáveis e olhos hexagonais.",
     "status": {
       "id": 1,
-      "nome": "Conquistado"
+      "nome": "Bloqueado"
     }
   },
   {
@@ -2382,7 +2382,7 @@
     "aparencia": "Pequeno cometa azul-elétrico com cauda de partículas, traços aerodinâmicos.",
     "status": {
       "id": 1,
-      "nome": "Conquistado"
+      "nome": "Bloqueado"
     }
   },
   {
@@ -2401,7 +2401,7 @@
     "aparencia": "Chaveiro flutuante com ferramentas holográficas.",
     "status": {
       "id": 1,
-      "nome": "Conquistado"
+      "nome": "Bloqueado"
     }
   },
   {
@@ -3017,7 +3017,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 3,
     "qtd_conquistada": 1
@@ -3036,7 +3036,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 1,
     "qtd_conquistada": 1
@@ -3093,7 +3093,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 5,
     "qtd_conquistada": 4
@@ -3112,7 +3112,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 1,
     "qtd_conquistada": 0
@@ -3150,7 +3150,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 5,
     "qtd_conquistada": 3
@@ -3188,7 +3188,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 4,
     "qtd_conquistada": 1
@@ -3207,7 +3207,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 1,
     "qtd_conquistada": 0
@@ -3245,7 +3245,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 5,
     "qtd_conquistada": 4
@@ -3283,7 +3283,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 5,
     "qtd_conquistada": 3
@@ -3321,7 +3321,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 3,
     "qtd_conquistada": 1
@@ -3340,7 +3340,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 2,
     "qtd_conquistada": 1
@@ -3378,7 +3378,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 2,
     "qtd_conquistada": 0
@@ -3397,7 +3397,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 5,
     "qtd_conquistada": 1
@@ -3416,7 +3416,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 1,
     "qtd_conquistada": 0
@@ -3454,7 +3454,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 2,
     "qtd_conquistada": 0
@@ -3473,7 +3473,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 1,
     "qtd_conquistada": 0
@@ -3511,7 +3511,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 1,
     "qtd_conquistada": 1
@@ -3530,7 +3530,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 2,
     "qtd_conquistada": 0
@@ -3549,7 +3549,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 5,
     "qtd_conquistada": 3
@@ -3568,7 +3568,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 4,
     "qtd_conquistada": 2
@@ -3606,7 +3606,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 4,
     "qtd_conquistada": 4
@@ -3663,7 +3663,7 @@
     },
     "status": {
       "id": 1,
-      "nome": "Ativa"
+      "nome": "Bloqueado"
     },
     "qtd_disponivel": 2,
     "qtd_conquistada": 1
@@ -4486,6 +4486,33 @@
     "genero": "",
     "estelares": 1000,
     "imagem": "/images/shop/caderno-xilo.png"
+  },
+  {
+    "id": 30,
+    "nome": "Pelúcia Buggo",
+    "descricao": "Pelúcia Buggo",
+    "categoria": "Pelúcia",
+    "genero": "",
+    "estelares": 5000,
+    "imagem": "/images/shop/pelucia-buggo.png"
+  },
+  {
+    "id": 31,
+    "nome": "Pelúcia Floris",
+    "descricao": "Pelúcia Floris",
+    "categoria": "Pelúcia",
+    "genero": "",
+    "estelares": 5600,
+    "imagem": "/images/shop/pelucia-floris.png"
+  },
+  {
+    "id": 32,
+    "nome": "Lego Patch-3",
+    "descricao": "Lego Patch-3",
+    "categoria": "Lego",
+    "genero": "",
+    "estelares": 10000,
+    "imagem": "/images/shop/lego-patch3.png"
   }
   ]
 }
